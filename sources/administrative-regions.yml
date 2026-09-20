@@ -1,0 +1,37 @@
+id: administrative-regions
+title: Morocco administrative regions
+version: 1.0.0
+retrieved_at: 2026-09-21
+license: ODbL-1.0
+license_url: https://opendatacommons.org/licenses/odbl/1-0/
+update_frequency: unknown
+contains_personal_data: false
+redistribution_review: approved
+
+sources:
+  - language_fields: [ar]
+    dataset: Répartition du personnel des administrations publiques selon les régions
+    producer: Ministère de la Transition Numérique et de la Réforme de l’Administration (MTNRA)
+    catalog_url: https://data.gov.ma/data/fr/dataset/repartition-du-personnel-des-administrations-publiques-selon-les-regions
+    resource_url: https://data.gov.ma/data/fr/dataset/5995a4d8-0a8a-4a29-9ba3-8ffd6264cb2f/resource/07555a6f-c648-4938-837d-46ce51908b8f/download/repartition-du-personnel-des-administrations-publiques-selon-les-regions.xlsx
+    source_updated_at: 2025-11-25
+    source_license: ODbL-1.0
+
+  - language_fields: [fr]
+    dataset: Unités d'habitat achevées par région et par catégorie 2016-2023
+    producer: Ministère de l’Aménagement du Territoire National, de l’Urbanisme, de l’Habitat et de la Politique de la Ville (MATNUHPV)
+    catalog_url: https://data.gov.ma/data/fr/dataset/unites-d-habitat-achevees-par-region-et-par-categorie-2016-2020
+    resource_url: https://data.gov.ma/data/fr/dataset/9a92d8bd-34c9-4ce7-9995-b9acbd83e671/resource/00fabe8e-0675-4779-9417-3bc6e721677a/download/unites-dhabitat-achevees-par-region-et-par-categorie-2016-2023.xlsx
+    source_updated_at: 2024-10-30
+    source_license: ODbL-1.0
+
+transformations:
+  - Selected the 12 region labels from each source workbook.
+  - Removed the Arabic prefix "جهة" and normalized dash spacing.
+  - Matched Arabic and French records by region name.
+  - Created stable MoroccoAPI slug identifiers; these are not official administrative codes.
+  - Added English transliterations maintained by MoroccoAPI; these are not official source translations.
+
+limitations:
+  - This snapshot contains regions only; it does not include provinces, prefectures, or communes.
+  - The API is a community service and is not a source of legal or administrative authority.
