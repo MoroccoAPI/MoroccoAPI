@@ -1,20 +1,15 @@
-## Summary
+## What changed?
 
-Describe the change and the user problem it solves.
+Describe the change and why it is needed.
+
+## Checks
+
+- [ ] I ran `npm run check`.
+- [ ] I added or updated tests where behavior changed.
+- [ ] I documented API contract changes.
+- [ ] I documented the source and license for every data change.
+- [ ] This change contains no secret, personal data, or unapproved raw dataset.
 
 ## Related issue or RFC
 
 Link the relevant issue or RFC.
-
-## Verification
-
-- [ ] Tests or validation were added or updated.
-- [ ] Existing API contracts remain compatible, or an approved versioning plan is linked.
-- [ ] Documentation was updated.
-- [ ] No secrets or personal data are included.
-- [ ] Any data-source, license, attribution, or provenance change is documented.
-
-## Data-source changes
-
-If applicable, identify the producer, source URL, exact license, retrieval date, transformation, and redistribution-review decision.
-

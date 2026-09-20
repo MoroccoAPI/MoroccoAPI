@@ -1,0 +1,41 @@
+name: Report a bug
+description: Report a reproducible API, data, or documentation problem.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - API behavior
+        - Data quality
+        - Documentation
+        - Local development
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: What happened?
+      description: Include the endpoint or file and the response or error you received.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      description: Provide the smallest set of steps that reproduces the problem.
+    validations:
+      required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: Source or evidence
+      description: Required for data corrections; link to an authoritative source.

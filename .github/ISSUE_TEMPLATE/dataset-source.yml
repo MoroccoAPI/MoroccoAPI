@@ -1,0 +1,60 @@
+name: Propose a dataset
+description: Propose a public dataset for legal, provenance, and quality review.
+title: "[Dataset]: "
+labels: [data-source]
+body:
+  - type: markdown
+    attributes:
+      value: Public access alone does not prove redistribution rights. Include the exact source and license.
+  - type: input
+    id: producer
+    attributes:
+      label: Producer
+      description: The public body or organization that produced the dataset.
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: Dataset page
+      placeholder: https://example.ma/dataset
+    validations:
+      required: true
+  - type: input
+    id: resource_url
+    attributes:
+      label: Direct resource URL
+      description: Link to the CSV, JSON, XLSX, API, or other source resource.
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: Exact license
+      description: Include the license name and a link to its terms.
+    validations:
+      required: true
+  - type: dropdown
+    id: personal_data
+    attributes:
+      label: Does it contain personal or sensitive data?
+      options:
+        - "No"
+        - "Yes"
+        - "Unknown"
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Proposed use
+      description: Which endpoints would use this data, and who would benefit?
+    validations:
+      required: true
+  - type: textarea
+    id: quality
+    attributes:
+      label: Format, updates, and known limitations
+      description: Include format, approximate size, update frequency, and known quality issues.
+    validations:
+      required: true
