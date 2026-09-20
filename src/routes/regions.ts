@@ -8,6 +8,25 @@ interface RegionParams {
   code: string;
 }
 
+interface SearchQuery {
+  q: string;
+}
+
+function normalizeSearchValue(value: string): string {
+  return value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[أإآ]/g, "ا")
+    .replace(/ة/g, "ه")
+    .toLocaleLowerCase("fr")
+    .trim();
+}
+
+function matchesRegion(region: Region, query: string): boolean {
+  const haystack = [region.code, region.name.ar, region.name.fr, region.name.en];
+  return haystack.some((value) => normalizeSearchValue(value).includes(query));
+}
+
 export async function registerRegionRoutes(
   app: FastifyInstance,
   regions: readonly Region[],
@@ -75,4 +94,46 @@ export async function registerRegionRoutes(
     },
   );
 
+  app.get<{ Querystring: SearchQuery }>(
+    "/api/v1/locations/search",
+    {
+      schema: {
+        tags: ["Administrative geography"],
+        summary: "Search administrative regions by code or multilingual name",
+        querystring: {
+          type: "object",
+          additionalProperties: false,
+          required: ["q"],
+          properties: { q: { type: "string", minLength: 2, maxLength: 100 } },
+        },
+        response: {
+          200: {
+            type: "object",
+            additionalProperties: false,
+            required: ["data", "meta"],
+            properties: {
+              data: { type: "array", items: regionSchema },
+              meta: datasetMetaSchema,
+            },
+          },
+          400: errorSchema,
+        },
+      },
+    },
+    async (request, reply) => {
+      const normalizedQuery = normalizeSearchValue(request.query.q);
+      if (normalizedQuery.length < 2) {
+        return reply.code(400).send({
+          error: {
+            code: "VALIDATION_ERROR",
+            message: "q must contain at least two non-whitespace characters",
+            request_id: request.id,
+          },
+        });
+      }
+
+      const matches = regions.filter((region) => matchesRegion(region, normalizedQuery));
+      return { data: matches, meta: buildDatasetMeta(matches.length) };
+    },
+  );
 }
