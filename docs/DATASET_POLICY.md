@@ -55,7 +55,7 @@ source_updated_at: null
 update_frequency: unknown
 contains_personal_data: false
 redistribution_review: approved
-transform_version: 1
+transformation_version: 1.0.0
 ```
 
 ## Transformations
@@ -69,4 +69,3 @@ transform_version: 1
 ## Removal and correction
 
 MoroccoAPI may suspend or remove a dataset when its license, provenance, accuracy, privacy status, or upstream availability becomes uncertain. Removal does not silently rewrite published history; a public notice should explain material changes.
-

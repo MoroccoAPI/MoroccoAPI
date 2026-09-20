@@ -10,8 +10,7 @@ source_updated_at: null
 update_frequency: unknown
 contains_personal_data: unknown
 redistribution_review: pending
-transform_version: 0
+transformation_version: 0.0.0
 notes:
   - This is a schema example only.
   - No dataset may be added until its redistribution review is approved.
-
