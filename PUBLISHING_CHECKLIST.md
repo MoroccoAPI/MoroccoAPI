@@ -1,36 +1,36 @@
 # Publishing Approval Checklist
 
-Nothing in this draft should be published until the project owner explicitly approves it.
+Publication was approved by the project owner on 2026-09-20. This checklist now records the approved foundation and the operational decisions that remain open.
 
 ## Identity
 
-- [ ] GitHub organization: `MoroccoAPI`
-- [ ] Repository: `MoroccoAPI/MoroccoAPI`
-- [ ] Display name: `MoroccoAPI`
-- [ ] Tagline: `Reliable, developer-friendly access to Morocco's public open data.`
-- [ ] Independent-project disclaimer approved.
+- [x] GitHub organization: `MoroccoAPI`
+- [x] Repository: `MoroccoAPI/MoroccoAPI`
+- [x] Display name: `MoroccoAPI`
+- [x] Tagline: `Reliable, developer-friendly access to Morocco's public open data.`
+- [x] Independent-project disclaimer approved.
 
 ## Scope
 
-- [ ] Administrative geography approved as the MVP.
-- [ ] Regions, provinces/prefectures, communes, search, and status endpoints approved.
-- [ ] Educational and healthcare facilities kept as later candidates.
-- [ ] Personal-data lookup explicitly excluded.
-- [ ] Real-time financial-market redistribution explicitly excluded.
+- [x] Administrative geography approved as the MVP.
+- [x] Regions, provinces/prefectures, communes, search, and status endpoints approved.
+- [x] Educational and healthcare facilities kept as later candidates.
+- [x] Personal-data lookup explicitly excluded.
+- [x] Real-time financial-market redistribution explicitly excluded.
 
 ## Licenses
 
-- [ ] Apache-2.0 approved for code, or replace it with MIT.
-- [ ] ODbL-1.0 policy approved for adapted ODbL databases.
-- [ ] CC BY 4.0 approved for documentation, or select another documentation license.
-- [ ] Dataset-specific notices and separate licensing approved.
+- [x] Apache-2.0 approved for code.
+- [x] ODbL-1.0 policy approved for adapted ODbL databases.
+- [x] CC BY 4.0 approved for documentation.
+- [x] Dataset-specific notices and separate licensing approved.
 
 ## Governance
 
-- [ ] Founding-maintainer tie-break proposal approved.
-- [ ] Maintainer selection process approved.
-- [ ] RFC requirement for high-impact changes approved.
-- [ ] Code of Conduct approved.
+- [x] Founding-maintainer tie-break proposal approved.
+- [x] Maintainer selection process approved.
+- [x] RFC requirement for high-impact changes approved.
+- [x] Code of Conduct approved.
 
 ## Operations
 
@@ -47,4 +47,3 @@ Nothing in this draft should be published until the project owner explicitly app
 4. Open RFC 0001 for public review.
 5. Publish a call for founding contributors.
 6. Do not publish a production API until a dataset and security process are approved.
-
