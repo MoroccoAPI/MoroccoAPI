@@ -57,5 +57,17 @@ docs(rfc): clarify attribution requirements
 
 ## Local development
 
-Local setup commands will be added after the implementation stack is approved.
+Use Node.js 22 or newer:
 
+```bash
+npm install
+npm run dev
+```
+
+Run every local check before opening a pull request:
+
+```bash
+npm run check
+```
+
+This command checks TypeScript, runs the test suite, builds the production output, and audits dependencies. Interactive API documentation is available at `http://127.0.0.1:3000/docs` while the development server is running.

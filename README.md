@@ -4,50 +4,66 @@
 
 > Reliable, developer-friendly access to Morocco's public open data.
 
-[![Status: Proposal](https://img.shields.io/badge/status-proposal-orange)](#project-status)
+[![Status: Pre-alpha](https://img.shields.io/badge/status-pre--alpha-orange)](#project-status)
 [![Code License: Apache-2.0](https://img.shields.io/badge/code-Apache--2.0-blue)](LICENSE)
 [![Data License: ODbL-1.0](https://img.shields.io/badge/data-ODbL--1.0-green)](DATA_LICENSE.md)
 
-MoroccoAPI is a proposed community-driven, open-source project that turns reusable Moroccan public datasets into consistent, documented, and versioned APIs.
+MoroccoAPI is a community-driven, open-source project that turns reusable Moroccan public datasets into consistent, documented, and versioned APIs.
 
 Public information is often distributed across spreadsheets, documents, portals, and incompatible schemas. MoroccoAPI aims to make approved open datasets easier to discover and use while preserving source attribution, licensing, provenance, and update history.
 
 ## Project status
 
-**Proposal / pre-alpha.** No production API is available yet, and no dataset has been approved for redistribution.
+**Pre-alpha.** The first API implementation and an approved regions dataset are available in the repository. No production service is deployed yet.
 
 MoroccoAPI is an independent community project. It is not affiliated with, endorsed by, or operated by the Government of Morocco or any public institution.
 
-## Proposed first release
+## Current API
 
-The first release will intentionally be small:
+The current pre-alpha release intentionally starts small:
 
-- Administrative regions.
-- Provinces and prefectures.
-- Communes.
-- Public dataset provenance and freshness metadata.
-- OpenAPI documentation and a public health endpoint.
+- Morocco's 12 administrative regions.
+- Arabic and French source labels, plus clearly identified MoroccoAPI English transliterations.
+- Per-response source, license, and freshness metadata.
+- Multilingual, accent-insensitive region search.
+- OpenAPI documentation and a health endpoint.
 
-Candidate endpoints:
+Available endpoints:
 
 ```text
 GET /api/v1/regions
 GET /api/v1/regions/{code}
-GET /api/v1/provinces
-GET /api/v1/communes
-GET /api/v1/communes/{code}
 GET /api/v1/locations/search?q={query}
 GET /api/v1/status
+GET /openapi.json
+GET /docs
 ```
 
-Later releases may include public educational and healthcare facilities, provided that each source passes the project's legal, provenance, and quality checks.
+Provinces, prefectures, and communes remain planned until suitable sources complete the same license and provenance review. Later releases may include public educational and healthcare facilities under the same rule.
+
+## Run locally
+
+Requirements: Node.js 22 or newer and npm.
+
+```bash
+npm install
+npm run dev
+```
+
+The API starts at `http://127.0.0.1:3000`; interactive documentation is at `http://127.0.0.1:3000/docs`.
+
+Before opening a pull request, run:
+
+```bash
+npm run check
+```
 
 ## Example response
 
 ```json
 {
   "data": {
-    "code": "06",
+    "code": "casablanca-settat",
     "type": "region",
     "name": {
       "ar": "الدار البيضاء - سطات",
@@ -56,16 +72,26 @@ Later releases may include public educational and healthcare facilities, provide
     }
   },
   "meta": {
-    "source": "To be approved",
-    "source_url": null,
-    "license": "To be confirmed",
-    "source_updated_at": null,
-    "retrieved_at": null
+    "dataset": "administrative-regions",
+    "total": 1,
+    "license": "ODbL-1.0",
+    "retrieved_at": "2026-09-21",
+    "transformation_version": "1.0.0",
+    "sources": [
+      {
+        "dataset": "Répartition du personnel des administrations publiques selon les régions",
+        "producer": "MTNRA",
+        "source_url": "https://data.gov.ma/data/fr/dataset/repartition-du-personnel-des-administrations-publiques-selon-les-regions",
+        "resource_url": "https://data.gov.ma/data/fr/dataset/5995a4d8-0a8a-4a29-9ba3-8ffd6264cb2f/resource/07555a6f-c648-4938-837d-46ce51908b8f/download/repartition-du-personnel-des-administrations-publiques-selon-les-regions.xlsx",
+        "license": "ODbL-1.0",
+        "source_updated_at": "2025-11-25"
+      }
+    ]
   }
 }
 ```
 
-The values above illustrate the proposed response contract. They are not an approved dataset.
+Region `code` values are stable MoroccoAPI slugs, not official government administrative codes.
 
 ## Principles
 
@@ -81,7 +107,7 @@ The values above illustrate the proposed response contract. They are not an appr
 
 Source code and data have separate licenses:
 
-- Project code is proposed under the Apache License 2.0.
+- Project code is available under the Apache License 2.0.
 - Adapted databases derived from ODbL sources will be published under ODbL 1.0.
 - Third-party datasets keep their original licenses and notices.
 - Incompatible or unclear sources will not be merged into the public database.
