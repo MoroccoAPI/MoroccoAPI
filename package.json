@@ -14,9 +14,12 @@
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "audit": "npm audit --audit-level=high",
     "dev": "tsx watch src/server.ts",
     "start": "node dist/server.js",
-    "typecheck": "tsc -p tsconfig.json --noEmit"
+    "test": "tsx --test test/**/*.test.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "check": "npm run typecheck && npm test && npm run build && npm run audit"
   },
   "dependencies": {
     "@fastify/swagger": "9.8.1",
