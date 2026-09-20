@@ -1,6 +1,6 @@
-# Governance Proposal
+# Governance
 
-MoroccoAPI is intended to be a community-driven project with transparent decisions and accountable maintainers.
+MoroccoAPI is a community-driven project with transparent decisions and accountable maintainers.
 
 ## Roles
 
@@ -38,4 +38,3 @@ Maintainers who are inactive for an extended period may move to emeritus status 
 ## Changes to governance
 
 Governance changes require an RFC and explicit maintainer approval.
-

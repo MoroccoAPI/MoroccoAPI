@@ -34,10 +34,10 @@ Publication was approved by the project owner on 2026-09-20. This checklist now 
 
 ## Operations
 
-- [ ] Implementation language and framework selected.
+- [x] TypeScript and Fastify selected for the first implementation.
 - [ ] Hosting approach selected.
 - [ ] Public contact and private security-reporting channels selected.
-- [ ] First authoritative dataset approved separately.
+- [x] Administrative-regions sources and ODbL redistribution terms documented and approved.
 
 ## Publication sequence
 
