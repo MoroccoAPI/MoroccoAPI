@@ -1,5 +1,7 @@
 # MoroccoAPI
 
+<img src="assets/brand/moroccoapi-logo.png" alt="MoroccoAPI logo" width="160">
+
 > Reliable, developer-friendly access to Morocco's public open data.
 
 [![Status: Proposal](https://img.shields.io/badge/status-proposal-orange)](#project-status)
@@ -104,4 +106,3 @@ Do not open public issues containing credentials, private data, or unredacted se
 ## Acknowledgements
 
 MoroccoAPI is inspired by community public-data projects such as BrasilAPI. Inspiration does not imply affiliation.
-
