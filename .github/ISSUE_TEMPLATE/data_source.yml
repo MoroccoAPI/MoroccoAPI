@@ -1,0 +1,50 @@
+name: Propose a data source
+description: Propose a public dataset for provenance, license, privacy, and quality review.
+title: "[Data source]: "
+labels:
+  - data-source
+  - needs-review
+body:
+  - type: markdown
+    attributes:
+      value: Public accessibility is not sufficient permission. Provide the exact source and license.
+  - type: input
+    id: producer
+    attributes:
+      label: Producer
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: Dataset page
+    validations:
+      required: true
+  - type: input
+    id: resource_url
+    attributes:
+      label: Direct resource or API URL
+  - type: input
+    id: license
+    attributes:
+      label: Exact license and license URL
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Proposed value and endpoints
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Personal, sensitive, or security-relevant data review
+      description: Explain why the dataset is safe to process and redistribute.
+    validations:
+      required: true
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Known quality and freshness limitations
+

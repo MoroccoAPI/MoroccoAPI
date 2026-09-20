@@ -1,0 +1,17 @@
+id: example-dataset
+title: Example dataset — not approved for publication
+producer: To be identified
+source_url: null
+resource_url: null
+source_license: To be confirmed
+license_url: null
+retrieved_at: null
+source_updated_at: null
+update_frequency: unknown
+contains_personal_data: unknown
+redistribution_review: pending
+transform_version: 0
+notes:
+  - This is a schema example only.
+  - No dataset may be added until its redistribution review is approved.
+
