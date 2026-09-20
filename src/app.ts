@@ -6,6 +6,8 @@ import Fastify, {
   type FastifyServerOptions,
 } from "fastify";
 
+import { loadRegions } from "./data/regions.js";
+import { registerRegionRoutes } from "./routes/regions.js";
 import { registerStatusRoutes } from "./routes/status.js";
 
 export async function buildApp(
@@ -36,7 +38,9 @@ export async function buildApp(
     uiConfig: { docExpansion: "list", deepLinking: true },
   });
 
+  const regions = await loadRegions();
   await registerStatusRoutes(app);
+  await registerRegionRoutes(app, regions);
 
   app.get(
     "/openapi.json",
