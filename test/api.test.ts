@@ -85,6 +85,19 @@ describe("MoroccoAPI", () => {
     assert.equal(response.json().data[0].code, "oriental");
   });
 
+  it("normalizes Arabic alef variants, diacritics, and tatweel", async () => {
+    for (const query of ["اسفي", "مَرَّاكُش", "مـراكش"]) {
+      const response = await app.inject({
+        method: "GET",
+        url: `/api/v1/locations/search?q=${encodeURIComponent(query)}`,
+      });
+
+      assert.equal(response.statusCode, 200);
+      assert.equal(response.json().meta.total, 1);
+      assert.equal(response.json().data[0].code, "marrakech-safi");
+    }
+  });
+
   it("rejects invalid search queries", async () => {
     const response = await app.inject({
       method: "GET",
