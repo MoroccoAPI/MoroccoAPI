@@ -22,7 +22,7 @@ Please read:
 
 ## Proposing a dataset
 
-Use the data-source issue template. A proposal must include:
+Use the **Propose a dataset** issue template. A proposal must include:
 
 - Producer and source URL.
 - Dataset page and direct resource URL, if different.
