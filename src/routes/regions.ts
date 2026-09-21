@@ -15,8 +15,8 @@ interface SearchQuery {
 function normalizeSearchValue(value: string): string {
   return value
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[أإآ]/g, "ا")
+    .replace(/\p{M}+/gu, "")
+    .replace(/\u0640/g, "")
     .replace(/ة/g, "ه")
     .toLocaleLowerCase("fr")
     .trim();
