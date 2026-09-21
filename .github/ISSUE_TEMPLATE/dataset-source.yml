@@ -1,7 +1,9 @@
 name: Propose a dataset
-description: Propose a public dataset for legal, provenance, and quality review.
+description: Propose a public dataset for provenance, license, privacy, and quality review.
 title: "[Dataset]: "
-labels: [data-source]
+labels:
+  - data-source
+  - needs-review
 body:
   - type: markdown
     attributes:
@@ -24,14 +26,12 @@ body:
     id: resource_url
     attributes:
       label: Direct resource URL
-      description: Link to the CSV, JSON, XLSX, API, or other source resource.
-    validations:
-      required: true
+      description: Link to the CSV, JSON, XLSX, API, or other resource when it differs from the dataset page.
   - type: input
     id: license
     attributes:
-      label: Exact license
-      description: Include the license name and a link to its terms.
+      label: Exact license and license URL
+      description: Include the license name and a link to the applicable terms.
     validations:
       required: true
   - type: dropdown
@@ -42,6 +42,13 @@ body:
         - "No"
         - "Yes"
         - "Unknown"
+    validations:
+      required: true
+  - type: textarea
+    id: privacy_review
+    attributes:
+      label: Privacy and security review
+      description: Describe any personal, sensitive, confidential, or security-relevant data and why the proposed use is safe.
     validations:
       required: true
   - type: textarea
