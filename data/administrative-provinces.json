@@ -1,0 +1,752 @@
+[
+  {
+    "code": "agadir-ida-ou-tanane",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Agadir-Ida-Ou-Tanane",
+      "en": null
+    },
+    "region_code": "souss-massa"
+  },
+  {
+    "code": "al-haouz",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Al Haouz",
+      "en": null
+    },
+    "region_code": "marrakech-safi"
+  },
+  {
+    "code": "al-hoceima",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Al Hoceima",
+      "en": null
+    },
+    "region_code": "tanger-tetouan-al-hoceima"
+  },
+  {
+    "code": "aousserd",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Aousserd",
+      "en": null
+    },
+    "region_code": "dakhla-oued-ed-dahab"
+  },
+  {
+    "code": "assa-zag",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Assa-Zag",
+      "en": null
+    },
+    "region_code": "guelmim-oued-noun"
+  },
+  {
+    "code": "azilal",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Azilal",
+      "en": null
+    },
+    "region_code": "beni-mellal-khenifra"
+  },
+  {
+    "code": "beni-mellal",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Béni Mellal",
+      "en": null
+    },
+    "region_code": "beni-mellal-khenifra"
+  },
+  {
+    "code": "benslimane",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Benslimane",
+      "en": null
+    },
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "berkane",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Berkane",
+      "en": null
+    },
+    "region_code": "oriental"
+  },
+  {
+    "code": "berrechid",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Berrechid",
+      "en": null
+    },
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "boujdour",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Boujdour",
+      "en": null
+    },
+    "region_code": "laayoune-sakia-el-hamra"
+  },
+  {
+    "code": "boulemane",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Boulemane",
+      "en": null
+    },
+    "region_code": "fes-meknes"
+  },
+  {
+    "code": "casablanca",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Casablanca",
+      "en": null
+    },
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "chefchaouen",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Chefchaouen",
+      "en": null
+    },
+    "region_code": "tanger-tetouan-al-hoceima"
+  },
+  {
+    "code": "chichaoua",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Chichaoua",
+      "en": null
+    },
+    "region_code": "marrakech-safi"
+  },
+  {
+    "code": "chtouka-ait-baha",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Chtouka-Aït Baha",
+      "en": null
+    },
+    "region_code": "souss-massa"
+  },
+  {
+    "code": "driouch",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Driouch",
+      "en": null
+    },
+    "region_code": "oriental"
+  },
+  {
+    "code": "el-hajeb",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "El Hajeb",
+      "en": null
+    },
+    "region_code": "fes-meknes"
+  },
+  {
+    "code": "el-jadida",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "El Jadida",
+      "en": null
+    },
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "el-kelaa-des-sraghna",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "El Kelâa Des-Sraghna",
+      "en": null
+    },
+    "region_code": "marrakech-safi"
+  },
+  {
+    "code": "errachidia",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Errachidia",
+      "en": null
+    },
+    "region_code": "draa-tafilalet"
+  },
+  {
+    "code": "es-semara",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Es-Semara",
+      "en": null
+    },
+    "region_code": "laayoune-sakia-el-hamra"
+  },
+  {
+    "code": "essaouira",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Essaouira",
+      "en": null
+    },
+    "region_code": "marrakech-safi"
+  },
+  {
+    "code": "fahs-anjra",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Fahs-Anjra",
+      "en": null
+    },
+    "region_code": "tanger-tetouan-al-hoceima"
+  },
+  {
+    "code": "fes",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Fès",
+      "en": null
+    },
+    "region_code": "fes-meknes"
+  },
+  {
+    "code": "figuig",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Figuig",
+      "en": null
+    },
+    "region_code": "oriental"
+  },
+  {
+    "code": "fquih-ben-salah",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Fquih Ben Salah",
+      "en": null
+    },
+    "region_code": "beni-mellal-khenifra"
+  },
+  {
+    "code": "guelmim",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Guelmim",
+      "en": null
+    },
+    "region_code": "guelmim-oued-noun"
+  },
+  {
+    "code": "guercif",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Guercif",
+      "en": null
+    },
+    "region_code": "oriental"
+  },
+  {
+    "code": "ifrane",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Ifrane",
+      "en": null
+    },
+    "region_code": "fes-meknes"
+  },
+  {
+    "code": "inezgane-ait-melloul",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Inezgane-Aït Melloul",
+      "en": null
+    },
+    "region_code": "souss-massa"
+  },
+  {
+    "code": "jerada",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Jerada",
+      "en": null
+    },
+    "region_code": "oriental"
+  },
+  {
+    "code": "kenitra",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Kénitra",
+      "en": null
+    },
+    "region_code": "rabat-sale-kenitra"
+  },
+  {
+    "code": "khemisset",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Khémisset",
+      "en": null
+    },
+    "region_code": "rabat-sale-kenitra"
+  },
+  {
+    "code": "khenifra",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Khénifra",
+      "en": null
+    },
+    "region_code": "beni-mellal-khenifra"
+  },
+  {
+    "code": "khouribga",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Khouribga",
+      "en": null
+    },
+    "region_code": "beni-mellal-khenifra"
+  },
+  {
+    "code": "laayoune",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Laâyoune",
+      "en": null
+    },
+    "region_code": "laayoune-sakia-el-hamra"
+  },
+  {
+    "code": "larache",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Larache",
+      "en": null
+    },
+    "region_code": "tanger-tetouan-al-hoceima"
+  },
+  {
+    "code": "m-diq-fnideq",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "M'diq-Fnideq",
+      "en": null
+    },
+    "region_code": "tanger-tetouan-al-hoceima"
+  },
+  {
+    "code": "marrakech",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Marrakech",
+      "en": null
+    },
+    "region_code": "marrakech-safi"
+  },
+  {
+    "code": "mediouna",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Médiouna",
+      "en": null
+    },
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "meknes",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Meknès",
+      "en": null
+    },
+    "region_code": "fes-meknes"
+  },
+  {
+    "code": "midelt",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Midelt",
+      "en": null
+    },
+    "region_code": "draa-tafilalet"
+  },
+  {
+    "code": "mohammadia",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Mohammadia",
+      "en": null
+    },
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "moulay-yacoub",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Moulay Yacoub",
+      "en": null
+    },
+    "region_code": "fes-meknes"
+  },
+  {
+    "code": "nador",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Nador",
+      "en": null
+    },
+    "region_code": "oriental"
+  },
+  {
+    "code": "nouaceur",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Nouaceur",
+      "en": null
+    },
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "ouarzazate",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Ouarzazate",
+      "en": null
+    },
+    "region_code": "draa-tafilalet"
+  },
+  {
+    "code": "oued-ed-dahab",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Oued Ed-Dahab",
+      "en": null
+    },
+    "region_code": "dakhla-oued-ed-dahab"
+  },
+  {
+    "code": "ouezzane",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Ouezzane",
+      "en": null
+    },
+    "region_code": "tanger-tetouan-al-hoceima"
+  },
+  {
+    "code": "oujda-angad",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Oujda-Angad",
+      "en": null
+    },
+    "region_code": "oriental"
+  },
+  {
+    "code": "rabat",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Rabat",
+      "en": null
+    },
+    "region_code": "rabat-sale-kenitra"
+  },
+  {
+    "code": "rehamna",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Rehamna",
+      "en": null
+    },
+    "region_code": "marrakech-safi"
+  },
+  {
+    "code": "safi",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Safi",
+      "en": null
+    },
+    "region_code": "marrakech-safi"
+  },
+  {
+    "code": "sale",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Salé",
+      "en": null
+    },
+    "region_code": "rabat-sale-kenitra"
+  },
+  {
+    "code": "sefrou",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Sefrou",
+      "en": null
+    },
+    "region_code": "fes-meknes"
+  },
+  {
+    "code": "settat",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Settat",
+      "en": null
+    },
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "sidi-bennour",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Sidi Bennour",
+      "en": null
+    },
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "sidi-ifni",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Sidi Ifni",
+      "en": null
+    },
+    "region_code": "guelmim-oued-noun"
+  },
+  {
+    "code": "sidi-kacem",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Sidi Kacem",
+      "en": null
+    },
+    "region_code": "rabat-sale-kenitra"
+  },
+  {
+    "code": "sidi-slimane",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Sidi Slimane",
+      "en": null
+    },
+    "region_code": "rabat-sale-kenitra"
+  },
+  {
+    "code": "skhirate-temara",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Skhirate-Témara",
+      "en": null
+    },
+    "region_code": "rabat-sale-kenitra"
+  },
+  {
+    "code": "tan-tan",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Tan-Tan",
+      "en": null
+    },
+    "region_code": "guelmim-oued-noun"
+  },
+  {
+    "code": "tanger-assilah",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Tanger-Assilah",
+      "en": null
+    },
+    "region_code": "tanger-tetouan-al-hoceima"
+  },
+  {
+    "code": "taounate",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Taounate",
+      "en": null
+    },
+    "region_code": "fes-meknes"
+  },
+  {
+    "code": "taourirt",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Taourirt",
+      "en": null
+    },
+    "region_code": "oriental"
+  },
+  {
+    "code": "tarfaya",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Tarfaya",
+      "en": null
+    },
+    "region_code": "laayoune-sakia-el-hamra"
+  },
+  {
+    "code": "taroudannt",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Taroudannt",
+      "en": null
+    },
+    "region_code": "souss-massa"
+  },
+  {
+    "code": "tata",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Tata",
+      "en": null
+    },
+    "region_code": "souss-massa"
+  },
+  {
+    "code": "taza",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Taza",
+      "en": null
+    },
+    "region_code": "fes-meknes"
+  },
+  {
+    "code": "tetouan",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Tétouan",
+      "en": null
+    },
+    "region_code": "tanger-tetouan-al-hoceima"
+  },
+  {
+    "code": "tinghir",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Tinghir",
+      "en": null
+    },
+    "region_code": "draa-tafilalet"
+  },
+  {
+    "code": "tiznit",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Tiznit",
+      "en": null
+    },
+    "region_code": "souss-massa"
+  },
+  {
+    "code": "youssoufia",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Youssoufia",
+      "en": null
+    },
+    "region_code": "marrakech-safi"
+  },
+  {
+    "code": "zagora",
+    "type": "province_or_prefecture",
+    "name": {
+      "ar": null,
+      "fr": "Zagora",
+      "en": null
+    },
+    "region_code": "draa-tafilalet"
+  }
+]
