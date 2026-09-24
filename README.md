@@ -20,11 +20,12 @@ MoroccoAPI is an independent community project. It is not affiliated with, endor
 
 ## Current API
 
-The current pre-alpha release intentionally starts small:
+The current local pre-alpha build includes:
 
 - Morocco's 12 administrative regions.
+- An HCP-sourced normalization of 75 provinces/prefectures and 1,539 communes.
 - Arabic and French source labels, plus clearly identified MoroccoAPI English transliterations.
-- Per-response source, license, and freshness metadata.
+- Per-response source, license, freshness, or pending-review metadata.
 - Multilingual, accent-insensitive region search.
 - OpenAPI documentation and a health endpoint.
 
@@ -33,13 +34,22 @@ Available endpoints:
 ```text
 GET /api/v1/regions
 GET /api/v1/regions/{code}
+GET /api/v1/provinces
+GET /api/v1/provinces/{code}
+GET /api/v1/communes
+GET /api/v1/communes/{code}
 GET /api/v1/locations/search?q={query}
 GET /api/v1/status
 GET /openapi.json
 GET /docs
 ```
 
-Provinces, prefectures, and communes remain planned until suitable sources complete the same license and provenance review. Later releases may include public educational and healthcare facilities under the same rule.
+The province/prefecture and commune endpoints are built from data obtained from
+the Haut-Commissariat au Plan (HCP) on 2026-09-24. Their responses identify HCP
+as the producer and expose the retrieval date. The source URL and license remain
+`null` with `review_status: "pending"` until those details are documented.
+Later releases may include public educational and healthcare facilities under
+the same rule.
 
 ## Run locally
 
