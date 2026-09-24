@@ -64,6 +64,98 @@ describe("MoroccoAPI", () => {
     assert.equal(response.json().error.code, "RESOURCE_NOT_FOUND");
   });
 
+  it("returns all 75 provinces and prefectures with unique codes", async () => {
+    const response = await app.inject({ method: "GET", url: "/api/v1/provinces" });
+    assert.equal(response.statusCode, 200);
+
+    const body = response.json();
+    assert.equal(body.data.length, 75);
+    assert.equal(body.meta.total, 75);
+    assert.equal(body.meta.license, null);
+    assert.equal(body.meta.retrieved_at, "2026-09-24");
+    assert.equal(body.meta.review_status, "pending");
+    assert.equal(
+      body.meta.sources[0].producer,
+      "Haut-Commissariat au Plan (HCP)",
+    );
+
+    const codes = body.data.map((province: { code: string }) => province.code);
+    assert.equal(new Set(codes).size, 75);
+  });
+
+  it("returns one province by code", async () => {
+    const response = await app.inject({
+      method: "GET",
+      url: "/api/v1/provinces/azilal",
+    });
+    assert.equal(response.statusCode, 200);
+
+    const body = response.json();
+    assert.equal(body.data.name.fr, "Azilal");
+    assert.equal(body.data.name.ar, null);
+    assert.equal(body.data.region_code, "beni-mellal-khenifra");
+    assert.equal(body.meta.total, 1);
+  });
+
+  it("returns a stable error when a province is missing", async () => {
+    const response = await app.inject({
+      method: "GET",
+      url: "/api/v1/provinces/unknown-province",
+    });
+    assert.equal(response.statusCode, 404);
+    assert.equal(response.json().error.code, "RESOURCE_NOT_FOUND");
+  });
+
+  it("returns all 1539 communes with unique composite codes", async () => {
+    const response = await app.inject({ method: "GET", url: "/api/v1/communes" });
+    assert.equal(response.statusCode, 200);
+
+    const body = response.json();
+    assert.equal(body.data.length, 1539);
+    assert.equal(body.meta.total, 1539);
+    assert.equal(body.meta.license, null);
+    assert.equal(body.meta.retrieved_at, "2026-09-24");
+    assert.equal(body.meta.review_status, "pending");
+
+    const codes = body.data.map((commune: { code: string }) => commune.code);
+    assert.equal(new Set(codes).size, 1539);
+
+    const ouladAissa = body.data.filter(
+      (commune: { name: { fr: string } }) => commune.name.fr === "Oulad Aissa",
+    );
+    assert.deepEqual(
+      ouladAissa.map((commune: { code: string }) => commune.code).sort(),
+      [
+        "el-jadida--oulad-aissa",
+        "khouribga--oulad-aissa",
+        "taroudannt--oulad-aissa",
+      ],
+    );
+  });
+
+  it("returns one commune by its province-qualified code", async () => {
+    const response = await app.inject({
+      method: "GET",
+      url: "/api/v1/communes/azilal--afourar",
+    });
+    assert.equal(response.statusCode, 200);
+
+    const body = response.json();
+    assert.equal(body.data.name.fr, "Afourar");
+    assert.equal(body.data.province_code, "azilal");
+    assert.equal(body.data.region_code, "beni-mellal-khenifra");
+    assert.equal(body.meta.total, 1);
+  });
+
+  it("returns a stable error when a commune is missing", async () => {
+    const response = await app.inject({
+      method: "GET",
+      url: "/api/v1/communes/azilal--unknown-commune",
+    });
+    assert.equal(response.statusCode, 404);
+    assert.equal(response.json().error.code, "RESOURCE_NOT_FOUND");
+  });
+
   it("searches names without requiring French accents", async () => {
     const response = await app.inject({
       method: "GET",
@@ -121,6 +213,10 @@ describe("MoroccoAPI", () => {
     const body = response.json();
     assert.equal(body.info.title, "MoroccoAPI");
     assert.ok(body.paths["/api/v1/regions"]);
+    assert.ok(body.paths["/api/v1/provinces"]);
+    assert.ok(body.paths["/api/v1/provinces/{code}"]);
+    assert.ok(body.paths["/api/v1/communes"]);
+    assert.ok(body.paths["/api/v1/communes/{code}"]);
     assert.ok(body.paths["/api/v1/locations/search"]);
   });
 
