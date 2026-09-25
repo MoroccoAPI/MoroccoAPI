@@ -1,110 +1,122 @@
 [
   {
     "code": "tanger-tetouan-al-hoceima",
+    "hcp_code": "01",
     "type": "region",
     "name": {
-      "ar": "طنجة - تطوان - الحسيمة",
-      "fr": "Tanger-Tétouan-Al Hoceïma",
+      "ar": "طنجة-تطوان-الحسيمة",
+      "fr": "Tanger-Tétouan-Al Hoceima",
       "en": "Tanger-Tetouan-Al Hoceima"
     }
   },
   {
-    "code": "dakhla-oued-ed-dahab",
-    "type": "region",
-    "name": {
-      "ar": "الداخلة - واد الذهب",
-      "fr": "Dakhla-Oued Ed Dahab",
-      "en": "Dakhla-Oued Ed-Dahab"
-    }
-  },
-  {
-    "code": "guelmim-oued-noun",
-    "type": "region",
-    "name": {
-      "ar": "كلميم - واد نون",
-      "fr": "Guelmim-Oued Noun",
-      "en": "Guelmim-Oued Noun"
-    }
-  },
-  {
-    "code": "draa-tafilalet",
-    "type": "region",
-    "name": {
-      "ar": "درعة - تافيلالت",
-      "fr": "Drâa-Tafilalet",
-      "en": "Draa-Tafilalet"
-    }
-  },
-  {
-    "code": "beni-mellal-khenifra",
-    "type": "region",
-    "name": {
-      "ar": "بني ملال - خنيفرة",
-      "fr": "Béni Mellal-Khénifra",
-      "en": "Beni Mellal-Khenifra"
-    }
-  },
-  {
     "code": "oriental",
+    "hcp_code": "02",
     "type": "region",
     "name": {
       "ar": "الشرق",
-      "fr": "L'Oriental",
+      "fr": "Oriental",
       "en": "Oriental"
     }
   },
   {
-    "code": "laayoune-sakia-el-hamra",
-    "type": "region",
-    "name": {
-      "ar": "العيون - الساقية الحمراء",
-      "fr": "Laâyoune-Sakia El Hamra",
-      "en": "Laayoune-Sakia El Hamra"
-    }
-  },
-  {
     "code": "fes-meknes",
+    "hcp_code": "03",
     "type": "region",
     "name": {
-      "ar": "فاس - مكناس",
+      "ar": "فاس-مكناس",
       "fr": "Fès-Meknès",
       "en": "Fes-Meknes"
     }
   },
   {
-    "code": "souss-massa",
-    "type": "region",
-    "name": {
-      "ar": "سوس - ماسة",
-      "fr": "Souss-Massa",
-      "en": "Souss-Massa"
-    }
-  },
-  {
-    "code": "casablanca-settat",
-    "type": "region",
-    "name": {
-      "ar": "الدار البيضاء - سطات",
-      "fr": "Casablanca-Settat",
-      "en": "Casablanca-Settat"
-    }
-  },
-  {
     "code": "rabat-sale-kenitra",
+    "hcp_code": "04",
     "type": "region",
     "name": {
-      "ar": "الرباط - سلا - القنيطرة",
+      "ar": "الرباط-سلا-القنيطرة",
       "fr": "Rabat-Salé-Kénitra",
       "en": "Rabat-Sale-Kenitra"
     }
   },
   {
-    "code": "marrakech-safi",
+    "code": "beni-mellal-khenifra",
+    "hcp_code": "05",
     "type": "region",
     "name": {
-      "ar": "مراكش - آسفي",
+      "ar": "بني ملال-خنيفرة",
+      "fr": "Béni Mellal-Khénifra",
+      "en": "Beni Mellal-Khenifra"
+    }
+  },
+  {
+    "code": "casablanca-settat",
+    "hcp_code": "06",
+    "type": "region",
+    "name": {
+      "ar": "الدار البيضاء-سطات",
+      "fr": "Casablanca-Settat",
+      "en": "Casablanca-Settat"
+    }
+  },
+  {
+    "code": "marrakech-safi",
+    "hcp_code": "07",
+    "type": "region",
+    "name": {
+      "ar": "مراكش-آسفي",
       "fr": "Marrakech-Safi",
       "en": "Marrakech-Safi"
+    }
+  },
+  {
+    "code": "draa-tafilalet",
+    "hcp_code": "08",
+    "type": "region",
+    "name": {
+      "ar": "درعة-تافيلالت",
+      "fr": "Drâa-Tafilalet",
+      "en": "Draa-Tafilalet"
+    }
+  },
+  {
+    "code": "souss-massa",
+    "hcp_code": "09",
+    "type": "region",
+    "name": {
+      "ar": "سوس-ماسة",
+      "fr": "Souss-Massa",
+      "en": "Souss-Massa"
+    }
+  },
+  {
+    "code": "guelmim-oued-noun",
+    "hcp_code": "10",
+    "type": "region",
+    "name": {
+      "ar": "كلميم-واد نون",
+      "fr": "Guelmim-Oued Noun",
+      "en": "Guelmim-Oued Noun"
+    }
+  },
+  {
+    "code": "laayoune-sakia-el-hamra",
+    "hcp_code": "11",
+    "type": "region",
+    "name": {
+      "ar": "العيون-الساقية الحمراء",
+      "fr": "Laâyoune-Sakia El Hamra",
+      "en": "Laayoune-Sakia El Hamra"
+    }
+  },
+  {
+    "code": "dakhla-oued-ed-dahab",
+    "hcp_code": "12",
+    "type": "region",
+    "name": {
+      "ar": "الداخلة-وادي الذهب",
+      "fr": "Dakhla-Oued Ed-Dahab",
+      "en": "Dakhla-Oued Ed-Dahab"
     }
   }
 ]

@@ -1,0 +1,37 @@
+id: administrative-subdivisions
+title: Morocco provinces, prefectures, prefectures of arrondissements, communes, and arrondissements (RGPH 2024)
+version: 3.0.0
+retrieved_at: 2026-09-26
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/
+terms_url: https://www.hcp.ma/Conditions-generales-d-utilisation-Version-1-0_a2194.html
+contains_personal_data: false
+redistribution_review: approved
+
+sources:
+  - language_fields: [ar, fr]
+    dataset: Population légale du Royaume du Maroc selon les résultats du RGPH 2024
+    producer: Haut-Commissariat au Plan (HCP)
+    catalog_url: https://www.hcp.ma/Population-legale-du-Royaume-du-Maroc-repartie-par-regions-provinces-et-prefectures-et-communes-selon-les-resultats-du_a3975.html
+    resource_url: https://www.hcp.ma/file/242341/
+    source_updated_at: 2024-11-22
+    source_license: CC-BY-4.0
+    sha256: 7e9d3d402cc2fd0d9c4fc941c4f23c6a5e5ddcbefbba80b7540267f8e2728dca
+
+transformations:
+  - Selected 75 top-level provinces/prefectures, 8 prefectures of arrondissements, 1,503 communes, and 41 arrondissements.
+  - Preserved every selected unit's HCP code in `hcp_code`.
+  - Preserved HCP's French and Arabic names for every selected unit.
+  - Distinguished 62 provinces from 13 prefectures in `administrative_type`.
+  - Stored prefectures of arrondissements separately and linked Casablanca's arrondissements to them.
+  - Stored arrondissements separately and linked each to its parent commune.
+  - Preserved each commune's RGPH 2024 parent cercle code in `cercle_hcp_code` when present.
+  - Retained stable, province-qualified MoroccoAPI slugs in `code`.
+
+limitations:
+  - English subdivision names are unavailable from this HCP source and remain null.
+  - MoroccoAPI slugs are not official administrative codes.
+  - This snapshot reflects the administrative division used by RGPH 2024.
+  - Cercles are not published as a standalone dataset because their legal organization changed after RGPH 2024, including in 2025.
+  - Urban centres in the workbook are statistical units and are outside this administrative API scope.
+  - The source follows Morocco's official territorial scope, including Moroccan-administered territory in Western Sahara.

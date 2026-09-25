@@ -1,37 +1,30 @@
 id: administrative-regions
-title: Morocco administrative regions
-version: 1.0.0
-retrieved_at: 2026-09-21
-license: ODbL-1.0
-license_url: https://opendatacommons.org/licenses/odbl/1-0/
-update_frequency: unknown
+title: Morocco administrative regions (RGPH 2024)
+version: 2.0.0
+retrieved_at: 2026-09-25
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/
+terms_url: https://www.hcp.ma/Conditions-generales-d-utilisation-Version-1-0_a2194.html
 contains_personal_data: false
 redistribution_review: approved
 
 sources:
-  - language_fields: [ar]
-    dataset: Répartition du personnel des administrations publiques selon les régions
-    producer: Ministère de la Transition Numérique et de la Réforme de l’Administration (MTNRA)
-    catalog_url: https://data.gov.ma/data/fr/dataset/repartition-du-personnel-des-administrations-publiques-selon-les-regions
-    resource_url: https://data.gov.ma/data/fr/dataset/5995a4d8-0a8a-4a29-9ba3-8ffd6264cb2f/resource/07555a6f-c648-4938-837d-46ce51908b8f/download/repartition-du-personnel-des-administrations-publiques-selon-les-regions.xlsx
-    source_updated_at: 2025-11-25
-    source_license: ODbL-1.0
-
-  - language_fields: [fr]
-    dataset: Unités d'habitat achevées par région et par catégorie 2016-2023
-    producer: Ministère de l’Aménagement du Territoire National, de l’Urbanisme, de l’Habitat et de la Politique de la Ville (MATNUHPV)
-    catalog_url: https://data.gov.ma/data/fr/dataset/unites-d-habitat-achevees-par-region-et-par-categorie-2016-2020
-    resource_url: https://data.gov.ma/data/fr/dataset/9a92d8bd-34c9-4ce7-9995-b9acbd83e671/resource/00fabe8e-0675-4779-9417-3bc6e721677a/download/unites-dhabitat-achevees-par-region-et-par-categorie-2016-2023.xlsx
-    source_updated_at: 2024-10-30
-    source_license: ODbL-1.0
+  - language_fields: [ar, fr]
+    dataset: Population légale du Royaume du Maroc selon les résultats du RGPH 2024
+    producer: Haut-Commissariat au Plan (HCP)
+    catalog_url: https://www.hcp.ma/Population-legale-du-Royaume-du-Maroc-repartie-par-regions-provinces-et-prefectures-et-communes-selon-les-resultats-du_a3975.html
+    resource_url: https://www.hcp.ma/file/242341/
+    source_updated_at: 2024-11-22
+    source_license: CC-BY-4.0
+    sha256: 7e9d3d402cc2fd0d9c4fc941c4f23c6a5e5ddcbefbba80b7540267f8e2728dca
 
 transformations:
-  - Selected the 12 region labels from each source workbook.
-  - Removed the Arabic prefix "جهة" and normalized dash spacing.
-  - Matched Arabic and French records by region name.
-  - Created stable MoroccoAPI slug identifiers; these are not official administrative codes.
-  - Added English transliterations maintained by MoroccoAPI; these are not official source translations.
+  - Selected the 12 region records.
+  - Preserved HCP's code in `hcp_code` and its French and Arabic names.
+  - Retained MoroccoAPI slugs and English transliterations.
 
 limitations:
-  - This snapshot contains regions only; it does not include provinces, prefectures, or communes.
-  - The API is a community service and is not a source of legal or administrative authority.
+  - English names are MoroccoAPI transliterations, not HCP source fields.
+  - MoroccoAPI slugs are not official administrative codes.
+  - This snapshot reflects the administrative division used by RGPH 2024.
+  - The source follows Morocco's official territorial scope, including Moroccan-administered territory in Western Sahara.

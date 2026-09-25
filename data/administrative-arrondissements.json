@@ -1,0 +1,576 @@
+[
+  {
+    "code": "casablanca--ain-chock",
+    "hcp_code": "06.141.01.41",
+    "type": "arrondissement",
+    "name": {
+      "ar": "عين الشق",
+      "fr": "Aïn-Chock",
+      "en": null
+    },
+    "commune_code": "casablanca--casablanca",
+    "prefecture_of_arrondissements_code": "casablanca--prefecture-of-arrondissements--ain-chock",
+    "province_code": "casablanca",
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "casablanca--ain-sebaa",
+    "hcp_code": "06.141.01.21",
+    "type": "arrondissement",
+    "name": {
+      "ar": "عين السبع",
+      "fr": "Aïn-Sebaâ",
+      "en": null
+    },
+    "commune_code": "casablanca--casablanca",
+    "prefecture_of_arrondissements_code": "casablanca--prefecture-of-arrondissements--ain-sebaa-hay-mohammadi",
+    "province_code": "casablanca",
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "casablanca--al-fida",
+    "hcp_code": "06.141.01.11",
+    "type": "arrondissement",
+    "name": {
+      "ar": "الفداء",
+      "fr": "Al-Fida",
+      "en": null
+    },
+    "commune_code": "casablanca--casablanca",
+    "prefecture_of_arrondissements_code": "casablanca--prefecture-of-arrondissements--al-fida-mers-sultan",
+    "province_code": "casablanca",
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "casablanca--anfa",
+    "hcp_code": "06.141.01.01",
+    "type": "arrondissement",
+    "name": {
+      "ar": "أنفا",
+      "fr": "Anfa",
+      "en": null
+    },
+    "commune_code": "casablanca--casablanca",
+    "prefecture_of_arrondissements_code": "casablanca--prefecture-of-arrondissements--casablanca-anfa",
+    "province_code": "casablanca",
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "casablanca--asoukhour-assawda",
+    "hcp_code": "06.141.01.23",
+    "type": "arrondissement",
+    "name": {
+      "ar": "الصخور السوداء",
+      "fr": "Asoukhour Assawda",
+      "en": null
+    },
+    "commune_code": "casablanca--casablanca",
+    "prefecture_of_arrondissements_code": "casablanca--prefecture-of-arrondissements--ain-sebaa-hay-mohammadi",
+    "province_code": "casablanca",
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "casablanca--ben-m-sick",
+    "hcp_code": "06.141.01.61",
+    "type": "arrondissement",
+    "name": {
+      "ar": "ابن مسيك",
+      "fr": "Ben-M'sick",
+      "en": null
+    },
+    "commune_code": "casablanca--casablanca",
+    "prefecture_of_arrondissements_code": "casablanca--prefecture-of-arrondissements--ben-msick",
+    "province_code": "casablanca",
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "casablanca--hay-hassani",
+    "hcp_code": "06.141.01.31",
+    "type": "arrondissement",
+    "name": {
+      "ar": "الحي الحسني",
+      "fr": "Hay-Hassani",
+      "en": null
+    },
+    "commune_code": "casablanca--casablanca",
+    "prefecture_of_arrondissements_code": "casablanca--prefecture-of-arrondissements--hay-hassani",
+    "province_code": "casablanca",
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "casablanca--hay-mohammadi",
+    "hcp_code": "06.141.01.25",
+    "type": "arrondissement",
+    "name": {
+      "ar": "الحي المحمدي",
+      "fr": "Hay-Mohammadi",
+      "en": null
+    },
+    "commune_code": "casablanca--casablanca",
+    "prefecture_of_arrondissements_code": "casablanca--prefecture-of-arrondissements--ain-sebaa-hay-mohammadi",
+    "province_code": "casablanca",
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "casablanca--maarif",
+    "hcp_code": "06.141.01.03",
+    "type": "arrondissement",
+    "name": {
+      "ar": "المعاريف",
+      "fr": "Maârif",
+      "en": null
+    },
+    "commune_code": "casablanca--casablanca",
+    "prefecture_of_arrondissements_code": "casablanca--prefecture-of-arrondissements--casablanca-anfa",
+    "province_code": "casablanca",
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "casablanca--mers-sultan",
+    "hcp_code": "06.141.01.13",
+    "type": "arrondissement",
+    "name": {
+      "ar": "مرس السلطان",
+      "fr": "Mers-Sultan",
+      "en": null
+    },
+    "commune_code": "casablanca--casablanca",
+    "prefecture_of_arrondissements_code": "casablanca--prefecture-of-arrondissements--al-fida-mers-sultan",
+    "province_code": "casablanca",
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "casablanca--moulay-rachid",
+    "hcp_code": "06.141.01.71",
+    "type": "arrondissement",
+    "name": {
+      "ar": "مولاي رشيد",
+      "fr": "Moulay Rachid",
+      "en": null
+    },
+    "commune_code": "casablanca--casablanca",
+    "prefecture_of_arrondissements_code": "casablanca--prefecture-of-arrondissements--moulay-rachid",
+    "province_code": "casablanca",
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "casablanca--sbata",
+    "hcp_code": "06.141.01.63",
+    "type": "arrondissement",
+    "name": {
+      "ar": "سباتة",
+      "fr": "Sbata",
+      "en": null
+    },
+    "commune_code": "casablanca--casablanca",
+    "prefecture_of_arrondissements_code": "casablanca--prefecture-of-arrondissements--ben-msick",
+    "province_code": "casablanca",
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "casablanca--sidi-belyout",
+    "hcp_code": "06.141.01.07",
+    "type": "arrondissement",
+    "name": {
+      "ar": "سيدي بليوط",
+      "fr": "Sidi Belyout",
+      "en": null
+    },
+    "commune_code": "casablanca--casablanca",
+    "prefecture_of_arrondissements_code": "casablanca--prefecture-of-arrondissements--casablanca-anfa",
+    "province_code": "casablanca",
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "casablanca--sidi-bernoussi",
+    "hcp_code": "06.141.01.51",
+    "type": "arrondissement",
+    "name": {
+      "ar": "سيدي البرنوصي",
+      "fr": "Sidi Bernoussi",
+      "en": null
+    },
+    "commune_code": "casablanca--casablanca",
+    "prefecture_of_arrondissements_code": "casablanca--prefecture-of-arrondissements--sidi-bernoussi",
+    "province_code": "casablanca",
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "casablanca--sidi-moumen",
+    "hcp_code": "06.141.01.53",
+    "type": "arrondissement",
+    "name": {
+      "ar": "سيدي مومن",
+      "fr": "Sidi Moumen",
+      "en": null
+    },
+    "commune_code": "casablanca--casablanca",
+    "prefecture_of_arrondissements_code": "casablanca--prefecture-of-arrondissements--sidi-bernoussi",
+    "province_code": "casablanca",
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "casablanca--sidi-othmane",
+    "hcp_code": "06.141.01.73",
+    "type": "arrondissement",
+    "name": {
+      "ar": "سيدي عثمان",
+      "fr": "Sidi Othmane",
+      "en": null
+    },
+    "commune_code": "casablanca--casablanca",
+    "prefecture_of_arrondissements_code": "casablanca--prefecture-of-arrondissements--moulay-rachid",
+    "province_code": "casablanca",
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "fes--agdal",
+    "hcp_code": "03.231.01.01",
+    "type": "arrondissement",
+    "name": {
+      "ar": "أكدال",
+      "fr": "Agdal",
+      "en": null
+    },
+    "commune_code": "fes--fes",
+    "prefecture_of_arrondissements_code": null,
+    "province_code": "fes",
+    "region_code": "fes-meknes"
+  },
+  {
+    "code": "fes--el-mariniyine",
+    "hcp_code": "03.231.01.11",
+    "type": "arrondissement",
+    "name": {
+      "ar": "المرينيين",
+      "fr": "El Mariniyine",
+      "en": null
+    },
+    "commune_code": "fes--fes",
+    "prefecture_of_arrondissements_code": null,
+    "province_code": "fes",
+    "region_code": "fes-meknes"
+  },
+  {
+    "code": "fes--fes-medina",
+    "hcp_code": "03.231.01.07",
+    "type": "arrondissement",
+    "name": {
+      "ar": "فاس المدينة",
+      "fr": "Fès-Médina",
+      "en": null
+    },
+    "commune_code": "fes--fes",
+    "prefecture_of_arrondissements_code": null,
+    "province_code": "fes",
+    "region_code": "fes-meknes"
+  },
+  {
+    "code": "fes--jnan-el-ouard",
+    "hcp_code": "03.231.01.09",
+    "type": "arrondissement",
+    "name": {
+      "ar": "جنان الورد",
+      "fr": "Jnan El Ouard",
+      "en": null
+    },
+    "commune_code": "fes--fes",
+    "prefecture_of_arrondissements_code": null,
+    "province_code": "fes",
+    "region_code": "fes-meknes"
+  },
+  {
+    "code": "fes--saiss",
+    "hcp_code": "03.231.01.05",
+    "type": "arrondissement",
+    "name": {
+      "ar": "سايس",
+      "fr": "Saiss",
+      "en": null
+    },
+    "commune_code": "fes--fes",
+    "prefecture_of_arrondissements_code": null,
+    "province_code": "fes",
+    "region_code": "fes-meknes"
+  },
+  {
+    "code": "fes--zouagha",
+    "hcp_code": "03.231.01.13",
+    "type": "arrondissement",
+    "name": {
+      "ar": "زواغة",
+      "fr": "Zouagha",
+      "en": null
+    },
+    "commune_code": "fes--fes",
+    "prefecture_of_arrondissements_code": null,
+    "province_code": "fes",
+    "region_code": "fes-meknes"
+  },
+  {
+    "code": "marrakech--annakhil",
+    "hcp_code": "07.351.01.03",
+    "type": "arrondissement",
+    "name": {
+      "ar": "النخيل",
+      "fr": "Annakhil",
+      "en": null
+    },
+    "commune_code": "marrakech--marrakech",
+    "prefecture_of_arrondissements_code": null,
+    "province_code": "marrakech",
+    "region_code": "marrakech-safi"
+  },
+  {
+    "code": "marrakech--gueliz",
+    "hcp_code": "07.351.01.05",
+    "type": "arrondissement",
+    "name": {
+      "ar": "جيليز",
+      "fr": "Gueliz",
+      "en": null
+    },
+    "commune_code": "marrakech--marrakech",
+    "prefecture_of_arrondissements_code": null,
+    "province_code": "marrakech",
+    "region_code": "marrakech-safi"
+  },
+  {
+    "code": "marrakech--marrakech-medina",
+    "hcp_code": "07.351.01.07",
+    "type": "arrondissement",
+    "name": {
+      "ar": "مراكش المدينة",
+      "fr": "Marrakech-Médina",
+      "en": null
+    },
+    "commune_code": "marrakech--marrakech",
+    "prefecture_of_arrondissements_code": null,
+    "province_code": "marrakech",
+    "region_code": "marrakech-safi"
+  },
+  {
+    "code": "marrakech--menara",
+    "hcp_code": "07.351.01.09",
+    "type": "arrondissement",
+    "name": {
+      "ar": "المنارة",
+      "fr": "Ménara",
+      "en": null
+    },
+    "commune_code": "marrakech--marrakech",
+    "prefecture_of_arrondissements_code": null,
+    "province_code": "marrakech",
+    "region_code": "marrakech-safi"
+  },
+  {
+    "code": "marrakech--sidi-youssef-ben-ali",
+    "hcp_code": "07.351.01.11",
+    "type": "arrondissement",
+    "name": {
+      "ar": "سيدي يوسف بن علي",
+      "fr": "Sidi Youssef Ben Ali",
+      "en": null
+    },
+    "commune_code": "marrakech--marrakech",
+    "prefecture_of_arrondissements_code": null,
+    "province_code": "marrakech",
+    "region_code": "marrakech-safi"
+  },
+  {
+    "code": "rabat--agdal-riyad",
+    "hcp_code": "04.421.01.01",
+    "type": "arrondissement",
+    "name": {
+      "ar": "أكدال الرياض",
+      "fr": "Agdal Riyad",
+      "en": null
+    },
+    "commune_code": "rabat--rabat",
+    "prefecture_of_arrondissements_code": null,
+    "province_code": "rabat",
+    "region_code": "rabat-sale-kenitra"
+  },
+  {
+    "code": "rabat--el-youssoufia",
+    "hcp_code": "04.421.01.03",
+    "type": "arrondissement",
+    "name": {
+      "ar": "اليوسفية",
+      "fr": "El Youssoufia",
+      "en": null
+    },
+    "commune_code": "rabat--rabat",
+    "prefecture_of_arrondissements_code": null,
+    "province_code": "rabat",
+    "region_code": "rabat-sale-kenitra"
+  },
+  {
+    "code": "rabat--hassan",
+    "hcp_code": "04.421.01.05",
+    "type": "arrondissement",
+    "name": {
+      "ar": "حسان",
+      "fr": "Hassan",
+      "en": null
+    },
+    "commune_code": "rabat--rabat",
+    "prefecture_of_arrondissements_code": null,
+    "province_code": "rabat",
+    "region_code": "rabat-sale-kenitra"
+  },
+  {
+    "code": "rabat--souissi",
+    "hcp_code": "04.421.01.06",
+    "type": "arrondissement",
+    "name": {
+      "ar": "السويسي",
+      "fr": "Souissi",
+      "en": null
+    },
+    "commune_code": "rabat--rabat",
+    "prefecture_of_arrondissements_code": null,
+    "province_code": "rabat",
+    "region_code": "rabat-sale-kenitra"
+  },
+  {
+    "code": "rabat--yacoub-el-mansour",
+    "hcp_code": "04.421.01.09",
+    "type": "arrondissement",
+    "name": {
+      "ar": "يعقوب المنصور",
+      "fr": "Yacoub El Mansour",
+      "en": null
+    },
+    "commune_code": "rabat--rabat",
+    "prefecture_of_arrondissements_code": null,
+    "province_code": "rabat",
+    "region_code": "rabat-sale-kenitra"
+  },
+  {
+    "code": "sale--bab-lamrissa",
+    "hcp_code": "04.441.01.03",
+    "type": "arrondissement",
+    "name": {
+      "ar": "باب لمريسة",
+      "fr": "Bab Lamrissa",
+      "en": null
+    },
+    "commune_code": "sale--sale",
+    "prefecture_of_arrondissements_code": null,
+    "province_code": "sale",
+    "region_code": "rabat-sale-kenitra"
+  },
+  {
+    "code": "sale--bettana",
+    "hcp_code": "04.441.01.05",
+    "type": "arrondissement",
+    "name": {
+      "ar": "بطانة",
+      "fr": "Bettana",
+      "en": null
+    },
+    "commune_code": "sale--sale",
+    "prefecture_of_arrondissements_code": null,
+    "province_code": "sale",
+    "region_code": "rabat-sale-kenitra"
+  },
+  {
+    "code": "sale--hssaine",
+    "hcp_code": "04.441.01.06",
+    "type": "arrondissement",
+    "name": {
+      "ar": "حصين",
+      "fr": "Hssaine",
+      "en": null
+    },
+    "commune_code": "sale--sale",
+    "prefecture_of_arrondissements_code": null,
+    "province_code": "sale",
+    "region_code": "rabat-sale-kenitra"
+  },
+  {
+    "code": "sale--layayda",
+    "hcp_code": "04.441.01.07",
+    "type": "arrondissement",
+    "name": {
+      "ar": "العيايدة",
+      "fr": "Layayda",
+      "en": null
+    },
+    "commune_code": "sale--sale",
+    "prefecture_of_arrondissements_code": null,
+    "province_code": "sale",
+    "region_code": "rabat-sale-kenitra"
+  },
+  {
+    "code": "sale--tabriquet",
+    "hcp_code": "04.441.01.09",
+    "type": "arrondissement",
+    "name": {
+      "ar": "تابريكت",
+      "fr": "Tabriquet",
+      "en": null
+    },
+    "commune_code": "sale--sale",
+    "prefecture_of_arrondissements_code": null,
+    "province_code": "sale",
+    "region_code": "rabat-sale-kenitra"
+  },
+  {
+    "code": "tanger-assilah--bni-makada",
+    "hcp_code": "01.511.01.03",
+    "type": "arrondissement",
+    "name": {
+      "ar": "بني مكادة",
+      "fr": "Bni Makada",
+      "en": null
+    },
+    "commune_code": "tanger-assilah--tanger",
+    "prefecture_of_arrondissements_code": null,
+    "province_code": "tanger-assilah",
+    "region_code": "tanger-tetouan-al-hoceima"
+  },
+  {
+    "code": "tanger-assilah--medina",
+    "hcp_code": "01.511.01.07",
+    "type": "arrondissement",
+    "name": {
+      "ar": "المدينة",
+      "fr": "Médina",
+      "en": null
+    },
+    "commune_code": "tanger-assilah--tanger",
+    "prefecture_of_arrondissements_code": null,
+    "province_code": "tanger-assilah",
+    "region_code": "tanger-tetouan-al-hoceima"
+  },
+  {
+    "code": "tanger-assilah--mghogha",
+    "hcp_code": "01.511.01.05",
+    "type": "arrondissement",
+    "name": {
+      "ar": "مغوغة",
+      "fr": "Mghogha",
+      "en": null
+    },
+    "commune_code": "tanger-assilah--tanger",
+    "prefecture_of_arrondissements_code": null,
+    "province_code": "tanger-assilah",
+    "region_code": "tanger-tetouan-al-hoceima"
+  },
+  {
+    "code": "tanger-assilah--souani",
+    "hcp_code": "01.511.01.06",
+    "type": "arrondissement",
+    "name": {
+      "ar": "السواني",
+      "fr": "Souani",
+      "en": null
+    },
+    "commune_code": "tanger-assilah--tanger",
+    "prefecture_of_arrondissements_code": null,
+    "province_code": "tanger-assilah",
+    "region_code": "tanger-tetouan-al-hoceima"
+  }
+]

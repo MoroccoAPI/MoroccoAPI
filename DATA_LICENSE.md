@@ -16,11 +16,24 @@ MoroccoAPI does not claim ownership of third-party data and does not relicense d
 
 ## Administrative regions database
 
-The database in `data/administrative-regions.json` combines region labels from two datasets published by Moroccan public bodies on `data.gov.ma` under ODbL-1.0. It is redistributed under ODbL-1.0.
+The database in `data/administrative-regions.json` is adapted from HCP's
+official RGPH 2024 legal-population workbook under CC BY 4.0 terms.
 
-English labels are MoroccoAPI transliterations and are not represented as official source translations. MoroccoAPI slug identifiers are internal identifiers and are not official administrative codes.
+French and Arabic labels and `hcp_code` values come from HCP. English labels are
+MoroccoAPI transliterations and are not official source translations.
 
 Full provenance, direct resource URLs, retrieval dates, and transformations are recorded in `sources/administrative-regions.yml`.
+
+## HCP administrative subdivisions
+
+`data/administrative-provinces.json`,
+`data/administrative-prefectures-of-arrondissements.json`,
+`data/administrative-communes.json`, and
+`data/administrative-arrondissements.json` are adapted from the same HCP RGPH
+2024 source under CC BY 4.0 terms. All records preserve HCP's official code and
+Arabic/French names. Each administrative level is stored separately.
+
+Full provenance is recorded in `sources/administrative-subdivisions.yml`.
 
 ## Attribution format
 

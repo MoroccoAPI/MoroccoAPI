@@ -1,9 +1,11 @@
 [
   {
     "code": "agadir-ida-ou-tanane",
+    "hcp_code": "09.001",
     "type": "province_or_prefecture",
+    "administrative_type": "prefecture",
     "name": {
-      "ar": null,
+      "ar": "أكادير-إدا وتنان",
       "fr": "Agadir-Ida-Ou-Tanane",
       "en": null
     },
@@ -11,9 +13,11 @@
   },
   {
     "code": "al-haouz",
+    "hcp_code": "07.041",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "الحوز",
       "fr": "Al Haouz",
       "en": null
     },
@@ -21,9 +25,11 @@
   },
   {
     "code": "al-hoceima",
+    "hcp_code": "01.051",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "الحسيمة",
       "fr": "Al Hoceima",
       "en": null
     },
@@ -31,9 +37,11 @@
   },
   {
     "code": "aousserd",
+    "hcp_code": "12.066",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "أوسرد",
       "fr": "Aousserd",
       "en": null
     },
@@ -41,9 +49,11 @@
   },
   {
     "code": "assa-zag",
+    "hcp_code": "10.071",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "آسا-الزاك",
       "fr": "Assa-Zag",
       "en": null
     },
@@ -51,9 +61,11 @@
   },
   {
     "code": "azilal",
+    "hcp_code": "05.081",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "أزيلال",
       "fr": "Azilal",
       "en": null
     },
@@ -61,9 +73,11 @@
   },
   {
     "code": "beni-mellal",
+    "hcp_code": "05.091",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "بني ملال",
       "fr": "Béni Mellal",
       "en": null
     },
@@ -71,9 +85,11 @@
   },
   {
     "code": "benslimane",
+    "hcp_code": "06.111",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "بنسليمان",
       "fr": "Benslimane",
       "en": null
     },
@@ -81,9 +97,11 @@
   },
   {
     "code": "berkane",
+    "hcp_code": "02.113",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "بركان",
       "fr": "Berkane",
       "en": null
     },
@@ -91,9 +109,11 @@
   },
   {
     "code": "berrechid",
+    "hcp_code": "06.117",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "برشيد",
       "fr": "Berrechid",
       "en": null
     },
@@ -101,9 +121,11 @@
   },
   {
     "code": "boujdour",
+    "hcp_code": "11.121",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "بوجدور",
       "fr": "Boujdour",
       "en": null
     },
@@ -111,9 +133,11 @@
   },
   {
     "code": "boulemane",
+    "hcp_code": "03.131",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "بولمان",
       "fr": "Boulemane",
       "en": null
     },
@@ -121,9 +145,11 @@
   },
   {
     "code": "casablanca",
+    "hcp_code": "06.141",
     "type": "province_or_prefecture",
+    "administrative_type": "prefecture",
     "name": {
-      "ar": null,
+      "ar": "الدار البيضاء",
       "fr": "Casablanca",
       "en": null
     },
@@ -131,9 +157,11 @@
   },
   {
     "code": "chefchaouen",
+    "hcp_code": "01.151",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "شفشاون",
       "fr": "Chefchaouen",
       "en": null
     },
@@ -141,9 +169,11 @@
   },
   {
     "code": "chichaoua",
+    "hcp_code": "07.161",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "شيشاوة",
       "fr": "Chichaoua",
       "en": null
     },
@@ -151,9 +181,11 @@
   },
   {
     "code": "chtouka-ait-baha",
+    "hcp_code": "09.163",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "اشتوكة-آيت باها",
       "fr": "Chtouka-Aït Baha",
       "en": null
     },
@@ -161,9 +193,11 @@
   },
   {
     "code": "driouch",
+    "hcp_code": "02.167",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "الدريوش",
       "fr": "Driouch",
       "en": null
     },
@@ -171,9 +205,11 @@
   },
   {
     "code": "el-hajeb",
+    "hcp_code": "03.171",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "الحاجب",
       "fr": "El Hajeb",
       "en": null
     },
@@ -181,9 +217,11 @@
   },
   {
     "code": "el-jadida",
+    "hcp_code": "06.181",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "الجديدة",
       "fr": "El Jadida",
       "en": null
     },
@@ -191,9 +229,11 @@
   },
   {
     "code": "el-kelaa-des-sraghna",
+    "hcp_code": "07.191",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "قلعة السراغنة",
       "fr": "El Kelâa Des-Sraghna",
       "en": null
     },
@@ -201,9 +241,11 @@
   },
   {
     "code": "errachidia",
+    "hcp_code": "08.201",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "الرشيدية",
       "fr": "Errachidia",
       "en": null
     },
@@ -211,9 +253,11 @@
   },
   {
     "code": "es-semara",
+    "hcp_code": "11.221",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "السمارة",
       "fr": "Es-Semara",
       "en": null
     },
@@ -221,9 +265,11 @@
   },
   {
     "code": "essaouira",
+    "hcp_code": "07.211",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "الصويرة",
       "fr": "Essaouira",
       "en": null
     },
@@ -231,9 +277,11 @@
   },
   {
     "code": "fahs-anjra",
+    "hcp_code": "01.227",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "الفحص-أنجرة",
       "fr": "Fahs-Anjra",
       "en": null
     },
@@ -241,9 +289,11 @@
   },
   {
     "code": "fes",
+    "hcp_code": "03.231",
     "type": "province_or_prefecture",
+    "administrative_type": "prefecture",
     "name": {
-      "ar": null,
+      "ar": "فاس",
       "fr": "Fès",
       "en": null
     },
@@ -251,9 +301,11 @@
   },
   {
     "code": "figuig",
+    "hcp_code": "02.251",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "فجيج",
       "fr": "Figuig",
       "en": null
     },
@@ -261,9 +313,11 @@
   },
   {
     "code": "fquih-ben-salah",
+    "hcp_code": "05.255",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "الفقيه بن صالح",
       "fr": "Fquih Ben Salah",
       "en": null
     },
@@ -271,9 +325,11 @@
   },
   {
     "code": "guelmim",
+    "hcp_code": "10.261",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "كلميم",
       "fr": "Guelmim",
       "en": null
     },
@@ -281,9 +337,11 @@
   },
   {
     "code": "guercif",
+    "hcp_code": "02.265",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "جرسيف",
       "fr": "Guercif",
       "en": null
     },
@@ -291,9 +349,11 @@
   },
   {
     "code": "ifrane",
+    "hcp_code": "03.271",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "إفران",
       "fr": "Ifrane",
       "en": null
     },
@@ -301,9 +361,11 @@
   },
   {
     "code": "inezgane-ait-melloul",
+    "hcp_code": "09.273",
     "type": "province_or_prefecture",
+    "administrative_type": "prefecture",
     "name": {
-      "ar": null,
+      "ar": "إنزكان-آيت ملول",
       "fr": "Inezgane-Aït Melloul",
       "en": null
     },
@@ -311,9 +373,11 @@
   },
   {
     "code": "jerada",
+    "hcp_code": "02.275",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "جرادة",
       "fr": "Jerada",
       "en": null
     },
@@ -321,9 +385,11 @@
   },
   {
     "code": "kenitra",
+    "hcp_code": "04.281",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "القنيطرة",
       "fr": "Kénitra",
       "en": null
     },
@@ -331,9 +397,11 @@
   },
   {
     "code": "khemisset",
+    "hcp_code": "04.291",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "الخميسات",
       "fr": "Khémisset",
       "en": null
     },
@@ -341,9 +409,11 @@
   },
   {
     "code": "khenifra",
+    "hcp_code": "05.301",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "خنيفرة",
       "fr": "Khénifra",
       "en": null
     },
@@ -351,9 +421,11 @@
   },
   {
     "code": "khouribga",
+    "hcp_code": "05.311",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "خريبكة",
       "fr": "Khouribga",
       "en": null
     },
@@ -361,9 +433,11 @@
   },
   {
     "code": "laayoune",
+    "hcp_code": "11.321",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "العيون",
       "fr": "Laâyoune",
       "en": null
     },
@@ -371,9 +445,11 @@
   },
   {
     "code": "larache",
+    "hcp_code": "01.331",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "العرائش",
       "fr": "Larache",
       "en": null
     },
@@ -381,9 +457,11 @@
   },
   {
     "code": "m-diq-fnideq",
+    "hcp_code": "01.573",
     "type": "province_or_prefecture",
+    "administrative_type": "prefecture",
     "name": {
-      "ar": null,
+      "ar": "المضيق-الفنيدق",
       "fr": "M'diq-Fnideq",
       "en": null
     },
@@ -391,9 +469,11 @@
   },
   {
     "code": "marrakech",
+    "hcp_code": "07.351",
     "type": "province_or_prefecture",
+    "administrative_type": "prefecture",
     "name": {
-      "ar": null,
+      "ar": "مراكش",
       "fr": "Marrakech",
       "en": null
     },
@@ -401,9 +481,11 @@
   },
   {
     "code": "mediouna",
+    "hcp_code": "06.355",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "مديونة",
       "fr": "Médiouna",
       "en": null
     },
@@ -411,9 +493,11 @@
   },
   {
     "code": "meknes",
+    "hcp_code": "03.061",
     "type": "province_or_prefecture",
+    "administrative_type": "prefecture",
     "name": {
-      "ar": null,
+      "ar": "مكناس",
       "fr": "Meknès",
       "en": null
     },
@@ -421,9 +505,11 @@
   },
   {
     "code": "midelt",
+    "hcp_code": "08.363",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "ميدلت",
       "fr": "Midelt",
       "en": null
     },
@@ -431,9 +517,11 @@
   },
   {
     "code": "mohammadia",
+    "hcp_code": "06.371",
     "type": "province_or_prefecture",
+    "administrative_type": "prefecture",
     "name": {
-      "ar": null,
+      "ar": "المحمدية",
       "fr": "Mohammadia",
       "en": null
     },
@@ -441,9 +529,11 @@
   },
   {
     "code": "moulay-yacoub",
+    "hcp_code": "03.591",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "مولاي يعقوب",
       "fr": "Moulay Yacoub",
       "en": null
     },
@@ -451,9 +541,11 @@
   },
   {
     "code": "nador",
+    "hcp_code": "02.381",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "الناضور",
       "fr": "Nador",
       "en": null
     },
@@ -461,9 +553,11 @@
   },
   {
     "code": "nouaceur",
+    "hcp_code": "06.385",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "النواصر",
       "fr": "Nouaceur",
       "en": null
     },
@@ -471,9 +565,11 @@
   },
   {
     "code": "ouarzazate",
+    "hcp_code": "08.401",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "ورزازات",
       "fr": "Ouarzazate",
       "en": null
     },
@@ -481,9 +577,11 @@
   },
   {
     "code": "oued-ed-dahab",
+    "hcp_code": "12.391",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "وادي الذهب",
       "fr": "Oued Ed-Dahab",
       "en": null
     },
@@ -491,9 +589,11 @@
   },
   {
     "code": "ouezzane",
+    "hcp_code": "01.405",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "وزان",
       "fr": "Ouezzane",
       "en": null
     },
@@ -501,9 +601,11 @@
   },
   {
     "code": "oujda-angad",
+    "hcp_code": "02.411",
     "type": "province_or_prefecture",
+    "administrative_type": "prefecture",
     "name": {
-      "ar": null,
+      "ar": "وجدة-أنجاد",
       "fr": "Oujda-Angad",
       "en": null
     },
@@ -511,9 +613,11 @@
   },
   {
     "code": "rabat",
+    "hcp_code": "04.421",
     "type": "province_or_prefecture",
+    "administrative_type": "prefecture",
     "name": {
-      "ar": null,
+      "ar": "الرباط",
       "fr": "Rabat",
       "en": null
     },
@@ -521,9 +625,11 @@
   },
   {
     "code": "rehamna",
+    "hcp_code": "07.427",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "الرحامنة",
       "fr": "Rehamna",
       "en": null
     },
@@ -531,9 +637,11 @@
   },
   {
     "code": "safi",
+    "hcp_code": "07.431",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "آسفي",
       "fr": "Safi",
       "en": null
     },
@@ -541,9 +649,11 @@
   },
   {
     "code": "sale",
+    "hcp_code": "04.441",
     "type": "province_or_prefecture",
+    "administrative_type": "prefecture",
     "name": {
-      "ar": null,
+      "ar": "سلا",
       "fr": "Salé",
       "en": null
     },
@@ -551,9 +661,11 @@
   },
   {
     "code": "sefrou",
+    "hcp_code": "03.451",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "صفرو",
       "fr": "Sefrou",
       "en": null
     },
@@ -561,9 +673,11 @@
   },
   {
     "code": "settat",
+    "hcp_code": "06.461",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "سطات",
       "fr": "Settat",
       "en": null
     },
@@ -571,9 +685,11 @@
   },
   {
     "code": "sidi-bennour",
+    "hcp_code": "06.467",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "سيدي بنور",
       "fr": "Sidi Bennour",
       "en": null
     },
@@ -581,9 +697,11 @@
   },
   {
     "code": "sidi-ifni",
+    "hcp_code": "10.473",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "سيدي إفني",
       "fr": "Sidi Ifni",
       "en": null
     },
@@ -591,9 +709,11 @@
   },
   {
     "code": "sidi-kacem",
+    "hcp_code": "04.481",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "سيدي قاسم",
       "fr": "Sidi Kacem",
       "en": null
     },
@@ -601,9 +721,11 @@
   },
   {
     "code": "sidi-slimane",
+    "hcp_code": "04.491",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "سيدي سليمان",
       "fr": "Sidi Slimane",
       "en": null
     },
@@ -611,9 +733,11 @@
   },
   {
     "code": "skhirate-temara",
+    "hcp_code": "04.501",
     "type": "province_or_prefecture",
+    "administrative_type": "prefecture",
     "name": {
-      "ar": null,
+      "ar": "الصخيرات-تمارة",
       "fr": "Skhirate-Témara",
       "en": null
     },
@@ -621,9 +745,11 @@
   },
   {
     "code": "tan-tan",
+    "hcp_code": "10.521",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "طانطان",
       "fr": "Tan-Tan",
       "en": null
     },
@@ -631,9 +757,11 @@
   },
   {
     "code": "tanger-assilah",
+    "hcp_code": "01.511",
     "type": "province_or_prefecture",
+    "administrative_type": "prefecture",
     "name": {
-      "ar": null,
+      "ar": "طنجة-أصيلة",
       "fr": "Tanger-Assilah",
       "en": null
     },
@@ -641,9 +769,11 @@
   },
   {
     "code": "taounate",
+    "hcp_code": "03.531",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "تاونات",
       "fr": "Taounate",
       "en": null
     },
@@ -651,9 +781,11 @@
   },
   {
     "code": "taourirt",
+    "hcp_code": "02.533",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "تاوريرت",
       "fr": "Taourirt",
       "en": null
     },
@@ -661,9 +793,11 @@
   },
   {
     "code": "tarfaya",
+    "hcp_code": "11.537",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "طرفاية",
       "fr": "Tarfaya",
       "en": null
     },
@@ -671,9 +805,11 @@
   },
   {
     "code": "taroudannt",
+    "hcp_code": "09.541",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "تارودانت",
       "fr": "Taroudannt",
       "en": null
     },
@@ -681,9 +817,11 @@
   },
   {
     "code": "tata",
+    "hcp_code": "09.551",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "طاطا",
       "fr": "Tata",
       "en": null
     },
@@ -691,9 +829,11 @@
   },
   {
     "code": "taza",
+    "hcp_code": "03.561",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "تازة",
       "fr": "Taza",
       "en": null
     },
@@ -701,9 +841,11 @@
   },
   {
     "code": "tetouan",
+    "hcp_code": "01.571",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "تطوان",
       "fr": "Tétouan",
       "en": null
     },
@@ -711,9 +853,11 @@
   },
   {
     "code": "tinghir",
+    "hcp_code": "08.577",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "تنغير",
       "fr": "Tinghir",
       "en": null
     },
@@ -721,9 +865,11 @@
   },
   {
     "code": "tiznit",
+    "hcp_code": "09.581",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "تيزنيت",
       "fr": "Tiznit",
       "en": null
     },
@@ -731,9 +877,11 @@
   },
   {
     "code": "youssoufia",
+    "hcp_code": "07.585",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "اليوسفية",
       "fr": "Youssoufia",
       "en": null
     },
@@ -741,9 +889,11 @@
   },
   {
     "code": "zagora",
+    "hcp_code": "08.587",
     "type": "province_or_prefecture",
+    "administrative_type": "province",
     "name": {
-      "ar": null,
+      "ar": "زاكورة",
       "fr": "Zagora",
       "en": null
     },
