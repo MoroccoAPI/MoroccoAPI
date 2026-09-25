@@ -13,7 +13,8 @@ Publication was approved by the project owner on 2026-09-20. This checklist now 
 ## Scope
 
 - [x] Administrative geography approved as the MVP.
-- [x] Regions, provinces/prefectures, communes, search, and status endpoints approved.
+- [x] Regions, provinces/prefectures, prefectures of arrondissements, communes,
+  arrondissements, search, and status endpoints approved.
 - [x] Educational and healthcare facilities kept as later candidates.
 - [x] Personal-data lookup explicitly excluded.
 - [x] Real-time financial-market redistribution explicitly excluded.
@@ -24,6 +25,7 @@ Publication was approved by the project owner on 2026-09-20. This checklist now 
 - [x] ODbL-1.0 policy approved for adapted ODbL databases.
 - [x] CC BY 4.0 approved for documentation.
 - [x] Dataset-specific notices and separate licensing approved.
+- [x] HCP RGPH 2024 source and CC BY 4.0 reuse terms documented.
 
 ## Governance
 
@@ -37,7 +39,7 @@ Publication was approved by the project owner on 2026-09-20. This checklist now 
 - [x] TypeScript and Fastify selected for the first implementation.
 - [ ] Hosting approach selected.
 - [ ] Public contact and private security-reporting channels selected.
-- [x] Administrative-regions sources and ODbL redistribution terms documented and approved.
+- [x] HCP administrative-geography source, checksum, and transformations documented.
 
 ## Publication sequence
 
