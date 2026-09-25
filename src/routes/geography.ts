@@ -1,13 +1,20 @@
 import type { FastifyInstance } from "fastify";
 
-import { buildPendingDatasetMeta } from "../data/geography.js";
+import { buildGeographyDatasetMeta } from "../data/geography.js";
 import {
+  arrondissementSchema,
   communeSchema,
   errorSchema,
-  pendingDatasetMetaSchema,
+  geographyDatasetMetaSchema,
+  prefectureOfArrondissementsSchema,
   provinceSchema,
 } from "../schemas.js";
-import type { Commune, Province } from "../types.js";
+import type {
+  Arrondissement,
+  Commune,
+  PrefectureOfArrondissements,
+  Province,
+} from "../types.js";
 
 interface ResourceParams {
   code: string;
@@ -30,10 +37,18 @@ const codeParamsSchema = {
 export async function registerGeographyRoutes(
   app: FastifyInstance,
   provinces: readonly Province[],
+  prefecturesOfArrondissements: readonly PrefectureOfArrondissements[],
   communes: readonly Commune[],
+  arrondissements: readonly Arrondissement[],
 ): Promise<void> {
-  const provinceMetaSchema = pendingDatasetMetaSchema("administrative-provinces");
-  const communeMetaSchema = pendingDatasetMetaSchema("administrative-communes");
+  const provinceMetaSchema = geographyDatasetMetaSchema("administrative-provinces");
+  const prefectureOfArrondissementsMetaSchema = geographyDatasetMetaSchema(
+    "administrative-prefectures-of-arrondissements",
+  );
+  const communeMetaSchema = geographyDatasetMetaSchema("administrative-communes");
+  const arrondissementMetaSchema = geographyDatasetMetaSchema(
+    "administrative-arrondissements",
+  );
 
   app.get(
     "/api/v1/provinces",
@@ -56,7 +71,7 @@ export async function registerGeographyRoutes(
     },
     async () => ({
       data: provinces,
-      meta: buildPendingDatasetMeta("administrative-provinces", provinces.length),
+      meta: buildGeographyDatasetMeta("administrative-provinces", provinces.length),
     }),
   );
 
@@ -94,7 +109,83 @@ export async function registerGeographyRoutes(
 
       return {
         data: province,
-        meta: buildPendingDatasetMeta("administrative-provinces", 1),
+        meta: buildGeographyDatasetMeta("administrative-provinces", 1),
+      };
+    },
+  );
+
+  app.get(
+    "/api/v1/prefectures-of-arrondissements",
+    {
+      schema: {
+        tags: ["Administrative geography"],
+        summary: "List Casablanca's eight prefectures of arrondissements",
+        response: {
+          200: {
+            type: "object",
+            additionalProperties: false,
+            required: ["data", "meta"],
+            properties: {
+              data: {
+                type: "array",
+                items: prefectureOfArrondissementsSchema,
+              },
+              meta: prefectureOfArrondissementsMetaSchema,
+            },
+          },
+        },
+      },
+    },
+    async () => ({
+      data: prefecturesOfArrondissements,
+      meta: buildGeographyDatasetMeta(
+        "administrative-prefectures-of-arrondissements",
+        prefecturesOfArrondissements.length,
+      ),
+    }),
+  );
+
+  app.get<{ Params: ResourceParams }>(
+    "/api/v1/prefectures-of-arrondissements/:code",
+    {
+      schema: {
+        tags: ["Administrative geography"],
+        summary: "Get one prefecture of arrondissements by MoroccoAPI code",
+        params: codeParamsSchema,
+        response: {
+          200: {
+            type: "object",
+            additionalProperties: false,
+            required: ["data", "meta"],
+            properties: {
+              data: prefectureOfArrondissementsSchema,
+              meta: prefectureOfArrondissementsMetaSchema,
+            },
+          },
+          404: errorSchema,
+        },
+      },
+    },
+    async (request, reply) => {
+      const prefecture = prefecturesOfArrondissements.find(
+        (candidate) => candidate.code === request.params.code,
+      );
+      if (!prefecture) {
+        return reply.code(404).send({
+          error: {
+            code: "RESOURCE_NOT_FOUND",
+            message: `No prefecture of arrondissements found for code '${request.params.code}'`,
+            request_id: request.id,
+          },
+        });
+      }
+
+      return {
+        data: prefecture,
+        meta: buildGeographyDatasetMeta(
+          "administrative-prefectures-of-arrondissements",
+          1,
+        ),
       };
     },
   );
@@ -120,7 +211,7 @@ export async function registerGeographyRoutes(
     },
     async () => ({
       data: communes,
-      meta: buildPendingDatasetMeta("administrative-communes", communes.length),
+      meta: buildGeographyDatasetMeta("administrative-communes", communes.length),
     }),
   );
 
@@ -158,7 +249,77 @@ export async function registerGeographyRoutes(
 
       return {
         data: commune,
-        meta: buildPendingDatasetMeta("administrative-communes", 1),
+        meta: buildGeographyDatasetMeta("administrative-communes", 1),
+      };
+    },
+  );
+
+  app.get(
+    "/api/v1/arrondissements",
+    {
+      schema: {
+        tags: ["Administrative geography"],
+        summary: "List the 41 arrondissements of Morocco's six subdivided cities",
+        response: {
+          200: {
+            type: "object",
+            additionalProperties: false,
+            required: ["data", "meta"],
+            properties: {
+              data: { type: "array", items: arrondissementSchema },
+              meta: arrondissementMetaSchema,
+            },
+          },
+        },
+      },
+    },
+    async () => ({
+      data: arrondissements,
+      meta: buildGeographyDatasetMeta(
+        "administrative-arrondissements",
+        arrondissements.length,
+      ),
+    }),
+  );
+
+  app.get<{ Params: ResourceParams }>(
+    "/api/v1/arrondissements/:code",
+    {
+      schema: {
+        tags: ["Administrative geography"],
+        summary: "Get one arrondissement by MoroccoAPI code",
+        params: codeParamsSchema,
+        response: {
+          200: {
+            type: "object",
+            additionalProperties: false,
+            required: ["data", "meta"],
+            properties: {
+              data: arrondissementSchema,
+              meta: arrondissementMetaSchema,
+            },
+          },
+          404: errorSchema,
+        },
+      },
+    },
+    async (request, reply) => {
+      const arrondissement = arrondissements.find(
+        (candidate) => candidate.code === request.params.code,
+      );
+      if (!arrondissement) {
+        return reply.code(404).send({
+          error: {
+            code: "RESOURCE_NOT_FOUND",
+            message: `No arrondissement found for code '${request.params.code}'`,
+            request_id: request.id,
+          },
+        });
+      }
+
+      return {
+        data: arrondissement,
+        meta: buildGeographyDatasetMeta("administrative-arrondissements", 1),
       };
     },
   );

@@ -41,10 +41,21 @@ export async function buildApp(
   });
 
   const regions = await loadRegions();
-  const { provinces, communes } = await loadGeography(regions);
+  const {
+    provinces,
+    prefecturesOfArrondissements,
+    communes,
+    arrondissements,
+  } = await loadGeography(regions);
   await registerStatusRoutes(app);
   await registerRegionRoutes(app, regions);
-  await registerGeographyRoutes(app, provinces, communes);
+  await registerGeographyRoutes(
+    app,
+    provinces,
+    prefecturesOfArrondissements,
+    communes,
+    arrondissements,
+  );
 
   app.get(
     "/openapi.json",
