@@ -6,7 +6,7 @@
 
 [![Status: Pre-alpha](https://img.shields.io/badge/status-pre--alpha-orange)](#project-status)
 [![Code License: Apache-2.0](https://img.shields.io/badge/code-Apache--2.0-blue)](LICENSE)
-[![Data License: ODbL-1.0](https://img.shields.io/badge/data-ODbL--1.0-green)](DATA_LICENSE.md)
+[![Data licenses: per dataset](https://img.shields.io/badge/data-per--dataset-green)](DATA_LICENSE.md)
 
 MoroccoAPI is a community-driven, open-source project that turns reusable Moroccan public datasets into consistent, documented, and versioned APIs.
 
@@ -20,9 +20,11 @@ MoroccoAPI is an independent community project. It is not affiliated with, endor
 
 ## Current API
 
-The current pre-alpha release intentionally starts small:
+The current local pre-alpha build includes:
 
 - Morocco's 12 administrative regions.
+- An HCP-sourced normalization of 75 provinces/prefectures, Casablanca's 8
+  prefectures of arrondissements, 1,503 communes, and 41 urban arrondissements.
 - Arabic and French source labels, plus clearly identified MoroccoAPI English transliterations.
 - Per-response source, license, and freshness metadata.
 - Multilingual, accent-insensitive region search.
@@ -33,13 +35,30 @@ Available endpoints:
 ```text
 GET /api/v1/regions
 GET /api/v1/regions/{code}
+GET /api/v1/provinces
+GET /api/v1/provinces/{code}
+GET /api/v1/prefectures-of-arrondissements
+GET /api/v1/prefectures-of-arrondissements/{code}
+GET /api/v1/communes
+GET /api/v1/communes/{code}
+GET /api/v1/arrondissements
+GET /api/v1/arrondissements/{code}
 GET /api/v1/locations/search?q={query}
 GET /api/v1/status
 GET /openapi.json
 GET /docs
 ```
 
-Provinces, prefectures, and communes remain planned until suitable sources complete the same license and provenance review. Later releases may include public educational and healthcare facilities under the same rule.
+The administrative-geography endpoints are derived from HCP's official RGPH
+2024 legal-population workbook. Responses include the source page, direct
+workbook URL, CC BY 4.0 terms, and retrieval date. Every published administrative
+record exposes HCP's official geographic code and Arabic/French labels;
+province-level records distinguish `province` from `prefecture`.
+
+The RGPH 2024 workbook's cercle parent code is preserved on communes as
+`cercle_hcp_code`, but cercles are not exposed as a standalone dataset because
+their legal organization changed after the census, including in 2025. Urban
+centres are statistical units and are outside this administrative API scope.
 
 ## Run locally
 
@@ -64,9 +83,10 @@ npm run check
 {
   "data": {
     "code": "casablanca-settat",
+    "hcp_code": "06",
     "type": "region",
     "name": {
-      "ar": "الدار البيضاء - سطات",
+      "ar": "الدار البيضاء-سطات",
       "fr": "Casablanca-Settat",
       "en": "Casablanca-Settat"
     }
@@ -74,24 +94,25 @@ npm run check
   "meta": {
     "dataset": "administrative-regions",
     "total": 1,
-    "license": "ODbL-1.0",
-    "retrieved_at": "2026-09-21",
-    "transformation_version": "1.0.0",
+    "license": "CC-BY-4.0",
+    "retrieved_at": "2026-09-25",
+    "transformation_version": "2.0.0",
     "sources": [
       {
-        "dataset": "Répartition du personnel des administrations publiques selon les régions",
-        "producer": "MTNRA",
-        "source_url": "https://data.gov.ma/data/fr/dataset/repartition-du-personnel-des-administrations-publiques-selon-les-regions",
-        "resource_url": "https://data.gov.ma/data/fr/dataset/5995a4d8-0a8a-4a29-9ba3-8ffd6264cb2f/resource/07555a6f-c648-4938-837d-46ce51908b8f/download/repartition-du-personnel-des-administrations-publiques-selon-les-regions.xlsx",
-        "license": "ODbL-1.0",
-        "source_updated_at": "2025-11-25"
+        "dataset": "Population légale du Royaume du Maroc selon les résultats du RGPH 2024",
+        "producer": "Haut-Commissariat au Plan (HCP)",
+        "source_url": "https://www.hcp.ma/Population-legale-du-Royaume-du-Maroc-repartie-par-regions-provinces-et-prefectures-et-communes-selon-les-resultats-du_a3975.html",
+        "resource_url": "https://www.hcp.ma/file/242341/",
+        "license": "CC-BY-4.0",
+        "source_updated_at": "2024-11-22"
       }
     ]
   }
 }
 ```
 
-Region `code` values are stable MoroccoAPI slugs, not official government administrative codes.
+`code` values are stable MoroccoAPI slugs. `hcp_code` carries HCP's official
+geographic code.
 
 ## Principles
 

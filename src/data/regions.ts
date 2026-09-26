@@ -6,25 +6,13 @@ const datasetUrl = new URL("../../data/administrative-regions.json", import.meta
 
 export const regionSources = [
   {
-    dataset: "Répartition du personnel des administrations publiques selon les régions",
-    producer: "Ministère de la Transition Numérique et de la Réforme de l’Administration (MTNRA)",
+    dataset: "Population légale du Royaume du Maroc selon les résultats du RGPH 2024",
+    producer: "Haut-Commissariat au Plan (HCP)",
     source_url:
-      "https://data.gov.ma/data/fr/dataset/repartition-du-personnel-des-administrations-publiques-selon-les-regions",
-    resource_url:
-      "https://data.gov.ma/data/fr/dataset/5995a4d8-0a8a-4a29-9ba3-8ffd6264cb2f/resource/07555a6f-c648-4938-837d-46ce51908b8f/download/repartition-du-personnel-des-administrations-publiques-selon-les-regions.xlsx",
-    license: "ODbL-1.0",
-    source_updated_at: "2025-11-25",
-  },
-  {
-    dataset: "Unités d'habitat achevées par région et par catégorie 2016-2023",
-    producer:
-      "Ministère de l’Aménagement du Territoire National, de l’Urbanisme, de l’Habitat et de la Politique de la Ville (MATNUHPV)",
-    source_url:
-      "https://data.gov.ma/data/fr/dataset/unites-d-habitat-achevees-par-region-et-par-categorie-2016-2020",
-    resource_url:
-      "https://data.gov.ma/data/fr/dataset/9a92d8bd-34c9-4ce7-9995-b9acbd83e671/resource/00fabe8e-0675-4779-9417-3bc6e721677a/download/unites-dhabitat-achevees-par-region-et-par-categorie-2016-2023.xlsx",
-    license: "ODbL-1.0",
-    source_updated_at: "2024-10-30",
+      "https://www.hcp.ma/Population-legale-du-Royaume-du-Maroc-repartie-par-regions-provinces-et-prefectures-et-communes-selon-les-resultats-du_a3975.html",
+    resource_url: "https://www.hcp.ma/file/242341/",
+    license: "CC-BY-4.0",
+    source_updated_at: "2024-11-22",
   },
 ] as const;
 
@@ -33,7 +21,13 @@ function isRecord(value: unknown): value is Record<string, unknown> {
 }
 
 function assertRegion(value: unknown, index: number): asserts value is Region {
-  if (!isRecord(value) || typeof value.code !== "string" || value.type !== "region") {
+  if (
+    !isRecord(value) ||
+    typeof value.code !== "string" ||
+    typeof value.hcp_code !== "string" ||
+    !/^\d{2}$/.test(value.hcp_code) ||
+    value.type !== "region"
+  ) {
     throw new Error(`Invalid region record at index ${index}`);
   }
 
@@ -63,6 +57,11 @@ export async function loadRegions(): Promise<readonly Region[]> {
     throw new Error("Administrative region codes must be unique");
   }
 
+  const hcpCodes = new Set(parsed.map((region) => region.hcp_code));
+  if (hcpCodes.size !== parsed.length) {
+    throw new Error("HCP administrative region codes must be unique");
+  }
+
   if (parsed.some((region) => !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(region.code))) {
     throw new Error("Administrative region codes must be lowercase MoroccoAPI slugs");
   }
@@ -78,9 +77,9 @@ export function buildDatasetMeta(total: number): DatasetMeta {
   return {
     dataset: "administrative-regions",
     total,
-    license: "ODbL-1.0",
-    retrieved_at: "2026-09-21",
-    transformation_version: "1.0.0",
+    license: "CC-BY-4.0",
+    retrieved_at: "2026-09-25",
+    transformation_version: "2.0.0",
     sources: regionSources,
   };
 }

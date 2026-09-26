@@ -1,0 +1,98 @@
+[
+  {
+    "code": "casablanca--prefecture-of-arrondissements--ain-chock",
+    "hcp_code": "06.141.01.40",
+    "type": "prefecture_of_arrondissements",
+    "name": {
+      "ar": "عين الشق",
+      "fr": "Aïn-Chock",
+      "en": null
+    },
+    "province_code": "casablanca",
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "casablanca--prefecture-of-arrondissements--ain-sebaa-hay-mohammadi",
+    "hcp_code": "06.141.01.20",
+    "type": "prefecture_of_arrondissements",
+    "name": {
+      "ar": "عين السبع-الحي المحمدي",
+      "fr": "Aïn-Sebaâ-Hay Mohammadi",
+      "en": null
+    },
+    "province_code": "casablanca",
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "casablanca--prefecture-of-arrondissements--al-fida-mers-sultan",
+    "hcp_code": "06.141.01.10",
+    "type": "prefecture_of_arrondissements",
+    "name": {
+      "ar": "الفداء-مرس السلطان",
+      "fr": "Al-Fida-Mers-Sultan",
+      "en": null
+    },
+    "province_code": "casablanca",
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "casablanca--prefecture-of-arrondissements--ben-msick",
+    "hcp_code": "06.141.01.60",
+    "type": "prefecture_of_arrondissements",
+    "name": {
+      "ar": "ابن مسيك",
+      "fr": "Ben M'sick",
+      "en": null
+    },
+    "province_code": "casablanca",
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "casablanca--prefecture-of-arrondissements--casablanca-anfa",
+    "hcp_code": "06.141.01.00",
+    "type": "prefecture_of_arrondissements",
+    "name": {
+      "ar": "الدار البيضاء-أنفا",
+      "fr": "Casablanca-Anfa",
+      "en": null
+    },
+    "province_code": "casablanca",
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "casablanca--prefecture-of-arrondissements--hay-hassani",
+    "hcp_code": "06.141.01.30",
+    "type": "prefecture_of_arrondissements",
+    "name": {
+      "ar": "الحي الحسني",
+      "fr": "Hay-Hassani",
+      "en": null
+    },
+    "province_code": "casablanca",
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "casablanca--prefecture-of-arrondissements--moulay-rachid",
+    "hcp_code": "06.141.01.70",
+    "type": "prefecture_of_arrondissements",
+    "name": {
+      "ar": "مولاي رشيد",
+      "fr": "Moulay Rachid",
+      "en": null
+    },
+    "province_code": "casablanca",
+    "region_code": "casablanca-settat"
+  },
+  {
+    "code": "casablanca--prefecture-of-arrondissements--sidi-bernoussi",
+    "hcp_code": "06.141.01.50",
+    "type": "prefecture_of_arrondissements",
+    "name": {
+      "ar": "سيدي البرنوصي",
+      "fr": "Sidi Bernoussi",
+      "en": null
+    },
+    "province_code": "casablanca",
+    "region_code": "casablanca-settat"
+  }
+]

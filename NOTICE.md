@@ -6,9 +6,14 @@ Names and trademarks of data producers belong to their respective owners. Their 
 
 ## Administrative regions database
 
-Contains information adapted from:
+Contains information from “Population légale du Royaume du Maroc selon les
+résultats du RGPH 2024”, produced by the Haut-Commissariat au Plan (HCP) and
+made available under CC BY 4.0 terms. Normalized by MoroccoAPI as transformation
+version 2.0.0. Full provenance and source checksums are recorded under `sources/`.
 
-- “Répartition du personnel des administrations publiques selon les régions”, produced by the Ministère de la Transition Numérique et de la Réforme de l’Administration (MTNRA) and published on `data.gov.ma` under ODbL-1.0.
-- “Unités d'habitat achevées par région et par catégorie 2016-2023”, produced by the Ministère de l’Aménagement du Territoire National, de l’Urbanisme, de l’Habitat et de la Politique de la Ville (MATNUHPV) and published on `data.gov.ma` under ODbL-1.0.
+## HCP administrative subdivisions
 
-Normalized by MoroccoAPI as transformation version 1.0.0. Full source and resource URLs are recorded in `sources/administrative-regions.yml`.
+Contains information from the same HCP RGPH 2024 legal-population workbook for
+provinces, prefectures, prefectures of arrondissements, communes, and
+arrondissements. Normalized by MoroccoAPI as transformation version 3.0.0. The
+source follows Morocco's official territorial scope.

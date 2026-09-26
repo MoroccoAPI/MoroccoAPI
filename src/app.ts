@@ -6,7 +6,9 @@ import Fastify, {
   type FastifyServerOptions,
 } from "fastify";
 
+import { loadGeography } from "./data/geography.js";
 import { loadRegions } from "./data/regions.js";
+import { registerGeographyRoutes } from "./routes/geography.js";
 import { registerRegionRoutes } from "./routes/regions.js";
 import { registerStatusRoutes } from "./routes/status.js";
 
@@ -39,8 +41,21 @@ export async function buildApp(
   });
 
   const regions = await loadRegions();
+  const {
+    provinces,
+    prefecturesOfArrondissements,
+    communes,
+    arrondissements,
+  } = await loadGeography(regions);
   await registerStatusRoutes(app);
   await registerRegionRoutes(app, regions);
+  await registerGeographyRoutes(
+    app,
+    provinces,
+    prefecturesOfArrondissements,
+    communes,
+    arrondissements,
+  );
 
   app.get(
     "/openapi.json",

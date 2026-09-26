@@ -18,9 +18,9 @@ Breaking response changes require a new API version.
   "meta": {
     "dataset": "administrative-regions",
     "total": 1,
-    "license": "ODbL-1.0",
-    "retrieved_at": "2026-09-21",
-    "transformation_version": "1.0.0",
+    "license": "CC-BY-4.0",
+    "retrieved_at": "2026-09-25",
+    "transformation_version": "2.0.0",
     "sources": []
   }
 }
@@ -54,7 +54,10 @@ Breaking response changes require a new API version.
 - JSON field names use `snake_case`.
 - Dates use ISO 8601.
 - Coordinates use WGS 84 and GeoJSON longitude/latitude order where GeoJSON is returned.
-- Stable MoroccoAPI slugs are used in URLs until verified official codes are integrated. They are never presented as official government codes.
+- Stable MoroccoAPI slugs are used in URLs. Every published administrative unit
+  also exposes its verified HCP code in `hcp_code`.
+- `cercle_hcp_code` is the commune's parent cercle in the RGPH 2024 snapshot;
+  it is not presented as a current standalone cercle registry.
 - Search is accent-insensitive where practical but preserves original spelling in responses.
 - Unknown values are `null`; they are not fabricated or represented by misleading empty strings.
 - Collection endpoints will add documented pagination when their size requires it.
