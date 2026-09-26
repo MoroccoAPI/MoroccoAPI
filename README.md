@@ -26,7 +26,7 @@ The current local pre-alpha build includes:
 - An HCP-sourced normalization of 75 provinces/prefectures, Casablanca's 8
   prefectures of arrondissements, 1,503 communes, and 41 urban arrondissements.
 - Arabic and French source labels, plus clearly identified MoroccoAPI English transliterations.
-- Per-response source, license, freshness, or pending-review metadata.
+- Per-response source, license, and freshness metadata.
 - Multilingual, accent-insensitive region search.
 - OpenAPI documentation and a health endpoint.
 
