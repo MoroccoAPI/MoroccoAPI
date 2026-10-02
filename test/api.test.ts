@@ -105,6 +105,84 @@ describe("MoroccoAPI", () => {
     );
   });
 
+  it("returns each region's provinces and prefectures with matching metadata", async () => {
+    const provincesResponse = await app.inject({
+      method: "GET",
+      url: "/api/v1/provinces",
+    });
+    assert.equal(provincesResponse.statusCode, 200);
+    const provincesBody = provincesResponse.json();
+    const expectedCounts = {
+      "tanger-tetouan-al-hoceima": 8,
+      oriental: 8,
+      "fes-meknes": 9,
+      "rabat-sale-kenitra": 7,
+      "beni-mellal-khenifra": 5,
+      "casablanca-settat": 9,
+      "marrakech-safi": 8,
+      "draa-tafilalet": 5,
+      "souss-massa": 6,
+      "guelmim-oued-noun": 4,
+      "laayoune-sakia-el-hamra": 4,
+      "dakhla-oued-ed-dahab": 2,
+    };
+    const subdivisions: { code: string }[] = [];
+
+    for (const [regionCode, total] of Object.entries(expectedCounts)) {
+      const response = await app.inject({
+        method: "GET",
+        url: `/api/v1/regions/${regionCode}/subdivisions`,
+      });
+      assert.equal(response.statusCode, 200, regionCode);
+
+      const body = response.json();
+      assert.equal(body.data.length, total, regionCode);
+      assert.deepEqual(body.meta, { ...provincesBody.meta, total }, regionCode);
+      for (const province of body.data as { region_code: string; type: string }[]) {
+        assert.equal(province.region_code, regionCode);
+        assert.equal(province.type, "province_or_prefecture");
+      }
+      subdivisions.push(...body.data);
+    }
+
+    assert.equal(subdivisions.length, 75);
+    assert.equal(new Set(subdivisions.map((province) => province.code)).size, 75);
+    assert.deepEqual(
+      subdivisions.sort((a, b) => a.code.localeCompare(b.code)),
+      provincesBody.data.sort(
+        (a: { code: string }, b: { code: string }) =>
+          a.code.localeCompare(b.code),
+      ),
+    );
+  });
+
+  it("returns a stable error when the subdivisions region is missing", async () => {
+    const response = await app.inject({
+      method: "GET",
+      url: "/api/v1/regions/unknown-region/subdivisions",
+    });
+    assert.equal(response.statusCode, 404);
+
+    const body = response.json();
+    assert.equal(body.error.code, "RESOURCE_NOT_FOUND");
+    assert.equal(typeof body.error.message, "string");
+    assert.equal(typeof body.error.request_id, "string");
+  });
+
+  it("rejects invalid region codes for subdivisions", async () => {
+    for (const code of ["a", "CASABLANCA", "casablanca_settat"]) {
+      const response = await app.inject({
+        method: "GET",
+        url: `/api/v1/regions/${code}/subdivisions`,
+      });
+      assert.equal(response.statusCode, 400, code);
+
+      const body = response.json();
+      assert.equal(body.error.code, "VALIDATION_ERROR");
+      assert.equal(typeof body.error.request_id, "string");
+    }
+  });
+
   it("returns one province by code", async () => {
     const response = await app.inject({
       method: "GET",
@@ -389,6 +467,10 @@ describe("MoroccoAPI", () => {
     const body = response.json();
     assert.equal(body.info.title, "MoroccoAPI");
     assert.ok(body.paths["/api/v1/regions"]);
+    const subdivisionsRoute = body.paths["/api/v1/regions/{code}/subdivisions"];
+    assert.ok(subdivisionsRoute?.get);
+    assert.ok(subdivisionsRoute.get.responses["200"]);
+    assert.ok(subdivisionsRoute.get.responses["404"]);
     assert.ok(body.paths["/api/v1/provinces"]);
     assert.ok(body.paths["/api/v1/provinces/{code}"]);
     assert.ok(body.paths["/api/v1/prefectures-of-arrondissements"]);

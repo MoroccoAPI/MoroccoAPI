@@ -113,7 +113,51 @@ export async function registerGeographyRoutes(
       };
     },
   );
+  app.get<{ Params: ResourceParams }>(
+    "/api/v1/regions/:code/subdivisions",
+    {
+      schema: {
+        tags: ["Administrative geography"],
+        summary:
+          "Get all subdivisions (provinces and prefectures) by MoroccoAPI region code",
+        params: codeParamsSchema,
+        response: {
+          200: {
+            type: "object",
+            additionalProperties: false,
+            required: ["data", "meta"],
+            properties: {
+              data: { type: "array", items: provinceSchema },
+              meta: provinceMetaSchema,
+            },
+          },
+          404: errorSchema,
+        },
+      },
+    },
+    async (request, reply) => {
+      const provincesByRegion = provinces.filter(
+        (province) => province.region_code === request.params.code,
+      );
+      if (provincesByRegion.length === 0) {
+        return reply.code(404).send({
+          error: {
+            code: "RESOURCE_NOT_FOUND",
+            message: `No provinces or prefectures found for region code '${request.params.code}'`,
+            request_id: request.id,
+          },
+        });
+      }
 
+      return {
+        data: provincesByRegion,
+        meta: buildGeographyDatasetMeta(
+          "administrative-provinces",
+          provincesByRegion.length,
+        ),
+      };
+    },
+  );
   app.get(
     "/api/v1/prefectures-of-arrondissements",
     {
