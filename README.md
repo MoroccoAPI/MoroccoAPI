@@ -48,8 +48,6 @@ Source code and data have separate licenses:
 - Third-party datasets keep their original licenses and notices.
 - Incompatible or unclear sources will not be merged into the public database.
 
-Read [DATA_LICENSE.md](DATA_LICENSE.md) and [docs/DATASET_POLICY.md](docs/DATASET_POLICY.md) before proposing a source.
-
 ## Acknowledgements
 
 MoroccoAPI is inspired by community public-data projects such as BrasilAPI. Inspiration does not imply affiliation.
