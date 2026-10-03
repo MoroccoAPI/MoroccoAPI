@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import { after, before, describe, it } from "node:test";
 
 import type { FastifyInstance } from "fastify";
@@ -17,6 +18,89 @@ after(async () => {
 });
 
 describe("MoroccoAPI", () => {
+  it("keeps query values and credential headers out of logs without changing requests", async () => {
+    const logs: string[] = [];
+    const loggedApp = await buildApp({
+      logger: {
+        level: "info",
+        stream: {
+          write(line: string) {
+            logs.push(line);
+          },
+        },
+      },
+    });
+    const token = "logging-test-token";
+    const key = "logging-test-key";
+    const authorization = "logging-test-authorization";
+    const cookie = "logging-test-cookie";
+
+    try {
+      const search = await loggedApp.inject({
+        method: "GET",
+        url: `/api/v1/locations/search?q=kenitra&token=${token}&key=${key}`,
+        headers: { authorization: `Bearer ${authorization}`, cookie: `session=${cookie}` },
+      });
+      assert.equal(search.statusCode, 200);
+      assert.equal(search.json().data[0].code, "rabat-sale-kenitra");
+
+      for (const [url, statusCode] of [
+        [`/api/v1/status?%74oken=${token}&TOKEN=${token}&key=${key}&key=${key}`, 200],
+        [`/api/v1/locations/search?q=a&token=${token}&key=${key}`, 400],
+        [`/does-not-exist?token=${token}&key=${key}`, 404],
+        [`/docs/does-not-exist?token=${token}&key=${key}`, 404],
+        [`/docs/static/does-not-exist.js?token=${token}&key=${key}`, 404],
+        [`/api/v1/regions/%zz?token=${token}&key=${key}`, 400],
+      ] as const) {
+        const response = await loggedApp.inject({ method: "GET", url });
+        assert.equal(response.statusCode, statusCode, url);
+      }
+
+      const output = logs.join("");
+      for (const value of [token, key, authorization, cookie]) {
+        assert.ok(!output.includes(value), "Credential values must not appear in logs");
+      }
+      const entries = logs.map((line) => JSON.parse(line));
+      const requestEntry = entries.find((entry) => entry.req?.url === "/api/v1/locations/search");
+      assert.ok(requestEntry, "Requests must still be logged with their path");
+      assert.equal(requestEntry.req.method, "GET");
+      assert.ok(entries.some((entry) => entry.res?.statusCode === 200));
+    } finally {
+      await loggedApp.close();
+    }
+  });
+
+  it("serves the homepage and its logo without exposing them in OpenAPI", async () => {
+    const page = await app.inject({ method: "GET", url: "/" });
+    assert.equal(page.statusCode, 200);
+    assert.match(page.headers["content-type"] ?? "", /^text\/html/);
+    assert.match(page.body, /href="\/docs"/);
+
+    const logo = await app.inject({
+      method: "GET",
+      url: "/assets/moroccoapi-logo.png",
+    });
+    assert.equal(logo.statusCode, 200);
+    assert.equal(logo.headers["content-type"], "image/png");
+    assert.equal(logo.rawPayload.subarray(1, 4).toString(), "PNG");
+
+    const spec = (await app.inject("/openapi.json")).json();
+    assert.equal(spec.paths["/"], undefined);
+    assert.equal(spec.paths["/assets/moroccoapi-logo.png"], undefined);
+  });
+
+  it("reports the package version consistently on the homepage, status, and OpenAPI", async () => {
+    const packageInfo = JSON.parse(
+      await readFile(new URL("../package.json", import.meta.url), "utf8"),
+    ) as { version: string };
+    const status = (await app.inject("/api/v1/status")).json();
+    const spec = (await app.inject("/openapi.json")).json();
+    const page = await app.inject("/");
+    assert.equal(status.data.version, packageInfo.version);
+    assert.equal(spec.info.version, packageInfo.version);
+    assert.ok(page.body.includes(`v${packageInfo.version}`));
+  });
+
   it("reports service health", async () => {
     const response = await app.inject({ method: "GET", url: "/api/v1/status" });
     assert.equal(response.statusCode, 200);
@@ -24,6 +108,7 @@ describe("MoroccoAPI", () => {
     const body = response.json();
     assert.equal(body.data.status, "ok");
     assert.equal(body.data.service, "MoroccoAPI");
+    assert.equal(response.headers["x-moroccoapi-revision"], process.env.RENDER_GIT_COMMIT);
     assert.match(body.data.timestamp, /^\d{4}-\d{2}-\d{2}T/);
     assert.equal(typeof body.meta.request_id, "string");
   });

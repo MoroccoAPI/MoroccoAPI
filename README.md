@@ -4,13 +4,15 @@
 
 > Reliable, developer-friendly access to Morocco's public open data.
 
-[![Status: Pre-alpha](https://img.shields.io/badge/status-pre--alpha-orange)](#project-status)
+[![Status: Ready](https://img.shields.io/badge/status-ready-green)](#project-status)
 [![Code License: Apache-2.0](https://img.shields.io/badge/code-Apache--2.0-blue)](LICENSE)
-[![Data licenses: per dataset](https://img.shields.io/badge/data-per--dataset-green)](DATA_LICENSE.md)
+[![Data licenses: per dataset](https://img.shields.io/badge/data-per--dataset-green)](#data-licensing)
 
 MoroccoAPI is a community-driven, open-source project that turns reusable Moroccan public datasets into consistent, documented, and versioned APIs.
 
 Public information is often distributed across spreadsheets, documents, portals, and incompatible schemas. MoroccoAPI aims to make approved open datasets easier to discover and use while preserving source attribution, licensing, provenance, and update history.
+
+[Website](https://moroccoapi.dev) · [API documentation](https://moroccoapi.dev/docs) · [Releases](https://github.com/MoroccoAPI/MoroccoAPI/releases)
 
 ## Run locally
 
@@ -21,7 +23,7 @@ npm install
 npm run dev
 ```
 
-The API starts at `http://127.0.0.1:3000`; interactive documentation is at `http://127.0.0.1:3000/docs`.
+The homepage starts at `http://127.0.0.1:3000`; interactive documentation is at `http://127.0.0.1:3000/docs`.
 
 Before opening a pull request, run:
 

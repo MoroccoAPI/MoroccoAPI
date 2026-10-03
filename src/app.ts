@@ -3,19 +3,46 @@ import swaggerUi from "@fastify/swagger-ui";
 import Fastify, {
   type FastifyError,
   type FastifyInstance,
+  type FastifyRequest,
   type FastifyServerOptions,
 } from "fastify";
 
 import { loadGeography } from "./data/geography.js";
 import { loadRegions } from "./data/regions.js";
 import { registerGeographyRoutes } from "./routes/geography.js";
+import { registerHomeRoutes } from "./routes/home.js";
 import { registerRegionRoutes } from "./routes/regions.js";
 import { registerStatusRoutes } from "./routes/status.js";
+import { APP_VERSION } from "./version.js";
 
 export async function buildApp(
   options: FastifyServerOptions = { logger: false },
 ): Promise<FastifyInstance> {
-  const app = Fastify(options);
+  const loggerOptions = typeof options.logger === "object" ? options.logger : {};
+  const app = Fastify({
+    ...options,
+    ...(options.logger ? {
+      logger: {
+        ...loggerOptions,
+        serializers: {
+          ...loggerOptions.serializers,
+          req(request: FastifyRequest) {
+            // Query values can be credentials; omit them from logs only.
+            const queryStart = request.url.indexOf("?");
+            return {
+              method: request.method,
+              url: queryStart < 0 ? request.url : request.url.slice(0, queryStart),
+              host: request.host,
+              remoteAddress: request.ip,
+              ...(request.socket?.remotePort === undefined
+                ? {}
+                : { remotePort: request.socket.remotePort }),
+            };
+          },
+        },
+      },
+    } : {}),
+  });
 
   await app.register(swagger, {
     openapi: {
@@ -23,7 +50,7 @@ export async function buildApp(
         title: "MoroccoAPI",
         description:
           "Community-maintained access to reusable Moroccan public open data with source and license metadata.",
-        version: "0.1.0",
+        version: APP_VERSION,
       },
       tags: [
         { name: "System", description: "Service health and status" },
@@ -47,6 +74,7 @@ export async function buildApp(
     communes,
     arrondissements,
   } = await loadGeography(regions);
+  await registerHomeRoutes(app);
   await registerStatusRoutes(app);
   await registerRegionRoutes(app, regions);
   await registerGeographyRoutes(

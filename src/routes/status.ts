@@ -1,5 +1,7 @@
 import type { FastifyInstance } from "fastify";
 
+import { APP_REVISION, APP_VERSION } from "../version.js";
+
 export async function registerStatusRoutes(app: FastifyInstance): Promise<void> {
   app.get(
     "/api/v1/status",
@@ -35,14 +37,19 @@ export async function registerStatusRoutes(app: FastifyInstance): Promise<void> 
         },
       },
     },
-    async (request) => ({
-      data: {
-        status: "ok",
-        service: "MoroccoAPI",
-        version: "0.1.0",
-        timestamp: new Date().toISOString(),
-      },
-      meta: { request_id: request.id },
-    }),
+    async (request, reply) => {
+      if (APP_REVISION) {
+        reply.header("X-MoroccoAPI-Revision", APP_REVISION);
+      }
+      return {
+        data: {
+          status: "ok",
+          service: "MoroccoAPI",
+          version: APP_VERSION,
+          timestamp: new Date().toISOString(),
+        },
+        meta: { request_id: request.id },
+      };
+    },
   );
 }

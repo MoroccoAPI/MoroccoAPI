@@ -8,7 +8,10 @@ All public endpoints use a versioned base path:
 /api/v1
 ```
 
-Breaking response changes require a new API version.
+MoroccoAPI `1.0.0` is the first stable application version and serves the
+`/api/v1` contract. Application release numbers and API path versions are
+separate: compatible fixes and additions keep the same base path. Breaking
+response changes require a new API version, such as `/api/v2`.
 
 ## Success envelope
 
@@ -64,4 +67,8 @@ Breaking response changes require a new API version.
 
 ## Deprecation
 
-Deprecated versions receive a public notice and a migration guide. A removal timeline will be defined before the first stable release.
+Before an API version is deprecated, its release notes and API documentation
+announce the replacement version, a migration guide, and the planned removal
+date. The deprecated version remains available until that announced date.
+
+There is currently no planned removal date for `/api/v1`.
