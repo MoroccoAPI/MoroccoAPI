@@ -3,6 +3,7 @@ import swaggerUi from "@fastify/swagger-ui";
 import Fastify, {
   type FastifyError,
   type FastifyInstance,
+  type FastifyRequest,
   type FastifyServerOptions,
 } from "fastify";
 
@@ -17,7 +18,31 @@ import { APP_VERSION } from "./version.js";
 export async function buildApp(
   options: FastifyServerOptions = { logger: false },
 ): Promise<FastifyInstance> {
-  const app = Fastify(options);
+  const loggerOptions = typeof options.logger === "object" ? options.logger : {};
+  const app = Fastify({
+    ...options,
+    ...(options.logger ? {
+      logger: {
+        ...loggerOptions,
+        serializers: {
+          ...loggerOptions.serializers,
+          req(request: FastifyRequest) {
+            // Query values can be credentials; omit them from logs only.
+            const queryStart = request.url.indexOf("?");
+            return {
+              method: request.method,
+              url: queryStart < 0 ? request.url : request.url.slice(0, queryStart),
+              host: request.host,
+              remoteAddress: request.ip,
+              ...(request.socket?.remotePort === undefined
+                ? {}
+                : { remotePort: request.socket.remotePort }),
+            };
+          },
+        },
+      },
+    } : {}),
+  });
 
   await app.register(swagger, {
     openapi: {

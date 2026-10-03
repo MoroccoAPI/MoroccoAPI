@@ -18,6 +18,58 @@ after(async () => {
 });
 
 describe("MoroccoAPI", () => {
+  it("keeps query values and credential headers out of logs without changing requests", async () => {
+    const logs: string[] = [];
+    const loggedApp = await buildApp({
+      logger: {
+        level: "info",
+        stream: {
+          write(line: string) {
+            logs.push(line);
+          },
+        },
+      },
+    });
+    const token = "logging-test-token";
+    const key = "logging-test-key";
+    const authorization = "logging-test-authorization";
+    const cookie = "logging-test-cookie";
+
+    try {
+      const search = await loggedApp.inject({
+        method: "GET",
+        url: `/api/v1/locations/search?q=kenitra&token=${token}&key=${key}`,
+        headers: { authorization: `Bearer ${authorization}`, cookie: `session=${cookie}` },
+      });
+      assert.equal(search.statusCode, 200);
+      assert.equal(search.json().data[0].code, "rabat-sale-kenitra");
+
+      for (const [url, statusCode] of [
+        [`/api/v1/status?%74oken=${token}&TOKEN=${token}&key=${key}&key=${key}`, 200],
+        [`/api/v1/locations/search?q=a&token=${token}&key=${key}`, 400],
+        [`/does-not-exist?token=${token}&key=${key}`, 404],
+        [`/docs/does-not-exist?token=${token}&key=${key}`, 404],
+        [`/docs/static/does-not-exist.js?token=${token}&key=${key}`, 404],
+        [`/api/v1/regions/%zz?token=${token}&key=${key}`, 400],
+      ] as const) {
+        const response = await loggedApp.inject({ method: "GET", url });
+        assert.equal(response.statusCode, statusCode, url);
+      }
+
+      const output = logs.join("");
+      for (const value of [token, key, authorization, cookie]) {
+        assert.ok(!output.includes(value), "Credential values must not appear in logs");
+      }
+      const entries = logs.map((line) => JSON.parse(line));
+      const requestEntry = entries.find((entry) => entry.req?.url === "/api/v1/locations/search");
+      assert.ok(requestEntry, "Requests must still be logged with their path");
+      assert.equal(requestEntry.req.method, "GET");
+      assert.ok(entries.some((entry) => entry.res?.statusCode === 200));
+    } finally {
+      await loggedApp.close();
+    }
+  });
+
   it("serves the homepage and its logo without exposing them in OpenAPI", async () => {
     const page = await app.inject({ method: "GET", url: "/" });
     assert.equal(page.statusCode, 200);
