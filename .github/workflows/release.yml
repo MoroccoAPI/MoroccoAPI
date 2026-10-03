@@ -1,0 +1,258 @@
+name: Release and deploy
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Published release tag to redeploy or restore (for example v1.0.0)
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.event_name == 'push' && github.ref_name || inputs.tag }}
+  cancel-in-progress: false
+
+jobs:
+  check:
+    name: Check tagged code
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      tag: ${{ steps.version.outputs.tag }}
+      revision: ${{ steps.version.outputs.revision }}
+      version: ${{ steps.version.outputs.version }}
+    env:
+      RELEASE_TAG: ${{ github.event_name == 'push' && github.ref_name || inputs.tag }}
+    steps:
+      - name: Check out the tag
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.RELEASE_TAG }}
+          fetch-depth: 0
+
+      - name: Use Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Verify the tag and package version
+        id: version
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ] && [ "$GITHUB_REF" != "refs/heads/main" ]; then
+            echo "::error::Run manual deployments from the main branch."
+            exit 1
+          fi
+          version="$(node -p 'require("./package.json").version')"
+          if [ "$RELEASE_TAG" != "v$version" ]; then
+            echo "::error::Release tag must match package.json: expected v$version."
+            exit 1
+          fi
+          revision="$(git rev-parse HEAD)"
+          tagged_commit="$(git rev-parse --verify "refs/tags/$RELEASE_TAG^{commit}")"
+          if [ "$tagged_commit" != "$revision" ]; then
+            echo "::error::The checked-out commit does not match the release tag."
+            exit 1
+          fi
+          git merge-base --is-ancestor HEAD origin/main
+          echo "tag=$RELEASE_TAG" >> "$GITHUB_OUTPUT"
+          echo "revision=$revision" >> "$GITHUB_OUTPUT"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check types, tests, build, and dependencies
+        env:
+          RENDER_GIT_COMMIT: ${{ steps.version.outputs.revision }}
+        run: npm run check
+
+  publish:
+    name: Publish GitHub Release
+    needs: check
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      RELEASE_TAG: ${{ needs.check.outputs.tag }}
+      RELEASE_VERSION: ${{ needs.check.outputs.version }}
+    steps:
+      - name: Publish or reuse the checked release
+        run: |
+          if gh release view "$RELEASE_TAG" --json isDraft,publishedAt > "$RUNNER_TEMP/release.json"; then
+            node -e 'const r = require(process.argv[1]); if (r.isDraft || !r.publishedAt) throw new Error("The release must already be published.");' "$RUNNER_TEMP/release.json"
+          elif [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ]; then
+            echo "::error::Manual deployment requires an existing published release."
+            exit 1
+          else
+            release_args=(--verify-tag --generate-notes --title "MoroccoAPI $RELEASE_TAG")
+            if [[ "$RELEASE_VERSION" == *-* ]]; then
+              release_args+=(--prerelease)
+            fi
+            gh release create "$RELEASE_TAG" "${release_args[@]}"
+          fi
+          printf 'Release **%s** is published. Production deployment requires manual approval.\n' "$RELEASE_TAG" >> "$GITHUB_STEP_SUMMARY"
+
+  approval:
+    name: Verify production requires approval
+    needs: publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      actions: read
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Read production environment rules
+        run: |
+          if ! gh api "repos/$GITHUB_REPOSITORY/environments/production" > "$RUNNER_TEMP/production.json"; then
+            echo "::error::Create the production environment with Required reviewers before deploying."
+            exit 1
+          fi
+
+      - name: Require a configured manual reviewer
+        env:
+          APPROVAL_RULES_FILE: ${{ runner.temp }}/production.json
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFileSync } from "node:fs";
+
+          const environment = JSON.parse(readFileSync(process.env.APPROVAL_RULES_FILE, "utf8"));
+          const reviewRule = environment.protection_rules?.find((rule) => rule.type === "required_reviewers");
+          if (!reviewRule?.reviewers?.length) {
+            throw new Error("Configure Required reviewers on the production environment. Deployment is blocked until manual approval is required.");
+          }
+          console.log("Production requires manual approval.");
+          NODE
+
+  deploy:
+    name: Deploy production after approval
+    needs: [check, publish, approval]
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: production
+      url: https://moroccoapi.dev
+    concurrency:
+      group: production
+      cancel-in-progress: false
+    env:
+      RELEASE_TAG: ${{ needs.check.outputs.tag }}
+      RELEASE_REVISION: ${{ needs.check.outputs.revision }}
+      PUBLIC_BASE_URL: https://moroccoapi.dev
+    steps:
+      - name: Check out the approved commit
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.check.outputs.revision }}
+          fetch-depth: 0
+
+      - name: Use Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Verify the tag still points to the checked commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tagged_commit="$(git rev-parse --verify "refs/tags/$RELEASE_TAG^{commit}")"
+          if [ "$tagged_commit" != "$RELEASE_REVISION" ]; then
+            echo "::error::The release tag changed after validation."
+            exit 1
+          fi
+          gh api "repos/$GITHUB_REPOSITORY/releases/tags/$RELEASE_TAG" --jq 'if .draft or .published_at == null then error("Release must be published") else .tag_name end'
+
+      - name: Deploy the approved commit and verify the site
+        env:
+          RENDER_DEPLOY_HOOK_URL: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+        run: |
+          node --input-type=module <<'NODE'
+          import { execFileSync } from "node:child_process";
+          import { readFileSync } from "node:fs";
+          import { setTimeout as delay } from "node:timers/promises";
+
+          const hookValue = process.env.RENDER_DEPLOY_HOOK_URL;
+          if (!hookValue) {
+            throw new Error("Add RENDER_DEPLOY_HOOK_URL to the production environment secrets.");
+          }
+          let hook;
+          try {
+            hook = new URL(hookValue);
+          } catch {
+            throw new Error("RENDER_DEPLOY_HOOK_URL is not a valid Render deploy hook URL.");
+          }
+          if (hook.protocol !== "https:" || hook.hostname !== "api.render.com" || !hook.pathname.startsWith("/deploy/")) {
+            throw new Error("RENDER_DEPLOY_HOOK_URL must be an HTTPS deploy hook from api.render.com.");
+          }
+          const { version } = JSON.parse(readFileSync("package.json", "utf8"));
+          const revision = execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim();
+          if (process.env.RELEASE_TAG !== `v${version}` || revision !== process.env.RELEASE_REVISION) {
+            throw new Error("The approved tag, package version, and commit must match.");
+          }
+          const baseUrl = new URL(process.env.PUBLIC_BASE_URL);
+          hook.searchParams.set("ref", revision);
+
+          // The hook contains a credential; never log it or include it in errors.
+          let deployResponse;
+          try {
+            deployResponse = await fetch(hook, { method: "POST", signal: AbortSignal.timeout(30_000) });
+          } catch {
+            throw new Error("Could not reach the Render deploy hook. Check Render and retry.");
+          }
+          if (!deployResponse.ok) {
+            throw new Error(`Render rejected the deploy request (HTTP ${deployResponse.status}).`);
+          }
+          await deployResponse.body?.cancel();
+          console.log(`Requested deployment of v${version} at ${revision}.`);
+
+          const deadline = Date.now() + 15 * 60_000;
+          let live = false;
+          while (Date.now() < deadline) {
+            try {
+              const response = await fetch(new URL("/api/v1/status", baseUrl), {
+                headers: { "Cache-Control": "no-cache" },
+                signal: AbortSignal.timeout(15_000),
+              });
+              if (response.ok) {
+                const status = await response.json();
+                if (status.data?.status === "ok" && status.data?.version === version && response.headers.get("x-moroccoapi-revision") === revision) {
+                  live = true;
+                  break;
+                }
+              } else {
+                await response.body?.cancel();
+              }
+            } catch {
+              // A previous release or cold-start page can respond during deployment.
+            }
+            console.log("Waiting for the approved version and commit to become live...");
+            await delay(10_000);
+          }
+          if (!live) {
+            throw new Error("The approved commit did not become healthy within 15 minutes. Inspect Render's deploy logs.");
+          }
+          for (const path of ["/", "/docs", "/openapi.json", "/assets/moroccoapi-logo.png"]) {
+            const response = await fetch(new URL(path, baseUrl), { signal: AbortSignal.timeout(30_000) });
+            if (!response.ok) {
+              throw new Error(`The site failed its ${path} check (HTTP ${response.status}).`);
+            }
+            if (path === "/" && !response.headers.get("content-type")?.startsWith("text/html")) {
+              throw new Error("The homepage did not return HTML.");
+            }
+            if (path === "/openapi.json" && (await response.json()).info?.version !== version) {
+              throw new Error("The published OpenAPI version does not match the approved release.");
+            }
+            if (!response.bodyUsed) await response.body?.cancel();
+          }
+          console.log(`Verified v${version} at ${baseUrl.origin}.`);
+          NODE
