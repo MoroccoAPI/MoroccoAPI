@@ -11,6 +11,7 @@ import { loadRegions } from "./data/regions.js";
 import { registerGeographyRoutes } from "./routes/geography.js";
 import { registerRegionRoutes } from "./routes/regions.js";
 import { registerStatusRoutes } from "./routes/status.js";
+import { APP_VERSION } from "./version.js";
 
 export async function buildApp(
   options: FastifyServerOptions = { logger: false },
@@ -23,7 +24,7 @@ export async function buildApp(
         title: "MoroccoAPI",
         description:
           "Community-maintained access to reusable Moroccan public open data with source and license metadata.",
-        version: "0.1.0",
+        version: APP_VERSION,
       },
       tags: [
         { name: "System", description: "Service health and status" },

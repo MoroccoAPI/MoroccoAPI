@@ -24,6 +24,7 @@ describe("MoroccoAPI", () => {
     const body = response.json();
     assert.equal(body.data.status, "ok");
     assert.equal(body.data.service, "MoroccoAPI");
+    assert.equal(response.headers["x-moroccoapi-revision"], process.env.RENDER_GIT_COMMIT);
     assert.match(body.data.timestamp, /^\d{4}-\d{2}-\d{2}T/);
     assert.equal(typeof body.meta.request_id, "string");
   });
