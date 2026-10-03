@@ -4,9 +4,9 @@
 
 > Reliable, developer-friendly access to Morocco's public open data.
 
-[![Status: Pre-alpha](https://img.shields.io/badge/status-pre--alpha-orange)](#project-status)
+[![Status: Ready](https://img.shields.io/badge/status-ready-green)](#project-status)
 [![Code License: Apache-2.0](https://img.shields.io/badge/code-Apache--2.0-blue)](LICENSE)
-[![Data licenses: per dataset](https://img.shields.io/badge/data-per--dataset-green)](DATA_LICENSE.md)
+[![Data licenses: per dataset](https://img.shields.io/badge/data-per--dataset-green)](#data-licensing)
 
 MoroccoAPI is a community-driven, open-source project that turns reusable Moroccan public datasets into consistent, documented, and versioned APIs.
 
