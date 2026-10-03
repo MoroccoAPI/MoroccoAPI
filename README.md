@@ -12,6 +12,8 @@ MoroccoAPI is a community-driven, open-source project that turns reusable Morocc
 
 Public information is often distributed across spreadsheets, documents, portals, and incompatible schemas. MoroccoAPI aims to make approved open datasets easier to discover and use while preserving source attribution, licensing, provenance, and update history.
 
+[Website](https://moroccoapi.dev) · [API documentation](https://moroccoapi.dev/docs) · [Releases](https://github.com/MoroccoAPI/MoroccoAPI/releases)
+
 ## Run locally
 
 Requirements: Node.js 22 or newer and npm.
@@ -21,7 +23,7 @@ npm install
 npm run dev
 ```
 
-The API starts at `http://127.0.0.1:3000`; interactive documentation is at `http://127.0.0.1:3000/docs`.
+The homepage starts at `http://127.0.0.1:3000`; interactive documentation is at `http://127.0.0.1:3000/docs`.
 
 Before opening a pull request, run:
 

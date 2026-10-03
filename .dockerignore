@@ -4,4 +4,3 @@ dist
 .github
 coverage
 *.log
-assets/brand/*.png

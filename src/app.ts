@@ -9,6 +9,7 @@ import Fastify, {
 import { loadGeography } from "./data/geography.js";
 import { loadRegions } from "./data/regions.js";
 import { registerGeographyRoutes } from "./routes/geography.js";
+import { registerHomeRoutes } from "./routes/home.js";
 import { registerRegionRoutes } from "./routes/regions.js";
 import { registerStatusRoutes } from "./routes/status.js";
 import { APP_VERSION } from "./version.js";
@@ -48,6 +49,7 @@ export async function buildApp(
     communes,
     arrondissements,
   } = await loadGeography(regions);
+  await registerHomeRoutes(app);
   await registerStatusRoutes(app);
   await registerRegionRoutes(app, regions);
   await registerGeographyRoutes(
