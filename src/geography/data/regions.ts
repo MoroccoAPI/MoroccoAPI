@@ -1,20 +1,8 @@
 import { readFile } from "node:fs/promises";
 
-import type { DatasetMeta, Region } from "../types.js";
+import type { Region } from "../types.js";
 
-const datasetUrl = new URL("../../data/administrative-regions.json", import.meta.url);
-
-export const regionSources = [
-  {
-    dataset: "Population légale du Royaume du Maroc selon les résultats du RGPH 2024",
-    producer: "Haut-Commissariat au Plan (HCP)",
-    source_url:
-      "https://www.hcp.ma/Population-legale-du-Royaume-du-Maroc-repartie-par-regions-provinces-et-prefectures-et-communes-selon-les-resultats-du_a3975.html",
-    resource_url: "https://www.hcp.ma/file/242341/",
-    license: "CC-BY-4.0",
-    source_updated_at: "2024-11-22",
-  },
-] as const;
+const datasetUrl = new URL("../../../data/administrative-regions.json", import.meta.url);
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null;
@@ -71,15 +59,4 @@ export async function loadRegions(): Promise<readonly Region[]> {
       Object.freeze({ ...region, name: Object.freeze({ ...region.name }) }),
     ),
   );
-}
-
-export function buildDatasetMeta(total: number): DatasetMeta {
-  return {
-    dataset: "administrative-regions",
-    total,
-    license: "CC-BY-4.0",
-    retrieved_at: "2026-09-25",
-    transformation_version: "2.0.0",
-    sources: regionSources,
-  };
 }

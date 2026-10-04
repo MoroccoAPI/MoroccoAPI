@@ -1,3 +1,6 @@
+import { buildDatasetMeta } from "./metadata.js";
+import type { DatasetMeta } from "./types.js";
+
 export const regionSchema = {
   type: "object",
   additionalProperties: false,
@@ -19,10 +22,6 @@ export const regionSchema = {
   },
 } as const;
 
-const nullableSourceLanguageSchema = {
-  anyOf: [{ type: "string" }, { type: "null" }],
-} as const;
-
 const sourceLanguageNameSchema = {
   type: "object",
   additionalProperties: false,
@@ -30,7 +29,7 @@ const sourceLanguageNameSchema = {
   properties: {
     ar: { type: "string" },
     fr: { type: "string" },
-    en: nullableSourceLanguageSchema,
+    en: { anyOf: [{ type: "string" }, { type: "null" }] },
   },
 } as const;
 
@@ -157,74 +156,47 @@ const sourceSchema = {
   },
 } as const;
 
-export const datasetMetaSchema = {
-  type: "object",
-  additionalProperties: false,
-  required: [
-    "dataset",
-    "total",
-    "license",
-    "retrieved_at",
-    "transformation_version",
-    "sources",
-  ],
-  properties: {
-    dataset: { const: "administrative-regions" },
-    total: { type: "integer", minimum: 0 },
-      license: { const: "CC-BY-4.0" },
-      retrieved_at: { const: "2026-09-25" },
-      transformation_version: { const: "2.0.0" },
-    sources: { type: "array", minItems: 1, items: sourceSchema },
-  },
-} as const;
-
-export function geographyDatasetMetaSchema(
-  dataset:
-    | "administrative-provinces"
-    | "administrative-prefectures-of-arrondissements"
-    | "administrative-communes"
-    | "administrative-arrondissements",
-) {
-  const hcpSourceSchema = {
-    type: "object",
-    additionalProperties: false,
-    required: [
-      "dataset",
-      "producer",
-      "source_url",
-      "resource_url",
-      "license",
-      "source_updated_at",
-    ],
+export function datasetMetaSchema(dataset: DatasetMeta["dataset"]) {
+  const meta = buildDatasetMeta(dataset, 0);
+  const source = dataset === "administrative-regions" ? sourceSchema : {
+    ...sourceSchema,
     properties: {
-      dataset: { type: "string" },
+      ...sourceSchema.properties,
       producer: { const: "Haut-Commissariat au Plan (HCP)" },
-      source_url: { type: "string", format: "uri" },
-      resource_url: { type: "string", format: "uri" },
-      license: { const: "CC-BY-4.0" },
       source_updated_at: { const: "2024-11-22" },
     },
-  } as const;
-
+  };
   return {
     type: "object",
     additionalProperties: false,
-    required: [
-      "dataset",
-      "total",
-      "license",
-      "retrieved_at",
-      "transformation_version",
-      "sources",
-    ],
+    required: ["dataset", "total", "license", "retrieved_at", "transformation_version", "sources"],
     properties: {
       dataset: { const: dataset },
       total: { type: "integer", minimum: 0 },
-      license: { const: "CC-BY-4.0" },
-      retrieved_at: { const: "2026-09-26" },
-      transformation_version: { const: "3.1.0" },
-      sources: { type: "array", minItems: 1, items: hcpSourceSchema },
+      license: { const: meta.license },
+      retrieved_at: { const: meta.retrieved_at },
+      transformation_version: { const: meta.transformation_version },
+      sources: { type: "array", minItems: 1, items: source },
     },
+  } as const;
+}
+
+export function codeParamsSchema(isRegion = false) {
+  return {
+    type: "object", additionalProperties: false, required: ["code"],
+    properties: {
+      code: {
+        type: "string", minLength: 2, maxLength: isRegion ? 80 : 180,
+        pattern: isRegion ? "^[a-z0-9-]+$" : "^[a-z0-9]+(?:-+[a-z0-9]+)*$",
+      },
+    },
+  } as const;
+}
+
+export function responseSchema(data: Record<string, unknown>, meta: Record<string, unknown>) {
+  return {
+    type: "object", additionalProperties: false, required: ["data", "meta"],
+    properties: { data, meta },
   } as const;
 }
 

@@ -1,8 +1,8 @@
-import type { FastifyInstance } from "fastify";
+import type { FastifyPluginAsync } from "fastify";
 
-import { APP_REVISION, APP_VERSION } from "../version.js";
+import { APP_REVISION, APP_VERSION } from "./version.js";
 
-export async function registerStatusRoutes(app: FastifyInstance): Promise<void> {
+export const status: FastifyPluginAsync = async (app) => {
   app.get(
     "/api/v1/status",
     {
@@ -52,4 +52,4 @@ export async function registerStatusRoutes(app: FastifyInstance): Promise<void> 
       };
     },
   );
-}
+};

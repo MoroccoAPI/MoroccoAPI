@@ -66,32 +66,26 @@ export interface DatasetSource {
 }
 
 export interface DatasetMeta {
-  dataset: "administrative-regions";
-  total: number;
-  license: "CC-BY-4.0";
-  retrieved_at: "2026-09-25";
-  transformation_version: "2.0.0";
-  sources: readonly DatasetSource[];
-}
-
-export interface GeographyDatasetMeta {
   dataset:
+    | "administrative-regions"
     | "administrative-provinces"
     | "administrative-prefectures-of-arrondissements"
     | "administrative-communes"
     | "administrative-arrondissements";
   total: number;
   license: "CC-BY-4.0";
-  retrieved_at: "2026-09-26";
-  transformation_version: "3.1.0";
-  sources: readonly GeographyDatasetSource[];
+  retrieved_at: string;
+  transformation_version: string;
+  sources: readonly DatasetSource[];
 }
 
-export interface GeographyDatasetSource {
-  dataset: string;
-  producer: "Haut-Commissariat au Plan (HCP)";
-  source_url: string;
-  resource_url: string;
-  license: "CC-BY-4.0";
-  source_updated_at: "2024-11-22";
+export interface GeographyData {
+  provinces: readonly Province[];
+  prefecturesOfArrondissements: readonly PrefectureOfArrondissements[];
+  communes: readonly Commune[];
+  arrondissements: readonly Arrondissement[];
+}
+
+export interface ResourceParams {
+  code: string;
 }
