@@ -4,7 +4,7 @@ import { readFileSync } from "node:fs";
 import { it } from "node:test";
 
 const workflow = readFileSync(
-  new URL("../.github/workflows/release.yml", import.meta.url),
+  new URL("../../.github/workflows/release.yml", import.meta.url),
   "utf8",
 ).replace(/\r\n/g, "\n");
 const version = JSON.parse(readFileSync("package.json", "utf8")).version as string;

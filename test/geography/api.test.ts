@@ -1,10 +1,11 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
 import { after, before, describe, it } from "node:test";
 
 import type { FastifyInstance } from "fastify";
 
-import { buildApp } from "../src/app.js";
+import { buildApp } from "../../src/app.js";
+import { loadRegions } from "../../src/geography/data/regions.js";
+import { loadGeography } from "../../src/geography/data/subdivisions.js";
 
 let app: FastifyInstance;
 
@@ -17,102 +18,7 @@ after(async () => {
   await app.close();
 });
 
-describe("MoroccoAPI", () => {
-  it("keeps query values and credential headers out of logs without changing requests", async () => {
-    const logs: string[] = [];
-    const loggedApp = await buildApp({
-      logger: {
-        level: "info",
-        stream: {
-          write(line: string) {
-            logs.push(line);
-          },
-        },
-      },
-    });
-    const token = "logging-test-token";
-    const key = "logging-test-key";
-    const authorization = "logging-test-authorization";
-    const cookie = "logging-test-cookie";
-
-    try {
-      const search = await loggedApp.inject({
-        method: "GET",
-        url: `/api/v1/locations/search?q=kenitra&token=${token}&key=${key}`,
-        headers: { authorization: `Bearer ${authorization}`, cookie: `session=${cookie}` },
-      });
-      assert.equal(search.statusCode, 200);
-      assert.equal(search.json().data[0].code, "rabat-sale-kenitra");
-
-      for (const [url, statusCode] of [
-        [`/api/v1/status?%74oken=${token}&TOKEN=${token}&key=${key}&key=${key}`, 200],
-        [`/api/v1/locations/search?q=a&token=${token}&key=${key}`, 400],
-        [`/does-not-exist?token=${token}&key=${key}`, 404],
-        [`/docs/does-not-exist?token=${token}&key=${key}`, 404],
-        [`/docs/static/does-not-exist.js?token=${token}&key=${key}`, 404],
-        [`/api/v1/regions/%zz?token=${token}&key=${key}`, 400],
-      ] as const) {
-        const response = await loggedApp.inject({ method: "GET", url });
-        assert.equal(response.statusCode, statusCode, url);
-      }
-
-      const output = logs.join("");
-      for (const value of [token, key, authorization, cookie]) {
-        assert.ok(!output.includes(value), "Credential values must not appear in logs");
-      }
-      const entries = logs.map((line) => JSON.parse(line));
-      const requestEntry = entries.find((entry) => entry.req?.url === "/api/v1/locations/search");
-      assert.ok(requestEntry, "Requests must still be logged with their path");
-      assert.equal(requestEntry.req.method, "GET");
-      assert.ok(entries.some((entry) => entry.res?.statusCode === 200));
-    } finally {
-      await loggedApp.close();
-    }
-  });
-
-  it("serves the homepage and its logo without exposing them in OpenAPI", async () => {
-    const page = await app.inject({ method: "GET", url: "/" });
-    assert.equal(page.statusCode, 200);
-    assert.match(page.headers["content-type"] ?? "", /^text\/html/);
-    assert.match(page.body, /href="\/docs"/);
-
-    const logo = await app.inject({
-      method: "GET",
-      url: "/assets/moroccoapi-logo.png",
-    });
-    assert.equal(logo.statusCode, 200);
-    assert.equal(logo.headers["content-type"], "image/png");
-    assert.equal(logo.rawPayload.subarray(1, 4).toString(), "PNG");
-
-    const spec = (await app.inject("/openapi.json")).json();
-    assert.equal(spec.paths["/"], undefined);
-    assert.equal(spec.paths["/assets/moroccoapi-logo.png"], undefined);
-  });
-
-  it("reports the package version consistently on the homepage, status, and OpenAPI", async () => {
-    const packageInfo = JSON.parse(
-      await readFile(new URL("../package.json", import.meta.url), "utf8"),
-    ) as { version: string };
-    const status = (await app.inject("/api/v1/status")).json();
-    const spec = (await app.inject("/openapi.json")).json();
-    const page = await app.inject("/");
-    assert.equal(status.data.version, packageInfo.version);
-    assert.equal(spec.info.version, packageInfo.version);
-    assert.ok(page.body.includes(`v${packageInfo.version}`));
-  });
-
-  it("reports service health", async () => {
-    const response = await app.inject({ method: "GET", url: "/api/v1/status" });
-    assert.equal(response.statusCode, 200);
-
-    const body = response.json();
-    assert.equal(body.data.status, "ok");
-    assert.equal(body.data.service, "MoroccoAPI");
-    assert.equal(response.headers["x-moroccoapi-revision"], process.env.RENDER_GIT_COMMIT);
-    assert.match(body.data.timestamp, /^\d{4}-\d{2}-\d{2}T/);
-    assert.equal(typeof body.meta.request_id, "string");
-  });
-
+describe("geography/regions", () => {
   it("returns exactly 12 regions with unique MoroccoAPI codes", async () => {
     const response = await app.inject({ method: "GET", url: "/api/v1/regions" });
     assert.equal(response.statusCode, 200);
@@ -153,7 +59,9 @@ describe("MoroccoAPI", () => {
     assert.equal(response.statusCode, 404);
     assert.equal(response.json().error.code, "RESOURCE_NOT_FOUND");
   });
+});
 
+describe("geography/provinces", () => {
   it("returns all 75 provinces and prefectures with unique codes", async () => {
     const response = await app.inject({ method: "GET", url: "/api/v1/provinces" });
     assert.equal(response.statusCode, 200);
@@ -292,7 +200,9 @@ describe("MoroccoAPI", () => {
     assert.equal(response.statusCode, 404);
     assert.equal(response.json().error.code, "RESOURCE_NOT_FOUND");
   });
+});
 
+describe("geography/prefectures-of-arrondissements", () => {
   it("returns Casablanca's eight prefectures of arrondissements", async () => {
     const response = await app.inject({
       method: "GET",
@@ -340,7 +250,9 @@ describe("MoroccoAPI", () => {
     assert.equal(response.statusCode, 404);
     assert.equal(response.json().error.code, "RESOURCE_NOT_FOUND");
   });
+});
 
+describe("geography/communes", () => {
   it("returns all 1503 communes with unique composite codes", async () => {
     const response = await app.inject({ method: "GET", url: "/api/v1/communes" });
     assert.equal(response.statusCode, 200);
@@ -405,7 +317,9 @@ describe("MoroccoAPI", () => {
     assert.equal(response.statusCode, 404);
     assert.equal(response.json().error.code, "RESOURCE_NOT_FOUND");
   });
+});
 
+describe("geography/arrondissements", () => {
   it("returns all 41 arrondissements with their parent communes", async () => {
     const response = await app.inject({
       method: "GET",
@@ -473,28 +387,9 @@ describe("MoroccoAPI", () => {
     assert.equal(response.statusCode, 404);
     assert.equal(response.json().error.code, "RESOURCE_NOT_FOUND");
   });
+});
 
-  it("keeps MoroccoAPI and HCP codes unique across published administrative levels", async () => {
-    const urls = [
-      "/api/v1/regions",
-      "/api/v1/provinces",
-      "/api/v1/prefectures-of-arrondissements",
-      "/api/v1/communes",
-      "/api/v1/arrondissements",
-    ];
-    const responses = await Promise.all(
-      urls.map((url) => app.inject({ method: "GET", url })),
-    );
-    const records = responses.flatMap((response) => response.json().data);
-    const codes = records.map((record: { code: string }) => record.code);
-    const hcpCodes = records.map(
-      (record: { hcp_code: string }) => record.hcp_code,
-    );
-
-    assert.equal(new Set(codes).size, records.length);
-    assert.equal(new Set(hcpCodes).size, records.length);
-  });
-
+describe("geography/search", () => {
   it("searches names without requiring French accents", async () => {
     const response = await app.inject({
       method: "GET",
@@ -544,32 +439,44 @@ describe("MoroccoAPI", () => {
     assert.equal(whitespaceResponse.statusCode, 400);
     assert.equal(whitespaceResponse.json().error.code, "VALIDATION_ERROR");
   });
+});
 
-  it("publishes an OpenAPI document for the public routes", async () => {
-    const response = await app.inject({ method: "GET", url: "/openapi.json" });
-    assert.equal(response.statusCode, 200);
+describe("geography/data", () => {
+  it("loads immutable snapshots with immutable records and names", async () => {
+    const regions = await loadRegions();
+    const subdivisions = await loadGeography(regions);
 
-    const body = response.json();
-    assert.equal(body.info.title, "MoroccoAPI");
-    assert.ok(body.paths["/api/v1/regions"]);
-    const subdivisionsRoute = body.paths["/api/v1/regions/{code}/subdivisions"];
-    assert.ok(subdivisionsRoute?.get);
-    assert.ok(subdivisionsRoute.get.responses["200"]);
-    assert.ok(subdivisionsRoute.get.responses["404"]);
-    assert.ok(body.paths["/api/v1/provinces"]);
-    assert.ok(body.paths["/api/v1/provinces/{code}"]);
-    assert.ok(body.paths["/api/v1/prefectures-of-arrondissements"]);
-    assert.ok(body.paths["/api/v1/prefectures-of-arrondissements/{code}"]);
-    assert.ok(body.paths["/api/v1/communes"]);
-    assert.ok(body.paths["/api/v1/communes/{code}"]);
-    assert.ok(body.paths["/api/v1/arrondissements"]);
-    assert.ok(body.paths["/api/v1/arrondissements/{code}"]);
-    assert.ok(body.paths["/api/v1/locations/search"]);
+    for (const records of [regions, ...Object.values(subdivisions)]) {
+      assert.ok(Object.isFrozen(records));
+      for (const record of records) {
+        assert.ok(Object.isFrozen(record));
+        assert.ok(Object.isFrozen(record.name));
+      }
+    }
   });
 
-  it("returns a consistent error for unknown routes", async () => {
-    const response = await app.inject({ method: "GET", url: "/does-not-exist" });
-    assert.equal(response.statusCode, 404);
-    assert.equal(response.json().error.code, "ROUTE_NOT_FOUND");
+  it("rejects subdivisions whose parent region is absent", async () => {
+    await assert.rejects(loadGeography([]), /Unknown region code/);
+  });
+
+  it("keeps MoroccoAPI and HCP codes unique across published administrative levels", async () => {
+    const urls = [
+      "/api/v1/regions",
+      "/api/v1/provinces",
+      "/api/v1/prefectures-of-arrondissements",
+      "/api/v1/communes",
+      "/api/v1/arrondissements",
+    ];
+    const responses = await Promise.all(
+      urls.map((url) => app.inject({ method: "GET", url })),
+    );
+    const records = responses.flatMap((response) => response.json().data);
+    const codes = records.map((record: { code: string }) => record.code);
+    const hcpCodes = records.map(
+      (record: { hcp_code: string }) => record.hcp_code,
+    );
+
+    assert.equal(new Set(codes).size, records.length);
+    assert.equal(new Set(hcpCodes).size, records.length);
   });
 });
