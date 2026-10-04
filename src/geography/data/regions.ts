@@ -2,7 +2,7 @@ import { readFile } from "node:fs/promises";
 
 import type { Region } from "../types.js";
 
-const datasetUrl = new URL("../../../data/administrative-regions.json", import.meta.url);
+const datasetUrl = new URL("../../../data/geography/administrative-regions.json", import.meta.url);
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null;

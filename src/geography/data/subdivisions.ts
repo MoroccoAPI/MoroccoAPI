@@ -11,19 +11,19 @@ import type {
 } from "../types.js";
 
 const provincesDatasetUrl = new URL(
-  "../../../data/administrative-provinces.json",
+  "../../../data/geography/administrative-provinces.json",
   import.meta.url,
 );
 const communesDatasetUrl = new URL(
-  "../../../data/administrative-communes.json",
+  "../../../data/geography/administrative-communes.json",
   import.meta.url,
 );
 const prefecturesOfArrondissementsDatasetUrl = new URL(
-  "../../../data/administrative-prefectures-of-arrondissements.json",
+  "../../../data/geography/administrative-prefectures-of-arrondissements.json",
   import.meta.url,
 );
 const arrondissementsDatasetUrl = new URL(
-  "../../../data/administrative-arrondissements.json",
+  "../../../data/geography/administrative-arrondissements.json",
   import.meta.url,
 );
 const codePattern = /^[a-z0-9]+(?:-+[a-z0-9]+)*$/;
