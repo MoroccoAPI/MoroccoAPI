@@ -1,10 +1,10 @@
 import { readFile } from "node:fs/promises";
 
-import type { FastifyInstance } from "fastify";
+import type { FastifyPluginAsync } from "fastify";
 
-import { renderHomePage } from "../pages/home.js";
+import { renderHomePage } from "./page.js";
 
-export async function registerHomeRoutes(app: FastifyInstance): Promise<void> {
+export const home: FastifyPluginAsync = async (app) => {
   const logo = await readFile(
     new URL("../../assets/brand/moroccoapi-logo.png", import.meta.url),
   );
@@ -23,4 +23,4 @@ export async function registerHomeRoutes(app: FastifyInstance): Promise<void> {
         .type("image/png")
         .send(logo),
   );
-}
+};

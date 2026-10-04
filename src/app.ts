@@ -7,12 +7,9 @@ import Fastify, {
   type FastifyServerOptions,
 } from "fastify";
 
-import { loadGeography } from "./data/geography.js";
-import { loadRegions } from "./data/regions.js";
-import { registerGeographyRoutes } from "./routes/geography.js";
-import { registerHomeRoutes } from "./routes/home.js";
-import { registerRegionRoutes } from "./routes/regions.js";
-import { registerStatusRoutes } from "./routes/status.js";
+import { geography } from "./geography/routes.js";
+import { status } from "./status.js";
+import { home } from "./home/routes.js";
 import { APP_VERSION } from "./version.js";
 
 export async function buildApp(
@@ -67,24 +64,6 @@ export async function buildApp(
     uiConfig: { docExpansion: "list", deepLinking: true },
   });
 
-  const regions = await loadRegions();
-  const {
-    provinces,
-    prefecturesOfArrondissements,
-    communes,
-    arrondissements,
-  } = await loadGeography(regions);
-  await registerHomeRoutes(app);
-  await registerStatusRoutes(app);
-  await registerRegionRoutes(app, regions);
-  await registerGeographyRoutes(
-    app,
-    provinces,
-    prefecturesOfArrondissements,
-    communes,
-    arrondissements,
-  );
-
   app.get(
     "/openapi.json",
     {
@@ -126,6 +105,10 @@ export async function buildApp(
       },
     });
   });
+
+  await app.register(home);
+  await app.register(status);
+  await app.register(geography);
 
   return app;
 }

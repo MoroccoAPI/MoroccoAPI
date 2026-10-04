@@ -3,7 +3,7 @@ import { readFile } from "node:fs/promises";
 import type {
   Arrondissement,
   Commune,
-  GeographyDatasetMeta,
+  GeographyData,
   PrefectureOfArrondissements,
   Province,
   Region,
@@ -11,19 +11,19 @@ import type {
 } from "../types.js";
 
 const provincesDatasetUrl = new URL(
-  "../../data/administrative-provinces.json",
+  "../../../data/geography/administrative-provinces.json",
   import.meta.url,
 );
 const communesDatasetUrl = new URL(
-  "../../data/administrative-communes.json",
+  "../../../data/geography/administrative-communes.json",
   import.meta.url,
 );
 const prefecturesOfArrondissementsDatasetUrl = new URL(
-  "../../data/administrative-prefectures-of-arrondissements.json",
+  "../../../data/geography/administrative-prefectures-of-arrondissements.json",
   import.meta.url,
 );
 const arrondissementsDatasetUrl = new URL(
-  "../../data/administrative-arrondissements.json",
+  "../../../data/geography/administrative-arrondissements.json",
   import.meta.url,
 );
 const codePattern = /^[a-z0-9]+(?:-+[a-z0-9]+)*$/;
@@ -157,13 +157,6 @@ function freezeRecords<T extends { name: SourceLanguageName }>(
       Object.freeze({ ...record, name: Object.freeze({ ...record.name }) }),
     ),
   );
-}
-
-export interface GeographyData {
-  provinces: readonly Province[];
-  prefecturesOfArrondissements: readonly PrefectureOfArrondissements[];
-  communes: readonly Commune[];
-  arrondissements: readonly Arrondissement[];
 }
 
 export async function loadGeography(
@@ -373,30 +366,5 @@ export async function loadGeography(
     ),
     communes: freezeRecords(parsedCommunes),
     arrondissements: freezeRecords(parsedArrondissements),
-  };
-}
-
-export function buildGeographyDatasetMeta(
-  dataset: GeographyDatasetMeta["dataset"],
-  total: number,
-): GeographyDatasetMeta {
-  return {
-    dataset,
-    total,
-    license: "CC-BY-4.0",
-    retrieved_at: "2026-09-26",
-    transformation_version: "3.1.0",
-    sources: [
-      {
-        dataset:
-          "Population légale du Royaume du Maroc selon les résultats du RGPH 2024",
-        producer: "Haut-Commissariat au Plan (HCP)",
-        source_url:
-          "https://www.hcp.ma/Population-legale-du-Royaume-du-Maroc-repartie-par-regions-provinces-et-prefectures-et-communes-selon-les-resultats-du_a3975.html",
-        resource_url: "https://www.hcp.ma/file/242341/",
-        license: "CC-BY-4.0",
-        source_updated_at: "2024-11-22",
-      },
-    ],
   };
 }
