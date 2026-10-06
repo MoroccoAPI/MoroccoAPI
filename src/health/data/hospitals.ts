@@ -3,17 +3,10 @@ import { readFile } from "node:fs/promises";
 import type { GeographyData, Region } from "../../geography/types.js";
 import { hospitalCategories } from "../categories.js";
 import type { Hospital } from "../types.js";
+import { isRecord, isStrings, validateFacilityGeography } from "./validation.js";
 
 const datasetUrl = new URL("../../../data/health/hospitals.json", import.meta.url);
 const categories = new Set<string>(hospitalCategories);
-
-function isRecord(value: unknown): value is Record<string, unknown> {
-  return typeof value === "object" && value !== null && !Array.isArray(value);
-}
-
-function isStrings(value: unknown): value is string[] {
-  return Array.isArray(value) && value.every((item) => typeof item === "string" && item.trim() !== "");
-}
 
 function assertHospital(value: unknown, index: number): asserts value is Hospital {
   if (!isRecord(value) || typeof value.id !== "string" || !/^hospital-[a-z0-9-]+$/.test(value.id) ||
@@ -50,25 +43,7 @@ export async function loadHospitals(
     assertHospital(record, index);
     return record;
   });
-  const ids = new Set<string>();
-  const regionCodes = new Set(regions.map((region) => region.code));
-  const provinceByCode = new Map(geography.provinces.map((province) => [province.code, province]));
-  const communeByCode = new Map(geography.communes.map((commune) => [commune.code, commune]));
-  const arrondissementByCode = new Map(geography.arrondissements.map((arrondissement) => [arrondissement.code, arrondissement]));
-  for (const record of hospitals) {
-    if (ids.has(record.id)) throw new Error(`Duplicate hospital ID '${record.id}'`);
-    ids.add(record.id);
-    const province = provinceByCode.get(record.province_code);
-    if (!regionCodes.has(record.region_code) || !province || province.region_code !== record.region_code) {
-      throw new Error(`Invalid hospital province/region relationship for '${record.id}'`);
-    }
-    if (record.commune_code !== null && communeByCode.get(record.commune_code)?.province_code !== record.province_code) {
-      throw new Error(`Invalid hospital commune for '${record.id}'`);
-    }
-    if (record.arrondissement_code !== null && arrondissementByCode.get(record.arrondissement_code)?.commune_code !== record.commune_code) {
-      throw new Error(`Invalid hospital arrondissement for '${record.id}'`);
-    }
-  }
+  validateFacilityGeography(hospitals, regions, geography, "hospital");
   return Object.freeze(
     hospitals.map((record) => Object.freeze({
       ...record,
