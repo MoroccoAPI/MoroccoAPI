@@ -1,5 +1,6 @@
 import type { FastifyPluginAsync } from "fastify";
 
+import { errorSchema, responseSchema } from "../common/schemas.js";
 import { loadRegions } from "./data/regions.js";
 import { loadGeography } from "./data/subdivisions.js";
 import { buildDatasetMeta } from "./metadata.js";
@@ -8,11 +9,9 @@ import {
   codeParamsSchema,
   communeSchema,
   datasetMetaSchema,
-  errorSchema,
   prefectureOfArrondissementsSchema,
   provinceSchema,
   regionSchema,
-  responseSchema,
 } from "./schemas.js";
 import type { DatasetMeta, ResourceParams } from "./types.js";
 
