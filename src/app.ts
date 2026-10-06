@@ -58,7 +58,7 @@ export async function buildApp(
           name: "Administrative geography",
           description: "Normalized public administrative geography data",
         },
-        { name: "Health", description: "Hospital directory with source and snapshot metadata" },
+        { name: "Health", description: "Health facilities and infrastructure indicators with source and snapshot metadata" },
       ],
     },
   });

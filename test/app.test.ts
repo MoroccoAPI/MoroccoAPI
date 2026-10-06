@@ -48,6 +48,8 @@ describe("Application contracts", () => {
       });
       assert.equal((await sharedApp.inject("/api/v1/regions")).statusCode, 200);
       assert.equal((await sharedApp.inject("/api/v1/health/hospitals")).statusCode, 200);
+      assert.equal((await sharedApp.inject("/api/v1/health/primary-care-facilities")).statusCode, 200);
+      assert.equal((await sharedApp.inject("/api/v1/health/private-infrastructure")).statusCode, 200);
     } finally {
       fs.readFile = originalReadFile;
       syncBuiltinESMExports();
