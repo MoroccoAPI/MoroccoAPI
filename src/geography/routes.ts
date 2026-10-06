@@ -1,6 +1,7 @@
 import type { FastifyPluginAsync } from "fastify";
 
 import { errorSchema, responseSchema } from "../common/schemas.js";
+import { normalizeSearch } from "../common/search.js";
 import { loadRegions } from "./data/regions.js";
 import { loadGeography } from "./data/subdivisions.js";
 import { buildDatasetMeta } from "./metadata.js";
@@ -14,16 +15,6 @@ import {
   regionSchema,
 } from "./schemas.js";
 import type { DatasetMeta, ResourceParams } from "./types.js";
-
-function normalizeSearch(value: string): string {
-  return value
-    .normalize("NFD")
-    .replace(/\p{M}+/gu, "")
-    .replace(/\u0640/g, "")
-    .replace(/ة/g, "ه")
-    .toLocaleLowerCase("fr")
-    .trim();
-}
 
 export const geography: FastifyPluginAsync = async (app) => {
   const regions = await loadRegions();
