@@ -10,6 +10,7 @@ import Fastify, {
 import { geography } from "./geography/routes.js";
 import { loadRegions } from "./geography/data/regions.js";
 import { loadGeography } from "./geography/data/subdivisions.js";
+import { health } from "./health/routes.js";
 import { status } from "./status.js";
 import { home } from "./home/routes.js";
 import { APP_VERSION } from "./version.js";
@@ -57,6 +58,7 @@ export async function buildApp(
           name: "Administrative geography",
           description: "Normalized public administrative geography data",
         },
+        { name: "Health", description: "Hospital directory with source and snapshot metadata" },
       ],
     },
   });
@@ -117,6 +119,7 @@ export async function buildApp(
   await app.register(home);
   await app.register(status);
   await app.register(geography, { data: geographyData });
+  await app.register(health, { geography: geographyData });
 
   return app;
 }
