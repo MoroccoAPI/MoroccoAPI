@@ -2,8 +2,6 @@ import type { FastifyPluginAsync } from "fastify";
 
 import { errorSchema, responseSchema } from "../common/schemas.js";
 import { normalizeSearch } from "../common/search.js";
-import { loadRegions } from "./data/regions.js";
-import { loadGeography } from "./data/subdivisions.js";
 import { buildDatasetMeta } from "./metadata.js";
 import {
   arrondissementSchema,
@@ -14,12 +12,10 @@ import {
   provinceSchema,
   regionSchema,
 } from "./schemas.js";
-import type { DatasetMeta, ResourceParams } from "./types.js";
+import type { DatasetMeta, GeographySnapshot, ResourceParams } from "./types.js";
 
-export const geography: FastifyPluginAsync = async (app) => {
-  const regions = await loadRegions();
-  const { provinces, prefecturesOfArrondissements, communes, arrondissements } =
-    await loadGeography(regions);
+export const geography: FastifyPluginAsync<{ data: GeographySnapshot }> = async (app, { data }) => {
+  const { regions, provinces, prefecturesOfArrondissements, communes, arrondissements } = data;
   const tags = ["Administrative geography"];
 
   const resources = [

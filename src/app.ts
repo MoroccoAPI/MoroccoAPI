@@ -8,6 +8,8 @@ import Fastify, {
 } from "fastify";
 
 import { geography } from "./geography/routes.js";
+import { loadRegions } from "./geography/data/regions.js";
+import { loadGeography } from "./geography/data/subdivisions.js";
 import { status } from "./status.js";
 import { home } from "./home/routes.js";
 import { APP_VERSION } from "./version.js";
@@ -106,9 +108,15 @@ export async function buildApp(
     });
   });
 
+  const regions = await loadRegions();
+  const geographyData = Object.freeze({
+    regions,
+    ...await loadGeography(regions),
+  });
+
   await app.register(home);
   await app.register(status);
-  await app.register(geography);
+  await app.register(geography, { data: geographyData });
 
   return app;
 }
