@@ -10,6 +10,7 @@ import Fastify, {
 import { geography } from "./geography/routes.js";
 import { status } from "./status.js";
 import { home } from "./home/routes.js";
+import { population } from "./population/routes.js";
 import { APP_VERSION } from "./version.js";
 
 export async function buildApp(
@@ -55,6 +56,7 @@ export async function buildApp(
           name: "Administrative geography",
           description: "Normalized public administrative geography data",
         },
+        { name: "Population", description: "Demographic data for Morocco" },
       ],
     },
   });
@@ -109,6 +111,7 @@ export async function buildApp(
   await app.register(home);
   await app.register(status);
   await app.register(geography);
+  await app.register(population);
 
   return app;
 }

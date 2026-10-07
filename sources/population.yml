@@ -1,0 +1,39 @@
+id: population
+title: Morocco population (RGPH 2024)
+version: 2.0.0
+retrieved_at: 2026-10-05
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/
+terms_url: https://www.hcp.ma/Conditions-generales-d-utilisation-Version-1-0_a2194.html
+contains_personal_data: false
+redistribution_review: approved
+
+sources:
+  - language_fields: [ar, fr]
+    dataset: Population légale du Royaume du Maroc selon les résultats du RGPH 2024
+    producer: Haut-Commissariat au Plan (HCP)
+    catalog_url: https://www.hcp.ma/Population-legale-du-Royaume-du-Maroc-repartie-par-regions-provinces-et-prefectures-et-communes-selon-les-resultats-du_a3975.html
+    resource_url: https://www.hcp.ma/file/242342/
+    source_updated_at: 2024-11-22
+    source_license: CC-BY-4.0
+  - language_fields: [ar, en]
+    dataset: Le Maroc en chiffres, 2025 (version arabe et anglaise)
+    producer: Haut-Commissariat au Plan (HCP)
+    catalog_url: https://www.hcp.ma/downloads/?tag=Le+Maroc+en+chiffres
+    resource_url: https://www.hcp.ma/file/246713/
+    source_updated_at: 2024-11-22
+    source_license: CC-BY-4.0
+
+transformations:
+  - Extracted the national population total, nationality breakdown, and urban/rural breakdown.
+  - Published regional totals with the corresponding administrative region codes and names.
+  - Published province and prefecture totals, mapping source HCP codes to administrative geography records.
+  - Published commune totals and household counts, mapping HCP codes and parent units to geography records.
+  - Published historical national census totals with urban/rural breakdowns.
+  - Preserved the published counts without estimating missing values.
+
+
+
+limitations:
+  - Historical totals are available only at the national level; regional and subdivision time series are not included.
+  - The source follows Morocco's official territorial scope, including Moroccan-administered territory in Western Sahara.
