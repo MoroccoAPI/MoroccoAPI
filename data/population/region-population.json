@@ -1,0 +1,182 @@
+[
+    {
+        "code": "tanger-tetouan-al-hoceima",
+        "hcp_code": "01",
+        "type": "region",
+        "name": {
+            "ar": "طنجة-تطوان-الحسيمة",
+            "fr": "Tanger-Tétouan-Al Hoceima",
+            "en": "Tanger-Tetouan-Al Hoceima"
+        },
+        "population": 4030222,
+        "moroccans": 4020545,
+        "foreigners": 9677,
+        "urban": 2638815,
+        "rural": 1391407
+    },
+    {
+        "code": "oriental",
+        "hcp_code": "02",
+        "type": "region",
+        "name": {
+            "ar": "الشرق",
+            "fr": "L’Oriental",
+            "en": "L’Oriental"
+        },
+        "population": 2294665,
+        "moroccans": 2291040,
+        "foreigners": 3625,
+        "urban": 1505714,
+        "rural": 788951
+    },
+    {
+        "code": "fes-meknes",
+        "hcp_code": "03",
+        "type": "region",
+        "name": {
+            "ar": "فاس - مكناس",
+            "fr": "Fès - Meknès",
+            "en": "Fès - Meknès"
+        },
+        "population": 4467911,
+        "moroccans": 4461182,
+        "foreigners": 6729,
+        "urban": 2855366,
+        "rural": 1612545
+    },
+    {
+        "code": "rabat-sale-kenitra",
+        "hcp_code": "04",
+        "type": "region",
+        "name": {
+            "ar": "الرباط - سلا - القنيطرة",
+            "fr": "Rabat - Salé - Kénitra",
+            "en": "Rabat - Sale - Kenitra"
+        },
+        "population": 5132639,
+        "moroccans": 5103406,
+        "foreigners": 29233,
+        "urban": 3627178,
+        "rural": 1505461
+    },
+    {
+        "code": "beni-mellal-khenifra",
+        "hcp_code": "05",
+        "type": "region",
+        "name": {
+            "ar": "بني ملال - خنيفرة",
+            "fr": "Béni Mellal - Khénifra",
+            "en": "Béni Mellal - Khénifra"
+        },
+        "population": 2525801,
+        "moroccans": 2524541,
+        "foreigners": 1260,
+        "urban": 1283492,
+        "rural": 1242309
+    },
+    {
+        "code": "casablanca-settat",
+        "hcp_code": "06",
+        "type": "region",
+        "name": {
+            "ar": "الدار البيضاء - سطات",
+            "fr": "Casablanca - Settat",
+            "en": "Casablanca - Settat"
+        },
+        "population": 7688967,
+        "moroccans": 7628065,
+        "foreigners": 60902,
+        "urban": 5633748,
+        "rural": 2055219
+    },
+    {
+        "code": "marrakech-safi",
+        "hcp_code": "07",
+        "type": "region",
+        "name": {
+            "ar": "مراكش - آسفي",
+            "fr": "Marrakech - Safi",
+            "en": "Marrakech - Safi"
+        },
+        "population": 4892393,
+        "moroccans": 4878500,
+        "foreigners": 13893,
+        "urban": 2248954,
+        "rural": 2643439
+    },
+    {
+        "code": "draa-tafilalet",
+        "hcp_code": "08",
+        "type": "region",
+        "name": {
+            "ar": "درعة - تافيلالت",
+            "fr": "Drâa - Tafilalet",
+            "en": "Draa - Tafilalet"
+        },
+        "population": 1655623,
+        "moroccans": 1654942,
+        "foreigners": 681,
+        "urban": 607724,
+        "rural": 1047899
+    },
+    {
+        "code": "souss-massa",
+        "hcp_code": "09",
+        "type": "region",
+        "name": {
+            "ar": "سوس - ماسة",
+            "fr": "Souss - Massa",
+            "en": "Souss - Massa"
+        },
+        "population": 3020431,
+        "moroccans": 3006430,
+        "foreigners": 14001,
+        "urban": 1816102,
+        "rural": 1204329
+    },
+    {
+        "code": "guelmim-oued-noun",
+        "hcp_code": "10",
+        "type": "region",
+        "name": {
+            "ar": "كلميم - واد نون",
+            "fr": "Guelmim - Oued Noun",
+            "en": "Guelmim - Oued Noun"
+        },
+        "population": 448685,
+        "moroccans": 448152,
+        "foreigners": 533,
+        "urban": 299543,
+        "rural": 149142
+    },
+    {
+        "code": "laayoune-sakia-el-hamra",
+        "hcp_code": "11",
+        "type": "region",
+        "name": {
+            "ar": "العيون - الساقية الحمراء",
+            "fr": "Laâyoune - Sakia El Hamra",
+            "en": "Laayoune - Sakia El Hamra"
+        },
+        "population": 451028,
+        "moroccans": 449256,
+        "foreigners": 1772,
+        "urban": 416636,
+        "rural": 34392
+    },
+    {
+        "code": "dakhla-oued-ed-dahab",
+        "hcp_code": "12",
+        "type": "region",
+        "name": {
+            "ar": "الداخلة - وادي الذهب",
+            "fr": "Dakhla - Oued Ed-Dahab",
+            "en": "Dakhla - Oued Ed-Dahab"
+        },
+        "population": 219965,
+        "moroccans": 214119,
+        "foreigners": 5846,
+        "urban": 176836,
+        "rural": 43129
+    }
+]

@@ -13,6 +13,7 @@ import { loadGeography } from "./geography/data/subdivisions.js";
 import { health } from "./health/routes.js";
 import { status } from "./status.js";
 import { home } from "./home/routes.js";
+import { population } from "./population/routes.js";
 import { APP_VERSION } from "./version.js";
 
 export async function buildApp(
@@ -58,6 +59,7 @@ export async function buildApp(
           name: "Administrative geography",
           description: "Normalized public administrative geography data",
         },
+        { name: "Population", description: "Demographic data for Morocco" },
         { name: "Health", description: "Health facilities and infrastructure indicators with source and snapshot metadata" },
       ],
     },
@@ -119,6 +121,7 @@ export async function buildApp(
   await app.register(home);
   await app.register(status);
   await app.register(geography, { data: geographyData });
+  await app.register(population);
   await app.register(health, { geography: geographyData });
 
   return app;

@@ -1,0 +1,17 @@
+[
+    {
+        "total": 36828330,
+        "moroccans": 36680178,
+        "foreigners": 148152,
+        "urban": {
+            "total": 23110108,
+            "moroccans": 22969999,
+            "foreigners": 140109
+        },
+        "rural": {
+            "total": 13718222,
+            "moroccans": 13710179,
+            "foreigners": 8043
+        }
+    }
+]

@@ -8,6 +8,15 @@ All public endpoints use a versioned base path:
 /api/v1
 ```
 
+Population endpoints provide national totals at `/api/v1/population/national`,
+regional totals at `/api/v1/population/regions` and
+`/api/v1/population/regions/{code}`, province and prefecture totals at
+`/api/v1/population/subdivisions` and `/api/v1/population/subdivisions/{code}`,
+and commune totals at `/api/v1/population/communes` and
+`/api/v1/population/communes/{code}`. Historical national totals are available
+at `/api/v1/population/historical` and `/api/v1/population/historical/{year}`.
+Geography codes match the administrative geography API.
+
 MoroccoAPI `1.0.0` is the first stable application version and serves the
 `/api/v1` contract. Application release numbers and API path versions are
 separate: compatible fixes and additions keep the same base path. Breaking

@@ -1,0 +1,752 @@
+[
+    {
+        "code": "tetouan",
+        "hcp_code": "01.571",
+        "administrative_type": "province",
+        "population": 611928,
+        "marocains": 610757,
+        "etrangers": 1171,
+        "menages": 157384,
+        "region_code": "tanger-tetouan-al-hoceima"
+    },
+    {
+        "code": "fahs-anjra",
+        "hcp_code": "01.227",
+        "administrative_type": "province",
+        "population": 100789,
+        "marocains": 100700,
+        "etrangers": 89,
+        "menages": 25160,
+        "region_code": "tanger-tetouan-al-hoceima"
+    },
+    {
+        "code": "larache",
+        "hcp_code": "01.331",
+        "administrative_type": "province",
+        "population": 510211,
+        "marocains": 510017,
+        "etrangers": 194,
+        "menages": 124642,
+        "region_code": "tanger-tetouan-al-hoceima"
+    },
+    {
+        "code": "al-hoceima",
+        "hcp_code": "01.051",
+        "administrative_type": "province",
+        "population": 371527,
+        "marocains": 371391,
+        "etrangers": 136,
+        "menages": 89181,
+        "region_code": "tanger-tetouan-al-hoceima"
+    },
+    {
+        "code": "chefchaouen",
+        "hcp_code": "01.151",
+        "administrative_type": "province",
+        "population": 412713,
+        "marocains": 412617,
+        "etrangers": 96,
+        "menages": 90956,
+        "region_code": "tanger-tetouan-al-hoceima"
+    },
+    {
+        "code": "ouezzane",
+        "hcp_code": "01.405",
+        "administrative_type": "province",
+        "population": 274577,
+        "marocains": 274500,
+        "etrangers": 77,
+        "menages": 74896,
+        "region_code": "tanger-tetouan-al-hoceima"
+    },
+    {
+        "code": "nador",
+        "hcp_code": "02.381",
+        "administrative_type": "province",
+        "population": 565987,
+        "marocains": 565542,
+        "etrangers": 445,
+        "menages": 146090,
+        "region_code": "oriental"
+    },
+    {
+        "code": "driouch",
+        "hcp_code": "02.167",
+        "administrative_type": "province",
+        "population": 188191,
+        "marocains": 188047,
+        "etrangers": 144,
+        "menages": 48849,
+        "region_code": "oriental"
+    },
+    {
+        "code": "jerada",
+        "hcp_code": "02.275",
+        "administrative_type": "province",
+        "population": 103527,
+        "marocains": 103413,
+        "etrangers": 114,
+        "menages": 23833,
+        "region_code": "oriental"
+    },
+    {
+        "code": "berkane",
+        "hcp_code": "02.113",
+        "administrative_type": "province",
+        "population": 284061,
+        "marocains": 283538,
+        "etrangers": 523,
+        "menages": 75643,
+        "region_code": "oriental"
+    },
+    {
+        "code": "taourirt",
+        "hcp_code": "02.533",
+        "administrative_type": "province",
+        "population": 220157,
+        "marocains": 220062,
+        "etrangers": 95,
+        "menages": 50028,
+        "region_code": "oriental"
+    },
+    {
+        "code": "guercif",
+        "hcp_code": "02.265",
+        "administrative_type": "province",
+        "population": 215837,
+        "marocains": 215804,
+        "etrangers": 33,
+        "menages": 47538,
+        "region_code": "oriental"
+    },
+    {
+        "code": "figuig",
+        "hcp_code": "02.251",
+        "administrative_type": "province",
+        "population": 144451,
+        "marocains": 144404,
+        "etrangers": 47,
+        "menages": 34105,
+        "region_code": "oriental"
+    },
+    {
+        "code": "el-hajeb",
+        "hcp_code": "03.171",
+        "administrative_type": "province",
+        "population": 267156,
+        "marocains": 267098,
+        "etrangers": 58,
+        "menages": 66258,
+        "region_code": "fes-meknes"
+    },
+    {
+        "code": "ifrane",
+        "hcp_code": "03.271",
+        "administrative_type": "province",
+        "population": 160904,
+        "marocains": 160700,
+        "etrangers": 204,
+        "menages": 42684,
+        "region_code": "fes-meknes"
+    },
+    {
+        "code": "moulay-yacoub",
+        "hcp_code": "03.591",
+        "administrative_type": "province",
+        "population": 216954,
+        "marocains": 216789,
+        "etrangers": 165,
+        "menages": 46348,
+        "region_code": "fes-meknes"
+    },
+    {
+        "code": "sefrou",
+        "hcp_code": "03.451",
+        "administrative_type": "province",
+        "population": 304748,
+        "marocains": 304552,
+        "etrangers": 196,
+        "menages": 81262,
+        "region_code": "fes-meknes"
+    },
+    {
+        "code": "boulemane",
+        "hcp_code": "03.131",
+        "administrative_type": "province",
+        "population": 205411,
+        "marocains": 205377,
+        "etrangers": 34,
+        "menages": 48509,
+        "region_code": "fes-meknes"
+    },
+    {
+        "code": "taounate",
+        "hcp_code": "03.531",
+        "administrative_type": "province",
+        "population": 612650,
+        "marocains": 612582,
+        "etrangers": 68,
+        "menages": 147051,
+        "region_code": "fes-meknes"
+    },
+    {
+        "code": "taza",
+        "hcp_code": "03.561",
+        "administrative_type": "province",
+        "population": 500971,
+        "marocains": 500844,
+        "etrangers": 127,
+        "menages": 126023,
+        "region_code": "fes-meknes"
+    },
+    {
+        "code": "kenitra",
+        "hcp_code": "04.281",
+        "administrative_type": "province",
+        "population": 1284247,
+        "marocains": 1281256,
+        "etrangers": 2991,
+        "menages": 300046,
+        "region_code": "rabat-sale-kenitra"
+    },
+    {
+        "code": "khemisset",
+        "hcp_code": "04.291",
+        "administrative_type": "province",
+        "population": 563036,
+        "marocains": 562745,
+        "etrangers": 291,
+        "menages": 146516,
+        "region_code": "rabat-sale-kenitra"
+    },
+    {
+        "code": "sidi-kacem",
+        "hcp_code": "04.481",
+        "administrative_type": "province",
+        "population": 545509,
+        "marocains": 545426,
+        "etrangers": 83,
+        "menages": 122538,
+        "region_code": "rabat-sale-kenitra"
+    },
+    {
+        "code": "sidi-slimane",
+        "hcp_code": "04.491",
+        "administrative_type": "province",
+        "population": 351199,
+        "marocains": 351146,
+        "etrangers": 53,
+        "menages": 76582,
+        "region_code": "rabat-sale-kenitra"
+    },
+    {
+        "code": "beni-mellal",
+        "hcp_code": "05.091",
+        "administrative_type": "province",
+        "population": 580327,
+        "marocains": 579729,
+        "etrangers": 598,
+        "menages": 150397,
+        "region_code": "beni-mellal-khenifra"
+    },
+    {
+        "code": "azilal",
+        "hcp_code": "05.081",
+        "administrative_type": "province",
+        "population": 574112,
+        "marocains": 574051,
+        "etrangers": 61,
+        "menages": 121842,
+        "region_code": "beni-mellal-khenifra"
+    },
+    {
+        "code": "fquih-ben-salah",
+        "hcp_code": "05.255",
+        "administrative_type": "province",
+        "population": 475977,
+        "marocains": 475893,
+        "etrangers": 84,
+        "menages": 111668,
+        "region_code": "beni-mellal-khenifra"
+    },
+    {
+        "code": "khenifra",
+        "hcp_code": "05.301",
+        "administrative_type": "province",
+        "population": 370240,
+        "marocains": 370156,
+        "etrangers": 84,
+        "menages": 100159,
+        "region_code": "beni-mellal-khenifra"
+    },
+    {
+        "code": "khouribga",
+        "hcp_code": "05.311",
+        "administrative_type": "province",
+        "population": 525145,
+        "marocains": 524712,
+        "etrangers": 433,
+        "menages": 132500,
+        "region_code": "beni-mellal-khenifra"
+    },
+    {
+        "code": "el-jadida",
+        "hcp_code": "06.181",
+        "administrative_type": "province",
+        "population": 914367,
+        "marocains": 912835,
+        "etrangers": 1532,
+        "menages": 221678,
+        "region_code": "casablanca-settat"
+    },
+    {
+        "code": "nouaceur",
+        "hcp_code": "06.385",
+        "administrative_type": "province",
+        "population": 672324,
+        "marocains": 665135,
+        "etrangers": 7189,
+        "menages": 183539,
+        "region_code": "casablanca-settat"
+    },
+    {
+        "code": "mediouna",
+        "hcp_code": "06.355",
+        "administrative_type": "province",
+        "population": 345787,
+        "marocains": 345507,
+        "etrangers": 280,
+        "menages": 88190,
+        "region_code": "casablanca-settat"
+    },
+    {
+        "code": "benslimane",
+        "hcp_code": "06.111",
+        "administrative_type": "province",
+        "population": 279517,
+        "marocains": 278768,
+        "etrangers": 749,
+        "menages": 69353,
+        "region_code": "casablanca-settat"
+    },
+    {
+        "code": "berrechid",
+        "hcp_code": "06.117",
+        "administrative_type": "province",
+        "population": 640657,
+        "marocains": 639618,
+        "etrangers": 1039,
+        "menages": 160957,
+        "region_code": "casablanca-settat"
+    },
+    {
+        "code": "settat",
+        "hcp_code": "06.461",
+        "administrative_type": "province",
+        "population": 652292,
+        "marocains": 651327,
+        "etrangers": 965,
+        "menages": 148224,
+        "region_code": "casablanca-settat"
+    },
+    {
+        "code": "sidi-bennour",
+        "hcp_code": "06.467",
+        "administrative_type": "province",
+        "population": 451930,
+        "marocains": 451852,
+        "etrangers": 78,
+        "menages": 101997,
+        "region_code": "casablanca-settat"
+    },
+    {
+        "code": "chichaoua",
+        "hcp_code": "07.161",
+        "administrative_type": "province",
+        "population": 379079,
+        "marocains": 378932,
+        "etrangers": 147,
+        "menages": 92262,
+        "region_code": "marrakech-safi"
+    },
+    {
+        "code": "al-haouz",
+        "hcp_code": "07.041",
+        "administrative_type": "province",
+        "population": 642815,
+        "marocains": 642171,
+        "etrangers": 644,
+        "menages": 147971,
+        "region_code": "marrakech-safi"
+    },
+    {
+        "code": "el-kelaa-des-sraghna",
+        "hcp_code": "07.191",
+        "administrative_type": "province",
+        "population": 560273,
+        "marocains": 560075,
+        "etrangers": 198,
+        "menages": 125161,
+        "region_code": "marrakech-safi"
+    },
+    {
+        "code": "essaouira",
+        "hcp_code": "07.211",
+        "administrative_type": "province",
+        "population": 426719,
+        "marocains": 425449,
+        "etrangers": 1270,
+        "menages": 111602,
+        "region_code": "marrakech-safi"
+    },
+    {
+        "code": "rehamna",
+        "hcp_code": "07.427",
+        "administrative_type": "province",
+        "population": 346108,
+        "marocains": 345772,
+        "etrangers": 336,
+        "menages": 76166,
+        "region_code": "marrakech-safi"
+    },
+    {
+        "code": "safi",
+        "hcp_code": "07.431",
+        "administrative_type": "province",
+        "population": 719671,
+        "marocains": 719299,
+        "etrangers": 372,
+        "menages": 175259,
+        "region_code": "marrakech-safi"
+    },
+    {
+        "code": "youssoufia",
+        "hcp_code": "07.585",
+        "administrative_type": "province",
+        "population": 246148,
+        "marocains": 246098,
+        "etrangers": 50,
+        "menages": 55055,
+        "region_code": "marrakech-safi"
+    },
+    {
+        "code": "errachidia",
+        "hcp_code": "08.201",
+        "administrative_type": "province",
+        "population": 427572,
+        "marocains": 427309,
+        "etrangers": 263,
+        "menages": 90107,
+        "region_code": "draa-tafilalet"
+    },
+    {
+        "code": "ouarzazate",
+        "hcp_code": "08.401",
+        "administrative_type": "province",
+        "population": 304932,
+        "marocains": 304760,
+        "etrangers": 172,
+        "menages": 66420,
+        "region_code": "draa-tafilalet"
+    },
+    {
+        "code": "midelt",
+        "hcp_code": "08.363",
+        "administrative_type": "province",
+        "population": 313769,
+        "marocains": 313627,
+        "etrangers": 142,
+        "menages": 73708,
+        "region_code": "draa-tafilalet"
+    },
+    {
+        "code": "tinghir",
+        "hcp_code": "08.577",
+        "administrative_type": "province",
+        "population": 323805,
+        "marocains": 323764,
+        "etrangers": 41,
+        "menages": 62123,
+        "region_code": "draa-tafilalet"
+    },
+    {
+        "code": "zagora",
+        "hcp_code": "08.587",
+        "administrative_type": "province",
+        "population": 285545,
+        "marocains": 285482,
+        "etrangers": 63,
+        "menages": 46619,
+        "region_code": "draa-tafilalet"
+    },
+    {
+        "code": "chtouka-ait-baha",
+        "hcp_code": "09.163",
+        "administrative_type": "province",
+        "population": 493623,
+        "marocains": 486825,
+        "etrangers": 6798,
+        "menages": 133727,
+        "region_code": "souss-massa"
+    },
+    {
+        "code": "taroudannt",
+        "hcp_code": "09.541",
+        "administrative_type": "province",
+        "population": 858162,
+        "marocains": 857673,
+        "etrangers": 489,
+        "menages": 209341,
+        "region_code": "souss-massa"
+    },
+    {
+        "code": "tiznit",
+        "hcp_code": "09.581",
+        "administrative_type": "province",
+        "population": 198542,
+        "marocains": 198367,
+        "etrangers": 175,
+        "menages": 57811,
+        "region_code": "souss-massa"
+    },
+    {
+        "code": "tata",
+        "hcp_code": "09.551",
+        "administrative_type": "province",
+        "population": 111757,
+        "marocains": 111744,
+        "etrangers": 13,
+        "menages": 25530,
+        "region_code": "souss-massa"
+    },
+    {
+        "code": "guelmim",
+        "hcp_code": "10.261",
+        "administrative_type": "province",
+        "population": 196267,
+        "marocains": 195919,
+        "etrangers": 348,
+        "menages": 47250,
+        "region_code": "guelmim-oued-noun"
+    },
+    {
+        "code": "assa-zag",
+        "hcp_code": "10.071",
+        "administrative_type": "province",
+        "population": 53298,
+        "marocains": 53289,
+        "etrangers": 9,
+        "menages": 6297,
+        "region_code": "guelmim-oued-noun"
+    },
+    {
+        "code": "tan-tan",
+        "hcp_code": "10.521",
+        "administrative_type": "province",
+        "population": 94519,
+        "marocains": 94433,
+        "etrangers": 86,
+        "menages": 23308,
+        "region_code": "guelmim-oued-noun"
+    },
+    {
+        "code": "sidi-ifni",
+        "hcp_code": "10.473",
+        "administrative_type": "province",
+        "population": 104601,
+        "marocains": 104511,
+        "etrangers": 90,
+        "menages": 28539,
+        "region_code": "guelmim-oued-noun"
+    },
+    {
+        "code": "laayoune",
+        "hcp_code": "11.321",
+        "administrative_type": "province",
+        "population": 295555,
+        "marocains": 293896,
+        "etrangers": 1659,
+        "menages": 73866,
+        "region_code": "laayoune-sakia-el-hamra"
+    },
+    {
+        "code": "boujdour",
+        "hcp_code": "11.121",
+        "administrative_type": "province",
+        "population": 65381,
+        "marocains": 65341,
+        "etrangers": 40,
+        "menages": 14429,
+        "region_code": "laayoune-sakia-el-hamra"
+    },
+    {
+        "code": "tarfaya",
+        "hcp_code": "11.537",
+        "administrative_type": "province",
+        "population": 16228,
+        "marocains": 16206,
+        "etrangers": 22,
+        "menages": 4328,
+        "region_code": "laayoune-sakia-el-hamra"
+    },
+    {
+        "code": "es-semara",
+        "hcp_code": "11.221",
+        "administrative_type": "province",
+        "population": 73864,
+        "marocains": 73813,
+        "etrangers": 51,
+        "menages": 14128,
+        "region_code": "laayoune-sakia-el-hamra"
+    },
+    {
+        "code": "oued-ed-dahab",
+        "hcp_code": "12.391",
+        "administrative_type": "province",
+        "population": 195467,
+        "marocains": 189754,
+        "etrangers": 5713,
+        "menages": 51740,
+        "region_code": "dakhla-oued-ed-dahab"
+    },
+    {
+        "code": "aousserd",
+        "hcp_code": "12.066",
+        "administrative_type": "province",
+        "population": 24498,
+        "marocains": 24365,
+        "etrangers": 133,
+        "menages": 2421,
+        "region_code": "dakhla-oued-ed-dahab"
+    },
+    {
+        "code": "tanger-assilah",
+        "hcp_code": "01.511",
+        "administrative_type": "prefecture",
+        "population": 1494413,
+        "marocains": 1487175,
+        "etrangers": 7238,
+        "menages": 418844,
+        "region_code": "tanger-tetouan-al-hoceima"
+    },
+    {
+        "code": "mdiq-fnideq",
+        "hcp_code": "01.573",
+        "administrative_type": "prefecture",
+        "population": 254064,
+        "marocains": 253388,
+        "etrangers": 676,
+        "menages": 67797,
+        "region_code": "tanger-tetouan-al-hoceima"
+    },
+    {
+        "code": "oujda-angad",
+        "hcp_code": "02.411",
+        "administrative_type": "prefecture",
+        "population": 572454,
+        "marocains": 570230,
+        "etrangers": 2224,
+        "menages": 148929,
+        "region_code": "oriental"
+    },
+    {
+        "code": "fes",
+        "hcp_code": "03.231",
+        "administrative_type": "prefecture",
+        "population": 1256172,
+        "marocains": 1252340,
+        "etrangers": 3832,
+        "menages": 329286,
+        "region_code": "fes-meknes"
+    },
+    {
+        "code": "meknes",
+        "hcp_code": "03.061",
+        "administrative_type": "prefecture",
+        "population": 942945,
+        "marocains": 940900,
+        "etrangers": 2045,
+        "menages": 248296,
+        "region_code": "fes-meknes"
+    },
+    {
+        "code": "rabat",
+        "hcp_code": "04.421",
+        "administrative_type": "prefecture",
+        "population": 515619,
+        "marocains": 501005,
+        "etrangers": 14614,
+        "menages": 157183,
+        "region_code": "rabat-sale-kenitra"
+    },
+    {
+        "code": "sale",
+        "hcp_code": "04.441",
+        "administrative_type": "prefecture",
+        "population": 1089554,
+        "marocains": 1082784,
+        "etrangers": 6770,
+        "menages": 290311,
+        "region_code": "rabat-sale-kenitra"
+    },
+    {
+        "code": "skhirate-temara",
+        "hcp_code": "04.501",
+        "administrative_type": "prefecture",
+        "population": 783475,
+        "marocains": 779044,
+        "etrangers": 4431,
+        "menages": 208316,
+        "region_code": "rabat-sale-kenitra"
+    },
+    {
+        "code": "casablanca",
+        "hcp_code": "06.141",
+        "administrative_type": "prefecture",
+        "population": 3218036,
+        "marocains": 3172072,
+        "etrangers": 45964,
+        "menages": 909829,
+        "region_code": "casablanca-settat"
+    },
+    {
+        "code": "mohammadia",
+        "hcp_code": "06.371",
+        "administrative_type": "prefecture",
+        "population": 514057,
+        "marocains": 510951,
+        "etrangers": 3106,
+        "menages": 137265,
+        "region_code": "casablanca-settat"
+    },
+    {
+        "code": "marrakech",
+        "hcp_code": "07.351",
+        "administrative_type": "prefecture",
+        "population": 1571580,
+        "marocains": 1560704,
+        "etrangers": 10876,
+        "menages": 402389,
+        "region_code": "marrakech-safi"
+    },
+    {
+        "code": "agadir-ida-ou-tanane",
+        "hcp_code": "09.001",
+        "administrative_type": "prefecture",
+        "population": 721431,
+        "marocains": 716940,
+        "etrangers": 4491,
+        "menages": 197248,
+        "region_code": "souss-massa"
+    },
+    {
+        "code": "inezgane-ait-melloul",
+        "hcp_code": "09.273",
+        "administrative_type": "prefecture",
+        "population": 636916,
+        "marocains": 634881,
+        "etrangers": 2035,
+        "menages": 161551,
+        "region_code": "souss-massa"
+    }
+]
