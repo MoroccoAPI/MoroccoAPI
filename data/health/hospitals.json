@@ -1,0 +1,2800 @@
+[
+  {
+    "id": "hospital-466ee1fb565c5cc1",
+    "name": "Haut Atlas Central",
+    "aliases": [
+      "hopital haut Atlas central"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "beni-mellal-khenifra",
+    "province_code": "azilal",
+    "commune_code": "azilal--azilal",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 31.9623723,
+      "longitude": -6.5655573
+    }
+  },
+  {
+    "id": "hospital-65daed4a5592afc5",
+    "name": "Demnate",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "beni-mellal-khenifra",
+    "province_code": "azilal",
+    "commune_code": "azilal--demnate",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-1d47fa36b4134939",
+    "name": "Beni Mellal",
+    "aliases": [],
+    "category": "CRO",
+    "category_label": "Centre Régional d'Oncologie",
+    "ownership": "public",
+    "region_code": "beni-mellal-khenifra",
+    "province_code": "beni-mellal",
+    "commune_code": "beni-mellal--ouled-m-barek",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-6afa9469fd2d0258",
+    "name": "Beni Mellal",
+    "aliases": [],
+    "category": "HR",
+    "category_label": "Hôpital Régional",
+    "ownership": "public",
+    "region_code": "beni-mellal-khenifra",
+    "province_code": "beni-mellal",
+    "commune_code": "beni-mellal--beni-mellal",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-84540aedb5d46362",
+    "name": "Moulay Ismail",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "beni-mellal-khenifra",
+    "province_code": "beni-mellal",
+    "commune_code": "beni-mellal--kasba-tadla",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-879234569bcf9769",
+    "name": "Fquih Ben Salah",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "beni-mellal-khenifra",
+    "province_code": "fquih-ben-salah",
+    "commune_code": "fquih-ben-salah--fquih-ben-salah",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-fda41f1d6c518e8b",
+    "name": "Souk Sebt",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "beni-mellal-khenifra",
+    "province_code": "fquih-ben-salah",
+    "commune_code": "fquih-ben-salah--fquih-ben-salah",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-98e6524bb57f775e",
+    "name": "Khenifra",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "beni-mellal-khenifra",
+    "province_code": "khenifra",
+    "commune_code": "khenifra--khenifra",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-ff5e77fa5af682dc",
+    "name": "M'Rirt",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "beni-mellal-khenifra",
+    "province_code": "khenifra",
+    "commune_code": "khenifra--m-rirt",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-049bed1e70fc9a8e",
+    "name": "Hassan II",
+    "aliases": [
+      "Hôpital Hassan II"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "beni-mellal-khenifra",
+    "province_code": "khouribga",
+    "commune_code": "khouribga--khouribga",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 32.8925762,
+      "longitude": -6.9060318
+    }
+  },
+  {
+    "id": "hospital-d61cea2b835b9263",
+    "name": "Oued.Zem",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "beni-mellal-khenifra",
+    "province_code": "khouribga",
+    "commune_code": "khouribga--oued-zem",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-e84aceb6917891e4",
+    "name": "Mohamed VI",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "beni-mellal-khenifra",
+    "province_code": "khouribga",
+    "commune_code": "khouribga--bejaad",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-602c2123ed20eaa7",
+    "name": "Benslimane (Hassan II)",
+    "aliases": [
+      "Centre Hospitalier Provincial de Benslimane"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "casablanca-settat",
+    "province_code": "benslimane",
+    "commune_code": "benslimane--benslimane",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 33.6304207,
+      "longitude": -7.1346264
+    }
+  },
+  {
+    "id": "hospital-5c1055f4864b329f",
+    "name": "Berrchid",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "casablanca-settat",
+    "province_code": "berrechid",
+    "commune_code": "berrechid--berrechid",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-8eaf3bd40dbfc48c",
+    "name": "Errazi",
+    "aliases": [
+      "Hopital provincial Errazi مستشفى الرازي"
+    ],
+    "category": "HPsyP",
+    "category_label": "Hôpital Psychiatrique Provincial/préfectoral",
+    "ownership": "public",
+    "region_code": "casablanca-settat",
+    "province_code": "berrechid",
+    "commune_code": "berrechid--berrechid",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 33.26013365,
+      "longitude": -7.5840815
+    }
+  },
+  {
+    "id": "hospital-1412cb9a9cc75e26",
+    "name": "20 Aout 1953",
+    "aliases": [
+      "Hopital 20 Aout"
+    ],
+    "category": "HIR",
+    "category_label": "Hospital Interrégional",
+    "ownership": "public",
+    "region_code": "casablanca-settat",
+    "province_code": "casablanca",
+    "commune_code": "casablanca--casablanca",
+    "arrondissement_code": "casablanca--maarif",
+    "reference_year": 2024,
+    "location": {
+      "latitude": 33.5751376,
+      "longitude": -7.6210168
+    }
+  },
+  {
+    "id": "hospital-2c2a89578e383e00",
+    "name": "Mohamed Baouafi",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "casablanca-settat",
+    "province_code": "casablanca",
+    "commune_code": "casablanca--casablanca",
+    "arrondissement_code": "casablanca--al-fida",
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-476ffde677fac093",
+    "name": "HPr Sidi Moumen",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "casablanca-settat",
+    "province_code": "casablanca",
+    "commune_code": "casablanca--casablanca",
+    "arrondissement_code": "casablanca--sidi-moumen",
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-52259ef1ab5df530",
+    "name": "Al Mansour",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "casablanca-settat",
+    "province_code": "casablanca",
+    "commune_code": "casablanca--casablanca",
+    "arrondissement_code": "casablanca--sidi-bernoussi",
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-679b7b41affa36e9",
+    "name": "Centre de Léprologie",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "casablanca-settat",
+    "province_code": "casablanca",
+    "commune_code": "casablanca--casablanca",
+    "arrondissement_code": "casablanca--ain-chock",
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-73209387431917c3",
+    "name": "Sidi Othmane",
+    "aliases": [
+      "Hôpital Sidi Othmane"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "casablanca-settat",
+    "province_code": "casablanca",
+    "commune_code": "casablanca--casablanca",
+    "arrondissement_code": "casablanca--sidi-othmane",
+    "reference_year": 2024,
+    "location": {
+      "latitude": 33.5585424,
+      "longitude": -7.5733008
+    }
+  },
+  {
+    "id": "hospital-7363483fc5ff88d6",
+    "name": "Ben Msick",
+    "aliases": [
+      "Centre Hospitalier Préfectoral de Ben M'Sick"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "casablanca-settat",
+    "province_code": "casablanca",
+    "commune_code": "casablanca--casablanca",
+    "arrondissement_code": "casablanca--ben-m-sick",
+    "reference_year": 2024,
+    "location": {
+      "latitude": 33.5523382,
+      "longitude": -7.57799455
+    }
+  },
+  {
+    "id": "hospital-99bad842c2b55a9d",
+    "name": "El Hassani",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "casablanca-settat",
+    "province_code": "casablanca",
+    "commune_code": "casablanca--casablanca",
+    "arrondissement_code": "casablanca--hay-hassani",
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-9cb73372ab8badb6",
+    "name": "Mohamed Sekkat",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "casablanca-settat",
+    "province_code": "casablanca",
+    "commune_code": "casablanca--casablanca",
+    "arrondissement_code": "casablanca--ain-chock",
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-bf6fab8b26c0c130",
+    "name": "My Youssef",
+    "aliases": [
+      "Hôpital Moulay Youssef مستشفى مولاي يوسف"
+    ],
+    "category": "HR",
+    "category_label": "Hôpital Régional",
+    "ownership": "public",
+    "region_code": "casablanca-settat",
+    "province_code": "casablanca",
+    "commune_code": "casablanca--casablanca",
+    "arrondissement_code": "casablanca--sidi-belyout",
+    "reference_year": 2024,
+    "location": {
+      "latitude": 33.6026902,
+      "longitude": -7.63233175
+    }
+  },
+  {
+    "id": "hospital-c90d6a41a664c236",
+    "name": "Mohamed V",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "casablanca-settat",
+    "province_code": "casablanca",
+    "commune_code": "casablanca--casablanca",
+    "arrondissement_code": "casablanca--hay-mohammadi",
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-c91489f1c8bf2e0c",
+    "name": "Ibn Rochd",
+    "aliases": [],
+    "category": "HIR",
+    "category_label": "Hospital Interrégional",
+    "ownership": "public",
+    "region_code": "casablanca-settat",
+    "province_code": "casablanca",
+    "commune_code": "casablanca--casablanca",
+    "arrondissement_code": "casablanca--maarif",
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-f29ff355824e9f8e",
+    "name": "Hôpital D'enfants",
+    "aliases": [],
+    "category": "HIR",
+    "category_label": "Hospital Interrégional",
+    "ownership": "public",
+    "region_code": "casablanca-settat",
+    "province_code": "casablanca",
+    "commune_code": "casablanca--casablanca",
+    "arrondissement_code": "casablanca--maarif",
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-85ce8da144ac6698",
+    "name": "Azemmour",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "casablanca-settat",
+    "province_code": "el-jadida",
+    "commune_code": "el-jadida--azemmour",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-cfb411a779abcaed",
+    "name": "Mohamed V",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "casablanca-settat",
+    "province_code": "el-jadida",
+    "commune_code": "el-jadida--el-jadida",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-0d6ee836a4073ee2",
+    "name": "Tit Mellil",
+    "aliases": [],
+    "category": "HPsyP",
+    "category_label": "Hôpital Psychiatrique Provincial/préfectoral",
+    "ownership": "public",
+    "region_code": "casablanca-settat",
+    "province_code": "mediouna",
+    "commune_code": "mediouna--sidi-hajjaj-oued-hassar",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-1e2ddd4844a7725f",
+    "name": "Mediouna",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "casablanca-settat",
+    "province_code": "mediouna",
+    "commune_code": "mediouna--mediouna",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-ada51762e111949d",
+    "name": "My Abdellah",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "casablanca-settat",
+    "province_code": "mohammadia",
+    "commune_code": "mohammadia--mohammadia",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-44aaaa2362211d10",
+    "name": "Bouskoura",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "casablanca-settat",
+    "province_code": "nouaceur",
+    "commune_code": "nouaceur--bouskoura",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-a8f29e64df4d1c6b",
+    "name": "Prince My Hassan",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "casablanca-settat",
+    "province_code": "nouaceur",
+    "commune_code": "nouaceur--dar-bouazza",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-663fcaf75f53d421",
+    "name": "Ben Ahmed",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "casablanca-settat",
+    "province_code": "settat",
+    "commune_code": "settat--ben-ahmed",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-cf37d6555b53de6f",
+    "name": "Hassan II",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "casablanca-settat",
+    "province_code": "settat",
+    "commune_code": "settat--settat",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-b94084ea00c6ec00",
+    "name": "Sidi Bennour",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "casablanca-settat",
+    "province_code": "sidi-bennour",
+    "commune_code": "sidi-bennour--sidi-bennour",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-d87d26f137b3b577",
+    "name": "Zmamra",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "casablanca-settat",
+    "province_code": "sidi-bennour",
+    "commune_code": "sidi-bennour--zmamra",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-20e5d363ea1e27c3",
+    "name": "Hassan II",
+    "aliases": [
+      "Hôpital Hassan II مستشفى الحسن الثاني"
+    ],
+    "category": "HR",
+    "category_label": "Hôpital Régional",
+    "ownership": "public",
+    "region_code": "dakhla-oued-ed-dahab",
+    "province_code": "oued-ed-dahab",
+    "commune_code": "oued-ed-dahab--dakhla",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 23.71409315,
+      "longitude": -15.922686200000001
+    }
+  },
+  {
+    "id": "hospital-17e4f63c55a80344",
+    "name": "Erfoud",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "draa-tafilalet",
+    "province_code": "errachidia",
+    "commune_code": "errachidia--arfoud",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-74cc573ccb5c0ada",
+    "name": "Hôpital Amir Soultan Ibn Abdelaziz",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "draa-tafilalet",
+    "province_code": "errachidia",
+    "commune_code": "errachidia--errachidia",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-a0bab546677166de",
+    "name": "20 Aout (Goulmima)",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "draa-tafilalet",
+    "province_code": "errachidia",
+    "commune_code": "errachidia--goulmima",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-dd22291138302c95",
+    "name": "My Ali Cherif",
+    "aliases": [],
+    "category": "HR",
+    "category_label": "Hôpital Régional",
+    "ownership": "public",
+    "region_code": "draa-tafilalet",
+    "province_code": "errachidia",
+    "commune_code": "errachidia--errachidia",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-037b40cc543a93b9",
+    "name": "HPr Rich",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "draa-tafilalet",
+    "province_code": "midelt",
+    "commune_code": "midelt--er-rich",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-866d8cb38bbf079f",
+    "name": "Midelt",
+    "aliases": [
+      "Hôpital provincial de Midelt"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "draa-tafilalet",
+    "province_code": "midelt",
+    "commune_code": "midelt--midelt",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 32.6991279,
+      "longitude": -4.7587249499999995
+    }
+  },
+  {
+    "id": "hospital-0ac320f381464b3b",
+    "name": "Sidi Hssain Bencer",
+    "aliases": [
+      "Sidi Hssain Bennacer"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "draa-tafilalet",
+    "province_code": "ouarzazate",
+    "commune_code": "ouarzazate--ouarzazate",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 30.925109900000002,
+      "longitude": -6.9175079
+    }
+  },
+  {
+    "id": "hospital-8fa3a5ec68a7ec5f",
+    "name": "Bougafer",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "draa-tafilalet",
+    "province_code": "ouarzazate",
+    "commune_code": "ouarzazate--ouarzazate",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-24dc6ff226f1fe15",
+    "name": "HPr Kalaat M'gouna",
+    "aliases": [
+      "Hôpital kelaat m'gouna"
+    ],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "draa-tafilalet",
+    "province_code": "tinghir",
+    "commune_code": "tinghir--kalaat-m-gouna",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 31.249898350000002,
+      "longitude": -6.11956215
+    }
+  },
+  {
+    "id": "hospital-469bb9566f8ba000",
+    "name": "Tinghir",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "draa-tafilalet",
+    "province_code": "tinghir",
+    "commune_code": "tinghir--tinghir",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-942d49743f3907da",
+    "name": "Boumalène Dades",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "draa-tafilalet",
+    "province_code": "tinghir",
+    "commune_code": "tinghir--boumalne-dades",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-f3e44f19f3340438",
+    "name": "Ed-Derrak",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "draa-tafilalet",
+    "province_code": "zagora",
+    "commune_code": "zagora--zagora",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-6a2155a7d978fc04",
+    "name": "Marche Verte",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "fes-meknes",
+    "province_code": "boulemane",
+    "commune_code": "boulemane--missour",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-90b9bad71c1d445f",
+    "name": "S. Ahmed B. Driss Missouri",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "fes-meknes",
+    "province_code": "boulemane",
+    "commune_code": "boulemane--outat-el-haj",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-e1544c6a7c156b70",
+    "name": "Prince My Hassan",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "fes-meknes",
+    "province_code": "el-hajeb",
+    "commune_code": "el-hajeb--el-hajeb",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-2c236731645db772",
+    "name": "Ibn Al Baitar",
+    "aliases": [],
+    "category": "HR",
+    "category_label": "Hôpital Régional",
+    "ownership": "public",
+    "region_code": "fes-meknes",
+    "province_code": "fes",
+    "commune_code": "fes--fes",
+    "arrondissement_code": "fes--agdal",
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-56b23dad3f0f9f3f",
+    "name": "Hôpital d'Oncologie",
+    "aliases": [],
+    "category": "HIR",
+    "category_label": "Hospital Interrégional",
+    "ownership": "public",
+    "region_code": "fes-meknes",
+    "province_code": "fes",
+    "commune_code": "fes--fes",
+    "arrondissement_code": "fes--saiss",
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-65127c3144aff9b3",
+    "name": "Ibn Al Hassan",
+    "aliases": [],
+    "category": "CPU",
+    "category_label": "Centre Psychiatrique Universitaire",
+    "ownership": "public",
+    "region_code": "fes-meknes",
+    "province_code": "fes",
+    "commune_code": "fes--fes",
+    "arrondissement_code": "fes--el-mariniyine",
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-6a4fd66fa5594a58",
+    "name": "Hôpital des spécialités",
+    "aliases": [],
+    "category": "HIR",
+    "category_label": "Hospital Interrégional",
+    "ownership": "public",
+    "region_code": "fes-meknes",
+    "province_code": "fes",
+    "commune_code": "fes--fes",
+    "arrondissement_code": "fes--saiss",
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-7c27712202c586a9",
+    "name": "Hôpital Mère-Enfant",
+    "aliases": [],
+    "category": "HIR",
+    "category_label": "Hospital Interrégional",
+    "ownership": "public",
+    "region_code": "fes-meknes",
+    "province_code": "fes",
+    "commune_code": "fes--fes",
+    "arrondissement_code": "fes--saiss",
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-c59121e91b710f1a",
+    "name": "Al Ghassani",
+    "aliases": [],
+    "category": "HR",
+    "category_label": "Hôpital Régional",
+    "ownership": "public",
+    "region_code": "fes-meknes",
+    "province_code": "fes",
+    "commune_code": "fes--fes",
+    "arrondissement_code": "fes--agdal",
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-e88210bd1feec5cd",
+    "name": "Ibn Al Khatib",
+    "aliases": [
+      "Hopital Ibn Alkhatib"
+    ],
+    "category": "HR",
+    "category_label": "Hôpital Régional",
+    "ownership": "public",
+    "region_code": "fes-meknes",
+    "province_code": "fes",
+    "commune_code": "fes--fes",
+    "arrondissement_code": "fes--el-mariniyine",
+    "reference_year": 2024,
+    "location": {
+      "latitude": 34.06364885,
+      "longitude": -4.990160449999999
+    }
+  },
+  {
+    "id": "hospital-ea399b812b15149f",
+    "name": "Omar Drissi",
+    "aliases": [
+      "Hôpital Omar Drissi"
+    ],
+    "category": "HIR",
+    "category_label": "Hospital Interrégional",
+    "ownership": "public",
+    "region_code": "fes-meknes",
+    "province_code": "fes",
+    "commune_code": "fes--fes",
+    "arrondissement_code": "fes--fes-medina",
+    "reference_year": 2024,
+    "location": {
+      "latitude": 34.057383599999994,
+      "longitude": -4.981419600000001
+    }
+  },
+  {
+    "id": "hospital-19bb525f92ceaed6",
+    "name": "20 Aout (Azrou)",
+    "aliases": [
+      "Hôpital Provincial 20 Août"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "fes-meknes",
+    "province_code": "ifrane",
+    "commune_code": "ifrane--azrou",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 33.4392031,
+      "longitude": -5.2144338
+    }
+  },
+  {
+    "id": "hospital-6daaa06a53ab8b35",
+    "name": "Mohamed V",
+    "aliases": [
+      "Mohammed V"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "fes-meknes",
+    "province_code": "meknes",
+    "commune_code": "meknes--meknes",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 33.90386365,
+      "longitude": -5.54037075
+    }
+  },
+  {
+    "id": "hospital-729e38ad308a0f21",
+    "name": "Pagnon",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "fes-meknes",
+    "province_code": "meknes",
+    "commune_code": "meknes--meknes",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-ab3e730df11d6a09",
+    "name": "Centre d'oncologie",
+    "aliases": [],
+    "category": "CRO",
+    "category_label": "Centre Régional d'Oncologie",
+    "ownership": "public",
+    "region_code": "fes-meknes",
+    "province_code": "meknes",
+    "commune_code": "meknes--meknes",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-c8245fa194fb6cd9",
+    "name": "Sidi Said",
+    "aliases": [
+      "hôpital Sidi Said مستشفى سيدي سعيد"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "fes-meknes",
+    "province_code": "meknes",
+    "commune_code": "meknes--meknes",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 33.8932766,
+      "longitude": -5.57791895
+    }
+  },
+  {
+    "id": "hospital-ce557f01f7e22bb5",
+    "name": "Moulay Ismail",
+    "aliases": [
+      "Hospital moulay Ismail"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "fes-meknes",
+    "province_code": "meknes",
+    "commune_code": "meknes--meknes",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 33.89243075,
+      "longitude": -5.545029899999999
+    }
+  },
+  {
+    "id": "hospital-7acbc0ead63c6090",
+    "name": "Mohamed V",
+    "aliases": [
+      "L'Hôpital Mohamed V"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "fes-meknes",
+    "province_code": "sefrou",
+    "commune_code": "sefrou--sefrou",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 33.8269203,
+      "longitude": -4.8360052499999995
+    }
+  },
+  {
+    "id": "hospital-cb4b306566a04665",
+    "name": "Taounate",
+    "aliases": [
+      "Hopital de Taounate"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "fes-meknes",
+    "province_code": "taounate",
+    "commune_code": "taounate--taounate",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 34.52196605,
+      "longitude": -4.6408908
+    }
+  },
+  {
+    "id": "hospital-d9ebfab2aeae404c",
+    "name": "Hassan II",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "fes-meknes",
+    "province_code": "taounate",
+    "commune_code": "taounate--rhafsai",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-7445283cbee60cb7",
+    "name": "Ibn Baja",
+    "aliases": [
+      "Hopital Ibn Baja"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "fes-meknes",
+    "province_code": "taza",
+    "commune_code": "taza--taza",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 34.215659450000004,
+      "longitude": -4.0046026
+    }
+  },
+  {
+    "id": "hospital-f21d312b8f3bc8e2",
+    "name": "Assa",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "guelmim-oued-noun",
+    "province_code": "assa-zag",
+    "commune_code": "assa-zag--assa",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-03e41634b0d950d1",
+    "name": "Bouizakaren",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "guelmim-oued-noun",
+    "province_code": "guelmim",
+    "commune_code": "guelmim--bouizakarne",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-7e9a02ae3c144a94",
+    "name": "Guelmim",
+    "aliases": [],
+    "category": "HR",
+    "category_label": "Hôpital Régional",
+    "ownership": "public",
+    "region_code": "guelmim-oued-noun",
+    "province_code": "guelmim",
+    "commune_code": "guelmim--guelmim",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-2733b025a663c592",
+    "name": "Sidi Ifni",
+    "aliases": [
+      "Centre Hospitalier Provincial Sidi Ifni"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "guelmim-oued-noun",
+    "province_code": "sidi-ifni",
+    "commune_code": "sidi-ifni--sidi-ifni",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 29.37915805,
+      "longitude": -10.1780562
+    }
+  },
+  {
+    "id": "hospital-59ac321ec817f317",
+    "name": "Hassan II",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "guelmim-oued-noun",
+    "province_code": "tan-tan",
+    "commune_code": "tan-tan--tan-tan",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-f4b21bb87fed1d68",
+    "name": "Boujdour",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "laayoune-sakia-el-hamra",
+    "province_code": "boujdour",
+    "commune_code": "boujdour--boujdour",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-0fadcd6d5632d863",
+    "name": "Es-Smara",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "laayoune-sakia-el-hamra",
+    "province_code": "es-semara",
+    "commune_code": "es-semara--es-semara",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-103b924b7af6f58c",
+    "name": "My Hassan Ben El Mehdi",
+    "aliases": [
+      "Hôpital Moulay Hassan Ben Mehdi"
+    ],
+    "category": "HR",
+    "category_label": "Hôpital Régional",
+    "ownership": "public",
+    "region_code": "laayoune-sakia-el-hamra",
+    "province_code": "laayoune",
+    "commune_code": "laayoune--laayoune",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 27.156684300000002,
+      "longitude": -13.1892818
+    }
+  },
+  {
+    "id": "hospital-afccc00b268af2e7",
+    "name": "Hassan II",
+    "aliases": [],
+    "category": "HR",
+    "category_label": "Hôpital Régional",
+    "ownership": "public",
+    "region_code": "laayoune-sakia-el-hamra",
+    "province_code": "laayoune",
+    "commune_code": "laayoune--laayoune",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-b73ed19584913182",
+    "name": "Laayoune",
+    "aliases": [],
+    "category": "CRO",
+    "category_label": "Centre Régional d'Oncologie",
+    "ownership": "public",
+    "region_code": "laayoune-sakia-el-hamra",
+    "province_code": "laayoune",
+    "commune_code": "laayoune--laayoune",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-608e189938f8c1a2",
+    "name": "Mohammed VI",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "marrakech-safi",
+    "province_code": "al-haouz",
+    "commune_code": "al-haouz--tahannaout",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-7c784b77c57a236f",
+    "name": "Mohamed Vi",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "marrakech-safi",
+    "province_code": "chichaoua",
+    "commune_code": "chichaoua--chichaoua",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-0f42ac94834a2722",
+    "name": "Princesse Lalla Khadija",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "marrakech-safi",
+    "province_code": "el-kelaa-des-sraghna",
+    "commune_code": "el-kelaa-des-sraghna--tamallalt",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-249a7dbd31eb20d7",
+    "name": "Hôpital psychiatrique",
+    "aliases": [],
+    "category": "HPsyP",
+    "category_label": "Hôpital Psychiatrique Provincial/préfectoral",
+    "ownership": "public",
+    "region_code": "marrakech-safi",
+    "province_code": "el-kelaa-des-sraghna",
+    "commune_code": "el-kelaa-des-sraghna--kelaat-sraghna",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-a85e4ab134c14c94",
+    "name": "Assalama",
+    "aliases": [
+      "Hospital Essalama"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "marrakech-safi",
+    "province_code": "el-kelaa-des-sraghna",
+    "commune_code": "el-kelaa-des-sraghna--kelaat-sraghna",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 32.04893715,
+      "longitude": -7.40364115
+    }
+  },
+  {
+    "id": "hospital-fd437cba8979b520",
+    "name": "Sidi Med Ben Abdellah",
+    "aliases": [
+      "Sidi Mohamed Ben Abdellah"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "marrakech-safi",
+    "province_code": "essaouira",
+    "commune_code": "essaouira--essaouira",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 31.5113452,
+      "longitude": -9.76278335
+    }
+  },
+  {
+    "id": "hospital-1752cab07dcf55a2",
+    "name": "Charifa",
+    "aliases": [
+      "Hopital charifa"
+    ],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "marrakech-safi",
+    "province_code": "marrakech",
+    "commune_code": "marrakech--marrakech",
+    "arrondissement_code": "marrakech--sidi-youssef-ben-ali",
+    "reference_year": 2024,
+    "location": {
+      "latitude": 31.6067425,
+      "longitude": -7.9660628
+    }
+  },
+  {
+    "id": "hospital-416064151d22e39e",
+    "name": "Centre d'Hématologie Oncologie",
+    "aliases": [],
+    "category": "HIR",
+    "category_label": "Hospital Interrégional",
+    "ownership": "public",
+    "region_code": "marrakech-safi",
+    "province_code": "marrakech",
+    "commune_code": "marrakech--marrakech",
+    "arrondissement_code": "marrakech--gueliz",
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-43a7e561a2fc77d3",
+    "name": "Ibn Tofeil",
+    "aliases": [
+      "Hopital Ibn Tofaïl"
+    ],
+    "category": "HIR",
+    "category_label": "Hospital Interrégional",
+    "ownership": "public",
+    "region_code": "marrakech-safi",
+    "province_code": "marrakech",
+    "commune_code": "marrakech--marrakech",
+    "arrondissement_code": "marrakech--gueliz",
+    "reference_year": 2024,
+    "location": {
+      "latitude": 31.64159535,
+      "longitude": -8.01561935
+    }
+  },
+  {
+    "id": "hospital-500838070adc1989",
+    "name": "Mhamid",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "marrakech-safi",
+    "province_code": "marrakech",
+    "commune_code": "marrakech--marrakech",
+    "arrondissement_code": "marrakech--menara",
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-5a051d50d33104fe",
+    "name": "El Antaki",
+    "aliases": [
+      "Hôpital El Antaki مستشفى الأنطاكي"
+    ],
+    "category": "HR",
+    "category_label": "Hôpital Régional",
+    "ownership": "public",
+    "region_code": "marrakech-safi",
+    "province_code": "marrakech",
+    "commune_code": "marrakech--marrakech",
+    "arrondissement_code": "marrakech--marrakech-medina",
+    "reference_year": 2024,
+    "location": {
+      "latitude": 31.63666125,
+      "longitude": -7.98474575
+    }
+  },
+  {
+    "id": "hospital-5a06a91d0e589317",
+    "name": "Hopital Mère-Enfant",
+    "aliases": [],
+    "category": "HIR",
+    "category_label": "Hospital Interrégional",
+    "ownership": "public",
+    "region_code": "marrakech-safi",
+    "province_code": "marrakech",
+    "commune_code": "marrakech--marrakech",
+    "arrondissement_code": "marrakech--gueliz",
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-5d654c343c93cb9a",
+    "name": "Saada",
+    "aliases": [],
+    "category": "HPsyR",
+    "category_label": "Hôpital Psychiatrique Régional",
+    "ownership": "public",
+    "region_code": "marrakech-safi",
+    "province_code": "marrakech",
+    "commune_code": "marrakech--saada",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-5efeb8db5c372029",
+    "name": "Arrazi",
+    "aliases": [],
+    "category": "HIR",
+    "category_label": "Hospital Interrégional",
+    "ownership": "public",
+    "region_code": "marrakech-safi",
+    "province_code": "marrakech",
+    "commune_code": "marrakech--marrakech",
+    "arrondissement_code": "marrakech--gueliz",
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-971c7e4ed9d2c7a2",
+    "name": "Ibn Zohr",
+    "aliases": [
+      "Hospital Ibn Zohr"
+    ],
+    "category": "HR",
+    "category_label": "Hôpital Régional",
+    "ownership": "public",
+    "region_code": "marrakech-safi",
+    "province_code": "marrakech",
+    "commune_code": "marrakech--marrakech",
+    "arrondissement_code": "marrakech--marrakech-medina",
+    "reference_year": 2024,
+    "location": {
+      "latitude": 31.61816255,
+      "longitude": -7.9954698
+    }
+  },
+  {
+    "id": "hospital-d29b37b85f07607f",
+    "name": "Ibn Nafis",
+    "aliases": [],
+    "category": "CPU",
+    "category_label": "Centre Psychiatrique Universitaire",
+    "ownership": "public",
+    "region_code": "marrakech-safi",
+    "province_code": "marrakech",
+    "commune_code": "marrakech--marrakech",
+    "arrondissement_code": "marrakech--gueliz",
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-88e4aee4271019a4",
+    "name": "Benguerir",
+    "aliases": [
+      "Hôpital Ben Guerir مستشفى ابن جرير"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "marrakech-safi",
+    "province_code": "rehamna",
+    "commune_code": "rehamna--ben-guerir",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 32.2396786,
+      "longitude": -7.959034
+    }
+  },
+  {
+    "id": "hospital-30a79f184cdefd49",
+    "name": "Aisha",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "marrakech-safi",
+    "province_code": "safi",
+    "commune_code": "safi--safi",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-55e28b4bc90ecbbf",
+    "name": "Mohamed V",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "marrakech-safi",
+    "province_code": "safi",
+    "commune_code": "safi--safi",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-103275b58bc98617",
+    "name": "Lalla Hasna",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "marrakech-safi",
+    "province_code": "youssoufia",
+    "commune_code": "youssoufia--youssoufia",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-3d0cc3cacadffa30",
+    "name": "Edderak",
+    "aliases": [
+      "Hôpital Eddarrak مستشفى الدراق"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "oriental",
+    "province_code": "berkane",
+    "commune_code": "berkane--berkane",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 34.924918500000004,
+      "longitude": -2.32523445
+    }
+  },
+  {
+    "id": "hospital-3fccfa4b32e3d6af",
+    "name": "Saidia",
+    "aliases": [
+      "L'Hôpital de Saïdia مستشفى السعيدية"
+    ],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "oriental",
+    "province_code": "berkane",
+    "commune_code": "berkane--saidia",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 35.08809705,
+      "longitude": -2.2400108
+    }
+  },
+  {
+    "id": "hospital-c0d63820be7dbb98",
+    "name": "Ahfir",
+    "aliases": [
+      "Hôpital Ahfir"
+    ],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "oriental",
+    "province_code": "berkane",
+    "commune_code": "berkane--ahfir",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 34.95017645,
+      "longitude": -2.1028386
+    }
+  },
+  {
+    "id": "hospital-240dd8c4cc3f835b",
+    "name": "Midar",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "oriental",
+    "province_code": "driouch",
+    "commune_code": "driouch--midar",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-6866cd3ea6f26e2a",
+    "name": "Driouch",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "oriental",
+    "province_code": "driouch",
+    "commune_code": "driouch--driouch",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-431110799a9e33ec",
+    "name": "Hassan II",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "oriental",
+    "province_code": "figuig",
+    "commune_code": "figuig--bouarfa",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-ae3242b7664fc7d7",
+    "name": "Figuig",
+    "aliases": [
+      "Hôpital de Figuig مستشفى فكيك"
+    ],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "oriental",
+    "province_code": "figuig",
+    "commune_code": "figuig--figuig",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 32.10938045,
+      "longitude": -1.2315885
+    }
+  },
+  {
+    "id": "hospital-b9b1cd74019ef2ff",
+    "name": "Talsint",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "oriental",
+    "province_code": "figuig",
+    "commune_code": "figuig--talsint",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-f726cc8e227f93d5",
+    "name": "Guercif",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "oriental",
+    "province_code": "guercif",
+    "commune_code": "guercif--guercif",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-4f7ef1d0e3fd6c82",
+    "name": "Jrada",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "oriental",
+    "province_code": "jerada",
+    "commune_code": "jerada--laaouinate",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-aee4f9d82db2af56",
+    "name": "Zaio",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "oriental",
+    "province_code": "nador",
+    "commune_code": "nador--zaio",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-be89ba1ffad3166c",
+    "name": "Mohammed Vi",
+    "aliases": [
+      "Hopital Mohamed 6"
+    ],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "oriental",
+    "province_code": "nador",
+    "commune_code": "nador--al-aaroui",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 35.004445000000004,
+      "longitude": -3.00665055
+    }
+  },
+  {
+    "id": "hospital-e69a2ef8160c9073",
+    "name": "Hassani",
+    "aliases": [
+      "Hopital l Hassani"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "oriental",
+    "province_code": "nador",
+    "commune_code": "nador--nador",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 35.176668199999995,
+      "longitude": -2.9364152499999996
+    }
+  },
+  {
+    "id": "hospital-04d1e6b1925c3ca4",
+    "name": "Hôpital Mère-Enfant",
+    "aliases": [],
+    "category": "HIR",
+    "category_label": "Hospital Interrégional",
+    "ownership": "public",
+    "region_code": "oriental",
+    "province_code": "oujda-angad",
+    "commune_code": "oujda-angad--oujda",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-0f1f3c5a4bafa56b",
+    "name": "Al Farabi",
+    "aliases": [
+      "Hôpital El Farabi"
+    ],
+    "category": "HR",
+    "category_label": "Hôpital Régional",
+    "ownership": "public",
+    "region_code": "oriental",
+    "province_code": "oujda-angad",
+    "commune_code": "oujda-angad--oujda",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 34.67550475,
+      "longitude": -1.91448795
+    }
+  },
+  {
+    "id": "hospital-0fbc4029d88c8cbd",
+    "name": "Hôpital Psychiatrique",
+    "aliases": [
+      "L'Hôpital des Maladies Psychiatriques"
+    ],
+    "category": "CPU",
+    "category_label": "Centre Psychiatrique Universitaire",
+    "ownership": "public",
+    "region_code": "oriental",
+    "province_code": "oujda-angad",
+    "commune_code": "oujda-angad--oujda",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 34.68002275,
+      "longitude": -1.8906515499999998
+    }
+  },
+  {
+    "id": "hospital-369cefd8700c35dc",
+    "name": "Hôpital des Spécialitéss",
+    "aliases": [],
+    "category": "HIR",
+    "category_label": "Hospital Interrégional",
+    "ownership": "public",
+    "region_code": "oriental",
+    "province_code": "oujda-angad",
+    "commune_code": "oujda-angad--oujda",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-ca0e7a93d14a3288",
+    "name": "Centre d'oncoligie Hassan II",
+    "aliases": [],
+    "category": "HIR",
+    "category_label": "Hospital Interrégional",
+    "ownership": "public",
+    "region_code": "oriental",
+    "province_code": "oujda-angad",
+    "commune_code": "oujda-angad--sidi-moussa-lemhaya",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-d7e42c36e930bf01",
+    "name": "HPr Laayoune Sidi Mellouk",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "oriental",
+    "province_code": "taourirt",
+    "commune_code": "taourirt--el-aioun-sidi-mellouk",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-dcd1edb3c0c0ea06",
+    "name": "Taourirt",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "oriental",
+    "province_code": "taourirt",
+    "commune_code": "taourirt--taourirt",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-a0f28375235c191c",
+    "name": "Al Idrissi",
+    "aliases": [
+      "Hôpital EL IDRISSI"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "rabat-sale-kenitra",
+    "province_code": "kenitra",
+    "commune_code": "kenitra--kenitra",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 34.248312600000006,
+      "longitude": -6.578207300000001
+    }
+  },
+  {
+    "id": "hospital-af57fca722c3e951",
+    "name": "Azzamouri",
+    "aliases": [
+      "Centre Hospitalier Provincial El-Azemmouri"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "rabat-sale-kenitra",
+    "province_code": "kenitra",
+    "commune_code": "kenitra--kenitra",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 34.247161750000004,
+      "longitude": -6.5754666
+    }
+  },
+  {
+    "id": "hospital-c0d84f57f6b88ad7",
+    "name": "Zoubir Skirej",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "rabat-sale-kenitra",
+    "province_code": "kenitra",
+    "commune_code": "kenitra--souk-el-arbaa",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-osm-way-789296397",
+    "name": "Hôpital Psychatrie Kenitra",
+    "aliases": [],
+    "category": null,
+    "category_label": null,
+    "ownership": null,
+    "region_code": "rabat-sale-kenitra",
+    "province_code": "kenitra",
+    "commune_code": "kenitra--kenitra",
+    "arrondissement_code": null,
+    "reference_year": null,
+    "location": {
+      "latitude": 34.24689395,
+      "longitude": -6.58007675
+    }
+  },
+  {
+    "id": "hospital-05cee4b635a1b6c1",
+    "name": "Tiflet",
+    "aliases": [
+      "Hopital de Proximite - Tiflet"
+    ],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "rabat-sale-kenitra",
+    "province_code": "khemisset",
+    "commune_code": "khemisset--tiflet",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 33.89542915,
+      "longitude": -6.3345310999999995
+    }
+  },
+  {
+    "id": "hospital-1724b937136021ad",
+    "name": "Khémisset",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "rabat-sale-kenitra",
+    "province_code": "khemisset",
+    "commune_code": "khemisset--khemisset",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-cdaec6dd3e6ef7ec",
+    "name": "Roummani",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "rabat-sale-kenitra",
+    "province_code": "khemisset",
+    "commune_code": "khemisset--rommani",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-1a2213caaecdba2f",
+    "name": "Med Ben Abdellah",
+    "aliases": [
+      "المعهد الوطني للانكولوجيا"
+    ],
+    "category": "HIR",
+    "category_label": "Hospital Interrégional",
+    "ownership": "public",
+    "region_code": "rabat-sale-kenitra",
+    "province_code": "rabat",
+    "commune_code": "rabat--rabat",
+    "arrondissement_code": "rabat--agdal-riyad",
+    "reference_year": 2024,
+    "location": {
+      "latitude": 33.97232845,
+      "longitude": -6.87318155
+    }
+  },
+  {
+    "id": "hospital-3e29ba5a9803699e",
+    "name": "Maternité Souissi",
+    "aliases": [
+      "Maternite du Souissi / CHU Ibn SIna"
+    ],
+    "category": "HIR",
+    "category_label": "Hospital Interrégional",
+    "ownership": "public",
+    "region_code": "rabat-sale-kenitra",
+    "province_code": "rabat",
+    "commune_code": "rabat--rabat",
+    "arrondissement_code": "rabat--agdal-riyad",
+    "reference_year": 2024,
+    "location": {
+      "latitude": 33.98733685,
+      "longitude": -6.85540795
+    }
+  },
+  {
+    "id": "hospital-5d36923c19ed6d6d",
+    "name": "Maternité Orangers",
+    "aliases": [],
+    "category": "HIR",
+    "category_label": "Hospital Interrégional",
+    "ownership": "public",
+    "region_code": "rabat-sale-kenitra",
+    "province_code": "rabat",
+    "commune_code": "rabat--rabat",
+    "arrondissement_code": "rabat--agdal-riyad",
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-65cee7867080abab",
+    "name": "Hôpital Des Spécialités",
+    "aliases": [
+      "Hopital Des Spécialités / HCU Ibn Sina"
+    ],
+    "category": "HIR",
+    "category_label": "Hospital Interrégional",
+    "ownership": "public",
+    "region_code": "rabat-sale-kenitra",
+    "province_code": "rabat",
+    "commune_code": "rabat--rabat",
+    "arrondissement_code": "rabat--agdal-riyad",
+    "reference_year": 2024,
+    "location": {
+      "latitude": 33.98202345,
+      "longitude": -6.8580191
+    }
+  },
+  {
+    "id": "hospital-9e16ca9001da517b",
+    "name": "Hôpital D'enfants",
+    "aliases": [
+      "Hopital Des Enfants/ CHU Ibn Sina",
+      "Hôpital Des Enfants Du CHU Ibn Sina"
+    ],
+    "category": "HIR",
+    "category_label": "Hospital Interrégional",
+    "ownership": "public",
+    "region_code": "rabat-sale-kenitra",
+    "province_code": "rabat",
+    "commune_code": "rabat--rabat",
+    "arrondissement_code": "rabat--agdal-riyad",
+    "reference_year": 2024,
+    "location": {
+      "latitude": 33.98645405,
+      "longitude": -6.85427705
+    }
+  },
+  {
+    "id": "hospital-b11bb0002ce9e7f4",
+    "name": "Ibn Sina",
+    "aliases": [
+      "Hopital Ibn Sina /CHU Ibn SIna"
+    ],
+    "category": "HIR",
+    "category_label": "Hospital Interrégional",
+    "ownership": "public",
+    "region_code": "rabat-sale-kenitra",
+    "province_code": "rabat",
+    "commune_code": "rabat--rabat",
+    "arrondissement_code": "rabat--agdal-riyad",
+    "reference_year": 2024,
+    "location": {
+      "latitude": 33.9826824,
+      "longitude": -6.8521029
+    }
+  },
+  {
+    "id": "hospital-e8b2ab74cd3e0d55",
+    "name": "Moulay Youssef (Ancien hôpital de Rabat)",
+    "aliases": [
+      "Hopital Moulay Youssef"
+    ],
+    "category": "HR",
+    "category_label": "Hôpital Régional",
+    "ownership": "public",
+    "region_code": "rabat-sale-kenitra",
+    "province_code": "rabat",
+    "commune_code": "rabat--rabat",
+    "arrondissement_code": "rabat--hassan",
+    "reference_year": 2024,
+    "location": {
+      "latitude": 34.0102418,
+      "longitude": -6.8613729
+    }
+  },
+  {
+    "id": "hospital-a76d0d59a4acedf5",
+    "name": "Moulay Abdellah (Hôp.préféctoral)",
+    "aliases": [
+      "Moulay Abdellah",
+      "Nouveau Hopital My Abdellah"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "rabat-sale-kenitra",
+    "province_code": "sale",
+    "commune_code": "sale--sale",
+    "arrondissement_code": "sale--hssaine",
+    "reference_year": 2024,
+    "location": {
+      "latitude": 34.0262886,
+      "longitude": -6.753601
+    }
+  },
+  {
+    "id": "hospital-a8586e576b4f3576",
+    "name": "Arrazi",
+    "aliases": [],
+    "category": "CPU",
+    "category_label": "Centre Psychiatrique Universitaire",
+    "ownership": "public",
+    "region_code": "rabat-sale-kenitra",
+    "province_code": "sale",
+    "commune_code": "sale--sale",
+    "arrondissement_code": "sale--tabriquet",
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-e1f0fd28cca928f2",
+    "name": "El Ayachi",
+    "aliases": [
+      "مستشفي العياشي"
+    ],
+    "category": "HIR",
+    "category_label": "Hospital Interrégional",
+    "ownership": "public",
+    "region_code": "rabat-sale-kenitra",
+    "province_code": "sale",
+    "commune_code": "sale--sale",
+    "arrondissement_code": "sale--bab-lamrissa",
+    "reference_year": 2024,
+    "location": {
+      "latitude": 34.03464674999999,
+      "longitude": -6.82590715
+    }
+  },
+  {
+    "id": "hospital-f4e32869a4722b3a",
+    "name": "My Youssef",
+    "aliases": [],
+    "category": "HIR",
+    "category_label": "Hospital Interrégional",
+    "ownership": "public",
+    "region_code": "rabat-sale-kenitra",
+    "province_code": "sale",
+    "commune_code": "sale--sale",
+    "arrondissement_code": "sale--tabriquet",
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-36d57c37d7f6a0fc",
+    "name": "Sidi Kacem",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "rabat-sale-kenitra",
+    "province_code": "sidi-kacem",
+    "commune_code": "sidi-kacem--sidi-kacem",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-559c7fa17be525b4",
+    "name": "Jorf Elmelha",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "rabat-sale-kenitra",
+    "province_code": "sidi-kacem",
+    "commune_code": "sidi-kacem--jorf-el-melha",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-d0b13e9634391ea8",
+    "name": "Sidi Slimane",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "rabat-sale-kenitra",
+    "province_code": "sidi-slimane",
+    "commune_code": "sidi-slimane--sidi-slimane",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-5f63de2eb8813725",
+    "name": "Princesse Lalla Aicha (Ancien Sidi Lahcen)",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "rabat-sale-kenitra",
+    "province_code": "skhirate-temara",
+    "commune_code": "skhirate-temara--temara",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-65891b59b7685983",
+    "name": "C. d'Oncologie d'Agadir",
+    "aliases": [],
+    "category": "CRO",
+    "category_label": "Centre Régional d'Oncologie",
+    "ownership": "public",
+    "region_code": "souss-massa",
+    "province_code": "agadir-ida-ou-tanane",
+    "commune_code": "agadir-ida-ou-tanane--agadir",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-a9c7d33ed12baac6",
+    "name": "Hassan II",
+    "aliases": [],
+    "category": "HR",
+    "category_label": "Hôpital Régional",
+    "ownership": "public",
+    "region_code": "souss-massa",
+    "province_code": "agadir-ida-ou-tanane",
+    "commune_code": "agadir-ida-ou-tanane--agadir",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-002188f5520f283a",
+    "name": "Mokhtar Soussi",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "souss-massa",
+    "province_code": "chtouka-ait-baha",
+    "commune_code": "chtouka-ait-baha--biougra",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-19ec88cec362ace9",
+    "name": "Inezgane",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "souss-massa",
+    "province_code": "inezgane-ait-melloul",
+    "commune_code": "inezgane-ait-melloul--inezgane",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-92c9eb179b3d03f8",
+    "name": "Oulad Teima",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "souss-massa",
+    "province_code": "taroudannt",
+    "commune_code": "taroudannt--oulad-teima",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-e25f69b94f49d4b8",
+    "name": "Mokhtar Es-Soussi",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "souss-massa",
+    "province_code": "taroudannt",
+    "commune_code": "taroudannt--taroudannt",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-fd11dbf7af429cae",
+    "name": "Tata",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "souss-massa",
+    "province_code": "tata",
+    "commune_code": "tata--tata",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-71d06123ccb5a49a",
+    "name": "Houmman El Fatouaki",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "souss-massa",
+    "province_code": "tiznit",
+    "commune_code": "tiznit--tiznit",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-9d23384166122bfd",
+    "name": "Hassan 1er",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "souss-massa",
+    "province_code": "tiznit",
+    "commune_code": "tiznit--tiznit",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-178068d996b19ac4",
+    "name": "C. d'oncologie d'Al Hoceima",
+    "aliases": [],
+    "category": "CRO",
+    "category_label": "Centre Régional d'Oncologie",
+    "ownership": "public",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "province_code": "al-hoceima",
+    "commune_code": "al-hoceima--al-hoceima",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 35.2373441,
+      "longitude": -3.928308
+    }
+  },
+  {
+    "id": "hospital-38f824fc8c159035",
+    "name": "Mohammed VI",
+    "aliases": [
+      "Centre Hospitalier Provincial Mohammed VI"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "province_code": "al-hoceima",
+    "commune_code": "al-hoceima--ait-youssef-ou-ali",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 35.1957408,
+      "longitude": -3.8875079
+    }
+  },
+  {
+    "id": "hospital-a6b3e2d0447415a4",
+    "name": "Mohamed V",
+    "aliases": [
+      "Hôpital Mohamed V"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "province_code": "al-hoceima",
+    "commune_code": "al-hoceima--al-hoceima",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 35.238852,
+      "longitude": -3.9390368000000002
+    }
+  },
+  {
+    "id": "hospital-c27cf84e6b38e810",
+    "name": "Targuist",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "province_code": "al-hoceima",
+    "commune_code": "al-hoceima--targuist",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-f298188ae303009a",
+    "name": "Imzouren",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "province_code": "al-hoceima",
+    "commune_code": "al-hoceima--imzouren",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-a558a4e7b15e644d",
+    "name": "Mohamed V",
+    "aliases": [
+      "Hopital Mohamed V",
+      "Hôpital Mohamed V",
+      "Hôpital Mohammed V"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "province_code": "chefchaouen",
+    "commune_code": "chefchaouen--chefchaouen",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 35.168650150000005,
+      "longitude": -5.27089945
+    }
+  },
+  {
+    "id": "hospital-7d3d8cfaa0ecf33d",
+    "name": "Lalla Meriem",
+    "aliases": [
+      "Hôpital Princesse Lalla Meriem"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "province_code": "larache",
+    "commune_code": "larache--larache",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 35.1857703,
+      "longitude": -6.1568307
+    }
+  },
+  {
+    "id": "hospital-c11d3aa873870d8a",
+    "name": "Ksar El Kebir",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "province_code": "larache",
+    "commune_code": "larache--ksar-el-kebir",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-615dc5586395ad77",
+    "name": "Mohammed VI",
+    "aliases": [
+      "Hopital Mohamed 6"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "province_code": "m-diq-fnideq",
+    "commune_code": "m-diq-fnideq--m-diq",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 35.69178645,
+      "longitude": -5.32998385
+    }
+  },
+  {
+    "id": "hospital-e66d79ec7b6bdc13",
+    "name": "Hassan II",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "province_code": "m-diq-fnideq",
+    "commune_code": "m-diq-fnideq--fnideq",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-8d6fd2422e3bca49",
+    "name": "Abou Kacem Zahraoui",
+    "aliases": [
+      "Abi Kacem Zehraoui أبي قاسم الزهراوي",
+      "Hôpital Abou El Kacem Zahraoui_Ouazzane مستشفى أبو القاسم الزهراوي وزان"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "province_code": "ouezzane",
+    "commune_code": "ouezzane--ouezzane",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 34.79901805,
+      "longitude": -5.5882553999999995
+    }
+  },
+  {
+    "id": "hospital-2f5cc6d6301d960c",
+    "name": "Arrazi",
+    "aliases": [],
+    "category": "HPsyR",
+    "category_label": "Hôpital Psychiatrique Régional",
+    "ownership": "public",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "province_code": "tanger-assilah",
+    "commune_code": "tanger-assilah--tanger",
+    "arrondissement_code": "tanger-assilah--mghogha",
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-552f62a62a6e4a9c",
+    "name": "Mohammed Vi",
+    "aliases": [
+      "Hôpital Mohammed VI"
+    ],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "province_code": "tanger-assilah",
+    "commune_code": "tanger-assilah--tanger",
+    "arrondissement_code": "tanger-assilah--bni-makada",
+    "reference_year": 2024,
+    "location": {
+      "latitude": 35.7509724,
+      "longitude": -5.828356899999999
+    }
+  },
+  {
+    "id": "hospital-597ceffed2206bd1",
+    "name": "Assilah",
+    "aliases": [],
+    "category": "HPr",
+    "category_label": "Hôpital de Proximité",
+    "ownership": "public",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "province_code": "tanger-assilah",
+    "commune_code": "tanger-assilah--assilah",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-9101ea871e725ca0",
+    "name": "Duc De Tovar",
+    "aliases": [],
+    "category": "HR",
+    "category_label": "Hôpital Régional",
+    "ownership": "public",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "province_code": "tanger-assilah",
+    "commune_code": "tanger-assilah--tanger",
+    "arrondissement_code": "tanger-assilah--medina",
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-918d8c38503bd5d8",
+    "name": "Hôpital mère enfant Mohamed VI",
+    "aliases": [],
+    "category": "HIR",
+    "category_label": "Hospital Interrégional",
+    "ownership": "public",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "province_code": "tanger-assilah",
+    "commune_code": "tanger-assilah--gueznaia",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-997ed6b62590fb75",
+    "name": "Centre d'oncologie",
+    "aliases": [],
+    "category": "HIR",
+    "category_label": "Hospital Interrégional",
+    "ownership": "public",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "province_code": "tanger-assilah",
+    "commune_code": "tanger-assilah--tanger",
+    "arrondissement_code": "tanger-assilah--medina",
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-a8726b04c9708ec1",
+    "name": "Mohamed V",
+    "aliases": [
+      "Hôpital Mohammed V"
+    ],
+    "category": "HR",
+    "category_label": "Hôpital Régional",
+    "ownership": "public",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "province_code": "tanger-assilah",
+    "commune_code": "tanger-assilah--tanger",
+    "arrondissement_code": "tanger-assilah--medina",
+    "reference_year": 2024,
+    "location": {
+      "latitude": 35.77819065,
+      "longitude": -5.8282592
+    }
+  },
+  {
+    "id": "hospital-ab1c230e98d09dbb",
+    "name": "Hôpital des spécialité Mohamed VI",
+    "aliases": [],
+    "category": "HIR",
+    "category_label": "Hospital Interrégional",
+    "ownership": "public",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "province_code": "tanger-assilah",
+    "commune_code": "tanger-assilah--gueznaia",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-c20b86e0fd55102d",
+    "name": "Hôpital psychiatrique Mohamed VI",
+    "aliases": [],
+    "category": "CPU",
+    "category_label": "Centre Psychiatrique Universitaire",
+    "ownership": "public",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "province_code": "tanger-assilah",
+    "commune_code": "tanger-assilah--gueznaia",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-c6c66e421c801900",
+    "name": "Al Kortobi",
+    "aliases": [
+      "hôpital al kortobi"
+    ],
+    "category": "HR",
+    "category_label": "Hôpital Régional",
+    "ownership": "public",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "province_code": "tanger-assilah",
+    "commune_code": "tanger-assilah--tanger",
+    "arrondissement_code": "tanger-assilah--medina",
+    "reference_year": 2024,
+    "location": {
+      "latitude": 35.7894876,
+      "longitude": -5.8183982499999995
+    }
+  },
+  {
+    "id": "hospital-63122f3da95b7151",
+    "name": "Ben Karrich",
+    "aliases": [
+      "Hospital Ben Karrich"
+    ],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "province_code": "tetouan",
+    "commune_code": "tetouan--dar-bni-karrich",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": {
+      "latitude": 35.5104321,
+      "longitude": -5.42311565
+    }
+  },
+  {
+    "id": "hospital-8265243f4ed1f98d",
+    "name": "Hôpital.Civil",
+    "aliases": [],
+    "category": "HP",
+    "category_label": "Hôpital Provincial/Préfectoral",
+    "ownership": "public",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "province_code": "tetouan",
+    "commune_code": "tetouan--tetouan",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  },
+  {
+    "id": "hospital-b7d0f3ae8bdd52d0",
+    "name": "Errazi",
+    "aliases": [],
+    "category": "HPsyP",
+    "category_label": "Hôpital Psychiatrique Provincial/préfectoral",
+    "ownership": "public",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "province_code": "tetouan",
+    "commune_code": "tetouan--tetouan",
+    "arrondissement_code": null,
+    "reference_year": 2024,
+    "location": null
+  }
+]

@@ -86,6 +86,10 @@ export interface GeographyData {
   arrondissements: readonly Arrondissement[];
 }
 
+export interface GeographySnapshot extends GeographyData {
+  regions: readonly Region[];
+}
+
 export interface ResourceParams {
   code: string;
 }

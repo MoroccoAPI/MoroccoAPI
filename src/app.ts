@@ -8,6 +8,9 @@ import Fastify, {
 } from "fastify";
 
 import { geography } from "./geography/routes.js";
+import { loadRegions } from "./geography/data/regions.js";
+import { loadGeography } from "./geography/data/subdivisions.js";
+import { health } from "./health/routes.js";
 import { status } from "./status.js";
 import { home } from "./home/routes.js";
 import { population } from "./population/routes.js";
@@ -57,6 +60,7 @@ export async function buildApp(
           description: "Normalized public administrative geography data",
         },
         { name: "Population", description: "Demographic data for Morocco" },
+        { name: "Health", description: "Health facilities and infrastructure indicators with source and snapshot metadata" },
       ],
     },
   });
@@ -108,10 +112,17 @@ export async function buildApp(
     });
   });
 
+  const regions = await loadRegions();
+  const geographyData = Object.freeze({
+    regions,
+    ...await loadGeography(regions),
+  });
+
   await app.register(home);
   await app.register(status);
-  await app.register(geography);
+  await app.register(geography, { data: geographyData });
   await app.register(population);
+  await app.register(health, { geography: geographyData });
 
   return app;
 }

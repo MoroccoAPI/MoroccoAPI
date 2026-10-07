@@ -1,0 +1,51 @@
+id: primary-care-facilities
+title: Morocco public primary-care facilities
+version: 1.0.0
+retrieved_at: 2026-10-06
+reference_year: 2024
+license: ODbL-1.0
+license_url: https://opendatacommons.org/licenses/odbl/1-0/
+contains_personal_data: false
+
+sources:
+  - dataset: Etablissements de soins de santé primaire 2024
+    producer: Ministère de la Santé et de la Protection Sociale (MSPS)
+    catalog_url: https://data.gov.ma/data/fr/dataset/la-liste-des-hopitaux
+    resource_url: https://data.gov.ma/data/fr/dataset/2932e8a4-272c-4101-80ef-85519de47e7c/resource/eedbf07a-29fb-4442-b504-37c152ba9402/download/etablissements-de-soins-de-sante-primaire-2024.xlsx
+    source_updated_at: 2026-02-06
+    source_license: ODbL-1.0
+
+  - dataset: Population légale du Royaume du Maroc selon les résultats du RGPH 2024
+    producer: Haut-Commissariat au Plan (HCP)
+    catalog_url: https://www.hcp.ma/Population-legale-du-Royaume-du-Maroc-repartie-par-regions-provinces-et-prefectures-et-communes-selon-les-resultats-du_a3975.html
+    resource_url: https://www.hcp.ma/file/242341/
+    source_updated_at: 2024-11-22
+    source_license: CC-BY-4.0
+
+verification_references:
+  - producer: Ministère de la Santé et de la Protection Sociale (MSPS)
+    source_url: https://www.sante.gov.ma/Pages/actualites.aspx?idactu=739
+    service_event_date: 2026-01-16
+  - producer: Ministère de la Santé et de la Protection Sociale (MSPS)
+    source_url: https://www.sante.gov.ma/Pages/actualites.aspx?idactu=740
+    service_event_date: 2026-01-24
+  - producer: Ministère de la Santé et de la Protection Sociale (MSPS)
+    source_url: https://www.sante.gov.ma/Pages/actualites.aspx?IDActu=759
+    service_event_date: 2026-04-18
+  - producer: Ministère de la Santé et de la Protection Sociale (MSPS)
+    source_url: https://www.sante.gov.ma/Pages/Communiques.aspx?IDCom=493
+    service_event_date: 2026-07-28
+  - producer: Ministère de la Santé et de la Protection Sociale (MSPS)
+    source_url: https://www.sante.gov.ma/Pages/Communiques.aspx?IDCom=494
+    service_event_date: 2026-09-08
+  - producer: Haut-Commissariat au Plan (HCP)
+    dataset: Les indicateurs sociaux du Maroc, édition 2026, tableau 4.3 (2024)
+    source_url: https://www.hcp.ma/file/248623/
+  - producer: Groupement Sanitaire Territorial Fès-Meknès
+    source_url: https://www.gst-fm.ma/actualites/conseil-administration-gst-fes-meknes/
+
+limitations:
+  - The national registry covers 3065 facilities in 2024, in categories CSU-1, CSU-2, CSR-1, CSR-2 and DR. Supporting laboratories and diagnostic or reproductive-health reference centres are outside this collection.
+  - last_service_event_date records an officially announced commissioning after rehabilitation or equipment in 2026. A null value means no matched announcement, not a closed facility. It is neither an original opening date nor a guarantee of present operating status.
+  - The 2026 references supply factual service-event dates only. Their article text and any regional directories are not redistributed or assigned an open-data license.
+  - This is a 2024 national registry with partial 2026 confirmations, not a complete national registry for 2026.

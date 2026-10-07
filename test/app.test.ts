@@ -1,5 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
+import fs from "node:fs/promises";
+import { syncBuiltinESMExports } from "node:module";
 import { after, before, describe, it } from "node:test";
 
 import type { FastifyInstance } from "fastify";
@@ -18,6 +20,43 @@ after(async () => {
 });
 
 describe("Application contracts", () => {
+  it("reads each geography snapshot once when registering Geography and Health", async () => {
+    const originalReadFile = fs.readFile;
+    const reads = new Map<string, number>();
+    let sharedApp: FastifyInstance | undefined;
+
+    fs.readFile = (async (...args: Parameters<typeof fs.readFile>) => {
+      const path = args[0];
+      const filename = path instanceof URL ? path.pathname : typeof path === "string" ? path.replaceAll("\\", "/") : "";
+      if (filename.includes("/data/geography/")) {
+        const name = filename.split("/").at(-1)!;
+        reads.set(name, (reads.get(name) ?? 0) + 1);
+      }
+      return originalReadFile(...args);
+    }) as typeof fs.readFile;
+    syncBuiltinESMExports();
+
+    try {
+      sharedApp = await buildApp();
+      await sharedApp.ready();
+      assert.deepEqual(Object.fromEntries([...reads].sort()), {
+        "administrative-arrondissements.json": 1,
+        "administrative-communes.json": 1,
+        "administrative-prefectures-of-arrondissements.json": 1,
+        "administrative-provinces.json": 1,
+        "administrative-regions.json": 1,
+      });
+      assert.equal((await sharedApp.inject("/api/v1/regions")).statusCode, 200);
+      assert.equal((await sharedApp.inject("/api/v1/health/hospitals")).statusCode, 200);
+      assert.equal((await sharedApp.inject("/api/v1/health/primary-care-facilities")).statusCode, 200);
+      assert.equal((await sharedApp.inject("/api/v1/health/private-infrastructure")).statusCode, 200);
+    } finally {
+      fs.readFile = originalReadFile;
+      syncBuiltinESMExports();
+      await sharedApp?.close();
+    }
+  });
+
   it("keeps query values and credential headers out of logs without changing requests", async () => {
     const logs: string[] = [];
     const loggedApp = await buildApp({
