@@ -14,6 +14,7 @@ import { health } from "./health/routes.js";
 import { status } from "./status.js";
 import { home } from "./home/routes.js";
 import { population } from "./population/routes.js";
+import { publicService } from "./public-service/routes.js";
 import { APP_VERSION } from "./version.js";
 
 export async function buildApp(
@@ -61,6 +62,10 @@ export async function buildApp(
         },
         { name: "Population", description: "Demographic data for Morocco" },
         { name: "Health", description: "Health facilities and infrastructure indicators with source and snapshot metadata" },
+        {
+          name: "Public service",
+          description: "Civil-service reference data: simulated net salaries by grade, compiled by Wadifa Info",
+        },
       ],
     },
   });
@@ -123,6 +128,7 @@ export async function buildApp(
   await app.register(geography, { data: geographyData });
   await app.register(population);
   await app.register(health, { geography: geographyData });
+  await app.register(publicService);
 
   return app;
 }

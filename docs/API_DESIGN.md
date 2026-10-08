@@ -17,6 +17,15 @@ and commune totals at `/api/v1/population/communes` and
 at `/api/v1/population/historical` and `/api/v1/population/historical/{year}`.
 Geography codes match the administrative geography API.
 
+Civil-service salary reference values are available at
+`/api/v1/public-service/salaries` (filters: `q`, `corps`, `min_salary`,
+`max_salary`) and `/api/v1/public-service/salaries/{code}`. This is a secondary
+dataset compiled by Wadifa Info from the official salary simulator
+(`simulation.mmsp.gov.ma`), not an official government release: responses carry
+`meta.value_type: "simulated-reference"` and a `meta.notice` describing the
+simulation settings, and the values must not be presented as official salary
+entitlements.
+
 MoroccoAPI `1.0.0` is the first stable application version and serves the
 `/api/v1` contract. Application release numbers and API path versions are
 separate: compatible fixes and additions keep the same base path. Breaking
