@@ -104,6 +104,29 @@ describe("telecom/phone-numbers", () => {
     }
   });
 
+  it("recognizes known prefixes even when the number is too short or too long", async () => {
+    for (const input of ["061212345", "06121234567", "61212345", "6121234567", "+21261212345", "002126121234567", "٠٦١٢١٢٣٤٥"]) {
+      const response = await app.inject({ method: "GET", url: numberUrl("validate", input) });
+      assert.equal(response.statusCode, 200, input);
+      const data = response.json().data;
+      assert.equal(data.reason, "INVALID_LENGTH", input);
+      assert.equal(data.has_known_prefix, true, input);
+      assert.equal(data.is_possible, false);
+      assert.equal(data.is_valid_format, false);
+      assert.equal(data.e164, null);
+      assert.equal(data.national_number, null);
+      assert.equal(data.number_type, null);
+
+      const lookup = await app.inject({ method: "GET", url: numberUrl("lookup", input) });
+      assert.equal(lookup.statusCode, 400, input);
+      assert.equal(lookup.json().error.code, "INVALID_PHONE_NUMBER");
+    }
+    for (const input of ["080821234", "+33612123456", "061212345 ext 2", "+2120612123456", "177"]) {
+      const response = await app.inject({ method: "GET", url: numberUrl("validate", input) });
+      assert.equal(response.json().data.has_known_prefix, false, input);
+    }
+  });
+
   it("requires one bounded number query", async () => {
     for (const query of ["", "?number=", "?number=0612123456&number=0613123456", `?number=${"6".repeat(65)}`]) {
       const response = await app.inject({ method: "GET", url: `/api/v1/telecom/phone-numbers/validate${query}` });

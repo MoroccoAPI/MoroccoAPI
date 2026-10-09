@@ -10,12 +10,12 @@ function normalizeDigits(input: string): string {
   });
 }
 
-function invalid(reason: NumberValidation["reason"]): NumberValidation {
+function invalid(reason: NumberValidation["reason"], hasKnownPrefix = false): NumberValidation {
   return {
     is_possible: false,
     is_valid_format: false,
     is_allocated_range: null,
-    has_known_prefix: false,
+    has_known_prefix: hasKnownPrefix,
     e164: null,
     national_number: null,
     number_type: null,
@@ -49,20 +49,21 @@ export function validateNumber(input: string, data: TelecomData): NumberValidati
   } else {
     significant = digits.startsWith("0") ? digits.slice(1) : digits;
   }
+  const national = `0${significant}`;
+  const hasKnownPrefix = findPrefix(national, data.ranges) !== undefined;
   if (significant.length !== 9) {
-    return invalid("INVALID_LENGTH");
+    return invalid("INVALID_LENGTH", hasKnownPrefix);
   }
   const phone = parsePhoneNumberFromString(`+212${significant}`, { extract: false });
   if (!phone) {
-    return invalid("INVALID_NUMBER_PATTERN");
+    return invalid("INVALID_NUMBER_PATTERN", hasKnownPrefix);
   }
-  const national = `0${significant}`;
   const valid = phone.isValid();
   return {
     is_possible: phone.isPossible(),
     is_valid_format: valid,
     is_allocated_range: null,
-    has_known_prefix: findPrefix(national, data.ranges) !== undefined,
+    has_known_prefix: hasKnownPrefix,
     e164: phone.number,
     national_number: national,
     number_type: phone.getType()?.toLowerCase() ?? null,
