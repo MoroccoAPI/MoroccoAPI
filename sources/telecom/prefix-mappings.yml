@@ -1,0 +1,50 @@
+id: telecom-prefix-mappings
+title: Original carrier and geographic prefix mappings for Moroccan telephone numbers
+version: 1.0.0
+retrieved_at: 2026-10-08
+license: Apache-2.0
+license_url: https://github.com/google/libphonenumber/blob/33be5664343676b27761213d8f5500d682568ea7/LICENSE
+contains_personal_data: false
+sources:
+  - dataset: Original carrier prefix mappings for +212
+    producer: The Libphonenumber Authors
+    catalog_url: https://github.com/google/libphonenumber
+    resource_url: https://raw.githubusercontent.com/google/libphonenumber/33be5664343676b27761213d8f5500d682568ea7/resources/carrier/en/212.txt
+    source_updated_at: null
+    source_license: Apache-2.0
+    terms_url: https://github.com/google/libphonenumber/blob/33be5664343676b27761213d8f5500d682568ea7/LICENSE
+    sha256: ee7a7750f4c2f1556376c63c9b1755033d9997783494a6e03368b4522c7e66d4
+    attribution: Copyright (C) 2013 The Libphonenumber Authors. Licensed under the
+      Apache License, Version 2.0. Prefixes and descriptions normalized by
+      MoroccoAPI.
+  - dataset: Geographic prefix descriptions for +212 in French
+    producer: The Libphonenumber Authors
+    catalog_url: https://github.com/google/libphonenumber
+    resource_url: https://raw.githubusercontent.com/google/libphonenumber/33be5664343676b27761213d8f5500d682568ea7/resources/geocoding/fr/212.txt
+    source_updated_at: null
+    source_license: Apache-2.0
+    terms_url: https://github.com/google/libphonenumber/blob/33be5664343676b27761213d8f5500d682568ea7/LICENSE
+    sha256: d849a8c0ae339509c8af8e02a9c798da77e3e3e4eed6ad1a701dc27f1baca698
+    attribution: Copyright (C) 2011 The Libphonenumber Authors. Licensed under the
+      Apache License, Version 2.0. Prefixes and descriptions normalized by
+      MoroccoAPI.
+  - dataset: Geographic prefix descriptions for +212 in English
+    producer: The Libphonenumber Authors
+    catalog_url: https://github.com/google/libphonenumber
+    resource_url: https://raw.githubusercontent.com/google/libphonenumber/33be5664343676b27761213d8f5500d682568ea7/resources/geocoding/en/212.txt
+    source_updated_at: null
+    source_license: Apache-2.0
+    terms_url: https://github.com/google/libphonenumber/blob/33be5664343676b27761213d8f5500d682568ea7/LICENSE
+    sha256: d135f16280d9b0567011d5365a2c71bbc3f46100b22f1d4ea46ef257d4003ae6
+    attribution: Copyright (C) 2011 The Libphonenumber Authors. Licensed under the
+      Apache License, Version 2.0. Prefixes and descriptions normalized by
+      MoroccoAPI.
+limitations:
+  - These are Google prefix mappings, not the complete official ANRT allocation
+    register.
+  - Actual mapping freshness is unknown; the source revision date does not
+    establish current allocation.
+  - More specific prefixes override broad descriptions. The original operator is
+    not necessarily the current serving operator.
+  - French and English source labels are preserved; missing Arabic labels and
+    HCP codes remain null.

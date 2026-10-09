@@ -106,7 +106,9 @@ describe("health/private-infrastructure", () => {
     assert.ok(route.responses["400"]);
     const record = route.responses["200"].content["application/json"].schema.properties.data.items;
     assert.deepEqual(record.properties.geographic_level.enum, ["national", "region"]);
-    assert.ok(record.properties.medical_practices.anyOf.some((schema: { type: string }) => schema.type === "null"));
+    assert.ok(record.properties.medical_practices.anyOf.some(
+      (schema: { nullable?: boolean; enum?: unknown[] }) => schema.nullable === true && schema.enum?.includes(null),
+    ));
     assert.ok(record.properties.reference_year.description.includes("not the publication"));
   });
 });
