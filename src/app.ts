@@ -15,6 +15,7 @@ import { status } from "./status.js";
 import { home } from "./home/routes.js";
 import { population } from "./population/routes.js";
 import { APP_VERSION } from "./version.js";
+import { telecom } from "./telecom/routes.js";
 
 export async function buildApp(
   options: FastifyServerOptions = { logger: false },
@@ -61,6 +62,7 @@ export async function buildApp(
         },
         { name: "Population", description: "Demographic data for Morocco" },
         { name: "Health", description: "Health facilities and infrastructure indicators with source and snapshot metadata" },
+        { name: "Telecom", description: "Local phone formatting and licensed carrier and geographic prefix mappings" },
       ],
     },
   });
@@ -123,6 +125,7 @@ export async function buildApp(
   await app.register(geography, { data: geographyData });
   await app.register(population, { geography: geographyData });
   await app.register(health, { geography: geographyData });
+  await app.register(telecom);
 
   return app;
 }
