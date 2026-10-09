@@ -1,4 +1,5 @@
 import type { FastifyPluginAsync } from "fastify";
+import type { GeographySnapshot } from "../geography/types.js";
 
 import { loadRegionPopulation } from "./data/regions.js";
 import { loadCommunePopulation } from "./data/communes.js";
@@ -17,12 +18,12 @@ import {
   communePopulationSchema,
 } from "./schemas.js";
 
-export const population: FastifyPluginAsync = async (app) => {
+export const population: FastifyPluginAsync<{ geography: GeographySnapshot }> = async (app, { geography }) => {
   const record = await loadNationalPopulation();
-  const regions = await loadRegionPopulation();
+  const regions = await loadRegionPopulation(geography.regions);
   const historical = await loadHistoricalPopulation();
-  const subdivisions = await loadSubdivisionPopulation();
-  const communes = await loadCommunePopulation();
+  const subdivisions = await loadSubdivisionPopulation(geography);
+  const communes = await loadCommunePopulation(geography);
   app.get("/api/v1/population/national", {
     schema: {
       tags: ["Population"],

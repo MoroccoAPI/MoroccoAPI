@@ -121,7 +121,7 @@ export async function buildApp(
   await app.register(home);
   await app.register(status);
   await app.register(geography, { data: geographyData });
-  await app.register(population);
+  await app.register(population, { geography: geographyData });
   await app.register(health, { geography: geographyData });
 
   return app;

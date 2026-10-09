@@ -1,7 +1,6 @@
 import { readFile } from "node:fs/promises";
 
-import { loadGeography } from "../../geography/data/subdivisions.js";
-import { loadRegions } from "../../geography/data/regions.js";
+import type { GeographyData } from "../../geography/types.js";
 import type { CommunePopulation } from "../types.js";
 
 const datasetUrl = new URL(
@@ -53,12 +52,11 @@ function assertSourceRecord(
   }
 }
 
-export async function loadCommunePopulation(): Promise<readonly CommunePopulation[]> {
-  const [raw, regions] = await Promise.all([
-    readFile(datasetUrl, "utf8"),
-    loadRegions(),
-  ]);
-  const { communes } = await loadGeography(regions);
+export async function loadCommunePopulation(
+  geography: GeographyData,
+): Promise<readonly CommunePopulation[]> {
+  const raw = await readFile(datasetUrl, "utf8");
+  const { communes } = geography;
   const parsed: unknown = JSON.parse(raw);
   if (!Array.isArray(parsed) || parsed.length !== communes.length) {
     throw new Error(`The commune population dataset must contain ${communes.length} records`);

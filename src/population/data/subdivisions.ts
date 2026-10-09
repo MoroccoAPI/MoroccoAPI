@@ -1,7 +1,6 @@
 import { readFile } from "node:fs/promises";
 
-import { loadGeography } from "../../geography/data/subdivisions.js";
-import { loadRegions } from "../../geography/data/regions.js";
+import type { GeographyData, Region } from "../../geography/types.js";
 import type { SubdivisionPopulation } from "../types.js";
 
 const datasetUrl = new URL(
@@ -47,12 +46,11 @@ function assertSourceRecord(
   }
 }
 
-export async function loadSubdivisionPopulation(): Promise<readonly SubdivisionPopulation[]> {
-  const [raw, regions] = await Promise.all([
-    readFile(datasetUrl, "utf8"),
-    loadRegions(),
-  ]);
-  const { provinces } = await loadGeography(regions);
+export async function loadSubdivisionPopulation(
+  geography: GeographyData,
+): Promise<readonly SubdivisionPopulation[]> {
+  const raw = await readFile(datasetUrl, "utf8");
+  const { provinces } = geography;
   const parsed: unknown = JSON.parse(raw);
   if (!Array.isArray(parsed) || parsed.length !== provinces.length) {
     throw new Error(`The subdivision population dataset must contain ${provinces.length} records`);
