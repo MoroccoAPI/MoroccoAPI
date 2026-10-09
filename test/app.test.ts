@@ -4,6 +4,7 @@ import fs from "node:fs/promises";
 import { syncBuiltinESMExports } from "node:module";
 import { after, before, describe, it } from "node:test";
 
+import SwaggerParser from "@apidevtools/swagger-parser";
 import type { FastifyInstance } from "fastify";
 
 import { buildApp } from "../src/app.js";
@@ -167,6 +168,23 @@ describe("Application contracts", () => {
     assert.ok(body.paths["/api/v1/arrondissements"]);
     assert.ok(body.paths["/api/v1/arrondissements/{code}"]);
     assert.ok(body.paths["/api/v1/locations/search"]);
+  });
+
+  it("publishes a valid OpenAPI 3.0 document including nullable telecom and existing domain fields", async () => {
+    const response = await app.inject({ method: "GET", url: "/openapi.json" });
+    assert.equal(response.statusCode, 200);
+    const spec = response.json();
+    assert.equal(spec.openapi, "3.0.3");
+    await SwaggerParser.validate(spec, { resolve: { external: false } });
+
+    const lookup = await app.inject({
+      method: "GET",
+      url: "/api/v1/telecom/phone-numbers/lookup?number=0808212345",
+    });
+    assert.equal(lookup.statusCode, 200);
+    assert.equal(lookup.json().data.original_operator, null);
+    assert.equal(lookup.json().data.current_operator, null);
+    assert.equal(lookup.json().data.geographic_area, null);
   });
 
   it("returns a consistent error for unknown routes", async () => {

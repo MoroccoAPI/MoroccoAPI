@@ -47,7 +47,11 @@ export async function buildApp(
   });
 
   await app.register(swagger, {
+    transformObject: (document) => "openapiObject" in document
+      ? toOpenApi30(document.openapiObject)
+      : document.swaggerObject,
     openapi: {
+      openapi: "3.0.3",
       info: {
         title: "MoroccoAPI",
         description:
@@ -128,4 +132,26 @@ export async function buildApp(
   await app.register(telecom);
 
   return app;
+}
+
+/** Keep documentation null types compatible with OpenAPI 3.0. */
+function toOpenApi30<T>(value: T): T {
+  if (Array.isArray(value)) {
+    return value.map(toOpenApi30) as T;
+  }
+  if (value === null || typeof value !== "object") {
+    return value;
+  }
+
+  const record = value as Record<string, unknown>;
+  const converted = Object.fromEntries(Object.entries(record).map(([key, child]) => [
+    key,
+    // Preserve literal data in annotations and enum values.
+    ["default", "enum", "example", "examples"].includes(key) ? child : toOpenApi30(child),
+  ]));
+
+  if (record.type === "null") {
+    return { ...converted, type: "string", nullable: true, enum: [null] } as T;
+  }
+  return converted as T;
 }
