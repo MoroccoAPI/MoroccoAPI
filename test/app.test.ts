@@ -20,7 +20,7 @@ after(async () => {
 });
 
 describe("Application contracts", () => {
-  it("reads each geography snapshot once when registering Geography and Health", async () => {
+  it("reads geography and population snapshots once per app and reuses them for requests", async () => {
     const originalReadFile = fs.readFile;
     const reads = new Map<string, number>();
     let sharedApp: FastifyInstance | undefined;
@@ -28,7 +28,7 @@ describe("Application contracts", () => {
     fs.readFile = (async (...args: Parameters<typeof fs.readFile>) => {
       const path = args[0];
       const filename = path instanceof URL ? path.pathname : typeof path === "string" ? path.replaceAll("\\", "/") : "";
-      if (filename.includes("/data/geography/")) {
+      if (filename.includes("/data/geography/") || filename.includes("/data/population/")) {
         const name = filename.split("/").at(-1)!;
         reads.set(name, (reads.get(name) ?? 0) + 1);
       }
@@ -39,17 +39,43 @@ describe("Application contracts", () => {
     try {
       sharedApp = await buildApp();
       await sharedApp.ready();
-      assert.deepEqual(Object.fromEntries([...reads].sort()), {
+      const expectedReads = {
         "administrative-arrondissements.json": 1,
         "administrative-communes.json": 1,
         "administrative-prefectures-of-arrondissements.json": 1,
         "administrative-provinces.json": 1,
         "administrative-regions.json": 1,
-      });
-      assert.equal((await sharedApp.inject("/api/v1/regions")).statusCode, 200);
-      assert.equal((await sharedApp.inject("/api/v1/health/hospitals")).statusCode, 200);
-      assert.equal((await sharedApp.inject("/api/v1/health/primary-care-facilities")).statusCode, 200);
-      assert.equal((await sharedApp.inject("/api/v1/health/private-infrastructure")).statusCode, 200);
+        "communes-population.json": 1,
+        "historical-population.json": 1,
+        "national-population.json": 1,
+        "region-population.json": 1,
+        "subdivisions-population.json": 1,
+      };
+      assert.deepEqual(Object.fromEntries([...reads].sort()), expectedReads);
+
+      for (let round = 0; round < 2; round++) {
+        for (const url of [
+          "/api/v1/regions",
+          "/api/v1/health/hospitals",
+          "/api/v1/health/primary-care-facilities",
+          "/api/v1/health/private-infrastructure",
+          "/api/v1/population/national",
+          "/api/v1/population/regions",
+          "/api/v1/population/historical",
+          "/api/v1/population/subdivisions",
+          "/api/v1/population/communes",
+        ]) {
+          assert.equal((await sharedApp.inject(url)).statusCode, 200, url);
+        }
+      }
+      assert.deepEqual(Object.fromEntries([...reads].sort()), expectedReads);
+
+      await sharedApp.close();
+      sharedApp = undefined;
+      reads.clear();
+      sharedApp = await buildApp();
+      await sharedApp.ready();
+      assert.deepEqual(Object.fromEntries([...reads].sort()), expectedReads);
     } finally {
       fs.readFile = originalReadFile;
       syncBuiltinESMExports();
