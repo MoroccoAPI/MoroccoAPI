@@ -1,0 +1,1660 @@
+[
+  {
+    "prefix": "051",
+    "international_prefix": "+21251",
+    "mask": "051XXXXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "051",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0520",
+    "international_prefix": "+212520",
+    "mask": "0520XXXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "0520",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0521",
+    "international_prefix": "+212521",
+    "mask": "0521XXXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "0521",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05220",
+    "international_prefix": "+2125220",
+    "mask": "05220XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05220",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05222",
+    "international_prefix": "+2125222",
+    "mask": "05222XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05222",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05223",
+    "international_prefix": "+2125223",
+    "mask": "05223XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05223",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05224",
+    "international_prefix": "+2125224",
+    "mask": "05224XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05224",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05225",
+    "international_prefix": "+2125225",
+    "mask": "05225XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05225",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05226",
+    "international_prefix": "+2125226",
+    "mask": "05226XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05226",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05227",
+    "international_prefix": "+2125227",
+    "mask": "05227XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05227",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05228",
+    "international_prefix": "+2125228",
+    "mask": "05228XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05228",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05229",
+    "international_prefix": "+2125229",
+    "mask": "05229XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05229",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05232",
+    "international_prefix": "+2125232",
+    "mask": "05232XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05232",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05233",
+    "international_prefix": "+2125233",
+    "mask": "05233XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05233",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05234",
+    "international_prefix": "+2125234",
+    "mask": "05234XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05234",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05235",
+    "international_prefix": "+2125235",
+    "mask": "05235XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05235",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05237",
+    "international_prefix": "+2125237",
+    "mask": "05237XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05237",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05242",
+    "international_prefix": "+2125242",
+    "mask": "05242XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05242",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05243",
+    "international_prefix": "+2125243",
+    "mask": "05243XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05243",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05244",
+    "international_prefix": "+2125244",
+    "mask": "05244XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05244",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05246",
+    "international_prefix": "+2125246",
+    "mask": "05246XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05246",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05247",
+    "international_prefix": "+2125247",
+    "mask": "05247XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05247",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05248",
+    "international_prefix": "+2125248",
+    "mask": "05248XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05248",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0525",
+    "international_prefix": "+212525",
+    "mask": "0525XXXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "0525",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05282",
+    "international_prefix": "+2125282",
+    "mask": "05282XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05282",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05283",
+    "international_prefix": "+2125283",
+    "mask": "05283XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05283",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05285",
+    "international_prefix": "+2125285",
+    "mask": "05285XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05285",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05286",
+    "international_prefix": "+2125286",
+    "mask": "05286XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05286",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05287",
+    "international_prefix": "+2125287",
+    "mask": "05287XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05287",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05288",
+    "international_prefix": "+2125288",
+    "mask": "05288XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05288",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05289",
+    "international_prefix": "+2125289",
+    "mask": "05289XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05289",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0529",
+    "international_prefix": "+212529",
+    "mask": "0529XXXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "0529",
+    "more_specific_prefixes": [
+      "05296",
+      "05297",
+      "05298",
+      "05299"
+    ]
+  },
+  {
+    "prefix": "05296",
+    "international_prefix": "+2125296",
+    "mask": "05296XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05296",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05297",
+    "international_prefix": "+2125297",
+    "mask": "05297XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05297",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05298",
+    "international_prefix": "+2125298",
+    "mask": "05298XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05298",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05299",
+    "international_prefix": "+2125299",
+    "mask": "05299XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05299",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0530",
+    "international_prefix": "+212530",
+    "mask": "0530XXXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "0530",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0531",
+    "international_prefix": "+212531",
+    "mask": "0531XXXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "0531",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0532",
+    "international_prefix": "+212532",
+    "mask": "0532XXXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "0532",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05352",
+    "international_prefix": "+2125352",
+    "mask": "05352XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05352",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05353",
+    "international_prefix": "+2125353",
+    "mask": "05353XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05353",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05354",
+    "international_prefix": "+2125354",
+    "mask": "05354XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05354",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05355",
+    "international_prefix": "+2125355",
+    "mask": "05355XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05355",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05356",
+    "international_prefix": "+2125356",
+    "mask": "05356XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05356",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05357",
+    "international_prefix": "+2125357",
+    "mask": "05357XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05357",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05358",
+    "international_prefix": "+2125358",
+    "mask": "05358XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05358",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05359",
+    "international_prefix": "+2125359",
+    "mask": "05359XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05359",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05362",
+    "international_prefix": "+2125362",
+    "mask": "05362XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05362",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05363",
+    "international_prefix": "+2125363",
+    "mask": "05363XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05363",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05365",
+    "international_prefix": "+2125365",
+    "mask": "05365XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05365",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05366",
+    "international_prefix": "+2125366",
+    "mask": "05366XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05366",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05367",
+    "international_prefix": "+2125367",
+    "mask": "05367XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05367",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05368",
+    "international_prefix": "+2125368",
+    "mask": "05368XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05368",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05372",
+    "international_prefix": "+2125372",
+    "mask": "05372XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05372",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05373",
+    "international_prefix": "+2125373",
+    "mask": "05373XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05373",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05374",
+    "international_prefix": "+2125374",
+    "mask": "05374XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05374",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05375",
+    "international_prefix": "+2125375",
+    "mask": "05375XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05375",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05376",
+    "international_prefix": "+2125376",
+    "mask": "05376XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05376",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05377",
+    "international_prefix": "+2125377",
+    "mask": "05377XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05377",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05378",
+    "international_prefix": "+2125378",
+    "mask": "05378XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05378",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05379",
+    "international_prefix": "+2125379",
+    "mask": "05379XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05379",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05380",
+    "international_prefix": "+2125380",
+    "mask": "05380XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05380",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05381",
+    "international_prefix": "+2125381",
+    "mask": "05381XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05381",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05384",
+    "international_prefix": "+2125384",
+    "mask": "05384XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05384",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05385",
+    "international_prefix": "+2125385",
+    "mask": "05385XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05385",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05386",
+    "international_prefix": "+2125386",
+    "mask": "05386XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05386",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05387",
+    "international_prefix": "+2125387",
+    "mask": "05387XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05387",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05388",
+    "international_prefix": "+2125388",
+    "mask": "05388XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05388",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05389",
+    "international_prefix": "+2125389",
+    "mask": "05389XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05389",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05393",
+    "international_prefix": "+2125393",
+    "mask": "05393XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05393",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05394",
+    "international_prefix": "+2125394",
+    "mask": "05394XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05394",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05395",
+    "international_prefix": "+2125395",
+    "mask": "05395XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05395",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05396",
+    "international_prefix": "+2125396",
+    "mask": "05396XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05396",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05397",
+    "international_prefix": "+2125397",
+    "mask": "05397XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05397",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05398",
+    "international_prefix": "+2125398",
+    "mask": "05398XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05398",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "05399",
+    "international_prefix": "+2125399",
+    "mask": "05399XXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "05399",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0549",
+    "international_prefix": "+212549",
+    "mask": "0549XXXXXX",
+    "category": "geographic",
+    "original_operator": null,
+    "area_code": "0549",
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "060",
+    "international_prefix": "+21260",
+    "mask": "060XXXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "inwi",
+      "name": "Inwi"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "061",
+    "international_prefix": "+21261",
+    "mask": "061XXXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "maroc-telecom",
+      "name": "Maroc Telecom"
+    },
+    "area_code": null,
+    "more_specific_prefixes": [
+      "0612",
+      "0614",
+      "0617",
+      "0619"
+    ]
+  },
+  {
+    "prefix": "0612",
+    "international_prefix": "+212612",
+    "mask": "0612XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0614",
+    "international_prefix": "+212614",
+    "mask": "0614XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0617",
+    "international_prefix": "+212617",
+    "mask": "0617XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0619",
+    "international_prefix": "+212619",
+    "mask": "0619XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0620",
+    "international_prefix": "+212620",
+    "mask": "0620XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0621",
+    "international_prefix": "+212621",
+    "mask": "0621XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0622",
+    "international_prefix": "+212622",
+    "mask": "0622XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "maroc-telecom",
+      "name": "Maroc Telecom"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0623",
+    "international_prefix": "+212623",
+    "mask": "0623XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "maroc-telecom",
+      "name": "Maroc Telecom"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0624",
+    "international_prefix": "+212624",
+    "mask": "0624XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "maroc-telecom",
+      "name": "Maroc Telecom"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0625",
+    "international_prefix": "+212625",
+    "mask": "0625XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0626",
+    "international_prefix": "+212626",
+    "mask": "0626XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "inwi",
+      "name": "Inwi"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0627",
+    "international_prefix": "+212627",
+    "mask": "0627XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "inwi",
+      "name": "Inwi"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0628",
+    "international_prefix": "+212628",
+    "mask": "0628XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "maroc-telecom",
+      "name": "Maroc Telecom"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0629",
+    "international_prefix": "+212629",
+    "mask": "0629XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "inwi",
+      "name": "Inwi"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0630",
+    "international_prefix": "+212630",
+    "mask": "0630XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "inwi",
+      "name": "Inwi"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0631",
+    "international_prefix": "+212631",
+    "mask": "0631XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0632",
+    "international_prefix": "+212632",
+    "mask": "0632XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0633",
+    "international_prefix": "+212633",
+    "mask": "0633XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "inwi",
+      "name": "Inwi"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0634",
+    "international_prefix": "+212634",
+    "mask": "0634XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "inwi",
+      "name": "Inwi"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0635",
+    "international_prefix": "+212635",
+    "mask": "0635XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "inwi",
+      "name": "Inwi"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0636",
+    "international_prefix": "+212636",
+    "mask": "0636XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "maroc-telecom",
+      "name": "Maroc Telecom"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0637",
+    "international_prefix": "+212637",
+    "mask": "0637XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "maroc-telecom",
+      "name": "Maroc Telecom"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0638",
+    "international_prefix": "+212638",
+    "mask": "0638XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "inwi",
+      "name": "Inwi"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0639",
+    "international_prefix": "+212639",
+    "mask": "0639XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "maroc-telecom",
+      "name": "Maroc Telecom"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0640",
+    "international_prefix": "+212640",
+    "mask": "0640XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "inwi",
+      "name": "Inwi"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0641",
+    "international_prefix": "+212641",
+    "mask": "0641XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "maroc-telecom",
+      "name": "Maroc Telecom"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0642",
+    "international_prefix": "+212642",
+    "mask": "0642XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "maroc-telecom",
+      "name": "Maroc Telecom"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0643",
+    "international_prefix": "+212643",
+    "mask": "0643XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "maroc-telecom",
+      "name": "Maroc Telecom"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0644",
+    "international_prefix": "+212644",
+    "mask": "0644XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0645",
+    "international_prefix": "+212645",
+    "mask": "0645XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0646",
+    "international_prefix": "+212646",
+    "mask": "0646XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "inwi",
+      "name": "Inwi"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0647",
+    "international_prefix": "+212647",
+    "mask": "0647XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "inwi",
+      "name": "Inwi"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0648",
+    "international_prefix": "+212648",
+    "mask": "0648XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "maroc-telecom",
+      "name": "Maroc Telecom"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0649",
+    "international_prefix": "+212649",
+    "mask": "0649XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "065",
+    "international_prefix": "+21265",
+    "mask": "065XXXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "maroc-telecom",
+      "name": "Maroc Telecom"
+    },
+    "area_code": null,
+    "more_specific_prefixes": [
+      "0656",
+      "0657"
+    ]
+  },
+  {
+    "prefix": "0656",
+    "international_prefix": "+212656",
+    "mask": "0656XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0657",
+    "international_prefix": "+212657",
+    "mask": "0657XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0660",
+    "international_prefix": "+212660",
+    "mask": "0660XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0661",
+    "international_prefix": "+212661",
+    "mask": "0661XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "maroc-telecom",
+      "name": "Maroc Telecom"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0662",
+    "international_prefix": "+212662",
+    "mask": "0662XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "maroc-telecom",
+      "name": "Maroc Telecom"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0663",
+    "international_prefix": "+212663",
+    "mask": "0663XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0664",
+    "international_prefix": "+212664",
+    "mask": "0664XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0665",
+    "international_prefix": "+212665",
+    "mask": "0665XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0666",
+    "international_prefix": "+212666",
+    "mask": "0666XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "maroc-telecom",
+      "name": "Maroc Telecom"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0667",
+    "international_prefix": "+212667",
+    "mask": "0667XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "maroc-telecom",
+      "name": "Maroc Telecom"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0668",
+    "international_prefix": "+212668",
+    "mask": "0668XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "maroc-telecom",
+      "name": "Maroc Telecom"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0669",
+    "international_prefix": "+212669",
+    "mask": "0669XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "067",
+    "international_prefix": "+21267",
+    "mask": "067XXXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "maroc-telecom",
+      "name": "Maroc Telecom"
+    },
+    "area_code": null,
+    "more_specific_prefixes": [
+      "0674",
+      "0675",
+      "0679"
+    ]
+  },
+  {
+    "prefix": "0674",
+    "international_prefix": "+212674",
+    "mask": "0674XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0675",
+    "international_prefix": "+212675",
+    "mask": "0675XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0679",
+    "international_prefix": "+212679",
+    "mask": "0679XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0680",
+    "international_prefix": "+212680",
+    "mask": "0680XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "inwi",
+      "name": "Inwi"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0681",
+    "international_prefix": "+212681",
+    "mask": "0681XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "inwi",
+      "name": "Inwi"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0682",
+    "international_prefix": "+212682",
+    "mask": "0682XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "maroc-telecom",
+      "name": "Maroc Telecom"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0684",
+    "international_prefix": "+212684",
+    "mask": "0684XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0687",
+    "international_prefix": "+212687",
+    "mask": "0687XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "inwi",
+      "name": "Inwi"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0688",
+    "international_prefix": "+212688",
+    "mask": "0688XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0689",
+    "international_prefix": "+212689",
+    "mask": "0689XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "maroc-telecom",
+      "name": "Maroc Telecom"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0690",
+    "international_prefix": "+212690",
+    "mask": "0690XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "inwi",
+      "name": "Inwi"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0691",
+    "international_prefix": "+212691",
+    "mask": "0691XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "06921",
+    "international_prefix": "+2126921",
+    "mask": "06921XXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "al-hourria-telecom",
+      "name": "Al Hourria Telecom"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "06922",
+    "international_prefix": "+2126922",
+    "mask": "06922XXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "al-hourria-telecom",
+      "name": "Al Hourria Telecom"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0693",
+    "international_prefix": "+212693",
+    "mask": "0693XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0694",
+    "international_prefix": "+212694",
+    "mask": "0694XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0695",
+    "international_prefix": "+212695",
+    "mask": "0695XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "inwi",
+      "name": "Inwi"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0696",
+    "international_prefix": "+212696",
+    "mask": "0696XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "maroc-telecom",
+      "name": "Maroc Telecom"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0697",
+    "international_prefix": "+212697",
+    "mask": "0697XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "maroc-telecom",
+      "name": "Maroc Telecom"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0698",
+    "international_prefix": "+212698",
+    "mask": "0698XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "inwi",
+      "name": "Inwi"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "0699",
+    "international_prefix": "+212699",
+    "mask": "0699XXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "inwi",
+      "name": "Inwi"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "070",
+    "international_prefix": "+21270",
+    "mask": "070XXXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "inwi",
+      "name": "Inwi"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "071",
+    "international_prefix": "+21271",
+    "mask": "071XXXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "inwi",
+      "name": "Inwi"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "072",
+    "international_prefix": "+21272",
+    "mask": "072XXXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "inwi",
+      "name": "Inwi"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "073",
+    "international_prefix": "+21273",
+    "mask": "073XXXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "075",
+    "international_prefix": "+21275",
+    "mask": "075XXXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "maroc-telecom",
+      "name": "Maroc Telecom"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "076",
+    "international_prefix": "+21276",
+    "mask": "076XXXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "maroc-telecom",
+      "name": "Maroc Telecom"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "077",
+    "international_prefix": "+21277",
+    "mask": "077XXXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  },
+  {
+    "prefix": "078",
+    "international_prefix": "+21278",
+    "mask": "078XXXXXXX",
+    "category": "carrier",
+    "original_operator": {
+      "code": "orange",
+      "name": "Orange"
+    },
+    "area_code": null,
+    "more_specific_prefixes": []
+  }
+]

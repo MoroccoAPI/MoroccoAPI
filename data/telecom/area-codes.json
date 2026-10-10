@@ -1,0 +1,1539 @@
+[
+  {
+    "code": "051",
+    "international_prefix": "+21251",
+    "description": {
+      "ar": null,
+      "fr": "Rabat/Tanger/Fès/Meknès",
+      "en": "Rabat/Tanger/Fès/Meknès"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Rabat",
+        "Tanger",
+        "Fès",
+        "Meknès"
+      ],
+      "en": [
+        "Rabat",
+        "Tanger",
+        "Fès",
+        "Meknès"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "0520",
+    "international_prefix": "+212520",
+    "description": {
+      "ar": null,
+      "fr": "Casablanca",
+      "en": "Casablanca"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Casablanca"
+      ],
+      "en": [
+        "Casablanca"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "0521",
+    "international_prefix": "+212521",
+    "description": {
+      "ar": null,
+      "fr": "Casablanca/Maroc Central",
+      "en": "Casablanca/Central Morocco"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Casablanca",
+        "Maroc Central"
+      ],
+      "en": [
+        "Casablanca",
+        "Central Morocco"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05220",
+    "international_prefix": "+2125220",
+    "description": {
+      "ar": null,
+      "fr": "Casablanca",
+      "en": "Casablanca"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Casablanca"
+      ],
+      "en": [
+        "Casablanca"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05222",
+    "international_prefix": "+2125222",
+    "description": {
+      "ar": null,
+      "fr": "Casablanca",
+      "en": "Casablanca"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Casablanca"
+      ],
+      "en": [
+        "Casablanca"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05223",
+    "international_prefix": "+2125223",
+    "description": {
+      "ar": null,
+      "fr": "Casablanca",
+      "en": "Casablanca"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Casablanca"
+      ],
+      "en": [
+        "Casablanca"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05224",
+    "international_prefix": "+2125224",
+    "description": {
+      "ar": null,
+      "fr": "Casablanca",
+      "en": "Casablanca"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Casablanca"
+      ],
+      "en": [
+        "Casablanca"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05225",
+    "international_prefix": "+2125225",
+    "description": {
+      "ar": null,
+      "fr": "Casablanca",
+      "en": "Casablanca"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Casablanca"
+      ],
+      "en": [
+        "Casablanca"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05226",
+    "international_prefix": "+2125226",
+    "description": {
+      "ar": null,
+      "fr": "Casablanca",
+      "en": "Casablanca"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Casablanca"
+      ],
+      "en": [
+        "Casablanca"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05227",
+    "international_prefix": "+2125227",
+    "description": {
+      "ar": null,
+      "fr": "Casablanca",
+      "en": "Casablanca"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Casablanca"
+      ],
+      "en": [
+        "Casablanca"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05228",
+    "international_prefix": "+2125228",
+    "description": {
+      "ar": null,
+      "fr": "Casablanca",
+      "en": "Casablanca"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Casablanca"
+      ],
+      "en": [
+        "Casablanca"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05229",
+    "international_prefix": "+2125229",
+    "description": {
+      "ar": null,
+      "fr": "Casablanca",
+      "en": "Casablanca"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Casablanca"
+      ],
+      "en": [
+        "Casablanca"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05232",
+    "international_prefix": "+2125232",
+    "description": {
+      "ar": null,
+      "fr": "Mohammedia",
+      "en": "Mohammedia"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Mohammedia"
+      ],
+      "en": [
+        "Mohammedia"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05233",
+    "international_prefix": "+2125233",
+    "description": {
+      "ar": null,
+      "fr": "Mohammedia/El Jadida",
+      "en": "El Jedida/Mohammedia"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Mohammedia",
+        "El Jadida"
+      ],
+      "en": [
+        "El Jedida",
+        "Mohammedia"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05234",
+    "international_prefix": "+2125234",
+    "description": {
+      "ar": null,
+      "fr": "Settat",
+      "en": "Settai"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Settat"
+      ],
+      "en": [
+        "Settai"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05235",
+    "international_prefix": "+2125235",
+    "description": {
+      "ar": null,
+      "fr": "Oued Zem",
+      "en": "Oued Zem"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Oued Zem"
+      ],
+      "en": [
+        "Oued Zem"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05237",
+    "international_prefix": "+2125237",
+    "description": {
+      "ar": null,
+      "fr": "Settat",
+      "en": "Settat"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Settat"
+      ],
+      "en": [
+        "Settat"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05242",
+    "international_prefix": "+2125242",
+    "description": {
+      "ar": null,
+      "fr": "El Kelaa des Sraghna",
+      "en": "El Kelaa des Sraghna"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "El Kelaa des Sraghna"
+      ],
+      "en": [
+        "El Kelaa des Sraghna"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05243",
+    "international_prefix": "+2125243",
+    "description": {
+      "ar": null,
+      "fr": "Marrakech",
+      "en": "Marrakech"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Marrakech"
+      ],
+      "en": [
+        "Marrakech"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05244",
+    "international_prefix": "+2125244",
+    "description": {
+      "ar": null,
+      "fr": "Marrakech",
+      "en": "Marrakech"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Marrakech"
+      ],
+      "en": [
+        "Marrakech"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05246",
+    "international_prefix": "+2125246",
+    "description": {
+      "ar": null,
+      "fr": "Safi/El Youssoufia",
+      "en": "El Youssoufia/Safi"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Safi",
+        "El Youssoufia"
+      ],
+      "en": [
+        "El Youssoufia",
+        "Safi"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05247",
+    "international_prefix": "+2125247",
+    "description": {
+      "ar": null,
+      "fr": "Essaouira",
+      "en": "Essaouira"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Essaouira"
+      ],
+      "en": [
+        "Essaouira"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05248",
+    "international_prefix": "+2125248",
+    "description": {
+      "ar": null,
+      "fr": "Ouarzazate",
+      "en": "Ouarzazate"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Ouarzazate"
+      ],
+      "en": [
+        "Ouarzazate"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "0525",
+    "international_prefix": "+212525",
+    "description": {
+      "ar": null,
+      "fr": "Maroc Sud",
+      "en": "Southern Morocco"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Maroc Sud"
+      ],
+      "en": [
+        "Southern Morocco"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05282",
+    "international_prefix": "+2125282",
+    "description": {
+      "ar": null,
+      "fr": "Agadir/Inezgane/Ait Melou",
+      "en": "Agadir/Ait Meloul/Inezgane"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Agadir",
+        "Inezgane",
+        "Ait Melou"
+      ],
+      "en": [
+        "Agadir",
+        "Ait Meloul",
+        "Inezgane"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05283",
+    "international_prefix": "+2125283",
+    "description": {
+      "ar": null,
+      "fr": "Inezgane/Taroudannt",
+      "en": "Inezgane/Taroudant"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Inezgane",
+        "Taroudannt"
+      ],
+      "en": [
+        "Inezgane",
+        "Taroudant"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05285",
+    "international_prefix": "+2125285",
+    "description": {
+      "ar": null,
+      "fr": "Taroudannt/Oulad Teima",
+      "en": "Oulad Teima/Taroudant"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Taroudannt",
+        "Oulad Teima"
+      ],
+      "en": [
+        "Oulad Teima",
+        "Taroudant"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05286",
+    "international_prefix": "+2125286",
+    "description": {
+      "ar": null,
+      "fr": "Tiznit",
+      "en": "Tiznit"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Tiznit"
+      ],
+      "en": [
+        "Tiznit"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05287",
+    "international_prefix": "+2125287",
+    "description": {
+      "ar": null,
+      "fr": "Guelmim/Tan Tan",
+      "en": "Guelmim/Tan Tan"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Guelmim",
+        "Tan Tan"
+      ],
+      "en": [
+        "Guelmim",
+        "Tan Tan"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05288",
+    "international_prefix": "+2125288",
+    "description": {
+      "ar": null,
+      "fr": "Es-Semara/Agadir/Tarfaya",
+      "en": "Agadir/Es-Semara/Tarfaya"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Es-Semara",
+        "Agadir",
+        "Tarfaya"
+      ],
+      "en": [
+        "Agadir",
+        "Es-Semara",
+        "Tarfaya"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05289",
+    "international_prefix": "+2125289",
+    "description": {
+      "ar": null,
+      "fr": "Laayoune/Dakhla",
+      "en": "Dakhla/Laayoune"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Laayoune",
+        "Dakhla"
+      ],
+      "en": [
+        "Dakhla",
+        "Laayoune"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "0529",
+    "international_prefix": "+212529",
+    "description": {
+      "ar": null,
+      "fr": "Casablanca",
+      "en": "Casablanca"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Casablanca"
+      ],
+      "en": [
+        "Casablanca"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05296",
+    "international_prefix": "+2125296",
+    "description": {
+      "ar": null,
+      "fr": "Marrakech",
+      "en": "Marrakech"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Marrakech"
+      ],
+      "en": [
+        "Marrakech"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05297",
+    "international_prefix": "+2125297",
+    "description": {
+      "ar": null,
+      "fr": "Agadir",
+      "en": "Agadir"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Agadir"
+      ],
+      "en": [
+        "Agadir"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05298",
+    "international_prefix": "+2125298",
+    "description": {
+      "ar": null,
+      "fr": "Marrakech",
+      "en": "Marrakech"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Marrakech"
+      ],
+      "en": [
+        "Marrakech"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05299",
+    "international_prefix": "+2125299",
+    "description": {
+      "ar": null,
+      "fr": "Agadir",
+      "en": "Agadir"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Agadir"
+      ],
+      "en": [
+        "Agadir"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "0530",
+    "international_prefix": "+212530",
+    "description": {
+      "ar": null,
+      "fr": "Rabat/Kénitra",
+      "en": "Rabat/Kènitra"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Rabat",
+        "Kénitra"
+      ],
+      "en": [
+        "Rabat",
+        "Kènitra"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "0531",
+    "international_prefix": "+212531",
+    "description": {
+      "ar": null,
+      "fr": "Tanger/Tétouan/Larache/Al Hoceima/Cherfchaouen",
+      "en": "Tangier/Al Hoceima/Larache/Tètouan/Chefchaouen"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Tanger",
+        "Tétouan",
+        "Larache",
+        "Al Hoceima",
+        "Cherfchaouen"
+      ],
+      "en": [
+        "Tangier",
+        "Al Hoceima",
+        "Larache",
+        "Tètouan",
+        "Chefchaouen"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "0532",
+    "international_prefix": "+212532",
+    "description": {
+      "ar": null,
+      "fr": "Fès/Oujda/Meknès/Taza/Nador/Errachidia",
+      "en": "Fès/Errachidia/Meknès/Nador/Oujda/Taza"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Fès",
+        "Oujda",
+        "Meknès",
+        "Taza",
+        "Nador",
+        "Errachidia"
+      ],
+      "en": [
+        "Fès",
+        "Errachidia",
+        "Meknès",
+        "Nador",
+        "Oujda",
+        "Taza"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05352",
+    "international_prefix": "+2125352",
+    "description": {
+      "ar": null,
+      "fr": "Taza",
+      "en": "Taza"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Taza"
+      ],
+      "en": [
+        "Taza"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05353",
+    "international_prefix": "+2125353",
+    "description": {
+      "ar": null,
+      "fr": "Midelt",
+      "en": "Midelt"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Midelt"
+      ],
+      "en": [
+        "Midelt"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05354",
+    "international_prefix": "+2125354",
+    "description": {
+      "ar": null,
+      "fr": "Meknès",
+      "en": "Meknès"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Meknès"
+      ],
+      "en": [
+        "Meknès"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05355",
+    "international_prefix": "+2125355",
+    "description": {
+      "ar": null,
+      "fr": "Meknès",
+      "en": "Meknès"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Meknès"
+      ],
+      "en": [
+        "Meknès"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05356",
+    "international_prefix": "+2125356",
+    "description": {
+      "ar": null,
+      "fr": "Fès",
+      "en": "Fès"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Fès"
+      ],
+      "en": [
+        "Fès"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05357",
+    "international_prefix": "+2125357",
+    "description": {
+      "ar": null,
+      "fr": "Goulmima",
+      "en": "Goulmima"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Goulmima"
+      ],
+      "en": [
+        "Goulmima"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05358",
+    "international_prefix": "+2125358",
+    "description": {
+      "ar": null,
+      "fr": "Ifrane",
+      "en": "Ifrane"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Ifrane"
+      ],
+      "en": [
+        "Ifrane"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05359",
+    "international_prefix": "+2125359",
+    "description": {
+      "ar": null,
+      "fr": "Fès",
+      "en": "Fès"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Fès"
+      ],
+      "en": [
+        "Fès"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05362",
+    "international_prefix": "+2125362",
+    "description": {
+      "ar": null,
+      "fr": "Berkane",
+      "en": "Berkane"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Berkane"
+      ],
+      "en": [
+        "Berkane"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05363",
+    "international_prefix": "+2125363",
+    "description": {
+      "ar": null,
+      "fr": "Nador",
+      "en": "Nador"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Nador"
+      ],
+      "en": [
+        "Nador"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05365",
+    "international_prefix": "+2125365",
+    "description": {
+      "ar": null,
+      "fr": "Oujda",
+      "en": "Oujda"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Oujda"
+      ],
+      "en": [
+        "Oujda"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05366",
+    "international_prefix": "+2125366",
+    "description": {
+      "ar": null,
+      "fr": "Oujda/Figuig",
+      "en": "Figuig/Oujda"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Oujda",
+        "Figuig"
+      ],
+      "en": [
+        "Figuig",
+        "Oujda"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05367",
+    "international_prefix": "+2125367",
+    "description": {
+      "ar": null,
+      "fr": "Oujda/Bouarfa",
+      "en": "Bouarfa/Oujda"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Oujda",
+        "Bouarfa"
+      ],
+      "en": [
+        "Bouarfa",
+        "Oujda"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05368",
+    "international_prefix": "+2125368",
+    "description": {
+      "ar": null,
+      "fr": "Figuig",
+      "en": "Figuig"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Figuig"
+      ],
+      "en": [
+        "Figuig"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05372",
+    "international_prefix": "+2125372",
+    "description": {
+      "ar": null,
+      "fr": "Rabat",
+      "en": "Rabat"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Rabat"
+      ],
+      "en": [
+        "Rabat"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05373",
+    "international_prefix": "+2125373",
+    "description": {
+      "ar": null,
+      "fr": "Kénitra",
+      "en": "Kénitra"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Kénitra"
+      ],
+      "en": [
+        "Kénitra"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05374",
+    "international_prefix": "+2125374",
+    "description": {
+      "ar": null,
+      "fr": "Ouazzane",
+      "en": "Ouazzane"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Ouazzane"
+      ],
+      "en": [
+        "Ouazzane"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05375",
+    "international_prefix": "+2125375",
+    "description": {
+      "ar": null,
+      "fr": "Khémisset",
+      "en": "Khémisset"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Khémisset"
+      ],
+      "en": [
+        "Khémisset"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05376",
+    "international_prefix": "+2125376",
+    "description": {
+      "ar": null,
+      "fr": "Rabat/Témara",
+      "en": "Rabat/Témara"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Rabat",
+        "Témara"
+      ],
+      "en": [
+        "Rabat",
+        "Témara"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05377",
+    "international_prefix": "+2125377",
+    "description": {
+      "ar": null,
+      "fr": "Rabat",
+      "en": "Rabat"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Rabat"
+      ],
+      "en": [
+        "Rabat"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05378",
+    "international_prefix": "+2125378",
+    "description": {
+      "ar": null,
+      "fr": "Salé",
+      "en": "Salé"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Salé"
+      ],
+      "en": [
+        "Salé"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05379",
+    "international_prefix": "+2125379",
+    "description": {
+      "ar": null,
+      "fr": "Souk Larbaa",
+      "en": "Souk Larbaa"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Souk Larbaa"
+      ],
+      "en": [
+        "Souk Larbaa"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05380",
+    "international_prefix": "+2125380",
+    "description": {
+      "ar": null,
+      "fr": "Rabat",
+      "en": "Rabat"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Rabat"
+      ],
+      "en": [
+        "Rabat"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05381",
+    "international_prefix": "+2125381",
+    "description": {
+      "ar": null,
+      "fr": "Rabat",
+      "en": "Rabat"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Rabat"
+      ],
+      "en": [
+        "Rabat"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05384",
+    "international_prefix": "+2125384",
+    "description": {
+      "ar": null,
+      "fr": "Tanger",
+      "en": "Tangier"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Tanger"
+      ],
+      "en": [
+        "Tangier"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05385",
+    "international_prefix": "+2125385",
+    "description": {
+      "ar": null,
+      "fr": "Tanger",
+      "en": "Tangier"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Tanger"
+      ],
+      "en": [
+        "Tangier"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05386",
+    "international_prefix": "+2125386",
+    "description": {
+      "ar": null,
+      "fr": "Fès/Maknès",
+      "en": "Fez/Meknes"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Fès",
+        "Maknès"
+      ],
+      "en": [
+        "Fez",
+        "Meknes"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05387",
+    "international_prefix": "+2125387",
+    "description": {
+      "ar": null,
+      "fr": "Fès/Maknès",
+      "en": "Fez/Meknes"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Fès",
+        "Maknès"
+      ],
+      "en": [
+        "Fez",
+        "Meknes"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05388",
+    "international_prefix": "+2125388",
+    "description": {
+      "ar": null,
+      "fr": "Tanger",
+      "en": "Tangier"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Tanger"
+      ],
+      "en": [
+        "Tangier"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05389",
+    "international_prefix": "+2125389",
+    "description": {
+      "ar": null,
+      "fr": "Fès/Maknès",
+      "en": "Fez/Meknes"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Fès",
+        "Maknès"
+      ],
+      "en": [
+        "Fez",
+        "Meknes"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05393",
+    "international_prefix": "+2125393",
+    "description": {
+      "ar": null,
+      "fr": "Tanger",
+      "en": "Tangier"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Tanger"
+      ],
+      "en": [
+        "Tangier"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05394",
+    "international_prefix": "+2125394",
+    "description": {
+      "ar": null,
+      "fr": "Asilah",
+      "en": "Asilah"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Asilah"
+      ],
+      "en": [
+        "Asilah"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05395",
+    "international_prefix": "+2125395",
+    "description": {
+      "ar": null,
+      "fr": "Larache",
+      "en": "Larache"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Larache"
+      ],
+      "en": [
+        "Larache"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05396",
+    "international_prefix": "+2125396",
+    "description": {
+      "ar": null,
+      "fr": "Fnideq/Martil/Mdiq",
+      "en": "Fnideq/Martil/Mdiq"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Fnideq",
+        "Martil",
+        "Mdiq"
+      ],
+      "en": [
+        "Fnideq",
+        "Martil",
+        "Mdiq"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05397",
+    "international_prefix": "+2125397",
+    "description": {
+      "ar": null,
+      "fr": "Tétouan",
+      "en": "Tétouan"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Tétouan"
+      ],
+      "en": [
+        "Tétouan"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05398",
+    "international_prefix": "+2125398",
+    "description": {
+      "ar": null,
+      "fr": "Al Hoceima/Chefchaouen",
+      "en": "Al Hoceima/Chefchaouen"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Al Hoceima",
+        "Chefchaouen"
+      ],
+      "en": [
+        "Al Hoceima",
+        "Chefchaouen"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "05399",
+    "international_prefix": "+2125399",
+    "description": {
+      "ar": null,
+      "fr": "Tanger/Larache/Al Hoceima",
+      "en": "Al Hoceima/Larache/Tangier"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Tanger",
+        "Larache",
+        "Al Hoceima"
+      ],
+      "en": [
+        "Al Hoceima",
+        "Larache",
+        "Tangier"
+      ]
+    },
+    "hcp_code": null
+  },
+  {
+    "code": "0549",
+    "international_prefix": "+212549",
+    "description": {
+      "ar": null,
+      "fr": "Casablanca/Marrakech/Agadir",
+      "en": "Casablanca/Marrakech/Agadir"
+    },
+    "areas": {
+      "ar": null,
+      "fr": [
+        "Casablanca",
+        "Marrakech",
+        "Agadir"
+      ],
+      "en": [
+        "Casablanca",
+        "Marrakech",
+        "Agadir"
+      ]
+    },
+    "hcp_code": null
+  }
+]

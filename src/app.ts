@@ -15,6 +15,7 @@ import { status } from "./status.js";
 import { home } from "./home/routes.js";
 import { population } from "./population/routes.js";
 import { APP_VERSION } from "./version.js";
+import { telecom } from "./telecom/routes.js";
 
 export async function buildApp(
   options: FastifyServerOptions = { logger: false },
@@ -46,7 +47,11 @@ export async function buildApp(
   });
 
   await app.register(swagger, {
+    transformObject: (document) => "openapiObject" in document
+      ? toOpenApi30(document.openapiObject)
+      : document.swaggerObject,
     openapi: {
+      openapi: "3.0.3",
       info: {
         title: "MoroccoAPI",
         description:
@@ -61,6 +66,7 @@ export async function buildApp(
         },
         { name: "Population", description: "Demographic data for Morocco" },
         { name: "Health", description: "Health facilities and infrastructure indicators with source and snapshot metadata" },
+        { name: "Telecom", description: "Local phone formatting and licensed carrier and geographic prefix mappings" },
       ],
     },
   });
@@ -123,6 +129,29 @@ export async function buildApp(
   await app.register(geography, { data: geographyData });
   await app.register(population, { geography: geographyData });
   await app.register(health, { geography: geographyData });
+  await app.register(telecom);
 
   return app;
+}
+
+/** Keep documentation null types compatible with OpenAPI 3.0. */
+function toOpenApi30<T>(value: T): T {
+  if (Array.isArray(value)) {
+    return value.map(toOpenApi30) as T;
+  }
+  if (value === null || typeof value !== "object") {
+    return value;
+  }
+
+  const record = value as Record<string, unknown>;
+  const converted = Object.fromEntries(Object.entries(record).map(([key, child]) => [
+    key,
+    // Preserve literal data in annotations and enum values.
+    ["default", "enum", "example", "examples"].includes(key) ? child : toOpenApi30(child),
+  ]));
+
+  if (record.type === "null") {
+    return { ...converted, type: "string", nullable: true, enum: [null] } as T;
+  }
+  return converted as T;
 }
