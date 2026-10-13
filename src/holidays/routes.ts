@@ -4,18 +4,17 @@ import { errorSchema, responseSchema } from "../common/schemas.js";
 import { checkDate, countBusinessDays, getCalendar, parseDate, supportsDate } from "./calendar.js";
 import { MAX_YEAR, MIN_YEAR } from "./data.js";
 import { buildCalendarMeta } from "./metadata.js";
-import { businessQuerySchema, businessSchema, checkQuerySchema, checkSchema, holidaysSchema, languageQuerySchema, metaSchema, yearParamsSchema } from "./schemas.js";
-import type { Language } from "./types.js";
+import { businessQuerySchema, businessSchema, checkQuerySchema, checkSchema, holidaysSchema, metaSchema, yearParamsSchema } from "./schemas.js";
 
 export const holidays: FastifyPluginAsync = async (app) => {
   const tags = ["Holidays"];
   const description = `Common public-administration calendar, ${MIN_YEAR}–${MAX_YEAR}. Religious dates require official confirmation; missing confirmations are explicitly unknown.`;
 
-  app.get<{ Params: { year: string }; Querystring: { lang?: Language } }>(
+  app.get<{ Params: { year: string } }>(
     "/api/v1/holidays/:year",
     { schema: {
       tags, summary: "List Moroccan public holidays for a year", description,
-      params: yearParamsSchema, querystring: languageQuerySchema,
+      params: yearParamsSchema,
       response: { 200: responseSchema(holidaysSchema, metaSchema), 400: errorSchema },
     } },
     async (request, reply) => {
@@ -23,12 +22,12 @@ export const holidays: FastifyPluginAsync = async (app) => {
       if (year < MIN_YEAR || year > MAX_YEAR) {
         return reply.code(400).send({ error: { code: "UNSUPPORTED_YEAR", message: `Supported years are ${MIN_YEAR}–${MAX_YEAR}`, request_id: request.id } });
       }
-      const calendar = getCalendar(year, request.query.lang);
+      const calendar = getCalendar(year);
       return { data: calendar.holidays, meta: buildCalendarMeta([calendar], calendar.holidays.length) };
     },
   );
 
-  app.get<{ Querystring: { date: string; lang?: Language } }>(
+  app.get<{ Querystring: { date: string } }>(
     "/api/v1/holidays/check",
     { schema: {
       tags, summary: "Check whether a civil date is a holiday or business day", description,
@@ -39,7 +38,7 @@ export const holidays: FastifyPluginAsync = async (app) => {
       if (!supportsDate(request.query.date)) {
         return reply.code(400).send({ error: { code: "INVALID_DATE", message: `Use a real YYYY-MM-DD date in ${MIN_YEAR}–${MAX_YEAR}`, request_id: request.id } });
       }
-      const calendar = getCalendar(Number(request.query.date.slice(0, 4)), request.query.lang);
+      const calendar = getCalendar(Number(request.query.date.slice(0, 4)));
       const data = checkDate(request.query.date, calendar);
       return { data, meta: buildCalendarMeta([calendar], data.holidays.length) };
     },
