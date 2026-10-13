@@ -4,7 +4,6 @@ export type Names = Readonly<Record<Language, string>>;
 export interface Holiday {
   id: string;
   date: string | null;
-  name: string;
   names: Names;
   type: "national" | "religious";
   status: "fixed" | "confirmed" | "pending_confirmation";
