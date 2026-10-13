@@ -29,17 +29,18 @@ describe("Moroccan holidays", () => {
     ]);
   });
 
-  it("supports Arabic, French and English without changing dates or IDs", async () => {
-    for (const [lang, name] of [["ar", "رأس السنة الأمازيغية"], ["fr", "Nouvel An amazigh"], ["en", "Amazigh New Year"]]) {
-      const response = await app.inject(`/api/v1/holidays/2026?lang=${lang}`);
-      assert.equal(response.statusCode, 200);
-      const row = response.json().data.find((holiday: { id: string }) => holiday.id === "amazigh-new-year");
-      assert.equal(row.name, name);
-      assert.equal(row.date, "2026-01-14");
-      assert.deepEqual(Object.keys(row.names).sort(), ["ar", "en", "fr"]);
-      const checked = (await app.inject(`/api/v1/holidays/check?date=2026-01-14&lang=${lang}`)).json();
-      assert.equal(checked.data.holidays[0].name, name);
-    }
+  it("returns all three language labels together without a redundant selected name", async () => {
+    const response = await app.inject("/api/v1/holidays/2026");
+    assert.equal(response.statusCode, 200);
+    const row = response.json().data.find((holiday: { id: string }) => holiday.id === "amazigh-new-year");
+    assert.equal(row.date, "2026-01-14");
+    assert.deepEqual(row.names, {
+      ar: "رأس السنة الأمازيغية", fr: "Nouvel An amazigh", en: "Amazigh New Year",
+    });
+    assert.equal(Object.hasOwn(row, "name"), false);
+    const checked = await app.inject("/api/v1/holidays/check?date=2026-01-14");
+    assert.equal(checked.statusCode, 200);
+    assert.deepEqual(checked.json().data.holidays[0], row);
   });
 
   it("retains unknown religious dates and applies Unity Day only from 2026", async () => {
@@ -81,10 +82,9 @@ describe("Moroccan holidays", () => {
     assert.equal(fixed.is_business_day, false);
   });
 
-  it("rejects malformed years, unsupported languages, impossible dates and timestamps", async () => {
+  it("rejects malformed years, impossible dates and timestamps", async () => {
     for (const url of [
       "/api/v1/holidays/2023", "/api/v1/holidays/2028", "/api/v1/holidays/26", "/api/v1/holidays/2026.0",
-      "/api/v1/holidays/2026?lang=es", "/api/v1/holidays/2026?lang=ar&lang=fr",
       "/api/v1/holidays/check", "/api/v1/holidays/check?date=2026-02-29",
       "/api/v1/holidays/check?date=2026-04-31", "/api/v1/holidays/check?date=2026-13-01",
       "/api/v1/holidays/check?date=2026-01-00", "/api/v1/holidays/check?date=2026-1-01",
@@ -159,7 +159,11 @@ describe("Business days", () => {
       assert.ok(spec.paths[path].get.responses["200"]);
       assert.ok(spec.paths[path].get.responses["400"]);
       assert.deepEqual(spec.paths[path].get.tags, ["Holidays"]);
+      assert.ok(!(spec.paths[path].get.parameters ?? []).some((parameter: { name: string }) => parameter.name === "lang"));
     }
+    const holidaySchema = spec.paths["/api/v1/holidays/{year}"].get.responses["200"].content["application/json"].schema.properties.data.items;
+    assert.deepEqual(holidaySchema.properties.names.required, ["ar", "fr", "en"]);
+    assert.equal(Object.hasOwn(holidaySchema.properties, "name"), false);
     const dataSchema = spec.paths["/api/v1/business-days"].get.responses["200"].content["application/json"].schema.properties.data;
     assert.ok(dataSchema.properties.business_days.anyOf.some((item: { nullable?: boolean }) => item.nullable === true));
   });
