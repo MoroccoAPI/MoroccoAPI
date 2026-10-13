@@ -16,6 +16,7 @@ import { home } from "./home/routes.js";
 import { population } from "./population/routes.js";
 import { APP_VERSION } from "./version.js";
 import { telecom } from "./telecom/routes.js";
+import { holidays } from "./holidays/routes.js";
 
 export async function buildApp(
   options: FastifyServerOptions = { logger: false },
@@ -67,6 +68,7 @@ export async function buildApp(
         { name: "Population", description: "Demographic data for Morocco" },
         { name: "Health", description: "Health facilities and infrastructure indicators with source and snapshot metadata" },
         { name: "Telecom", description: "Local phone formatting and licensed carrier and geographic prefix mappings" },
+        { name: "Holidays", description: "Moroccan public holidays and business days with confirmation status" },
       ],
     },
   });
@@ -130,6 +132,7 @@ export async function buildApp(
   await app.register(population, { geography: geographyData });
   await app.register(health, { geography: geographyData });
   await app.register(telecom);
+  await app.register(holidays);
 
   return app;
 }
