@@ -1,5 +1,5 @@
 import { confirmations, fixedRules, MAX_YEAR, MIN_YEAR, religiousRules, HOLIDAY_DECREE, UNITY_DECREE } from "./data.js";
-import type { Calendar, Holiday, Language } from "./types.js";
+import type { Calendar, Holiday } from "./types.js";
 
 const DAY_MS = 86_400_000;
 
@@ -15,10 +15,10 @@ export function supportsDate(value: string): boolean {
   return parseDate(value) !== null && Number(value.slice(0, 4)) >= MIN_YEAR && Number(value.slice(0, 4)) <= MAX_YEAR;
 }
 
-export function getCalendar(year: number, language: Language = "en"): Calendar {
+export function getCalendar(year: number): Calendar {
   if (!Number.isInteger(year) || year < MIN_YEAR || year > MAX_YEAR) throw new RangeError("Unsupported calendar year");
   const holidays: Holiday[] = fixedRules.filter((rule) => year >= rule.first_year).map((rule) => ({
-    id: rule.id, date: `${year}-${rule.month_day}`, names: rule.names, name: rule.names[language],
+    id: rule.id, date: `${year}-${rule.month_day}`, names: rule.names,
     type: "national", status: "fixed", day: 1,
     source_urls: rule.id === "unity-day" ? [HOLIDAY_DECREE, UNITY_DECREE] : [HOLIDAY_DECREE],
   }));
@@ -32,7 +32,7 @@ export function getCalendar(year: number, language: Language = "en"): Calendar {
         const date = confirmation ? new Date(parseDate(confirmation.date)! + (day - 1) * DAY_MS).toISOString().slice(0, 10) : null;
         if (date !== null && Number(date.slice(0, 4)) !== year) continue;
         holidays.push({
-          id: rule.id, date, names: rule.names, name: rule.names[language], type: "religious",
+          id: rule.id, date, names: rule.names, type: "religious",
           status: confirmation ? "confirmed" : "pending_confirmation", day,
           source_urls: confirmation ? [HOLIDAY_DECREE, confirmation.source_url] : [HOLIDAY_DECREE],
         });
