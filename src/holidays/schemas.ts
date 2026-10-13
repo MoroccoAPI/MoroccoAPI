@@ -1,5 +1,4 @@
 const date = { type: "string", pattern: "^\\d{4}-\\d{2}-\\d{2}$", format: "date" } as const;
-const language = { type: "string", enum: ["ar", "fr", "en"], default: "en" } as const;
 const integer = { type: "integer", minimum: 0 } as const;
 const nullableBoolean = { anyOf: [{ type: "boolean" }, { type: "null" }] } as const;
 const urls = { type: "array", items: { type: "string" }, minItems: 1 } as const;
@@ -8,12 +7,9 @@ export const yearParamsSchema = {
   type: "object", required: ["year"], additionalProperties: false,
   properties: { year: { type: "string", pattern: "^\\d{4}$" } },
 } as const;
-export const languageQuerySchema = {
-  type: "object", additionalProperties: false, properties: { lang: language },
-} as const;
 export const checkQuerySchema = {
   type: "object", required: ["date"], additionalProperties: false,
-  properties: { date, lang: language },
+  properties: { date },
 } as const;
 export const businessQuerySchema = {
   type: "object", required: ["from", "to"], additionalProperties: false,
@@ -22,9 +18,9 @@ export const businessQuerySchema = {
 
 export const holidaySchema = {
   type: "object", additionalProperties: false,
-  required: ["id", "date", "name", "names", "type", "status", "day", "source_urls"],
+  required: ["id", "date", "names", "type", "status", "day", "source_urls"],
   properties: {
-    id: { type: "string" }, date: { anyOf: [date, { type: "null" }] }, name: { type: "string" },
+    id: { type: "string" }, date: { anyOf: [date, { type: "null" }] },
     names: {
       type: "object", additionalProperties: false, required: ["ar", "fr", "en"],
       properties: { ar: { type: "string" }, fr: { type: "string" }, en: { type: "string" } },
