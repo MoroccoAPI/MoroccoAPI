@@ -1,0 +1,95 @@
+id: moroccan-public-holidays
+title: Common Moroccan public-administration holidays and business days
+version: 1.0.0
+reviewed_at: 2026-10-13
+supported_years: [2024, 2025, 2026, 2027]
+confirmed_religious_years: [2026]
+contains_personal_data: false
+source_license: LicenseRef-MA-Law-2-00-Article-8
+license_url: https://www.wipo.int/wipolex/fr/legislation/details/19766
+copyright_basis:
+  law: Moroccan Law 2-00, Article 8(a) and 8(c)
+  cited_consolidation_url: https://wipolex-res.wipo.int/edocs/lexdocs/laws/fr/ma/ma073fr.pdf
+  scope: Official legal rules and simple date facts only
+  review: >-
+    No blanket open license is claimed for government websites. This contribution
+    normalizes legal holiday rules and officially announced date facts under the
+    statutory exclusion for official texts and simple data. It does not reproduce
+    website prose, images, page layouts, or a third-party calendar database.
+    Maintainers should review this narrow basis before admitting the dataset.
+  website_terms_url: https://www.mmsp.gov.ma/fr/mentions-l%C3%A9gales
+  website_terms_review: >-
+    The ministry website asserts copyright and requires written consent for
+    reproduction of its text and illustrations. Its explanatory holiday page is
+    link-only. The source of the recurring rules is the official decree instead.
+sources:
+  - id: holiday-rules
+    producer: Ministry of Digital Transition and Administrative Reform
+    source_url: https://bdj.mmsp.gov.ma/Front/ar/PrintDocument.aspx?id_doc=9417
+    legal_text: Decree 2-77-169, Article 1(1), as amended
+    source_updated_at: null
+    notes: >-
+      Arabic consolidated content includes the 2026 Unity Day amendment although
+      the page's last-modified field still says 2023-12-14. The French summary
+      omits that amendment. Content and the official bulletin take precedence.
+  - id: unity-day
+    producer: General Secretariat of the Government
+    source_url: https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7480_Ar.pdf
+    legal_text: Decree 2.25.1140 of 2026-01-27, Bulletin Officiel 7480, page 950
+    source_updated_at: 2026-02-05
+    notes: October 31 is included from 2026; it is not backdated to 2025.
+  - id: work-week
+    producer: Ministry of Digital Transition and Administrative Reform
+    source_url: https://bdj.mmsp.gov.ma/Fr/Document/1983-D%C3%A9cret.aspx
+    legal_text: Decree 2-05-916, Article 1, as amended
+    source_updated_at: 2018-11-09
+    notes: General Monday-Friday public-administration schedule, with exceptions.
+  - id: islamic-new-year-2026
+    producer: Ministry of Habous and Islamic Affairs
+    source_url: https://habous.gov.ma/fr/meknes-tafilelt/6589-le-1er-moharram-du-nouvel-an-de-l%E2%80%99h%C3%A9gire-1448-correspond-au-mercredi-17-juin-minist%C3%A8re.html
+    source_updated_at: 2026-06-15
+    first_day: 2026-06-17
+    hijri_date: 1 Muharram 1448
+  - id: eid-al-fitr-2026
+    producer: Ministry of Habous and Islamic Affairs
+    source_url: https://www.habous.gov.ma/مراقبة-الأهلة-4/22224-عيد-الفطر-الجمعة-فاتح-شوال-1447-20-مارس-2026م.html
+    source_updated_at: 2026-03-19
+    first_day: 2026-03-20
+    hijri_date: 1 Shawwal 1447
+  - id: eid-al-adha-2026
+    producer: Ministry of Habous and Islamic Affairs
+    source_url: https://www.habous.gov.ma/مراقبة-الأهلة-4/22409-مواقيت-الصلاة-لشهر-ذي-الحجة-1447هـ.html
+    source_updated_at: null
+    first_day: 2026-05-27
+    hijri_date: 10 Dhu al-Hijjah 1447
+  - id: mawlid-2026
+    producer: Ministry of Habous and Islamic Affairs
+    source_url: https://habous.gov.ma/آخر-المقالات.html?id=1616%3Aمدرسة-الإمام-الشاطبي-الخاصة&start=100
+    source_updated_at: 2026-08-13
+    first_day: 2026-08-25
+    hijri_date: 12 Rabi al-Awwal 1448
+    evidence_heading: "فاتح ربيع الأول 1448: الجمعة 14 أغسطس، وعيد المولد النبوي الثلاثاء 25 أغسطس (2026)"
+    notes: Paginated official archive; the heading and publication date identify the announcement.
+transformation:
+  input: Manually reviewed legal rules and first-day confirmations
+  implementation: src/holidays/data.ts and src/holidays/calendar.ts
+  steps:
+    - Expand recurring Gregorian rules within the documented year horizon.
+    - Apply Unity Day only from the 2026 amendment.
+    - Expand confirmed Eid and Mawlid first days into two consecutive civil dates.
+    - Leave unreviewed religious Gregorian dates null, including historical years.
+    - Normalize Arabic and French labels and provide original English translations.
+    - Count each closed civil date once; do not invent substitute weekdays.
+  verification: node --import tsx --test test/holidays/*.test.ts
+update_frequency: On legal changes and official religious-date announcements
+update_behavior: >-
+  Updates require a reviewed manifest entry and tests. The API uses pinned local
+  facts without network access. Source failures retain the reviewed snapshot;
+  unconfirmed dates remain unknown. Extend the year horizon only after review.
+limitations:
+  - Common calendar for public administrations, public establishments and concessionary services.
+  - Employee-specific religious observances and special schedules are outside scope.
+  - Exceptional closures, bridge days, bank and school calendars are outside scope.
+  - No claim that a business-day result guarantees an office will be open.
+  - The source pages were reviewed via official indexed content where direct access failed.
+  - Future legal changes may invalidate projected fixed dates.
