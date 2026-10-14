@@ -14,6 +14,7 @@ import { health } from "./health/routes.js";
 import { status } from "./status.js";
 import { home } from "./home/routes.js";
 import { population } from "./population/routes.js";
+import { postal } from "./postal/routes.js";
 import { APP_VERSION } from "./version.js";
 import { telecom } from "./telecom/routes.js";
 import { education } from "./education/routes.js";
@@ -71,6 +72,7 @@ export async function buildApp(
         { name: "Education", description: "Public and private schools and public university establishments" },
         { name: "Telecom", description: "Local phone formatting and licensed carrier and geographic prefix mappings" },
         { name: "Holidays", description: "Moroccan public holidays and business days with confirmation status" },
+        { name: "Postal codes", description: "Poste Maroc postal codes for localities and city neighbourhoods (September 2018 snapshot), linked to administrative geography" },
       ],
     },
   });
@@ -136,6 +138,7 @@ export async function buildApp(
   await app.register(telecom);
   await app.register(education);
   await app.register(holidays);
+  await app.register(postal, { geography: geographyData });
 
   return app;
 }

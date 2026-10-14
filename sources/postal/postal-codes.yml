@@ -1,0 +1,88 @@
+id: postal-codes
+title: Morocco postal codes for localities and multi-code city neighbourhoods (Poste Maroc, September 2018 snapshot)
+version: 1.0.0
+retrieved_at: 2026-10-14
+snapshot: 2018-09
+license: ODbL-1.0
+license_url: https://opendatacommons.org/licenses/odbl/1-0/
+contains_personal_data: false
+
+sources:
+  - dataset: Codes postaux des localités 2018
+    producer: Barid Al-Maghrib (Poste Maroc)
+    catalog_url: https://data.gov.ma/data/fr/dataset/codes-postaux-des-localites
+    resource_url: https://data.gov.ma/data/fr/dataset/c90aaa8f-5ad0-41d3-a9d2-f8f87ec538e0/resource/3aa9c2ce-bd68-4f91-86af-d4eeb3b8e6d1/download/codes-postaux-localites-2018.xlsx
+    source_updated_at: 2017-12-18
+    source_license: ODbL-1.0
+    sha256: d4565bfb2af29674817bbb2f9f16c8214184d04c52c5d4c98f33ca13ed1ae85c
+    raw_file: data/postal/source/localities.json
+
+  - dataset: Codes postaux des villes (villes multicodes)
+    producer: Barid Al-Maghrib (Poste Maroc)
+    catalog_url: https://data.gov.ma/data/fr/dataset/codes-postaux-des-localites
+    resource_url: https://data.gov.ma/data/fr/dataset/c90aaa8f-5ad0-41d3-a9d2-f8f87ec538e0/resource/a42d7771-ec9d-4124-b631-c9177031432e/download/codes-postaux-des-villes-2018.xlsx
+    source_updated_at: 2017-12-18
+    source_license: ODbL-1.0
+    sha256: 850f5f85b98b200560805b8ea30db39d30b141b4f9cdfbbac42bc5f73caa951a
+    raw_file: data/postal/source/multi-code-cities.json
+
+  - dataset: Codes postaux des quartiers au Maroc
+    producer: Barid Al-Maghrib (Poste Maroc)
+    catalog_url: https://data.gov.ma/data/fr/dataset/codes-postaux-des-quartiers
+    resource_url: https://data.gov.ma/data/fr/dataset/e0093dbf-38f0-440a-91da-ad3f0243f378/resource/7f257007-d512-4a2e-9f7f-ba29ee4ac8b1/download/codes-postaux-quartiers-2018.xlsx
+    source_updated_at: 2017-12-18
+    source_license: ODbL-1.0
+    sha256: 1cbf06f99add1467863478f5925f0c756b52a328c979113409a02e727e5ef092
+    raw_file: data/postal/source/neighborhoods.json
+
+  - dataset: Population légale du Royaume du Maroc selon les résultats du RGPH 2024
+    producer: Haut-Commissariat au Plan (HCP)
+    catalog_url: https://www.hcp.ma/Population-legale-du-Royaume-du-Maroc-repartie-par-regions-provinces-et-prefectures-et-communes-selon-les-resultats-du_a3975.html
+    resource_url: https://www.hcp.ma/file/242341/
+    source_updated_at: 2024-11-22
+    source_license: CC-BY-4.0
+
+source_notes:
+  - The resource descriptions state "Date de mise à jour : Septembre 2018". source_updated_at is the data.gov.ma resource timestamp, because the source gives no day.
+  - "Newer-data check (2026-10-14): data.gov.ma lists five Poste Maroc datasets; every resource is the 2017-12-18 upload of the September 2018 files, and the last metadata edit is 2021-12-10. The official lookup https://www.codepostal.ma/ states \"édition 2012, version 1.2\"; its downloadable annuaire.pdf is the same edition and carries no open license. No newer official open export exists, so the 2018 snapshot is used and is not necessarily current."
+  - The catalogue's download links point to the retired host datagovma.webhi.net. The same resource paths are served from data.gov.ma; the checksums above are of those files.
+  - The 2011 CSV in the localities dataset uses the former 16-region division and is not used.
+
+files:
+  raw: >-
+    data/postal/source/*.json hold the header columns of each spreadsheet verbatim (cell values unchanged,
+    including trailing, repeated and non-breaking spaces; codes as numbers). Only fully empty rows are skipped.
+  mappings: >-
+    data/postal/mappings.json holds every manual decision: province aliases, region-label aliases, region
+    corrections, the city-to-commune alias and the excluded neighbourhood rows with their reason.
+  transformation: >-
+    src/postal/data/transform.ts builds the published records from the raw rows and the mapping file when the
+    API starts. The build fails if a mapping entry is unused, or if a source disagreement is not mapped.
+
+transformations:
+  - Cleaned display values by collapsing repeated and non-breaking whitespace; spelling and case are otherwise preserved. Matching uses an ASCII slug of the cleaned value.
+  - Mapped source province names to MoroccoAPI province codes by slug, or by the province_aliases in the mapping file.
+  - Derived region_code from the province. Source region labels are matched by slug or region_label_aliases and checked against the province; every disagreement must be listed in region_corrections.
+  - Assigned neighbourhoods the province and region that the multi-code cities file gives for their city.
+  - Set commune_code for a locality only when `<province_code>--<slug of the locality name>` is an existing MoroccoAPI commune code; otherwise null. Multi-code cities use the same rule plus city_commune_aliases. Neighbourhoods have no commune_code.
+  - Removed 34 neighbourhood rows that repeat the same city, cleaned neighbourhood name and code.
+  - Excluded the 45 neighbourhood rows listed in excluded_neighborhoods. Their code belongs to a locality in another province than their city, so the city label (and the derived province and region) conflicts with the source's own locality list. They are not corrected or reassigned. The 7 Settat/Berrechid rows may be valid cross-boundary assignments but cannot be confirmed; the two Settat rows also appear under Berrechid and are kept there.
+  - Kept every code of a place as a separate record (206 places have several codes).
+  - Sorted records by postal code, type, city and name (code-point order).
+
+coverage:
+  localities: 1770
+  neighborhoods: 9947
+  multi_code_cities: 34
+  distinct_postal_codes: 2035
+  places_with_several_codes: 206
+  localities_with_commune_code: 938
+
+limitations:
+  - This is Poste Maroc's September 2018 snapshot and is not necessarily current. Codes created or changed since then are missing.
+  - Localities are postal places, not administrative units. A commune_code means the names match exactly in the same province, not that boundaries were verified; spelling differences (for example AFOURER and the HCP commune Afourar) leave it null.
+  - 45 neighbourhood rows are excluded (see data/postal/mappings.json).
+  - A neighbourhood can have several codes, for example when a code boundary crosses it. Street-level assignment is not available.
+  - Names are uppercase French transliterations as published. Some neighbourhood names contain source encoding errors (for example "MOHA%ADI") and are preserved rather than corrected. No Arabic names are available.
+  - One locality (JBIYEL) is labelled with the Fès-Meknès postal region but belongs to Errachidia province; region_code follows the province (Drâa-Tafilalet).
+  - The source follows Morocco's official territorial scope, including Moroccan-administered territory in Western Sahara.
