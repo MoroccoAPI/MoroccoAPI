@@ -1,0 +1,100 @@
+id: ourairports-morocco
+title: OurAirports MA airport directory, October 2026 snapshot
+version: 1.0.0
+reviewed_at: 2026-10-15
+retrieved_at: 2026-10-15
+snapshot_date: 2026-10-14
+source_updated_at: 2026-10-14T01:53:14Z
+source_revision: a5a1ab8c3d9d57568c4bf9a7d398a23a60623830
+producer: OurAirports contributors
+source_url: https://ourairports.com/data/
+resource_url: https://raw.githubusercontent.com/davidmegginson/ourairports-data/a5a1ab8c3d9d57568c4bf9a7d398a23a60623830/airports.csv
+current_resource_url: https://davidmegginson.github.io/ourairports-data/airports.csv
+revision_url: https://github.com/davidmegginson/ourairports-data/commit/a5a1ab8c3d9d57568c4bf9a7d398a23a60623830
+dictionary_url: https://ourairports.com/help/data-dictionary.html
+source_license: Public-Domain
+license_url: https://ourairports.com/data/
+license_statement: All data is released to the Public Domain, with no guarantee of accuracy or fitness for use.
+redistribution_review: approved
+attribution: >-
+  Contains public-domain information from OurAirports contributors, downloaded
+  from the pinned October 2026 revision. Normalized by MoroccoAPI, version 1.0.0.
+  OurAirports appreciates attribution but does not require it. No CC0 license
+  or government endorsement is implied.
+contains_personal_data: false
+privacy_review: >-
+  Basic public airport names, identifiers, municipalities and coordinates only.
+  No individual contacts, user comments or personal records. Runways,
+  communication frequencies, navigation aids and operational infrastructure
+  details are not imported.
+source_file:
+  format: CSV
+  encoding: UTF-8
+  size_bytes: 12746366
+  row_count: 86242
+  sha256: f219659218d1f27e7907c284b87778047b84102435d3483c7ee0ce6990b95e77
+filter: iso_country=MA
+record_count: 45
+icao_count: 28
+iata_count: 21
+scheduled_service_count: 17
+types:
+  small_airport: 17
+  medium_airport: 7
+  large_airport: 12
+  heliport: 2
+  closed: 7
+transformation:
+  snapshot: data/airports/airports.json
+  implementation: src/airports/data.ts
+  steps:
+    - Select every row whose iso_country is exactly MA, without bounding-box guesses.
+    - Preserve numeric id, ident, name, type, municipality, iso_country and iso_region.
+    - Use only explicit icao_code and iata_code fields; empty codes become null.
+    - Never infer ICAO from ident, gps_code, keywords or historical codes.
+    - Parse source latitude_deg and longitude_deg as location latitude and longitude.
+    - Parse scheduled_service yes/no as true/false without asserting live availability.
+    - Exclude optional URLs, keywords, elevation and unrelated infrastructure datasets.
+    - Sort by persistent numeric source id and reject duplicate IDs, idents or ICAO codes.
+  verification: node --import tsx --test test/airports/*.test.ts
+endpoints:
+  - GET /api/v1/airports
+  - GET /api/v1/airports/{icao}
+filters: q, city, type, scheduled_service; combined with AND.
+lookup: Case-insensitive explicit four-letter icao_code only.
+update_frequency: Source CSV regenerated nightly.
+update_behavior: >-
+  Refreshes require a reviewed upstream revision, source checksum, country/type
+  counts and code changes. Update the pinned snapshot and tests together.
+  Requests use an immutable local snapshot with no network access. A new global
+  file revision does not imply that every Moroccan airport has been reverified.
+research:
+  - source_url: https://ourairports.com/data/
+    review: Publisher confirms nightly files and Public Domain terms; file listed as modified 14 October 2026.
+  - source_url: https://ourairports.com/help/data-dictionary.html
+    review: Explains persistent IDs, ICAO versus ident/GPS and source municipality semantics.
+  - source_url: https://siamaroc.onda.ma/eaip/AD/AD1.5.pdf
+    review: Official indexed PDF is dated 19 March 2026; direct retrieval returned HTTP 403.
+    reuse: Link only; not ingested or fully verified.
+  - source_url: https://siamaroc.onda.ma/amdt/amdtairac/2026/airac0626.pdf
+    review: Official indexed AIRAC amendment contains 2026 aerodrome page dates; direct retrieval returned HTTP 403.
+    reuse: Link only; not ingested or fully verified.
+  - source_url: https://www.maroc.ma/fr/actualites/saison-estivale-2026-les-aeroports-du-maroc-enregistrent-des-niveaux-de-frequentation-historiques
+    source_updated_at: 2026-09-02
+    review: Official report of summer 2026 activity; not a reusable airport-code registry.
+    reuse: Link only; no fields are copied into the airport dataset.
+  - source_url: https://data.gov.ma/data/api/3/action/package_search?q=a%C3%A9roports&rows=100
+    review: Query returned zero datasets on 15 October 2026; this is not proof that no official inventory exists.
+limitations:
+  - Community-maintained inventory, not an official ONDA or civil-aviation registry.
+  - File revision is October 2026; per-record verification dates are unavailable.
+  - Includes source-marked closed sites, heliports and public entries named as air bases.
+  - The pinned CSV uses type closed; the dictionary says closed_airport. Actual CSV values are retained.
+  - Missing ICAO or IATA values remain null; 17 records cannot be retrieved by ICAO.
+  - Casablanca Tit Mellil has ident GMMT but no explicit ICAO code in this revision.
+  - Kenitra has ident GMMY and explicit ICAO GMMP; Guelmim has ident MA-GLN and ICAO GMAG.
+  - Source municipality is the municipality served, not a geocoded administrative assignment.
+  - iso_region retains OurAirports codes and is not joined to MoroccoAPI HCP geography.
+  - Source classifications, coordinates and service flags may be inaccurate or stale.
+  - Exact MA filtering excludes entries assigned EH by OurAirports, including Dakhla and Laayoune.
+  - This source-country convention differs from the territorial scope of the HCP geography datasets.
