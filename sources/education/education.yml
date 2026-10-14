@@ -66,3 +66,18 @@ sources:
     resource_url: https://data.gov.ma/data/fr/dataset/etablissements-de-l-enseignement-superieur-universitaire-public-ouverts/resource/fb9c2300-77f7-461c-86a5-9184b00e57d9
     source_updated_at: 19/02/2025
     source_license: Open Data Commons Open Database License (ODbL)
+
+
+api_contract:
+  identifiers:
+    source_field: null
+    generated_field: id
+    description: >-
+      Source records do not provide identifiers. MoroccoAPI generates each id
+      by hashing the serialized source record with SHA-256 and using the first
+      12 hexadecimal characters. School IDs are prefixed with the school
+      category (for example, school-private-school-); university IDs use the
+      university- prefix. Exact duplicate records receive an occurrence suffix
+      such as -2. IDs are deterministic for an unchanged record, but change
+      when the source record changes. For exact duplicates, suffix assignment
+      follows source row order.
