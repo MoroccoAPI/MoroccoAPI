@@ -84,6 +84,26 @@ describe("education datasets", () => {
     assert.equal(detail.json().meta.dataset, "universites-publiques");
   });
 
+  it("normalizes the source NULL address marker to JSON null", async () => {
+    const expected = schools.find((school) => school.name_fr === "alghofrane");
+    assert.ok(expected);
+    assert.equal(expected.address_fr, null);
+    const response = await app.inject(`/api/v1/education/etablissement-prives/${expected.id}`);
+    assert.equal(response.statusCode, 200);
+    assert.equal(response.json().data.address_fr, null);
+  });
+
+  it("searches university telephone and fax values", async () => {
+    const expected = universities.find((record) => record.telephone === "0537772732");
+    assert.ok(expected);
+    for (const phone of [expected.telephone, expected.fax]) {
+      assert.ok(phone);
+      const response = await app.inject(`/api/v1/education/universites-publiques?search=${encodeURIComponent(phone)}`);
+      assert.equal(response.statusCode, 200);
+      assert.ok(response.json().data.some((record: UniversityEstablishment) => record.id === expected.id));
+    }
+  });
+
   it("returns consistent errors for invalid filters and unknown IDs", async () => {
     const invalid = await app.inject("/api/v1/education/etablissement-prives?search=a");
     assert.equal(invalid.statusCode, 400);
@@ -113,5 +133,9 @@ describe("education datasets", () => {
     assert.ok(spec.paths["/api/v1/education/universites-publiques"].get.parameters.some(
       (parameter: { name: string }) => parameter.name === "search",
     ));
+    const universitySearch = spec.paths["/api/v1/education/universites-publiques"].get.parameters.find(
+      (parameter: { name: string }) => parameter.name === "search",
+    );
+    assert.match(universitySearch.description, /telephone, and fax/);
   });
 });

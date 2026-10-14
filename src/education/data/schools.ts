@@ -31,7 +31,7 @@ function optionalText(value: unknown, field: string, index: number): string | nu
   if (typeof value === "number" && Number.isFinite(value)) return String(value);
   if (typeof value !== "string") throw new Error(`Invalid education ${field} at record ${index}`);
   const cleaned = value.trim();
-  return cleaned === "" ? null : cleaned;
+  return cleaned === "" || cleaned.toLocaleUpperCase("en") === "NULL" ? null : cleaned;
 }
 
 function stableId(prefix: string, value: unknown, occurrences: Map<string, number>): string {

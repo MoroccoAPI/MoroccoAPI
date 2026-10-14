@@ -73,7 +73,10 @@ export function universityQuerySchema() {
     properties: {
       city: { type: "string", minLength: 2, maxLength: 100 },
       university: { type: "string", minLength: 2, maxLength: 150 },
-      search: { type: "string", minLength: 2, maxLength: 100, description: "Search university, establishment, and contact details." },
+      search: {
+        type: "string", minLength: 2, maxLength: 100,
+        description: "Search university and establishment names, abbreviation, city, address, telephone, and fax.",
+      },
     },
   } as const;
 }

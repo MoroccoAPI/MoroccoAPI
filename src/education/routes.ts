@@ -96,7 +96,8 @@ export const education: FastifyPluginAsync = async (app) => {
       (university === undefined || normalizeSearch(record.university_fr).includes(normalizeSearch(university)) ||
         normalizeSearch(record.university_ar).includes(normalizeSearch(university))) &&
       (search === undefined || [record.university_fr, record.university_ar, record.establishment_fr, record.establishment_ar,
-        record.abbreviation, record.city, record.address ?? ""].some((value) => normalizeSearch(value).includes(normalizeSearch(search)))),
+        record.abbreviation, record.city, record.address ?? "", record.telephone ?? "", record.fax ?? ""].some((value) =>
+        normalizeSearch(value).includes(normalizeSearch(search)))),
     );
     return { data: matches, meta: buildEducationMeta("universites-publiques", matches.length) };
   });
