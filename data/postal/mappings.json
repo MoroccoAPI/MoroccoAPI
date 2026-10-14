@@ -1,0 +1,533 @@
+{
+  "province_aliases": {
+    "description": "Source province spellings whose slug is not a MoroccoAPI province code. Matched by slug of the cleaned source value.",
+    "entries": [
+      {
+        "source": "AGADIR IDA OUTANANE",
+        "province_code": "agadir-ida-ou-tanane"
+      },
+      {
+        "source": "BOUARFA FIGUIG",
+        "province_code": "figuig"
+      },
+      {
+        "source": "DAR DRIOUCH",
+        "province_code": "driouch"
+      },
+      {
+        "source": "EL KELAA DES SRAGHNAS",
+        "province_code": "el-kelaa-des-sraghna"
+      },
+      {
+        "source": "MOHAMMEDIA",
+        "province_code": "mohammadia"
+      },
+      {
+        "source": "RHAMNA",
+        "province_code": "rehamna"
+      },
+      {
+        "source": "TANGER ASILAH",
+        "province_code": "tanger-assilah"
+      },
+      {
+        "source": "TAROUDANT",
+        "province_code": "taroudannt"
+      }
+    ]
+  },
+  "region_label_aliases": {
+    "description": "Source postal-region labels whose slug is not a MoroccoAPI region code. Labels are only checked against the province; region_code is always derived from the province.",
+    "entries": [
+      {
+        "source": "DAKHLA OUED EDDAHAB",
+        "region_code": "dakhla-oued-ed-dahab"
+      },
+      {
+        "source": "GRAND CASABLANCA SETTAT",
+        "region_code": "casablanca-settat"
+      },
+      {
+        "source": "L'ORIENTAL",
+        "region_code": "oriental"
+      }
+    ]
+  },
+  "region_corrections": {
+    "description": "Rows whose source region label disagrees with their province. region_code follows the province; every disagreement must be listed here.",
+    "entries": [
+      {
+        "type": "locality",
+        "name": "JBIYEL",
+        "postal_code": "52476",
+        "source_region": "FES MEKNES",
+        "province_code": "errachidia",
+        "region_code": "draa-tafilalet"
+      }
+    ]
+  },
+  "city_commune_aliases": {
+    "description": "Multi-code city spellings whose slug differs from the matching MoroccoAPI commune in the same province.",
+    "entries": [
+      {
+        "source": "ELJADIDA",
+        "commune_code": "el-jadida--el-jadida"
+      }
+    ]
+  },
+  "excluded_neighborhoods": {
+    "description": "Neighbourhood rows excluded because their postal code belongs to a locality in another province than their city: the source city label, and therefore the derived province and region, conflict with the source locality list. They are not corrected or reassigned.",
+    "entries": [
+      {
+        "city": "BERRECHID",
+        "name": "BSSASLA",
+        "postal_code": "26202",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "DEROUA OULAD ZIANE",
+          "province_code": "settat"
+        }
+      },
+      {
+        "city": "BERRECHID",
+        "name": "BTIOUA",
+        "postal_code": "26202",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "DEROUA OULAD ZIANE",
+          "province_code": "settat"
+        }
+      },
+      {
+        "city": "BERRECHID",
+        "name": "JACMA",
+        "postal_code": "26202",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "DEROUA OULAD ZIANE",
+          "province_code": "settat"
+        }
+      },
+      {
+        "city": "BERRECHID",
+        "name": "KASBAT BEN MCHICH",
+        "postal_code": "26202",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "DEROUA OULAD ZIANE",
+          "province_code": "settat"
+        }
+      },
+      {
+        "city": "BERRECHID",
+        "name": "LAMBARKIYINE",
+        "postal_code": "26202",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "DEROUA OULAD ZIANE",
+          "province_code": "settat"
+        }
+      },
+      {
+        "city": "ERRACHIDIA",
+        "name": "DOUAR DRAOU OLAD BOUCHIHA",
+        "postal_code": "12013",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN ATTIG",
+          "province_code": "skhirate-temara"
+        }
+      },
+      {
+        "city": "ERRACHIDIA",
+        "name": "DOUAR HADJ OMAR",
+        "postal_code": "12013",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN ATTIG",
+          "province_code": "skhirate-temara"
+        }
+      },
+      {
+        "city": "ERRACHIDIA",
+        "name": "DOUAR OLD BOUCHIHA",
+        "postal_code": "12013",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN ATTIG",
+          "province_code": "skhirate-temara"
+        }
+      },
+      {
+        "city": "ERRACHIDIA",
+        "name": "DOUAR OLD BOUCHIHA OLD AMEUR",
+        "postal_code": "12013",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN ATTIG",
+          "province_code": "skhirate-temara"
+        }
+      },
+      {
+        "city": "ERRACHIDIA",
+        "name": "DOUAR OLD BRAHIM OLD MIMOUNE",
+        "postal_code": "12013",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN ATTIG",
+          "province_code": "skhirate-temara"
+        }
+      },
+      {
+        "city": "ERRACHIDIA",
+        "name": "DOUAR OLD SLAMA",
+        "postal_code": "12013",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN ATTIG",
+          "province_code": "skhirate-temara"
+        }
+      },
+      {
+        "city": "ERRACHIDIA",
+        "name": "DOUAR OLD SLAMA EL GHARBIA",
+        "postal_code": "12013",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN ATTIG",
+          "province_code": "skhirate-temara"
+        }
+      },
+      {
+        "city": "ERRACHIDIA",
+        "name": "DOUAR OLD SLAMA OUEST",
+        "postal_code": "12013",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN ATTIG",
+          "province_code": "skhirate-temara"
+        }
+      },
+      {
+        "city": "ERRACHIDIA",
+        "name": "DOUAR OULAD AMEUR ROKABYENE",
+        "postal_code": "12013",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN ATTIG",
+          "province_code": "skhirate-temara"
+        }
+      },
+      {
+        "city": "ERRACHIDIA",
+        "name": "LOTISSEMENT AL JID",
+        "postal_code": "12013",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN ATTIG",
+          "province_code": "skhirate-temara"
+        }
+      },
+      {
+        "city": "ERRACHIDIA",
+        "name": "LOTISSEMENT CHARKAOUI",
+        "postal_code": "12013",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN ATTIG",
+          "province_code": "skhirate-temara"
+        }
+      },
+      {
+        "city": "ERRACHIDIA",
+        "name": "LOTISSEMENT EL HAMD",
+        "postal_code": "12013",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN ATTIG",
+          "province_code": "skhirate-temara"
+        }
+      },
+      {
+        "city": "ERRACHIDIA",
+        "name": "LOTISSEMENT INTILAQ",
+        "postal_code": "12013",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN ATTIG",
+          "province_code": "skhirate-temara"
+        }
+      },
+      {
+        "city": "ERRACHIDIA",
+        "name": "LOTISSEMENT MABROUKA II",
+        "postal_code": "12013",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN ATTIG",
+          "province_code": "skhirate-temara"
+        }
+      },
+      {
+        "city": "ERRACHIDIA",
+        "name": "LOTISSEMENT MENZEH",
+        "postal_code": "12013",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN ATTIG",
+          "province_code": "skhirate-temara"
+        }
+      },
+      {
+        "city": "ERRACHIDIA",
+        "name": "LOTISSEMENT PROMOSUD",
+        "postal_code": "12013",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN ATTIG",
+          "province_code": "skhirate-temara"
+        }
+      },
+      {
+        "city": "ERRACHIDIA",
+        "name": "LOTISSEMENT RAJA",
+        "postal_code": "12013",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN ATTIG",
+          "province_code": "skhirate-temara"
+        }
+      },
+      {
+        "city": "ERRACHIDIA",
+        "name": "LOTISSEMENT SAADA",
+        "postal_code": "12013",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN ATTIG",
+          "province_code": "skhirate-temara"
+        }
+      },
+      {
+        "city": "ERRACHIDIA",
+        "name": "RESIDENCE NASER",
+        "postal_code": "12013",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN ATTIG",
+          "province_code": "skhirate-temara"
+        }
+      },
+      {
+        "city": "ERRACHIDIA",
+        "name": "HAY ALLAL",
+        "postal_code": "51050",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AGOURAI",
+          "province_code": "el-hajeb"
+        }
+      },
+      {
+        "city": "ESSAOUIRA",
+        "name": "DOUAR LOUSSANE AIT AYYACHE",
+        "postal_code": "31052",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN CHEGGAG",
+          "province_code": "sefrou"
+        }
+      },
+      {
+        "city": "ESSAOUIRA",
+        "name": "DOUAR AJDIR",
+        "postal_code": "35052",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AJDIR",
+          "province_code": "al-hoceima"
+        }
+      },
+      {
+        "city": "ESSAOUIRA",
+        "name": "DOUAR LABSAIS SEJAA",
+        "postal_code": "36122",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN CHKEF",
+          "province_code": "moulay-yacoub"
+        }
+      },
+      {
+        "city": "ESSAOUIRA",
+        "name": "DOUAR OLD MAALA SEJAA",
+        "postal_code": "36122",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN CHKEF",
+          "province_code": "moulay-yacoub"
+        }
+      },
+      {
+        "city": "ESSAOUIRA",
+        "name": "DOUAR OLD MHAMED SEJAA",
+        "postal_code": "36122",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN CHKEF",
+          "province_code": "moulay-yacoub"
+        }
+      },
+      {
+        "city": "ESSAOUIRA",
+        "name": "DOUAR TLALSSA SEJAA",
+        "postal_code": "36122",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN CHKEF",
+          "province_code": "moulay-yacoub"
+        }
+      },
+      {
+        "city": "ESSAOUIRA",
+        "name": "DOUAR TLASSA SYAA",
+        "postal_code": "36122",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN CHKEF",
+          "province_code": "moulay-yacoub"
+        }
+      },
+      {
+        "city": "ESSAOUIRA",
+        "name": "DOUAR OUM SULTAN",
+        "postal_code": "50022",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN EL ORMA",
+          "province_code": "meknes"
+        }
+      },
+      {
+        "city": "ESSAOUIRA",
+        "name": "HAY ADAROUCH",
+        "postal_code": "50022",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN EL ORMA",
+          "province_code": "meknes"
+        }
+      },
+      {
+        "city": "ESSAOUIRA",
+        "name": "DOUAR AIT ALI OU CHAOU",
+        "postal_code": "51100",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN TAOUJDATE",
+          "province_code": "el-hajeb"
+        }
+      },
+      {
+        "city": "ESSAOUIRA",
+        "name": "DOUAR AIT ATMANE",
+        "postal_code": "51100",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN TAOUJDATE",
+          "province_code": "el-hajeb"
+        }
+      },
+      {
+        "city": "ESSAOUIRA",
+        "name": "IT LAHCEN OU YOUSSEF LAKSIR",
+        "postal_code": "51100",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIN TAOUJDATE",
+          "province_code": "el-hajeb"
+        }
+      },
+      {
+        "city": "ESSAOUIRA",
+        "name": "DOUAR AZROU",
+        "postal_code": "86150",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIT MELLOUL",
+          "province_code": "inezgane-ait-melloul"
+        }
+      },
+      {
+        "city": "ESSAOUIRA",
+        "name": "DOUAR KASBAT TAHER",
+        "postal_code": "86150",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIT MELLOUL",
+          "province_code": "inezgane-ait-melloul"
+        }
+      },
+      {
+        "city": "ESSAOUIRA",
+        "name": "HAY LAAZIB",
+        "postal_code": "86150",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIT MELLOUL",
+          "province_code": "inezgane-ait-melloul"
+        }
+      },
+      {
+        "city": "ESSAOUIRA",
+        "name": "HAY LE COMPTOIR",
+        "postal_code": "86150",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIT MELLOUL",
+          "province_code": "inezgane-ait-melloul"
+        }
+      },
+      {
+        "city": "ESSAOUIRA",
+        "name": "DOUAR SOUISSE",
+        "postal_code": "87052",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "AIT AMIRA",
+          "province_code": "chtouka-ait-baha"
+        }
+      },
+      {
+        "city": "OUARZAZATE",
+        "name": "DOUAR KARIAT BA MED",
+        "postal_code": "34050",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "KARIA BA MOHAMED",
+          "province_code": "taounate"
+        }
+      },
+      {
+        "city": "SETTAT",
+        "name": "SIDI ABDELKHALEK",
+        "postal_code": "26450",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "OULAD ABBOU",
+          "province_code": "berrechid"
+        }
+      },
+      {
+        "city": "SETTAT",
+        "name": "ZAOUIAT SIDI BEN HAMDOUNE",
+        "postal_code": "26450",
+        "reason": "code_of_locality_in_other_province",
+        "code_owner": {
+          "locality": "OULAD ABBOU",
+          "province_code": "berrechid"
+        }
+      }
+    ]
+  }
+}

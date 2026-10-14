@@ -2,9 +2,12 @@ import { readFile } from "node:fs/promises";
 
 import type { GeographySnapshot } from "../../geography/types.js";
 import type { MultiCodeCity, MultiCodeCitySource, PostalCode, PostalData } from "../types.js";
+import { assertPostalSource, buildPostalSnapshot, type PostalMappings } from "./transform.js";
 
-const codesUrl = new URL("../../../data/postal/postal-codes.json", import.meta.url);
-const citiesUrl = new URL("../../../data/postal/multi-code-cities.json", import.meta.url);
+const dataUrl = new URL("../../../data/postal/", import.meta.url);
+const mappingSections = [
+  "province_aliases", "region_label_aliases", "region_corrections", "city_commune_aliases", "excluded_neighborhoods",
+] as const;
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value);
@@ -108,7 +111,24 @@ export function validatePostalData(
   });
 }
 
+export function assertPostalMappings(value: unknown): asserts value is PostalMappings {
+  if (!isRecord(value) || Object.keys(value).sort().join("|") !== [...mappingSections].sort().join("|") ||
+    mappingSections.some((section) => {
+      const entries = (value[section] as Record<string, unknown> | undefined)?.entries;
+      return !isRecord(value[section]) || !Array.isArray(entries) || !entries.every(isRecord);
+    })) {
+    throw new Error("Invalid postal mapping file");
+  }
+}
+
 export async function loadPostal(geography: GeographySnapshot): Promise<PostalData> {
-  const [codes, cities] = await Promise.all([readFile(codesUrl, "utf8"), readFile(citiesUrl, "utf8")]);
-  return validatePostalData(JSON.parse(codes), JSON.parse(cities), geography);
+  const read = async (name: string): Promise<unknown> => JSON.parse(await readFile(new URL(name, dataUrl), "utf8"));
+  const [localities, cities, neighborhoods, mappings] = await Promise.all([
+    read("source/localities.json"), read("source/multi-code-cities.json"), read("source/neighborhoods.json"), read("mappings.json"),
+  ]);
+  const source = { localities, cities, neighborhoods };
+  assertPostalSource(source);
+  assertPostalMappings(mappings);
+  const snapshot = buildPostalSnapshot(source, mappings, geography);
+  return validatePostalData(snapshot.codes, snapshot.cities, geography);
 }

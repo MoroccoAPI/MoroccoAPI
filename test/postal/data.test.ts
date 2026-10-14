@@ -6,6 +6,7 @@ import { loadRegions } from "../../src/geography/data/regions.js";
 import { loadGeography } from "../../src/geography/data/subdivisions.js";
 import type { GeographySnapshot } from "../../src/geography/types.js";
 import { loadPostal, validatePostalData } from "../../src/postal/data/postal-codes.js";
+import { assertPostalSource, buildPostalSnapshot } from "../../src/postal/data/transform.js";
 import { buildDatasetMeta } from "../../src/postal/metadata.js";
 
 let geography: GeographySnapshot;
@@ -15,8 +16,16 @@ let rawCities: Record<string, unknown>[];
 before(async () => {
   const regions = await loadRegions();
   geography = Object.freeze({ regions, ...await loadGeography(regions) });
-  rawCodes = JSON.parse(await readFile(new URL("../../data/postal/postal-codes.json", import.meta.url), "utf8"));
-  rawCities = JSON.parse(await readFile(new URL("../../data/postal/multi-code-cities.json", import.meta.url), "utf8"));
+  const read = async (name: string) => JSON.parse(await readFile(new URL(`../../data/postal/${name}`, import.meta.url), "utf8"));
+  const source = {
+    localities: await read("source/localities.json"),
+    cities: await read("source/multi-code-cities.json"),
+    neighborhoods: await read("source/neighborhoods.json"),
+  };
+  assertPostalSource(source);
+  const snapshot = buildPostalSnapshot(source, await read("mappings.json"), geography);
+  rawCodes = JSON.parse(JSON.stringify(snapshot.codes));
+  rawCities = JSON.parse(JSON.stringify(snapshot.cities));
 });
 
 const copy = <T>(value: T): T => JSON.parse(JSON.stringify(value));
