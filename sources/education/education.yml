@@ -1,0 +1,82 @@
+id: education
+title: data.gov.ma
+version: 1.0.0
+retrieved_at: 2026-10-13
+license: ODbL (Open Database Licence)
+license_url: https://opendatacommons.org/licenses/odbl/1-0/
+terms_url: https://www.data.gov.ma/fr/node/14 , https://data.gov.ma/fr/Comment_exploiter_les_donn%C3%A9es
+contains_personal_data: false
+redistribution_review: approved
+
+
+sources:
+  - language_fields: [ar, fr]
+    dataset: etablissement_prives_juillet-2026.xlsx
+    producer: ministere de l'education nationale et de la formation professionnelle (MENPS)
+    catalog_url: https://data.gov.ma/data/fr/dataset/liste-des-etablissements-prives-2023
+    resource_url: https://data.gov.ma/data/fr/dataset/liste-des-etablissements-prives-2023/resource/1efc3be5-046e-438a-a6d0-9d9bac2dd492
+    source_updated_at: 	14/09/2026
+    source_license: Open Data Commons Open Database License (ODbL)
+  - language_fields: [ar, fr]
+    dataset: etablissements_prives_cpge_juillet-2026.xlsx
+    producer: ministere de l'education nationale et de la formation professionnelle (MENPS)
+    catalog_url: https://data.gov.ma/data/fr/dataset/liste-des-etablissements-prive-cpge
+    resource_url: https://data.gov.ma/data/fr/dataset/liste-des-etablissements-prive-cpge/resource/98757b6a-e231-4b7a-8d76-c167014203d6
+    source_updated_at: 	16/09/2026
+    source_license: Open Data Commons Open Database License (ODbL)
+  - language_fields: [ar, fr]
+    dataset: etablissements_publics_bts_juillet-2026.xlsx
+    producer: ministere de l'education nationale et de la formation professionnelle (MENPS)
+    catalog_url: https://data.gov.ma/data/fr/dataset/liste-des-etablissements-publics-bts-2013-2014
+    resource_url: https://data.gov.ma/data/fr/dataset/liste-des-etablissements-publics-bts-2013-2014/resource/a8f0fc87-7ff2-41b4-840f-e95b161cb354
+    source_updated_at: 	16/09/2026
+    source_license: Open Data Commons Open Database License (ODbL)
+  - language_fields: [ar, fr]
+    dataset: etablissements_publics_collegial_juillet-2026.xlsx
+    producer: ministere de l'education nationale et de la formation professionnelle (MENPS)
+    catalog_url: https://data.gov.ma/data/fr/dataset/liste-de-etablissements-publics-collegial
+    resource_url: https://data.gov.ma/data/fr/dataset/liste-de-etablissements-publics-collegial/resource/e13f4f7f-054e-4186-8197-bccf1bb251d2
+    source_updated_at: 	14/09/2026
+    source_license: Open Data Commons Open Database License (ODbL)
+  - language_fields: [ar, fr]
+    dataset: etablissements_publics_cpge_juillet-2026.xlsx
+    producer: ministere de l'education nationale et de la formation professionnelle (MENPS)
+    catalog_url: https://data.gov.ma/data/fr/dataset/liste-des-etablissements-publics-cpge-2013-2014
+    resource_url: https://data.gov.ma/data/fr/dataset/liste-des-etablissements-publics-cpge-2013-2014/resource/1b9011ae-89d8-47e7-8db6-84f4d829962a
+    source_updated_at: 	16/09/2026
+    source_license: Open Data Commons Open Database License (ODbL)
+  - language_fields: [ar, fr]
+    dataset: etablissements_publics_primaire_juillet-2026.xlsx
+    producer: ministere de l'education nationale et de la formation professionnelle (MENPS)
+    catalog_url: https://data.gov.ma/data/fr/dataset/liste-des-etablissements-publics-primaire
+    resource_url: https://data.gov.ma/data/fr/dataset/liste-des-etablissements-publics-primaire/resource/f98bdb47-19a8-4f4d-8407-ae08b56305d5
+    source_updated_at: 	14/09/2026
+    source_license: Open Data Commons Open Database License (ODbL)
+  - language_fields: [ar, fr]
+    dataset: etablissement_publics_qualifiant_juillet-2026.xlsx
+    producer: ministere de l'education nationale et de la formation professionnelle (MENPS)
+    catalog_url: https://data.gov.ma/data/fr/dataset/liste-des-etablissements-publics-qualifiants
+    resource_url: https://data.gov.ma/data/fr/dataset/liste-des-etablissements-publics-qualifiants/resource/3ce45071-bbb1-49b4-b8b3-00065c3a0f2e
+    source_updated_at: 	14/09/2026
+    source_license: Open Data Commons Open Database License (ODbL)
+  - language_fields: [ar, fr]
+    dataset: universites-publiques-2024-2025.xlsx
+    producer: ministere de l'education nationale et de la formation professionnelle (MENPS)
+    catalog_url: https://data.gov.ma/data/fr/dataset/etablissements-de-l-enseignement-superieur-universitaire-public-ouverts
+    resource_url: https://data.gov.ma/data/fr/dataset/etablissements-de-l-enseignement-superieur-universitaire-public-ouverts/resource/fb9c2300-77f7-461c-86a5-9184b00e57d9
+    source_updated_at: 19/02/2025
+    source_license: Open Data Commons Open Database License (ODbL)
+
+api_contract:
+  identifiers:
+    source_field: null
+    generated_field: id
+    description: >-
+      Source records do not provide identifiers. MoroccoAPI generates each id
+      by hashing the serialized source record with SHA-256 and using the first
+      12 hexadecimal characters. School IDs are prefixed with the school
+      category (for example, school-private-school-); university IDs use the
+      university- prefix. Exact duplicate records receive an occurrence suffix
+      such as -2. IDs are deterministic for an unchanged record, but change
+      when the source record changes. For exact duplicates, suffix assignment
+      follows source row order.

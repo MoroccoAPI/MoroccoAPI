@@ -1,0 +1,290 @@
+[
+    {
+        "NOM_ETABL": "Lycée Réda Slaoui",
+        "NOM_ETABA": "الثانوية التأهيلية رضا السلاوي ",
+        "AdresseL": "Quartier Sidi Mohamed Agadir",
+        "AdresseA": "حي سيدي محمد أكادير",
+        "LL_COM": "Agadir (Mun.)",
+        "LL_PROV": "Préfecture: Agadir-Ida -O",
+        "LL_REG": "Souss-Massa"
+    },
+    {
+        "NOM_ETABL": "Lycée Qualifiant Moulay Ismail",
+        "NOM_ETABA": "الثانوية التأهيلية مولاي اسماعيل",
+        "AdresseL": "rue wahhabi ali ben jilali vn meknes",
+        "AdresseA": "شارع الوهابي علي بن الجيلالي المدينة الجديد مكناس",
+        "LL_COM": "Meknès (Mun.)",
+        "LL_PROV": "Préfecture: Meknès",
+        "LL_REG": "Fès-Meknès"
+    },
+    {
+        "NOM_ETABL": "Lycée Qualifiant Omar Ibn Al-Khattab",
+        "NOM_ETABA": "الثانوية التأهيلية عمر بن الخطاب ",
+        "AdresseL": "BD ABDELKARIM AL KHATTABI SBATA CMMEKNES",
+        "AdresseA": "شارع عبد الكريم الخطابي اسباتا",
+        "LL_COM": "Meknès (Mun.)",
+        "LL_PROV": "Préfecture: Meknès",
+        "LL_REG": "Fès-Meknès"
+    },
+    {
+        "NOM_ETABL": "Lycée Qualifiant Technique Mohammed V",
+        "NOM_ETABA": "الثانوية التأهيلية محمد الخامس التقنية",
+        "AdresseL": "BOULEVARD 20 AOUT QUARTIER ATLAS",
+        "AdresseA": "شارع 20 غشت حي اطلس ",
+        "LL_COM": "Béni Mellal (Mun.)",
+        "LL_PROV": "Province: Béni Mellal",
+        "LL_REG": "Béni Mellal-Khénifra"
+    },
+    {
+        "NOM_ETABL": "Centre des classses préparatoires Ibnou Baja",
+        "NOM_ETABA": "مركز الأقسام التحضيرية ابن باجة",
+        "AdresseL": "BENIMELLAL",
+        "AdresseA": "بني ملال",
+        "LL_COM": "Béni Mellal (Mun.)",
+        "LL_PROV": "Province: Béni Mellal",
+        "LL_REG": "Béni Mellal-Khénifra"
+    },
+    {
+        "NOM_ETABL": "Lycée Qualifiant  Al-Khansaa",
+        "NOM_ETABA": "الثانوية التأهيلية الخنساء ",
+        "AdresseL": "15 RUE RIAD  COMMUNE SIDI BELYOUT",
+        "AdresseA": "15 زنقة الرياض سيدي بليوط",
+        "LL_COM": "Sidi Belyout (Arrond.)",
+        "LL_PROV": "Préf. d'Arr. Casablanca A",
+        "LL_REG": "Casablanca-Settat"
+    },
+    {
+        "NOM_ETABL": "Lycée Mohammed V",
+        "NOM_ETABA": "الثانوية التأهيلية محمد الخامس",
+        "AdresseL": "BD 2 MARS",
+        "AdresseA": "شارع 2 مارس",
+        "LL_COM": "Mers-Sultan (Arrond.)",
+        "LL_PROV": "Préf. d'Arr. Al Fida-Mers",
+        "LL_REG": "Casablanca-Settat"
+    },
+    {
+        "NOM_ETABL": "Lycée Qualifiant Technique Errazi",
+        "NOM_ETABA": "الثانوية التأهيلية الرازي التقنية",
+        "AdresseL": "KOUDAITE BEN IDRISS ",
+        "AdresseA": "شارع النخيل ",
+        "LL_COM": "El Jadida (Mun.)",
+        "LL_PROV": "Province: El Jadida",
+        "LL_REG": "Casablanca-Settat"
+    },
+    {
+        "NOM_ETABL": "Lycée qualifiant Moulay Ali Cherif",
+        "NOM_ETABA": "الثانوية التأهيلية مولاي علي الشريف",
+        "AdresseL": "Cité Almassira Errachidia",
+        "AdresseA": "حي المسيرة الرشيدية",
+        "LL_COM": "Errachidia (Mun.)",
+        "LL_PROV": "Province: Errachidia",
+        "LL_REG": "Drâa-Tafilalet"
+    },
+    {
+        "NOM_ETABL": "Lycée Qualifiant Moulay Idriss",
+        "NOM_ETABA": "الثانوية التأهيلية مولاي ادريس ",
+        "AdresseL": "BOUJLOUD  FESMEDINA",
+        "AdresseA": "بوجلود فاس المدينة",
+        "LL_COM": "Fès-Médina (Arrond.)",
+        "LL_PROV": "Préfecture: Fès",
+        "LL_REG": "Fès-Meknès"
+    },
+    {
+        "NOM_ETABL": "LYCEE QUALIFIANT BAB ESSAHRA",
+        "NOM_ETABA": "الثانوية التأهيلية باب الصحراء",
+        "AdresseL": "angle boulevard MOHAMED 6 avenue hom ftwaki",
+        "AdresseA": "  ركن محج محمد 6 شارع حمان الفطواكي",
+        "LL_COM": "Guelmim (Mun.)",
+        "LL_PROV": "Province: Guelmim",
+        "LL_REG": "Guelmim-Oued Noun"
+    },
+    {
+        "NOM_ETABL": "Lycée Mohammed 6",
+        "NOM_ETABA": "الثانوية التأهيلية محمد السادس ",
+        "AdresseL": "KENITRA",
+        "AdresseA": "القنيطرة",
+        "LL_COM": "Kénitra (Mun.)",
+        "LL_PROV": "Province: Kénitra",
+        "LL_REG": "Rabat-Salé-Kénitra"
+    },
+    {
+        "NOM_ETABL": "Lycée qualifiant Ibnou El Bannae classes préparato",
+        "NOM_ETABA": "الثانوية التأهيلية ابن  البناء للاقسام التحضيرية",
+        "AdresseL": "BOULEVARD  IBRAHIM ERROUDANI",
+        "AdresseA": "شارع  ابراهيم الروداني",
+        "LL_COM": "Khouribga (Mun.)",
+        "LL_PROV": "Province: Khouribga",
+        "LL_REG": "Béni Mellal-Khénifra"
+    },
+    {
+        "NOM_ETABL": "Lycée Ibn Abdoun",
+        "NOM_ETABA": "الثانوية التأهيلية ابن عبدون ",
+        "AdresseL": "RUE EL MOUTANABI MUNICIPALITE KHOURIBGA",
+        "AdresseA": "زنقة  المتنبي",
+        "LL_COM": "Khouribga (Mun.)",
+        "LL_PROV": "Province: Khouribga",
+        "LL_REG": "Béni Mellal-Khénifra"
+    },
+    {
+        "NOM_ETABL": "Lycée Qualifiant Lissane Eddine Ibn Al-Khatib",
+        "NOM_ETABA": "الثانوية التأهيلية لسان الدين بن الخطيب",
+        "AdresseL": "PLACE OUM SAADAVENUE HASSAN 1IER",
+        "AdresseA": "ساحة أم السعد ، شارع الحسن الأول",
+        "LL_COM": "Laayoune (Mun.)",
+        "LL_PROV": "Province: Laâyoune",
+        "LL_REG": "Laayoune-Sakia El Hamra"
+    },
+    {
+        "NOM_ETABL": "Lycée Ibn Timiya",
+        "NOM_ETABA": "الثانوية التأهيلية ابن تيمية ",
+        "AdresseL": "HAY HASSANI MAR MENARA BP 851",
+        "AdresseA": "الحي الحسني ص ب 851 ",
+        "LL_COM": "Ménara (Arrond.)",
+        "LL_PROV": "Préfecture: Marrakech",
+        "LL_REG": "Marrakech-Safi"
+    },
+    {
+        "NOM_ETABL": "ECOLE ROYALE DE LAIR",
+        "NOM_ETABA": "المدرسة الملكية الجوية",
+        "AdresseL": "GE  BEFRA",
+        "AdresseA": "قاعدة  مدارس القوات المسلحة الملكية الجوية",
+        "LL_COM": "Ménara (Arrond.)",
+        "LL_PROV": "Préfecture: Marrakech",
+        "LL_REG": "Marrakech-Safi"
+    },
+    {
+        "NOM_ETABL": "Lycée Technique",
+        "NOM_ETABA": "الثانوية التقنية",
+        "AdresseL": "BD HASSAN II MOHAMMEDIA",
+        "AdresseA": "شارع الحسن الثاني",
+        "LL_COM": "Mohammadia (Mun.)",
+        "LL_PROV": "Préfecture: Mohammadia",
+        "LL_REG": "Casablanca-Settat"
+    },
+    {
+        "NOM_ETABL": "LYCEE QUALIFIANT ABDELKARIM AL KHATTABI",
+        "NOM_ETABA": "الثانوية التأهيلية عبد الكريم الخطابي ",
+        "AdresseL": "71 NAHJ AL AMIR SIDI MOHAMED NADOR",
+        "AdresseA": "71- شارع الامير سيدي محمد- الناظور",
+        "LL_COM": "Nador (Mun.)",
+        "LL_PROV": "Province: Nador",
+        "LL_REG": "Oriental"
+    },
+    {
+        "NOM_ETABL": "LYCEE QUALIFIANT HASSAN II",
+        "NOM_ETABA": "ثانويةالحسن الثاني التأهيلية",
+        "AdresseL": "RUE EL MORABITINE",
+        "AdresseA": "زنقة المرابطين",
+        "LL_COM": "Dakhla (Mun.)",
+        "LL_PROV": "Province: Oued Ed-Dahab",
+        "LL_REG": "Eddakhla-Oued Eddahab"
+    },
+    {
+        "NOM_ETABL": "Lycée Okba Ibn Nafea",
+        "NOM_ETABA": "الثانوية التأهيلية عقبة بن نافع ",
+        "AdresseL": "HAY ENNAHDA",
+        "AdresseA": "حي النهضة",
+        "LL_COM": "Dakhla (Mun.)",
+        "LL_PROV": "Province: Oued Ed-Dahab",
+        "LL_REG": "Eddakhla-Oued Eddahab"
+    },
+    {
+        "NOM_ETABL": "Lycée qualifiant Prince Héritier Moulay El Hassan",
+        "NOM_ETABA": "الثانوية التأهيلية ولي العهد مولاي الحسن للأقسام ا",
+        "AdresseL": "OUARZAZATE",
+        "AdresseA": "HAY sidi hssayne",
+        "LL_COM": "Ouarzazate (Mun.)",
+        "LL_PROV": "Province: Ouarzazate",
+        "LL_REG": "Drâa-Tafilalet"
+    },
+    {
+        "NOM_ETABL": "Lycée Omar Ibn Abdelaziz",
+        "NOM_ETABA": "الثانوية التأهيلية عمر بن عبد العزيز ",
+        "AdresseL": "BD ALLAL BEN ABDELLAH",
+        "AdresseA": "شارع علال بن عبد الله",
+        "LL_COM": "Oujda (Mun.)",
+        "LL_PROV": "Préfecture: Oujda-Angad",
+        "LL_REG": "Oriental"
+    },
+    {
+        "NOM_ETABL": "Lycée Omar Al-Khayyam",
+        "NOM_ETABA": "الثانوية التأهيلية عمر الخيام ",
+        "AdresseL": "AV ABDELOIHAD ELMARRAKECHI QUARTIER LAYMOUNE READ ",
+        "AdresseA": "شارع عبد الواحد المرا كشي حي الليمون أكدال الرياض",
+        "LL_COM": "Agdal Riyad (Arrond.)",
+        "LL_PROV": "Préfecture: Rabat",
+        "LL_REG": "Rabat-Salé-Kénitra"
+    },
+    {
+        "NOM_ETABL": "Lycée Moulay Youssef",
+        "NOM_ETABA": "الثانوية التأهيلية مولاي يوسف ",
+        "AdresseL": "AV MED 5 HASSANE",
+        "AdresseA": "شارع محمد الخامس حسان",
+        "LL_COM": "Hassan (Arrond.)",
+        "LL_PROV": "Préfecture: Rabat",
+        "LL_REG": "Rabat-Salé-Kénitra"
+    },
+    {
+        "NOM_ETABL": "Lycée Moulay Abdellah",
+        "NOM_ETABA": "الثانوية التأهيلية مولاي عبد الله",
+        "AdresseL": "Q SIDI ABDELKRIM SAFi",
+        "AdresseA": "حي سيدي عبد الكريم أسفي",
+        "LL_COM": "Safi (Mun.)",
+        "LL_PROV": "Province: Safi",
+        "LL_REG": "Marrakech-Safi"
+    },
+    {
+        "NOM_ETABL": "Lycée Selmane Al-Farissi",
+        "NOM_ETABA": "الثانوية التأهيلية سلمان الفارسي  ",
+        "AdresseL": "AV ALMASSIRA ALKHADRA COMMUNE DE BETTANA",
+        "AdresseA": "شارع المسيرة الخضراء جماعة بطانة",
+        "LL_COM": "Bettana (Arrond.)",
+        "LL_PROV": "Préfecture: Salé",
+        "LL_REG": "Rabat-Salé-Kénitra"
+    },
+    {
+        "NOM_ETABL": "Lycée Technique",
+        "NOM_ETABA": "الثانوية التأهيلية التقنية",
+        "AdresseL": "HAY EL AMAL COMMUNE SETTAT",
+        "AdresseA": "حي الأمل بلدية سطات",
+        "LL_COM": "Settat (Mun.)",
+        "LL_PROV": "Province: Settat",
+        "LL_REG": "Casablanca-Settat"
+    },
+    {
+        "NOM_ETABL": "CENTRE DES CLASSES PREPARATOIRES",
+        "NOM_ETABA": "مركز الأقسام التحضيرية",
+        "AdresseL": "Hay El Amal",
+        "AdresseA": "حي الأمل",
+        "LL_COM": "Settat (Mun.)",
+        "LL_PROV": "Province: Settat",
+        "LL_REG": "Casablanca-Settat"
+    },
+    {
+        "NOM_ETABL": "Lycée Moulay Hassan",
+        "NOM_ETABA": "الثانوية التأهيلية مولاي الحسن ",
+        "AdresseL": "RUE DES AMOUREUX COMMUNE TANGER",
+        "AdresseA": "شارع العشاق",
+        "LL_COM": "Tanger-Médina (Arrond.)",
+        "LL_PROV": "Préfecture: Tanger-Assila",
+        "LL_REG": "Tanger-Tetouan-Al Hoceima"
+    },
+    {
+        "NOM_ETABL": "Lycée Charrif El Idrissi",
+        "NOM_ETABA": "الثانوية التأهيلية الشريف الإدريسي ",
+        "AdresseL": "HAY EL MSALA TAZA OULIA",
+        "AdresseA": "حـــي المصلى تازة العليا",
+        "LL_COM": "Taza (Mun.)",
+        "LL_PROV": "Province: Taza",
+        "LL_REG": "Fès-Meknès"
+    },
+    {
+        "NOM_ETABL": "Centre CPGE ",
+        "NOM_ETABA": "مركز الأقسام التحضيرية ",
+        "AdresseL": "Ain Melloul",
+        "AdresseA": "aV. joulan wilaya center tetouan",
+        "LL_COM": "Tétouan (Mun.)",
+        "LL_PROV": "Province: Tétouan",
+        "LL_REG": "Tanger-Tetouan-Al Hoceima"
+    }
+]
