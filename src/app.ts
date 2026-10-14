@@ -72,7 +72,7 @@ export async function buildApp(
         { name: "Education", description: "Public and private schools and public university establishments" },
         { name: "Telecom", description: "Local phone formatting and licensed carrier and geographic prefix mappings" },
         { name: "Holidays", description: "Moroccan public holidays and business days with confirmation status" },
-        { name: "Postal codes", description: "Poste Maroc postal codes for localities and city neighbourhoods, linked to administrative geography" },
+        { name: "Postal codes", description: "Poste Maroc postal codes for localities and city neighbourhoods (September 2018 snapshot), linked to administrative geography" },
       ],
     },
   });

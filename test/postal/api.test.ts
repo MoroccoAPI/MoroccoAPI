@@ -122,6 +122,8 @@ describe("postal/codes", () => {
     const spec = (await get("/openapi.json")).body;
     for (const path of ["/api/v1/postal-codes", "/api/v1/postal-codes/cities", "/api/v1/postal-codes/{code}"]) {
       assert.ok(spec.paths[path]?.get, path);
+      assert.match(spec.paths[path].get.description, /September 2018.*missing/, `${path} documents the snapshot`);
     }
+    assert.match(spec.tags.find((tag: { name: string }) => tag.name === "Postal codes").description, /September 2018 snapshot/);
   });
 });

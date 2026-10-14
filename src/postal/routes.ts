@@ -22,6 +22,7 @@ function compact(value: string): string {
 export const postal: FastifyPluginAsync<{ geography: GeographySnapshot }> = async (app, { geography }) => {
   const { postalCodes, cities } = await loadPostal(geography);
   const tags = ["Postal codes"];
+  const snapshot = "Source: Poste Maroc open data, last updated September 2018; codes created or changed since then are missing.";
   const metaSchema = datasetMetaSchema();
   const searchable = postalCodes.map((record) => ({
     record,
@@ -33,7 +34,7 @@ export const postal: FastifyPluginAsync<{ geography: GeographySnapshot }> = asyn
   app.get<{ Querystring: PostalCodeQuery }>("/api/v1/postal-codes", {
     schema: {
       tags, summary: "Search postal codes by place, city, province or region",
-      description: "Requires at least one of q, region_code, province_code or city. A place can have several codes, and one code can cover many places.",
+      description: `Requires at least one of q, region_code, province_code or city. A place can have several codes, and one code can cover many places. ${snapshot}`,
       querystring: postalCodeQuerySchema(
         geography.regions.map((region) => region.code),
         geography.provinces.map((province) => province.code),
@@ -79,14 +80,14 @@ export const postal: FastifyPluginAsync<{ geography: GeographySnapshot }> = asyn
 
   app.get("/api/v1/postal-codes/cities", {
     schema: {
-      tags, summary: "List the cities whose neighbourhoods have different postal codes",
+      tags, summary: "List the cities whose neighbourhoods have different postal codes", description: snapshot,
       response: { 200: responseSchema({ type: "array", items: multiCodeCitySchema }, metaSchema) },
     },
   }, async () => ({ data: cities, meta: buildDatasetMeta(cities.length) }));
 
   app.get<{ Params: PostalCodeParams }>("/api/v1/postal-codes/:code", {
     schema: {
-      tags, summary: "Get every locality and neighbourhood that uses a postal code",
+      tags, summary: "Get every locality and neighbourhood that uses a postal code", description: snapshot,
       params: postalCodeParamsSchema,
       response: {
         200: responseSchema({ type: "array", items: postalCodeSchema }, metaSchema),
