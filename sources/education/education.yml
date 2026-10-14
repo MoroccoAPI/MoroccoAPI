@@ -67,7 +67,6 @@ sources:
     source_updated_at: 19/02/2025
     source_license: Open Data Commons Open Database License (ODbL)
 
-
 api_contract:
   identifiers:
     source_field: null
