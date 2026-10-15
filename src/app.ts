@@ -1,3 +1,4 @@
+import cors from "@fastify/cors";
 import swagger from "@fastify/swagger";
 import swaggerUi from "@fastify/swagger-ui";
 import Fastify, {
@@ -23,6 +24,11 @@ import { holidays } from "./holidays/routes.js";
 import { airports } from "./airports/routes.js";
 import { museums } from "./museums/routes.js";
 
+const publicCorsHeaders = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Expose-Headers": "X-MoroccoAPI-Revision",
+} as const;
+
 export async function buildApp(
   options: FastifyServerOptions = { logger: false },
 ): Promise<FastifyInstance> {
@@ -46,7 +52,7 @@ export async function buildApp(
       } else {
         request.log.error(error);
       }
-      return reply.code(statusCode).send({
+      return reply.headers(publicCorsHeaders).code(statusCode).send({
         error: {
           code: isClientError ? "REQUEST_ERROR" : "INTERNAL_ERROR",
           message,
@@ -75,6 +81,24 @@ export async function buildApp(
         },
       },
     } : {}),
+  });
+
+  // Reject malformed preflights with the same JSON envelope as other client errors.
+  app.addHook("onRequest", async (request, reply) => {
+    if (request.method === "OPTIONS" &&
+      (!request.headers.origin || !request.headers["access-control-request-method"])) {
+      return reply.headers(publicCorsHeaders).code(400).send({ error: {
+        code: "VALIDATION_ERROR",
+        message: "CORS preflight requires Origin and Access-Control-Request-Method headers",
+        request_id: request.id,
+      } });
+    }
+  });
+  await app.register(cors, {
+    origin: publicCorsHeaders["Access-Control-Allow-Origin"],
+    methods: ["GET", "HEAD"],
+    credentials: false,
+    exposedHeaders: publicCorsHeaders["Access-Control-Expose-Headers"],
   });
 
   await app.register(swagger, {
