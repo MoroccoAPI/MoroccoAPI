@@ -31,16 +31,17 @@ export const lighthouseSchema = {
   },
 } as const;
 
-const filterText = { type: "string", minLength: 1, maxLength: 100 } as const;
+const filterText = { type: "string", minLength: 2, maxLength: 100 } as const;
+const filterMinimum = "Requires at least two characters after search normalization, including trimming whitespace and removing accents.";
 
 export const lighthouseQuerySchema = {
   type: "object", additionalProperties: false,
   properties: {
-    name: { ...filterText, description: "Filter by lighthouse name." },
-    region: { ...filterText, description: "Filter by lighthouse region." },
-    province: { ...filterText, description: "Filter by lighthouse province." },
-    type: { ...filterText, description: "Filter by lighthouse type." },
-    ville: { ...filterText, description: "Filter by lighthouse city." },
+    name: { ...filterText, description: `Filter by lighthouse name. ${filterMinimum}` },
+    region: { ...filterText, description: `Filter by lighthouse region. ${filterMinimum}` },
+    province: { ...filterText, description: `Filter by lighthouse province. ${filterMinimum}` },
+    type: { ...filterText, description: `Filter by lighthouse type. ${filterMinimum}` },
+    ville: { ...filterText, description: `Filter by lighthouse city. ${filterMinimum}` },
   },
 } as const;
 

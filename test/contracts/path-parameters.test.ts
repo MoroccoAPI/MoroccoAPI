@@ -43,7 +43,7 @@ describe("Published path parameter contracts", () => {
         if (parameter.schema.maxLength > 100) widerThan100.push(path);
       }
     }
-    assert.deepEqual(widerThan100.sort(), [...wideCodePaths, "/api/v1/museums/{id}"].sort());
+    assert.deepEqual(widerThan100.sort(), [...wideCodePaths, "/api/v1/museums/{id}", "/api/v1/ports/{name}"].sort());
   });
 
   for (const path of wideCodePaths) {
@@ -64,6 +64,16 @@ describe("Published path parameter contracts", () => {
     assert.equal(missing.json().error.code, "RESOURCE_NOT_FOUND");
 
     const malformed = await app.inject(`/api/v1/museums/${"a".repeat(200)}`);
+    assert.equal(malformed.statusCode, 400);
+    assert.equal(malformed.json().error.code, "VALIDATION_ERROR");
+  });
+
+  it("accepts the port name's 200-character boundary and validates its normalized minimum", async () => {
+    const missing = await app.inject(`/api/v1/ports/${"a".repeat(200)}`);
+    assert.equal(missing.statusCode, 404);
+    assert.equal(missing.json().error.code, "RESOURCE_NOT_FOUND");
+
+    const malformed = await app.inject(`/api/v1/ports/${"%20".repeat(200)}`);
     assert.equal(malformed.statusCode, 400);
     assert.equal(malformed.json().error.code, "VALIDATION_ERROR");
   });

@@ -42,6 +42,10 @@ const directories = [
   "/api/v1/postal-codes/10000",
   "/api/v1/airports",
   "/api/v1/museums",
+  "/api/v1/ports",
+  "/api/v1/lighthouses",
+  "/api/v1/world-bank/indicators",
+  "/api/v1/world-bank/indicators/topics",
 ];
 
 describe("Directory pagination", () => {
@@ -160,7 +164,7 @@ describe("Directory pagination", () => {
     });
   });
 
-  it("validates pagination on all seven directory routes", async () => {
+  it("validates pagination on every directory route", async () => {
     for (const url of directories) {
       for (const invalid of ["limit=0", "offset=-1"]) {
         const response = await app.inject(pageUrl(url, invalid));
@@ -178,6 +182,8 @@ describe("Directory pagination", () => {
       "/api/v1/telecom/phone-numbers/lookup?number=0612345678",
       "/api/v1/airports/GMMN",
       `/api/v1/museums/${museums[0]!.id}`,
+      "/api/v1/ports/Casablanca",
+      "/api/v1/world-bank/indicators/IT.NET.USER.ZS",
     ];
     for (const url of details) {
       const ordinary = await app.inject(url);

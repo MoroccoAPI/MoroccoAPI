@@ -24,12 +24,18 @@ const collectionPaths = [
   "/api/v1/education/etablissements-publics-cpge", "/api/v1/education/universites-publiques",
   "/api/v1/airports", "/api/v1/museums", "/api/v1/postal-codes",
   "/api/v1/postal-codes/cities", "/api/v1/postal-codes/{code}",
+  "/api/v1/ports", "/api/v1/lighthouses",
+  "/api/v1/world-bank/indicators", "/api/v1/world-bank/indicators/topics",
 ];
 
 describe("Pagination contracts", () => {
-  it("publishes mandatory bounded pagination and defaults on every directory and population collection", async () => {
+  it("publishes mandatory bounded pagination and defaults on every supported collection", async () => {
     const spec = (await app.inject("/openapi.json")).json();
     await SwaggerParser.validate(spec, { resolve: { external: false } });
+    const publishedCollections = Object.keys(spec.paths).filter((path) =>
+      path !== "/api/v1/holidays/{year}" &&
+      spec.paths[path].get.responses["200"]?.content?.["application/json"]?.schema.properties?.data?.type === "array");
+    assert.deepEqual(publishedCollections.sort(), [...collectionPaths].sort(), "Every collection needs pagination contract coverage");
     for (const path of collectionPaths) {
       const operation = spec.paths[path].get;
       const limit = operation.parameters.find((parameter: { name: string }) => parameter.name === "limit");
@@ -62,7 +68,7 @@ describe("Pagination contracts", () => {
     }
   });
 
-  it("rejects non-finite pagination values on all 29 collections with validation errors", async () => {
+  it("rejects non-finite pagination values on every paginated collection with validation errors", async () => {
     for (const path of collectionPaths) {
       const resolved = path.replace("{code}", path.startsWith("/api/v1/postal-codes/") ? "10000" : "casablanca-settat");
       for (const parameter of ["limit", "offset"]) {

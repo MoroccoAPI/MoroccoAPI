@@ -1,4 +1,5 @@
 import type { FastifyPluginAsync } from "fastify";
+import { collectionResponseSchema, paginate, paginationQuerySchema, type PaginationQuery } from "../common/pagination.js";
 import { errorSchema, responseSchema } from "../common/schemas.js";
 import { normalizeSearch } from "../common/search.js";
 import { loadLighthouses, loadPorts } from "./data.js";
@@ -11,13 +12,14 @@ export const maritime: FastifyPluginAsync = async (app) => {
   const lighthouses = await loadLighthouses();
   const portsByName = new Map(ports.map((port) => [normalizeSearch(port["Nom du port"]), port]));
 
-  app.get("/api/v1/ports", {
+  app.get<{ Querystring: PaginationQuery }>("/api/v1/ports", {
     schema: {
       tags: ["Maritime"], summary: "List Moroccan ports",
       description: "Ports from the Ministry of Equipment and Water source list. Source fields are preserved in French.",
-      response: { 200: responseSchema({ type: "array", items: portSchema }, maritimeMetaSchema) },
+      querystring: paginationQuerySchema(),
+      response: { 200: collectionResponseSchema(portSchema, maritimeMetaSchema), 400: errorSchema },
     },
-  }, async () => ({ data: ports, meta: buildMaritimeMeta("ports", ports.length) }));
+  }, async (request) => paginate(ports, buildMaritimeMeta("ports", ports.length), request.query));
 
   app.get<{ Params: PortParams }>("/api/v1/ports/:name", {
     schema: {
@@ -42,12 +44,12 @@ export const maritime: FastifyPluginAsync = async (app) => {
     return { data: port, meta: buildMaritimeMeta("ports", 1) };
   });
 
-  app.get<{ Querystring: LighthouseQuery }>("/api/v1/lighthouses", {
+  app.get<{ Querystring: LighthouseQuery & PaginationQuery }>("/api/v1/lighthouses", {
     schema: {
       tags: ["Maritime"], summary: "List Moroccan lighthouses (phares)",
       description: "Lighthouses from the Ministry of Equipment and Water source list. Source fields are preserved in French. Optional filters combine with AND.",
-      querystring: lighthouseQuerySchema,
-      response: { 200: responseSchema({ type: "array", items: lighthouseSchema }, maritimeMetaSchema) },
+      querystring: paginationQuerySchema(lighthouseQuerySchema),
+      response: { 200: collectionResponseSchema(lighthouseSchema, maritimeMetaSchema), 400: errorSchema },
     },
   }, async (request, reply) => {
     const { name, region, province, type, ville } = request.query;
@@ -62,6 +64,6 @@ export const maritime: FastifyPluginAsync = async (app) => {
       (type === undefined || normalizeSearch(row["Type du phare"]).includes(normalizeSearch(type))) &&
       (ville === undefined || normalizeSearch(row.Ville).includes(normalizeSearch(ville))),
     );
-    return { data: matches, meta: buildMaritimeMeta("lighthouses", matches.length) };
+    return paginate(matches, buildMaritimeMeta("lighthouses", matches.length), request.query);
   });
 };
