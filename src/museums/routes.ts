@@ -1,4 +1,5 @@
 import type { FastifyPluginAsync } from "fastify";
+import { collectionResponseSchema, paginate, paginationQuerySchema, type PaginationQuery } from "../common/pagination.js";
 import { errorSchema, responseSchema } from "../common/schemas.js";
 import { normalizeSearch } from "../common/search.js";
 import type { GeographySnapshot } from "../geography/types.js";
@@ -13,12 +14,12 @@ export const museums: FastifyPluginAsync<{ geography: GeographySnapshot }> = asy
   const cities = new Map(geography.communes.map((row) => [row.code, row.name]));
   const tags = ["Museums"];
 
-  app.get<{ Querystring: MuseumQuery }>("/api/v1/museums", {
+  app.get<{ Querystring: MuseumQuery & PaginationQuery }>("/api/v1/museums", {
     schema: {
       tags, summary: "List and search the FNM museum inventory",
       description: "23 museums from September 2026. Filters combine with AND. This is FNM coverage, not all Moroccan museums. Hours, tariffs and phone formats are source facts; live opening status is unknown.",
-      querystring: museumQuerySchema([...new Set(records.map((row) => row.city_code))].sort(), geography.regions.map((row) => row.code)),
-      response: { 200: responseSchema({ type: "array", items: museumSchema }, datasetMetaSchema), 400: errorSchema },
+      querystring: paginationQuerySchema(museumQuerySchema([...new Set(records.map((row) => row.city_code))].sort(), geography.regions.map((row) => row.code))),
+      response: { 200: collectionResponseSchema(museumSchema, datasetMetaSchema), 400: errorSchema },
     },
   }, async (request, reply) => {
     const { q, city_code, region_code } = request.query;
@@ -35,7 +36,7 @@ export const museums: FastifyPluginAsync<{ geography: GeographySnapshot }> = asy
         (query === null || [...Object.values(record.name), ...record.aliases, ...Object.values(city)]
           .some((name) => name !== null && normalizeSearch(name).includes(query)));
     });
-    return { data: matches, meta: buildDatasetMeta(matches.length) };
+    return paginate(matches, buildDatasetMeta(matches.length), request.query);
   });
 
   app.get<{ Params: MuseumParams }>("/api/v1/museums/:id", {

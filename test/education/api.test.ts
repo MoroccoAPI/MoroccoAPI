@@ -8,6 +8,7 @@ import { loadEducationSchools } from "../../src/education/data/schools.js";
 import { loadUniversityEstablishments } from "../../src/education/data/universities.js";
 import { schoolDatasetRoutes } from "../../src/education/types.js";
 import type { EducationSchool, UniversityEstablishment } from "../../src/education/types.js";
+import { collectAllPages } from "../helpers/pagination.js";
 
 let app: FastifyInstance;
 let schools: readonly EducationSchool[];
@@ -31,8 +32,15 @@ describe("education datasets", () => {
     it(`lists only records from ${config.path} with matching source metadata`, async () => {
       const response = await app.inject(url);
       assert.equal(response.statusCode, 200);
-      const body = response.json();
+      const firstPage = response.json();
       const expected = schools.filter((school) => school.category === config.category);
+      assert.deepEqual(firstPage.data, expected.slice(0, 100));
+      assert.equal(firstPage.meta.total, expected.length);
+      assert.deepEqual(firstPage.meta.pagination, {
+        limit: 100, offset: 0, count: Math.min(100, expected.length),
+        has_more: expected.length > 100, next_offset: expected.length > 100 ? 100 : null,
+      });
+      const body = await collectAllPages<EducationSchool>(app, url);
       assert.deepEqual(body.data, expected);
       assert.equal(body.meta.dataset, config.dataset);
       assert.equal(body.meta.total, expected.length);
@@ -45,10 +53,9 @@ describe("education datasets", () => {
     it(`filters ${config.path} and retrieves a record by ID`, async () => {
       const expected = schools.find((school) => school.category === config.category);
       assert.ok(expected);
-      const filtered = await app.inject(`${url}?region=${encodeURIComponent(expected.region)}&search=${encodeURIComponent(expected.name_fr.slice(0, 5))}`);
-      assert.equal(filtered.statusCode, 200);
-      assert.ok(filtered.json().data.length > 0);
-      assert.ok(filtered.json().data.every((school: EducationSchool) =>
+      const filtered = await collectAllPages<EducationSchool>(app, `${url}?region=${encodeURIComponent(expected.region)}&search=${encodeURIComponent(expected.name_fr.slice(0, 5))}`);
+      assert.ok(filtered.data.length > 0);
+      assert.ok(filtered.data.every((school: EducationSchool) =>
         school.category === config.category && school.region === expected.region));
 
       const detail = await app.inject(`${url}/${expected.id}`);
@@ -62,7 +69,14 @@ describe("education datasets", () => {
   it("lists public university establishments with their own source metadata", async () => {
     const response = await app.inject("/api/v1/education/universites-publiques");
     assert.equal(response.statusCode, 200);
-    const body = response.json();
+    const firstPage = response.json();
+    assert.deepEqual(firstPage.data, universities.slice(0, 100));
+    assert.equal(firstPage.meta.total, universities.length);
+    assert.deepEqual(firstPage.meta.pagination, {
+      limit: 100, offset: 0, count: Math.min(100, universities.length),
+      has_more: universities.length > 100, next_offset: universities.length > 100 ? 100 : null,
+    });
+    const body = await collectAllPages<UniversityEstablishment>(app, "/api/v1/education/universites-publiques");
     assert.deepEqual(body.data, universities);
     assert.equal(body.meta.dataset, "universites-publiques");
     assert.equal(body.meta.total, universities.length);
@@ -73,10 +87,9 @@ describe("education datasets", () => {
   it("filters and retrieves public university establishments", async () => {
     const expected = universities.find((record) => record.city === "Rabat");
     assert.ok(expected);
-    const response = await app.inject(`/api/v1/education/universites-publiques?city=Rabat&search=${encodeURIComponent(expected.abbreviation.slice(0, 3))}`);
-    assert.equal(response.statusCode, 200);
-    assert.ok(response.json().data.length > 0);
-    assert.ok(response.json().data.every((record: UniversityEstablishment) => record.city === "Rabat"));
+    const response = await collectAllPages<UniversityEstablishment>(app, `/api/v1/education/universites-publiques?city=Rabat&search=${encodeURIComponent(expected.abbreviation.slice(0, 3))}`);
+    assert.ok(response.data.length > 0);
+    assert.ok(response.data.every((record: UniversityEstablishment) => record.city === "Rabat"));
 
     const detail = await app.inject(`/api/v1/education/universites-publiques/${expected.id}`);
     assert.equal(detail.statusCode, 200);
@@ -98,9 +111,8 @@ describe("education datasets", () => {
     assert.ok(expected);
     for (const phone of [expected.telephone, expected.fax]) {
       assert.ok(phone);
-      const response = await app.inject(`/api/v1/education/universites-publiques?search=${encodeURIComponent(phone)}`);
-      assert.equal(response.statusCode, 200);
-      assert.ok(response.json().data.some((record: UniversityEstablishment) => record.id === expected.id));
+      const response = await collectAllPages<UniversityEstablishment>(app, `/api/v1/education/universites-publiques?search=${encodeURIComponent(phone)}`);
+      assert.ok(response.data.some((record: UniversityEstablishment) => record.id === expected.id));
     }
   });
 

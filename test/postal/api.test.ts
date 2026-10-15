@@ -4,6 +4,7 @@ import { after, before, describe, it } from "node:test";
 import type { FastifyInstance } from "fastify";
 
 import { buildApp } from "../../src/app.js";
+import { collectAllPages } from "../helpers/pagination.js";
 import type { MultiCodeCity, PostalCode } from "../../src/postal/types.js";
 
 let app: FastifyInstance;
@@ -23,6 +24,19 @@ const get = async (url: string) => {
 };
 
 describe("postal/search", () => {
+  it("limits ordinary searches to 100 results and exposes the next page", async () => {
+    const { status, body } = await get("/api/v1/postal-codes?city=rabat");
+    assert.equal(status, 200);
+    assert.equal(body.data.length, 100);
+    assert.ok(body.meta.total > 100);
+    assert.deepEqual(body.meta.pagination, {
+      limit: 100, offset: 0, count: 100, has_more: true, next_offset: 100,
+    });
+    const complete = await collectAllPages(app, "/api/v1/postal-codes?city=rabat");
+    assert.equal(complete.data.length, body.meta.total);
+    assert.deepEqual(body.data, complete.data.slice(0, 100));
+  });
+
   it("requires a filter instead of returning the whole 1.9 MB register", async () => {
     for (const url of ["/api/v1/postal-codes", "/api/v1/postal-codes?type=neighborhood"]) {
       const { status, body } = await get(url);
@@ -43,7 +57,7 @@ describe("postal/search", () => {
   });
 
   it("treats a numeric query as a postal code prefix", async () => {
-    const { body } = await get("/api/v1/postal-codes?q=100");
+    const body = await collectAllPages(app, "/api/v1/postal-codes?q=100");
     assert.ok(body.data.length > 0);
     assert.ok(body.data.every((record: PostalCode) => record.postal_code.startsWith("100")));
   });
@@ -51,14 +65,13 @@ describe("postal/search", () => {
   it("returns every code of a neighbourhood and accepts a city in any spelling", async () => {
     const { body } = await get("/api/v1/postal-codes?city=rabat&q=quartier%20al%20boustane");
     assert.deepEqual(body.data.map((record: PostalCode) => record.postal_code), ["10150", "10210"]);
-    const jadida = await get("/api/v1/postal-codes?city=El-Jadida&type=neighborhood");
-    assert.equal(jadida.status, 200);
-    assert.ok(jadida.body.data.length > 0);
-    assert.ok(jadida.body.data.every((record: PostalCode) => record.city === "ELJADIDA" && record.province_code === "el-jadida"));
+    const jadida = await collectAllPages(app, "/api/v1/postal-codes?city=El-Jadida&type=neighborhood");
+    assert.ok(jadida.data.length > 0);
+    assert.ok(jadida.data.every((record: PostalCode) => record.city === "ELJADIDA" && record.province_code === "el-jadida"));
   });
 
   it("combines geographic and type filters", async () => {
-    const { body } = await get("/api/v1/postal-codes?region_code=souss-massa&province_code=tiznit&type=locality");
+    const body = await collectAllPages(app, "/api/v1/postal-codes?region_code=souss-massa&province_code=tiznit&type=locality");
     assert.ok(body.data.length > 0);
     for (const record of body.data as PostalCode[]) {
       assert.deepEqual([record.region_code, record.province_code, record.type], ["souss-massa", "tiznit", "locality"]);
@@ -85,8 +98,7 @@ describe("postal/search", () => {
 
 describe("postal/codes", () => {
   it("returns every place that uses a code", async () => {
-    const { status, body } = await get("/api/v1/postal-codes/10000");
-    assert.equal(status, 200);
+    const body = await collectAllPages(app, "/api/v1/postal-codes/10000");
     assert.equal(body.data.length, 5);
     assert.ok(body.data.every((record: PostalCode) => record.postal_code === "10000" && record.city === "RABAT"));
     assert.equal(body.meta.total, 5);
@@ -102,8 +114,7 @@ describe("postal/codes", () => {
   });
 
   it("lists the 34 multi-code cities with their codes", async () => {
-    const { status, body } = await get("/api/v1/postal-codes/cities");
-    assert.equal(status, 200);
+    const body = await collectAllPages(app, "/api/v1/postal-codes/cities");
     assert.equal(body.data.length, 34);
     const rabat = body.data.find((city: MultiCodeCity) => city.name === "RABAT");
     assert.equal(rabat.commune_code, "rabat--rabat");
@@ -118,6 +129,7 @@ describe("postal/codes", () => {
     const postal = (await get("/api/v1/postal-codes/10000")).body.meta;
     const geography = (await get("/api/v1/regions")).body.meta;
     assert.deepEqual(Object.keys(postal).sort(), Object.keys(geography).sort());
+    assert.ok(Object.hasOwn(postal, "pagination"));
     assert.equal(postal.license, "ODbL-1.0");
     const spec = (await get("/openapi.json")).body;
     for (const path of ["/api/v1/postal-codes", "/api/v1/postal-codes/cities", "/api/v1/postal-codes/{code}"]) {

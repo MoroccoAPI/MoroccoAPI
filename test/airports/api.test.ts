@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { after, before, describe, it } from "node:test";
 import type { FastifyInstance } from "fastify";
 import { buildApp } from "../../src/app.js";
+import { collectAllPages } from "../helpers/pagination.js";
 import type { Airport } from "../../src/airports/types.js";
 
 let app: FastifyInstance;
@@ -12,7 +13,10 @@ describe("Airports API", () => {
   it("returns the complete MA snapshot with public-domain provenance and explicit scope", async () => {
     const response = await app.inject("/api/v1/airports");
     assert.equal(response.statusCode, 200);
-    const { data, meta } = response.json();
+    assert.deepEqual(response.json().meta.pagination, {
+      limit: 100, offset: 0, count: 45, has_more: false, next_offset: null,
+    });
+    const { data, meta } = await collectAllPages(app, "/api/v1/airports");
     assert.equal(data.length, 45);
     assert.equal(meta.total, 45);
     assert.equal(meta.license, "Public-Domain");
@@ -107,7 +111,7 @@ describe("Airports API", () => {
     const spec = (await app.inject("/openapi.json")).json();
     const list = spec.paths["/api/v1/airports"].get;
     assert.deepEqual(list.tags, ["Airports"]);
-    assert.deepEqual(list.parameters.map((p: { name: string }) => p.name).sort(), ["city", "q", "scheduled_service", "type"]);
+    assert.deepEqual(list.parameters.map((p: { name: string }) => p.name).sort(), ["city", "limit", "offset", "q", "scheduled_service", "type"]);
     const detail = spec.paths["/api/v1/airports/{icao}"].get;
     assert.ok(detail.responses["200"] && detail.responses["400"] && detail.responses["404"]);
   });
