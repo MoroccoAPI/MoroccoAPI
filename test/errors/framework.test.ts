@@ -15,7 +15,7 @@ interface ErrorBody {
   error: { code: string; message: string; request_id: string };
 }
 
-const longParameter = "a".repeat(101);
+const longParameter = "a".repeat(201);
 const routerErrors = [
   ["/api/v1/regions/%FF", 400],
   ["/api/v1/regions/%zz", 400],
@@ -126,15 +126,21 @@ describe("Framework error envelopes", () => {
   });
 
   it("preserves an explicitly configured router parameter-length boundary", async () => {
-    const configuredApp = await buildApp({ routerOptions: { maxParamLength: 12 } });
-    try {
-      await configuredApp.ready();
-      const allowed = assertEnvelope(await configuredApp.inject(`/api/v1/regions/${"a".repeat(12)}`), 404, "RESOURCE_NOT_FOUND");
-      assert.ok(allowed.error.message.includes("a".repeat(12)));
-      assertEnvelope(await configuredApp.inject(`/api/v1/regions/${"a".repeat(13)}`), 414, "REQUEST_ERROR");
-      assert.equal((await configuredApp.inject("/api/v1/regions/oriental")).statusCode, 200);
-    } finally {
-      await configuredApp.close();
+    for (const [options, maximum] of [
+      [{ routerOptions: { maxParamLength: 12 } }, 12],
+      [{ maxParamLength: 12 }, 12],
+      [{ maxParamLength: 12, routerOptions: { maxParamLength: 15 } }, 15],
+    ] as const) {
+      const configuredApp = await buildApp(options);
+      try {
+        await configuredApp.ready();
+        const allowed = assertEnvelope(await configuredApp.inject(`/api/v1/regions/${"a".repeat(maximum)}`), 404, "RESOURCE_NOT_FOUND");
+        assert.ok(allowed.error.message.includes("a".repeat(maximum)));
+        assertEnvelope(await configuredApp.inject(`/api/v1/regions/${"a".repeat(maximum + 1)}`), 414, "REQUEST_ERROR");
+        assert.equal((await configuredApp.inject("/api/v1/regions/oriental")).statusCode, 200);
+      } finally {
+        await configuredApp.close();
+      }
     }
   });
 

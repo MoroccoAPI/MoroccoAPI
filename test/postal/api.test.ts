@@ -81,6 +81,32 @@ describe("postal/search", () => {
     assert.deepEqual(incompatible.body.data, []);
   });
 
+  it("finds the four reviewed localities in their correct HCP province and excludes their former province", async () => {
+    for (const [name, code, province, formerProvince] of [
+      ["DEROUA OULAD ZIANE", "26202", "berrechid", "settat"],
+      ["IGHIL NOUMGOUN", "45156", "tinghir", "ouarzazate"],
+      ["IMI NFAST", "81033", "sidi-ifni", "guelmim"],
+      ["SIDI HSAINE OU ALI", "85572", "sidi-ifni", "taroudannt"],
+    ]) {
+      const query = `q=${encodeURIComponent(name!)}&type=locality`;
+      const correct = await get(`/api/v1/postal-codes?${query}&province_code=${province}`);
+      assert.equal(correct.status, 200, name);
+      assert.deepEqual(correct.body.data.map((record: PostalCode) => [record.name, record.postal_code, record.province_code]),
+        [[name, code, province]]);
+      assert.equal(correct.body.meta.total, 1, name);
+      const former = await get(`/api/v1/postal-codes?${query}&province_code=${formerProvince}`);
+      assert.equal(former.status, 200, name);
+      assert.deepEqual(former.body.data, [], name);
+      assert.equal(former.body.meta.total, 0, name);
+    }
+    const correctRegion = await get("/api/v1/postal-codes?q=sidi%20hsaine%20ou%20ali&region_code=guelmim-oued-noun");
+    assert.equal(correctRegion.status, 200);
+    assert.equal(correctRegion.body.data[0].region_code, "guelmim-oued-noun");
+    const formerRegion = await get("/api/v1/postal-codes?q=sidi%20hsaine%20ou%20ali&region_code=souss-massa");
+    assert.equal(formerRegion.status, 200);
+    assert.deepEqual(formerRegion.body.data, []);
+  });
+
   it("rejects unknown cities, provinces and too-short queries", async () => {
     for (const url of [
       "/api/v1/postal-codes?city=paris",
@@ -102,6 +128,25 @@ describe("postal/codes", () => {
     assert.equal(body.data.length, 5);
     assert.ok(body.data.every((record: PostalCode) => record.postal_code === "10000" && record.city === "RABAT"));
     assert.equal(body.meta.total, 5);
+  });
+
+  it("returns Deroua and its five restored Berrechid source neighbourhood rows under code 26202", async () => {
+    const { status, body } = await get("/api/v1/postal-codes/26202");
+    assert.equal(status, 200);
+    assert.equal(body.meta.total, 6);
+    assert.equal(body.data.length, 6);
+    assert.ok(body.data.every((record: PostalCode) => record.province_code === "berrechid" && record.region_code === "casablanca-settat"));
+    assert.deepEqual(body.data.filter((record: PostalCode) => record.type === "neighborhood").map((record: PostalCode) => record.name),
+      ["BSSASLA", "BTIOUA", "JACMA", "KASBAT BEN MCHICH", "LAMBARKIYINE"]);
+    const neighborhoods = await get("/api/v1/postal-codes?city=berrechid&q=26202&type=neighborhood");
+    assert.equal(neighborhoods.status, 200);
+    assert.equal(neighborhoods.body.meta.total, 5);
+    assert.ok(neighborhoods.body.data.every((record: PostalCode) => record.city === "BERRECHID"));
+    const cities = (await get("/api/v1/postal-codes/cities")).body.data as MultiCodeCity[];
+    const berrechid = cities.find((city) => city.name === "BERRECHID")!;
+    assert.ok(berrechid.postal_codes.includes("26202"));
+    const all = await collectAllPages(app, "/api/v1/postal-codes?city=berrechid&type=neighborhood");
+    assert.equal(berrechid.neighborhood_count, all.data.length);
   });
 
   it("returns errors for unknown and malformed codes", async () => {

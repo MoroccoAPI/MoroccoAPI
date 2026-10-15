@@ -50,8 +50,8 @@ const sources = {
     license: "ODbL-1.0", source_updated_at: "2026-09-14",
   }],
   "universites-publiques": [{
-    dataset: "Établissements de l’enseignement supérieur universitaire public ouverts, année 2023–2024",
-    producer,
+    dataset: "Établissements de l’enseignement supérieur universitaire public ouverts, année 2024–2025",
+    producer: "Ministère de l’Enseignement Supérieur, de la Recherche Scientifique et de l’Innovation (MESRSI)",
     source_url: "https://data.gov.ma/data/fr/dataset/etablissements-de-l-enseignement-superieur-universitaire-public-ouverts",
     resource_url: "https://data.gov.ma/data/fr/dataset/etablissements-de-l-enseignement-superieur-universitaire-public-ouverts/resource/fb9c2300-77f7-461c-86a5-9184b00e57d9",
     license: "ODbL-1.0",

@@ -138,6 +138,32 @@ describe("population/regions", () => {
   });
 });
 describe("population/historical", () => {
+  it("rejects non-finite, overflowing and out-of-range census years as validation errors", async () => {
+    for (const year of ["Infinity", "-Infinity", "+Infinity", "1e309", "-1e309", "NaN", "1959", "2025", "2024.5"]) {
+      const url = `/api/v1/population/historical/${encodeURIComponent(year)}`;
+      const response = await app.inject(url);
+      assert.equal(response.statusCode, 400, year);
+      const body = response.json();
+      assert.deepEqual(Object.keys(body), ["error"], year);
+      assert.deepEqual(Object.keys(body.error).sort(), ["code", "message", "request_id"], year);
+      assert.equal(body.error.code, "VALIDATION_ERROR", year);
+      assert.equal(typeof body.error.message, "string", year);
+      assert.ok(body.error.message.length > 0, year);
+      assert.equal(typeof body.error.request_id, "string", year);
+      assert.ok(body.error.request_id.length > 0, year);
+    }
+  });
+
+  it("retains finite census-year coercion for existing records", async () => {
+    const ordinary = await app.inject("/api/v1/population/historical/2024");
+    assert.equal(ordinary.statusCode, 200);
+    for (const year of ["2024.0", "2.024e3"]) {
+      const response = await app.inject(`/api/v1/population/historical/${year}`);
+      assert.equal(response.statusCode, 200, year);
+      assert.deepEqual(response.json(), ordinary.json(), year);
+    }
+  });
+
   it("returns historical population records with totals matching the national endpoint", async () => {
     const [historicalResponse, nationalResponse] = await Promise.all([
       app.inject("/api/v1/population/historical"),

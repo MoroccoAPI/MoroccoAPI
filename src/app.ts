@@ -1,3 +1,4 @@
+import cors from "@fastify/cors";
 import swagger from "@fastify/swagger";
 import swaggerUi from "@fastify/swagger-ui";
 import Fastify, {
@@ -23,12 +24,21 @@ import { holidays } from "./holidays/routes.js";
 import { airports } from "./airports/routes.js";
 import { museums } from "./museums/routes.js";
 
+const publicCorsHeaders = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Expose-Headers": "X-MoroccoAPI-Revision",
+} as const;
+
 export async function buildApp(
   options: FastifyServerOptions = { logger: false },
 ): Promise<FastifyInstance> {
   const loggerOptions = typeof options.logger === "object" ? options.logger : {};
   const app = Fastify({
     ...options,
+    routerOptions: {
+      ...options.routerOptions,
+      maxParamLength: options.routerOptions?.maxParamLength ?? options.maxParamLength ?? 200,
+    },
     frameworkErrors: options.frameworkErrors ?? ((error: FastifyError, request: FastifyRequest, reply: FastifyReply) => {
       const statusCode = error.statusCode ?? 500;
       const isClientError = statusCode < 500;
@@ -42,7 +52,7 @@ export async function buildApp(
       } else {
         request.log.error(error);
       }
-      return reply.code(statusCode).send({
+      return reply.headers(publicCorsHeaders).code(statusCode).send({
         error: {
           code: isClientError ? "REQUEST_ERROR" : "INTERNAL_ERROR",
           message,
@@ -71,6 +81,24 @@ export async function buildApp(
         },
       },
     } : {}),
+  });
+
+  // Reject malformed preflights with the same JSON envelope as other client errors.
+  app.addHook("onRequest", async (request, reply) => {
+    if (request.method === "OPTIONS" &&
+      (!request.headers.origin || !request.headers["access-control-request-method"])) {
+      return reply.headers(publicCorsHeaders).code(400).send({ error: {
+        code: "VALIDATION_ERROR",
+        message: "CORS preflight requires Origin and Access-Control-Request-Method headers",
+        request_id: request.id,
+      } });
+    }
+  });
+  await app.register(cors, {
+    origin: publicCorsHeaders["Access-Control-Allow-Origin"],
+    methods: ["GET", "HEAD"],
+    credentials: false,
+    exposedHeaders: publicCorsHeaders["Access-Control-Expose-Headers"],
   });
 
   await app.register(swagger, {
@@ -130,7 +158,7 @@ export async function buildApp(
   );
 
   app.setErrorHandler((error: FastifyError, request, reply) => {
-    if (error.validation) {
+    if (error.validation || error.code === "VALIDATION_ERROR") {
       return reply.code(400).send({
         error: {
           code: "VALIDATION_ERROR",

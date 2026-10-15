@@ -78,7 +78,7 @@ export const education: FastifyPluginAsync = async (app) => {
   app.get<{ Querystring: UniversityQuery & PaginationQuery }>(universityUrl, {
     schema: {
       tags, summary: "List public university establishments",
-      description: "Contains university establishments and enrollment figures for 2023–2024. Contact fields are included only when published in the source.",
+      description: "Directory of public university establishments for 2024–2025, with enrollment figures for 2023–2024. Contact fields are included only when published in the source.",
       querystring: paginationQuerySchema(universityQuerySchema()),
       response: {
         200: collectionResponseSchema(universitySchema, universityMetaSchema),

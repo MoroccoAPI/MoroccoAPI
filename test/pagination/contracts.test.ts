@@ -62,6 +62,47 @@ describe("Pagination contracts", () => {
     }
   });
 
+  it("rejects non-finite pagination values on all 29 collections with validation errors", async () => {
+    for (const path of collectionPaths) {
+      const resolved = path.replace("{code}", path.startsWith("/api/v1/postal-codes/") ? "10000" : "casablanca-settat");
+      for (const parameter of ["limit", "offset"]) {
+        for (const value of ["Infinity", "-Infinity", "+Infinity", "1e309", "-1e309"]) {
+          const url = new URL(resolved, "http://localhost");
+          if (path === "/api/v1/locations/search" || path === "/api/v1/postal-codes") url.searchParams.set("q", "rabat");
+          url.searchParams.set(parameter, value);
+          const requestUrl = url.pathname + url.search;
+          const response = await app.inject(requestUrl);
+          assert.equal(response.statusCode, 400, requestUrl);
+          assert.match(String(response.headers["content-type"]), /^application\/json(?:;|$)/);
+          const body = response.json();
+          assert.deepEqual(Object.keys(body), ["error"], requestUrl);
+          assert.deepEqual(Object.keys(body.error).sort(), ["code", "message", "request_id"], requestUrl);
+          assert.equal(body.error.code, "VALIDATION_ERROR", requestUrl);
+          assert.equal(typeof body.error.message, "string", requestUrl);
+          assert.ok(body.error.message.length > 0, requestUrl);
+          assert.equal(typeof body.error.request_id, "string", requestUrl);
+          assert.ok(body.error.request_id.length > 0, requestUrl);
+        }
+      }
+    }
+  });
+
+  it("retains finite numeric coercion and the largest supported offset", async () => {
+    const numericNotation = await app.inject("/api/v1/communes?limit=1e2&offset=1.0");
+    const ordinaryNotation = await app.inject("/api/v1/communes?limit=100&offset=1");
+    assert.equal(numericNotation.statusCode, 200);
+    assert.equal(ordinaryNotation.statusCode, 200);
+    assert.deepEqual(numericNotation.json(), ordinaryNotation.json());
+
+    const finalPage = await app.inject("/api/v1/communes?limit=500&offset=2147483647");
+    assert.equal(finalPage.statusCode, 200);
+    assert.deepEqual(finalPage.json().data, []);
+    assert.equal(finalPage.json().meta.total, 1503);
+    assert.deepEqual(finalPage.json().meta.pagination, {
+      limit: 500, offset: 2_147_483_647, count: 0, has_more: false, next_offset: null,
+    });
+  });
+
   it("bounds the largest collection by default without an unpaginated query escape", async () => {
     const path = "/api/v1/education/etablissements-publics-primaire";
     const defaultPage = await app.inject(path);

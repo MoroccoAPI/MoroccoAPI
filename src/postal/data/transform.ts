@@ -32,8 +32,19 @@ interface Section<T> {
   entries: readonly T[];
 }
 
+interface ProvinceCorrection {
+  type: "locality";
+  name: string;
+  postal_code: string;
+  source_province: string;
+  source_region: string;
+  province_code: string;
+  evidence_url: string;
+}
+
 export interface PostalMappings {
   province_aliases: Section<{ source: string; province_code: string }>;
+  province_corrections: Section<ProvinceCorrection>;
   region_label_aliases: Section<{ source: string; region_code: string }>;
   region_corrections: Section<{
     type: PostalCode["type"];
@@ -133,9 +144,19 @@ export function buildPostalSnapshot(
     return code;
   };
 
+  const provinceCorrections = new Map<string, ProvinceCorrection>();
+  for (const entry of mappings.province_corrections.entries) {
+    const key = [entry.type, entry.name, entry.postal_code].join("|");
+    if (provinceCorrections.has(key)) throw new Error(`Duplicate postal province correction '${key}'`);
+    if (!provinces.has(entry.province_code)) {
+      throw new Error(`Unknown corrected postal province '${entry.province_code}'`);
+    }
+    provinceCorrections.set(key, entry);
+  }
+
   const corrections = new Map(mappings.region_corrections.entries.map((entry) =>
     [[entry.type, entry.name, entry.postal_code].join("|"), entry]));
-  const regionCode = (label: string, province: string, key: string): string => {
+  const regionCode = (label: string, province: string, key: string, provinceCorrection?: ProvinceCorrection): string => {
     const labelKey = slug(label);
     const alias = regionAliases.get(labelKey);
     if (alias !== undefined) used.add(`region:${labelKey}`);
@@ -144,11 +165,15 @@ export function buildPostalSnapshot(
     const region = provinces.get(province)!.region_code;
     const correction = corrections.get(key);
     if (labelled !== region) {
-      if (!correction || correction.source_region !== clean(label) || correction.province_code !== province ||
-        correction.region_code !== region) {
-        throw new Error(`Unlisted postal region disagreement for '${key}'`);
+      // A reviewed province correction also guards the original region label. Its target
+      // province determines the region, including a move across regional boundaries.
+      if (!provinceCorrection) {
+        if (!correction || correction.source_region !== clean(label) || correction.province_code !== province ||
+          correction.region_code !== region) {
+          throw new Error(`Unlisted postal region disagreement for '${key}'`);
+        }
+        used.add(`correction:${key}`);
       }
-      used.add(`correction:${key}`);
     } else if (correction) {
       throw new Error(`Postal region correction '${key}' does not match a disagreement`);
     }
@@ -166,10 +191,20 @@ export function buildPostalSnapshot(
   for (const row of source.localities) {
     const name = clean(row.LOCALITE);
     const postalCode = String(row["NOUVEAU CODE POSTAL"]);
-    const province = provinceCode(row.PROVINCE);
+    const key = ["locality", name, postalCode].join("|");
+    const sourceProvince = provinceCode(row.PROVINCE);
+    const correction = provinceCorrections.get(key);
+    if (correction) {
+      if (correction.source_province !== clean(row.PROVINCE) || correction.source_region !== clean(row.REGION_POSTALE) ||
+        correction.province_code === sourceProvince) {
+        throw new Error(`Postal province correction '${key}' does not match the source disagreement`);
+      }
+      used.add(`province-correction:${key}`);
+    }
+    const province = correction?.province_code ?? sourceProvince;
     codes.push({
       postal_code: postalCode, type: "locality", name, city: null, province_code: province,
-      region_code: regionCode(row.REGION_POSTALE, province, ["locality", name, postalCode].join("|")),
+      region_code: regionCode(row.REGION_POSTALE, province, key, correction),
       commune_code: communeFor(province, name),
     });
   }
@@ -229,6 +264,7 @@ export function buildPostalSnapshot(
 
   const expected = [
     ...[...provinceAliases.keys()].map((key) => `province:${key}`),
+    ...[...provinceCorrections.keys()].map((key) => `province-correction:${key}`),
     ...[...regionAliases.keys()].map((key) => `region:${key}`),
     ...[...corrections.keys()].map((key) => `correction:${key}`),
     ...[...cityCommuneAliases.keys()].map((key) => `commune:${key}`),

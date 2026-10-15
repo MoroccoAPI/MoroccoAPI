@@ -2,6 +2,7 @@ import type { FastifyPluginAsync } from "fastify";
 import type { GeographySnapshot } from "../geography/types.js";
 import { collectionResponseSchema, paginate, paginationQuerySchema } from "../common/pagination.js";
 import type { PaginationQuery } from "../common/pagination.js";
+import { assertSafeIntegerInRange } from "../common/validation.js";
 
 import { loadRegionPopulation } from "./data/regions.js";
 import { loadCommunePopulation } from "./data/communes.js";
@@ -136,7 +137,9 @@ export const population: FastifyPluginAsync<{ geography: GeographySnapshot }> = 
       },
     },
   }, async (request, reply) => {
-    const record = historical.find((item) => item.year === request.params.year);
+    const year = request.params.year;
+    assertSafeIntegerInRange(year, "year", 1960, 2024);
+    const record = historical.find((item) => item.year === year);
     if (!record) {
       return reply.code(404).send({ error: {
         code: "RESOURCE_NOT_FOUND",
