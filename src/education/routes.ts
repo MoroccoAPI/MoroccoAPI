@@ -2,6 +2,8 @@ import type { FastifyPluginAsync } from "fastify";
 
 import { errorSchema, responseSchema } from "../common/schemas.js";
 import { normalizeSearch } from "../common/search.js";
+import { collectionResponseSchema, paginate, paginationQuerySchema } from "../common/pagination.js";
+import type { PaginationQuery } from "../common/pagination.js";
 import { loadEducationSchools } from "./data/schools.js";
 import { loadUniversityEstablishments } from "./data/universities.js";
 import { buildEducationMeta } from "./metadata.js";
@@ -26,14 +28,14 @@ export const education: FastifyPluginAsync = async (app) => {
     const url = `/api/v1/education/${config.path}`;
     const metaSchema = educationMetaSchema(config.dataset);
 
-    app.get<{ Querystring: SchoolQuery }>(url, {
+    app.get<{ Querystring: SchoolQuery & PaginationQuery }>(url, {
       schema: {
         tags,
         summary: `List ${config.label.toLocaleLowerCase("en")}`,
         description: "Source commune, province, and region labels are preserved as published; they are not standardized geography codes.",
-        querystring: schoolQuerySchema(),
+        querystring: paginationQuerySchema(schoolQuerySchema()),
         response: {
-          200: responseSchema({ type: "array", items: schoolSchema }, metaSchema),
+          200: collectionResponseSchema(schoolSchema, metaSchema),
           400: errorSchema,
         },
       },
@@ -52,7 +54,7 @@ export const education: FastifyPluginAsync = async (app) => {
         (search === undefined || [school.name_fr, school.name_ar, school.address_fr ?? "", school.address_ar ?? ""].some((value) =>
           normalizeSearch(value).includes(normalizeSearch(search)))),
       );
-      return { data: matches, meta: buildEducationMeta(config.dataset, matches.length) };
+      return paginate(matches, buildEducationMeta(config.dataset, matches.length), request.query);
     });
 
     app.get<{ Params: { id: string } }>(`${url}/:id`, {
@@ -73,13 +75,13 @@ export const education: FastifyPluginAsync = async (app) => {
 
   const universityUrl = "/api/v1/education/universites-publiques";
   const universityMetaSchema = educationMetaSchema("universites-publiques");
-  app.get<{ Querystring: UniversityQuery }>(universityUrl, {
+  app.get<{ Querystring: UniversityQuery & PaginationQuery }>(universityUrl, {
     schema: {
       tags, summary: "List public university establishments",
       description: "Contains university establishments and enrollment figures for 2023–2024. Contact fields are included only when published in the source.",
-      querystring: universityQuerySchema(),
+      querystring: paginationQuerySchema(universityQuerySchema()),
       response: {
-        200: responseSchema({ type: "array", items: universitySchema }, universityMetaSchema),
+        200: collectionResponseSchema(universitySchema, universityMetaSchema),
         400: errorSchema,
       },
     },
@@ -99,7 +101,7 @@ export const education: FastifyPluginAsync = async (app) => {
         record.abbreviation, record.city, record.address ?? "", record.telephone ?? "", record.fax ?? ""].some((value) =>
         normalizeSearch(value).includes(normalizeSearch(search)))),
     );
-    return { data: matches, meta: buildEducationMeta("universites-publiques", matches.length) };
+    return paginate(matches, buildEducationMeta("universites-publiques", matches.length), request.query);
   });
 
   app.get<{ Params: { id: string } }>(`${universityUrl}/:id`, {

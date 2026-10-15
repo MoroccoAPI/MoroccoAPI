@@ -4,6 +4,7 @@ import { after, before, describe, it } from "node:test";
 import type { FastifyInstance } from "fastify";
 
 import { buildApp } from "../../src/app.js";
+import { collectAllPages } from "../helpers/pagination.js";
 
 let app: FastifyInstance;
 before(async () => { app = await buildApp(); await app.ready(); });
@@ -141,7 +142,14 @@ describe("telecom/ranges and areas", () => {
     const response = await app.inject({ method: "GET", url: "/api/v1/telecom/numbering-ranges" });
     assert.equal(response.statusCode, 200);
     assert.equal(response.json().meta.total, 156);
-    assert.equal(response.json().data.length, 156);
+    assert.equal(response.json().data.length, 100);
+    assert.deepEqual(response.json().meta.pagination, {
+      limit: 100, offset: 0, count: 100, has_more: true, next_offset: 100,
+    });
+    const complete = await collectAllPages(app, "/api/v1/telecom/numbering-ranges");
+    assert.equal(complete.data.length, 156);
+    assert.equal(complete.meta.total, 156);
+    assert.deepEqual(response.json().data, complete.data.slice(0, 100));
     assert.equal(response.json().meta.license, "Apache-2.0");
     for (const source of response.json().meta.sources) {
       assert.equal(source.source_updated_at, null);
@@ -168,9 +176,9 @@ describe("telecom/ranges and areas", () => {
   });
 
   it("lists and retrieves multilingual area descriptions with source labels preserved", async () => {
-    const list = await app.inject({ method: "GET", url: "/api/v1/telecom/area-codes" });
-    assert.equal(list.statusCode, 200);
-    assert.equal(list.json().meta.total, 77);
+    const list = await collectAllPages(app, "/api/v1/telecom/area-codes");
+    assert.equal(list.meta.total, 77);
+    assert.equal(list.data.length, 77);
     const filtered = await app.inject({ method: "GET", url: "/api/v1/telecom/area-codes?prefix=0537" });
     assert.equal(filtered.json().meta.total, 8);
     const detail = await app.inject({ method: "GET", url: "/api/v1/telecom/area-codes/05376" });

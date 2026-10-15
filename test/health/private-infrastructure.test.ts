@@ -9,6 +9,7 @@ import { buildApp } from "../../src/app.js";
 import { loadRegions } from "../../src/geography/data/regions.js";
 import { loadPrivateInfrastructure } from "../../src/health/data/private-infrastructure.js";
 import type { PrivateInfrastructure } from "../../src/health/types.js";
+import { collectAllPages } from "../helpers/pagination.js";
 
 const url = "/api/v1/health/private-infrastructure";
 let app: FastifyInstance;
@@ -28,7 +29,13 @@ describe("health/private-infrastructure", () => {
   it("returns national and regional indicators with the Geography metadata envelope", async () => {
     const response = await app.inject(url);
     assert.equal(response.statusCode, 200);
-    const body = response.json();
+    const firstPage = response.json();
+    assert.deepEqual(firstPage.data, records.slice(0, 100));
+    assert.equal(firstPage.meta.total, 13);
+    assert.deepEqual(firstPage.meta.pagination, {
+      limit: 100, offset: 0, count: 13, has_more: false, next_offset: null,
+    });
+    const body = await collectAllPages<PrivateInfrastructure>(app, url);
     assert.equal(body.data.length, 13);
     assert.equal(body.meta.total, 13);
     assert.equal(body.meta.dataset, "private-infrastructure");
@@ -45,7 +52,7 @@ describe("health/private-infrastructure", () => {
   });
 
   it("preserves all nine official national indicators and their reference year", async () => {
-    const body = (await app.inject(url)).json();
+    const body = await collectAllPages<PrivateInfrastructure>(app, url);
     const national = body.data.filter((record: PrivateInfrastructure) => record.geographic_level === "national");
     assert.deepEqual(national, [{
       geographic_level: "national", region_code: null, reference_year: 2024,
@@ -74,7 +81,7 @@ describe("health/private-infrastructure", () => {
   });
 
   it("keeps unavailable regional breakdowns null and reconciles published totals", async () => {
-    const body = (await app.inject(url)).json();
+    const body = await collectAllPages<PrivateInfrastructure>(app, url);
     const national = body.data.find((record: PrivateInfrastructure) => record.geographic_level === "national") as PrivateInfrastructure;
     const regional = body.data.filter((record: PrivateInfrastructure) => record.geographic_level === "region") as PrivateInfrastructure[];
     assert.equal(new Set(regional.map((record) => record.region_code)).size, 12);
@@ -99,9 +106,9 @@ describe("health/private-infrastructure", () => {
 
   it("documents aggregate scope, null counts, source year and region filtering", async () => {
     const route = (await app.inject("/openapi.json")).json().paths[url].get;
-    assert.equal(route.parameters.length, 1);
-    assert.equal(route.parameters[0].name, "region_code");
-    assert.equal(route.parameters[0].schema.enum.length, 12);
+    assert.deepEqual(route.parameters.map((parameter: { name: string }) => parameter.name).sort(), ["limit", "offset", "region_code"]);
+    const region = route.parameters.find((parameter: { name: string }) => parameter.name === "region_code");
+    assert.equal(region.schema.enum.length, 12);
     assert.ok(route.description.includes("2024"));
     assert.ok(route.responses["400"]);
     const record = route.responses["200"].content["application/json"].schema.properties.data.items;

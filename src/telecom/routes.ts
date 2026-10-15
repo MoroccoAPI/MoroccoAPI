@@ -1,5 +1,6 @@
 import type { FastifyPluginAsync } from "fastify";
 
+import { collectionResponseSchema, paginate, paginationQuerySchema, type PaginationQuery } from "../common/pagination.js";
 import { errorSchema, responseSchema } from "../common/schemas.js";
 import { loadTelecom } from "./data/prefixes.js";
 import { buildDatasetMeta } from "./metadata.js";
@@ -57,14 +58,14 @@ export const telecom: FastifyPluginAsync = async (app) => {
     },
   );
 
-  app.get<{ Querystring: RangeQuery }>(
+  app.get<{ Querystring: RangeQuery & PaginationQuery }>(
     "/api/v1/telecom/numbering-ranges",
     {
       schema: {
         tags, summary: "List licensed carrier and geographic prefix mappings",
         description: "These are Google mapping prefixes, not an official allocation register. More specific prefixes override broad descriptions.",
-        querystring: rangeQuerySchema,
-        response: { 200: responseSchema({ type: "array", items: numberingRangeSchema }, rangeMetaSchema), 400: errorSchema },
+        querystring: paginationQuerySchema(rangeQuerySchema),
+        response: { 200: collectionResponseSchema(numberingRangeSchema, rangeMetaSchema), 400: errorSchema },
       },
     },
     async (request) => {
@@ -73,7 +74,7 @@ export const telecom: FastifyPluginAsync = async (app) => {
         (!prefix || range.prefix.startsWith(prefix)) &&
         (!operator || range.original_operator?.code === operator) &&
         (!category || range.category === category));
-      return { data: matches, meta: buildDatasetMeta("numbering-ranges", matches.length) };
+      return paginate(matches, buildDatasetMeta("numbering-ranges", matches.length), request.query);
     },
   );
   app.get<{ Params: PrefixParams }>(
@@ -96,19 +97,19 @@ export const telecom: FastifyPluginAsync = async (app) => {
     },
   );
 
-  app.get<{ Querystring: AreaCodeQuery }>(
+  app.get<{ Querystring: AreaCodeQuery & PaginationQuery }>(
     "/api/v1/telecom/area-codes",
     {
       schema: {
         tags, summary: "List geographic prefix descriptions in French and English",
         description: "A prefix can describe multiple areas. Labels are preserved from Google and are not administrative identifiers or physical locations.",
-        querystring: prefixQuerySchema,
-        response: { 200: responseSchema({ type: "array", items: areaCodeSchema }, areaMetaSchema), 400: errorSchema },
+        querystring: paginationQuerySchema(prefixQuerySchema),
+        response: { 200: collectionResponseSchema(areaCodeSchema, areaMetaSchema), 400: errorSchema },
       },
     },
     async (request) => {
       const matches = areas.filter((area) => !request.query.prefix || area.code.startsWith(request.query.prefix));
-      return { data: matches, meta: buildDatasetMeta("area-codes", matches.length) };
+      return paginate(matches, buildDatasetMeta("area-codes", matches.length), request.query);
     },
   );
   app.get<{ Params: AreaCodeParams }>(

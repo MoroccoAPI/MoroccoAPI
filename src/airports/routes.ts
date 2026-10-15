@@ -1,4 +1,5 @@
 import type { FastifyPluginAsync } from "fastify";
+import { collectionResponseSchema, paginate, paginationQuerySchema, type PaginationQuery } from "../common/pagination.js";
 import { errorSchema, responseSchema } from "../common/schemas.js";
 import { normalizeSearch } from "../common/search.js";
 import { loadAirports } from "./data.js";
@@ -11,12 +12,12 @@ export const airports: FastifyPluginAsync = async (app) => {
   const byIcao = new Map(records.filter((row) => row.icao_code !== null).map((row) => [row.icao_code!, row]));
   const tags = ["Airports"];
 
-  app.get<{ Querystring: AirportQuery }>("/api/v1/airports", {
+  app.get<{ Querystring: AirportQuery & PaginationQuery }>("/api/v1/airports", {
     schema: {
       tags, summary: "List and search airports tagged MA in OurAirports",
       description: "Community snapshot from 14 October 2026. Includes heliports and source-marked closed sites. Search names, source municipalities, IATA or ICAO codes. Optional filters combine with AND.",
-      querystring: airportQuerySchema,
-      response: { 200: responseSchema({ type: "array", items: airportSchema }, datasetMetaSchema), 400: errorSchema },
+      querystring: paginationQuerySchema(airportQuerySchema),
+      response: { 200: collectionResponseSchema(airportSchema, datasetMetaSchema), 400: errorSchema },
     },
   }, async (request, reply) => {
     const { q, city, type, scheduled_service } = request.query;
@@ -34,7 +35,7 @@ export const airports: FastifyPluginAsync = async (app) => {
       (type === undefined || record.type === type) &&
       (scheduled_service === undefined || record.scheduled_service === scheduled_service),
     );
-    return { data: matches, meta: buildDatasetMeta(matches.length) };
+    return paginate(matches, buildDatasetMeta(matches.length), request.query);
   });
 
   app.get<{ Params: AirportParams }>("/api/v1/airports/:icao", {

@@ -1,6 +1,7 @@
 import type { FastifyPluginAsync } from "fastify";
 
-import { errorSchema, responseSchema } from "../common/schemas.js";
+import { collectionResponseSchema, paginate, paginationQuerySchema, type PaginationQuery } from "../common/pagination.js";
+import { errorSchema } from "../common/schemas.js";
 import { normalizeSearch } from "../common/search.js";
 import type { GeographySnapshot } from "../geography/types.js";
 import { loadPostal } from "./data/postal-codes.js";
@@ -31,16 +32,16 @@ export const postal: FastifyPluginAsync<{ geography: GeographySnapshot }> = asyn
   }));
   const cityByKey = new Map(cities.map((city) => [compact(city.name), city.name]));
 
-  app.get<{ Querystring: PostalCodeQuery }>("/api/v1/postal-codes", {
+  app.get<{ Querystring: PostalCodeQuery & PaginationQuery }>("/api/v1/postal-codes", {
     schema: {
       tags, summary: "Search postal codes by place, city, province or region",
       description: `Requires at least one of q, region_code, province_code or city. A place can have several codes, and one code can cover many places. ${snapshot}`,
-      querystring: postalCodeQuerySchema(
+      querystring: paginationQuerySchema(postalCodeQuerySchema(
         geography.regions.map((region) => region.code),
         geography.provinces.map((province) => province.code),
-      ),
+      )),
       response: {
-        200: responseSchema({ type: "array", items: postalCodeSchema }, metaSchema),
+        200: collectionResponseSchema(postalCodeSchema, metaSchema),
         400: errorSchema,
       },
     },
@@ -75,22 +76,24 @@ export const postal: FastifyPluginAsync<{ geography: GeographySnapshot }> = asyn
       (cityKey === null || recordCity === cityKey) &&
       (query === null || (isCodePrefix ? record.postal_code.startsWith(query) : names.some((name) => name.includes(query)))),
     ).map(({ record }) => record);
-    return { data: matches, meta: buildDatasetMeta(matches.length) };
+    return paginate(matches, buildDatasetMeta(matches.length), request.query);
   });
 
-  app.get("/api/v1/postal-codes/cities", {
+  app.get<{ Querystring: PaginationQuery }>("/api/v1/postal-codes/cities", {
     schema: {
       tags, summary: "List the cities whose neighbourhoods have different postal codes", description: snapshot,
-      response: { 200: responseSchema({ type: "array", items: multiCodeCitySchema }, metaSchema) },
+      querystring: paginationQuerySchema(),
+      response: { 200: collectionResponseSchema(multiCodeCitySchema, metaSchema), 400: errorSchema },
     },
-  }, async () => ({ data: cities, meta: buildDatasetMeta(cities.length) }));
+  }, async (request) => paginate(cities, buildDatasetMeta(cities.length), request.query));
 
-  app.get<{ Params: PostalCodeParams }>("/api/v1/postal-codes/:code", {
+  app.get<{ Params: PostalCodeParams; Querystring: PaginationQuery }>("/api/v1/postal-codes/:code", {
     schema: {
       tags, summary: "Get every locality and neighbourhood that uses a postal code", description: snapshot,
       params: postalCodeParamsSchema,
+      querystring: paginationQuerySchema(),
       response: {
-        200: responseSchema({ type: "array", items: postalCodeSchema }, metaSchema),
+        200: collectionResponseSchema(postalCodeSchema, metaSchema),
         400: errorSchema,
         404: errorSchema,
       },
@@ -104,6 +107,6 @@ export const postal: FastifyPluginAsync<{ geography: GeographySnapshot }> = asyn
         request_id: request.id,
       } });
     }
-    return { data: matches, meta: buildDatasetMeta(matches.length) };
+    return paginate(matches, buildDatasetMeta(matches.length), request.query);
   });
 };

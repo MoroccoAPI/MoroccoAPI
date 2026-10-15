@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { after, before, describe, it } from "node:test";
 import type { FastifyInstance } from "fastify";
 import { buildApp } from "../../src/app.js";
+import { collectAllPages } from "../helpers/pagination.js";
 import type { Museum } from "../../src/museums/types.js";
 
 let app: FastifyInstance;
@@ -12,7 +13,10 @@ describe("Museums API", () => {
   it("serves all 23 source museums with bilingual names and visible freshness/coverage", async () => {
     const response = await app.inject("/api/v1/museums");
     assert.equal(response.statusCode, 200);
-    const body = response.json();
+    assert.deepEqual(response.json().meta.pagination, {
+      limit: 100, offset: 0, count: 23, has_more: false, next_offset: null,
+    });
+    const body = await collectAllPages(app, "/api/v1/museums");
     assert.equal(body.data.length, 23);
     assert.equal(body.meta.total, 23);
     assert.equal(new Set(body.data.map((r: Museum) => r.id)).size, 23);
@@ -103,7 +107,7 @@ describe("Museums API", () => {
     const spec = (await app.inject("/openapi.json")).json();
     const list = spec.paths["/api/v1/museums"].get;
     assert.deepEqual(list.tags, ["Museums"]);
-    assert.deepEqual(list.parameters.map((p: { name: string }) => p.name).sort(), ["city_code", "q", "region_code"]);
+    assert.deepEqual(list.parameters.map((p: { name: string }) => p.name).sort(), ["city_code", "limit", "offset", "q", "region_code"]);
     const detail = spec.paths["/api/v1/museums/{id}"].get;
     assert.ok(detail.responses["200"] && detail.responses["400"] && detail.responses["404"]);
   });

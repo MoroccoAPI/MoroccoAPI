@@ -4,6 +4,7 @@ import { after, before, describe, it } from "node:test";
 import type { FastifyInstance } from "fastify";
 
 import { buildApp } from "../../src/app.js";
+import { collectAllPages } from "../helpers/pagination.js";
 
 let app: FastifyInstance;
 
@@ -41,6 +42,7 @@ describe("population/national", () => {
     assert.equal(data.urban.foreigners + data.rural.foreigners, data.foreigners);
     assert.equal(body.meta.dataset, "national-population");
     assert.equal(body.meta.total, 1);
+    assert.ok(!("pagination" in body.meta));
     assert.equal(body.meta.license, "CC-BY-4.0");
     assert.equal(body.meta.retrieved_at, "2026-10-05");
     assert.equal(body.meta.transformation_version, "2.0.0");
@@ -79,6 +81,9 @@ describe("population/regions", () => {
     assert.equal(regions.length, 12);
     assert.equal(body.meta.dataset, "regional-population");
     assert.equal(body.meta.total, regions.length);
+    assert.deepEqual(body.meta.pagination, {
+      limit: 100, offset: 0, count: 12, has_more: false, next_offset: null,
+    });
     assert.equal(body.meta.license, "CC-BY-4.0");
     assert.equal(new Set(regions.map((region: { code: string }) => region.code)).size, regions.length);
 
@@ -146,6 +151,9 @@ describe("population/historical", () => {
     assert.ok(historical.length > 0);
     assert.equal(body.meta.dataset, "historical-population");
     assert.equal(body.meta.total, historical.length);
+    assert.deepEqual(body.meta.pagination, {
+      limit: 100, offset: 0, count: historical.length, has_more: false, next_offset: null,
+    });
     assert.equal(body.meta.license, "CC-BY-4.0");
 
     const years = historical.map((record: { year: number }) => record.year);
@@ -216,6 +224,9 @@ describe("population/provinces", () => {
     assert.equal(provinces.length, 75);
     assert.equal(body.meta.dataset, "subdivision-population");
     assert.equal(body.meta.total, provinces.length);
+    assert.deepEqual(body.meta.pagination, {
+      limit: 100, offset: 0, count: 75, has_more: false, next_offset: null,
+    });
     assert.equal(new Set(provinces.map((item: { hcp_code: string }) => item.hcp_code)).size, provinces.length);
 
     const totals = provinces.reduce(
@@ -268,7 +279,14 @@ describe("population/communes", () => {
     assert.equal(nationalResponse.statusCode, 200);
     assert.equal(provincesResponse.statusCode, 200);
 
-    const body = communesResponse.json();
+    const firstPage = communesResponse.json();
+    assert.equal(firstPage.data.length, 100);
+    assert.equal(firstPage.meta.total, 1503);
+    assert.deepEqual(firstPage.meta.pagination, {
+      limit: 100, offset: 0, count: 100, has_more: true, next_offset: 100,
+    });
+
+    const body = await collectAllPages(app, "/api/v1/population/communes");
     const communes = body.data;
     assert.equal(communes.length, 1503);
     assert.equal(body.meta.dataset, "commune-population");

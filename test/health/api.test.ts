@@ -9,6 +9,7 @@ import { loadRegions } from "../../src/geography/data/regions.js";
 import { loadGeography } from "../../src/geography/data/subdivisions.js";
 import { loadHospitals } from "../../src/health/data/hospitals.js";
 import type { Hospital } from "../../src/health/types.js";
+import { collectAllPages } from "../helpers/pagination.js";
 
 let app: FastifyInstance;
 let hospitals: readonly Hospital[];
@@ -29,7 +30,14 @@ describe("health/hospitals", () => {
   it("returns the complete directory with the same metadata fields as Geography", async () => {
     const response = await app.inject("/api/v1/health/hospitals");
     assert.equal(response.statusCode, 200);
-    const body = response.json();
+    const firstPage = response.json();
+    assert.deepEqual(firstPage.data, hospitals.slice(0, 100));
+    assert.equal(firstPage.meta.total, hospitals.length);
+    assert.deepEqual(firstPage.meta.pagination, {
+      limit: 100, offset: 0, count: Math.min(100, hospitals.length),
+      has_more: hospitals.length > 100, next_offset: hospitals.length > 100 ? 100 : null,
+    });
+    const body = await collectAllPages<Hospital>(app, "/api/v1/health/hospitals");
     assert.equal(body.data.length, hospitals.length);
     assert.equal(body.meta.total, body.data.length);
     assert.equal(body.meta.license, "ODbL-1.0");
@@ -42,7 +50,7 @@ describe("health/hospitals", () => {
   });
 
   it("returns unique records without preparation details", async () => {
-    const body = (await app.inject("/api/v1/health/hospitals")).json();
+    const body = await collectAllPages<Hospital>(app, "/api/v1/health/hospitals");
     const ids = body.data.map((hospital: Hospital) => hospital.id);
     assert.equal(new Set(ids).size, ids.length);
     for (const hospital of body.data) {
@@ -56,9 +64,7 @@ describe("health/hospitals", () => {
   });
 
   it("combines region, province and official category filters", async () => {
-    const response = await app.inject("/api/v1/health/hospitals?region_code=fes-meknes&province_code=fes&category=HIR");
-    assert.equal(response.statusCode, 200);
-    const body = response.json();
+    const body = await collectAllPages<Hospital>(app, "/api/v1/health/hospitals?region_code=fes-meknes&province_code=fes&category=HIR");
     assert.ok(body.data.length > 0);
     for (const record of body.data as Hospital[]) {
       assert.equal(record.region_code, "fes-meknes");
