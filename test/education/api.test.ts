@@ -46,6 +46,7 @@ describe("education datasets", () => {
       assert.equal(body.meta.total, expected.length);
       assert.equal(body.meta.license, "ODbL-1.0");
       assert.equal(body.meta.sources.length, 1);
+      assert.match(body.meta.sources[0].producer, /\(MENPS\)$/);
       assert.equal(new Set(body.data.map((school: EducationSchool) => school.id)).size, expected.length);
       assert.ok(body.data.every((school: EducationSchool) => school.category === config.category));
     });
@@ -81,6 +82,9 @@ describe("education datasets", () => {
     assert.equal(body.meta.dataset, "universites-publiques");
     assert.equal(body.meta.total, universities.length);
     assert.equal(body.meta.sources.length, 1);
+    assert.equal(body.meta.sources[0].dataset, "Établissements de l’enseignement supérieur universitaire public ouverts, année 2024–2025");
+    assert.equal(body.meta.sources[0].producer, "Ministère de l’Enseignement Supérieur, de la Recherche Scientifique et de l’Innovation (MESRSI)");
+    assert.ok(body.data.some((record: UniversityEstablishment) => typeof record.enrollment_2023_2024 === "number"));
     assert.equal(new Set(body.data.map((record: UniversityEstablishment) => record.id)).size, universities.length);
   });
 

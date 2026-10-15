@@ -61,7 +61,9 @@ sources:
     source_license: Open Data Commons Open Database License (ODbL)
   - language_fields: [ar, fr]
     dataset: universites-publiques-2024-2025.xlsx
-    producer: ministere de l'education nationale et de la formation professionnelle (MENPS)
+    producer: Ministère de l’Enseignement Supérieur, de la Recherche Scientifique et de l’Innovation (MESRSI)
+    directory_year: 2024-2025
+    enrollment_year: 2023-2024
     catalog_url: https://data.gov.ma/data/fr/dataset/etablissements-de-l-enseignement-superieur-universitaire-public-ouverts
     resource_url: https://data.gov.ma/data/fr/dataset/etablissements-de-l-enseignement-superieur-universitaire-public-ouverts/resource/fb9c2300-77f7-461c-86a5-9184b00e57d9
     source_updated_at: 19/02/2025
