@@ -1,4 +1,5 @@
 import { responseSchema } from "./schemas.js";
+import { assertSafeIntegerInRange } from "./validation.js";
 
 export interface PaginationQuery {
   limit?: number;
@@ -64,6 +65,8 @@ export function paginate<T, M extends { total: number }>(
 ) {
   const limit = query.limit ?? DEFAULT_PAGE_LIMIT;
   const offset = query.offset ?? 0;
+  assertSafeIntegerInRange(limit, "limit", 1, MAX_PAGE_LIMIT);
+  assertSafeIntegerInRange(offset, "offset", 0, MAX_PAGE_OFFSET);
   const data = records.slice(offset, offset + limit);
   const nextOffset = offset + data.length;
   const hasMore = nextOffset < records.length;

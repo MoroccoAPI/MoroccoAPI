@@ -130,7 +130,7 @@ export async function buildApp(
   );
 
   app.setErrorHandler((error: FastifyError, request, reply) => {
-    if (error.validation) {
+    if (error.validation || error.code === "VALIDATION_ERROR") {
       return reply.code(400).send({
         error: {
           code: "VALIDATION_ERROR",
