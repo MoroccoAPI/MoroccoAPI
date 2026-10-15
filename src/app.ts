@@ -3,6 +3,7 @@ import swaggerUi from "@fastify/swagger-ui";
 import Fastify, {
   type FastifyError,
   type FastifyInstance,
+  type FastifyReply,
   type FastifyRequest,
   type FastifyServerOptions,
 } from "fastify";
@@ -28,6 +29,27 @@ export async function buildApp(
   const loggerOptions = typeof options.logger === "object" ? options.logger : {};
   const app = Fastify({
     ...options,
+    frameworkErrors: options.frameworkErrors ?? ((error: FastifyError, request: FastifyRequest, reply: FastifyReply) => {
+      const statusCode = error.statusCode ?? 500;
+      const isClientError = statusCode < 500;
+      let message = "An internal error occurred";
+      if (isClientError) {
+        message = error.code === "FST_ERR_BAD_URL"
+          ? "The requested URL is malformed"
+          : error.code === "FST_ERR_MAX_PARAM_LENGTH"
+            ? "A URL parameter exceeds the maximum length"
+            : "The request could not be processed";
+      } else {
+        request.log.error(error);
+      }
+      return reply.code(statusCode).send({
+        error: {
+          code: isClientError ? "REQUEST_ERROR" : "INTERNAL_ERROR",
+          message,
+          request_id: request.id,
+        },
+      });
+    }),
     ...(options.logger ? {
       logger: {
         ...loggerOptions,
