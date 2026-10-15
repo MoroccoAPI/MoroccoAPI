@@ -1,0 +1,627 @@
+[
+  {
+    "id": "fnm-agadir-agadir-musee-d-art",
+    "name": {
+      "ar": "أكادير متحف الفن",
+      "fr": "Agadir Musée d'Art",
+      "en": null
+    },
+    "aliases": [
+      "Agadir Musée d’Art"
+    ],
+    "city_code": "agadir-ida-ou-tanane--agadir",
+    "region_code": "souss-massa",
+    "address_fr": "Avenue Hassan II, passage Ait Souss",
+    "contact": {
+      "phone_e164": "+212528821632",
+      "phone_status": "format_valid_unverified",
+      "social_handles": [
+        "agadir.musee.dart"
+      ]
+    },
+    "opening_hours_text_fr": "10h - 18h (Fermé Mar)",
+    "admission_text_fr": "Marocains/Résidents: 20 DH <18/Etudiants: 10 DH Étrangers: 40 DH",
+    "coordinates": null,
+    "operating_status": "unknown",
+    "quality_flags": []
+  },
+  {
+    "id": "fnm-agadir-musee-de-la-reconstruction-d-agadir",
+    "name": {
+      "ar": "متحف إعادة بناء أكادير",
+      "fr": "Musée de la reconstruction d'Agadir",
+      "en": null
+    },
+    "aliases": [
+      "Musée de la reconstruction d’Agadir"
+    ],
+    "city_code": "agadir-ida-ou-tanane--agadir",
+    "region_code": "souss-massa",
+    "address_fr": "Ancien bâtiment Banque Al-Maghrib",
+    "contact": {
+      "phone_e164": null,
+      "phone_status": "missing",
+      "social_handles": [
+        "museereconstructionagadir"
+      ]
+    },
+    "opening_hours_text_fr": "10h - 18h (Fermé Mar)",
+    "admission_text_fr": "Marocains/Résidents (+18): 20 DH <18: 10 DH Étrangers: 50 DH",
+    "coordinates": null,
+    "operating_status": "unknown",
+    "quality_flags": [
+      "phone_missing"
+    ]
+  },
+  {
+    "id": "fnm-azilal-musee-d-azilal",
+    "name": {
+      "ar": "متحف أزيلال",
+      "fr": "Musée d'Azilal",
+      "en": null
+    },
+    "aliases": [
+      "Musée d’Azilal"
+    ],
+    "city_code": "azilal--azilal",
+    "region_code": "beni-mellal-khenifra",
+    "address_fr": "Avenue Hassan 2, Quartier admin.",
+    "contact": {
+      "phone_e164": null,
+      "phone_status": "invalid_format",
+      "social_handles": []
+    },
+    "opening_hours_text_fr": "10h - 18h (Fermé Mar)",
+    "admission_text_fr": "Marocains/Résidents: 20 DH <18 ans: 10 DH Étrangers: 40 DH",
+    "coordinates": null,
+    "operating_status": "unknown",
+    "quality_flags": [
+      "phone_invalid_format"
+    ]
+  },
+  {
+    "id": "fnm-casablanca-musee-de-la-photographic-et-des-arts-visuels-de-casablanca",
+    "name": {
+      "ar": "متحف التصوير الفوتوغرافي والفنون البصرية بالدار البيضاء",
+      "fr": "Musée de la photographic et des arts visuels de Casablanca",
+      "en": null
+    },
+    "aliases": [
+      "Musée de la photographie et des arts visuels de Casablanca"
+    ],
+    "city_code": "casablanca--casablanca",
+    "region_code": "casablanca-settat",
+    "address_fr": "Rue de Larache, Ancienne Médina",
+    "contact": {
+      "phone_e164": "+212530676081",
+      "phone_status": "format_valid_unverified",
+      "social_handles": [
+        "museedelaphotographiecasa"
+      ]
+    },
+    "opening_hours_text_fr": "10h - 18h (Fermé Mar)",
+    "admission_text_fr": "Marocains/Résidents: 25 DH Etrangers: 50 DH",
+    "coordinates": null,
+    "operating_status": "unknown",
+    "quality_flags": [
+      "french_name_differs_from_guide",
+      "phone_shared_in_source"
+    ]
+  },
+  {
+    "id": "fnm-casablanca-villa-carl-ficke-musee-de-la-memoire-de-casablanca",
+    "name": {
+      "ar": "فيلا كارل فيك، متحف ذاكرة الدار البيضاء",
+      "fr": "Villa Carl Ficke, Musée de la Mémoire de Casablanca",
+      "en": null
+    },
+    "aliases": [],
+    "city_code": "casablanca--casablanca",
+    "region_code": "casablanca-settat",
+    "address_fr": "119 Bd de la Résistance",
+    "contact": {
+      "phone_e164": null,
+      "phone_status": "missing",
+      "social_handles": [
+        "museevillacarlficke"
+      ]
+    },
+    "opening_hours_text_fr": "10h - 18h (Fermé Mar)",
+    "admission_text_fr": "Marocains/Résidents: 25 DH Étrangers: 50 DH",
+    "coordinates": null,
+    "operating_status": "unknown",
+    "quality_flags": [
+      "phone_missing"
+    ]
+  },
+  {
+    "id": "fnm-fes-musee-al-batha-des-arts-de-l-islam",
+    "name": {
+      "ar": "متحف البطحاء للفنون الإسلامية بفاس",
+      "fr": "Musée Al Bathā des Arts de l'islam",
+      "en": null
+    },
+    "aliases": [
+      "Musée Al Batha des Arts de l’Islam, Fès"
+    ],
+    "city_code": "fes--fes",
+    "region_code": "fes-meknes",
+    "address_fr": "5, Place Batha Oued Fejjaline",
+    "contact": {
+      "phone_e164": null,
+      "phone_status": "missing",
+      "social_handles": [
+        "museealbatha"
+      ]
+    },
+    "opening_hours_text_fr": "10h - 18h (Fermé Mar)",
+    "admission_text_fr": "Marocains/Résidents: 30 DH Etrangers: 60 DH Enfants: 15 DH",
+    "coordinates": null,
+    "operating_status": "unknown",
+    "quality_flags": [
+      "phone_missing"
+    ]
+  },
+  {
+    "id": "fnm-fes-musee-de-la-culture-juive-marocaine",
+    "name": {
+      "ar": "متحف الثقافة اليهودية المغربية، فاس",
+      "fr": "Musée de la Culture Juive Marocaine",
+      "en": null
+    },
+    "aliases": [
+      "Musée de la Culture Juive Marocaine, Fès"
+    ],
+    "city_code": "fes--fes",
+    "region_code": "fes-meknes",
+    "address_fr": "Mellah de Fès",
+    "contact": {
+      "phone_e164": "+212530676081",
+      "phone_status": "format_valid_unverified",
+      "social_handles": []
+    },
+    "opening_hours_text_fr": "10h - 18h (Fermé Mar)",
+    "admission_text_fr": "Marocains/Résidents: 30 DH Etrangers: 60 DH Enfants: 15 DH",
+    "coordinates": null,
+    "operating_status": "unknown",
+    "quality_flags": [
+      "phone_shared_in_source"
+    ]
+  },
+  {
+    "id": "fnm-marrakech-jamaa-el-fna-musee-du-patrimoine-immateriel",
+    "name": {
+      "ar": "جامع الفنا، متحف التراث اللامدي بمراكش",
+      "fr": "Jamaâ el-fna, musée du patrimoine immatériel",
+      "en": null
+    },
+    "aliases": [
+      "Jamaâ el-fna, musée du patrimoine immatériel, Marrakech"
+    ],
+    "city_code": "marrakech--marrakech",
+    "region_code": "marrakech-safi",
+    "address_fr": "Rue Ibn Marine, Place Jamaâ el-Fna",
+    "contact": {
+      "phone_e164": "+212530676081",
+      "phone_status": "format_valid_unverified",
+      "social_handles": [
+        "museejamaaelfna"
+      ]
+    },
+    "opening_hours_text_fr": "10h - 18h (Fermé Mar)",
+    "admission_text_fr": "Marocains/Résidents: 20 DH <18 Etudiants: 10 DH Étrangers: 40 DH",
+    "coordinates": null,
+    "operating_status": "unknown",
+    "quality_flags": [
+      "phone_shared_in_source"
+    ]
+  },
+  {
+    "id": "fnm-marrakech-musee-des-confluences-dar-el-bacha",
+    "name": {
+      "ar": "متحف الروافد - دار الباشا بمراكش",
+      "fr": "Musée des Confluences, Dar El Bacha",
+      "en": null
+    },
+    "aliases": [
+      "Musée des Confluences, Dar El Bacha, Marrakech"
+    ],
+    "city_code": "marrakech--marrakech",
+    "region_code": "marrakech-safi",
+    "address_fr": "65,69 Riad Laârous, route Dar El Bacha",
+    "contact": {
+      "phone_e164": "+212524381763",
+      "phone_status": "format_valid_unverified",
+      "social_handles": [
+        "darelbachamuseedesconfluences"
+      ]
+    },
+    "opening_hours_text_fr": "10h - 18h (Fermé Lun)",
+    "admission_text_fr": "Marocains: 25 DH Marocains (<18): 15 DH Étrangers: 60 DH",
+    "coordinates": null,
+    "operating_status": "unknown",
+    "quality_flags": [
+      "phone_shared_in_source"
+    ]
+  },
+  {
+    "id": "fnm-marrakech-musee-national-du-tissage-et-du-tapis-dar-si-said",
+    "name": {
+      "ar": "المتحف الوطني للنسيج والزرابي دار سي سعيد بمراكش",
+      "fr": "Musée National du Tissage et du Tapis, Dar Si Said",
+      "en": null
+    },
+    "aliases": [
+      "Musée National du Tissage et du Tapis, Dar Si Saïd, Marrakech"
+    ],
+    "city_code": "marrakech--marrakech",
+    "region_code": "marrakech-safi",
+    "address_fr": "Derb El Bahia, Riad Zitoun Jdid",
+    "contact": {
+      "phone_e164": "+212524381763",
+      "phone_status": "format_valid_unverified",
+      "social_handles": [
+        "museedarsisaid"
+      ]
+    },
+    "opening_hours_text_fr": "10h - 18h (Fermé Mar/Travau)",
+    "admission_text_fr": "Adultes: 30 DH Enfants (+12 ans): 10 DH",
+    "coordinates": null,
+    "operating_status": "unknown",
+    "quality_flags": [
+      "works_mentioned_in_xlsx",
+      "hours_conflict_with_guide",
+      "phone_shared_in_source"
+    ]
+  },
+  {
+    "id": "fnm-meknes-dar-jamai-musee-national-de-la-musique",
+    "name": {
+      "ar": "دار الجامعي، المتحف الوطني للموسيقى بمكناس",
+      "fr": "Dar jamai, Musée National de la Musique",
+      "en": null
+    },
+    "aliases": [
+      "Dar jamaï, Musée National de la Musique, Meknès"
+    ],
+    "city_code": "meknes--meknes",
+    "region_code": "fes-meknes",
+    "address_fr": "Place El-Hdim, ville ancienne",
+    "contact": {
+      "phone_e164": "+212530676081",
+      "phone_status": "format_valid_unverified",
+      "social_handles": [
+        "museedarjamai"
+      ]
+    },
+    "opening_hours_text_fr": "10h - 18h (Fermé Mar)",
+    "admission_text_fr": "Adultes (+18): 30 DH Enfants (+10): 20 DH <10/Scolaires:10 DH",
+    "coordinates": null,
+    "operating_status": "unknown",
+    "quality_flags": [
+      "phone_shared_in_source"
+    ]
+  },
+  {
+    "id": "fnm-rabat-musee-de-l-histoire-et-des-civilisations",
+    "name": {
+      "ar": "متحف التاريخ والحضارات بالرباط",
+      "fr": "Musée de l'Histoire et des Civilisations",
+      "en": null
+    },
+    "aliases": [
+      "Musée de l’Histoire et des Civilisations, Rabat"
+    ],
+    "city_code": "rabat--rabat",
+    "region_code": "rabat-sale-kenitra",
+    "address_fr": "23, rue El Brihi, Hassan",
+    "contact": {
+      "phone_e164": "+212537200398",
+      "phone_status": "format_valid_unverified",
+      "social_handles": [
+        "museemhc"
+      ]
+    },
+    "opening_hours_text_fr": "10h - 18h (Fermé Mar)",
+    "admission_text_fr": "Adultes: 20 DH Jeunes (12+): 10 DH <12/Scolaires: 5 DH",
+    "coordinates": null,
+    "operating_status": "unknown",
+    "quality_flags": []
+  },
+  {
+    "id": "fnm-rabat-musee-mohammed-vi-d-art-moderne-contemporain",
+    "name": {
+      "ar": "متحف محمد السادس للفن الحديث والمعاصر بالرباط",
+      "fr": "Musée Mohammed VI d'art moderne contemporain",
+      "en": null
+    },
+    "aliases": [
+      "Musée Mohammed VI d’art moderne contemporain, Rabat"
+    ],
+    "city_code": "rabat--rabat",
+    "region_code": "rabat-sale-kenitra",
+    "address_fr": "2 Avenue Moulay Hassan",
+    "contact": {
+      "phone_e164": "+212537769047",
+      "phone_status": "format_valid_unverified",
+      "social_handles": [
+        "museemohammed6"
+      ]
+    },
+    "opening_hours_text_fr": "10h - 18h (Fermé Mar)",
+    "admission_text_fr": "Marocains (+18): 30 DH Marocains (<18): 15DH Étrangers:60 DH",
+    "coordinates": null,
+    "operating_status": "unknown",
+    "quality_flags": []
+  },
+  {
+    "id": "fnm-rabat-musee-national-de-la-photographie",
+    "name": {
+      "ar": "المتحف الوطني للفوتوغرافيا بالرباط",
+      "fr": "Musée National de la Photographie",
+      "en": null
+    },
+    "aliases": [
+      "Musée National de la Photographie, Rabat"
+    ],
+    "city_code": "rabat--rabat",
+    "region_code": "rabat-sale-kenitra",
+    "address_fr": "Fort Rottembourg, 61 Av. Jazoulite",
+    "contact": {
+      "phone_e164": "+212530676081",
+      "phone_status": "format_valid_unverified",
+      "social_handles": [
+        "museenationaldelaphotographie"
+      ]
+    },
+    "opening_hours_text_fr": "10h - 18h (Fermé Mar)",
+    "admission_text_fr": "Adultes: 20 DH <12 ans:10 DH <10 ans:Gratuit",
+    "coordinates": null,
+    "operating_status": "unknown",
+    "quality_flags": [
+      "phone_shared_in_source"
+    ]
+  },
+  {
+    "id": "fnm-rabat-oudayas-musee-national-de-la-parure",
+    "name": {
+      "ar": "الأوداية، المتحف الوطني للحِلي بالرباط",
+      "fr": "Oudayas, musée National de la Parure",
+      "en": null
+    },
+    "aliases": [
+      "Oudayas, musée National de la Parure, Rabat"
+    ],
+    "city_code": "rabat--rabat",
+    "region_code": "rabat-sale-kenitra",
+    "address_fr": "Kasbah des Oudayas",
+    "contact": {
+      "phone_e164": "+212530676081",
+      "phone_status": "format_valid_unverified",
+      "social_handles": [
+        "oudayas.museenationalparure"
+      ]
+    },
+    "opening_hours_text_fr": "10h - 18h (Fermé Mar)",
+    "admission_text_fr": "Marocains (+18): 30 DH Marocains <18:15DH Etrangers: 60 DH",
+    "coordinates": null,
+    "operating_status": "unknown",
+    "quality_flags": [
+      "phone_shared_in_source"
+    ]
+  },
+  {
+    "id": "fnm-safi-musee-national-de-la-ceramique",
+    "name": {
+      "ar": "المتحف الوطني للخزف بآسفي",
+      "fr": "Musée National de la Céramique",
+      "en": null
+    },
+    "aliases": [
+      "Musée National de la Céramique, Safi"
+    ],
+    "city_code": "safi--safi",
+    "region_code": "marrakech-safi",
+    "address_fr": "Avenue Al Medina El Mounawara",
+    "contact": {
+      "phone_e164": "+212524463967",
+      "phone_status": "format_valid_unverified",
+      "social_handles": [
+        "musee.national.ceramique"
+      ]
+    },
+    "opening_hours_text_fr": "10h - 18h (Fermé Mar)",
+    "admission_text_fr": "Adultes: 20 DH 12-18 ans: 10 DH <12 ans: 5DH",
+    "coordinates": null,
+    "operating_status": "unknown",
+    "quality_flags": []
+  },
+  {
+    "id": "fnm-sale-musee-du-football-marocain",
+    "name": {
+      "ar": "متحف كرة القدم المغربية بسلا",
+      "fr": "Musée du Football Marocain",
+      "en": null
+    },
+    "aliases": [
+      "Musée du Football Marocain, Salé"
+    ],
+    "city_code": "sale--sale",
+    "region_code": "rabat-sale-kenitra",
+    "address_fr": "Complexe Mohammed VI, Maâmora",
+    "contact": {
+      "phone_e164": null,
+      "phone_status": "missing",
+      "social_handles": [
+        "museefootmaroc"
+      ]
+    },
+    "opening_hours_text_fr": "Sam & Dim 10h - 18h",
+    "admission_text_fr": "Marocains: 20 DH Enfants: 10 DH Étrangers: 50 DH",
+    "coordinates": null,
+    "operating_status": "unknown",
+    "quality_flags": [
+      "phone_missing"
+    ]
+  },
+  {
+    "id": "fnm-tanger-dar-niaba-musee-de-artistes-voyageurs",
+    "name": {
+      "ar": "دار النيابة، متحف الفنانين الرحل بطنجة",
+      "fr": "Dar Niaba, musée de artistes voyageurs",
+      "en": null
+    },
+    "aliases": [
+      "Dar Niaba, musée de artistes voyageurs, Tanger"
+    ],
+    "city_code": "tanger-assilah--tanger",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "address_fr": "41, Rue Siaghine",
+    "contact": {
+      "phone_e164": "+212530676081",
+      "phone_status": "format_valid_unverified",
+      "social_handles": [
+        "museedarniaba"
+      ]
+    },
+    "opening_hours_text_fr": "10h - 18h (Fermé Mar)",
+    "admission_text_fr": "Marocains (+18): 20 DH <18/Scolaires: 10 DH Étrangers:20 DH",
+    "coordinates": null,
+    "operating_status": "unknown",
+    "quality_flags": [
+      "phone_shared_in_source"
+    ]
+  },
+  {
+    "id": "fnm-tanger-musee-de-la-kasbah-espace-d-art-contemporain",
+    "name": {
+      "ar": "متحف القصبة، فضاء الفن المعاصر بطنجة",
+      "fr": "Musée de la Kasbah - Espace d'art contemporain",
+      "en": null
+    },
+    "aliases": [
+      "Musée de la Kasbah - Espace d'art contemporain, Tanger"
+    ],
+    "city_code": "tanger-assilah--tanger",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "address_fr": "Place Al Mechouar, 90030",
+    "contact": {
+      "phone_e164": "+212530676081",
+      "phone_status": "format_valid_unverified",
+      "social_handles": [
+        "museeackt"
+      ]
+    },
+    "opening_hours_text_fr": "10h - 18h (Fermé Mar)",
+    "admission_text_fr": "Jumelé: 30 DH <18 ans: 15 DH Scolaires: 5 DH",
+    "coordinates": null,
+    "operating_status": "unknown",
+    "quality_flags": [
+      "phone_shared_in_source"
+    ]
+  },
+  {
+    "id": "fnm-tanger-musee-la-kasbah-des-cultures-mediterraneennes",
+    "name": {
+      "ar": "متحف القصبة للثقافات المتوسطية بطنجة",
+      "fr": "Musée la Kasbah des cultures méditerranéennes",
+      "en": null
+    },
+    "aliases": [
+      "Musée la Kasbah des cultures méditerranéennes, Tanger"
+    ],
+    "city_code": "tanger-assilah--tanger",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "address_fr": "Place de la Kasbah, 90030",
+    "contact": {
+      "phone_e164": "+212539334481",
+      "phone_status": "format_valid_unverified",
+      "social_handles": [
+        "museelakasbah"
+      ]
+    },
+    "opening_hours_text_fr": "10h - 18h (Fermé Mar)",
+    "admission_text_fr": "Jumelé: 30 DH 12-18 ans: 15 DH <12 ans: 5 DH",
+    "coordinates": null,
+    "operating_status": "unknown",
+    "quality_flags": []
+  },
+  {
+    "id": "fnm-tanger-villa-harris-musee-de-tanger",
+    "name": {
+      "ar": "ڤيلا هاريس، متحف طنجة",
+      "fr": "Villa Harris, Musée de Tanger",
+      "en": null
+    },
+    "aliases": [],
+    "city_code": "tanger-assilah--tanger",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "address_fr": "Boulevard Mohammed VI",
+    "contact": {
+      "phone_e164": "+212530676081",
+      "phone_status": "format_valid_unverified",
+      "social_handles": [
+        "museevillaharris"
+      ]
+    },
+    "opening_hours_text_fr": "10h - 18h (Fermé Mar)",
+    "admission_text_fr": "Adultes: 20 DH <18 ans: 10 DH Scolaires: 5 DH",
+    "coordinates": null,
+    "operating_status": "unknown",
+    "quality_flags": [
+      "phone_shared_in_source"
+    ]
+  },
+  {
+    "id": "fnm-tetouan-musee-archeologique",
+    "name": {
+      "ar": "المتحف الأثري بتطوان",
+      "fr": "Musée archéologique",
+      "en": null
+    },
+    "aliases": [
+      "Musée archéologique, Tétouan"
+    ],
+    "city_code": "tetouan--tetouan",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "address_fr": "2, avenue Ben Hssain, 93000",
+    "contact": {
+      "phone_e164": "+212539969270",
+      "phone_status": "format_valid_unverified",
+      "social_handles": [
+        "musee.archeologique.tetouan"
+      ]
+    },
+    "opening_hours_text_fr": "10h - 18h (Fermé Mar)",
+    "admission_text_fr": "Adultes: 10 DH Enfants: 3 DH",
+    "coordinates": null,
+    "operating_status": "unknown",
+    "quality_flags": []
+  },
+  {
+    "id": "fnm-tetouan-musee-bab-el-oqla",
+    "name": {
+      "ar": "متحف باب العُقلَة بتطوان",
+      "fr": "Musée Bab El Oqla",
+      "en": null
+    },
+    "aliases": [
+      "Musée Bab El Oqla, Tétouan"
+    ],
+    "city_code": "tetouan--tetouan",
+    "region_code": "tanger-tetouan-al-hoceima",
+    "address_fr": "68, Rue Skala, 93040",
+    "contact": {
+      "phone_e164": "+212539993121",
+      "phone_status": "format_valid_unverified",
+      "social_handles": [
+        "museebabeloqla"
+      ]
+    },
+    "opening_hours_text_fr": "10h - 18h (Fermé Mar)",
+    "admission_text_fr": "Adultes: 20 DH 12-18 ans: 10 DH <12 ans: 5 DH",
+    "coordinates": null,
+    "operating_status": "unknown",
+    "quality_flags": []
+  }
+]

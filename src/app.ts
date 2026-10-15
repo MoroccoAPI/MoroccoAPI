@@ -20,6 +20,7 @@ import { telecom } from "./telecom/routes.js";
 import { education } from "./education/routes.js";
 import { holidays } from "./holidays/routes.js";
 import { airports } from "./airports/routes.js";
+import { museums } from "./museums/routes.js";
 
 export async function buildApp(
   options: FastifyServerOptions = { logger: false },
@@ -74,6 +75,7 @@ export async function buildApp(
         { name: "Telecom", description: "Local phone formatting and licensed carrier and geographic prefix mappings" },
         { name: "Holidays", description: "Moroccan public holidays and business days with confirmation status" },
         { name: "Airports", description: "OurAirports MA directory with codes, municipalities and source coordinates" },
+        { name: "Museums", description: "FNM September 2026 museum inventory with visitor information and source metadata" },
         { name: "Postal codes", description: "Poste Maroc postal codes for localities and city neighbourhoods (September 2018 snapshot), linked to administrative geography" },
       ],
     },
@@ -141,6 +143,7 @@ export async function buildApp(
   await app.register(education);
   await app.register(holidays);
   await app.register(airports);
+  await app.register(museums, { geography: geographyData });
   await app.register(postal, { geography: geographyData });
 
   return app;
