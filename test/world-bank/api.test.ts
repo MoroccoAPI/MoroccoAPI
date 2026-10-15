@@ -5,6 +5,7 @@ import type { FastifyInstance } from "fastify";
 
 import { buildApp } from "../../src/app.js";
 import type { Indicator, IndicatorSummary, Topic } from "../../src/world-bank/types.js";
+import { collectAllPages } from "../helpers/pagination.js";
 
 let app: FastifyInstance;
 
@@ -24,10 +25,18 @@ const get = async (url: string) => {
 
 describe("world-bank/catalogue", () => {
   it("lists every published indicator without values or attribution detail", async () => {
-    const { status, body } = await get("/api/v1/world-bank/indicators");
+    const { status, body: firstPage } = await get("/api/v1/world-bank/indicators");
     assert.equal(status, 200);
+    assert.equal(firstPage.data.length, 100);
+    assert.equal(firstPage.meta.total, 1362);
+    assert.deepEqual(firstPage.meta.pagination, {
+      limit: 100, offset: 0, count: 100, has_more: true, next_offset: 100,
+    });
+    const body = await collectAllPages<IndicatorSummary>(app, "/api/v1/world-bank/indicators");
     assert.equal(body.data.length, 1362);
     assert.equal(body.meta.total, 1362);
+    assert.equal(new Set(body.data.map((indicator) => indicator.code)).size, 1362);
+    assert.deepEqual(firstPage.data, body.data.slice(0, 100));
     assert.deepEqual(Object.keys(body.data[0]).sort(), [
       "code", "first_year", "last_year", "license", "name", "periodicity", "topic", "topic_code", "unit", "value_count",
     ]);
@@ -56,9 +65,56 @@ describe("world-bank/catalogue", () => {
   it("lists the 13 topics with counts matching the catalogue", async () => {
     const { body } = await get("/api/v1/world-bank/indicators/topics");
     assert.equal(body.data.length, 13);
+    assert.deepEqual(body.meta.pagination, {
+      limit: 100, offset: 0, count: 13, has_more: false, next_offset: null,
+    });
     const health = body.data.find((topic: Topic) => topic.code === "health");
-    const catalogue = await get("/api/v1/world-bank/indicators?topic=health");
-    assert.equal(health.indicator_count, catalogue.body.data.length);
+    const catalogue = await collectAllPages<IndicatorSummary>(app, "/api/v1/world-bank/indicators?topic=health");
+    assert.equal(health.indicator_count, catalogue.data.length);
+  });
+
+  it("filters the catalogue before paging and retains the matching total", async () => {
+    const url = "/api/v1/world-bank/indicators?topic=infrastructure&q=internet";
+    const complete = await collectAllPages<IndicatorSummary>(app, url);
+    assert.ok(complete.data.length > 1);
+    const { status, body } = await get(`${url}&limit=1&offset=1`);
+    assert.equal(status, 200);
+    assert.deepEqual(body.data, complete.data.slice(1, 2));
+    assert.equal(body.meta.total, complete.data.length);
+    assert.deepEqual(body.meta.pagination, {
+      limit: 1, offset: 1, count: 1,
+      has_more: complete.data.length > 2,
+      next_offset: complete.data.length > 2 ? 2 : null,
+    });
+  });
+
+  it("pages topics in stable order and returns an empty page beyond the end", async () => {
+    const url = "/api/v1/world-bank/indicators/topics";
+    const complete = await collectAllPages<Topic>(app, url);
+    const page = await get(`${url}?limit=3&offset=2`);
+    assert.equal(page.status, 200);
+    assert.deepEqual(page.body.data, complete.data.slice(2, 5));
+    assert.equal(page.body.meta.total, 13);
+    assert.deepEqual(page.body.meta.pagination, {
+      limit: 3, offset: 2, count: 3, has_more: true, next_offset: 5,
+    });
+    const end = await get(`${url}?offset=2147483647`);
+    assert.equal(end.status, 200);
+    assert.deepEqual(end.body.data, []);
+    assert.equal(end.body.meta.total, 13);
+    assert.deepEqual(end.body.meta.pagination, {
+      limit: 100, offset: 2_147_483_647, count: 0, has_more: false, next_offset: null,
+    });
+  });
+
+  it("rejects invalid pagination on both World Bank collections", async () => {
+    for (const path of ["/api/v1/world-bank/indicators", "/api/v1/world-bank/indicators/topics"]) {
+      for (const query of ["limit=501", "limit=Infinity", "offset=-1", "offset=1e309"]) {
+        const { status, body } = await get(`${path}?${query}`);
+        assert.equal(status, 400, `${path}?${query}`);
+        assert.equal(body.error.code, "VALIDATION_ERROR");
+      }
+    }
   });
 });
 
@@ -85,6 +141,37 @@ describe("world-bank/indicator", () => {
     assert.equal(body.data.value_count, 31, "value_count describes the whole series");
     const empty = await get("/api/v1/world-bank/indicators/IT.NET.USER.ZS?from=1960&to=1980");
     assert.deepEqual(empty.body.data.values, []);
+  });
+
+  it("rejects non-finite and out-of-range bounds before filtering values", async () => {
+    for (const parameter of ["from", "to"]) {
+      for (const value of ["Infinity", "-Infinity", "+Infinity", "1e309", "-1e309", "NaN", "9007199254740992", "1960.5", "1959", "2101"]) {
+        const url = `/api/v1/world-bank/indicators/IT.NET.USER.ZS?${new URLSearchParams({ [parameter]: value })}`;
+        const { status, body } = await get(url);
+        assert.equal(status, 400, url);
+        assert.deepEqual(Object.keys(body), ["error"], url);
+        assert.deepEqual(Object.keys(body.error).sort(), ["code", "message", "request_id"], url);
+        assert.equal(body.error.code, "VALIDATION_ERROR", url);
+        assert.equal(typeof body.error.message, "string", url);
+        assert.ok(body.error.message.length > 0, url);
+        assert.equal(typeof body.error.request_id, "string", url);
+        assert.ok(body.error.request_id.length > 0, url);
+      }
+    }
+  });
+
+  it("retains inclusive finite bounds and numeric coercion for indicator details", async () => {
+    const url = "/api/v1/world-bank/indicators/IT.NET.USER.ZS";
+    const whole = await get(url);
+    const bounded = await get(`${url}?from=1960&to=2100`);
+    assert.equal(whole.status, 200);
+    assert.equal(bounded.status, 200);
+    assert.deepEqual(bounded.body, whole.body);
+    const ordinary = await get(`${url}?from=2022&to=2024`);
+    const numericNotation = await get(`${url}?from=2.022e3&to=2024.0`);
+    assert.equal(numericNotation.status, 200);
+    assert.deepEqual(numericNotation.body, ordinary.body);
+    assert.ok(!Object.hasOwn(whole.body.meta, "pagination"));
   });
 
   it("explains why an excluded indicator is not published", async () => {

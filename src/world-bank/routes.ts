@@ -1,7 +1,9 @@
 import type { FastifyPluginAsync } from "fastify";
 
+import { collectionResponseSchema, paginate, paginationQuerySchema, type PaginationQuery } from "../common/pagination.js";
 import { errorSchema, responseSchema } from "../common/schemas.js";
 import { normalizeSearch } from "../common/search.js";
+import { assertSafeIntegerInRange } from "../common/validation.js";
 import { loadWorldBank } from "./data/indicators.js";
 import { buildDatasetMeta } from "./metadata.js";
 import {
@@ -32,12 +34,12 @@ export const worldBank: FastifyPluginAsync = async (app) => {
   const byCode = new Map(indicators.map((indicator) => [indicator.code.toUpperCase(), indicator]));
   const excludedByCode = new Map(excluded.map((entry) => [entry.code.toUpperCase(), entry]));
 
-  app.get<{ Querystring: IndicatorQuery }>("/api/v1/world-bank/indicators", {
+  app.get<{ Querystring: IndicatorQuery & PaginationQuery }>("/api/v1/world-bank/indicators", {
     schema: {
       tags, summary: "List World Bank development indicators available for Morocco",
       description: `The ${summaries.length} World Development Indicators with Moroccan values and a CC BY 4.0 license. ${estimates}`,
-      querystring: indicatorQuerySchema(topics.map((topic) => topic.code)),
-      response: { 200: responseSchema({ type: "array", items: indicatorSummarySchema }, metaSchema), 400: errorSchema },
+      querystring: paginationQuerySchema(indicatorQuerySchema(topics.map((topic) => topic.code))),
+      response: { 200: collectionResponseSchema(indicatorSummarySchema, metaSchema), 400: errorSchema },
     },
   }, async (request, reply) => {
     const { q, topic } = request.query;
@@ -51,15 +53,16 @@ export const worldBank: FastifyPluginAsync = async (app) => {
       (topic === undefined || summary.topic_code === topic) &&
       (query === null || text.some((value) => value.includes(query))),
     ).map(({ summary }) => summary);
-    return { data: matches, meta: buildDatasetMeta(matches.length) };
+    return paginate(matches, buildDatasetMeta(matches.length), request.query);
   });
 
-  app.get("/api/v1/world-bank/indicators/topics", {
+  app.get<{ Querystring: PaginationQuery }>("/api/v1/world-bank/indicators/topics", {
     schema: {
       tags, summary: "List the World Bank topic groups with their number of indicators",
-      response: { 200: responseSchema({ type: "array", items: topicSchema }, metaSchema) },
+      querystring: paginationQuerySchema(),
+      response: { 200: collectionResponseSchema(topicSchema, metaSchema), 400: errorSchema },
     },
-  }, async () => ({ data: topics, meta: buildDatasetMeta(topics.length) }));
+  }, async (request) => paginate(topics, buildDatasetMeta(topics.length), request.query));
 
   app.get<{ Params: IndicatorParams; Querystring: ValueRangeQuery }>("/api/v1/world-bank/indicators/:code", {
     schema: {
@@ -71,6 +74,8 @@ export const worldBank: FastifyPluginAsync = async (app) => {
     },
   }, async (request, reply) => {
     const { from, to } = request.query;
+    if (from !== undefined) assertSafeIntegerInRange(from, "from", 1960, 2100);
+    if (to !== undefined) assertSafeIntegerInRange(to, "to", 1960, 2100);
     if (from !== undefined && to !== undefined && from > to) {
       return reply.code(400).send({ error: {
         code: "VALIDATION_ERROR", message: "from must not be after to", request_id: request.id,
