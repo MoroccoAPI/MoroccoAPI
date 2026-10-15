@@ -29,6 +29,10 @@ export async function buildApp(
   const loggerOptions = typeof options.logger === "object" ? options.logger : {};
   const app = Fastify({
     ...options,
+    routerOptions: {
+      ...options.routerOptions,
+      maxParamLength: options.routerOptions?.maxParamLength ?? options.maxParamLength ?? 200,
+    },
     frameworkErrors: options.frameworkErrors ?? ((error: FastifyError, request: FastifyRequest, reply: FastifyReply) => {
       const statusCode = error.statusCode ?? 500;
       const isClientError = statusCode < 500;

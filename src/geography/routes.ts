@@ -75,7 +75,7 @@ export const geography: FastifyPluginAsync<{ data: GeographySnapshot }> = async 
       schema: {
         tags, summary: resource.detailSummary,
         params: codeParamsSchema(resource.path === "regions"),
-        response: { 200: responseSchema(resource.schema, metaSchema), 404: errorSchema },
+        response: { 200: responseSchema(resource.schema, metaSchema), 400: errorSchema, 404: errorSchema },
       },
     }, async (request, reply) => {
       const record = resource.records.find((item) => item.code === request.params.code);
