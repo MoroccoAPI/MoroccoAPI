@@ -1,0 +1,722 @@
+[
+  {
+    "id": 3100,
+    "ident": "GMAA",
+    "icao_code": "GMAA",
+    "iata_code": null,
+    "name": "Inezgane Airport",
+    "type": "small_airport",
+    "municipality": "Inezgane",
+    "iso_country": "MA",
+    "iso_region": "MA-09",
+    "location": {
+      "latitude": 30.381399,
+      "longitude": -9.54631
+    },
+    "scheduled_service": false
+  },
+  {
+    "id": 3101,
+    "ident": "GMAD",
+    "icao_code": "GMAD",
+    "iata_code": "AGA",
+    "name": "Al Massira Airport",
+    "type": "large_airport",
+    "municipality": "Agadir (Temsia)",
+    "iso_country": "MA",
+    "iso_region": "MA-09",
+    "location": {
+      "latitude": 30.322478,
+      "longitude": -9.412003
+    },
+    "scheduled_service": true
+  },
+  {
+    "id": 3102,
+    "ident": "GMAT",
+    "icao_code": "GMAT",
+    "iata_code": "TTA",
+    "name": "Tan Tan Airport",
+    "type": "medium_airport",
+    "municipality": "Tan Tan",
+    "iso_country": "MA",
+    "iso_region": "MA-10",
+    "location": {
+      "latitude": 28.447563,
+      "longitude": -11.161749
+    },
+    "scheduled_service": true
+  },
+  {
+    "id": 3103,
+    "ident": "GMFF",
+    "icao_code": "GMFF",
+    "iata_code": "FEZ",
+    "name": "Fes Saïss International Airport",
+    "type": "large_airport",
+    "municipality": "Saïss",
+    "iso_country": "MA",
+    "iso_region": "MA-03",
+    "location": {
+      "latitude": 33.927299,
+      "longitude": -4.97796
+    },
+    "scheduled_service": true
+  },
+  {
+    "id": 3104,
+    "ident": "GMFI",
+    "icao_code": "GMFI",
+    "iata_code": null,
+    "name": "Ifran Airport",
+    "type": "small_airport",
+    "municipality": "Ifran",
+    "iso_country": "MA",
+    "iso_region": "MA-03",
+    "location": {
+      "latitude": 33.505299,
+      "longitude": -5.1529
+    },
+    "scheduled_service": false
+  },
+  {
+    "id": 3105,
+    "ident": "GMFK",
+    "icao_code": "GMFK",
+    "iata_code": "ERH",
+    "name": "Moulay Ali Cherif Airport",
+    "type": "medium_airport",
+    "municipality": "Errachidia",
+    "iso_country": "MA",
+    "iso_region": "MA-08",
+    "location": {
+      "latitude": 31.9475002289,
+      "longitude": -4.39833021164
+    },
+    "scheduled_service": true
+  },
+  {
+    "id": 3106,
+    "ident": "GMFM",
+    "icao_code": "GMFM",
+    "iata_code": "MEK",
+    "name": "Bassatine Airport",
+    "type": "medium_airport",
+    "municipality": "Meknes",
+    "iso_country": "MA",
+    "iso_region": "MA-03",
+    "location": {
+      "latitude": 33.879101,
+      "longitude": -5.51512
+    },
+    "scheduled_service": false
+  },
+  {
+    "id": 3107,
+    "ident": "GMFO",
+    "icao_code": "GMFO",
+    "iata_code": "OUD",
+    "name": "Oujda Angads Airport",
+    "type": "large_airport",
+    "municipality": "Ahl Angad",
+    "iso_country": "MA",
+    "iso_region": "MA-02",
+    "location": {
+      "latitude": 34.789558,
+      "longitude": -1.926041
+    },
+    "scheduled_service": true
+  },
+  {
+    "id": 3109,
+    "ident": "GMME",
+    "icao_code": "GMME",
+    "iata_code": "RBA",
+    "name": "Rabat-Salé Airport",
+    "type": "large_airport",
+    "municipality": "Rabat",
+    "iso_country": "MA",
+    "iso_region": "MA-04",
+    "location": {
+      "latitude": 34.051498,
+      "longitude": -6.75152
+    },
+    "scheduled_service": true
+  },
+  {
+    "id": 3111,
+    "ident": "GMMI",
+    "icao_code": "GMMI",
+    "iata_code": "ESU",
+    "name": "Essaouira-Mogador Airport",
+    "type": "medium_airport",
+    "municipality": "Essaouira",
+    "iso_country": "MA",
+    "iso_region": "MA-07",
+    "location": {
+      "latitude": 31.397499,
+      "longitude": -9.68167
+    },
+    "scheduled_service": true
+  },
+  {
+    "id": 3113,
+    "ident": "GMMN",
+    "icao_code": "GMMN",
+    "iata_code": "CMN",
+    "name": "Mohammed V International Airport",
+    "type": "large_airport",
+    "municipality": "Casablanca",
+    "iso_country": "MA",
+    "iso_region": "MA-06",
+    "location": {
+      "latitude": 33.3675,
+      "longitude": -7.58997
+    },
+    "scheduled_service": true
+  },
+  {
+    "id": 3114,
+    "ident": "GMMW",
+    "icao_code": "GMMW",
+    "iata_code": "NDR",
+    "name": "Nador Al Aaroui International Airport",
+    "type": "large_airport",
+    "municipality": "Al Aaroui",
+    "iso_country": "MA",
+    "iso_region": "MA-02",
+    "location": {
+      "latitude": 34.9888,
+      "longitude": -3.02821
+    },
+    "scheduled_service": true
+  },
+  {
+    "id": 3115,
+    "ident": "GMMX",
+    "icao_code": "GMMX",
+    "iata_code": "RAK",
+    "name": "Marrakesh Menara Airport",
+    "type": "large_airport",
+    "municipality": "Marrakesh",
+    "iso_country": "MA",
+    "iso_region": "MA-07",
+    "location": {
+      "latitude": 31.604807,
+      "longitude": -8.035788
+    },
+    "scheduled_service": true
+  },
+  {
+    "id": 3116,
+    "ident": "GMMY",
+    "icao_code": "GMMP",
+    "iata_code": "NNA",
+    "name": "Kenitra Air Base",
+    "type": "medium_airport",
+    "municipality": "Kenitra",
+    "iso_country": "MA",
+    "iso_region": "MA-04",
+    "location": {
+      "latitude": 34.298901,
+      "longitude": -6.59588
+    },
+    "scheduled_service": false
+  },
+  {
+    "id": 3117,
+    "ident": "GMMZ",
+    "icao_code": "GMMZ",
+    "iata_code": "OZZ",
+    "name": "Ouarzazate International Airport",
+    "type": "large_airport",
+    "municipality": "Ouarzazate",
+    "iso_country": "MA",
+    "iso_region": "MA-08",
+    "location": {
+      "latitude": 30.9391,
+      "longitude": -6.90943
+    },
+    "scheduled_service": true
+  },
+  {
+    "id": 3118,
+    "ident": "GMSL",
+    "icao_code": "GMSL",
+    "iata_code": null,
+    "name": "Sidi Slimane Airport",
+    "type": "small_airport",
+    "municipality": "Sidi Slimane",
+    "iso_country": "MA",
+    "iso_region": "MA-04",
+    "location": {
+      "latitude": 34.230598,
+      "longitude": -6.05014
+    },
+    "scheduled_service": false
+  },
+  {
+    "id": 3119,
+    "ident": "GMTA",
+    "icao_code": "GMTA",
+    "iata_code": "AHU",
+    "name": "Cherif Al Idrissi Airport",
+    "type": "medium_airport",
+    "municipality": "Al Hoceima",
+    "iso_country": "MA",
+    "iso_region": "MA-01",
+    "location": {
+      "latitude": 35.177101,
+      "longitude": -3.83952
+    },
+    "scheduled_service": true
+  },
+  {
+    "id": 3120,
+    "ident": "GMTN",
+    "icao_code": "GMTN",
+    "iata_code": "TTU",
+    "name": "Sania Ramel Airport",
+    "type": "large_airport",
+    "municipality": "Tétouan",
+    "iso_country": "MA",
+    "iso_region": "MA-01",
+    "location": {
+      "latitude": 35.594299,
+      "longitude": -5.32002
+    },
+    "scheduled_service": true
+  },
+  {
+    "id": 3121,
+    "ident": "GMTT",
+    "icao_code": "GMTT",
+    "iata_code": "TNG",
+    "name": "Tangier Ibn Battuta Airport",
+    "type": "large_airport",
+    "municipality": "Tangier",
+    "iso_country": "MA",
+    "iso_region": "MA-01",
+    "location": {
+      "latitude": 35.731741,
+      "longitude": -5.921459
+    },
+    "scheduled_service": true
+  },
+  {
+    "id": 29694,
+    "ident": "GMMD",
+    "icao_code": "GMMD",
+    "iata_code": "BEM",
+    "name": "Beni Mellal Airport",
+    "type": "large_airport",
+    "municipality": "Oulad Yaich",
+    "iso_country": "MA",
+    "iso_region": "MA-05",
+    "location": {
+      "latitude": 32.401895,
+      "longitude": -6.315905
+    },
+    "scheduled_service": true
+  },
+  {
+    "id": 29758,
+    "ident": "MA-0012",
+    "icao_code": null,
+    "iata_code": null,
+    "name": "Anfa Airport",
+    "type": "closed",
+    "municipality": "Casablanca",
+    "iso_country": "MA",
+    "iso_region": "MA-06",
+    "location": {
+      "latitude": 33.5532989502,
+      "longitude": -7.66138982773
+    },
+    "scheduled_service": false
+  },
+  {
+    "id": 29759,
+    "ident": "GMMT",
+    "icao_code": null,
+    "iata_code": null,
+    "name": "Casablanca Tit Mellil Airport",
+    "type": "small_airport",
+    "municipality": "Casablanca",
+    "iso_country": "MA",
+    "iso_region": "MA-06",
+    "location": {
+      "latitude": 33.5975,
+      "longitude": -7.465
+    },
+    "scheduled_service": false
+  },
+  {
+    "id": 29845,
+    "ident": "MA-0013",
+    "icao_code": null,
+    "iata_code": null,
+    "name": "El Jadida Airport",
+    "type": "closed",
+    "municipality": "El Jadida",
+    "iso_country": "MA",
+    "iso_region": "MA-06",
+    "location": {
+      "latitude": 33.233299,
+      "longitude": -8.51667
+    },
+    "scheduled_service": false
+  },
+  {
+    "id": 29867,
+    "ident": "MA-0014",
+    "icao_code": null,
+    "iata_code": null,
+    "name": "Fes Sefrou Airport",
+    "type": "closed",
+    "municipality": "Fes",
+    "iso_country": "MA",
+    "iso_region": "MA-03",
+    "location": {
+      "latitude": 34.008099,
+      "longitude": -4.96556
+    },
+    "scheduled_service": false
+  },
+  {
+    "id": 30228,
+    "ident": "GMFA",
+    "icao_code": "GMFA",
+    "iata_code": null,
+    "name": "Ouezzane Airport",
+    "type": "small_airport",
+    "municipality": "Beni Malek",
+    "iso_country": "MA",
+    "iso_region": "MA-01",
+    "location": {
+      "latitude": 34.793361,
+      "longitude": -5.635986
+    },
+    "scheduled_service": false
+  },
+  {
+    "id": 30369,
+    "ident": "MA-0015",
+    "icao_code": null,
+    "iata_code": null,
+    "name": "Safi Airport",
+    "type": "closed",
+    "municipality": "Safi",
+    "iso_country": "MA",
+    "iso_region": "MA-07",
+    "location": {
+      "latitude": 32.275414,
+      "longitude": -9.234266
+    },
+    "scheduled_service": false
+  },
+  {
+    "id": 30412,
+    "ident": "MA-0016",
+    "icao_code": null,
+    "iata_code": null,
+    "name": "Sidi Ifni Airport",
+    "type": "closed",
+    "municipality": "Sidi Ifni",
+    "iso_country": "MA",
+    "iso_region": "MA-10",
+    "location": {
+      "latitude": 29.368889,
+      "longitude": -10.180278
+    },
+    "scheduled_service": false
+  },
+  {
+    "id": 30472,
+    "ident": "GMMO",
+    "icao_code": "GMMO",
+    "iata_code": null,
+    "name": "Taroudant Airport",
+    "type": "small_airport",
+    "municipality": "Taroudant",
+    "iso_country": "MA",
+    "iso_region": "MA-09",
+    "location": {
+      "latitude": 30.503487,
+      "longitude": -8.821549
+    },
+    "scheduled_service": false
+  },
+  {
+    "id": 30474,
+    "ident": "GMFZ",
+    "icao_code": "GMFZ",
+    "iata_code": null,
+    "name": "Taza Airport",
+    "type": "small_airport",
+    "municipality": "Taza",
+    "iso_country": "MA",
+    "iso_region": "MA-03",
+    "location": {
+      "latitude": 34.231887,
+      "longitude": -3.94701
+    },
+    "scheduled_service": false
+  },
+  {
+    "id": 30573,
+    "ident": "MA-0011",
+    "icao_code": null,
+    "iata_code": null,
+    "name": "Former Zagora Airport",
+    "type": "closed",
+    "municipality": "Zagora",
+    "iso_country": "MA",
+    "iso_region": "MA-08",
+    "location": {
+      "latitude": 30.320299,
+      "longitude": -5.86667
+    },
+    "scheduled_service": false
+  },
+  {
+    "id": 31539,
+    "ident": "MA-GLN",
+    "icao_code": "GMAG",
+    "iata_code": "GLN",
+    "name": "Guelmim Airport",
+    "type": "small_airport",
+    "municipality": "Guelmim",
+    "iso_country": "MA",
+    "iso_region": "MA-10",
+    "location": {
+      "latitude": 29.026699,
+      "longitude": -10.0503
+    },
+    "scheduled_service": false
+  },
+  {
+    "id": 31541,
+    "ident": "MA-0017",
+    "icao_code": null,
+    "iata_code": null,
+    "name": "Taouima Nador Airport",
+    "type": "closed",
+    "municipality": "Nador",
+    "iso_country": "MA",
+    "iso_region": "MA-02",
+    "location": {
+      "latitude": 35.152986,
+      "longitude": -2.918673
+    },
+    "scheduled_service": false
+  },
+  {
+    "id": 31544,
+    "ident": "GMMB",
+    "icao_code": "GMMB",
+    "iata_code": "GMD",
+    "name": "Ben Slimane Airport",
+    "type": "small_airport",
+    "municipality": "Ben Slimane",
+    "iso_country": "MA",
+    "iso_region": "MA-06",
+    "location": {
+      "latitude": 33.655399,
+      "longitude": -7.22145
+    },
+    "scheduled_service": false
+  },
+  {
+    "id": 300605,
+    "ident": "GMFB",
+    "icao_code": "GMFB",
+    "iata_code": "UAR",
+    "name": "Bouarfa Airport",
+    "type": "medium_airport",
+    "municipality": "Bouarfa",
+    "iso_country": "MA",
+    "iso_region": "MA-02",
+    "location": {
+      "latitude": 32.514306,
+      "longitude": -1.983056
+    },
+    "scheduled_service": true
+  },
+  {
+    "id": 353212,
+    "ident": "MA-0001",
+    "icao_code": null,
+    "iata_code": null,
+    "name": "Cheikh Khalifa Bin Zayed Al Nahyan Hospital Heliport",
+    "type": "heliport",
+    "municipality": "Casablanca",
+    "iso_country": "MA",
+    "iso_region": "MA-06",
+    "location": {
+      "latitude": 33.55178,
+      "longitude": -7.66799
+    },
+    "scheduled_service": false
+  },
+  {
+    "id": 353213,
+    "ident": "MA-0002",
+    "icao_code": null,
+    "iata_code": null,
+    "name": "Lakhmiss N'Arazane Airport",
+    "type": "small_airport",
+    "municipality": "Arazane",
+    "iso_country": "MA",
+    "iso_region": "MA-09",
+    "location": {
+      "latitude": 30.49707,
+      "longitude": -8.63648
+    },
+    "scheduled_service": false
+  },
+  {
+    "id": 356354,
+    "ident": "MA-0004",
+    "icao_code": null,
+    "iata_code": null,
+    "name": "Tata Airport",
+    "type": "small_airport",
+    "municipality": "Tata",
+    "iso_country": "MA",
+    "iso_region": "MA-09",
+    "location": {
+      "latitude": 29.557381,
+      "longitude": -8.007671
+    },
+    "scheduled_service": false
+  },
+  {
+    "id": 429794,
+    "ident": "MA-0005",
+    "icao_code": null,
+    "iata_code": null,
+    "name": "Beni Amir Heliport",
+    "type": "heliport",
+    "municipality": "Tlete Aoulad Azouz",
+    "iso_country": "MA",
+    "iso_region": "MA-05",
+    "location": {
+      "latitude": 32.67406,
+      "longitude": -6.76116
+    },
+    "scheduled_service": false
+  },
+  {
+    "id": 429795,
+    "ident": "MA-0006",
+    "icao_code": null,
+    "iata_code": null,
+    "name": "Khouribga Air Base",
+    "type": "small_airport",
+    "municipality": "Khouribga",
+    "iso_country": "MA",
+    "iso_region": "MA-05",
+    "location": {
+      "latitude": 32.85821,
+      "longitude": -6.9461
+    },
+    "scheduled_service": false
+  },
+  {
+    "id": 429796,
+    "ident": "MA-0007",
+    "icao_code": null,
+    "iata_code": null,
+    "name": "Khouribga West Airport",
+    "type": "small_airport",
+    "municipality": "N'Khila",
+    "iso_country": "MA",
+    "iso_region": "MA-05",
+    "location": {
+      "latitude": 32.8767,
+      "longitude": -7.08445
+    },
+    "scheduled_service": false
+  },
+  {
+    "id": 429797,
+    "ident": "MA-0008",
+    "icao_code": "GMMG",
+    "iata_code": null,
+    "name": "Ben Guerir Air Base",
+    "type": "small_airport",
+    "municipality": "Ouled Ben Anou Grichate",
+    "iso_country": "MA",
+    "iso_region": "MA-07",
+    "location": {
+      "latitude": 32.124889,
+      "longitude": -7.877885
+    },
+    "scheduled_service": false
+  },
+  {
+    "id": 429798,
+    "ident": "MA-0009",
+    "icao_code": null,
+    "iata_code": null,
+    "name": "Sidi Zouine Airport",
+    "type": "small_airport",
+    "municipality": "Sidi Zouine",
+    "iso_country": "MA",
+    "iso_region": "MA-07",
+    "location": {
+      "latitude": 31.63833,
+      "longitude": -8.34768
+    },
+    "scheduled_service": false
+  },
+  {
+    "id": 429847,
+    "ident": "GMAZ",
+    "icao_code": "GMAZ",
+    "iata_code": "OZG",
+    "name": "Zagora Airport",
+    "type": "large_airport",
+    "municipality": "Zagora",
+    "iso_country": "MA",
+    "iso_region": "MA-08",
+    "location": {
+      "latitude": 30.265788,
+      "longitude": -5.860808
+    },
+    "scheduled_service": true
+  },
+  {
+    "id": 605853,
+    "ident": "MA-0019",
+    "icao_code": null,
+    "iata_code": null,
+    "name": "MERZOUGA Field",
+    "type": "small_airport",
+    "municipality": "Merzouga",
+    "iso_country": "MA",
+    "iso_region": "MA-08",
+    "location": {
+      "latitude": 31.12961,
+      "longitude": -4.03169
+    },
+    "scheduled_service": false
+  },
+  {
+    "id": 605980,
+    "ident": "MA-0020",
+    "icao_code": null,
+    "iata_code": null,
+    "name": "FoumZguid Airfield",
+    "type": "small_airport",
+    "municipality": "Foum Zguid",
+    "iso_country": "MA",
+    "iso_region": "MA-09",
+    "location": {
+      "latitude": 30.06854,
+      "longitude": -6.86244
+    },
+    "scheduled_service": false
+  }
+]
