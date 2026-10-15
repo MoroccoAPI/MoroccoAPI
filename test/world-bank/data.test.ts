@@ -4,6 +4,7 @@ import { readFile } from "node:fs/promises";
 import { before, describe, it } from "node:test";
 
 import { assertWorldBankMappings, loadWorldBank } from "../../src/world-bank/data/indicators.js";
+import { parseCsv } from "../../src/world-bank/data/csv.js";
 import {
   assertSourceMetadata, buildWorldBankSnapshot, topicCode,
   type SourceMetadata, type WorldBankMappings,
@@ -89,6 +90,56 @@ describe("world-bank/data", () => {
     assert.ok(data.excluded.every((entry) => entry.license_type !== "CC BY-4.0"));
     const published = new Set(data.indicators.map((indicator) => indicator.code));
     assert.ok(data.excluded.every((entry) => !published.has(entry.code)));
+  });
+
+  it("documents all retained raw license exceptions separately from the CC BY 4.0 API", async () => {
+    const manifest = await readFile(new URL("../../sources/world-bank/wdi-morocco.yml", import.meta.url), "utf8");
+    assert.match(manifest, /^license: CC-BY-4\.0$/m);
+    assert.match(manifest, /^license_scope: Published API indicators only;.*raw snapshot has mixed per-indicator licenses/m);
+    const bulkSource = manifest.match(/  - dataset: "World Development Indicators: Morocco bulk download"\n([\s\S]*?)(?=\n  - dataset:)/)?.[1];
+    assert.ok(bulkSource);
+    assert.match(bulkSource, /^    source_license: mixed-per-indicator$/m);
+    assert.match(bulkSource, /^    raw_file: data\/world-bank\/source\/API_MAR_DS2_en_csv_v2\.csv$/m);
+    const rawLicensing = manifest.match(/\nraw_licensing:\n([\s\S]*?)(?=\nsource_notes:)/)?.[1];
+    assert.ok(rawLicensing);
+    assert.match(rawLicensing, /^  license: mixed-per-indicator$/m);
+    assert.match(rawLicensing, /^  metadata_file: data\/world-bank\/source\/indicator-metadata\.json$/m);
+    assert.match(rawLicensing, /^  license_fields: \[License_Type, License_URL\]$/m);
+    assert.match(rawLicensing, /^  metadata_resource_url: https:\/\/api\.worldbank\.org\/v2\/sources\/2\/series\/all\/metadata\?format=json&per_page=30000$/m);
+    assert.match(rawLicensing, /^  exception_indicators: 9$/m);
+    assert.match(rawLicensing, /^  exception_values: 307$/m);
+    const exceptions = [...rawLicensing.matchAll(/^    - code: (\S+)\n      license_type: (.+)\n      license_url: (.+)\n(?:      terms_url: (.+)\n)?      value_count: (\d+)$/gm)]
+      .map((match) => ({
+        code: match[1]!, licenseType: match[2]!, licenseUrl: match[3]!,
+        termsUrl: match[4] ?? match[3]!, valueCount: Number(match[5]),
+      }));
+    const byCode = new Map(metadata.map((entry) => [entry.code, entry]));
+    const rawExceptions = metadata.filter((entry) => entry.License_Type !== "CC BY-4.0");
+    assert.equal(rawExceptions.length, 9);
+    assert.equal(metadata.length - rawExceptions.length, 1489);
+    assert.match(rawLicensing, /^  default_license_indicators: 1489$/m);
+    assert.deepEqual(exceptions.map((entry) => entry.code).sort(), rawExceptions.map((entry) => entry.code).sort());
+    assert.deepEqual(exceptions.map((entry) => entry.code).sort(), mappings.excluded_indicators.entries.map((entry) => entry.code).sort());
+    const rows = parseCsv(csv).filter((row) => row.some((cell) => cell !== "")).slice(3);
+    const rowsByCode = new Map(rows.map((row) => [row[3]!, row]));
+    const published = new Set(data.indicators.map((entry) => entry.code));
+    const valuesByLicense = new Map<string, number>();
+    for (const exception of exceptions) {
+      const original = byCode.get(exception.code)!;
+      assert.equal(exception.licenseType, original.License_Type, exception.code);
+      assert.equal(exception.licenseUrl, original.License_URL, exception.code);
+      assert.equal(new URL(exception.termsUrl).protocol, "https:", exception.code);
+      const originalRow = rowsByCode.get(exception.code);
+      assert.ok(originalRow, `${exception.code} retains its original raw row`);
+      assert.equal(originalRow.slice(4).filter((value) => value !== "").length, exception.valueCount, exception.code);
+      assert.ok(exception.valueCount > 0);
+      assert.equal(published.has(exception.code), false, `${exception.code} remains excluded from the API`);
+      valuesByLicense.set(exception.licenseType, (valuesByLicense.get(exception.licenseType) ?? 0) + exception.valueCount);
+    }
+    assert.equal(exceptions.reduce((sum, entry) => sum + entry.valueCount, 0), 307);
+    assert.deepEqual([...valuesByLicense].sort(), [["CC BY 3.0 IGO", 3], ["SIPRI terms and conditions", 304]]);
+    assert.equal(buildDatasetMeta(1).license, "CC-BY-4.0");
+    assert.ok(data.indicators.every((entry) => entry.license === "CC-BY-4.0"));
   });
 
   it("carries attribution and the CSV name for a third-party indicator", () => {
