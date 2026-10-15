@@ -34,10 +34,10 @@ describe("postal/data", () => {
   it("loads the documented coverage as immutable snapshots", async () => {
     const { postalCodes, cities } = await loadPostal(geography);
     assert.equal(postalCodes.filter((record) => record.type === "locality").length, 1770);
-    assert.equal(postalCodes.filter((record) => record.type === "neighborhood").length, 9947);
+    assert.equal(postalCodes.filter((record) => record.type === "neighborhood").length, 9952);
     assert.equal(new Set(postalCodes.map((record) => record.postal_code)).size, 2035);
     assert.equal(cities.length, 34);
-    assert.equal(cities.reduce((sum, city) => sum + city.neighborhood_count, 0), 9947);
+    assert.equal(cities.reduce((sum, city) => sum + city.neighborhood_count, 0), 9952);
     assert.ok(Object.isFrozen(postalCodes) && Object.isFrozen(cities));
     assert.ok(postalCodes.every(Object.isFrozen));
     assert.ok(cities.every((city) => Object.isFrozen(city) && Object.isFrozen(city.postal_codes)));
@@ -73,6 +73,7 @@ describe("postal/data", () => {
     const meta = buildDatasetMeta(3);
     assert.deepEqual(Object.keys(meta).sort(), ["dataset", "license", "retrieved_at", "sources", "total", "transformation_version"]);
     assert.equal(meta.license, "ODbL-1.0");
+    assert.equal(meta.transformation_version, "1.1.0");
     assert.ok(meta.sources.some((source) => source.producer === "Barid Al-Maghrib (Poste Maroc)"));
     for (const source of meta.sources) {
       assert.deepEqual(Object.keys(source).sort(), ["dataset", "license", "producer", "resource_url", "source_updated_at", "source_url"]);

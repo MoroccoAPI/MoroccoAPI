@@ -43,7 +43,7 @@ export function buildDatasetMeta(total: number): DatasetMeta {
     total,
     license: "ODbL-1.0",
     retrieved_at: "2026-10-14",
-    transformation_version: "1.0.0",
+    transformation_version: "1.1.0",
     sources,
   };
 }

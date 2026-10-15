@@ -81,11 +81,32 @@ describe("postal/mappings", () => {
       assert.ok(rows.length > 0, alias.source);
       for (const row of rows) {
         const record = snapshot.codes.find((code) => code.postal_code === String(row["NOUVEAU CODE POSTAL"]) && code.type === "locality");
-        assert.equal(record?.province_code, alias.province_code, `${alias.source} → ${row.LOCALITE}`);
+        const correction = mappings.province_corrections.entries.find((entry) => entry.name === clean(row.LOCALITE) &&
+          entry.postal_code === String(row["NOUVEAU CODE POSTAL"]));
+        assert.equal(record?.province_code, correction?.province_code ?? alias.province_code, `${alias.source} → ${row.LOCALITE}`);
       }
     }
     const kelaa = snapshot.codes.filter((code) => code.name === "SIDI MOUSSA" && code.postal_code === "43036");
     assert.deepEqual(kelaa.map((code) => code.province_code), ["el-kelaa-des-sraghna"]);
+  });
+
+  it("corrects only the four reviewed locality province assignments and preserves their source values", () => {
+    assert.equal(mappings.province_corrections.entries.length, 4);
+    const expected = [
+      ["DEROUA OULAD ZIANE", "26202", "SETTAT", "berrechid", "casablanca-settat"],
+      ["IGHIL NOUMGOUN", "45156", "OUARZAZATE", "tinghir", "draa-tafilalet"],
+      ["IMI NFAST", "81033", "GUELMIM", "sidi-ifni", "guelmim-oued-noun"],
+      ["SIDI HSAINE OU ALI", "85572", "TAROUDANT", "sidi-ifni", "guelmim-oued-noun"],
+    ];
+    for (const [name, postalCode, originalProvince, province, region] of expected) {
+      const raw = source.localities.find((row) => clean(row.LOCALITE) === name && String(row["NOUVEAU CODE POSTAL"]) === postalCode);
+      assert.equal(raw?.PROVINCE, originalProvince);
+      const record = snapshot.codes.find((code) => code.type === "locality" && code.name === name && code.postal_code === postalCode);
+      assert.deepEqual(record, {
+        postal_code: postalCode, type: "locality", name, city: null,
+        province_code: province, region_code: region, commune_code: null,
+      });
+    }
   });
 
   it("derives regions from provinces and applies the listed region correction", () => {
@@ -101,11 +122,11 @@ describe("postal/mappings", () => {
     assert.equal(rawJbiyel?.REGION_POSTALE, "FES MEKNES");
   });
 
-  it("removes exact duplicates and the 45 listed misfiled neighbourhoods, nothing more", () => {
+  it("removes exact duplicates and the 40 listed misfiled neighbourhoods, nothing more", () => {
     assert.equal(snapshot.duplicatesRemoved, 34);
-    assert.equal(mappings.excluded_neighborhoods.entries.length, 45);
+    assert.equal(mappings.excluded_neighborhoods.entries.length, 40);
     const neighborhoods = snapshot.codes.filter((code) => code.type === "neighborhood");
-    assert.equal(neighborhoods.length, 10026 - 34 - 45);
+    assert.equal(neighborhoods.length, 10026 - 34 - 40);
     for (const excluded of mappings.excluded_neighborhoods.entries) {
       assert.ok(source.neighborhoods.some((row) => clean(row.VILLE) === excluded.city && clean(row.QUARTIER) === excluded.name &&
         String(row["NOUVEAU CODE POSTAL"]) === excluded.postal_code), `${excluded.city} ${excluded.name} is in the source`);
@@ -116,6 +137,22 @@ describe("postal/mappings", () => {
     for (const name of ["SIDI ABDELKHALEK", "ZAOUIAT SIDI BEN HAMDOUNE"]) {
       const rows = neighborhoods.filter((code) => code.name === name && code.postal_code === "26450");
       assert.deepEqual(rows.map((code) => [code.city, code.province_code]), [["BERRECHID", "berrechid"]]);
+    }
+  });
+
+  it("retains the five Berrechid source neighbourhoods now consistent with Deroua's corrected province", () => {
+    const city = source.cities.find((row) => row.LOCALITE === "BERRECHID");
+    assert.equal(city?.PROVINCE, "BERRECHID");
+    const locality = snapshot.codes.find((code) => code.type === "locality" && code.postal_code === "26202");
+    assert.equal(locality?.province_code, "berrechid");
+    for (const name of ["BSSASLA", "BTIOUA", "JACMA", "KASBAT BEN MCHICH", "LAMBARKIYINE"]) {
+      assert.ok(source.neighborhoods.some((row) => row.VILLE === "BERRECHID" && row.QUARTIER === name &&
+        row["NOUVEAU CODE POSTAL"] === 26202), name);
+      assert.deepEqual(snapshot.codes.find((code) => code.type === "neighborhood" && code.name === name &&
+        code.postal_code === "26202"), {
+        postal_code: "26202", type: "neighborhood", name, city: "BERRECHID",
+        province_code: "berrechid", region_code: "casablanca-settat", commune_code: null,
+      });
     }
   });
 
@@ -144,15 +181,73 @@ describe("postal/mapping safety", () => {
     const commune = copy(mappings);
     commune.city_commune_aliases.entries = [...commune.city_commune_aliases.entries, { source: "NOWHERE", commune_code: "rabat--rabat" }];
     assert.throws(() => build(source, commune), /Unused postal mapping entries: commune:nowhere/);
+    const province = copy(mappings);
+    province.province_corrections.entries = [...province.province_corrections.entries, {
+      ...province.province_corrections.entries[0]!, name: "UNREVIEWED NAME",
+    }];
+    assert.throws(() => build(source, province), /Unused postal mapping entries: province-correction:locality\|UNREVIEWED NAME\|26202/);
   });
 
   it("fails on an unlisted conflict or region disagreement", () => {
     const unlisted = copy(mappings);
     unlisted.excluded_neighborhoods.entries = unlisted.excluded_neighborhoods.entries.slice(1);
-    assert.throws(() => build(source, unlisted), /Unlisted postal neighbourhood conflict 'BERRECHID\|BSSASLA\|26202'/);
+    assert.throws(() => build(source, unlisted), /Unlisted postal neighbourhood conflict 'ERRACHIDIA\|DOUAR DRAOU OLAD BOUCHIHA\|12013'/);
     const region = copy(mappings);
     region.region_corrections.entries = [];
     assert.throws(() => build(source, region), /Unlisted postal region disagreement for 'locality\|JBIYEL\|52476'/);
+  });
+
+  it("rejects stale or duplicated province corrections and unknown target provinces", () => {
+    const changedProvince = copy(source);
+    changedProvince.localities.find((row) => row.LOCALITE === "DEROUA OULAD ZIANE")!.PROVINCE = "BERRECHID";
+    assert.throws(() => build(changedProvince), /Postal province correction 'locality\|DEROUA OULAD ZIANE\|26202' does not match/);
+    const changedRegion = copy(source);
+    changedRegion.localities.find((row) => row.LOCALITE === "SIDI HSAINE OU ALI")!.REGION_POSTALE = "GUELMIM OUED NOUN";
+    assert.throws(() => build(changedRegion), /Postal province correction 'locality\|SIDI HSAINE OU ALI\|85572' does not match/);
+    const noChange = copy(mappings);
+    noChange.province_corrections.entries[1]!.province_code = "ouarzazate";
+    assert.throws(() => build(source, noChange), /does not match the source disagreement/);
+    const duplicate = copy(mappings);
+    duplicate.province_corrections.entries = [...duplicate.province_corrections.entries, duplicate.province_corrections.entries[0]!];
+    assert.throws(() => build(source, duplicate), /Duplicate postal province correction/);
+    const unknown = copy(mappings);
+    unknown.province_corrections.entries[0]!.province_code = "atlantis";
+    assert.throws(() => build(source, unknown), /Unknown corrected postal province 'atlantis'/);
+  });
+
+  it("rejects malformed province correction keys, guards and evidence", () => {
+    for (const [field, value] of [
+      ["type", "city"], ["name", ""], ["postal_code", "2620"], ["source_province", ""],
+      ["source_region", ""], ["province_code", ""], ["evidence_url", "http://www.hcp.ma/evidence.pdf"],
+    ]) {
+      const malformed = copy(mappings);
+      (malformed.province_corrections.entries[0] as unknown as Record<string, unknown>)[field!] = value;
+      assert.throws(() => assertPostalMappings(malformed), /Invalid postal province correction/, field);
+    }
+  });
+
+  it("scopes province corrections to both the exact cleaned place name and postal code", () => {
+    const extended = copy(source);
+    const original = extended.localities.find((row) => row.LOCALITE === "SIDI HSAINE OU ALI")!;
+    extended.localities.push({ ...original, LOCALITE: "SIDI HSAINE OU ALI ANNEX" });
+    extended.localities.push({ ...original, "NOUVEAU CODE POSTAL": 85573 });
+    const records = build(extended).codes;
+    for (const [name, code] of [["SIDI HSAINE OU ALI ANNEX", "85572"], ["SIDI HSAINE OU ALI", "85573"]]) {
+      const unreviewed = records.find((record) => record.name === name && record.postal_code === code);
+      assert.deepEqual([unreviewed?.province_code, unreviewed?.region_code], ["taroudannt", "souss-massa"]);
+    }
+    const mismatch = copy(source);
+    mismatch.localities[0]!.REGION_POSTALE = "SOUSS MASSA";
+    assert.throws(() => build(mismatch), /Unlisted postal region disagreement/);
+  });
+
+  it("rejects a stale Berrechid exclusion after correcting Deroua", () => {
+    const stale = copy(mappings);
+    stale.excluded_neighborhoods.entries = [...stale.excluded_neighborhoods.entries, {
+      city: "BERRECHID", name: "BSSASLA", postal_code: "26202",
+      reason: "code_of_locality_in_other_province", code_owner: { locality: "DEROUA OULAD ZIANE", province_code: "settat" },
+    }];
+    assert.throws(() => build(source, stale), /Postal exclusion 'BERRECHID\|BSSASLA\|26202' does not match a conflicting row/);
   });
 
   it("fails on an exclusion or correction that no longer matches the source", () => {

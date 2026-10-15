@@ -1,6 +1,6 @@
 id: postal-codes
 title: Morocco postal codes for localities and multi-code city neighbourhoods (Poste Maroc, September 2018 snapshot)
-version: 1.0.0
+version: 1.1.0
 retrieved_at: 2026-10-14
 snapshot: 2018-09
 license: ODbL-1.0
@@ -53,7 +53,7 @@ files:
     data/postal/source/*.json hold the header columns of each spreadsheet verbatim (cell values unchanged,
     including trailing, repeated and non-breaking spaces; codes as numbers). Only fully empty rows are skipped.
   mappings: >-
-    data/postal/mappings.json holds every manual decision: province aliases, region-label aliases, region
+    data/postal/mappings.json holds every manual decision: province aliases, reviewed locality province corrections with HCP evidence, region-label aliases, region
     corrections, the city-to-commune alias and the excluded neighbourhood rows with their reason.
   transformation: >-
     src/postal/data/transform.ts builds the published records from the raw rows and the mapping file when the
@@ -62,17 +62,19 @@ files:
 transformations:
   - Cleaned display values by collapsing repeated and non-breaking whitespace; spelling and case are otherwise preserved. Matching uses an ASCII slug of the cleaned value.
   - Mapped source province names to MoroccoAPI province codes by slug, or by the province_aliases in the mapping file.
-  - Derived region_code from the province. Source region labels are matched by slug or region_label_aliases and checked against the province; every disagreement must be listed in region_corrections.
+  - Corrected four locality province assignments using the scoped province_corrections entries and their HCP evidence (reviewed 2026-10-15). DEROUA OULAD ZIANE (26202) belongs to Berrechid, IGHIL NOUMGOUN (45156) to Tinghir, and IMI NFAST (81033) and SIDI HSAINE OU ALI (85572) to Sidi Ifni. These corrections normalize administrative membership; the source postal codes and place spellings are unchanged. Each entry guards the original cleaned province and region labels and fails if unused, duplicated or stale.
+  - Derived region_code from the province. Source region labels are matched by slug or region_label_aliases and checked against the province; every disagreement must be listed in region_corrections or covered by the guarded source_region of a reviewed province_corrections entry. Correcting SIDI HSAINE OU ALI to Sidi Ifni also changes its derived region from Souss-Massa to Guelmim-Oued Noun.
   - Assigned neighbourhoods the province and region that the multi-code cities file gives for their city.
   - Set commune_code for a locality only when `<province_code>--<slug of the locality name>` is an existing MoroccoAPI commune code; otherwise null. Multi-code cities use the same rule plus city_commune_aliases. Neighbourhoods have no commune_code.
   - Removed 34 neighbourhood rows that repeat the same city, cleaned neighbourhood name and code.
-  - Excluded the 45 neighbourhood rows listed in excluded_neighborhoods. Their code belongs to a locality in another province than their city, so the city label (and the derived province and region) conflicts with the source's own locality list. They are not corrected or reassigned. The 7 Settat/Berrechid rows may be valid cross-boundary assignments but cannot be confirmed; the two Settat rows also appear under Berrechid and are kept there.
+  - Excluded the 40 neighbourhood rows listed in excluded_neighborhoods. Their code belongs to a locality in another province than their city, so the city label (and the derived province and region) conflicts with the locality's normalized province. They are not corrected or reassigned. The two Settat rows may be valid cross-boundary assignments but cannot be confirmed; they also appear under Berrechid and are kept there.
+  - Restored the five source neighbourhood rows in Berrechid using code 26202 (BSSASLA, BTIOUA, JACMA, KASBAT BEN MCHICH and LAMBARKIYINE). Their previous exclusions became stale after the locality DEROUA OULAD ZIANE was correctly linked to Berrechid, so locality and city province now agree.
   - Kept every code of a place as a separate record (206 places have several codes).
   - Sorted records by postal code, type, city and name (code-point order).
 
 coverage:
   localities: 1770
-  neighborhoods: 9947
+  neighborhoods: 9952
   multi_code_cities: 34
   distinct_postal_codes: 2035
   places_with_several_codes: 206
@@ -81,7 +83,7 @@ coverage:
 limitations:
   - This is Poste Maroc's September 2018 snapshot and is not necessarily current. Codes created or changed since then are missing.
   - Localities are postal places, not administrative units. A commune_code means the names match exactly in the same province, not that boundaries were verified; spelling differences (for example AFOURER and the HCP commune Afourar) leave it null.
-  - 45 neighbourhood rows are excluded (see data/postal/mappings.json).
+  - 40 neighbourhood rows are excluded (see data/postal/mappings.json).
   - A neighbourhood can have several codes, for example when a code boundary crosses it. Street-level assignment is not available.
   - Names are uppercase French transliterations as published. Some neighbourhood names contain source encoding errors (for example "MOHA%ADI") and are preserved rather than corrected. No Arabic names are available.
   - One locality (JBIYEL) is labelled with the Fès-Meknès postal region but belongs to Errachidia province; region_code follows the province (Drâa-Tafilalet).

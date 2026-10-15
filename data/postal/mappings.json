@@ -36,6 +36,47 @@
       }
     ]
   },
+  "province_corrections": {
+    "description": "Reviewed locality assignments to current HCP provinces, keyed by type, cleaned name and postal code. Original province and region labels must still match; region_code is derived from the corrected province. Evidence concerns administrative membership, not a change to the source postal code.",
+    "entries": [
+      {
+        "type": "locality",
+        "name": "DEROUA OULAD ZIANE",
+        "postal_code": "26202",
+        "source_province": "SETTAT",
+        "source_region": "CASABLANCA SETTAT",
+        "province_code": "berrechid",
+        "evidence_url": "https://www.hcp.ma/reg-chaouia/docs/Publications/Monographie_Province%20_Berrechid.pdf"
+      },
+      {
+        "type": "locality",
+        "name": "IGHIL NOUMGOUN",
+        "postal_code": "45156",
+        "source_province": "OUARZAZATE",
+        "source_region": "DRAA TAFILALET",
+        "province_code": "tinghir",
+        "evidence_url": "https://www.hcp.ma/draa-tafilalet/docs/annuairesStatistques/Annuaire%20statistiques%202017.pdf"
+      },
+      {
+        "type": "locality",
+        "name": "IMI NFAST",
+        "postal_code": "81033",
+        "source_province": "GUELMIM",
+        "source_region": "GUELMIM OUED NOUN",
+        "province_code": "sidi-ifni",
+        "evidence_url": "https://www.hcp.ma/region-guelmim/attachment/2133169/"
+      },
+      {
+        "type": "locality",
+        "name": "SIDI HSAINE OU ALI",
+        "postal_code": "85572",
+        "source_province": "TAROUDANT",
+        "source_region": "SOUSS MASSA",
+        "province_code": "sidi-ifni",
+        "evidence_url": "https://www.hcp.ma/region-guelmim/docs/IFNI/LAKHSAS.pdf"
+      }
+    ]
+  },
   "region_label_aliases": {
     "description": "Source postal-region labels whose slug is not a MoroccoAPI region code. Labels are only checked against the province; region_code is always derived from the province.",
     "entries": [
@@ -54,7 +95,7 @@
     ]
   },
   "region_corrections": {
-    "description": "Rows whose source region label disagrees with their province. region_code follows the province; every disagreement must be listed here.",
+    "description": "Rows whose source region label disagrees with their province. region_code follows the province; every disagreement must be listed here or covered by the guarded source_region of a province_corrections entry.",
     "entries": [
       {
         "type": "locality",
@@ -78,56 +119,6 @@
   "excluded_neighborhoods": {
     "description": "Neighbourhood rows excluded because their postal code belongs to a locality in another province than their city: the source city label, and therefore the derived province and region, conflict with the source locality list. They are not corrected or reassigned.",
     "entries": [
-      {
-        "city": "BERRECHID",
-        "name": "BSSASLA",
-        "postal_code": "26202",
-        "reason": "code_of_locality_in_other_province",
-        "code_owner": {
-          "locality": "DEROUA OULAD ZIANE",
-          "province_code": "settat"
-        }
-      },
-      {
-        "city": "BERRECHID",
-        "name": "BTIOUA",
-        "postal_code": "26202",
-        "reason": "code_of_locality_in_other_province",
-        "code_owner": {
-          "locality": "DEROUA OULAD ZIANE",
-          "province_code": "settat"
-        }
-      },
-      {
-        "city": "BERRECHID",
-        "name": "JACMA",
-        "postal_code": "26202",
-        "reason": "code_of_locality_in_other_province",
-        "code_owner": {
-          "locality": "DEROUA OULAD ZIANE",
-          "province_code": "settat"
-        }
-      },
-      {
-        "city": "BERRECHID",
-        "name": "KASBAT BEN MCHICH",
-        "postal_code": "26202",
-        "reason": "code_of_locality_in_other_province",
-        "code_owner": {
-          "locality": "DEROUA OULAD ZIANE",
-          "province_code": "settat"
-        }
-      },
-      {
-        "city": "BERRECHID",
-        "name": "LAMBARKIYINE",
-        "postal_code": "26202",
-        "reason": "code_of_locality_in_other_province",
-        "code_owner": {
-          "locality": "DEROUA OULAD ZIANE",
-          "province_code": "settat"
-        }
-      },
       {
         "city": "ERRACHIDIA",
         "name": "DOUAR DRAOU OLAD BOUCHIHA",

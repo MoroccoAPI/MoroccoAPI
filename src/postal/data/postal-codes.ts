@@ -6,7 +6,7 @@ import { assertPostalSource, buildPostalSnapshot, type PostalMappings } from "./
 
 const dataUrl = new URL("../../../data/postal/", import.meta.url);
 const mappingSections = [
-  "province_aliases", "region_label_aliases", "region_corrections", "city_commune_aliases", "excluded_neighborhoods",
+  "province_aliases", "province_corrections", "region_label_aliases", "region_corrections", "city_commune_aliases", "excluded_neighborhoods",
 ] as const;
 
 function isRecord(value: unknown): value is Record<string, unknown> {
@@ -118,6 +118,14 @@ export function assertPostalMappings(value: unknown): asserts value is PostalMap
       return !isRecord(value[section]) || !Array.isArray(entries) || !entries.every(isRecord);
     })) {
     throw new Error("Invalid postal mapping file");
+  }
+  const corrections = (value.province_corrections as { entries: Record<string, unknown>[] }).entries;
+  if (corrections.some((entry) => entry.type !== "locality" || !isName(entry.name) ||
+    typeof entry.postal_code !== "string" || !/^\d{5}$/.test(entry.postal_code) ||
+    !isName(entry.source_province) || !isName(entry.source_region) || !isName(entry.province_code) ||
+    typeof entry.evidence_url !== "string" || !URL.canParse(entry.evidence_url) ||
+    new URL(entry.evidence_url).protocol !== "https:")) {
+    throw new Error("Invalid postal province correction");
   }
 }
 
