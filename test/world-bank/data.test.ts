@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import { before, describe, it } from "node:test";
 
@@ -37,6 +38,27 @@ describe("world-bank/data", () => {
     assert.equal(data.topics.reduce((sum, topic) => sum + topic.indicator_count, 0), 1362);
     assert.ok(Object.isFrozen(data.indicators) && Object.isFrozen(data.topics) && Object.isFrozen(data.excluded));
     assert.ok(data.indicators.every((indicator) => Object.isFrozen(indicator) && Object.isFrozen(indicator.values)));
+  });
+
+  it("matches the checksums and coverage recorded in the source manifest", async () => {
+    const manifest = await readFile(new URL("../../sources/world-bank/wdi-morocco.yml", import.meta.url), "utf8");
+    const files = [...manifest.matchAll(/raw_file: (\S+)\n\s+raw_file_sha256: ([0-9a-f]{64})/g)];
+    assert.deepEqual(files.map((match) => match[1]), [
+      "data/world-bank/source/API_MAR_DS2_en_csv_v2.csv", "data/world-bank/source/indicator-metadata.json",
+    ]);
+    for (const [, path, expected] of files) {
+      const bytes = await readFile(new URL(`../../${path}`, import.meta.url));
+      assert.equal(createHash("sha256").update(bytes).digest("hex"), expected, path);
+    }
+    const coverage = (key: string) => Number(manifest.match(new RegExp(`\\n  ${key}: (\\d+)`))?.[1]);
+    assert.equal(coverage("indicators_in_csv"), metadata.length);
+    assert.equal(coverage("published_indicators"), data.indicators.length);
+    assert.equal(coverage("published_values"), data.indicators.reduce((sum, indicator) => sum + indicator.value_count, 0));
+    assert.equal(coverage("excluded_indicators"), data.excluded.length);
+    assert.equal(coverage("topics"), data.topics.length);
+    assert.equal(coverage("indicators_without_values"), metadata.length - data.indicators.length - data.excluded.length);
+    assert.match(manifest, new RegExp(`source_updated_at: ${WDI_LAST_UPDATED}`));
+    assert.match(manifest, /pages: 1\n\s+per_page: 30000\n\s+total_entries: 21403\n\s+series: 1498/);
   });
 
   it("keeps the raw CSV as published apart from LF line endings, with the declared release date", () => {

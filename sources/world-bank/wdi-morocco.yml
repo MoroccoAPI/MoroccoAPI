@@ -27,10 +27,17 @@ sources:
     source_updated_at: 2026-10-08
     source_license: CC-BY-4.0
     response_sha256: 6533bffd8534c4df9aa87383644c02aac496de3504e50bfc7a0c4cbdb210d5c3
+    response_pagination:
+      page: 1
+      pages: 1
+      per_page: 30000
+      total_entries: 21403
+      series: 1498
     raw_file: data/world-bank/source/indicator-metadata.json
     raw_file_sha256: 469c93ee9b2fc26140605b62338e20d55cab0b1343b3d8bb663da394a3ee5ef0
 
 source_notes:
+  - The series metadata endpoint is paginated by metadata entry, not by indicator (21,403 entries for 1,498 indicators; 22 pages at per_page=1000). The snapshot was taken in a single request with per_page=30000, which the API answered as page 1 of 1, so every page is included. The loader also rejects any CSV indicator without metadata, so a truncated response cannot be published.
   - The license is declared per indicator (License_Type in the series metadata). Only CC BY 4.0 indicators are published; data/world-bank/mappings.json lists the excluded ones.
   - Several indicators come from third parties credited in the Source field (for example ITU, the UN Population Division, ILO or IMF). Their attribution request (Othernotes, e.g. "Please cite the International Telecommunication Union for third-party use of these data.") is published as citation_note.
   - The values are World Bank compilations and estimates. Where a Moroccan official source exists (for example HCP census population), that source remains the official reference.
@@ -48,6 +55,13 @@ files:
     src/world-bank/data/transform.ts builds the published indicators from the raw files and the mapping file when the API
     starts. The build fails if the CSV layout changes, an indicator has no metadata, a non-allowed license is not listed,
     an exclusion is unused, or the CSV date differs from the date declared in src/world-bank/metadata.ts.
+
+refresh:
+  - Download https://api.worldbank.org/v2/en/country/MAR?downloadformat=csv and unzip it; take API_MAR_DS2_en_csv_v2_*.csv.
+  - Convert its line endings from CRLF to LF (nothing else) and save it as data/world-bank/source/API_MAR_DS2_en_csv_v2.csv.
+  - Request the series metadata with per_page at least the reported total (or follow every page), and check that the response says pages equals page (one page) or that all pages were combined.
+  - For every indicator code in the CSV, keep IndicatorName, Topic, Unitofmeasure, Periodicity, Source, License_Type, License_URL, Othernotes and Shortdefinition unchanged (missing fields as null), sorted by code, in data/world-bank/source/indicator-metadata.json.
+  - Update WDI_LAST_UPDATED in src/world-bank/metadata.ts and source_updated_at, the checksums, response_pagination and coverage in this file; add any newly non-CC BY 4.0 indicator to data/world-bank/mappings.json. Run npm run check; the loader and tests reject any mismatch.
 
 transformations:
   - Parsed the bulk CSV (two header lines, then one row per indicator with yearly columns 1960–2025).
