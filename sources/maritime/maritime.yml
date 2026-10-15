@@ -1,0 +1,71 @@
+id: morocco-maritime
+title: Morocco ports and lighthouses
+version: 1.0.0
+reviewed_at: 2026-10-15
+retrieved_at: 2026-10-15
+source_updated_at: 2022-04-12
+source_license: ODbL-1.0
+license_url: https://opendatacommons.org/licenses/odbl/1-0/
+terms_url: https://www.data.gov.ma/fr/node/14
+contains_personal_data: false
+privacy_review: Public infrastructure inventory; no personal records.
+redistribution_review: approved
+
+record_counts:
+  ports: 48
+  lighthouses: 39
+attribution: >-
+  Contains information from the ports and lighthouses datasets published by
+  Morocco's Ministry of Equipment and Water on data.gov.ma, under ODbL 1.0.
+  Source field names and values are preserved in the API responses.
+reuse: >-
+  The adapted database is distributed under ODbL 1.0. Preserve attribution and
+  the license notice and meet applicable share-alike obligations.
+sources:
+  - id: morocco-ports-2022
+    producer: Ministère de l'Equipement et de l'Eau
+    dataset: Liste des ports au Royaume du Maroc
+    source_url: https://data.gov.ma/data/fr/organization/ministere-de-l-equipement-et-de-l-eau
+    resource_url: https://data.gov.ma/data/fr/dataset/liste-des-ports-du-royaume-du-maroc/resource/fbd6a16a-c43f-4384-8177-616dc58a4df9
+    source_updated_at: 2022-04-12
+    source_license: ODbL-1.0
+  - id: morocco-lighthouses-2022
+    producer: Ministère de l'Equipement et de l'Eau
+    dataset: Liste des phares au Royaume du Maroc
+    source_url: https://data.gov.ma/data/fr/organization/ministere-de-l-equipement-et-de-l-eau
+    resource_url: https://data.gov.ma/data/fr/dataset/liste-des-phares-au-royaume-du-maroc/resource/ff12e5b7-f1bf-4927-85f8-41d89c1949b1
+    source_updated_at: 2022-04-12
+    source_license: ODbL-1.0
+transformation:
+  snapshots:
+    ports: data/maritime/ports.json
+    lighthouses: data/maritime/phares.json
+  implementation: src/maritime/data.ts and src/maritime/routes.ts
+  steps:
+    - Keep ports and lighthouses as separate datasets and API resources.
+    - Preserve the source French field names and values in response records.
+    - Keep port latitude and longitude as numeric source coordinates.
+    - Preserve lighthouse service dates and ranges as source values, including non-numeric text.
+    - Do not infer stable identifiers or normalize source geographic labels.
+  verification: node --import tsx --test test/maritime/*.test.ts
+endpoints:
+  - GET /api/v1/ports
+  - GET /api/v1/ports/{name}
+  - GET /api/v1/lighthouses
+filters: >-
+  Lighthouses accept name, region, province, type and ville; text filters are
+  case- and accent-insensitive substring matches and combine with AND.
+lookup: >-
+  Ports are retrieved by source name with case- and accent-insensitive exact
+  matching. No stable source identifier is available.
+update_frequency: No fixed publication schedule documented.
+update_behavior: >-
+  Recheck both source resources, licensing, field types and record counts before
+  replacing snapshots. Requests use local JSON snapshots without network access.
+limitations:
+  - The source snapshot dates to 12 April 2022; current completeness and operational status are unknown.
+  - The datasets provide French field names and do not include an English translation in these snapshots.
+  - Source region, province and city labels are preserved and are not standardized to MoroccoAPI geography codes.
+  - Port lookup depends on the source name and may need review if names change; no stable identifier is provided.
+  - Lighthouse range values can be descriptive source text rather than numeric distances.
+  - Port coordinates and lighthouse range/service details are source facts, not a live navigation or safety service.

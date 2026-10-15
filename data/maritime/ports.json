@@ -1,0 +1,386 @@
+[
+    {
+        "Nom du port": "Al Hoceima",
+        "Type de ports": "Port de pêche/passager/plaisance",
+        "Connectivité": "Routier",
+        "Latitude": 35.25,
+        "Longitude": -3.92,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Assilah",
+        "Type de ports": "pêche/plaisance",
+        "Connectivité": "Routier",
+        "Latitude": 35.47,
+        "Longitude": -6.04,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Boujdour",
+        "Type de ports": "Port de pêche",
+        "Connectivité": "Routier",
+        "Latitude": 26.12,
+        "Longitude": -14.5,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Bouregreg",
+        "Type de ports": "Port de plaisance",
+        "Connectivité": "Routier",
+        "Latitude": 34.03,
+        "Longitude": -6.82,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Cala Iris",
+        "Type de ports": "Port de pêche",
+        "Connectivité": "Routier",
+        "Latitude": 35.15,
+        "Longitude": -4.37,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Casablanca",
+        "Type de ports": "Port de pêche/fret/croisisère/plaisance",
+        "Connectivité": "Routier et Ferroviaire",
+        "Latitude": 33.61,
+        "Longitude": -7.6,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Chmaâla",
+        "Type de ports": "Port de pêche",
+        "Connectivité": "Routier",
+        "Latitude": 35.33,
+        "Longitude": -4.94,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Complexe portuaire d'Agadir",
+        "Type de ports": "Port de fret/pêche/ croisisère",
+        "Connectivité": "Routier",
+        "Latitude": 30.42,
+        "Longitude": -9.64,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Dakhla",
+        "Type de ports": "Port de fret/pêche",
+        "Connectivité": "Routier",
+        "Latitude": 23.66,
+        "Longitude": -15.95,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Dalia",
+        "Type de ports": "Port de pêche",
+        "Connectivité": "Routier",
+        "Latitude": 35.91,
+        "Longitude": -5.47,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "El Jadida",
+        "Type de ports": "Port de pêche",
+        "Connectivité": "Routier",
+        "Latitude": 33.26,
+        "Longitude": -8.5,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Essaouira",
+        "Type de ports": "pêche/plaisance",
+        "Connectivité": "Routier",
+        "Latitude": 31.51,
+        "Longitude": -9.77,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Fnideq",
+        "Type de ports": "Port de pêche",
+        "Connectivité": "Routier",
+        "Latitude": 35.84,
+        "Longitude": -5.35,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Imssouane",
+        "Type de ports": "Port de pêche",
+        "Connectivité": "Routier",
+        "Latitude": 30.84,
+        "Longitude": -9.82,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Inouaren",
+        "Type de ports": "Port de pêche",
+        "Connectivité": "Routier",
+        "Latitude": 35.24,
+        "Longitude": -3.98,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Jebha Chefchaouen",
+        "Type de ports": "Port de pêche",
+        "Connectivité": "Routier",
+        "Latitude": 35.21,
+        "Longitude": -4.67,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Jorf Lasfar",
+        "Type de ports": "fret/pêche",
+        "Connectivité": "Routier et Ferroviaire",
+        "Latitude": 33.13,
+        "Longitude": -8.63,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Kabila Tetouan",
+        "Type de ports": "Port de plaisance",
+        "Connectivité": "Routier",
+        "Latitude": 35.72,
+        "Longitude": -5.34,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Kénitra Atlantique",
+        "Type de ports": "Port de fret",
+        "Connectivité": "Routier et Ferroviaire",
+        "Latitude": 34.42,
+        "Longitude": -6.56,
+        "Etat": "En projet"
+    },
+    {
+        "Nom du port": "Kenitra Fluvial",
+        "Type de ports": "Port de fret/ plaisance",
+        "Connectivité": "Routier et Ferroviaire",
+        "Latitude": 34.27,
+        "Longitude": -6.58,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Ksar Sghir",
+        "Type de ports": "Port de pêche",
+        "Connectivité": "Routier",
+        "Latitude": 35.85,
+        "Longitude": -5.56,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Laâyoune",
+        "Type de ports": "fret/pêche",
+        "Connectivité": "Routier",
+        "Latitude": 27.09,
+        "Longitude": -13.43,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Larache",
+        "Type de ports": "Port de pêche",
+        "Connectivité": "Routier",
+        "Latitude": 35.2,
+        "Longitude": -6.14,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Lemhiriz",
+        "Type de ports": "Port de pêche",
+        "Connectivité": "Routier",
+        "Latitude": 22.2,
+        "Longitude": -16.78,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Marina Atalayoun",
+        "Type de ports": "Port de plaisance",
+        "Connectivité": "Routier",
+        "Latitude": 35.22,
+        "Longitude": -2.9,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Marina d'Agadir",
+        "Type de ports": "Port de plaisance",
+        "Connectivité": "Routier",
+        "Latitude": 30.42,
+        "Longitude": -9.62,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Marina Smir",
+        "Type de ports": "Port de plaisance",
+        "Connectivité": "Routier",
+        "Latitude": 35.75,
+        "Longitude": -5.34,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "M'diq",
+        "Type de ports": "Port de pêche/plaisance",
+        "Connectivité": "Routier",
+        "Latitude": 35.68,
+        "Longitude": -5.31,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Mehdia",
+        "Type de ports": "Port de pêche",
+        "Connectivité": "Routier",
+        "Latitude": 34.27,
+        "Longitude": -6.65,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Mohammedia",
+        "Type de ports": "Port de fret/pêche/plaisance",
+        "Connectivité": "Routier et Ferroviaire",
+        "Latitude": 33.71,
+        "Longitude": -7.4,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Nador - Beni Ensar",
+        "Type de ports": "fret/ passager/pêche",
+        "Connectivité": "Routier et Ferroviaire",
+        "Latitude": 35.28,
+        "Longitude": -2.92,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Nador West Med",
+        "Type de ports": "Port de fret",
+        "Connectivité": "Routier",
+        "Latitude": 35.25,
+        "Longitude": -3.17,
+        "Etat": "En construction"
+    },
+    {
+        "Nom du port": "Nouveau port de Dakhla Atlantique",
+        "Type de ports": "pêche/fret",
+        "Connectivité": "Routier",
+        "Latitude": 24.08,
+        "Longitude": -15.58,
+        "Etat": "En construction"
+    },
+    {
+        "Nom du port": "Nouveau Port de Safi",
+        "Type de ports": "Port de fret",
+        "Connectivité": "Routier",
+        "Latitude": 32.17,
+        "Longitude": -9.27,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Nouveau port énergétique de Jorf Lasfar",
+        "Type de ports": "Port de fret",
+        "Connectivité": "Routier",
+        "Latitude": 33.16,
+        "Longitude": -8.62,
+        "Etat": "En projet"
+    },
+    {
+        "Nom du port": "Nouvelle Marina Tanger",
+        "Type de ports": "Port de plaisance",
+        "Connectivité": "Routier",
+        "Latitude": 35.78,
+        "Longitude": -5.8,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Ras Kebdana Nador",
+        "Type de ports": "Port de pêche/plaisance",
+        "Connectivité": "Routier",
+        "Latitude": 35.15,
+        "Longitude": -2.42,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Sable d'Or Skhirate Temara",
+        "Type de ports": "Port de plaisance",
+        "Connectivité": "Routier",
+        "Latitude": 33.87,
+        "Longitude": -7.05,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Safi",
+        "Type de ports": "Port de fret/pêche/croisière",
+        "Connectivité": "Routier et Ferroviaire",
+        "Latitude": 32.31,
+        "Longitude": -9.25,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Saidia",
+        "Type de ports": "Port de plaisance",
+        "Connectivité": "Routier",
+        "Latitude": 35.11,
+        "Longitude": -2.3,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Salé",
+        "Type de ports": "Port de pêche",
+        "Connectivité": "Routier",
+        "Latitude": 34.04,
+        "Longitude": -6.83,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Sidi Hssaine",
+        "Type de ports": "Port de pêche",
+        "Connectivité": "Routier",
+        "Latitude": 35.2,
+        "Longitude": -3.45,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Sidi Ifni",
+        "Type de ports": "Port de pêche",
+        "Connectivité": "Routier",
+        "Latitude": 29.36,
+        "Longitude": -10.19,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Souiria Kdima",
+        "Type de ports": "Port de pêche",
+        "Connectivité": "Routier",
+        "Latitude": 32.05,
+        "Longitude": -9.34,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Tanger",
+        "Type de ports": "pêche/passager/plaisance/croisière",
+        "Connectivité": "Routier",
+        "Latitude": 35.79,
+        "Longitude": -5.8,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Tanger Med",
+        "Type de ports": "fret/passager",
+        "Connectivité": "Routier et Ferroviaire",
+        "Latitude": 35.89,
+        "Longitude": -5.5,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Tan-Tan",
+        "Type de ports": "Port de fret/pêche",
+        "Connectivité": "Routier",
+        "Latitude": 28.48,
+        "Longitude": -11.35,
+        "Etat": "Existant"
+    },
+    {
+        "Nom du port": "Tarfaya",
+        "Type de ports": "Port de pêche/passager",
+        "Connectivité": "Routier",
+        "Latitude": 27.94,
+        "Longitude": -12.93,
+        "Etat": "Existant"
+    }
+]

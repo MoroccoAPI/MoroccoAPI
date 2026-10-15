@@ -24,6 +24,7 @@ import { education } from "./education/routes.js";
 import { holidays } from "./holidays/routes.js";
 import { airports } from "./airports/routes.js";
 import { museums } from "./museums/routes.js";
+import { maritime } from "./maritime/routes.js";
 
 const publicCorsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -129,6 +130,7 @@ export async function buildApp(
         { name: "Museums", description: "FNM September 2026 museum inventory with visitor information and source metadata" },
         { name: "Postal codes", description: "Poste Maroc postal codes for localities and city neighbourhoods (September 2018 snapshot), linked to administrative geography" },
         { name: "World Bank", description: "World Bank development indicators for Morocco (international estimates, CC BY 4.0)" },
+        { name: "Maritime", description: "Ports and lighthouses from the Ministry of Equipment and Water" },
       ],
     },
   });
@@ -196,6 +198,7 @@ export async function buildApp(
   await app.register(holidays);
   await app.register(airports);
   await app.register(museums, { geography: geographyData });
+  await app.register(maritime);
   await app.register(postal, { geography: geographyData });
   await app.register(worldBank);
 
