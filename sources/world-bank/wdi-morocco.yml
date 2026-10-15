@@ -1,0 +1,88 @@
+id: world-bank-indicators
+title: World Bank World Development Indicators for Morocco
+version: 1.0.0
+retrieved_at: 2026-10-15
+source_updated_at: 2026-10-08
+license: CC-BY-4.0
+license_url: https://datacatalog.worldbank.org/public-licenses#cc-by
+contains_personal_data: false
+
+sources:
+  - dataset: "World Development Indicators: Morocco bulk download"
+    producer: The World Bank
+    catalog_url: https://datacatalog.worldbank.org/search/dataset/0037712/world-development-indicators
+    resource_url: https://api.worldbank.org/v2/en/country/MAR?downloadformat=csv
+    source_updated_at: 2026-10-08
+    source_license: CC-BY-4.0
+    archive_sha256: d0d226d4bba6565f1f59e8a17c54e186ed263910e2610bf0ff2e28fa5d2c2d79
+    archive_file: API_MAR_DS2_en_csv_v2_30148.csv
+    archive_file_sha256: f8631be03026f16c295cc9e1f40cb98a4c3552ebb61e3805b24bbda6410b0248
+    raw_file: data/world-bank/source/API_MAR_DS2_en_csv_v2.csv
+    raw_file_sha256: 6429edac9802bac4d07c7bb66c82af620acc141d5680769941aedb3845177843
+
+  - dataset: "World Development Indicators: series metadata"
+    producer: The World Bank
+    catalog_url: https://datacatalog.worldbank.org/search/dataset/0037712/world-development-indicators
+    resource_url: https://api.worldbank.org/v2/sources/2/series/all/metadata?format=json&per_page=30000
+    source_updated_at: 2026-10-08
+    source_license: CC-BY-4.0
+    response_sha256: 6533bffd8534c4df9aa87383644c02aac496de3504e50bfc7a0c4cbdb210d5c3
+    response_pagination:
+      page: 1
+      pages: 1
+      per_page: 30000
+      total_entries: 21403
+      series: 1498
+    raw_file: data/world-bank/source/indicator-metadata.json
+    raw_file_sha256: 469c93ee9b2fc26140605b62338e20d55cab0b1343b3d8bb663da394a3ee5ef0
+
+source_notes:
+  - The series metadata endpoint is paginated by metadata entry, not by indicator (21,403 entries for 1,498 indicators; 22 pages at per_page=1000). The snapshot was taken in a single request with per_page=30000, which the API answered as page 1 of 1, so every page is included. The loader also rejects any CSV indicator without metadata, so a truncated response cannot be published.
+  - The license is declared per indicator (License_Type in the series metadata). Only CC BY 4.0 indicators are published; data/world-bank/mappings.json lists the excluded ones.
+  - Several indicators come from third parties credited in the Source field (for example ITU, the UN Population Division, ILO or IMF). Their attribution request (Othernotes, e.g. "Please cite the International Telecommunication Union for third-party use of these data.") is published as citation_note.
+  - The values are World Bank compilations and estimates. Where a Moroccan official source exists (for example HCP census population), that source remains the official reference.
+
+files:
+  raw: >-
+    data/world-bank/source/API_MAR_DS2_en_csv_v2.csv is the values file of the bulk archive with only its line endings
+    converted from CRLF to LF, because the repository stores text with LF (.gitattributes); the UTF-8 byte order mark and
+    every value are unchanged. data/world-bank/source/indicator-metadata.json keeps, for each of the 1,498 indicators in
+    the CSV, nine fields of the series metadata with their values unchanged: IndicatorName, Topic, Unitofmeasure,
+    Periodicity, Source, License_Type, License_URL, Othernotes and Shortdefinition.
+  mappings: >-
+    data/world-bank/mappings.json holds the allowed license type and the excluded indicators with their license.
+  transformation: >-
+    src/world-bank/data/transform.ts builds the published indicators from the raw files and the mapping file when the API
+    starts. The build fails if the CSV layout changes, an indicator has no metadata, a non-allowed license is not listed,
+    an exclusion is unused, or the CSV date differs from the date declared in src/world-bank/metadata.ts.
+
+refresh:
+  - Download https://api.worldbank.org/v2/en/country/MAR?downloadformat=csv and unzip it; take API_MAR_DS2_en_csv_v2_*.csv.
+  - Convert its line endings from CRLF to LF (nothing else) and save it as data/world-bank/source/API_MAR_DS2_en_csv_v2.csv.
+  - Request the series metadata with per_page at least the reported total (or follow every page), and check that the response says pages equals page (one page) or that all pages were combined.
+  - For every indicator code in the CSV, keep IndicatorName, Topic, Unitofmeasure, Periodicity, Source, License_Type, License_URL, Othernotes and Shortdefinition unchanged (missing fields as null), sorted by code, in data/world-bank/source/indicator-metadata.json.
+  - Update WDI_LAST_UPDATED in src/world-bank/metadata.ts and source_updated_at, the checksums, response_pagination and coverage in this file; add any newly non-CC BY 4.0 indicator to data/world-bank/mappings.json. Run npm run check; the loader and tests reject any mismatch.
+
+transformations:
+  - Parsed the bulk CSV (two header lines, then one row per indicator with yearly columns 1960–2025).
+  - Kept every non-empty yearly value as a number; years without a value are omitted, never filled in.
+  - Published indicators whose License_Type is CC BY-4.0 and that have at least one value.
+  - Took the indicator name from the CSV. The metadata API words 101 names differently (for example "(BoP, current US$)" instead of "(current US$, BoP)"), and the CSV name is the one published with the values.
+  - Derived topic_code from the first part of the World Bank Topic (for example "Infrastructure: Communications" → infrastructure); the full Topic is also published.
+  - Published License_Type CC BY-4.0 as the identifier CC-BY-4.0 used across MoroccoAPI.
+
+coverage:
+  indicators_in_csv: 1498
+  indicators_without_values: 127
+  excluded_indicators: 9
+  published_indicators: 1362
+  published_values: 46433
+  topics: 13
+  years: 1960–2025
+
+limitations:
+  - Values are international estimates that can differ from Moroccan official statistics and are revised in later World Development Indicators releases. This snapshot is the 2026-10-08 release.
+  - Annual series only (a few indicators are triennial, five-yearly or ad hoc, as stated in periodicity); many series have gaps.
+  - Names, definitions and topics are in English only.
+  - 301 indicators have no unit of measure in the metadata; their unit is published as null and appears only in the name.
+  - Nine indicators with Moroccan values are not published because of their license (six SIPRI military series, three Women, Business and the Law series under CC BY 3.0 IGO).
