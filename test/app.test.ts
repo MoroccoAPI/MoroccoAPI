@@ -120,6 +120,14 @@ describe("Application contracts", () => {
       ] as const) {
         const response = await loggedApp.inject({ method: "GET", url });
         assert.equal(response.statusCode, statusCode, url);
+        if (statusCode >= 400) {
+          const body = response.json();
+          assert.deepEqual(Object.keys(body), ["error"], url);
+          assert.deepEqual(Object.keys(body.error).sort(), ["code", "message", "request_id"], url);
+          assert.equal(typeof body.error.code, "string", url);
+          assert.equal(typeof body.error.message, "string", url);
+          assert.equal(typeof body.error.request_id, "string", url);
+        }
       }
 
       const output = logs.join("");
