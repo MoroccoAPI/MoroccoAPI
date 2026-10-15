@@ -15,6 +15,7 @@ import { status } from "./status.js";
 import { home } from "./home/routes.js";
 import { population } from "./population/routes.js";
 import { postal } from "./postal/routes.js";
+import { worldBank } from "./world-bank/routes.js";
 import { APP_VERSION } from "./version.js";
 import { telecom } from "./telecom/routes.js";
 import { education } from "./education/routes.js";
@@ -77,6 +78,7 @@ export async function buildApp(
         { name: "Airports", description: "OurAirports MA directory with codes, municipalities and source coordinates" },
         { name: "Museums", description: "FNM September 2026 museum inventory with visitor information and source metadata" },
         { name: "Postal codes", description: "Poste Maroc postal codes for localities and city neighbourhoods (September 2018 snapshot), linked to administrative geography" },
+        { name: "World Bank", description: "World Bank development indicators for Morocco (international estimates, CC BY 4.0)" },
       ],
     },
   });
@@ -145,6 +147,7 @@ export async function buildApp(
   await app.register(airports);
   await app.register(museums, { geography: geographyData });
   await app.register(postal, { geography: geographyData });
+  await app.register(worldBank);
 
   return app;
 }
