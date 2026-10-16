@@ -1,0 +1,57 @@
+id: tensift-dams
+title: Situation journalière des barrages dans le bassin du Tensift
+producer: Agence du bassin hydraulique de Tensift (ABHT)
+source_url: https://data.gov.ma/data/fr/dataset/situation-journaliere-des-barrages-dans-le-bassin-du-tensift
+catalog_api_url: https://data.gov.ma/data/api/3/action/package_show?id=situation-journaliere-des-barrages-dans-le-bassin-du-tensift
+source_license: ODbL-1.0
+source_license_id: odc-odbl
+license: ODbL-1.0
+license_url: https://opendatacommons.org/licenses/odbl/1-0/
+retrieved_at: 2026-10-16
+source_updated_at: 2026-10-06T14:32:39.498327
+update_frequency: monthly
+contains_personal_data: false
+redistribution_review: approved
+review_basis: The official dataset metadata explicitly declares odc-odbl and isopen=true.
+transformation_version: 1.0.0
+coverage:
+  basin: tensift
+  start: 2026-08-01
+  end: 2026-09-30
+  dams: 5
+  observations: 305
+  national_coverage: false
+  live: false
+manifest: data/dams/sources.json
+catalog_response_sha256: 12d2956ab75c6e7eaa66133523e7a5530eb3ff81edbd642322ecfc2096418ed3
+attribution: data/dams/sources.json
+resources:
+  - id: abht-tensift-2026-08
+    resource_id: 0b69e96f-6c95-40ff-8c91-3721984b2613
+    resource_url: https://data.gov.ma/data/fr/dataset/0aff0dd1-3c7e-4e14-9cbf-18782902a6e4/resource/0b69e96f-6c95-40ff-8c91-3721984b2613/download/data_barrages_tensift_aout_2026.xlsx
+    format: xlsx
+    sheet: Août_2026
+    observation_period: 2026-08
+    source_updated_at: 2026-10-06T14:32:39.485845
+    source_metadata_updated_at: 2026-10-06T14:32:39.507652
+    bytes: 14178
+    sha256: 818c761003cc96ba0bf0fd3da076089f956020ac09905de97b2dbefef54358d7
+    observations: 155
+  - id: abht-tensift-2026-09
+    resource_id: 57580e59-8b9c-4bde-bf9f-2a25107bbf6e
+    resource_url: https://data.gov.ma/data/fr/dataset/0aff0dd1-3c7e-4e14-9cbf-18782902a6e4/resource/57580e59-8b9c-4bde-bf9f-2a25107bbf6e/download/data_barrages_tensift_sept_2026.xlsx
+    format: xlsx
+    sheet: Sept_2026
+    observation_period: 2026-09
+    source_updated_at: 2026-10-02T11:23:48.735920
+    source_metadata_updated_at: 2026-10-06T10:57:17.850715
+    bytes: 1984212
+    sha256: 54195396f6358913416770b8dc2e90f1976d806186e50a96c75ca7fd6721eb46
+    observations: 150
+notes:
+  - The observation year/month is explicit in workbook sheet names and official catalog temporal coverage.
+  - Original French names and numeric observations are preserved; Arabic labels for two matching dams come from the separately documented Maadialna source.
+  - Normal capacities come from row 2 of each workbook and are attached to that release's observations.
+  - Filling percentages retain cached numeric values and are checked against source volume/capacity.
+  - Metadata dates are publication dates, not observation dates; no ABHT observation follows 2026-09-30.
+  - Official URLs are mutable; all retrieved source bytes are pinned by SHA-256.

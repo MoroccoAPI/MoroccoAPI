@@ -1,0 +1,3970 @@
+[
+  {
+    "dam_id": "abdelmoumen",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 66,
+    "filling_rate_pct": 33,
+    "previous_year_filling_rate_pct": 4,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH8",
+      "dam_index": 2
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-01",
+    "volume_mm3": 20.56,
+    "filling_rate_pct": 91.90880643719265,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 4
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-02",
+    "volume_mm3": 20.523,
+    "filling_rate_pct": 91.7434063477872,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 5
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-03",
+    "volume_mm3": 20.485,
+    "filling_rate_pct": 91.57353598569512,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 6
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-04",
+    "volume_mm3": 20.448,
+    "filling_rate_pct": 91.40813589628966,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 7
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-05",
+    "volume_mm3": 20.411,
+    "filling_rate_pct": 91.24273580688423,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 8
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-06",
+    "volume_mm3": 20.374,
+    "filling_rate_pct": 91.07733571747876,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 9
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-07",
+    "volume_mm3": 20.336,
+    "filling_rate_pct": 90.90746535538666,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 10
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-08",
+    "volume_mm3": 20.299,
+    "filling_rate_pct": 90.74206526598122,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 11
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-09",
+    "volume_mm3": 20.262,
+    "filling_rate_pct": 90.57666517657577,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 12
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-10",
+    "volume_mm3": 20.238,
+    "filling_rate_pct": 90.46937863209655,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 13
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-11",
+    "volume_mm3": 20.225,
+    "filling_rate_pct": 90.41126508717032,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 14
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-12",
+    "volume_mm3": 20.225,
+    "filling_rate_pct": 90.41126508717032,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 15
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-13",
+    "volume_mm3": 20.225,
+    "filling_rate_pct": 90.41126508717032,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 16
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-14",
+    "volume_mm3": 20.213,
+    "filling_rate_pct": 90.35762181493071,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 17
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-15",
+    "volume_mm3": 20.189,
+    "filling_rate_pct": 90.2503352704515,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 18
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-16",
+    "volume_mm3": 20.164,
+    "filling_rate_pct": 90.13857845328566,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 19
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-17",
+    "volume_mm3": 20.139,
+    "filling_rate_pct": 90.02682163611979,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 20
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-18",
+    "volume_mm3": 20.066,
+    "filling_rate_pct": 89.70049172999552,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 21
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-19",
+    "volume_mm3": 19.993,
+    "filling_rate_pct": 89.37416182387125,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 22
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-20",
+    "volume_mm3": 19.92,
+    "filling_rate_pct": 89.04783191774699,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 23
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-21",
+    "volume_mm3": 19.847,
+    "filling_rate_pct": 88.7215020116227,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 24
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-22",
+    "volume_mm3": 19.763,
+    "filling_rate_pct": 88.34599910594547,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 25
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-23",
+    "volume_mm3": 19.678,
+    "filling_rate_pct": 87.96602592758158,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 26
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-24",
+    "volume_mm3": 19.594,
+    "filling_rate_pct": 87.59052302190435,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 27
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-25",
+    "volume_mm3": 19.51,
+    "filling_rate_pct": 87.2150201162271,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 28
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-26",
+    "volume_mm3": 19.426,
+    "filling_rate_pct": 86.83951721054983,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 29
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-27",
+    "volume_mm3": 19.343,
+    "filling_rate_pct": 86.46848457755922,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 30
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-28",
+    "volume_mm3": 19.28,
+    "filling_rate_pct": 86.1868573983013,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 31
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-29",
+    "volume_mm3": 19.178,
+    "filling_rate_pct": 85.73088958426463,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 32
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-30",
+    "volume_mm3": 19.131,
+    "filling_rate_pct": 85.52078676799285,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 33
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-08-31",
+    "volume_mm3": 19.108,
+    "filling_rate_pct": 85.41797049620027,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 34
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-01",
+    "volume_mm3": 19.084,
+    "filling_rate_pct": 85.31068395172105,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 4
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-02",
+    "volume_mm3": 19.014,
+    "filling_rate_pct": 84.99776486365668,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 5
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-03",
+    "volume_mm3": 18.955,
+    "filling_rate_pct": 84.73401877514527,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 6
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-04",
+    "volume_mm3": 18.874,
+    "filling_rate_pct": 84.37192668752793,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 7
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-05",
+    "volume_mm3": 18.815,
+    "filling_rate_pct": 84.10818059901655,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 8
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-06",
+    "volume_mm3": 18.745,
+    "filling_rate_pct": 83.79526151095217,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 9
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-07",
+    "volume_mm3": 18.687,
+    "filling_rate_pct": 83.53598569512741,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 10
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-08",
+    "volume_mm3": 18.63,
+    "filling_rate_pct": 83.28118015198926,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 11
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-09",
+    "volume_mm3": 18.572,
+    "filling_rate_pct": 83.0219043361645,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 12
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-10",
+    "volume_mm3": 18.526,
+    "filling_rate_pct": 82.81627179257934,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 13
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-11",
+    "volume_mm3": 18.492,
+    "filling_rate_pct": 82.6642825212338,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 14
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-12",
+    "volume_mm3": 18.435,
+    "filling_rate_pct": 82.40947697809565,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 15
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-13",
+    "volume_mm3": 18.412,
+    "filling_rate_pct": 82.30666070630308,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 16
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-14",
+    "volume_mm3": 18.378,
+    "filling_rate_pct": 82.15467143495752,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 17
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-15",
+    "volume_mm3": 18.366,
+    "filling_rate_pct": 82.10102816271792,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 18
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-16",
+    "volume_mm3": 18.366,
+    "filling_rate_pct": 82.10102816271792,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 19
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-17",
+    "volume_mm3": 18.355,
+    "filling_rate_pct": 82.05185516316496,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 20
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-18",
+    "volume_mm3": 18.355,
+    "filling_rate_pct": 82.05185516316496,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 21
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-19",
+    "volume_mm3": 18.344,
+    "filling_rate_pct": 82.00268216361198,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 22
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-20",
+    "volume_mm3": 18.344,
+    "filling_rate_pct": 82.00268216361198,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 23
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-21",
+    "volume_mm3": 18.332,
+    "filling_rate_pct": 81.94903889137237,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 24
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-22",
+    "volume_mm3": 18.332,
+    "filling_rate_pct": 81.94903889137237,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 25
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-23",
+    "volume_mm3": 18.32,
+    "filling_rate_pct": 81.89539561913276,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 26
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-24",
+    "volume_mm3": 18.309,
+    "filling_rate_pct": 81.8462226195798,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 27
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-25",
+    "volume_mm3": 18.298,
+    "filling_rate_pct": 81.79704962002681,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 28
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-26",
+    "volume_mm3": 18.286,
+    "filling_rate_pct": 81.74340634778721,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 29
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-27",
+    "volume_mm3": 18.275,
+    "filling_rate_pct": 81.69423334823423,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 30
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-28",
+    "volume_mm3": 18.264,
+    "filling_rate_pct": 81.64506034868127,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 31
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-29",
+    "volume_mm3": 18.241,
+    "filling_rate_pct": 81.54224407688868,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 32
+    }
+  },
+  {
+    "dam_id": "abou-el-abess-sebti",
+    "date": "2026-09-30",
+    "volume_mm3": 18.23,
+    "filling_rate_pct": 81.49307107733571,
+    "capacity_mm3": 22.37,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 33
+    }
+  },
+  {
+    "dam_id": "ahmed-el-hansali",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 544,
+    "filling_rate_pct": 78,
+    "previous_year_filling_rate_pct": 15,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH6",
+      "dam_index": 3
+    }
+  },
+  {
+    "dam_id": "al-massira",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 1065,
+    "filling_rate_pct": 40,
+    "previous_year_filling_rate_pct": 2,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH6",
+      "dam_index": 2
+    }
+  },
+  {
+    "dam_id": "al-wahda",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 2771,
+    "filling_rate_pct": 80,
+    "previous_year_filling_rate_pct": 45,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH3",
+      "dam_index": 1
+    }
+  },
+  {
+    "dam_id": "asfalou",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 169,
+    "filling_rate_pct": 57,
+    "previous_year_filling_rate_pct": 34,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH3",
+      "dam_index": 3
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-01",
+    "volume_mm3": 50.962,
+    "filling_rate_pct": 86.39091371418884,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 4
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-02",
+    "volume_mm3": 50.881,
+    "filling_rate_pct": 86.2536023054755,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 5
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-03",
+    "volume_mm3": 50.801,
+    "filling_rate_pct": 86.11798609933888,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 6
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-04",
+    "volume_mm3": 50.761,
+    "filling_rate_pct": 86.05017799627056,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 7
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-05",
+    "volume_mm3": 50.64,
+    "filling_rate_pct": 85.84505848448889,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 8
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-06",
+    "volume_mm3": 50.56,
+    "filling_rate_pct": 85.70944227835227,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 9
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-07",
+    "volume_mm3": 50.52,
+    "filling_rate_pct": 85.64163417528395,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 10
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-08",
+    "volume_mm3": 50.44,
+    "filling_rate_pct": 85.50601796914731,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 11
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-09",
+    "volume_mm3": 50.36,
+    "filling_rate_pct": 85.37040176301068,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 12
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-10",
+    "volume_mm3": 50.241,
+    "filling_rate_pct": 85.16867265638244,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 13
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-11",
+    "volume_mm3": 50.201,
+    "filling_rate_pct": 85.10086455331411,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 14
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-12",
+    "volume_mm3": 50.121,
+    "filling_rate_pct": 84.96524834717749,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 15
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-13",
+    "volume_mm3": 50.041,
+    "filling_rate_pct": 84.82963214104085,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 16
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-14",
+    "volume_mm3": 50.002,
+    "filling_rate_pct": 84.76351924054924,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 17
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-15",
+    "volume_mm3": 49.922,
+    "filling_rate_pct": 84.6279030344126,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 18
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-16",
+    "volume_mm3": 49.843,
+    "filling_rate_pct": 84.49398203085269,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 19
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-17",
+    "volume_mm3": 49.764,
+    "filling_rate_pct": 84.36006102729277,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 20
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-18",
+    "volume_mm3": 49.724,
+    "filling_rate_pct": 84.29225292422443,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 21
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-19",
+    "volume_mm3": 49.645,
+    "filling_rate_pct": 84.15833192066452,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 22
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-20",
+    "volume_mm3": 49.566,
+    "filling_rate_pct": 84.0244109171046,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 23
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-21",
+    "volume_mm3": 49.487,
+    "filling_rate_pct": 83.89048991354467,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 24
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-22",
+    "volume_mm3": 49.408,
+    "filling_rate_pct": 83.75656890998474,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 25
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-23",
+    "volume_mm3": 49.329,
+    "filling_rate_pct": 83.62264790642482,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 26
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-24",
+    "volume_mm3": 49.29,
+    "filling_rate_pct": 83.55653500593321,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 27
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-25",
+    "volume_mm3": 49.25,
+    "filling_rate_pct": 83.48872690286488,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 28
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-26",
+    "volume_mm3": 49.172,
+    "filling_rate_pct": 83.35650110188166,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 29
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-27",
+    "volume_mm3": 49.093,
+    "filling_rate_pct": 83.22258009832176,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 30
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-28",
+    "volume_mm3": 49.054,
+    "filling_rate_pct": 83.15646719783014,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 31
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-29",
+    "volume_mm3": 48.976,
+    "filling_rate_pct": 83.02424139684692,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 32
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-30",
+    "volume_mm3": 48.898,
+    "filling_rate_pct": 82.89201559586371,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 33
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-08-31",
+    "volume_mm3": 48.858,
+    "filling_rate_pct": 82.82420749279538,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 34
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-01",
+    "volume_mm3": 48.819,
+    "filling_rate_pct": 82.75809459230378,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 4
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-02",
+    "volume_mm3": 48.741,
+    "filling_rate_pct": 82.62586879132056,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 5
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-03",
+    "volume_mm3": 48.663,
+    "filling_rate_pct": 82.49364299033734,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 6
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-04",
+    "volume_mm3": 48.585,
+    "filling_rate_pct": 82.36141718935413,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 7
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-05",
+    "volume_mm3": 48.508,
+    "filling_rate_pct": 82.23088659094762,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 8
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-06",
+    "volume_mm3": 48.43,
+    "filling_rate_pct": 82.0986607899644,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 9
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-07",
+    "volume_mm3": 49.684,
+    "filling_rate_pct": 84.22444482115611,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 10
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-08",
+    "volume_mm3": 49.724,
+    "filling_rate_pct": 84.29225292422443,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 11
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-09",
+    "volume_mm3": 49.724,
+    "filling_rate_pct": 84.29225292422443,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 12
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-10",
+    "volume_mm3": 49.684,
+    "filling_rate_pct": 84.22444482115611,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 13
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-11",
+    "volume_mm3": 49.605,
+    "filling_rate_pct": 84.09052381759619,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 14
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-12",
+    "volume_mm3": 49.526,
+    "filling_rate_pct": 83.95660281403629,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 15
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-13",
+    "volume_mm3": 49.447,
+    "filling_rate_pct": 83.82268181047635,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 16
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-14",
+    "volume_mm3": 49.369,
+    "filling_rate_pct": 83.69045600949313,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 17
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-15",
+    "volume_mm3": 49.29,
+    "filling_rate_pct": 83.55653500593321,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 18
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-16",
+    "volume_mm3": 49.172,
+    "filling_rate_pct": 83.35650110188166,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 19
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-17",
+    "volume_mm3": 49.093,
+    "filling_rate_pct": 83.22258009832176,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 20
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-18",
+    "volume_mm3": 49.054,
+    "filling_rate_pct": 83.15646719783014,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 21
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-19",
+    "volume_mm3": 48.976,
+    "filling_rate_pct": 83.02424139684692,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 22
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-20",
+    "volume_mm3": 48.937,
+    "filling_rate_pct": 82.95812849635531,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 23
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-21",
+    "volume_mm3": 48.858,
+    "filling_rate_pct": 82.82420749279538,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 24
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-22",
+    "volume_mm3": 48.819,
+    "filling_rate_pct": 82.75809459230378,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 25
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-23",
+    "volume_mm3": 48.741,
+    "filling_rate_pct": 82.62586879132056,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 26
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-24",
+    "volume_mm3": 48.663,
+    "filling_rate_pct": 82.49364299033734,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 27
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-25",
+    "volume_mm3": 48.585,
+    "filling_rate_pct": 82.36141718935413,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 28
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-26",
+    "volume_mm3": 48.474,
+    "filling_rate_pct": 82.17324970333955,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 29
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-27",
+    "volume_mm3": 48.391,
+    "filling_rate_pct": 82.03254788947278,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 30
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-28",
+    "volume_mm3": 48.352,
+    "filling_rate_pct": 81.96643498898118,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 31
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-29",
+    "volume_mm3": 48.318,
+    "filling_rate_pct": 81.90879810137311,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 32
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-09-30",
+    "volume_mm3": 48.236,
+    "filling_rate_pct": 81.76979149008305,
+    "capacity_mm3": 58.99,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 33
+    }
+  },
+  {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 48,
+    "filling_rate_pct": 81,
+    "previous_year_filling_rate_pct": 54,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH7",
+      "dam_index": 1
+    }
+  },
+  {
+    "dam_id": "bin-el-ouidane",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 1021,
+    "filling_rate_pct": 80,
+    "previous_year_filling_rate_pct": 15,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH6",
+      "dam_index": 1
+    }
+  },
+  {
+    "dam_id": "charif-al-idrissi",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 113,
+    "filling_rate_pct": 84,
+    "previous_year_filling_rate_pct": 76,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH2",
+      "dam_index": 2
+    }
+  },
+  {
+    "dam_id": "dar-khrofa",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 409,
+    "filling_rate_pct": 86,
+    "previous_year_filling_rate_pct": 13,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH2",
+      "dam_index": 3
+    }
+  },
+  {
+    "dam_id": "hassan-addakhil",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 169,
+    "filling_rate_pct": 59,
+    "previous_year_filling_rate_pct": 63,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH4",
+      "dam_index": 1
+    }
+  },
+  {
+    "dam_id": "hassan-ii",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 206,
+    "filling_rate_pct": 58,
+    "previous_year_filling_rate_pct": 16,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH1",
+      "dam_index": 1
+    }
+  },
+  {
+    "dam_id": "idriss-i",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 803,
+    "filling_rate_pct": 74,
+    "previous_year_filling_rate_pct": 35,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH3",
+      "dam_index": 2
+    }
+  },
+  {
+    "dam_id": "kaddoussa",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 61,
+    "filling_rate_pct": 27,
+    "previous_year_filling_rate_pct": 34,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH4",
+      "dam_index": 2
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-01",
+    "volume_mm3": 42.172,
+    "filling_rate_pct": 82.98307752853206,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 4
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-02",
+    "volume_mm3": 42.123,
+    "filling_rate_pct": 82.8866587957497,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 5
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-03",
+    "volume_mm3": 42.024,
+    "filling_rate_pct": 82.69185360094451,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 6
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-04",
+    "volume_mm3": 41.876,
+    "filling_rate_pct": 82.40062967335695,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 7
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-05",
+    "volume_mm3": 41.778,
+    "filling_rate_pct": 82.20779220779221,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 8
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-06",
+    "volume_mm3": 41.68,
+    "filling_rate_pct": 82.01495474222746,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 9
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-07",
+    "volume_mm3": 41.582,
+    "filling_rate_pct": 81.82211727666274,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 10
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-08",
+    "volume_mm3": 41.484,
+    "filling_rate_pct": 81.629279811098,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 11
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-09",
+    "volume_mm3": 41.386,
+    "filling_rate_pct": 81.43644234553325,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 12
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-10",
+    "volume_mm3": 41.337,
+    "filling_rate_pct": 81.34002361275088,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 13
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-11",
+    "volume_mm3": 41.239,
+    "filling_rate_pct": 81.14718614718615,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 14
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-12",
+    "volume_mm3": 40.996,
+    "filling_rate_pct": 80.66902794175522,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 15
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-13",
+    "volume_mm3": 40.608,
+    "filling_rate_pct": 79.90554899645808,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 16
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-14",
+    "volume_mm3": 40.048,
+    "filling_rate_pct": 78.80362062180244,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 17
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-15",
+    "volume_mm3": 39.599,
+    "filling_rate_pct": 77.92011019283746,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 18
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-16",
+    "volume_mm3": 39.218,
+    "filling_rate_pct": 77.17040535222354,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 19
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-17",
+    "volume_mm3": 38.746,
+    "filling_rate_pct": 76.24163715072805,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 20
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-18",
+    "volume_mm3": 38.276,
+    "filling_rate_pct": 75.3168044077135,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 21
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-19",
+    "volume_mm3": 37.857,
+    "filling_rate_pct": 74.49232585596222,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 22
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-20",
+    "volume_mm3": 37.532,
+    "filling_rate_pct": 73.85281385281385,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 23
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-21",
+    "volume_mm3": 37.163,
+    "filling_rate_pct": 73.12672176308538,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 24
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-22",
+    "volume_mm3": 36.705,
+    "filling_rate_pct": 72.22550177095631,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 25
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-23",
+    "volume_mm3": 36.34,
+    "filling_rate_pct": 71.5072805981897,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 26
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-24",
+    "volume_mm3": 35.888,
+    "filling_rate_pct": 70.61786698150334,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 27
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-25",
+    "volume_mm3": 35.483,
+    "filling_rate_pct": 69.82093663911844,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 28
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-26",
+    "volume_mm3": 35.393,
+    "filling_rate_pct": 69.64384100747736,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 29
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-27",
+    "volume_mm3": 35.349,
+    "filling_rate_pct": 69.55726092089728,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 30
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-28",
+    "volume_mm3": 35.259,
+    "filling_rate_pct": 69.3801652892562,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 31
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-29",
+    "volume_mm3": 35.125,
+    "filling_rate_pct": 69.11648957103502,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 32
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-30",
+    "volume_mm3": 34.947,
+    "filling_rate_pct": 68.76623376623378,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 33
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-08-31",
+    "volume_mm3": 34.858,
+    "filling_rate_pct": 68.59110586383314,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 34
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-01",
+    "volume_mm3": 34.637,
+    "filling_rate_pct": 68.15623770169225,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 4
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-02",
+    "volume_mm3": 34.328,
+    "filling_rate_pct": 67.54820936639119,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 5
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-03",
+    "volume_mm3": 34.064,
+    "filling_rate_pct": 67.02872884691067,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 6
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-04",
+    "volume_mm3": 33.846,
+    "filling_rate_pct": 66.59976387249114,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 7
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-05",
+    "volume_mm3": 33.584,
+    "filling_rate_pct": 66.08421881149155,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 8
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-06",
+    "volume_mm3": 33.281,
+    "filling_rate_pct": 65.48799685163321,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 9
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-07",
+    "volume_mm3": 33.023,
+    "filling_rate_pct": 64.98032270759543,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 10
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-08",
+    "volume_mm3": 32.766,
+    "filling_rate_pct": 64.4746162927981,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 11
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-09",
+    "volume_mm3": 32.552,
+    "filling_rate_pct": 64.05352223534042,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 12
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-10",
+    "volume_mm3": 32.467,
+    "filling_rate_pct": 63.886265249901605,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 13
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-11",
+    "volume_mm3": 32.425,
+    "filling_rate_pct": 63.80362062180244,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 14
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-12",
+    "volume_mm3": 32.34,
+    "filling_rate_pct": 63.63636363636365,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 15
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-13",
+    "volume_mm3": 32.171,
+    "filling_rate_pct": 63.30381739472648,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 16
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-14",
+    "volume_mm3": 32.087,
+    "filling_rate_pct": 63.13852813852815,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 17
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-15",
+    "volume_mm3": 32.003,
+    "filling_rate_pct": 62.973238882329795,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 18
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-16",
+    "volume_mm3": 31.877,
+    "filling_rate_pct": 62.72530499803227,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 19
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-17",
+    "volume_mm3": 31.751,
+    "filling_rate_pct": 62.47737111373475,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 20
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-18",
+    "volume_mm3": 31.626,
+    "filling_rate_pct": 62.231404958677686,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 21
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-19",
+    "volume_mm3": 31.501,
+    "filling_rate_pct": 61.98543880362062,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 22
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-20",
+    "volume_mm3": 31.418,
+    "filling_rate_pct": 61.82211727666272,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 23
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-21",
+    "volume_mm3": 31.294,
+    "filling_rate_pct": 61.57811885084612,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 24
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-22",
+    "volume_mm3": 31.17,
+    "filling_rate_pct": 61.33412042502952,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 25
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-23",
+    "volume_mm3": 31.047,
+    "filling_rate_pct": 61.09208972845337,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 26
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-24",
+    "volume_mm3": 30.964,
+    "filling_rate_pct": 60.92876820149547,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 27
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-25",
+    "volume_mm3": 30.883,
+    "filling_rate_pct": 60.76938213301849,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 28
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-26",
+    "volume_mm3": 31.961,
+    "filling_rate_pct": 62.890594254230614,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 29
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-27",
+    "volume_mm3": 33.933,
+    "filling_rate_pct": 66.77095631641086,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 30
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-28",
+    "volume_mm3": 35.933,
+    "filling_rate_pct": 70.70641479732389,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 31
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-29",
+    "volume_mm3": 37.347,
+    "filling_rate_pct": 73.48878394332941,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 32
+    }
+  },
+  {
+    "dam_id": "lalla-takerkoust",
+    "date": "2026-09-30",
+    "volume_mm3": 37.578,
+    "filling_rate_pct": 73.94332939787486,
+    "capacity_mm3": 50.82,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 33
+    }
+  },
+  {
+    "dam_id": "mansour-eddahbi",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 202,
+    "filling_rate_pct": 45,
+    "previous_year_filling_rate_pct": 39,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH9",
+      "dam_index": 1
+    }
+  },
+  {
+    "dam_id": "mohammed-v",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 68,
+    "filling_rate_pct": 41,
+    "previous_year_filling_rate_pct": 12,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH1",
+      "dam_index": 2
+    }
+  },
+  {
+    "dam_id": "moulay-abdellah",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 68,
+    "filling_rate_pct": 84,
+    "previous_year_filling_rate_pct": 44,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH8",
+      "dam_index": 3
+    }
+  },
+  {
+    "dam_id": "oued-el-makhazine",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 465,
+    "filling_rate_pct": 66,
+    "previous_year_filling_rate_pct": 72,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH2",
+      "dam_index": 1
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-01",
+    "volume_mm3": 9.459,
+    "filling_rate_pct": 76.8399675060926,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 4
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-02",
+    "volume_mm3": 9.459,
+    "filling_rate_pct": 76.8399675060926,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 5
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-03",
+    "volume_mm3": 9.459,
+    "filling_rate_pct": 76.8399675060926,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 6
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-04",
+    "volume_mm3": 9.459,
+    "filling_rate_pct": 76.8399675060926,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 7
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-05",
+    "volume_mm3": 9.459,
+    "filling_rate_pct": 76.8399675060926,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 8
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-06",
+    "volume_mm3": 9.441,
+    "filling_rate_pct": 76.69374492282697,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 9
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-07",
+    "volume_mm3": 9.442,
+    "filling_rate_pct": 76.70186839967505,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 10
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-08",
+    "volume_mm3": 9.423,
+    "filling_rate_pct": 76.54752233956133,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 11
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-09",
+    "volume_mm3": 9.405,
+    "filling_rate_pct": 76.40129975629569,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 12
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-10",
+    "volume_mm3": 9.387,
+    "filling_rate_pct": 76.25507717303006,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 13
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-11",
+    "volume_mm3": 9.369,
+    "filling_rate_pct": 76.10885458976442,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 14
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-12",
+    "volume_mm3": 9.352,
+    "filling_rate_pct": 75.97075548334688,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 15
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-13",
+    "volume_mm3": 9.334,
+    "filling_rate_pct": 75.82453290008124,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 16
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-14",
+    "volume_mm3": 9.316,
+    "filling_rate_pct": 75.6783103168156,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 17
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-15",
+    "volume_mm3": 9.298,
+    "filling_rate_pct": 75.53208773354996,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 18
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-16",
+    "volume_mm3": 9.281,
+    "filling_rate_pct": 75.39398862713242,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 19
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-17",
+    "volume_mm3": 9.272,
+    "filling_rate_pct": 75.32087733549959,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 20
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-18",
+    "volume_mm3": 9.252,
+    "filling_rate_pct": 75.15840779853778,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 21
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-19",
+    "volume_mm3": 9.237,
+    "filling_rate_pct": 75.0365556458164,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 22
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-20",
+    "volume_mm3": 9.219,
+    "filling_rate_pct": 74.89033306255077,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 23
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-21",
+    "volume_mm3": 9.201,
+    "filling_rate_pct": 74.74411047928513,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 24
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-22",
+    "volume_mm3": 9.184,
+    "filling_rate_pct": 74.60601137286757,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 25
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-23",
+    "volume_mm3": 9.166,
+    "filling_rate_pct": 74.45978878960196,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 26
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-24",
+    "volume_mm3": 9.149,
+    "filling_rate_pct": 74.32168968318439,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 27
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-25",
+    "volume_mm3": 9.131,
+    "filling_rate_pct": 74.17546709991876,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 28
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-26",
+    "volume_mm3": 9.115,
+    "filling_rate_pct": 74.0454914703493,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 29
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-27",
+    "volume_mm3": 9.096,
+    "filling_rate_pct": 73.89114541023558,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 30
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-28",
+    "volume_mm3": 9.078,
+    "filling_rate_pct": 73.74492282696994,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 31
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-29",
+    "volume_mm3": 9.062,
+    "filling_rate_pct": 73.61494719740048,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 32
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-30",
+    "volume_mm3": 9.046,
+    "filling_rate_pct": 73.48497156783102,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 33
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-08-31",
+    "volume_mm3": 9.026,
+    "filling_rate_pct": 73.3225020308692,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 34
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-01",
+    "volume_mm3": 9.009,
+    "filling_rate_pct": 73.18440292445166,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 4
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-02",
+    "volume_mm3": 8.983,
+    "filling_rate_pct": 72.97319252640129,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 5
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-03",
+    "volume_mm3": 8.968,
+    "filling_rate_pct": 72.85134037367993,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 6
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-04",
+    "volume_mm3": 8.952,
+    "filling_rate_pct": 72.72136474411047,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 7
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-05",
+    "volume_mm3": 8.93,
+    "filling_rate_pct": 72.54264825345247,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 8
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-06",
+    "volume_mm3": 8.914,
+    "filling_rate_pct": 72.41267262388301,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 9
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-07",
+    "volume_mm3": 8.896,
+    "filling_rate_pct": 72.26645004061739,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 10
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-08",
+    "volume_mm3": 8.879,
+    "filling_rate_pct": 72.12835093419983,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 11
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-09",
+    "volume_mm3": 8.861,
+    "filling_rate_pct": 71.9821283509342,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 12
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-10",
+    "volume_mm3": 8.844,
+    "filling_rate_pct": 71.84402924451665,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 13
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-11",
+    "volume_mm3": 8.828,
+    "filling_rate_pct": 71.71405361494719,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 14
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-12",
+    "volume_mm3": 8.813,
+    "filling_rate_pct": 71.59220146222583,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 15
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-13",
+    "volume_mm3": 8.792,
+    "filling_rate_pct": 71.42160844841592,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 16
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-14",
+    "volume_mm3": 8.776,
+    "filling_rate_pct": 71.29163281884647,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 17
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-15",
+    "volume_mm3": 8.751,
+    "filling_rate_pct": 71.08854589764418,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 18
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-16",
+    "volume_mm3": 8.741,
+    "filling_rate_pct": 71.00731112916327,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 19
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-17",
+    "volume_mm3": 8.724,
+    "filling_rate_pct": 70.86921202274573,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 20
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-18",
+    "volume_mm3": 8.708,
+    "filling_rate_pct": 70.73923639317627,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 21
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-19",
+    "volume_mm3": 8.69,
+    "filling_rate_pct": 70.59301380991063,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 22
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-20",
+    "volume_mm3": 8.664,
+    "filling_rate_pct": 70.38180341186026,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 23
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-21",
+    "volume_mm3": 8.647,
+    "filling_rate_pct": 70.24370430544273,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 24
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-22",
+    "volume_mm3": 8.629,
+    "filling_rate_pct": 70.0974817221771,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 25
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-23",
+    "volume_mm3": 8.613,
+    "filling_rate_pct": 69.96750609260764,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 26
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-24",
+    "volume_mm3": 8.596,
+    "filling_rate_pct": 69.8294069861901,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 27
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-25",
+    "volume_mm3": 8.578,
+    "filling_rate_pct": 69.68318440292445,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 28
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-26",
+    "volume_mm3": 8.562,
+    "filling_rate_pct": 69.553208773355,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 29
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-27",
+    "volume_mm3": 8.537,
+    "filling_rate_pct": 69.35012185215272,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 30
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-28",
+    "volume_mm3": 8.519,
+    "filling_rate_pct": 69.20389926888708,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 31
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-29",
+    "volume_mm3": 8.504,
+    "filling_rate_pct": 69.08204711616571,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 32
+    }
+  },
+  {
+    "dam_id": "sd-mohamed-ben-slimane-el-jazouli",
+    "date": "2026-09-30",
+    "volume_mm3": 8.487,
+    "filling_rate_pct": 68.94394800974817,
+    "capacity_mm3": 12.31,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 33
+    }
+  },
+  {
+    "dam_id": "sidi-mohamed-ben-abdellah",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 610,
+    "filling_rate_pct": 70,
+    "previous_year_filling_rate_pct": 75,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH5",
+      "dam_index": 1
+    }
+  },
+  {
+    "dam_id": "sultan-moulay-ali-cherif",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 58,
+    "filling_rate_pct": 20,
+    "previous_year_filling_rate_pct": 16,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH9",
+      "dam_index": 2
+    }
+  },
+  {
+    "dam_id": "tiddas",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 461,
+    "filling_rate_pct": 91,
+    "previous_year_filling_rate_pct": null,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH5",
+      "dam_index": 2
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-01",
+    "volume_mm3": 49.205,
+    "filling_rate_pct": 85.64838990426456,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 4
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-02",
+    "volume_mm3": 49.205,
+    "filling_rate_pct": 85.64838990426456,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 5
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-03",
+    "volume_mm3": 49.205,
+    "filling_rate_pct": 85.64838990426456,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 6
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-04",
+    "volume_mm3": 49.205,
+    "filling_rate_pct": 85.64838990426456,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 7
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-05",
+    "volume_mm3": 49.205,
+    "filling_rate_pct": 85.64838990426456,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 8
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-06",
+    "volume_mm3": 49.205,
+    "filling_rate_pct": 85.64838990426456,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 9
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-07",
+    "volume_mm3": 49.229,
+    "filling_rate_pct": 85.69016536118363,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 10
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-08",
+    "volume_mm3": 49.229,
+    "filling_rate_pct": 85.69016536118363,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 11
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-09",
+    "volume_mm3": 49.229,
+    "filling_rate_pct": 85.69016536118363,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 12
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-10",
+    "volume_mm3": 49.229,
+    "filling_rate_pct": 85.69016536118363,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 13
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-11",
+    "volume_mm3": 49.253,
+    "filling_rate_pct": 85.73194081810269,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 14
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-12",
+    "volume_mm3": 49.253,
+    "filling_rate_pct": 85.73194081810269,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 15
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-13",
+    "volume_mm3": 49.253,
+    "filling_rate_pct": 85.73194081810269,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 16
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-14",
+    "volume_mm3": 49.277,
+    "filling_rate_pct": 85.77371627502175,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 17
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-15",
+    "volume_mm3": 49.277,
+    "filling_rate_pct": 85.77371627502175,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 18
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-16",
+    "volume_mm3": 49.304,
+    "filling_rate_pct": 85.8207136640557,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 19
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-17",
+    "volume_mm3": 49.348,
+    "filling_rate_pct": 85.89730200174064,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 20
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-18",
+    "volume_mm3": 49.372,
+    "filling_rate_pct": 85.9390774586597,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 21
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-19",
+    "volume_mm3": 49.396,
+    "filling_rate_pct": 85.98085291557877,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 22
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-20",
+    "volume_mm3": 49.396,
+    "filling_rate_pct": 85.98085291557877,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 23
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-21",
+    "volume_mm3": 49.396,
+    "filling_rate_pct": 85.98085291557877,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 24
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-22",
+    "volume_mm3": 49.396,
+    "filling_rate_pct": 85.98085291557877,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 25
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-23",
+    "volume_mm3": 49.396,
+    "filling_rate_pct": 85.98085291557877,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 26
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-24",
+    "volume_mm3": 49.42,
+    "filling_rate_pct": 86.02262837249782,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 27
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-25",
+    "volume_mm3": 49.42,
+    "filling_rate_pct": 86.02262837249782,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 28
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-26",
+    "volume_mm3": 49.42,
+    "filling_rate_pct": 86.02262837249782,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 29
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-27",
+    "volume_mm3": 49.42,
+    "filling_rate_pct": 86.02262837249782,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 30
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-28",
+    "volume_mm3": 49.42,
+    "filling_rate_pct": 86.02262837249782,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 31
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-29",
+    "volume_mm3": 49.42,
+    "filling_rate_pct": 86.02262837249782,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 32
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-30",
+    "volume_mm3": 49.42,
+    "filling_rate_pct": 86.02262837249782,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 33
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-08-31",
+    "volume_mm3": 49.444,
+    "filling_rate_pct": 86.06440382941688,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-08",
+    "source_ref": {
+      "sheet": "Août_2026",
+      "row": 34
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-01",
+    "volume_mm3": 49.444,
+    "filling_rate_pct": 86.06440382941688,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 4
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-02",
+    "volume_mm3": 49.444,
+    "filling_rate_pct": 86.06440382941688,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 5
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-03",
+    "volume_mm3": 49.444,
+    "filling_rate_pct": 86.06440382941688,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 6
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-04",
+    "volume_mm3": 49.444,
+    "filling_rate_pct": 86.06440382941688,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 7
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-05",
+    "volume_mm3": 49.468,
+    "filling_rate_pct": 86.10617928633594,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 8
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-06",
+    "volume_mm3": 49.468,
+    "filling_rate_pct": 86.10617928633594,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 9
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-07",
+    "volume_mm3": 49.492,
+    "filling_rate_pct": 86.147954743255,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 10
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-08",
+    "volume_mm3": 49.492,
+    "filling_rate_pct": 86.147954743255,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 11
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-09",
+    "volume_mm3": 49.492,
+    "filling_rate_pct": 86.147954743255,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 12
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-10",
+    "volume_mm3": 49.755,
+    "filling_rate_pct": 86.60574412532637,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 13
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-11",
+    "volume_mm3": 49.827,
+    "filling_rate_pct": 86.73107049608355,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 14
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-12",
+    "volume_mm3": 49.9,
+    "filling_rate_pct": 86.85813751087902,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 15
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-13",
+    "volume_mm3": 49.972,
+    "filling_rate_pct": 86.9834638816362,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 16
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-14",
+    "volume_mm3": 49.972,
+    "filling_rate_pct": 86.9834638816362,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 17
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-15",
+    "volume_mm3": 49.972,
+    "filling_rate_pct": 86.9834638816362,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 18
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-16",
+    "volume_mm3": 49.972,
+    "filling_rate_pct": 86.9834638816362,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 19
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-17",
+    "volume_mm3": 50.02,
+    "filling_rate_pct": 87.06701479547434,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 20
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-18",
+    "volume_mm3": 50.02,
+    "filling_rate_pct": 87.06701479547434,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 21
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-19",
+    "volume_mm3": 50.044,
+    "filling_rate_pct": 87.10879025239338,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 22
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-20",
+    "volume_mm3": 50.068,
+    "filling_rate_pct": 87.15056570931243,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 23
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-21",
+    "volume_mm3": 50.14,
+    "filling_rate_pct": 87.27589208006961,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 24
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-22",
+    "volume_mm3": 50.233,
+    "filling_rate_pct": 87.43777197563098,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 25
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-23",
+    "volume_mm3": 50.357,
+    "filling_rate_pct": 87.65361183637945,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 26
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-24",
+    "volume_mm3": 50.406,
+    "filling_rate_pct": 87.73890339425586,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 27
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-25",
+    "volume_mm3": 50.454,
+    "filling_rate_pct": 87.822454308094,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 28
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-26",
+    "volume_mm3": 48.515,
+    "filling_rate_pct": 84.4473455178416,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 29
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-27",
+    "volume_mm3": 46.314,
+    "filling_rate_pct": 80.61618798955614,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 30
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-28",
+    "volume_mm3": 44.121,
+    "filling_rate_pct": 76.79895561357702,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 31
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-29",
+    "volume_mm3": 41.851,
+    "filling_rate_pct": 72.84769364664926,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 32
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-09-30",
+    "volume_mm3": 41.61,
+    "filling_rate_pct": 72.42819843342036,
+    "capacity_mm3": 57.45,
+    "source_id": "abht-tensift-2026-09",
+    "source_ref": {
+      "sheet": "Sept_2026",
+      "row": 33
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 43,
+    "filling_rate_pct": 75,
+    "previous_year_filling_rate_pct": 33,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH7",
+      "dam_index": 2
+    }
+  },
+  {
+    "dam_id": "youssef-ben-tachfine",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 136,
+    "filling_rate_pct": 46,
+    "previous_year_filling_rate_pct": 13,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH8",
+      "dam_index": 1
+    }
+  }
+]
