@@ -176,6 +176,8 @@ describe("Application contracts", () => {
     assert.ok(body.paths["/api/v1/arrondissements"]);
     assert.ok(body.paths["/api/v1/arrondissements/{code}"]);
     assert.ok(body.paths["/api/v1/locations/search"]);
+    assert.ok(body.paths["/api/v1/dams"]);
+    assert.ok(body.paths["/api/v1/dams/{id}/levels"]);
   });
 
   it("publishes a valid OpenAPI 3.0 document including nullable telecom and existing domain fields", async () => {

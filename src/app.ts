@@ -25,6 +25,7 @@ import { holidays } from "./holidays/routes.js";
 import { airports } from "./airports/routes.js";
 import { museums } from "./museums/routes.js";
 import { maritime } from "./maritime/routes.js";
+import { dams } from "./dams/routes.js";
 
 const publicCorsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -131,6 +132,7 @@ export async function buildApp(
         { name: "Postal codes", description: "Poste Maroc postal codes for localities and city neighbourhoods (September 2018 snapshot), linked to administrative geography" },
         { name: "World Bank", description: "World Bank development indicators for Morocco (international estimates, CC BY 4.0)" },
         { name: "Maritime", description: "Ports and lighthouses from the Ministry of Equipment and Water" },
+        { name: "Water", description: "Historical dam storage observations with source and license metadata" },
       ],
     },
   });
@@ -201,6 +203,7 @@ export async function buildApp(
   await app.register(maritime);
   await app.register(postal, { geography: geographyData });
   await app.register(worldBank);
+  await app.register(dams);
 
   return app;
 }

@@ -25,6 +25,7 @@ const collectionPaths = [
   "/api/v1/airports", "/api/v1/museums", "/api/v1/postal-codes",
   "/api/v1/postal-codes/cities", "/api/v1/postal-codes/{code}",
   "/api/v1/ports", "/api/v1/lighthouses",
+  "/api/v1/dams", "/api/v1/dams/{id}/levels",
   "/api/v1/world-bank/indicators", "/api/v1/world-bank/indicators/topics",
 ];
 
@@ -70,7 +71,7 @@ describe("Pagination contracts", () => {
 
   it("rejects non-finite pagination values on every paginated collection with validation errors", async () => {
     for (const path of collectionPaths) {
-      const resolved = path.replace("{code}", path.startsWith("/api/v1/postal-codes/") ? "10000" : "casablanca-settat");
+      const resolved = path.replace("{code}", path.startsWith("/api/v1/postal-codes/") ? "10000" : "casablanca-settat").replace("{id}", "yacoub-el-mansour");
       for (const parameter of ["limit", "offset"]) {
         for (const value of ["Infinity", "-Infinity", "+Infinity", "1e309", "-1e309"]) {
           const url = new URL(resolved, "http://localhost");
