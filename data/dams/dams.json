@@ -1,0 +1,37 @@
+[
+  {
+    "id": "abou-el-abess-sebti",
+    "name": {
+      "fr": "Abou El Abess Sebti"
+    },
+    "basin": "tensift"
+  },
+  {
+    "id": "bge-my-abdrhmane",
+    "name": {
+      "fr": "Bge My abdrhmane"
+    },
+    "basin": "tensift"
+  },
+  {
+    "id": "lalla-takerkoust",
+    "name": {
+      "fr": "Lalla Takerkoust"
+    },
+    "basin": "tensift"
+  },
+  {
+    "id": "sd-mohamed-ben-slimane-el-jazouli",
+    "name": {
+      "fr": "Sd Mohamed Ben Slimane El Jazouli"
+    },
+    "basin": "tensift"
+  },
+  {
+    "id": "yacoub-el-mansour",
+    "name": {
+      "fr": "Yacoub El Mansour"
+    },
+    "basin": "tensift"
+  }
+]
