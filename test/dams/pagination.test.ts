@@ -11,8 +11,9 @@ before(async () => { app = await buildApp(); await app.ready(); });
 after(async () => { await app.close(); });
 
 const collections = [
-  { path: "/api/v1/dams", total: 5 },
-  { path: "/api/v1/dams/yacoub-el-mansour/levels", total: 61 },
+  { path: "/api/v1/dams", total: 25 },
+  { path: "/api/v1/dams/yacoub-el-mansour/levels", total: 62 },
+  { path: "/api/v1/dams/tiddas/levels", total: 1 },
 ];
 
 describe("dams pagination", () => {
@@ -79,8 +80,8 @@ describe("dams pagination", () => {
     });
 
     for (const url of [
-      "/api/v1/dams?basin=bouregreg&limit=1&offset=1",
-      `${path}?from=2026-10-01&limit=1&offset=1`,
+      "/api/v1/dams?basin=unknown-basin&limit=1&offset=1",
+      `${path}?from=2026-10-13&limit=1&offset=1`,
     ]) {
       const empty = await app.inject(url);
       assert.equal(empty.statusCode, 200, url);
@@ -90,6 +91,27 @@ describe("dams pagination", () => {
         limit: 1, offset: 1, count: 0, has_more: false, next_offset: null,
       }, url);
     }
+  });
+
+  it("paginates an added basin and the dashboard observation after historical observations", async () => {
+    const bouregreg = await collectAllPages(app, "/api/v1/dams?basin=bouregreg");
+    assert.equal(bouregreg.meta.total, 2);
+    const page = await app.inject("/api/v1/dams?basin=bouregreg&limit=1&offset=1");
+    assert.equal(page.statusCode, 200);
+    assert.deepEqual(page.json().data, bouregreg.data.slice(1));
+    assert.equal(page.json().meta.total, 2);
+    assert.deepEqual(page.json().meta.pagination, {
+      limit: 1, offset: 1, count: 1, has_more: false, next_offset: null,
+    });
+
+    const latest = await app.inject("/api/v1/dams/yacoub-el-mansour/levels?limit=1&offset=61");
+    assert.equal(latest.statusCode, 200);
+    assert.equal(latest.json().meta.total, 62);
+    assert.equal(latest.json().data[0].date, "2026-10-12");
+    assert.equal(latest.json().data[0].source_id, "maadialna-2026-10-12");
+    assert.deepEqual(latest.json().meta.pagination, {
+      limit: 1, offset: 61, count: 1, has_more: false, next_offset: null,
+    });
   });
 
   it("returns empty pages after the last match and retains missing-dam errors", async () => {

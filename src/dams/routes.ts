@@ -26,7 +26,7 @@ async function registerDamRoutes(app: FastifyInstance, snapshot: DamData): Promi
     {
       schema: {
         tags: ["Water"],
-        summary: "List published Tensift dams with their latest available observation",
+        summary: "List selected dams across Morocco with their latest available observation",
         querystring: paginationQuerySchema(damQuerySchema),
         response: {
           200: collectionResponseSchema(damSchema, damMetaSchema),
@@ -36,7 +36,7 @@ async function registerDamRoutes(app: FastifyInstance, snapshot: DamData): Promi
     },
     async (request) => {
       const data = request.query.basin ? dams.filter((dam) => dam.basin === request.query.basin) : dams;
-      return paginate(data, buildDamMeta(snapshot, data.length), request.query);
+      return paginate(data, buildDamMeta(snapshot, data.length, request.query.basin), request.query);
     },
   );
 }
@@ -47,8 +47,8 @@ async function registerLevelRoutes(app: FastifyInstance, snapshot: DamData): Pro
     {
       schema: {
         tags: ["Water"],
-        summary: "Get daily historical water storage and filling rates for one dam",
-        description: "Filter inclusively with ISO dates from and to. Observations are sorted oldest first. No interpolation.",
+        summary: "Get published water storage and filling-rate snapshots for one dam",
+        description: "Filter inclusively with ISO dates from and to. Observations are sorted oldest first. date_basis distinguishes source calendar dates from the Maadialna dashboard headline date; its JSON has no observation date. No interpolation.",
         params: damParamsSchema,
         querystring: paginationQuerySchema(levelQuerySchema),
         response: {
@@ -70,7 +70,8 @@ async function registerLevelRoutes(app: FastifyInstance, snapshot: DamData): Pro
           },
         });
       }
-      if (!snapshot.dams.some((dam) => dam.id === request.params.id)) {
+      const dam = snapshot.dams.find((item) => item.id === request.params.id);
+      if (!dam) {
         return reply.code(404).send({
           error: {
             code: "RESOURCE_NOT_FOUND",
@@ -82,7 +83,7 @@ async function registerLevelRoutes(app: FastifyInstance, snapshot: DamData): Pro
       const data = snapshot.levels.filter((level) => level.dam_id === request.params.id &&
         (!from || level.date >= from) && (!to || level.date <= to))
         .sort((left, right) => left.date.localeCompare(right.date));
-      return paginate(data, buildDamMeta(snapshot, data.length), request.query);
+      return paginate(data, buildDamMeta(snapshot, data.length, dam.basin), request.query);
     },
   );
 }

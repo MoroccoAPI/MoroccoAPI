@@ -1,36 +1,53 @@
 import type { PaginationQuery } from "../common/pagination.js";
 
+export const damBasins = [
+  "bouregreg", "draa-oued-noun", "guir-ziz-gheris", "loukkos", "moulouya",
+  "oum-er-rbia", "sebou", "souss-massa", "tensift",
+] as const;
+
+export type DamBasin = typeof damBasins[number];
+export type DamDateBasis = "source_calendar" | "dashboard_headline";
+
 export interface Dam {
   id: string;
-  name: { fr: string };
-  basin: "tensift";
+  name: { fr: string | null; ar?: string };
+  basin: DamBasin;
 }
 
 export interface DamLevel {
   dam_id: string;
   date: string;
-  capacity_mm3: number;
+  date_basis: DamDateBasis;
+  capacity_mm3: number | null;
   volume_mm3: number;
   filling_rate_pct: number;
+  previous_year_filling_rate_pct?: number | null;
   source_id: string;
-  source_ref: { sheet: string; row: number };
+  source_ref: { sheet: string; row: number } | { basin_code: string; dam_index: number };
 }
 
 export interface DamSource {
   id: string;
-  resource_url: string;
-  source_updated_at: string | null;
-  sheet: string;
-  period: string;
-}
-
-export interface DamManifest {
-  id: "tensift-dams";
   title: string;
   producer: string;
   source_url: string;
-  source_license: "ODbL-1.0";
-  license_url: string;
+  resource_url: string;
+  license: "ODbL-1.0" | null;
+  license_url: string | null;
+  source_updated_at: string | null;
+  date_basis?: DamDateBasis;
+  sheet: string | null;
+  period: string;
+  source_date?: string;
+}
+
+export interface DamManifest {
+  id: "morocco-dams";
+  title: string;
+  producer: string;
+  source_url: string | null;
+  source_license: "mixed";
+  license_url: null;
   retrieved_at: string;
   source_updated_at: string | null;
   transformation_version: string;

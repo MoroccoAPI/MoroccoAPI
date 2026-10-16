@@ -50,8 +50,8 @@ resources:
     observations: 150
 notes:
   - The observation year/month is explicit in workbook sheet names and official catalog temporal coverage.
-  - Names and numeric observations are preserved; no Arabic/English labels or coordinates are inferred.
+  - Original French names and numeric observations are preserved; Arabic labels for two matching dams come from the separately documented Maadialna source.
   - Normal capacities come from row 2 of each workbook and are attached to that release's observations.
   - Filling percentages retain cached numeric values and are checked against source volume/capacity.
-  - Metadata dates are publication dates, not observation dates; no observation follows 2026-09-30.
+  - Metadata dates are publication dates, not observation dates; no ABHT observation follows 2026-09-30.
   - Official URLs are mutable; all retrieved source bytes are pinned by SHA-256.

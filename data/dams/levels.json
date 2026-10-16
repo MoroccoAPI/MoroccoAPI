@@ -1,5 +1,19 @@
 [
   {
+    "dam_id": "abdelmoumen",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 66,
+    "filling_rate_pct": 33,
+    "previous_year_filling_rate_pct": 4,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH8",
+      "dam_index": 2
+    }
+  },
+  {
     "dam_id": "abou-el-abess-sebti",
     "date": "2026-08-01",
     "volume_mm3": 20.56,
@@ -729,6 +743,62 @@
     "source_ref": {
       "sheet": "Sept_2026",
       "row": 33
+    }
+  },
+  {
+    "dam_id": "ahmed-el-hansali",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 544,
+    "filling_rate_pct": 78,
+    "previous_year_filling_rate_pct": 15,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH6",
+      "dam_index": 3
+    }
+  },
+  {
+    "dam_id": "al-massira",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 1065,
+    "filling_rate_pct": 40,
+    "previous_year_filling_rate_pct": 2,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH6",
+      "dam_index": 2
+    }
+  },
+  {
+    "dam_id": "al-wahda",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 2771,
+    "filling_rate_pct": 80,
+    "previous_year_filling_rate_pct": 45,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH3",
+      "dam_index": 1
+    }
+  },
+  {
+    "dam_id": "asfalou",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 169,
+    "filling_rate_pct": 57,
+    "previous_year_filling_rate_pct": 34,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH3",
+      "dam_index": 3
     }
   },
   {
@@ -1464,6 +1534,118 @@
     }
   },
   {
+    "dam_id": "bge-my-abdrhmane",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 48,
+    "filling_rate_pct": 81,
+    "previous_year_filling_rate_pct": 54,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH7",
+      "dam_index": 1
+    }
+  },
+  {
+    "dam_id": "bin-el-ouidane",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 1021,
+    "filling_rate_pct": 80,
+    "previous_year_filling_rate_pct": 15,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH6",
+      "dam_index": 1
+    }
+  },
+  {
+    "dam_id": "charif-al-idrissi",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 113,
+    "filling_rate_pct": 84,
+    "previous_year_filling_rate_pct": 76,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH2",
+      "dam_index": 2
+    }
+  },
+  {
+    "dam_id": "dar-khrofa",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 409,
+    "filling_rate_pct": 86,
+    "previous_year_filling_rate_pct": 13,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH2",
+      "dam_index": 3
+    }
+  },
+  {
+    "dam_id": "hassan-addakhil",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 169,
+    "filling_rate_pct": 59,
+    "previous_year_filling_rate_pct": 63,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH4",
+      "dam_index": 1
+    }
+  },
+  {
+    "dam_id": "hassan-ii",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 206,
+    "filling_rate_pct": 58,
+    "previous_year_filling_rate_pct": 16,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH1",
+      "dam_index": 1
+    }
+  },
+  {
+    "dam_id": "idriss-i",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 803,
+    "filling_rate_pct": 74,
+    "previous_year_filling_rate_pct": 35,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH3",
+      "dam_index": 2
+    }
+  },
+  {
+    "dam_id": "kaddoussa",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 61,
+    "filling_rate_pct": 27,
+    "previous_year_filling_rate_pct": 34,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH4",
+      "dam_index": 2
+    }
+  },
+  {
     "dam_id": "lalla-takerkoust",
     "date": "2026-08-01",
     "volume_mm3": 42.172,
@@ -2193,6 +2375,62 @@
     "source_ref": {
       "sheet": "Sept_2026",
       "row": 33
+    }
+  },
+  {
+    "dam_id": "mansour-eddahbi",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 202,
+    "filling_rate_pct": 45,
+    "previous_year_filling_rate_pct": 39,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH9",
+      "dam_index": 1
+    }
+  },
+  {
+    "dam_id": "mohammed-v",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 68,
+    "filling_rate_pct": 41,
+    "previous_year_filling_rate_pct": 12,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH1",
+      "dam_index": 2
+    }
+  },
+  {
+    "dam_id": "moulay-abdellah",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 68,
+    "filling_rate_pct": 84,
+    "previous_year_filling_rate_pct": 44,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH8",
+      "dam_index": 3
+    }
+  },
+  {
+    "dam_id": "oued-el-makhazine",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 465,
+    "filling_rate_pct": 66,
+    "previous_year_filling_rate_pct": 72,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH2",
+      "dam_index": 1
     }
   },
   {
@@ -2928,6 +3166,48 @@
     }
   },
   {
+    "dam_id": "sidi-mohamed-ben-abdellah",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 610,
+    "filling_rate_pct": 70,
+    "previous_year_filling_rate_pct": 75,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH5",
+      "dam_index": 1
+    }
+  },
+  {
+    "dam_id": "sultan-moulay-ali-cherif",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 58,
+    "filling_rate_pct": 20,
+    "previous_year_filling_rate_pct": 16,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH9",
+      "dam_index": 2
+    }
+  },
+  {
+    "dam_id": "tiddas",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 461,
+    "filling_rate_pct": 91,
+    "previous_year_filling_rate_pct": null,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH5",
+      "dam_index": 2
+    }
+  },
+  {
     "dam_id": "yacoub-el-mansour",
     "date": "2026-08-01",
     "volume_mm3": 49.205,
@@ -3657,6 +3937,34 @@
     "source_ref": {
       "sheet": "Sept_2026",
       "row": 33
+    }
+  },
+  {
+    "dam_id": "yacoub-el-mansour",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 43,
+    "filling_rate_pct": 75,
+    "previous_year_filling_rate_pct": 33,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH7",
+      "dam_index": 2
+    }
+  },
+  {
+    "dam_id": "youssef-ben-tachfine",
+    "date": "2026-10-12",
+    "date_basis": "dashboard_headline",
+    "capacity_mm3": null,
+    "volume_mm3": 136,
+    "filling_rate_pct": 46,
+    "previous_year_filling_rate_pct": 13,
+    "source_id": "maadialna-2026-10-12",
+    "source_ref": {
+      "basin_code": "MH8",
+      "dam_index": 1
     }
   }
 ]
