@@ -6,6 +6,7 @@ import type { FastifyInstance } from "fastify";
 import { buildApp } from "../../src/app.js";
 import { loadRegions } from "../../src/geography/data/regions.js";
 import { loadGeography } from "../../src/geography/data/subdivisions.js";
+import { collectAllPages } from "../helpers/pagination.js";
 
 let app: FastifyInstance;
 
@@ -26,6 +27,9 @@ describe("geography/regions", () => {
     const body = response.json();
     assert.equal(body.data.length, 12);
     assert.equal(body.meta.total, 12);
+    assert.deepEqual(body.meta.pagination, {
+      limit: 100, offset: 0, count: 12, has_more: false, next_offset: null,
+    });
     assert.equal(body.meta.license, "CC-BY-4.0");
     assert.equal(body.meta.sources.length, 1);
 
@@ -69,6 +73,9 @@ describe("geography/provinces", () => {
     const body = response.json();
     assert.equal(body.data.length, 75);
     assert.equal(body.meta.total, 75);
+    assert.deepEqual(body.meta.pagination, {
+      limit: 100, offset: 0, count: 75, has_more: false, next_offset: null,
+    });
     assert.equal(body.meta.license, "CC-BY-4.0");
     assert.equal(body.meta.retrieved_at, "2026-09-26");
     assert.equal(
@@ -130,7 +137,11 @@ describe("geography/provinces", () => {
 
       const body = response.json();
       assert.equal(body.data.length, total, regionCode);
-      assert.deepEqual(body.meta, { ...provincesBody.meta, total }, regionCode);
+      assert.deepEqual(body.meta, {
+        ...provincesBody.meta,
+        total,
+        pagination: { limit: 100, offset: 0, count: total, has_more: false, next_offset: null },
+      }, regionCode);
       for (const province of body.data as { region_code: string; type: string }[]) {
         assert.equal(province.region_code, regionCode);
         assert.equal(province.type, "province_or_prefecture");
@@ -213,6 +224,9 @@ describe("geography/prefectures-of-arrondissements", () => {
     const body = response.json();
     assert.equal(body.data.length, 8);
     assert.equal(body.meta.total, 8);
+    assert.deepEqual(body.meta.pagination, {
+      limit: 100, offset: 0, count: 8, has_more: false, next_offset: null,
+    });
     assert.equal(
       new Set(body.data.map((item: { code: string }) => item.code)).size,
       8,
@@ -253,11 +267,18 @@ describe("geography/prefectures-of-arrondissements", () => {
 });
 
 describe("geography/communes", () => {
-  it("returns all 1503 communes with unique composite codes", async () => {
+  it("returns all 1503 communes across bounded pages with unique composite codes", async () => {
     const response = await app.inject({ method: "GET", url: "/api/v1/communes" });
     assert.equal(response.statusCode, 200);
 
-    const body = response.json();
+    const firstPage = response.json();
+    assert.equal(firstPage.data.length, 100);
+    assert.equal(firstPage.meta.total, 1503);
+    assert.deepEqual(firstPage.meta.pagination, {
+      limit: 100, offset: 0, count: 100, has_more: true, next_offset: 100,
+    });
+
+    const body = await collectAllPages(app, "/api/v1/communes");
     assert.equal(body.data.length, 1503);
     assert.equal(body.meta.total, 1503);
     assert.equal(body.meta.license, "CC-BY-4.0");
@@ -330,6 +351,9 @@ describe("geography/arrondissements", () => {
     const body = response.json();
     assert.equal(body.data.length, 41);
     assert.equal(body.meta.total, 41);
+    assert.deepEqual(body.meta.pagination, {
+      limit: 100, offset: 0, count: 41, has_more: false, next_offset: null,
+    });
     assert.equal(new Set(body.data.map((item: { code: string }) => item.code)).size, 41);
     assert.equal(
       new Set(body.data.map((item: { hcp_code: string }) => item.hcp_code)).size,
@@ -400,6 +424,9 @@ describe("geography/search", () => {
     const body = response.json();
     assert.equal(body.meta.total, 1);
     assert.equal(body.data[0].code, "rabat-sale-kenitra");
+    assert.deepEqual(body.meta.pagination, {
+      limit: 100, offset: 0, count: 1, has_more: false, next_offset: null,
+    });
   });
 
   it("searches Arabic names", async () => {
@@ -468,9 +495,10 @@ describe("geography/data", () => {
       "/api/v1/arrondissements",
     ];
     const responses = await Promise.all(
-      urls.map((url) => app.inject({ method: "GET", url })),
+      urls.map((url) => collectAllPages(app, url)),
     );
-    const records = responses.flatMap((response) => response.json().data);
+    const records = responses.flatMap((response) => response.data);
+    assert.equal(records.length, 12 + 75 + 8 + 1503 + 41);
     const codes = records.map((record: { code: string }) => record.code);
     const hcpCodes = records.map(
       (record: { hcp_code: string }) => record.hcp_code,

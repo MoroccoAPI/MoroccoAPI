@@ -1,0 +1,70 @@
+{
+  "allowed_licenses": {
+    "description": "License_Type values from the World Bank metadata that MoroccoAPI serves through the API. The committed raw snapshot retains its original mixed per-indicator licenses.",
+    "entries": [
+      {
+        "license_type": "CC BY-4.0",
+        "license": "CC-BY-4.0"
+      }
+    ]
+  },
+  "excluded_indicators": {
+    "description": "Indicators with Moroccan values whose World Bank License_Type is not CC BY 4.0. They are excluded from API responses; requesting one returns a not-found error that names its license. Their original observations remain in the committed mixed-license raw CSV with License_Type and License_URL in source/indicator-metadata.json; sources/world-bank/wdi-morocco.yml lists the raw exceptions and their terms.",
+    "entries": [
+      {
+        "code": "GD_WBL_OVL_ENF",
+        "name": "WBL: Enforcement Perceptions Index (scale 0-100)",
+        "license_type": "CC BY 3.0 IGO",
+        "reason": "license_not_cc_by_4"
+      },
+      {
+        "code": "GD_WBL_OVL_LAW",
+        "name": "WBL: Legal Framework Index (scale 0-100)",
+        "license_type": "CC BY 3.0 IGO",
+        "reason": "license_not_cc_by_4"
+      },
+      {
+        "code": "GD_WBL_OVL_SFR",
+        "name": "WBL: Supportive Framework Index (scale 0-100)",
+        "license_type": "CC BY 3.0 IGO",
+        "reason": "license_not_cc_by_4"
+      },
+      {
+        "code": "MS.MIL.MPRT.KD",
+        "name": "Arms imports (SIPRI trend indicator values)",
+        "license_type": "SIPRI terms and conditions",
+        "reason": "license_not_cc_by_4"
+      },
+      {
+        "code": "MS.MIL.XPND.CD",
+        "name": "Military expenditure (current USD)",
+        "license_type": "SIPRI terms and conditions",
+        "reason": "license_not_cc_by_4"
+      },
+      {
+        "code": "MS.MIL.XPND.CN",
+        "name": "Military expenditure (current LCU)",
+        "license_type": "SIPRI terms and conditions",
+        "reason": "license_not_cc_by_4"
+      },
+      {
+        "code": "MS.MIL.XPND.GD.ZS",
+        "name": "Military expenditure (% of GDP)",
+        "license_type": "SIPRI terms and conditions",
+        "reason": "license_not_cc_by_4"
+      },
+      {
+        "code": "MS.MIL.XPND.ZS",
+        "name": "Military expenditure (% of general government expenditure)",
+        "license_type": "SIPRI terms and conditions",
+        "reason": "license_not_cc_by_4"
+      },
+      {
+        "code": "MS.MIL.XPRT.KD",
+        "name": "Arms exports (SIPRI trend indicator values)",
+        "license_type": "SIPRI terms and conditions",
+        "reason": "license_not_cc_by_4"
+      }
+    ]
+  }
+}

@@ -1,0 +1,392 @@
+[
+    {
+        "Nom": "Ras El Ma (Cabo del Agua ) [Cap de l'eau]",
+        "Region": "Orientale",
+        "Province": "Nador",
+        "Ville": "Nador",
+        "Date de mise en service": 1946,
+        "Type du phare": "Jalonnement",
+        "Caracteristique_rythme": "Fl(2)W.6s",
+        "Portee_mile": 8
+    },
+    {
+        "Nom": "Ras Tleta Madari (Cabo tres Forcas) Cap des trois fourches",
+        "Region": "Orientale",
+        "Province": "Nador",
+        "Ville": "Nador",
+        "Date de mise en service": 1927,
+        "Type du phare": "Atterrissage",
+        "Caracteristique_rythme": "Fl(3+1)W.20s",
+        "Portee_mile": 19
+    },
+    {
+        "Nom": "Ras Tarf (Cabo Quilates)",
+        "Region": "Tanger_Tétouan_AlHoceima",
+        "Province": "Al Hoceima",
+        "Ville": "Al Hoceima",
+        "Date de mise en service": 1930,
+        "Type du phare": "Jalonnement",
+        "Caracteristique_rythme": "Fl(3)W.12s",
+        "Portee_mile": 23
+    },
+    {
+        "Nom": "Sidi Abed( Moro Nuevo)- Punta de Los Frailes",
+        "Region": "Tanger_Tétouan_AlHoceima",
+        "Province": "Al Hoceima",
+        "Ville": "Al Hoceima",
+        "Date de mise en service": "NS",
+        "Type du phare": "Atterrissage",
+        "Caracteristique_rythme": "Fl(2)W.10s",
+        "Portee_mile": 20
+    },
+    {
+        "Nom": "Oued Laou",
+        "Region": "Tanger_Tétouan_AlHoceima",
+        "Province": "Tétouan",
+        "Ville": "Tétouan",
+        "Date de mise en service": 1986,
+        "Type du phare": "Jalonnement",
+        "Caracteristique_rythme": "Oc(2)W.6s",
+        "Portee_mile": 18
+    },
+    {
+        "Nom": "Ras el Aswad (Cabo Negro)",
+        "Region": "Tanger_Tétouan_AlHoceima",
+        "Province": "Tétouan",
+        "Ville": "Tétouan",
+        "Date de mise en service": "NS",
+        "Type du phare": "Atterrissage",
+        "Caracteristique_rythme": "Fl(2+1)W.12s",
+        "Portee_mile": 20
+    },
+    {
+        "Nom": "Ras Ciress( Punta Cires)",
+        "Region": "Tanger_Tétouan_AlHoceima",
+        "Province": "Tanger",
+        "Ville": "Tanger",
+        "Date de mise en service": "NS",
+        "Type du phare": "Jalonnement",
+        "Caracteristique_rythme": "Fl(3)W.12s",
+        "Portee_mile": 18
+    },
+    {
+        "Nom": "Pointe Malabata (Punta Malabata)",
+        "Region": "Tanger_Tétouan_AlHoceima",
+        "Province": "Tanger",
+        "Ville": "Tanger",
+        "Date de mise en service": 1924,
+        "Type du phare": "Atterrissage",
+        "Caracteristique_rythme": "Fl.W.5s",
+        "Portee_mile": 22
+    },
+    {
+        "Nom": "El Charf",
+        "Region": "Tanger_Tétouan_AlHoceima",
+        "Province": "Tanger",
+        "Ville": "Tanger",
+        "Date de mise en service": 1949,
+        "Type du phare": "Jalonnement",
+        "Caracteristique_rythme": "Oc(3)WRG.12s",
+        "Portee_mile": "W.16 R.12 G.11"
+    },
+    {
+        "Nom": "Ras Spartel (Cabo Espartel)",
+        "Region": "Tanger_Tétouan_AlHoceima",
+        "Province": "Tanger",
+        "Ville": "Tanger",
+        "Date de mise en service": 1864,
+        "Type du phare": "Atterrissage",
+        "Caracteristique_rythme": "Fl(4)W.20s",
+        "Portee_mile": 30
+    },
+    {
+        "Nom": "Punta Nador",
+        "Region": "Tanger_Tétouan_AlHoceima",
+        "Province": "Larache",
+        "Ville": "Larache",
+        "Date de mise en service": 1929,
+        "Type du phare": "Atterrissage",
+        "Caracteristique_rythme": "Fl(2)W.15s",
+        "Portee_mile": 26
+    },
+    {
+        "Nom": "Sidi al Hachmi al Bahraoui",
+        "Region": "Rabat_Salé_kénitra",
+        "Province": "Kénitra",
+        "Ville": "Kénitra",
+        "Date de mise en service": 1990,
+        "Type du phare": "Jalonnement",
+        "Caracteristique_rythme": "Fl(2)W.10s",
+        "Portee_mile": 12
+    },
+    {
+        "Nom": "Mehdia",
+        "Region": "Rabat_Salé_kénitra",
+        "Province": "Kénitra",
+        "Ville": "Kénitra",
+        "Date de mise en service": 1917,
+        "Type du phare": "Atterrissage",
+        "Caracteristique_rythme": "Oc(3)W.12s",
+        "Portee_mile": 16
+    },
+    {
+        "Nom": "Fort de la Calette",
+        "Region": "Rabat_Salé_kénitra",
+        "Province": "Rabat",
+        "Ville": "Rabat",
+        "Date de mise en service": 1920,
+        "Type du phare": "Jalonnement",
+        "Caracteristique_rythme": "Oc(2)W.6s",
+        "Portee_mile": 16
+    },
+    {
+        "Nom": "Oukacha",
+        "Region": "Casablanca_Settat",
+        "Province": "Casablanca",
+        "Ville": "Casablanca",
+        "Date de mise en service": 1960,
+        "Type du phare": "Jalonnement",
+        "Caracteristique_rythme": "Oc(2)W.6s",
+        "Portee_mile": 18
+    },
+    {
+        "Nom": "Roches Noires",
+        "Region": "Casablanca_Settat",
+        "Province": "Casablanca",
+        "Ville": "Casablanca",
+        "Date de mise en service": 1920,
+        "Type du phare": "Jalonnement",
+        "Caracteristique_rythme": "Oc.WR.4s",
+        "Portee_mile": "W.20 R.16"
+    },
+    {
+        "Nom": "Pointe de El Hank",
+        "Region": "Casablanca_Settat",
+        "Province": "Casablanca",
+        "Ville": "Casablanca",
+        "Date de mise en service": 1920,
+        "Type du phare": "Atterrissage",
+        "Caracteristique_rythme": "Fl(3)W.15s",
+        "Portee_mile": 30
+    },
+    {
+        "Nom": "Azemmour (Sidi Boubker)",
+        "Region": "Casablanca_Settat",
+        "Province": "El Jadida",
+        "Ville": "El Jadida",
+        "Date de mise en service": 1921,
+        "Type du phare": "Jalonnement",
+        "Caracteristique_rythme": "Fl(2)WR.6s",
+        "Portee_mile": "W.15 R.11"
+    },
+    {
+        "Nom": "Sidi Mesbah",
+        "Region": "Casablanca_Settat",
+        "Province": "El Jadida",
+        "Ville": "El Jadida",
+        "Date de mise en service": 1921,
+        "Type du phare": "Jalonnement",
+        "Caracteristique_rythme": "Oc(2)WR.6s",
+        "Portee_mile": "W.14 R.11"
+    },
+    {
+        "Nom": "Sidi Bou Afi",
+        "Region": "Casablanca_Settat",
+        "Province": "El Jadida",
+        "Ville": "El Jadida",
+        "Date de mise en service": 1916,
+        "Type du phare": "Atterrissage",
+        "Caracteristique_rythme": "Fl(1).W.5s",
+        "Portee_mile": 30
+    },
+    {
+        "Nom": "Sidi Daoui",
+        "Region": "Casablanca_Settat",
+        "Province": "El Jadida",
+        "Ville": "El Jadida",
+        "Date de mise en service": 2001,
+        "Type du phare": "Jalonnement",
+        "Caracteristique_rythme": "Fl(2)W.10s",
+        "Portee_mile": 10
+    },
+    {
+        "Nom": "Ras Jorf Lasfar (Cap Blanc du Nord)",
+        "Region": "Casablanca_Settat",
+        "Province": "El Jadida",
+        "Ville": "El Jadida",
+        "Date de mise en service": "NS",
+        "Type du phare": "Atterrissage",
+        "Caracteristique_rythme": "Oc.WR.6s",
+        "Portee_mile": "W.10 R.7"
+    },
+    {
+        "Nom": "Lalla Fatna",
+        "Region": "Casablanca_Settat",
+        "Province": "El Jadida",
+        "Ville": "El Jadida",
+        "Date de mise en service": 2003,
+        "Type du phare": "Jalonnement",
+        "Caracteristique_rythme": "Fl(3)W.12s",
+        "Portee_mile": 20
+    },
+    {
+        "Nom": "Cap Beddouza( Cantin)",
+        "Region": "Marrakech_Safi",
+        "Province": "Safi",
+        "Ville": "Safi",
+        "Date de mise en service": 1916,
+        "Type du phare": "Jalonnement",
+        "Caracteristique_rythme": "Fl(2)W.10s",
+        "Portee_mile": 22
+    },
+    {
+        "Nom": "Pointe de la Tour (Bordj Nador)",
+        "Region": "Marrakech_Safi",
+        "Province": "Safi",
+        "Ville": "Safi",
+        "Date de mise en service": 1957,
+        "Type du phare": "Atterrissage",
+        "Caracteristique_rythme": "Fl(4)W.12s",
+        "Portee_mile": 18
+    },
+    {
+        "Nom": "Sidi Mogdoul",
+        "Region": "Marrakech_Safi",
+        "Province": "Essaouira",
+        "Ville": "Essaouira",
+        "Date de mise en service": 1916,
+        "Type du phare": "Atterrissage",
+        "Caracteristique_rythme": "Oc.WRG.12s",
+        "Portee_mile": "W.14 R.11 G.9"
+    },
+    {
+        "Nom": "Cap Sim",
+        "Region": "Marrakech_Safi",
+        "Province": "Essaouira",
+        "Ville": "Essaouira",
+        "Date de mise en service": 1917,
+        "Type du phare": "Atterrissage",
+        "Caracteristique_rythme": "Fl(3)W.15s",
+        "Portee_mile": 21
+    },
+    {
+        "Nom": "Cap Ghir(Rhir)",
+        "Region": "Souss_Massa",
+        "Province": "Agadir",
+        "Ville": "Agadir",
+        "Date de mise en service": 1932,
+        "Type du phare": "Atterrissage",
+        "Caracteristique_rythme": "Fl.W.5s",
+        "Portee_mile": 22
+    },
+    {
+        "Nom": "Cap Jellab (Cap d'Aglou)",
+        "Region": "Souss_Massa",
+        "Province": "Tiznit",
+        "Ville": "Tiznit",
+        "Date de mise en service": 2004,
+        "Type du phare": "Jalonnement",
+        "Caracteristique_rythme": "Fl(2+1)W.12s",
+        "Portee_mile": 20
+    },
+    {
+        "Nom": "Sidi Ifni",
+        "Region": "Guelmim_Oued_Noun",
+        "Province": "sidi ifni",
+        "Ville": "sidi ifni",
+        "Date de mise en service": 1949,
+        "Type du phare": "Atterrissage",
+        "Caracteristique_rythme": "Fl(3+1)W.30s",
+        "Portee_mile": 25
+    },
+    {
+        "Nom": "Cap Draa",
+        "Region": "Guelmim_Oued_Noun",
+        "Province": "Tan tan",
+        "Ville": "Tan tan",
+        "Date de mise en service": 1999,
+        "Type du phare": "Jalonnement",
+        "Caracteristique_rythme": "Fl(2)W.5s",
+        "Portee_mile": 25
+    },
+    {
+        "Nom": "Cap Nachtigal",
+        "Region": "Guelmim_Oued_Noun",
+        "Province": "Tan tan",
+        "Ville": "Tan tan",
+        "Date de mise en service": 1977,
+        "Type du phare": "Atterrissage",
+        "Caracteristique_rythme": "Fl.W.5s",
+        "Portee_mile": 15
+    },
+    {
+        "Nom": "TARFAYA (CABO YUBI)",
+        "Region": "Laayoune_Saquia_Al_Hamra",
+        "Province": "Tarfaya",
+        "Ville": "Tarfaya",
+        "Date de mise en service": 1986,
+        "Type du phare": "Atterrissage",
+        "Caracteristique_rythme": "Fl(2)W.5s",
+        "Portee_mile": 20
+    },
+    {
+        "Nom": "El Cabino Cap 5 (Actilghazi)",
+        "Region": "Laayoune_Saquia_Al_Hamra",
+        "Province": "Boujdour",
+        "Ville": "Boujdour",
+        "Date de mise en service": "NS",
+        "Type du phare": "Jalonnement",
+        "Caracteristique_rythme": "Fl(3)W.12s",
+        "Portee_mile": 9
+    },
+    {
+        "Nom": "Cap Boujdour (Cabo Bojador)",
+        "Region": "Laayoune_Saquia_Al_Hamra",
+        "Province": "Boujdour",
+        "Ville": "Boujdour",
+        "Date de mise en service": 1956,
+        "Type du phare": "Atterrissage",
+        "Caracteristique_rythme": "Fl(3)W.15s",
+        "Portee_mile": 24
+    },
+    {
+        "Nom": "Punta del Coral Cap 7(Aftissat)",
+        "Region": "Laayoune_Saquia_Al_Hamra",
+        "Province": "Boujdour",
+        "Ville": "Boujdour",
+        "Date de mise en service": "NS",
+        "Type du phare": "Jalonnement",
+        "Caracteristique_rythme": "Fl(2)W.9s",
+        "Portee_mile": 9
+    },
+    {
+        "Nom": "Pena Grande Cap 8(Nouifed)",
+        "Region": "Laayoune_Saquia_Al_Hamra",
+        "Province": "Boujdour",
+        "Ville": "Boujdour",
+        "Date de mise en service": "NS",
+        "Type du phare": "Jalonnement",
+        "Caracteristique_rythme": "Fl(4)W.15s",
+        "Portee_mile": 9
+    },
+    {
+        "Nom": "Arciprés Grande",
+        "Region": "Dakhla_Oued_Dahab",
+        "Province": "Oued dahab",
+        "Ville": "Dakhla",
+        "Date de mise en service": 1916,
+        "Type du phare": "Atterrissage",
+        "Caracteristique_rythme": "Fl.W.5s",
+        "Portee_mile": 20
+    },
+    {
+        "Nom": "Cabo Barbas",
+        "Region": "Dakhla_Oued_Dahab",
+        "Province": "Oued dahab",
+        "Ville": "Dakhla",
+        "Date de mise en service": 1969,
+        "Type du phare": "Jalonnement",
+        "Caracteristique_rythme": "Fl(3)W.12s",
+        "Portee_mile": 9
+    }
+]

@@ -2,6 +2,8 @@ import type { FastifyPluginAsync } from "fastify";
 
 import { errorSchema, responseSchema } from "../common/schemas.js";
 import { normalizeSearch } from "../common/search.js";
+import { collectionResponseSchema, paginate, paginationQuerySchema } from "../common/pagination.js";
+import type { PaginationQuery } from "../common/pagination.js";
 import { buildDatasetMeta } from "./metadata.js";
 import {
   arrondissementSchema,
@@ -54,23 +56,26 @@ export const geography: FastifyPluginAsync<{ data: GeographySnapshot }> = async 
     const metaSchema = datasetMetaSchema(dataset);
     const url = `/api/v1/${resource.path}`;
 
-    app.get(url, {
+    app.get<{ Querystring: PaginationQuery }>(url, {
       schema: {
         tags, summary: resource.listSummary,
+        querystring: paginationQuerySchema(),
         response: {
-          200: responseSchema({ type: "array", items: resource.schema }, metaSchema),
+          200: collectionResponseSchema(resource.schema, metaSchema),
+          400: errorSchema,
         },
       },
-    }, async () => ({
-      data: resource.records,
-      meta: buildDatasetMeta(dataset, resource.records.length),
-    }));
+    }, async (request) => paginate(
+      resource.records as ReadonlyArray<(typeof resource.records)[number]>,
+      buildDatasetMeta(dataset, resource.records.length),
+      request.query,
+    ));
 
     app.get<{ Params: ResourceParams }>(`${url}/:code`, {
       schema: {
         tags, summary: resource.detailSummary,
         params: codeParamsSchema(resource.path === "regions"),
-        response: { 200: responseSchema(resource.schema, metaSchema), 404: errorSchema },
+        response: { 200: responseSchema(resource.schema, metaSchema), 400: errorSchema, 404: errorSchema },
       },
     }, async (request, reply) => {
       const record = resource.records.find((item) => item.code === request.params.code);
@@ -85,16 +90,18 @@ export const geography: FastifyPluginAsync<{ data: GeographySnapshot }> = async 
     });
   }
 
-  app.get<{ Params: ResourceParams }>("/api/v1/regions/:code/subdivisions", {
+  app.get<{ Params: ResourceParams; Querystring: PaginationQuery }>("/api/v1/regions/:code/subdivisions", {
     schema: {
       tags,
       summary: "Get all subdivisions (provinces and prefectures) by MoroccoAPI region code",
       params: codeParamsSchema(),
+      querystring: paginationQuerySchema(),
       response: {
-        200: responseSchema(
-          { type: "array", items: provinceSchema },
+        200: collectionResponseSchema(
+          provinceSchema,
           datasetMetaSchema("administrative-provinces"),
         ),
+        400: errorSchema,
         404: errorSchema,
       },
     },
@@ -107,20 +114,20 @@ export const geography: FastifyPluginAsync<{ data: GeographySnapshot }> = async 
         request_id: request.id,
       } });
     }
-    return { data: matches, meta: buildDatasetMeta("administrative-provinces", matches.length) };
+    return paginate(matches, buildDatasetMeta("administrative-provinces", matches.length), request.query);
   });
 
-  app.get<{ Querystring: { q: string } }>("/api/v1/locations/search", {
+  app.get<{ Querystring: { q: string } & PaginationQuery }>("/api/v1/locations/search", {
     schema: {
       tags,
       summary: "Search administrative regions by code or multilingual name",
-      querystring: {
+      querystring: paginationQuerySchema({
         type: "object", additionalProperties: false, required: ["q"],
         properties: { q: { type: "string", minLength: 2, maxLength: 100 } },
-      },
+      }),
       response: {
-        200: responseSchema(
-          { type: "array", items: regionSchema },
+        200: collectionResponseSchema(
+          regionSchema,
           datasetMetaSchema("administrative-regions"),
         ),
         400: errorSchema,
@@ -139,6 +146,6 @@ export const geography: FastifyPluginAsync<{ data: GeographySnapshot }> = async 
       [region.code, region.name.ar, region.name.fr, region.name.en]
         .some((name) => normalizeSearch(name).includes(query)),
     );
-    return { data: matches, meta: buildDatasetMeta("administrative-regions", matches.length) };
+    return paginate(matches, buildDatasetMeta("administrative-regions", matches.length), request.query);
   });
 };

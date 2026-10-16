@@ -1,4 +1,8 @@
 import type { FastifyPluginAsync } from "fastify";
+import type { GeographySnapshot } from "../geography/types.js";
+import { collectionResponseSchema, paginate, paginationQuerySchema } from "../common/pagination.js";
+import type { PaginationQuery } from "../common/pagination.js";
+import { assertSafeIntegerInRange } from "../common/validation.js";
 
 import { loadRegionPopulation } from "./data/regions.js";
 import { loadCommunePopulation } from "./data/communes.js";
@@ -17,12 +21,12 @@ import {
   communePopulationSchema,
 } from "./schemas.js";
 
-export const population: FastifyPluginAsync = async (app) => {
+export const population: FastifyPluginAsync<{ geography: GeographySnapshot }> = async (app, { geography }) => {
   const record = await loadNationalPopulation();
-  const regions = await loadRegionPopulation();
+  const regions = await loadRegionPopulation(geography.regions);
   const historical = await loadHistoricalPopulation();
-  const subdivisions = await loadSubdivisionPopulation();
-  const communes = await loadCommunePopulation();
+  const subdivisions = await loadSubdivisionPopulation(geography);
+  const communes = await loadCommunePopulation(geography);
   app.get("/api/v1/population/national", {
     schema: {
       tags: ["Population"],
@@ -39,21 +43,24 @@ export const population: FastifyPluginAsync = async (app) => {
     meta: buildDatasetMeta("national-population", 1),
   }));
 
-  app.get("/api/v1/population/regions", {
+  app.get<{ Querystring: PaginationQuery }>("/api/v1/population/regions", {
     schema: {
       tags: ["Population"],
       summary: "List population totals for Morocco's 12 administrative regions",
+      querystring: paginationQuerySchema(),
       response: {
-        200: responseSchema(
-          { type: "array", items: regionPopulationSchema },
+        200: collectionResponseSchema(
+          regionPopulationSchema,
           datasetMetaSchema("regional-population"),
         ),
+        400: errorSchema,
       },
     },
-  }, async () => ({
-    data: regions,
-    meta: buildDatasetMeta("regional-population", regions.length),
-  }));
+  }, async (request) => paginate(
+    regions,
+    buildDatasetMeta("regional-population", regions.length),
+    request.query,
+  ));
 
   app.get<{ Params: { code: string } }>("/api/v1/population/regions/:code", {
     schema: {
@@ -90,21 +97,24 @@ export const population: FastifyPluginAsync = async (app) => {
       meta: buildDatasetMeta("regional-population", 1),
     };
   });
-  app.get("/api/v1/population/historical", {
+  app.get<{ Querystring: PaginationQuery }>("/api/v1/population/historical", {
     schema: {
       tags: ["Population"],
       summary: "Get Morocco's historical population from 1960 to 2024",
+      querystring: paginationQuerySchema(),
       response: {
-        200: responseSchema(
-          { type: "array", items: historicalPopulationSchema },
+        200: collectionResponseSchema(
+          historicalPopulationSchema,
           datasetMetaSchema("historical-population"),
         ),
+        400: errorSchema,
       },
     },
-  }, async () => ({
-    data: historical,
-    meta: buildDatasetMeta("historical-population", historical.length),
-  }));
+  }, async (request) => paginate(
+    historical,
+    buildDatasetMeta("historical-population", historical.length),
+    request.query,
+  ));
   app.get<{ Params: { year: number } }>("/api/v1/population/historical/:year", {
     schema: {
       tags: ["Population"],
@@ -127,7 +137,9 @@ export const population: FastifyPluginAsync = async (app) => {
       },
     },
   }, async (request, reply) => {
-    const record = historical.find((item) => item.year === request.params.year);
+    const year = request.params.year;
+    assertSafeIntegerInRange(year, "year", 1960, 2024);
+    const record = historical.find((item) => item.year === year);
     if (!record) {
       return reply.code(404).send({ error: {
         code: "RESOURCE_NOT_FOUND",
@@ -141,24 +153,27 @@ export const population: FastifyPluginAsync = async (app) => {
     };
   });
 
-  app.get(
+  app.get<{ Querystring: PaginationQuery }>(
     "/api/v1/population/subdivisions",
     {
       schema: {
         tags: ["Population"],
         summary: "List population data for Morocco's provinces and prefectures",
+        querystring: paginationQuerySchema(),
         response: {
-          200: responseSchema(
-            { type: "array", items: subdivisionPopulationSchema },
+          200: collectionResponseSchema(
+            subdivisionPopulationSchema,
             datasetMetaSchema("subdivision-population"),
           ),
+          400: errorSchema,
         },
       },
     },
-    async () => ({
-      data: subdivisions,
-      meta: buildDatasetMeta("subdivision-population", subdivisions.length),
-    }),
+    async (request) => paginate(
+      subdivisions,
+      buildDatasetMeta("subdivision-population", subdivisions.length),
+      request.query,
+    ),
   );
 
   app.get<{ Params: { code: string } }>("/api/v1/population/subdivisions/:code", {
@@ -197,21 +212,24 @@ export const population: FastifyPluginAsync = async (app) => {
     };
   });
 
-  app.get("/api/v1/population/communes", {
+  app.get<{ Querystring: PaginationQuery }>("/api/v1/population/communes", {
     schema: {
       tags: ["Population"],
       summary: "List population totals for Morocco's 1,503 communes",
+      querystring: paginationQuerySchema(),
       response: {
-        200: responseSchema(
-          { type: "array", items: communePopulationSchema },
+        200: collectionResponseSchema(
+          communePopulationSchema,
           datasetMetaSchema("commune-population"),
         ),
+        400: errorSchema,
       },
     },
-  }, async () => ({
-    data: communes,
-    meta: buildDatasetMeta("commune-population", communes.length),
-  }));
+  }, async (request) => paginate(
+    communes,
+    buildDatasetMeta("commune-population", communes.length),
+    request.query,
+  ));
 
   app.get<{ Params: { code: string } }>("/api/v1/population/communes/:code", {
     schema: {

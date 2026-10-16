@@ -10,6 +10,7 @@ import { loadRegions } from "../../src/geography/data/regions.js";
 import { loadGeography } from "../../src/geography/data/subdivisions.js";
 import { loadPrimaryCareFacilities } from "../../src/health/data/primary-care-facilities.js";
 import type { PrimaryCareFacility } from "../../src/health/types.js";
+import { collectAllPages } from "../helpers/pagination.js";
 
 const url = "/api/v1/health/primary-care-facilities";
 let app: FastifyInstance;
@@ -30,7 +31,13 @@ describe("health/primary-care-facilities", () => {
   it("returns the complete national snapshot and its own source metadata", async () => {
     const response = await app.inject(url);
     assert.equal(response.statusCode, 200);
-    const body = response.json();
+    const firstPage = response.json();
+    assert.deepEqual(firstPage.data, facilities.slice(0, 100));
+    assert.equal(firstPage.meta.total, 3065);
+    assert.deepEqual(firstPage.meta.pagination, {
+      limit: 100, offset: 0, count: 100, has_more: true, next_offset: 100,
+    });
+    const body = await collectAllPages<PrimaryCareFacility>(app, url);
     assert.equal(body.data.length, 3065);
     assert.equal(body.meta.total, 3065);
     assert.equal(body.meta.dataset, "primary-care-facilities");
@@ -62,10 +69,9 @@ describe("health/primary-care-facilities", () => {
       ["province_code", "jerada", 20],
       ["category", "DR", 859],
     ] as const) {
-      const response = await app.inject(`${url}?${field}=${value}`);
-      assert.equal(response.statusCode, 200);
-      const body = response.json();
+      const body = await collectAllPages<PrimaryCareFacility>(app, `${url}?${field}=${value}`);
       assert.equal(body.meta.total, expectedTotal);
+      assert.equal(body.data.length, expectedTotal);
       assert.ok(body.data.every((record: PrimaryCareFacility) => record[field] === value));
     }
   });
@@ -87,7 +93,7 @@ describe("health/primary-care-facilities", () => {
   });
 
   it("keeps the national reference year distinct from commissioning confirmations", async () => {
-    const records = (await app.inject(url)).json().data as PrimaryCareFacility[];
+    const records = (await collectAllPages<PrimaryCareFacility>(app, url)).data;
     assert.ok(records.every((record) => record.reference_year === 2024));
     const confirmed = records.filter((record) => record.last_service_event_date !== null);
     assert.equal(confirmed.length, 46);
@@ -107,7 +113,7 @@ describe("health/primary-care-facilities", () => {
 
   it("documents filters, categories, dates and errors in OpenAPI", async () => {
     const route = (await app.inject("/openapi.json")).json().paths[url].get;
-    assert.deepEqual(route.parameters.map((parameter: { name: string }) => parameter.name).sort(), ["category", "province_code", "q", "region_code"]);
+    assert.deepEqual(route.parameters.map((parameter: { name: string }) => parameter.name).sort(), ["category", "limit", "offset", "province_code", "q", "region_code"]);
     const category = route.parameters.find((parameter: { name: string }) => parameter.name === "category");
     assert.deepEqual(category.schema.enum, ["CSU-1", "CSU-2", "CSR-1", "CSR-2", "DR"]);
     assert.ok(route.responses["400"]);

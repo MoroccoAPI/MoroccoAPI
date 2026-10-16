@@ -1,0 +1,317 @@
+[
+    {
+        "NOM_ETABL": "groupe gues PRIVE",
+        "NOM_ETABA": " مجموعة كيس الخصوصية",
+        "AdresseL": "Av.29 Fevrier - Talborjt -Agad",
+        "AdresseA": "شارع 29 فبراير ، تالبورجت أكاد",
+        "LL_COM": "Agadir (Mun.)",
+        "LL_PROV": "Préfecture: Agadir-Ida -O",
+        "LL_REG": "Souss-Massa"
+    },
+    {
+        "NOM_ETABL": "INSTITUTION D EDUCATION ALQALAM II",
+        "NOM_ETABA": "II مؤسسة القلم التربوية ",
+        "AdresseL": "Barreau est ouest cité dakhla",
+        "AdresseA": "محور شرق غرب حي الداخلة اكادير",
+        "LL_COM": "Agadir (Mun.)",
+        "LL_PROV": "Préfecture: Agadir-Ida -O",
+        "LL_REG": "Souss-Massa"
+    },
+    {
+        "NOM_ETABL": "IBN  GHAZI EL MEKNASSI",
+        "NOM_ETABA": "ابن غازي المكناسي",
+        "AdresseL": "N°1975 - marjane 2",
+        "AdresseA": "رقم 1975 -مرجان 2",
+        "LL_COM": "Meknès (Mun.)",
+        "LL_PROV": "Préfecture: Meknès",
+        "LL_REG": "Fès-Meknès"
+    },
+    {
+        "NOM_ETABL": "CARNOT PREPAS",
+        "NOM_ETABA": "كارنو بريبا",
+        "AdresseL": "AL GHORFA i BOULVARD AMBOISE E",
+        "AdresseA": "الغرفة 1 شارع أمبواز السعادة ا",
+        "LL_COM": "Meknès (Mun.)",
+        "LL_PROV": "Préfecture: Meknès",
+        "LL_REG": "Fès-Meknès"
+    },
+    {
+        "NOM_ETABL": "audenCIa school",
+        "NOM_ETABA": "أودانسيا سكول",
+        "AdresseL": "QUARTIER ABBAS LAMSAADI ROUTE ",
+        "AdresseA": "حي عباس المسعدي طريق الحاجب مك",
+        "LL_COM": "Meknès (Mun.)",
+        "LL_PROV": "Préfecture: Meknès",
+        "LL_REG": "Fès-Meknès"
+    },
+    {
+        "NOM_ETABL": "herzing prepas",
+        "NOM_ETABA": "هرزينغ بريبا",
+        "AdresseL": "N ° 6 AVENUE MOHAMED V VN",
+        "AdresseA": " رقم 6 شارع محمد الخامس المدين",
+        "LL_COM": "Meknès (Mun.)",
+        "LL_PROV": "Préfecture: Meknès",
+        "LL_REG": "Fès-Meknès"
+    },
+    {
+        "NOM_ETABL": "FIRST PREPARATORY CLASSES OF HIGH SCHOOLS PRIVATE",
+        "NOM_ETABA": "فيرست بريباراتوري كلاس أوف هايت سكول بريفات",
+        "AdresseL": null,
+        "AdresseA": "مكناس  E3-B تجزئة رياض الزيتون",
+        "LL_COM": "Meknès (Mun.)",
+        "LL_PROV": "Préfecture: Meknès",
+        "LL_REG": "Fès-Meknès"
+    },
+    {
+        "NOM_ETABL": "GROUPE SCOLAIRE AL KAWTAR  ",
+        "NOM_ETABA": "مجموعة مدارس الكوثر",
+        "AdresseL": "QUARTIER  ADMINISTRATIF BENI M",
+        "AdresseA": "الحي الإداري بني ملال",
+        "LL_COM": "Béni Mellal (Mun.)",
+        "LL_PROV": "Province: Béni Mellal",
+        "LL_REG": "Béni Mellal-Khénifra"
+    },
+    {
+        "NOM_ETABL": "DAY PREPAS",
+        "NOM_ETABA": " داي بريـبا",
+        "AdresseL": "boulevard Hassan II immeuble c",
+        "AdresseA": "بني ملال",
+        "LL_COM": "Béni Mellal (Mun.)",
+        "LL_PROV": "Province: Béni Mellal",
+        "LL_REG": "Béni Mellal-Khénifra"
+    },
+    {
+        "NOM_ETABL": "LYCEE ELBILIA SKOLAR ZIRAOUI",
+        "NOM_ETABA": "ثانوية إلبيليا سكولار زيراوي",
+        "AdresseL": "206 boulevard Ziraoui",
+        "AdresseA": "206 شارع الزيراوي",
+        "LL_COM": "Anfa (Arrond.)",
+        "LL_PROV": "Préf. d'Arr. Casablanca A",
+        "LL_REG": "Casablanca-Settat"
+    },
+    {
+        "NOM_ETABL": "romandie",
+        "NOM_ETABA": "روماندي",
+        "AdresseL": "NULL",
+        "AdresseA": "زنقة أبو ةالصغير رقم 4",
+        "LL_COM": "El Maarif (Arrond.)",
+        "LL_PROV": "Préf. d'Arr. Casablanca A",
+        "LL_REG": "Casablanca-Settat"
+    },
+    {
+        "NOM_ETABL": "Lycée Groupe Scolaire LA RESIDENCE",
+        "NOM_ETABA": "ثانوية مجموعة مدارس الإقامة",
+        "AdresseL": "N° 89, Boulevard 2 Mars - Mers",
+        "AdresseA": "رقم 89، شارع 2 مارس - مرس السل",
+        "LL_COM": "Mers-Sultan (Arrond.)",
+        "LL_PROV": "Préf. d'Arr. Al Fida-Mers",
+        "LL_REG": "Casablanca-Settat"
+    },
+    {
+        "NOM_ETABL": "aniss prive",
+        "NOM_ETABA": "أنيس الخصوصية",
+        "AdresseL": "HAY AMANE AIN SEBAA",
+        "AdresseA": "حي الأمان عين السبع",
+        "LL_COM": "Aîn-Sebaâ (Arrond.)",
+        "LL_PROV": "Préf. d'Arr. Aïn Sebaâ-Ha",
+        "LL_REG": "Casablanca-Settat"
+    },
+    {
+        "NOM_ETABL": "YASSAMINE cALIFORNIE",
+        "NOM_ETABA": "ياسمين كالفورنيا",
+        "AdresseL": "616, lotissement blad el azze ",
+        "AdresseA": "تجزئة بلاد العز، شارع فاس، رقم",
+        "LL_COM": "Aîn-Chock (Arrond.)",
+        "LL_PROV": "Préf. d'Arr.  Aïn Chock",
+        "LL_REG": "Casablanca-Settat"
+    },
+    {
+        "NOM_ETABL": "Lycée Mohammed VI d'excellence - Casablanca",
+        "NOM_ETABA": "ثانوية محمد السادس للتميز- الدار البيضاء ",
+        "AdresseL": "Rue Mohammed al tayeb nasseri ",
+        "AdresseA": "شارع محمد الطيب الناصري الحي ا",
+        "LL_COM": "Hay-Hassani (Arrond.)",
+        "LL_PROV": "Préf. d'Arr.  Hay Hassani",
+        "LL_REG": "Casablanca-Settat"
+    },
+    {
+        "NOM_ETABL": "Classes prepa Ibn ghazi El Fassi sarl",
+        "NOM_ETABA": "ابن  غازي  الفاسي  للأقسام  التحضيرية  الخصوصية",
+        "AdresseL": "40 Rue Houssine slaoui, Hay ba",
+        "AdresseA": " 40 زنقة الحسين السلاوي, حي بد",
+        "LL_COM": "Agdal (Arrond.)",
+        "LL_PROV": "Préfecture: Fès",
+        "LL_REG": "Fès-Meknès"
+    },
+    {
+        "NOM_ETABL": "AL KHAYYAM",
+        "NOM_ETABA": "الخيام",
+        "AdresseL": "1 RUE 27 AV ETTABARI SAADA 1",
+        "AdresseA": " زنقة 27 رقم 1 شارع الطبري الس",
+        "LL_COM": "Agdal (Arrond.)",
+        "LL_PROV": "Préfecture: Fès",
+        "LL_REG": "Fès-Meknès"
+    },
+    {
+        "NOM_ETABL": "AL CACHY",
+        "NOM_ETABA": "الكاشي",
+        "AdresseL": "2 RUE ABDELLAH BEN OMAR BOUREM",
+        "AdresseA": "2 زنقة عبد الله بن عمر بورمانة",
+        "LL_COM": "Agdal (Arrond.)",
+        "LL_PROV": "Préfecture: Fès",
+        "LL_REG": "Fès-Meknès"
+    },
+    {
+        "NOM_ETABL": "technologia",
+        "NOM_ETABA": "تكنولوجيا",
+        "AdresseL": "LOTISSEMENT QUARAOUIYINE ROUTE",
+        "AdresseA": " طريق عين الشقف تجزئة القرويين",
+        "LL_COM": "Saiss (Arrond.)",
+        "LL_PROV": "Préfecture: Fès",
+        "LL_REG": "Fès-Meknès"
+    },
+    {
+        "NOM_ETABL": "ETABLISSEMENT MARRAKECH PREPAS CPGE PRIVE",
+        "NOM_ETABA": "مؤسسة مراكش بريبا للاقسام التحضيرية الخصوصية",
+        "AdresseL": "almassira 1-a-  N°188",
+        "AdresseA": "المسيرة 1 -أ- رقم: 188 ",
+        "LL_COM": "Gueliz (Arrond.)",
+        "LL_PROV": "Préfecture: Marrakech",
+        "LL_REG": "Marrakech-Safi"
+    },
+    {
+        "NOM_ETABL": "ETABLISSEMENT IBN GHAZI CPGE PRIVE ",
+        "NOM_ETABA": "مؤسسة ابن غازي للأقسام التحضيرية الخصوصية ",
+        "AdresseL": "avenue elmansour eddahbi n 171",
+        "AdresseA": "171محمد البقال2 زاوية ",
+        "LL_COM": "Gueliz (Arrond.)",
+        "LL_PROV": "Préfecture: Marrakech",
+        "LL_REG": "Marrakech-Safi"
+    },
+    {
+        "NOM_ETABL": "ETABLISSEMENT IBN GHAZI 2 cPGE PRIVE",
+        "NOM_ETABA": "مؤسسة ابن غازي 2 للاقسام التحضيرية الخصوصية",
+        "AdresseL": "RUE EL MANSOUR EDDAHBI N 171 B",
+        "AdresseA": "171 مكرر زنقة المنصور الدهبي م",
+        "LL_COM": "Gueliz (Arrond.)",
+        "LL_PROV": "Préfecture: Marrakech",
+        "LL_REG": "Marrakech-Safi"
+    },
+    {
+        "NOM_ETABL": "ETABLISSEMENT KOUTOUBIA PREPAS CPGE PRIVE",
+        "NOM_ETABA": "مؤسسة كتبية بريبا للاقسام التحضيرية الخصوصية ",
+        "AdresseL": "avenue 18 novembre n°2 assif d",
+        "AdresseA": "شارع 18 نونبر رقم 2 أسيف د",
+        "LL_COM": "Gueliz (Arrond.)",
+        "LL_PROV": "Préfecture: Marrakech",
+        "LL_REG": "Marrakech-Safi"
+    },
+    {
+        "NOM_ETABL": "ETABLISSEMENT FIRST PREPAS CPGE PRIVE",
+        "NOM_ETABA": "مؤسسة فورست بريبا للاقسام التحضيرية الخصوصية",
+        "AdresseL": "N°177 LOT SIDI ABBAD ANNEXE 3 ",
+        "AdresseA": "رقم 177 تجزئة سيدي عباد شطر 3",
+        "LL_COM": "Gueliz (Arrond.)",
+        "LL_PROV": "Préfecture: Marrakech",
+        "LL_REG": "Marrakech-Safi"
+    },
+    {
+        "NOM_ETABL": "PYTHAGORE PREPAS",
+        "NOM_ETABA": "بيتاغور بريبا",
+        "AdresseL": "72 RUE NABLOUS ROUTE SIDI MAAF",
+        "AdresseA": "زنقة نابلس طريق سيدي معافة رقم",
+        "LL_COM": "Oujda (Mun.)",
+        "LL_PROV": "Préfecture: Oujda-Angad",
+        "LL_REG": "Oriental"
+    },
+    {
+        "NOM_ETABL": "IBN Al GHAZI",
+        "NOM_ETABA": "ابن الغازي",
+        "AdresseL": "n°11 RUE MEZIATA SOUISSI RABAT",
+        "AdresseA": "  رقم 11 زنقة مزياتة حيا السوي",
+        "LL_COM": "Agdal Riyad (Arrond.)",
+        "LL_PROV": "Préfecture: Rabat",
+        "LL_REG": "Rabat-Salé-Kénitra"
+    },
+    {
+        "NOM_ETABL": "Lycée Al-Zahrawi- Rabat",
+        "NOM_ETABA": "الأقسام التحضيرية للمدارس والمعاهد العليا الزهراوي",
+        "AdresseL": "Avenue Allal fassi Irfane",
+        "AdresseA": "شارع علال الفاسي مدينة العرفان",
+        "LL_COM": "Agdal Riyad (Arrond.)",
+        "LL_PROV": "Préfecture: Rabat",
+        "LL_REG": "Rabat-Salé-Kénitra"
+    },
+    {
+        "NOM_ETABL": "ALKHAWARIZMI",
+        "NOM_ETABA": "الخوارزمي",
+        "AdresseL": "70, Avenue patrice lumumba HAS",
+        "AdresseA": "70، زنقة باتريس لومومبا حسان",
+        "LL_COM": "Hassan (Arrond.)",
+        "LL_PROV": "Préfecture: Rabat",
+        "LL_REG": "Rabat-Salé-Kénitra"
+    },
+    {
+        "NOM_ETABL": "LYCEE MOHAMMED VI D'EXCELLENCE",
+        "NOM_ETABA": "ثانوية محمد السادس للتميز",
+        "AdresseL": "NULL",
+        "AdresseA": "المدينة الخضراء ابن جرير",
+        "LL_COM": "Ben Guerir (Mun.)",
+        "LL_PROV": "Province: Rehamna",
+        "LL_REG": "Marrakech-Safi"
+    },
+    {
+        "NOM_ETABL": "UNIVERSITE INTERNATIONALE DE RABAT",
+        "NOM_ETABA": "الجامعة الدولية الرباط",
+        "AdresseL": "technopolis rocade 11100 sala ",
+        "AdresseA": "تكنوبوليس روكاد 11100 سلا الجد",
+        "LL_COM": "Hssaine (Arrond.)",
+        "LL_PROV": "Préfecture: Salé",
+        "LL_REG": "Rabat-Salé-Kénitra"
+    },
+    {
+        "NOM_ETABL": "AL BAYROUNI",
+        "NOM_ETABA": "البيروني",
+        "AdresseL": "Rue Tak Eddine Hilali N° 16, H",
+        "AdresseA": "زنقة تقي الدين الهيلالي، رقم 1",
+        "LL_COM": "Charf-Mghogha (Arrond.)",
+        "LL_PROV": "Préfecture: Tanger-Assila",
+        "LL_REG": "Tanger-Tetouan-Al Hoceima"
+    },
+    {
+        "NOM_ETABL": "SOPHOS",
+        "NOM_ETABA": "صوفوص",
+        "AdresseL": "17 rue mouatek roudani",
+        "AdresseA": "17 شارع الامام القسطلاني",
+        "LL_COM": "Tanger-Médina (Arrond.)",
+        "LL_PROV": "Préfecture: Tanger-Assila",
+        "LL_REG": "Tanger-Tetouan-Al Hoceima"
+    },
+    {
+        "NOM_ETABL": "ESPRIT CLASSES PREPAS",
+        "NOM_ETABA": "إيسبري كلاس بريبا",
+        "AdresseL": "NULL",
+        "AdresseA": "تجزئة طارق رقم 26 درادب",
+        "LL_COM": "Tanger-Médina (Arrond.)",
+        "LL_PROV": "Préfecture: Tanger-Assila",
+        "LL_REG": "Tanger-Tetouan-Al Hoceima"
+    },
+    {
+        "NOM_ETABL": "INSTITUT JILE BILADI PRIVE",
+        "NOM_ETABA": "معهد جيل بلادي الخصوصي",
+        "AdresseL": "HAY MESNANA AV. MOULAY RACHID",
+        "AdresseA": "حي مسنانة شارع مولاي رشيد",
+        "LL_COM": "Tanger-Médina (Arrond.)",
+        "LL_PROV": "Préfecture: Tanger-Assila",
+        "LL_REG": "Tanger-Tetouan-Al Hoceima"
+    },
+    {
+        "NOM_ETABL": "Lycée Méditerranéen LYMED",
+        "NOM_ETABA": "ثانوية البحر الأبيض المتوسط ليميد",
+        "AdresseL": "zone tetouan shore",
+        "AdresseA": "منطقة تطوان شور",
+        "LL_COM": "Martil (Mun.)",
+        "LL_PROV": "Préfecture: M'Diq-Fnideq",
+        "LL_REG": "Tanger-Tetouan-Al Hoceima"
+    }
+]

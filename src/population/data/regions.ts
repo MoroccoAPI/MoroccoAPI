@@ -1,6 +1,6 @@
 import { readFile } from "node:fs/promises";
 
-import { loadRegions } from "../../geography/data/regions.js";
+import type { Region } from "../../geography/types.js";
 import type { RegionPopulation } from "../types.js";
 
 const datasetUrl = new URL("../../../data/population/region-population.json", import.meta.url);
@@ -35,11 +35,10 @@ function assertRegionPopulation(value: unknown, index: number): asserts value is
   }
 }
 
-export async function loadRegionPopulation(): Promise<readonly RegionPopulation[]> {
-  const [raw, regions] = await Promise.all([
-    readFile(datasetUrl, "utf8"),
-    loadRegions(),
-  ]);
+export async function loadRegionPopulation(
+  regions: readonly Region[],
+): Promise<readonly RegionPopulation[]> {
+  const raw = await readFile(datasetUrl, "utf8");
   const parsed: unknown = JSON.parse(raw);
   if (!Array.isArray(parsed) || parsed.length !== regions.length) {
     throw new Error(`The regional population dataset must contain ${regions.length} records`);

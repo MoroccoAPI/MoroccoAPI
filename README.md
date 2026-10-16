@@ -36,7 +36,7 @@ npm run check
 1. **Source first:** every field must be traceable to an identified source.
 2. **License before code:** a dataset is not integrated until redistribution rights are documented.
 3. **Stable contracts:** breaking changes require a new API version.
-4. **No personal-data lookup:** MoroccoAPI will not expose CIN, phone, address, or citizen-profile endpoints.
+4. **No personal-data lookup:** MoroccoAPI will not expose CIN, phone, address, or citizen profile.
 5. **Multilingual by design:** Arabic, French, and English names are supported when reliable translations exist.
 6. **Freshness is visible:** responses identify the source and relevant update dates.
 7. **Community governance:** decisions and changes are discussed publicly.

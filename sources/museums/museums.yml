@@ -1,0 +1,93 @@
+id: morocco-museums-fnm
+title: FNM museum inventory, September 2026
+version: 1.0.0
+reviewed_at: 2026-10-14
+retrieved_at: 2026-10-14
+source_version: Septembre 2026
+source_license: ODbL-1.0
+license_url: https://opendatacommons.org/licenses/odbl/1-0/
+contains_personal_data: false
+privacy_review: Public institutional visitor contacts only; no staff or visitor records.
+redistribution_review: approved
+record_count: 23
+city_count: 11
+region_count: 7
+scope: FNM inventory; not an exhaustive census of all Moroccan museums.
+attribution: >-
+  Contains factual information from Liste des musées au Maroc and Guide des
+  musées du Maroc, produced by Fondation Nationale des Musées (FNM), obtained
+  from data.gov.ma under ODbL 1.0. Normalized by MoroccoAPI, version 1.0.0.
+  HCP RGPH 2024 geographic associations retain CC BY 4.0 attribution.
+reuse: >-
+  The adapted database is distributed under ODbL 1.0. Preserve attribution and
+  the license notice and meet applicable share-alike obligations. Original
+  images, lengthy descriptive prose and unlicensed research pages are excluded.
+sources:
+  - id: fnm-list-2026
+    producer: Fondation Nationale des Musées (FNM)
+    dataset: Liste des musées au Maroc
+    source_url: https://data.gov.ma/data/fr/dataset/cartographie-des-musees-au-maroc
+    resource_url: https://data.gov.ma/data/fr/dataset/c4ec598a-a30d-496e-8252-4d3297395f77/resource/39c5b6d8-0396-42ef-8755-9e74fe2d790d/download/liste-des-musees.xlsx
+    source_updated_at: 2026-10-02
+    source_license: ODbL-1.0
+    format: XLSX
+    size_bytes: 13259
+    sha256: 22fcb25a6ddac4f77451782f6b9db0bf7c9528f4d5f37ebe82ae8171f660a45d
+    extraction: All 23 rows on sheet PARTIE 1, rows 2 through 24.
+  - id: fnm-guide-2026
+    producer: Fondation Nationale des Musées (FNM)
+    dataset: Guide des musées du Maroc
+    source_url: https://data.gov.ma/data/fr/dataset/guide-des-musees-du-maroc
+    resource_url: https://data.gov.ma/data/fr/dataset/58999b09-b27c-4a7e-af5a-817ca91589d4/resource/6e5fb7c8-6b6c-4d70-8249-3662cd20b699/download/guide-des-23-musees-de-la-fnm.docx
+    source_updated_at: 2026-09-28
+    source_license: ODbL-1.0
+    format: DOCX
+    size_bytes: 253576
+    sha256: 127a501c8f9c913e50bd5a443eb486665f48f6da530e0f09eb2f01561184b9fa
+    extraction: Arabic museum headings and French aliases, matched by museum and city.
+  - id: hcp-rgph-2024
+    producer: Haut-Commissariat au Plan (HCP)
+    dataset: Population légale du Royaume du Maroc selon les résultats du RGPH 2024
+    source_url: https://www.hcp.ma/file/242341/
+    source_updated_at: 2024-11-22
+    source_license: CC-BY-4.0
+    license_url: https://creativecommons.org/licenses/by/4.0/
+    manifests:
+      - sources/geography/administrative-regions.yml
+      - sources/geography/administrative-subdivisions.yml
+    extraction: Exact unique French city-name matches to existing commune and region codes.
+transformation:
+  input: Reviewed September 2026 XLSX and DOCX facts, plus existing HCP geography.
+  snapshot: data/museums/museums.json
+  implementation: src/museums/data.ts
+  steps:
+    - Preserve all 23 source museums, original French spellings and visitor text.
+    - Normalize whitespace without correcting source names or inventing facts.
+    - Use official Arabic guide headings; leave museum English names null.
+    - Retain guide French headings as aliases when different from the XLSX name.
+    - Preserve stable internal IDs and exact commune/region associations.
+    - Normalize valid ten-digit institutional phones; keep missing/incomplete values null.
+    - Extract social handles without inferring a platform.
+    - Flag shared numbers, incomplete contacts, spelling differences and works/hours conflicts.
+    - Leave coordinates null and current operating status unknown.
+  verification: node --import tsx --test test/museums/*.test.ts
+endpoints:
+  - GET /api/v1/museums
+  - GET /api/v1/museums/{id}
+filters: q, city_code, region_code; combined with AND.
+update_frequency: No fixed publication schedule documented.
+update_behavior: >-
+  Updates require review of the source edition, license, matching keys, contacts
+  and geography, with tests. Preserve existing IDs when a museum name changes.
+  Requests reuse a validated immutable snapshot without network access.
+limitations:
+  - FNM coverage excludes museums operated by other public or private institutions.
+  - Both open-data resources list 23 museums; the FNM website lists 22.
+  - The extra entry is Musée de la Culture Juive Marocaine in Fès; current operation is unknown.
+  - The FNM directory at https://www.fnm.ma/museums/ is a link-only cross-check.
+  - Azilal's phone has nine digits in both sources; it is not repaired.
+  - Four XLSX museums have no phone; eleven records share a number with another record.
+  - Dar Si Said mentions works in the XLSX, while the guide gives ordinary hours.
+  - The Casablanca photography museum's XLSX spelling says photographic; its alias preserves photographie.
+  - Hours and tariffs describe September 2026, not a live visitor service.
+  - Tariff excerpts omit some general free-entry and reduction conditions in the guide.
