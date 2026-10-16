@@ -31,6 +31,20 @@ Before opening a pull request, run:
 npm run check
 ```
 
+## Tensift dam levels
+
+Daily historical water-storage observations for five Tensift dams are available
+from August 1 through September 30, 2026 (305 records), sourced from ABHT under
+ODbL 1.0. These are monthly snapshots, not live levels.
+
+```text
+GET /api/v1/dams?basin=tensift
+GET /api/v1/dams/{id}/levels?from=2026-09-01&to=2026-09-30
+```
+
+See the [dataset and API guide](data/dams/README.md) for IDs, units, pagination,
+provenance and rebuild commands.
+
 ## Principles
 
 1. **Source first:** every field must be traceable to an identified source.
