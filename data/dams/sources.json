@@ -14,7 +14,7 @@
   "transformation_version": "1.0.0",
   "contains_personal_data": false,
   "redistribution_review": "approved",
-  "review_basis": "The official ABHT dataset's preserved CKAN metadata explicitly declares odc-odbl and isopen=true; the adapted hydrological database is distributed under ODbL 1.0.",
+  "review_basis": "The official ABHT catalog reviewed on 2026-10-16 declares odc-odbl and isopen=true; the adapted hydrological database is distributed under ODbL 1.0.",
   "coverage": {
     "basin": "tensift",
     "start": "2026-08-01",
@@ -24,21 +24,12 @@
     "complete_national_registry": false,
     "live": false
   },
-  "metadata_snapshot": {
-    "raw_file": "raw/catalog-metadata.json",
-    "resource_url": "https://data.gov.ma/data/api/3/action/package_show?id=situation-journaliere-des-barrages-dans-le-bassin-du-tensift",
-    "bytes": 3418,
-    "sha256": "e81ac537a05d8ba556f930151150790161ff137ee4d4a6470d87cb9a5929370e",
-    "format": "ckan-package-show-json-subset",
-    "capture": "Deterministic selected dataset, license, producer and resource fields; contributor contact metadata omitted. Downloaded API response: 10322 bytes, SHA-256 12d2956ab75c6e7eaa66133523e7a5530eb3ff81edbd642322ecfc2096418ed3."
-  },
   "resources": [
     {
       "id": "abht-tensift-2026-08",
       "resource_id": "0b69e96f-6c95-40ff-8c91-3721984b2613",
       "name": "data_barrages_tensift_aout_2026.xlsx",
       "resource_url": "https://data.gov.ma/data/fr/dataset/0aff0dd1-3c7e-4e14-9cbf-18782902a6e4/resource/0b69e96f-6c95-40ff-8c91-3721984b2613/download/data_barrages_tensift_aout_2026.xlsx",
-      "raw_file": "raw/data_barrages_tensift_aout_2026.xlsx",
       "format": "xlsx",
       "sheet": "Août_2026",
       "period": "2026-08",
@@ -54,7 +45,6 @@
       "resource_id": "57580e59-8b9c-4bde-bf9f-2a25107bbf6e",
       "name": "Data_Barrages_Tensift_Sept_2026.xlsx",
       "resource_url": "https://data.gov.ma/data/fr/dataset/0aff0dd1-3c7e-4e14-9cbf-18782902a6e4/resource/57580e59-8b9c-4bde-bf9f-2a25107bbf6e/download/data_barrages_tensift_sept_2026.xlsx",
-      "raw_file": "raw/data_barrages_tensift_sept_2026.xlsx",
       "format": "xlsx",
       "sheet": "Sept_2026",
       "period": "2026-09",
@@ -66,14 +56,15 @@
       "observation_count": 150
     }
   ],
-  "normalization_script": "scripts/dams/pipeline.py",
   "notes": [
     "Observation years and months are corroborated by the workbook sheet names, resource names and official catalog temporal coverage, not retrieval or publication timestamps.",
     "Only the five source-named dams and their daily reserve, filling rate and explicitly supplied normal capacity are included. Names are trimmed without spelling corrections, translations, coordinates or administrative joins.",
     "Filling rates retain the workbook's numeric cached values. They are percentages on the 0 to 100 scale, not fractional ratios. Consistency with source capacity is checked but the published percentages are not replaced by recomputed values.",
     "Workbook row 2 supplies normal capacity for that monthly release. It is copied to each observation rather than asserted as permanently current dam capacity.",
-    "The catalog and resource URLs are mutable. SHA-256 checks pin these retrieved bytes; any upstream change requires review before updating this snapshot.",
+    "The catalog and resource URLs are mutable. Recorded source sizes and SHA-256 digests identify the files used for this snapshot; raw files are not included.",
     "The source has no time of day or timezone per observation. Dates are calendar dates and no timestamps are invented.",
     "Latest here means 2026-09-30, the last date in the reviewed files; this is not a live or national dam service."
-  ]
+  ],
+  "attribution": "Contains information from Situation journalière des barrages dans le bassin du Tensift, produced by Agence du bassin hydraulique de Tensift (ABHT) and obtained from https://data.gov.ma/data/fr/dataset/situation-journaliere-des-barrages-dans-le-bassin-du-tensift under ODbL. Adapted by MoroccoAPI, transformation 1.0.0. This adapted database is made available under ODbL 1.0: https://opendatacommons.org/licenses/odbl/1-0/. Retain the producer attribution and database license notices. The source code license is separate.",
+  "catalog_response_sha256": "12d2956ab75c6e7eaa66133523e7a5530eb3ff81edbd642322ecfc2096418ed3"
 }

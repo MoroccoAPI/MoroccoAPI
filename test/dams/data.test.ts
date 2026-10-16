@@ -1,9 +1,9 @@
 import assert from "node:assert/strict";
-import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import { describe, it } from "node:test";
 
 import { loadDams, validateDamData } from "../../src/dams/data.js";
+import { buildDamMeta } from "../../src/dams/metadata.js";
 
 describe("dams/data", () => {
   it("loads an immutable snapshot with complete daily observation keys", async () => {
@@ -74,25 +74,46 @@ describe("dams/data", () => {
     assert.throws(() => validateDamData(invalidPeriod.dams, invalidPeriod.levels, invalidPeriod.manifest));
   });
 
-  it("retains the exact licensed source workbooks and resolvable provenance", async () => {
+  it("keeps normalized observations, source attribution and API metadata consistent", async () => {
     const data = await loadDams();
     const manifest = JSON.parse(await readFile(new URL("../../data/dams/sources.json", import.meta.url), "utf8"));
-    assert.equal(manifest.source_license, "ODbL-1.0");
-    const metadataRaw = await readFile(new URL(`../../data/dams/${manifest.metadata_snapshot.raw_file}`, import.meta.url));
-    assert.equal(metadataRaw.byteLength, manifest.metadata_snapshot.bytes);
-    assert.equal(createHash("sha256").update(metadataRaw).digest("hex"), manifest.metadata_snapshot.sha256);
-    const catalog = JSON.parse(metadataRaw.toString("utf8")).result;
-    assert.equal(catalog.license_id, "odc-odbl");
-    assert.equal(catalog.isopen, true);
-    const sourceIds = new Set<string>();
-    for (const resource of manifest.resources) {
-      const raw = await readFile(new URL(`../../data/dams/${resource.raw_file}`, import.meta.url));
-      assert.equal(raw.byteLength, resource.bytes);
-      assert.equal(createHash("sha256").update(raw).digest("hex"), resource.sha256);
-      assert.ok(resource.resource_url.startsWith("https://data.gov.ma/"));
-      sourceIds.add(resource.id);
+    const meta = buildDamMeta(data, data.levels.length);
+    assert.equal(meta.dataset, manifest.id);
+    assert.equal(meta.total, manifest.coverage.observation_count);
+    assert.equal(data.dams.length, manifest.coverage.dam_count);
+    assert.equal(meta.coverage.from, manifest.coverage.start);
+    assert.equal(meta.coverage.to, manifest.coverage.end);
+    assert.equal(meta.coverage.real_time, manifest.coverage.live);
+    assert.equal(meta.license, "ODbL-1.0");
+    assert.equal(meta.license_url, manifest.license_url);
+    assert.equal(new URL(manifest.source_url).hostname, "data.gov.ma");
+    assert.ok(manifest.attribution.includes(manifest.producer));
+    assert.ok(manifest.attribution.includes(manifest.license_url));
+    assert.ok(manifest.attribution.includes("MoroccoAPI"));
+    assert.equal(manifest.catalog_response_sha256, "12d2956ab75c6e7eaa66133523e7a5530eb3ff81edbd642322ecfc2096418ed3");
+
+    const sources = new Map(data.manifest.resources.map((source) => [source.id, source]));
+    assert.equal(sources.size, 2);
+    assert.deepEqual(manifest.resources.map(({ id, bytes, sha256 }) => ({ id, bytes, sha256 })), [
+      { id: "abht-tensift-2026-08", bytes: 14178, sha256: "818c761003cc96ba0bf0fd3da076089f956020ac09905de97b2dbefef54358d7" },
+      { id: "abht-tensift-2026-09", bytes: 1984212, sha256: "54195396f6358913416770b8dc2e90f1976d806186e50a96c75ca7fd6721eb46" },
+    ]);
+    for (const source of meta.sources) {
+      const resource = sources.get(source.id)!;
+      assert.equal(source.resource_url, resource.resource_url);
+      assert.equal(new URL(source.resource_url).hostname, "data.gov.ma");
+      assert.equal(source.source_url, manifest.source_url);
+      assert.equal(source.producer, manifest.producer);
+      assert.equal(source.license, manifest.source_license);
     }
-    assert.equal(sourceIds.size, 2);
-    for (const level of data.levels) assert.ok(sourceIds.has(level.source_id));
+    for (const level of data.levels) {
+      const source = sources.get(level.source_id);
+      assert.ok(source, `Missing source for ${level.dam_id} on ${level.date}`);
+      assert.equal(level.date.slice(0, 7), source.period);
+      assert.equal(level.source_ref.sheet, source.sheet);
+    }
+    for (const resource of manifest.resources) {
+      assert.equal(data.levels.filter((level) => level.source_id === resource.id).length, resource.observation_count);
+    }
   });
 });
