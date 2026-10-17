@@ -1,6 +1,5 @@
 import cors from "@fastify/cors";
 import swagger from "@fastify/swagger";
-import swaggerUi from "@fastify/swagger-ui";
 import Fastify, {
   type FastifyError,
   type FastifyInstance,
@@ -26,6 +25,7 @@ import { airports } from "./airports/routes.js";
 import { museums } from "./museums/routes.js";
 import { maritime } from "./maritime/routes.js";
 import { dams } from "./dams/routes.js";
+import { documentation } from "./docs/routes.js";
 
 const publicCorsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -158,10 +158,7 @@ export async function buildApp(
     });
   });
 
-  await app.register(swaggerUi, {
-    routePrefix: "/docs",
-    uiConfig: { docExpansion: "list", deepLinking: true },
-  });
+  await app.register(documentation);
 
   app.get(
     "/openapi.json",
