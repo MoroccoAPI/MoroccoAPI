@@ -16,6 +16,7 @@ import { health } from "./health/routes.js";
 import { status } from "./status.js";
 import { home } from "./home/routes.js";
 import { population } from "./population/routes.js";
+import { publicService } from "./public-service/routes.js";
 import { postal } from "./postal/routes.js";
 import { worldBank } from "./world-bank/routes.js";
 import { APP_VERSION } from "./version.js";
@@ -124,6 +125,10 @@ export async function buildApp(
         },
         { name: "Population", description: "Demographic data for Morocco" },
         { name: "Health", description: "Health facilities and infrastructure indicators with source and snapshot metadata" },
+        {
+          name: "Public service",
+          description: "Civil-service reference data: simulated net salaries by grade, compiled by Wadifa Info",
+        },
         { name: "Education", description: "Public and private schools and public university establishments" },
         { name: "Telecom", description: "Local phone formatting and licensed carrier and geographic prefix mappings" },
         { name: "Holidays", description: "Moroccan public holidays and business days with confirmation status" },
@@ -195,6 +200,7 @@ export async function buildApp(
   await app.register(geography, { data: geographyData });
   await app.register(population, { geography: geographyData });
   await app.register(health, { geography: geographyData });
+  await app.register(publicService);
   await app.register(telecom);
   await app.register(education);
   await app.register(holidays);

@@ -1,0 +1,4072 @@
+[
+  {
+    "code": "adjoint-administratif-1er-grade",
+    "grade": {
+      "fr": "Adjoint administratif 1er grade"
+    },
+    "corps": {
+      "ar": "مساعدين إداريين"
+    },
+    "net_monthly_salary_mad": 5566,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Adjoint-administratif-1er-grade-au-maroc"
+  },
+  {
+    "code": "adjoint-administratif-2eme-grade",
+    "grade": {
+      "fr": "Adjoint administratif 2ème grade"
+    },
+    "corps": {
+      "ar": "المساعدون الإداريون"
+    },
+    "net_monthly_salary_mad": 4933,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Adjoint-administratif-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "adjoint-administratif-grade-principal",
+    "grade": {
+      "fr": "Adjoint administratif grade principal"
+    },
+    "corps": {
+      "ar": "مساعدين إداريين"
+    },
+    "net_monthly_salary_mad": 5795,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Adjoint-administratif-grade-principal-au-maroc"
+  },
+  {
+    "code": "adjoint-administratif-technique-principal-imprimerie",
+    "grade": {
+      "fr": "Adjoint administratif technique principal -Imprimerie-"
+    },
+    "corps": {
+      "ar": "مساعدين تقنيين"
+    },
+    "net_monthly_salary_mad": 6434,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Adjoint-administratif-technique-principal-Imprimerie--au-maroc"
+  },
+  {
+    "code": "adjoint-de-sante-brevete",
+    "grade": {
+      "fr": "Adjoint de santé breveté"
+    },
+    "corps": {
+      "ar": "أطر وزارة الصحة"
+    },
+    "net_monthly_salary_mad": 4939,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Adjoint-de-sant%C3%A9-brevet%C3%A9-au-maroc"
+  },
+  {
+    "code": "adjoint-de-sante-brevete-principal",
+    "grade": {
+      "fr": "Adjoint de santé breveté principal"
+    },
+    "corps": {
+      "ar": "أطر وزارة الصحة"
+    },
+    "net_monthly_salary_mad": 5240,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Adjoint-de-sant%C3%A9-brevet%C3%A9-principal-au-maroc"
+  },
+  {
+    "code": "adjoint-de-sante-diplome-d-etat",
+    "grade": {
+      "fr": "Adjoint de santé diplomé d'Etat"
+    },
+    "corps": {
+      "ar": "أطر وزارة الصحة"
+    },
+    "net_monthly_salary_mad": 5575,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Adjoint-de-sant%C3%A9-diplom%C3%A9-d%27Etat-au-maroc"
+  },
+  {
+    "code": "adjoint-technique-1er-grade",
+    "grade": {
+      "fr": "Adjoint technique 1er grade"
+    },
+    "corps": {
+      "ar": "مساعدين تقنيين"
+    },
+    "net_monthly_salary_mad": 5566,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Adjoint-technique-1er-grade-au-maroc"
+  },
+  {
+    "code": "adjoint-technique-1er-grade-imprimerie",
+    "grade": {
+      "fr": "Adjoint technique 1er grade -Imprimerie-"
+    },
+    "corps": {
+      "ar": "مساعدين تقنيين"
+    },
+    "net_monthly_salary_mad": 6143,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Adjoint-technique-1er-grade-Imprimerie--au-maroc"
+  },
+  {
+    "code": "adjoint-technique-2eme-grade",
+    "grade": {
+      "fr": "Adjoint technique 2ème grade"
+    },
+    "corps": {
+      "ar": "المساعدون التقنيون"
+    },
+    "net_monthly_salary_mad": 3985,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Adjoint-technique-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "adjoint-technique-2eme-grade-imprimerie",
+    "grade": {
+      "fr": "Adjoint technique 2eme grade -Imprimerie-"
+    },
+    "corps": {
+      "ar": "مساعدين تقنيين"
+    },
+    "net_monthly_salary_mad": 5556,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Adjoint-technique-2eme-grade-Imprimerie--au-maroc"
+  },
+  {
+    "code": "adjoint-technique-grade-principal",
+    "grade": {
+      "fr": "Adjoint technique grade principal"
+    },
+    "corps": {
+      "ar": "مساعدين تقنيين"
+    },
+    "net_monthly_salary_mad": 5795,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Adjoint-technique-grade-principal-au-maroc"
+  },
+  {
+    "code": "administrateur-2eme-grade",
+    "grade": {
+      "fr": "Administrateur 2ème grade"
+    },
+    "corps": {
+      "ar": "المتصرفون"
+    },
+    "net_monthly_salary_mad": 9506,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Administrateur-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "administrateur-2eme-grade-imprimerie",
+    "grade": {
+      "fr": "Administrateur 2ème grade -Imprimerie-"
+    },
+    "corps": {
+      "ar": "متصرفين"
+    },
+    "net_monthly_salary_mad": 10047,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Administrateur-2%C3%A8me-grade-Imprimerie--au-maroc"
+  },
+  {
+    "code": "administrateur-3eme-grade",
+    "grade": {
+      "fr": "Administrateur 3ème grade"
+    },
+    "corps": {
+      "ar": "المتصرفون"
+    },
+    "net_monthly_salary_mad": 6855,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Administrateur-3%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "administrateur-3eme-grade-imprimerie",
+    "grade": {
+      "fr": "Administrateur 3ème grade -Imprimerie-"
+    },
+    "corps": {
+      "ar": "متصرفين"
+    },
+    "net_monthly_salary_mad": 7521,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Administrateur-3%C3%A8me-grade-Imprimerie--au-maroc"
+  },
+  {
+    "code": "administrateur-adjoint-classe-exceptionnelle",
+    "grade": {
+      "fr": "Administrateur adjoint classe exceptionnelle"
+    },
+    "corps": {
+      "ar": "متصرفي وزارة الداخلية"
+    },
+    "net_monthly_salary_mad": 8864,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Administrateur-adjoint-classe-exceptionnelle-au-maroc"
+  },
+  {
+    "code": "administrateur-adjoint-de-l-interieur",
+    "grade": {
+      "fr": "Administrateur adjoint de l'Interieur"
+    },
+    "corps": {
+      "ar": "متصرفي وزارة الداخلية"
+    },
+    "net_monthly_salary_mad": 6855,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Administrateur-adjoint-de-l%27Interieur-au-maroc"
+  },
+  {
+    "code": "administrateur-adjoint-deuxieme-classe",
+    "grade": {
+      "fr": "Administrateur adjoint deuxiéme classe"
+    },
+    "corps": {
+      "ar": "متصرفي وزارة الداخلية"
+    },
+    "net_monthly_salary_mad": 6855,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Administrateur-adjoint-deuxi%C3%A9me-classe-au-maroc"
+  },
+  {
+    "code": "administrateur-adjoint-premiere-classe",
+    "grade": {
+      "fr": "Administrateur adjoint premiére classe"
+    },
+    "corps": {
+      "ar": "متصرفي وزارة الداخلية"
+    },
+    "net_monthly_salary_mad": 8332,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Administrateur-adjoint-premi%C3%A9re-classe-au-maroc"
+  },
+  {
+    "code": "administrateur-classe-exceptionnelle",
+    "grade": {
+      "fr": "Administrateur classe exceptionnelle"
+    },
+    "corps": {
+      "ar": "متصرفي وزارة الداخلية"
+    },
+    "net_monthly_salary_mad": 12844,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Administrateur-classe-exceptionnelle-au-maroc"
+  },
+  {
+    "code": "administrateur-de-1er-grade",
+    "grade": {
+      "fr": "Administrateur de 1er grade"
+    },
+    "corps": {
+      "ar": "متصرفين"
+    },
+    "net_monthly_salary_mad": 15112,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Administrateur-de-1er-grade-au-maroc"
+  },
+  {
+    "code": "administrateur-de-1er-grade-imprimerie",
+    "grade": {
+      "fr": "Administrateur de 1er grade -Imprimerie-"
+    },
+    "corps": {
+      "ar": "متصرفين"
+    },
+    "net_monthly_salary_mad": 15600,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Administrateur-de-1er-grade-Imprimerie--au-maroc"
+  },
+  {
+    "code": "administrateur-de-l-education-nationale-de-2eme-grade",
+    "grade": {
+      "fr": "Administrateur de l'éducation nationale de 2ème grade"
+    },
+    "corps": {
+      "ar": "هيئة متصرفي التربية الوطنية"
+    },
+    "net_monthly_salary_mad": 7363,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Administrateur-de-l%27%C3%A9ducation-nationale-de-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "administrateur-de-l-education-nationale-de-grade-principal",
+    "grade": {
+      "fr": "Administrateur de l'éducation nationale de grade principal"
+    },
+    "corps": {
+      "ar": "هيئة متصرفي التربية الوطنية"
+    },
+    "net_monthly_salary_mad": 14030,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Administrateur-de-l%27%C3%A9ducation-nationale-de-grade-principal-au-maroc"
+  },
+  {
+    "code": "administrateur-de-l-education-nationale-premier-grade",
+    "grade": {
+      "fr": "Administrateur de l'éducation nationale premier grade"
+    },
+    "corps": {
+      "ar": "متصرفي التربية الوطنية"
+    },
+    "net_monthly_salary_mad": 9512,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Administrateur-de-l%27%C3%A9ducation-nationale-premier-grade-au-maroc"
+  },
+  {
+    "code": "administrateur-de-l-interieur",
+    "grade": {
+      "fr": "Administrateur de l'Interieur"
+    },
+    "corps": {
+      "ar": "متصرفي وزارة الداخلية"
+    },
+    "net_monthly_salary_mad": 9506,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Administrateur-de-l%27Interieur-au-maroc"
+  },
+  {
+    "code": "administrateur-deuxieme-classe",
+    "grade": {
+      "fr": "Administrateur deuxiéme classe"
+    },
+    "corps": {
+      "ar": "متصرفي وزارة الداخلية"
+    },
+    "net_monthly_salary_mad": 9506,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Administrateur-deuxi%C3%A9me-classe-au-maroc"
+  },
+  {
+    "code": "administrateur-pedagogique-1er-grade",
+    "grade": {
+      "fr": "Administrateur pédagogique 1er grade"
+    },
+    "corps": {
+      "ar": "هيئة الإدارة التربوية والتدبير"
+    },
+    "net_monthly_salary_mad": 9969,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Administrateur-p%C3%A9dagogique-1er-grade-au-maroc"
+  },
+  {
+    "code": "administrateur-pedagogique-grade-principal",
+    "grade": {
+      "fr": "Administrateur pédagogique grade principal"
+    },
+    "corps": {
+      "ar": "هيئة الإدارة التربوية والتدبير"
+    },
+    "net_monthly_salary_mad": 14488,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Administrateur-p%C3%A9dagogique-grade-principal-au-maroc"
+  },
+  {
+    "code": "administrateur-premiere-classe",
+    "grade": {
+      "fr": "Administrateur premiére classe"
+    },
+    "corps": {
+      "ar": "متصرفي وزارة الداخلية"
+    },
+    "net_monthly_salary_mad": 12356,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Administrateur-premi%C3%A9re-classe-au-maroc"
+  },
+  {
+    "code": "administrateur-principal",
+    "grade": {
+      "fr": "Administrateur principal"
+    },
+    "corps": {
+      "ar": "متصرفي وزارة الداخلية"
+    },
+    "net_monthly_salary_mad": 15112,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Administrateur-principal-au-maroc"
+  },
+  {
+    "code": "agent-de-maitrise",
+    "grade": {
+      "fr": "Agent de maîtrise"
+    },
+    "corps": {
+      "ar": "موظفي المطبعة الرسمية"
+    },
+    "net_monthly_salary_mad": 4713,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Agent-de-ma%C3%AEtrise-au-maroc"
+  },
+  {
+    "code": "agent-de-manutention",
+    "grade": {
+      "fr": "Agent de manutention"
+    },
+    "corps": {
+      "ar": "موظفي المطبعة الرسمية"
+    },
+    "net_monthly_salary_mad": 3743,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Agent-de-manutention-au-maroc"
+  },
+  {
+    "code": "agent-specialise",
+    "grade": {
+      "fr": "Agent spécialisé"
+    },
+    "corps": {
+      "ar": "موظفو المطبعة الرسمية"
+    },
+    "net_monthly_salary_mad": 4368,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Agent-sp%C3%A9cialis%C3%A9-au-maroc"
+  },
+  {
+    "code": "agent-technique-des-douanes-de-1er-grade",
+    "grade": {
+      "fr": "Agent technique des Douanes de 1er grade"
+    },
+    "corps": {
+      "ar": "موظفو إدارة الجمارك والضرائب غير المباشرة"
+    },
+    "net_monthly_salary_mad": 5566,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Agent-technique-des-Douanes-de-1er-grade-au-maroc"
+  },
+  {
+    "code": "agent-technique-des-douanes-de-2eme-grade",
+    "grade": {
+      "fr": "Agent technique des Douanes de 2ème grade"
+    },
+    "corps": {
+      "ar": "موظفو إدارة الجمارك والضرائب غير المباشرة"
+    },
+    "net_monthly_salary_mad": 5120,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Agent-technique-des-Douanes-de-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "agent-technique-des-douanes-de-3eme-grade",
+    "grade": {
+      "fr": "Agent technique des Douanes de 3ème grade"
+    },
+    "corps": {
+      "ar": "موظفو إدارة الجمارك والضرائب غير المباشرة"
+    },
+    "net_monthly_salary_mad": 4933,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Agent-technique-des-Douanes-de-3%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "aide-imprimeur",
+    "grade": {
+      "fr": "Aide imprimeur"
+    },
+    "corps": {
+      "ar": "موظفي المطبعة الرسمية"
+    },
+    "net_monthly_salary_mad": 3999,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Aide-imprimeur-au-maroc"
+  },
+  {
+    "code": "aide-sanitaire",
+    "grade": {
+      "fr": "Aide sanitaire"
+    },
+    "corps": {
+      "ar": "أطر وزارة الصحة"
+    },
+    "net_monthly_salary_mad": 4464,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Aide-sanitaire-au-maroc"
+  },
+  {
+    "code": "architecte-1er-grade",
+    "grade": {
+      "fr": "Architecte 1er grade"
+    },
+    "corps": {
+      "ar": "المهندسون و المهندسون المعماريون"
+    },
+    "net_monthly_salary_mad": 10902,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Architecte-1er-grade-au-maroc"
+  },
+  {
+    "code": "architecte-des-douanes-de-1er-grade",
+    "grade": {
+      "fr": "Architecte des Douanes de 1er grade"
+    },
+    "corps": {
+      "ar": "موظفو إدارة الجمارك والضرائب غير المباشرة"
+    },
+    "net_monthly_salary_mad": 9849,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Architecte-des-Douanes-de-1er-grade-au-maroc"
+  },
+  {
+    "code": "architecte-des-douanes-grade-principal",
+    "grade": {
+      "fr": "Architecte des Douanes grade principal"
+    },
+    "corps": {
+      "ar": "موظفو إدارة الجمارك والضرائب غير المباشرة"
+    },
+    "net_monthly_salary_mad": 12622,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Architecte-des-Douanes-grade-principal-au-maroc"
+  },
+  {
+    "code": "architecte-en-chef-des-douanes-de-1er-grade",
+    "grade": {
+      "fr": "Architecte en chef des Douanes de 1er grade"
+    },
+    "corps": {
+      "ar": "موظفو إدارة الجمارك والضرائب غير المباشرة"
+    },
+    "net_monthly_salary_mad": 15063,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Architecte-en-chef-des-Douanes-de-1er-grade-au-maroc"
+  },
+  {
+    "code": "architecte-en-chef-des-douanes-grade-principal",
+    "grade": {
+      "fr": "Architecte en chef  des Douanes grade principal"
+    },
+    "corps": {
+      "ar": "موظفو إدارة الجمارك والضرائب غير المباشرة"
+    },
+    "net_monthly_salary_mad": 20413,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Architecte-en-chef-des-Douanes-grade-principal-au-maroc"
+  },
+  {
+    "code": "architecte-en-chef-grade-principal",
+    "grade": {
+      "fr": "Architecte en chef grade principal"
+    },
+    "corps": {
+      "ar": "مهندس و مهندس معماري"
+    },
+    "net_monthly_salary_mad": 21430,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Architecte-en-chef-grade-principal-au-maroc"
+  },
+  {
+    "code": "architecte-en-chef-premier-grade",
+    "grade": {
+      "fr": "Architecte en chef premier grade"
+    },
+    "corps": {
+      "ar": "مهندس و مهندس معماري"
+    },
+    "net_monthly_salary_mad": 16079,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Architecte-en-chef-premier-grade-au-maroc"
+  },
+  {
+    "code": "architecte-grade-principal",
+    "grade": {
+      "fr": "Architecte grade principal"
+    },
+    "corps": {
+      "ar": "مهندس و مهندس معماري"
+    },
+    "net_monthly_salary_mad": 13622,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Architecte-grade-principal-au-maroc"
+  },
+  {
+    "code": "assistant-des-etablissements-de-formation-des-cadres-du-grade-b",
+    "grade": {
+      "fr": "Assistant des établissements de formation des cadres du grade \"B\""
+    },
+    "corps": {
+      "ar": "رجال التعليم الباحثين في مؤسسات تكوين الاطارات العليا (17 أكتوبر 1975)"
+    },
+    "net_monthly_salary_mad": 14454,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Assistant-des-%C3%A9tablissements-de-formation-des-cadres-du-grade-B-au-maroc"
+  },
+  {
+    "code": "assistant-des-etablissemnts-de-formation-des-cadres-du-grade-a",
+    "grade": {
+      "fr": "Assistant des établissemnts de formation des cadres du grade \"A\""
+    },
+    "corps": {
+      "ar": "رجال التعليم الباحثين في مؤسسات تكوين الاطارات العليا (17 أكتوبر 1975)"
+    },
+    "net_monthly_salary_mad": 10777,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Assistant-des-%C3%A9tablissemnts-de-formation-des-cadres-du-grade-A-au-maroc"
+  },
+  {
+    "code": "assistant-du-grade-a-medecine-et-pharmacie",
+    "grade": {
+      "fr": "Assistant du grade \"A\" (médecine et pharmacie)"
+    },
+    "corps": {
+      "ar": "هيئة رجال التعليم الباحثين في التعليم العالي (نظام 26/02/1975)"
+    },
+    "net_monthly_salary_mad": 10189,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Assistant-du-grade-A-%28m%C3%A9decine-et-pharmacie%29-au-maroc"
+  },
+  {
+    "code": "assistant-du-grade-a-statut-du-26-02-1975",
+    "grade": {
+      "fr": "Assistant du grade \"A\" (Statut du 26/02/1975)"
+    },
+    "corps": {
+      "ar": "هيئة رجال التعليم الباحثين في التعليم العالي (نظام 26/02/1975)"
+    },
+    "net_monthly_salary_mad": 10777,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Assistant-du-grade-A-%28Statut-du-26-02-1975%29-au-maroc"
+  },
+  {
+    "code": "assistant-du-grade-b-medecine-et-pharmacie",
+    "grade": {
+      "fr": "Assistant du grade \"B\" (médecine et pharmacie)"
+    },
+    "corps": {
+      "ar": "هيئة رجال التعليم الباحثين في التعليم العالي (نظام 26/02/1975)"
+    },
+    "net_monthly_salary_mad": 15124,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Assistant-du-grade-B-%28m%C3%A9decine-et-pharmacie%29-au-maroc"
+  },
+  {
+    "code": "assistant-du-grade-b-statut-du-26-02-1975",
+    "grade": {
+      "fr": "Assistant du grade \"B\" (Statut du 26/02/1975)"
+    },
+    "corps": {
+      "ar": "هيئة رجال التعليم الباحثين في التعليم العالي (نظام 26/02/1975)"
+    },
+    "net_monthly_salary_mad": 14454,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Assistant-du-grade-B-%28Statut-du-26-02-1975%29-au-maroc"
+  },
+  {
+    "code": "assistant-medico-social-de-grade-exceptionnel",
+    "grade": {
+      "fr": "Assistant médico-social de grade exceptionnel"
+    },
+    "corps": {
+      "ar": "هيئة الممرضين وتقنيي الصحة"
+    },
+    "net_monthly_salary_mad": 16553,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Assistant-m%C3%A9dico-social-de-grade-exceptionnel-au-maroc"
+  },
+  {
+    "code": "assistant-medico-social-de-grade-principal",
+    "grade": {
+      "fr": "Assistant médico-social de grade principal"
+    },
+    "corps": {
+      "ar": "الممرضون و تقنيو الصحة"
+    },
+    "net_monthly_salary_mad": 10518,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Assistant-m%C3%A9dico-social-de-grade-principal-au-maroc"
+  },
+  {
+    "code": "assistant-medico-social-de-premier-grade",
+    "grade": {
+      "fr": "Assistant médico-social de premier grade"
+    },
+    "corps": {
+      "ar": "الممرضون و تقنيو الصحة"
+    },
+    "net_monthly_salary_mad": 8425,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Assistant-m%C3%A9dico-social-de-premier-grade-au-maroc"
+  },
+  {
+    "code": "assistant-pedagogique-1er-grade",
+    "grade": {
+      "fr": "Assistant pédagogique 1er grade"
+    },
+    "corps": {
+      "ar": "هيئة الإدارة التربوية والتدبير"
+    },
+    "net_monthly_salary_mad": 9615,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Assistant-p%C3%A9dagogique-1er-grade-au-maroc"
+  },
+  {
+    "code": "assistant-pedagogique-2eme-grade",
+    "grade": {
+      "fr": "Assistant pédagogique 2ème grade"
+    },
+    "corps": {
+      "ar": "هيئة الإدارة التربوية والتدبير"
+    },
+    "net_monthly_salary_mad": 7489,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Assistant-p%C3%A9dagogique-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "assistant-pedagogique-3eme-grade",
+    "grade": {
+      "fr": "Assistant pédagogique 3ème grade"
+    },
+    "corps": {
+      "ar": "هيئة الإدارة التربوية والتدبير"
+    },
+    "net_monthly_salary_mad": 6443,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Assistant-p%C3%A9dagogique-3%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "assistant-pedagogique-4eme-grade",
+    "grade": {
+      "fr": "Assistant pédagogique 4ème grade"
+    },
+    "corps": {
+      "ar": "هيئة الإدارة التربوية والتدبير"
+    },
+    "net_monthly_salary_mad": 6145,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Assistant-p%C3%A9dagogique-4%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "assistant-pedagogique-5eme-grade",
+    "grade": {
+      "fr": "Assistant pédagogique 5ème grade"
+    },
+    "corps": {
+      "ar": "هيئة الإدارة التربوية والتدبير"
+    },
+    "net_monthly_salary_mad": 5559,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Assistant-p%C3%A9dagogique-5%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "attache-des-affaires-etrangeres-2eme-grade",
+    "grade": {
+      "fr": "Attaché des affaires étrangères 2ème grade"
+    },
+    "corps": {
+      "ar": "الأطر الديبلوماسيين و القنصليين"
+    },
+    "net_monthly_salary_mad": 11226,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Attach%C3%A9-des-affaires-%C3%A9trang%C3%A8res-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "attache-des-affaires-etrangeres-3eme-grade",
+    "grade": {
+      "fr": "Attaché des affaires étrangères 3ème grade"
+    },
+    "corps": {
+      "ar": "الأطر الديبلوماسيين و القنصليين"
+    },
+    "net_monthly_salary_mad": 6232,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Attach%C3%A9-des-affaires-%C3%A9trang%C3%A8res-3%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "attache-des-affaires-etrangeres-4eme-grade",
+    "grade": {
+      "fr": "Attaché des affaires étrangères 4ème grade"
+    },
+    "corps": {
+      "ar": "الأطر الديبلوماسيين و القنصليين"
+    },
+    "net_monthly_salary_mad": 5566,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Attach%C3%A9-des-affaires-%C3%A9trang%C3%A8res-4%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "attache-des-affaires-etrangeres-de-4eme-grade",
+    "grade": {
+      "fr": "Attaché des affaires étrangères de 4ème grade"
+    },
+    "corps": {
+      "ar": "الأطر الديبلوماسيين و القنصليين"
+    },
+    "net_monthly_salary_mad": 4482,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Attach%C3%A9-des-affaires-%C3%A9trang%C3%A8res-de-4%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "brigadier",
+    "grade": {
+      "fr": "Brigadier"
+    },
+    "corps": {
+      "ar": "هيئة موظفي الأمن الوطني"
+    },
+    "net_monthly_salary_mad": 7203,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Brigadier-au-maroc"
+  },
+  {
+    "code": "brigadier-chef",
+    "grade": {
+      "fr": "Brigadier chef"
+    },
+    "corps": {
+      "ar": "هيئة موظفي الأمن الوطني"
+    },
+    "net_monthly_salary_mad": 7599,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Brigadier-chef-au-maroc"
+  },
+  {
+    "code": "caid",
+    "grade": {
+      "fr": "Caid"
+    },
+    "corps": {
+      "ar": "رجال السلطة"
+    },
+    "net_monthly_salary_mad": 12937,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Caid-au-maroc"
+  },
+  {
+    "code": "caid-pricipal",
+    "grade": {
+      "fr": "Caid pricipal"
+    },
+    "corps": {
+      "ar": "رجال السلطة"
+    },
+    "net_monthly_salary_mad": 15160,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Caid-pricipal-au-maroc"
+  },
+  {
+    "code": "chancelier-1er-grade",
+    "grade": {
+      "fr": "Chancelier 1er grade"
+    },
+    "corps": {
+      "ar": "الأطر الديبلوماسيين و القنصليين"
+    },
+    "net_monthly_salary_mad": 11418,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Chancelier-1er-grade-au-maroc"
+  },
+  {
+    "code": "chancelier-2eme-grade",
+    "grade": {
+      "fr": "Chancelier 2ème grade"
+    },
+    "corps": {
+      "ar": "الأطر الديبلوماسيين و القنصليين"
+    },
+    "net_monthly_salary_mad": 5986,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Chancelier-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "chancelier-3eme-grade",
+    "grade": {
+      "fr": "Chancelier 3ème grade"
+    },
+    "corps": {
+      "ar": "الأطر الديبلوماسيين و القنصليين"
+    },
+    "net_monthly_salary_mad": 5310,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Chancelier-3%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "chancelier-4eme-grade",
+    "grade": {
+      "fr": "Chancelier 4ème grade"
+    },
+    "corps": {
+      "ar": "الأطر الديبلوماسيين و القنصليين"
+    },
+    "net_monthly_salary_mad": 4916,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Chancelier-4%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "chef-d-atelier",
+    "grade": {
+      "fr": "Chef d'atelier"
+    },
+    "corps": {
+      "ar": "موظفو المطبعة الرسمية"
+    },
+    "net_monthly_salary_mad": 5366,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Chef-d%27atelier-au-maroc"
+  },
+  {
+    "code": "chef-d-atelier-principal",
+    "grade": {
+      "fr": "Chef d'atelier principal"
+    },
+    "corps": {
+      "ar": "موظفو المطبعة الرسمية"
+    },
+    "net_monthly_salary_mad": 6434,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Chef-d%27atelier-principal-au-maroc"
+  },
+  {
+    "code": "chef-de-travaux-deuxieme-grade",
+    "grade": {
+      "fr": "Chef de travaux deuxième grade"
+    },
+    "corps": {
+      "ar": "تجميع أطر التكوين و الإشراف و التوجيه و التخطيط و تفتيش مؤسسات التكوين المهني"
+    },
+    "net_monthly_salary_mad": 6016,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Chef-de-travaux-deuxi%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "chef-de-travaux-premier-grade",
+    "grade": {
+      "fr": "Chef de travaux premier grade"
+    },
+    "corps": {
+      "ar": "تجميع أطر التكوين و الإشراف و التوجيه و التخطيط و تفتيش مؤسسات التكوين المهني"
+    },
+    "net_monthly_salary_mad": 10250,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Chef-de-travaux-premier-grade-au-maroc"
+  },
+  {
+    "code": "chef-de-travaux-troisieme-grade",
+    "grade": {
+      "fr": "Chef de travaux troisième grade"
+    },
+    "corps": {
+      "ar": "تجميع أطر التكوين و الإشراف و التوجيه و التخطيط و تفتيش مؤسسات التكوين المهني"
+    },
+    "net_monthly_salary_mad": 5713,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Chef-de-travaux-troisi%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "chirurgien-dentiste-grade-exceptionnel",
+    "grade": {
+      "fr": "Chirurgien dentiste grade exceptionnel"
+    },
+    "corps": {
+      "ar": "أطباء و صيادلة و جراحي الأسنان"
+    },
+    "net_monthly_salary_mad": 17741,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Chirurgien-dentiste-grade-exceptionnel-au-maroc"
+  },
+  {
+    "code": "chirurgien-dentiste-grade-principal",
+    "grade": {
+      "fr": "Chirurgien dentiste grade principal"
+    },
+    "corps": {
+      "ar": "أطباء و صيادلة و جراحي الأسنان"
+    },
+    "net_monthly_salary_mad": 15525,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Chirurgien-dentiste-grade-principal-au-maroc"
+  },
+  {
+    "code": "chirurgien-dentiste-hors-grade",
+    "grade": {
+      "fr": "Chirurgien dentiste hors grade"
+    },
+    "corps": {
+      "ar": "أطباء و صيادلة و جراحي الأسنان"
+    },
+    "net_monthly_salary_mad": 20600,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Chirurgien-dentiste-hors-grade-au-maroc"
+  },
+  {
+    "code": "chirurgien-dentiste-premier-grade",
+    "grade": {
+      "fr": "Chirurgien dentiste premier grade"
+    },
+    "corps": {
+      "ar": "أطباء و صيادلة و جراحو الأسنان"
+    },
+    "net_monthly_salary_mad": 12351,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Chirurgien-dentiste-premier-grade-au-maroc"
+  },
+  {
+    "code": "chirurgien-dentiste-specialiste-grade-exceptionnel",
+    "grade": {
+      "fr": "Chirurgien dentiste spécialiste grade exceptionnel"
+    },
+    "corps": {
+      "ar": "أطباء و صيادلة و جراحي الأسنان"
+    },
+    "net_monthly_salary_mad": 17741,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Chirurgien-dentiste-sp%C3%A9cialiste-grade-exceptionnel-au-maroc"
+  },
+  {
+    "code": "chirurgien-dentiste-specialiste-grade-principal",
+    "grade": {
+      "fr": "Chirurgien dentiste spécialiste grade principal"
+    },
+    "corps": {
+      "ar": "أطباء و صيادلة و جراحي الأسنان"
+    },
+    "net_monthly_salary_mad": 15525,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Chirurgien-dentiste-sp%C3%A9cialiste-grade-principal-au-maroc"
+  },
+  {
+    "code": "chirurgien-dentiste-specialiste-hors-grade",
+    "grade": {
+      "fr": "Chirurgien dentiste spécialiste hors grade"
+    },
+    "corps": {
+      "ar": "أطباء و صيادلة و جراحي الأسنان"
+    },
+    "net_monthly_salary_mad": 20600,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Chirurgien-dentiste-sp%C3%A9cialiste-hors-grade-au-maroc"
+  },
+  {
+    "code": "chirurgien-dentiste-specialiste-premier-grade",
+    "grade": {
+      "fr": "Chirurgien dentiste spécialiste premier grade"
+    },
+    "corps": {
+      "ar": "أطباء و صيادلة و جراحي الأسنان"
+    },
+    "net_monthly_salary_mad": 12351,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Chirurgien-dentiste-sp%C3%A9cialiste-premier-grade-au-maroc"
+  },
+  {
+    "code": "commandant-de-groupement",
+    "grade": {
+      "fr": "Commandant de groupement"
+    },
+    "corps": {
+      "ar": "هيئة موظفي الأمن الوطني"
+    },
+    "net_monthly_salary_mad": 24355,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Commandant-de-groupement-au-maroc"
+  },
+  {
+    "code": "commandant-de-groupement-principal",
+    "grade": {
+      "fr": "Commandant de groupement principal"
+    },
+    "corps": {
+      "ar": "هيئة موظفي الأمن الوطني"
+    },
+    "net_monthly_salary_mad": 30429,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Commandant-de-groupement-principal-au-maroc"
+  },
+  {
+    "code": "commandant-de-paix",
+    "grade": {
+      "fr": "Commandant de paix"
+    },
+    "corps": {
+      "ar": "هيئة موظفي الأمن الوطني"
+    },
+    "net_monthly_salary_mad": 11845,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Commandant-de-paix-au-maroc"
+  },
+  {
+    "code": "commandant-de-paix-divisionnaire",
+    "grade": {
+      "fr": "Commandant de paix divisionnaire"
+    },
+    "corps": {
+      "ar": "هيئة موظفي الأمن الوطني"
+    },
+    "net_monthly_salary_mad": 21723,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Commandant-de-paix-divisionnaire-au-maroc"
+  },
+  {
+    "code": "commandant-de-paix-principal",
+    "grade": {
+      "fr": "Commandant de paix principal"
+    },
+    "corps": {
+      "ar": "هيئة موظفي الأمن الوطني"
+    },
+    "net_monthly_salary_mad": 16274,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Commandant-de-paix-principal-au-maroc"
+  },
+  {
+    "code": "commandant-educateur",
+    "grade": {
+      "fr": "Commandant éducateur"
+    },
+    "corps": {
+      "ar": "موظفو إدارة السجون وإعادة الإدماج"
+    },
+    "net_monthly_salary_mad": 8425,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Commandant-%C3%A9ducateur-au-maroc"
+  },
+  {
+    "code": "commandant-educateur-principal",
+    "grade": {
+      "fr": "Commandant éducateur principal"
+    },
+    "corps": {
+      "ar": "موظفو إدارة السجون وإعادة الإدماج"
+    },
+    "net_monthly_salary_mad": 11018,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Commandant-%C3%A9ducateur-principal-au-maroc"
+  },
+  {
+    "code": "commissaire-de-police",
+    "grade": {
+      "fr": "Commissaire de police"
+    },
+    "corps": {
+      "ar": "الأمن الوطني"
+    },
+    "net_monthly_salary_mad": 11845,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Commissaire-de-police-au-maroc"
+  },
+  {
+    "code": "commissaire-de-police-divisionnaire",
+    "grade": {
+      "fr": "Commissaire de police divisionnaire"
+    },
+    "corps": {
+      "ar": "هيئة موظفي الأمن الوطني"
+    },
+    "net_monthly_salary_mad": 21723,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Commissaire-de-police-divisionnaire-au-maroc"
+  },
+  {
+    "code": "commissaire-de-police-principal",
+    "grade": {
+      "fr": "Commissaire de police principal"
+    },
+    "corps": {
+      "ar": "الأمن الوطني"
+    },
+    "net_monthly_salary_mad": 16274,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Commissaire-de-police-principal-au-maroc"
+  },
+  {
+    "code": "commissaire-judiciaire-2eme-grade",
+    "grade": {
+      "fr": "Commissaire Judiciaire 2ème grade"
+    },
+    "corps": {
+      "ar": "موظفو كتابة الضبط"
+    },
+    "net_monthly_salary_mad": 10625,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Commissaire-Judiciaire-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "commissaire-judiciaire-3eme-grade",
+    "grade": {
+      "fr": "Commissaire Judiciaire 3ème grade"
+    },
+    "corps": {
+      "ar": "موظفو كتابة الضبط"
+    },
+    "net_monthly_salary_mad": 8514,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Commissaire-Judiciaire-3%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "commissaire-judiciaire-de-1er-grade",
+    "grade": {
+      "fr": "Commissaire judiciaire de 1er grade"
+    },
+    "corps": {
+      "ar": "هيئة كتابة الضبط"
+    },
+    "net_monthly_salary_mad": 17988,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Commissaire-judiciaire-de-1er-grade-au-maroc"
+  },
+  {
+    "code": "commissaire-judiciaire-de-grade-principal",
+    "grade": {
+      "fr": "Commissaire judiciaire de grade principal"
+    },
+    "corps": {
+      "ar": "هيئة كتابة الضبط"
+    },
+    "net_monthly_salary_mad": 20505,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Commissaire-judiciaire-de-grade-principal-au-maroc"
+  },
+  {
+    "code": "conseiller-des-affaires-etrangeres",
+    "grade": {
+      "fr": "Conseiller des affaires étrangères"
+    },
+    "corps": {
+      "ar": "الأطر الديبلوماسيين و القنصليين"
+    },
+    "net_monthly_salary_mad": 10794,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Conseiller-des-affaires-%C3%A9trang%C3%A8res-au-maroc"
+  },
+  {
+    "code": "conseiller-en-orientation-de-l-education-grade-principal",
+    "grade": {
+      "fr": "Conseiller en orientation de l'éducation grade principal"
+    },
+    "corps": {
+      "ar": "هيئة التربية والتعليم"
+    },
+    "net_monthly_salary_mad": 14923,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Conseiller-en-orientation-de-l%27%C3%A9ducation-grade-principal-au-maroc"
+  },
+  {
+    "code": "conseiller-en-orientation-et-en-planification-professionnelle-1er-grade",
+    "grade": {
+      "fr": "Conseiller en orientation et en planification professionnelle 1er  grade"
+    },
+    "corps": {
+      "ar": "أطر التكوين و الإشراف و التوجيه و التخطيط و تفتيش مؤسسات التكوين المهني"
+    },
+    "net_monthly_salary_mad": 11370,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Conseiller-en-orientation-et-en-planification-professionnelle-1er-grade-au-maroc"
+  },
+  {
+    "code": "conseiller-en-orientation-et-en-planification-professionnelle-2eme-grade",
+    "grade": {
+      "fr": "Conseiller en orientation et en planification professionnelle  2ème  grade"
+    },
+    "corps": {
+      "ar": "أطر التكوين و الإشراف و التوجيه و التخطيط و تفتيش مؤسسات التكوين المهني"
+    },
+    "net_monthly_salary_mad": 7390,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Conseiller-en-orientation-et-en-planification-professionnelle-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "conseiller-en-orientation-et-en-planification-professionnelle-du-1er-grade",
+    "grade": {
+      "fr": "Conseiller en orientation et en planification professionnelle du 1er grade"
+    },
+    "corps": {
+      "ar": "تجميع أطر التكوين و الإشراف و التوجيه و التخطيط و تفتيش مؤسسات التكوين المهني"
+    },
+    "net_monthly_salary_mad": 12562,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Conseiller-en-orientation-et-en-planification-professionnelle-du-1er-grade-au-maroc"
+  },
+  {
+    "code": "conseiller-en-orientation-et-en-planification-professionnelle-du-2eme-grade",
+    "grade": {
+      "fr": "Conseiller en orientation et en planification professionnelle du 2ème grade"
+    },
+    "corps": {
+      "ar": "تجميع أطر التكوين و الإشراف و التوجيه و التخطيط و تفتيش مؤسسات التكوين المهني"
+    },
+    "net_monthly_salary_mad": 8602,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Conseiller-en-orientation-et-en-planification-professionnelle-du-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "conseiller-en-orientation-et-en-planification-professionnelle-du-grade-principal",
+    "grade": {
+      "fr": "Conseiller en orientation et en planification professionnelle du grade principal"
+    },
+    "corps": {
+      "ar": "تجميع أطر التكوين و الإشراف و التوجيه و التخطيط و تفتيش مؤسسات التكوين المهني"
+    },
+    "net_monthly_salary_mad": 15087,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Conseiller-en-orientation-et-en-planification-professionnelle-du-grade-principal-au-maroc"
+  },
+  {
+    "code": "conseiller-en-planification-de-l-education-1er-grade",
+    "grade": {
+      "fr": "Conseiller en planification de l'éducation 1er grade"
+    },
+    "corps": {
+      "ar": "التوجيه و التخطيط التربوي للتربية الوطنية"
+    },
+    "net_monthly_salary_mad": 10444,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Conseiller-en-planification-de-l%27%C3%A9ducation-1er-grade-au-maroc"
+  },
+  {
+    "code": "conseiller-en-planification-de-l-education-grade-principal",
+    "grade": {
+      "fr": "Conseiller en planification de l'éducation grade principal"
+    },
+    "corps": {
+      "ar": "هيئة الإدارة التربوية والتدبير"
+    },
+    "net_monthly_salary_mad": 14923,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Conseiller-en-planification-de-l%27%C3%A9ducation-grade-principal-au-maroc"
+  },
+  {
+    "code": "conseiller-juridique-du-deuxieme-grade",
+    "grade": {
+      "fr": "Conseiller juridique du deuxième grade"
+    },
+    "corps": {
+      "ar": "المستشارون القانونيون"
+    },
+    "net_monthly_salary_mad": 12533,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Conseiller-juridique-du-deuxi%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "conseiller-juridique-du-premier-grade",
+    "grade": {
+      "fr": "Conseiller juridique du premier grade"
+    },
+    "corps": {
+      "ar": "المستشارون القانونيون"
+    },
+    "net_monthly_salary_mad": 23823,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Conseiller-juridique-du-premier-grade-au-maroc"
+  },
+  {
+    "code": "conseiller-juridique-grade-exceptionnel",
+    "grade": {
+      "fr": "Conseiller juridique grade exceptionnel"
+    },
+    "corps": {
+      "ar": "المستشارين القانونيين"
+    },
+    "net_monthly_salary_mad": 32737,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Conseiller-juridique-grade-exceptionnel-au-maroc"
+  },
+  {
+    "code": "conseillers-en-orientation-de-l-education-1er-grade",
+    "grade": {
+      "fr": "Conseillers en orientation de l'education 1er grade"
+    },
+    "corps": {
+      "ar": "التوجيه و التخطيط التربوي للتربية الوطنية"
+    },
+    "net_monthly_salary_mad": 10444,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Conseillers-en-orientation-de-l%27education-1er-grade-au-maroc"
+  },
+  {
+    "code": "conservateur-judiciaire-2ieme-grade",
+    "grade": {
+      "fr": "conservateur judiciaire 2ième grade"
+    },
+    "corps": {
+      "ar": "محافظون قضائيون"
+    },
+    "net_monthly_salary_mad": 10625,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-conservateur-judiciaire-2i%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "contremaitre",
+    "grade": {
+      "fr": "Contremaître"
+    },
+    "corps": {
+      "ar": "موظفو المطبعة الرسمية"
+    },
+    "net_monthly_salary_mad": 5069,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Contrema%C3%AEtre-au-maroc"
+  },
+  {
+    "code": "controleur-general",
+    "grade": {
+      "fr": "Contrôleur général"
+    },
+    "corps": {
+      "ar": "هيئة موظفي الأمن الوطني"
+    },
+    "net_monthly_salary_mad": 24355,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Contr%C3%B4leur-g%C3%A9n%C3%A9ral-au-maroc"
+  },
+  {
+    "code": "controleur-general-des-prisons",
+    "grade": {
+      "fr": "Controleur général des prisons"
+    },
+    "corps": {
+      "ar": "هيئة موظفي إدارة السجون وإعادة الإدماج"
+    },
+    "net_monthly_salary_mad": 15001,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Controleur-g%C3%A9n%C3%A9ral-des-prisons-au-maroc"
+  },
+  {
+    "code": "econome-grade-principal",
+    "grade": {
+      "fr": "Économe grade principal"
+    },
+    "corps": {
+      "ar": "هيئة الإدارة التربوية والتدبير"
+    },
+    "net_monthly_salary_mad": 14661,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-%C3%89conome-grade-principal-au-maroc"
+  },
+  {
+    "code": "gardien-de-la-paix",
+    "grade": {
+      "fr": "Gardien de la paix"
+    },
+    "corps": {
+      "ar": "الأمن الوطني"
+    },
+    "net_monthly_salary_mad": 6756,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Gardien-de-la-paix-au-maroc"
+  },
+  {
+    "code": "gardien-des-douanes-de-1er-grade",
+    "grade": {
+      "fr": "Gardien des Douanes de 1er grade"
+    },
+    "corps": {
+      "ar": "موظفو إدارة الجمارك والضرائب غير المباشرة"
+    },
+    "net_monthly_salary_mad": 5566,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Gardien-des-Douanes-de-1er-grade-au-maroc"
+  },
+  {
+    "code": "gardien-des-douanes-de-2eme-grade",
+    "grade": {
+      "fr": "Gardien des Douanes de 2ème grade"
+    },
+    "corps": {
+      "ar": "موظفو إدارة الجمارك والضرائب غير المباشرة"
+    },
+    "net_monthly_salary_mad": 5120,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Gardien-des-Douanes-de-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "gardien-des-douanes-de-3eme-grade",
+    "grade": {
+      "fr": "Gardien des Douanes de 3ème grade"
+    },
+    "corps": {
+      "ar": "موظفو إدارة الجمارك والضرائب غير المباشرة"
+    },
+    "net_monthly_salary_mad": 4933,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Gardien-des-Douanes-de-3%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "gouverneur",
+    "grade": {
+      "fr": "Gouverneur"
+    },
+    "corps": {
+      "ar": "رجال السلطة"
+    },
+    "net_monthly_salary_mad": 37074,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Gouverneur-au-maroc"
+  },
+  {
+    "code": "gouverneur-principal",
+    "grade": {
+      "fr": "Gouverneur principal"
+    },
+    "corps": {
+      "ar": "رجال السلطة"
+    },
+    "net_monthly_salary_mad": 38819,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Gouverneur-principal-au-maroc"
+  },
+  {
+    "code": "grade-exceptionnel-d-inspecteur-de-l-administration-territoriale",
+    "grade": {
+      "fr": "Grade exceptionnel d'inspecteur de l'administration territoriale"
+    },
+    "corps": {
+      "ar": "هيئة مفتشي الإدارة الترابية"
+    },
+    "net_monthly_salary_mad": 24431,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Grade-exceptionnel-d%27inspecteur-de-l%27administration-territoriale-au-maroc"
+  },
+  {
+    "code": "grade-exceptionnel-d-inspecteur-des-finances",
+    "grade": {
+      "fr": "Grade exceptionnel d'inspecteur des finances"
+    },
+    "corps": {
+      "ar": "هيئة المفتشية العامة للمالية"
+    },
+    "net_monthly_salary_mad": 25447,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Grade-exceptionnel-d%27inspecteur-des-finances-au-maroc"
+  },
+  {
+    "code": "infirmier-auxiliaire-de-grade-exceptionnel",
+    "grade": {
+      "fr": "Infirmier auxiliaire de grade exceptionnel"
+    },
+    "corps": {
+      "ar": "هيئة الممرضين و المساعدين الطبيين"
+    },
+    "net_monthly_salary_mad": 8891,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Infirmier-auxiliaire-de-grade-exceptionnel-au-maroc"
+  },
+  {
+    "code": "infirmier-auxiliaire-de-grade-principal",
+    "grade": {
+      "fr": "Infirmier auxiliaire de grade principal"
+    },
+    "corps": {
+      "ar": "هيئة الممرضين و المساعدين الطبيين"
+    },
+    "net_monthly_salary_mad": 6948,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Infirmier-auxiliaire-de-grade-principal-au-maroc"
+  },
+  {
+    "code": "infirmier-auxiliaire-du-deuxieme-grade",
+    "grade": {
+      "fr": "Infirmier auxiliaire du deuxiéme grade"
+    },
+    "corps": {
+      "ar": "هيئة الممرضين و المساعدين الطبيين"
+    },
+    "net_monthly_salary_mad": 5575,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Infirmier-auxiliaire-du-deuxi%C3%A9me-grade-au-maroc"
+  },
+  {
+    "code": "infirmier-auxiliaire-du-premier-grade",
+    "grade": {
+      "fr": "Infirmier auxiliaire du premier grade"
+    },
+    "corps": {
+      "ar": "هيئة الممرضين و المساعدين الطبيين"
+    },
+    "net_monthly_salary_mad": 5808,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Infirmier-auxiliaire-du-premier-grade-au-maroc"
+  },
+  {
+    "code": "infirmier-de-grade-exceptionnel",
+    "grade": {
+      "fr": "Infirmier de grade exceptionnel"
+    },
+    "corps": {
+      "ar": "هيئة الممرضين وتقنيي الصحة"
+    },
+    "net_monthly_salary_mad": 16553,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Infirmier-de-grade-exceptionnel-au-maroc"
+  },
+  {
+    "code": "infirmier-de-grade-principal",
+    "grade": {
+      "fr": "Infirmier de grade principal"
+    },
+    "corps": {
+      "ar": "الممرضون و تقنيو الصحة"
+    },
+    "net_monthly_salary_mad": 10518,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Infirmier-de-grade-principal-au-maroc"
+  },
+  {
+    "code": "infirmier-de-premier-grade",
+    "grade": {
+      "fr": "Infirmier de premier grade"
+    },
+    "corps": {
+      "ar": "الممرضون و تقنيو الصحة"
+    },
+    "net_monthly_salary_mad": 8425,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Infirmier-de-premier-grade-au-maroc"
+  },
+  {
+    "code": "ingenieur-d-application-grade-principal",
+    "grade": {
+      "fr": "Ingénieur d'application grade principal"
+    },
+    "corps": {
+      "ar": "مهندس و مهندس معماري (نظامي 01/04/1967 و 01/01/1986)"
+    },
+    "net_monthly_salary_mad": 8927,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ing%C3%A9nieur-d%27application-grade-principal-au-maroc"
+  },
+  {
+    "code": "ingenieur-d-application-premier-grade",
+    "grade": {
+      "fr": "Ingénieur d'application premier grade"
+    },
+    "corps": {
+      "ar": "مهندس و مهندس معماري (نظامي 01/04/1967 و 01/01/1986)"
+    },
+    "net_monthly_salary_mad": 6943,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ing%C3%A9nieur-d%27application-premier-grade-au-maroc"
+  },
+  {
+    "code": "ingenieur-d-etat-1er-grade",
+    "grade": {
+      "fr": "Ingénieur d'Etat 1er grade"
+    },
+    "corps": {
+      "ar": "المهندسون و المهندسون المعماريون"
+    },
+    "net_monthly_salary_mad": 10902,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ing%C3%A9nieur-d%27Etat-1er-grade-au-maroc"
+  },
+  {
+    "code": "ingenieur-d-etat-des-douanes-de-1er-grade",
+    "grade": {
+      "fr": "Ingénieur d'Etat  des Douanes de 1er grade"
+    },
+    "corps": {
+      "ar": "موظفو إدارة الجمارك والضرائب غير المباشرة"
+    },
+    "net_monthly_salary_mad": 9849,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ing%C3%A9nieur-d%27Etat-des-Douanes-de-1er-grade-au-maroc"
+  },
+  {
+    "code": "ingenieur-d-etat-des-douanes-grade-principal",
+    "grade": {
+      "fr": "Ingénieur d'Etat des Douanes grade principal"
+    },
+    "corps": {
+      "ar": "موظفو إدارة الجمارك والضرائب غير المباشرة"
+    },
+    "net_monthly_salary_mad": 12622,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ing%C3%A9nieur-d%27Etat-des-Douanes-grade-principal-au-maroc"
+  },
+  {
+    "code": "ingenieur-d-etat-grade-principal",
+    "grade": {
+      "fr": "Ingénieur d'Etat grade principal"
+    },
+    "corps": {
+      "ar": "مهندس و مهندس معماري"
+    },
+    "net_monthly_salary_mad": 13622,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ing%C3%A9nieur-d%27Etat-grade-principal-au-maroc"
+  },
+  {
+    "code": "ingenieur-en-chef-des-douanes-de-1er-grade",
+    "grade": {
+      "fr": "Ingénieur en Chef des Douanes de 1er grade"
+    },
+    "corps": {
+      "ar": "موظفو إدارة الجمارك والضرائب غير المباشرة"
+    },
+    "net_monthly_salary_mad": 15063,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ing%C3%A9nieur-en-Chef-des-Douanes-de-1er-grade-au-maroc"
+  },
+  {
+    "code": "ingenieur-en-chef-des-douanes-grade-principal",
+    "grade": {
+      "fr": "Ingénieur en Chef des Douanes grade principal"
+    },
+    "corps": {
+      "ar": "موظفو إدارة الجمارك والضرائب غير المباشرة"
+    },
+    "net_monthly_salary_mad": 20413,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ing%C3%A9nieur-en-Chef-des-Douanes-grade-principal-au-maroc"
+  },
+  {
+    "code": "ingenieur-en-chef-grade-principal",
+    "grade": {
+      "fr": "Ingénieur en chef grade principal"
+    },
+    "corps": {
+      "ar": "مهندس و مهندس معماري"
+    },
+    "net_monthly_salary_mad": 21430,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ing%C3%A9nieur-en-chef-grade-principal-au-maroc"
+  },
+  {
+    "code": "ingenieur-en-chef-premier-grade",
+    "grade": {
+      "fr": "Ingénieur en chef premier grade"
+    },
+    "corps": {
+      "ar": "مهندس و مهندس معماري"
+    },
+    "net_monthly_salary_mad": 16079,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ing%C3%A9nieur-en-chef-premier-grade-au-maroc"
+  },
+  {
+    "code": "inspecteur-1er-grade",
+    "grade": {
+      "fr": "Inspecteur 1er grade"
+    },
+    "corps": {
+      "ar": "تجميع أطر التكوين و الإشراف و التوجيه و التخطيط و تفتيش مؤسسات التكوين المهني"
+    },
+    "net_monthly_salary_mad": 15087,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-1er-grade-au-maroc"
+  },
+  {
+    "code": "inspecteur-2eme-grade",
+    "grade": {
+      "fr": "Inspecteur 2ème grade"
+    },
+    "corps": {
+      "ar": "أطر التكوين و الإشراف و التوجيه و التخطيط و تفتيش مؤسسات التكوين المهني"
+    },
+    "net_monthly_salary_mad": 12562,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "inspecteur-adjoint-du-travail-de-1er-grade",
+    "grade": {
+      "fr": "Inspecteur adjoint du travail de 1er grade"
+    },
+    "corps": {
+      "ar": "تجميع درجات وزارة الشغل"
+    },
+    "net_monthly_salary_mad": 11210,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-adjoint-du-travail-de-1er-grade-au-maroc"
+  },
+  {
+    "code": "inspecteur-adjoint-du-travail-de-2eme-grade",
+    "grade": {
+      "fr": "Inspecteur adjoint du travail de 2ème grade"
+    },
+    "corps": {
+      "ar": "تجميع درجات وزارة الشغل"
+    },
+    "net_monthly_salary_mad": 8855,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-adjoint-du-travail-de-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "inspecteur-adjoint-du-travail-de-3eme-grade",
+    "grade": {
+      "fr": "Inspecteur adjoint du travail de 3ème grade"
+    },
+    "corps": {
+      "ar": "تجميع درجات وزارة الشغل"
+    },
+    "net_monthly_salary_mad": 7545,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-adjoint-du-travail-de-3%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "inspecteur-adjoint-du-travail-de-4eme-grade",
+    "grade": {
+      "fr": "Inspecteur adjoint du travail de 4ème grade"
+    },
+    "corps": {
+      "ar": "تجميع درجات وزارة الشغل"
+    },
+    "net_monthly_salary_mad": 7066,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-adjoint-du-travail-de-4%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "inspecteur-de-3eme-classe",
+    "grade": {
+      "fr": "Inspecteur de 3ème classe"
+    },
+    "corps": {
+      "ar": "موظفو التأطير بالقوات المساعدة"
+    },
+    "net_monthly_salary_mad": 8602,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-de-3%C3%A8me-classe-au-maroc"
+  },
+  {
+    "code": "inspecteur-de-l-administration-territoriale",
+    "grade": {
+      "fr": "Inspecteur de l'administration territoriale"
+    },
+    "corps": {
+      "ar": "مفتشو الإدارة الترابية"
+    },
+    "net_monthly_salary_mad": 11665,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-de-l%27administration-territoriale-au-maroc"
+  },
+  {
+    "code": "inspecteur-de-l-administration-territoriale-chef-de-mission",
+    "grade": {
+      "fr": "Inspecteur de l'administration territoriale chef de mission"
+    },
+    "corps": {
+      "ar": "هيئة مفتشي الإدارة الترابية"
+    },
+    "net_monthly_salary_mad": 17273,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-de-l%27administration-territoriale-chef-de-mission-au-maroc"
+  },
+  {
+    "code": "inspecteur-de-l-enseignement-artistique",
+    "grade": {
+      "fr": "Inspecteur de l'enseignement artistique"
+    },
+    "corps": {
+      "ar": "موظفو التفتيش و التعليم الفني"
+    },
+    "net_monthly_salary_mad": 9512,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-de-l%27enseignement-artistique-au-maroc"
+  },
+  {
+    "code": "inspecteur-de-police",
+    "grade": {
+      "fr": "Inspecteur de police"
+    },
+    "corps": {
+      "ar": "الأمن الوطني"
+    },
+    "net_monthly_salary_mad": 7203,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-de-police-au-maroc"
+  },
+  {
+    "code": "inspecteur-de-police-principal",
+    "grade": {
+      "fr": "Inspecteur de police principal"
+    },
+    "corps": {
+      "ar": "هيئة موظفي الأمن الوطني"
+    },
+    "net_monthly_salary_mad": 7599,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-de-police-principal-au-maroc"
+  },
+  {
+    "code": "inspecteur-des-affaires-financieres-1er-grade",
+    "grade": {
+      "fr": "Inspecteur des affaires financières 1er grade"
+    },
+    "corps": {
+      "ar": "هيئة التفتيش والتأطير والمراقبة والتقييم"
+    },
+    "net_monthly_salary_mad": 11907,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-des-affaires-financi%C3%A8res-1er-grade-au-maroc"
+  },
+  {
+    "code": "inspecteur-des-affaires-financieres-grade-principal",
+    "grade": {
+      "fr": "Inspecteur des affaires financières grade principal"
+    },
+    "corps": {
+      "ar": "هيئة التفتيش والتأطير والمراقبة والتقييم"
+    },
+    "net_monthly_salary_mad": 17012,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-des-affaires-financi%C3%A8res-grade-principal-au-maroc"
+  },
+  {
+    "code": "inspecteur-des-douanes-de-1er-grade",
+    "grade": {
+      "fr": "Inspecteur des Douanes de 1er grade"
+    },
+    "corps": {
+      "ar": "موظفو إدارة الجمارك والضرائب غير المباشرة"
+    },
+    "net_monthly_salary_mad": 9506,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-des-Douanes-de-1er-grade-au-maroc"
+  },
+  {
+    "code": "inspecteur-des-douanes-de-2eme-grade",
+    "grade": {
+      "fr": "Inspecteur des Douanes de 2ème grade"
+    },
+    "corps": {
+      "ar": "موظفو إدارة الجمارك والضرائب غير المباشرة"
+    },
+    "net_monthly_salary_mad": 6855,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-des-Douanes-de-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "inspecteur-des-douanes-de-3eme-grade",
+    "grade": {
+      "fr": "Inspecteur des Douanes de 3ème grade"
+    },
+    "corps": {
+      "ar": "موظفو إدارة الجمارك والضرائب غير المباشرة"
+    },
+    "net_monthly_salary_mad": 5880,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-des-Douanes-de-3%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "inspecteur-des-douanes-de-4eme-grade",
+    "grade": {
+      "fr": "Inspecteur des Douanes de 4ème grade"
+    },
+    "corps": {
+      "ar": "موظفو إدارة الجمارك والضرائب غير المباشرة"
+    },
+    "net_monthly_salary_mad": 5566,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-des-Douanes-de-4%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "inspecteur-des-finances",
+    "grade": {
+      "fr": "Inspecteur des Finances"
+    },
+    "corps": {
+      "ar": "المفتشية العامة للمالية"
+    },
+    "net_monthly_salary_mad": 12677,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-des-Finances-au-maroc"
+  },
+  {
+    "code": "inspecteur-des-finances-chef-de-mission",
+    "grade": {
+      "fr": "Inspecteur des finances chef de mission"
+    },
+    "corps": {
+      "ar": "هيئة المفتشية العامة للمالية"
+    },
+    "net_monthly_salary_mad": 18289,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-des-finances-chef-de-mission-au-maroc"
+  },
+  {
+    "code": "inspecteur-des-services-materiels-et-financiers-1er-grade",
+    "grade": {
+      "fr": "Inspecteur des services matériels et financiers 1er grade"
+    },
+    "corps": {
+      "ar": "الممونون و مفتشو المصالح المادية و المالية للتربية الوطنية"
+    },
+    "net_monthly_salary_mad": 11364,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-des-services-mat%C3%A9riels-et-financiers-1er-grade-au-maroc"
+  },
+  {
+    "code": "inspecteur-du-travail-de-1er-grade",
+    "grade": {
+      "fr": "Inspecteur du travail de 1er grade"
+    },
+    "corps": {
+      "ar": "تجميع درجات وزارة الشغل"
+    },
+    "net_monthly_salary_mad": 17612,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-du-travail-de-1er-grade-au-maroc"
+  },
+  {
+    "code": "inspecteur-du-travail-de-2eme-grade",
+    "grade": {
+      "fr": "Inspecteur du travail de 2ème grade"
+    },
+    "corps": {
+      "ar": "أطر وزارة الشغل"
+    },
+    "net_monthly_salary_mad": 15094,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-du-travail-de-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "inspecteur-du-travail-de-3eme-grade",
+    "grade": {
+      "fr": "Inspecteur du travail de 3ème grade"
+    },
+    "corps": {
+      "ar": "أطر وزارة الشغل"
+    },
+    "net_monthly_salary_mad": 10741,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-du-travail-de-3%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "inspecteur-en-orientation-de-l-education-1er-grade",
+    "grade": {
+      "fr": "Inspecteur en orientation de l'éducation 1er grade"
+    },
+    "corps": {
+      "ar": "التوجيه و التخطيط التربوي للتربية الوطنية"
+    },
+    "net_monthly_salary_mad": 11907,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-en-orientation-de-l%27%C3%A9ducation-1er-grade-au-maroc"
+  },
+  {
+    "code": "inspecteur-en-orientation-de-l-education-grade-principal",
+    "grade": {
+      "fr": "Inspecteur en orientation de l'éducation grade principal"
+    },
+    "corps": {
+      "ar": "هيئة التفتيش والتأطير والمراقبة والتقييم"
+    },
+    "net_monthly_salary_mad": 17012,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-en-orientation-de-l%27%C3%A9ducation-grade-principal-au-maroc"
+  },
+  {
+    "code": "inspecteur-en-planification-de-l-education-1er-grade",
+    "grade": {
+      "fr": "Inspecteur en planification de l'éducation  1er grade"
+    },
+    "corps": {
+      "ar": "التوجيه و التخطيط التربوي للتربية الوطنية"
+    },
+    "net_monthly_salary_mad": 11907,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-en-planification-de-l%27%C3%A9ducation-1er-grade-au-maroc"
+  },
+  {
+    "code": "inspecteur-en-planification-de-l-education-grade-principal",
+    "grade": {
+      "fr": "Inspecteur en planification de l'éducation grade principal"
+    },
+    "corps": {
+      "ar": "هيئة التفتيش والتأطير والمراقبة والتقييم"
+    },
+    "net_monthly_salary_mad": 17012,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-en-planification-de-l%27%C3%A9ducation-grade-principal-au-maroc"
+  },
+  {
+    "code": "inspecteur-pedagogique-de-l-enseignement-primaire-1er-grade",
+    "grade": {
+      "fr": "Inspecteur pédagogique de l'enseignement primaire 1er grade"
+    },
+    "corps": {
+      "ar": "مفتشون تربويون للتربية الوطنية"
+    },
+    "net_monthly_salary_mad": 11907,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-p%C3%A9dagogique-de-l%27enseignement-primaire-1er-grade-au-maroc"
+  },
+  {
+    "code": "inspecteur-pedagogique-de-l-enseignement-primaire-grade-principal",
+    "grade": {
+      "fr": "Inspecteur pédagogique de l'enseignement primaire grade principal"
+    },
+    "corps": {
+      "ar": "هيئة التفتيش والتأطير والمراقبة والتقييم"
+    },
+    "net_monthly_salary_mad": 17012,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-p%C3%A9dagogique-de-l%27enseignement-primaire-grade-principal-au-maroc"
+  },
+  {
+    "code": "inspecteur-pedagogique-de-l-enseignement-secondaire-1er-grade",
+    "grade": {
+      "fr": "Inspecteur pédagogique de l'enseignement secondaire 1er grade"
+    },
+    "corps": {
+      "ar": "مفتشون تربويون للتربية الوطنية"
+    },
+    "net_monthly_salary_mad": 11364,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-p%C3%A9dagogique-de-l%27enseignement-secondaire-1er-grade-au-maroc"
+  },
+  {
+    "code": "inspecteur-pedagogique-de-l-enseignement-secondaire-collegial-1er-grade",
+    "grade": {
+      "fr": "Inspecteur pédagogique de l'enseignement secondaire collégial 1er grade"
+    },
+    "corps": {
+      "ar": "هيئة التفتيش والتأطير والمراقبة والتقييم"
+    },
+    "net_monthly_salary_mad": 11907,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-p%C3%A9dagogique-de-l%27enseignement-secondaire-coll%C3%A9gial-1er-grade-au-maroc"
+  },
+  {
+    "code": "inspecteur-pedagogique-de-l-enseignement-secondaire-collegial-grade-principal",
+    "grade": {
+      "fr": "Inspecteur pédagogique de l'enseignement secondaire collégial grade principal"
+    },
+    "corps": {
+      "ar": "هيئة التفتيش والتأطير والمراقبة والتقييم"
+    },
+    "net_monthly_salary_mad": 17012,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-p%C3%A9dagogique-de-l%27enseignement-secondaire-coll%C3%A9gial-grade-principal-au-maroc"
+  },
+  {
+    "code": "inspecteur-pedagogique-de-l-enseignement-secondaire-qualifie-1er-grade",
+    "grade": {
+      "fr": "Inspecteur pédagogique de l'enseignement secondaire qualifié 1er grade"
+    },
+    "corps": {
+      "ar": "هيئة التفتيش والتأطير والمراقبة والتقييم"
+    },
+    "net_monthly_salary_mad": 11907,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-p%C3%A9dagogique-de-l%27enseignement-secondaire-qualifi%C3%A9-1er-grade-au-maroc"
+  },
+  {
+    "code": "inspecteur-pedagogique-de-l-enseignement-secondaire-qualifie-grade-principal",
+    "grade": {
+      "fr": "Inspecteur pédagogique de l'enseignement secondaire qualifié grade principal"
+    },
+    "corps": {
+      "ar": "هيئة التفتيش والتأطير والمراقبة والتقييم"
+    },
+    "net_monthly_salary_mad": 17012,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-p%C3%A9dagogique-de-l%27enseignement-secondaire-qualifi%C3%A9-grade-principal-au-maroc"
+  },
+  {
+    "code": "inspecteur-pedagogique-des-cycles-post-baccalaureat-1er-grade",
+    "grade": {
+      "fr": "Inspecteur pédagogique des cycles post-baccalauréat 1er grade"
+    },
+    "corps": {
+      "ar": "هيئة التفتيش والتأطير والمراقبة والتقييم"
+    },
+    "net_monthly_salary_mad": 11907,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-p%C3%A9dagogique-des-cycles-post-baccalaur%C3%A9at-1er-grade-au-maroc"
+  },
+  {
+    "code": "inspecteur-pedagogique-des-cycles-post-baccalaureat-grade-principal",
+    "grade": {
+      "fr": "Inspecteur pédagogique des cycles post-baccalauréat grade principal"
+    },
+    "corps": {
+      "ar": "هيئة التفتيش والتأطير والمراقبة والتقييم"
+    },
+    "net_monthly_salary_mad": 17012,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-p%C3%A9dagogique-des-cycles-post-baccalaur%C3%A9at-grade-principal-au-maroc"
+  },
+  {
+    "code": "inspecteur-principal-de-l-enseignement-artistique-personnel-d-inspection-et-d-enseignement-artistique-exercant-d-autres-fonctions",
+    "grade": {
+      "fr": "Inspecteur principal de l'enseignement artistique (Personnel d'inspection et d'enseignement artistique exerçant d'autres fonctions)"
+    },
+    "corps": {
+      "ar": "موظفي التفتيش و التعليم الفني المزاولون لمهام اخرى"
+    },
+    "net_monthly_salary_mad": 14608,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-principal-de-l%27enseignement-artistique-%28Personnel-d%27inspection-et-d%27enseignement-artistique-exer%C3%A7ant-d%27autres-fonctions%29-au-maroc"
+  },
+  {
+    "code": "inspecteur-principal-de-l-enseignement-artistique-personnel-d-inspection-et-d-enseignement-artistique-exercant-des-fonctions-d-enseignement-ou-d-inspection",
+    "grade": {
+      "fr": "Inspecteur principal de l'enseignement artistique (Personnel d'inspection et d'enseignement artistique exerçant des fonctions d'enseignement ou d'inspection)"
+    },
+    "corps": {
+      "ar": "موظفي التفتيش و التعليم الفني المزاولون لمهام التدريس أو التفتيش"
+    },
+    "net_monthly_salary_mad": 15088,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-principal-de-l%27enseignement-artistique-%28Personnel-d%27inspection-et-d%27enseignement-artistique-exer%C3%A7ant-des-fonctions-d%27enseignement-ou-d%27inspection%29-au-maroc"
+  },
+  {
+    "code": "inspecteur-principal-des-douanes",
+    "grade": {
+      "fr": "Inspecteur principal des Douanes"
+    },
+    "corps": {
+      "ar": "موظفو إدارة الجمارك والضرائب غير المباشرة"
+    },
+    "net_monthly_salary_mad": 15112,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Inspecteur-principal-des-Douanes-au-maroc"
+  },
+  {
+    "code": "intendant-1er-grade",
+    "grade": {
+      "fr": "Intendant 1er grade"
+    },
+    "corps": {
+      "ar": "الممونون و مفتشو المصالح المادية و المالية للتربية الوطنية"
+    },
+    "net_monthly_salary_mad": 10182,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Intendant-1er-grade-au-maroc"
+  },
+  {
+    "code": "intendant-2eme-grade",
+    "grade": {
+      "fr": "Intendant 2ème grade"
+    },
+    "corps": {
+      "ar": "الممونون و مفتشو المصالح المادية و المالية للتربية الوطنية"
+    },
+    "net_monthly_salary_mad": 8185,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Intendant-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "khalifa-de-caid-de-1er-grade",
+    "grade": {
+      "fr": "Khalifa de caid de 1er grade"
+    },
+    "corps": {
+      "ar": "رجال السلطة"
+    },
+    "net_monthly_salary_mad": 6535,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Khalifa-de-caid-de-1er-grade-au-maroc"
+  },
+  {
+    "code": "khalifa-de-caid-de-2eme-grade",
+    "grade": {
+      "fr": "Khalifa de Caïd de 2ème Grade"
+    },
+    "corps": {
+      "ar": "رجال السلطة"
+    },
+    "net_monthly_salary_mad": 5626,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Khalifa-de-Ca%C3%AFd-de-2%C3%A8me-Grade-au-maroc"
+  },
+  {
+    "code": "khalifa-de-de-caid-principal",
+    "grade": {
+      "fr": "Khalifa de de caid principal"
+    },
+    "corps": {
+      "ar": "رجال السلطة"
+    },
+    "net_monthly_salary_mad": 7534,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Khalifa-de-de-caid-principal-au-maroc"
+  },
+  {
+    "code": "kinesitherapeute-de-grade-exceptionnel",
+    "grade": {
+      "fr": "Kinésithérapeute de grade exceptionnel"
+    },
+    "corps": {
+      "ar": "هيئة الممرضين وتقنيي الصحة"
+    },
+    "net_monthly_salary_mad": 16553,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Kin%C3%A9sith%C3%A9rapeute-de-grade-exceptionnel-au-maroc"
+  },
+  {
+    "code": "kinesitherapeute-de-grade-principal",
+    "grade": {
+      "fr": "kinésithérapeute de grade principal"
+    },
+    "corps": {
+      "ar": "الممرضون و تقنيو الصحة"
+    },
+    "net_monthly_salary_mad": 10518,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-kin%C3%A9sith%C3%A9rapeute-de-grade-principal-au-maroc"
+  },
+  {
+    "code": "kinesitherapeute-de-premier-grade",
+    "grade": {
+      "fr": "kinésithérapeute de premier grade"
+    },
+    "corps": {
+      "ar": "الممرضون و تقنيو الصحة"
+    },
+    "net_monthly_salary_mad": 8425,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-kin%C3%A9sith%C3%A9rapeute-de-premier-grade-au-maroc"
+  },
+  {
+    "code": "lieutenant",
+    "grade": {
+      "fr": "Lieutenant"
+    },
+    "corps": {
+      "ar": "الوقاية المدنية"
+    },
+    "net_monthly_salary_mad": 8779,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Lieutenant-au-maroc"
+  },
+  {
+    "code": "magistrat-adjoint-du-deuxieme-grade",
+    "grade": {
+      "fr": "Magistrat adjoint du deuxiéme grade"
+    },
+    "corps": {
+      "ar": "أطر المجلس الأعلى للحسابات"
+    },
+    "net_monthly_salary_mad": 13877,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Magistrat-adjoint-du-deuxi%C3%A9me-grade-au-maroc"
+  },
+  {
+    "code": "magistrat-adjoint-du-troisieme-grade",
+    "grade": {
+      "fr": "Magistrat adjoint du troisiéme grade"
+    },
+    "corps": {
+      "ar": "أطر المجلس الأعلى للحسابات"
+    },
+    "net_monthly_salary_mad": 12189,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Magistrat-adjoint-du-troisi%C3%A9me-grade-au-maroc"
+  },
+  {
+    "code": "magistrat-de-grade-principal",
+    "grade": {
+      "fr": "Magistrat de grade principal"
+    },
+    "corps": {
+      "ar": "القضاة"
+    },
+    "net_monthly_salary_mad": 34312,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Magistrat-de-grade-principal-au-maroc"
+  },
+  {
+    "code": "magistrat-du-deuxieme-grade-magistrats",
+    "grade": {
+      "fr": "Magistrat du deuxiéme grade (Magistrats)"
+    },
+    "corps": {
+      "ar": "القضاة"
+    },
+    "net_monthly_salary_mad": 17724,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Magistrat-du-deuxi%C3%A9me-grade-%28Magistrats%29-au-maroc"
+  },
+  {
+    "code": "magistrat-du-deuxieme-grade-regroupement-des-cadres-de-la-cour-des-comptes",
+    "grade": {
+      "fr": "Magistrat du deuxiéme grade (Regroupement des cadres de la cour des comptes)"
+    },
+    "corps": {
+      "ar": "أطر المجلس الأعلى للحسابات"
+    },
+    "net_monthly_salary_mad": 18052,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Magistrat-du-deuxi%C3%A9me-grade-%28Regroupement-des-cadres-de-la-cour-des-comptes%29-au-maroc"
+  },
+  {
+    "code": "magistrat-du-grade-exceptionnel-regroupement-des-cadres-de-la-cour-des-comptes",
+    "grade": {
+      "fr": "Magistrat du grade exceptionnel (Regroupement des cadres de la cour des comptes)"
+    },
+    "corps": {
+      "ar": "أطر المجلس الأعلى للحسابات"
+    },
+    "net_monthly_salary_mad": 39860,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Magistrat-du-grade-exceptionnel-%28Regroupement-des-cadres-de-la-cour-des-comptes%29-au-maroc"
+  },
+  {
+    "code": "magistrat-du-premier-grade-magistrats",
+    "grade": {
+      "fr": "Magistrat du premier grade (Magistrats)"
+    },
+    "corps": {
+      "ar": "القضاة"
+    },
+    "net_monthly_salary_mad": 18805,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Magistrat-du-premier-grade-%28Magistrats%29-au-maroc"
+  },
+  {
+    "code": "magistrat-du-troisieme-grade-magistrats",
+    "grade": {
+      "fr": "Magistrat du troisiéme grade (Magistrats)"
+    },
+    "corps": {
+      "ar": "القضاة"
+    },
+    "net_monthly_salary_mad": 18741,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Magistrat-du-troisi%C3%A9me-grade-%28Magistrats%29-au-maroc"
+  },
+  {
+    "code": "magistrat-du-troisieme-grade-regroupement-des-cadres-de-la-cour-des-comptes",
+    "grade": {
+      "fr": "Magistrat du troisiéme grade (Regroupement des cadres de la cour des comptes)"
+    },
+    "corps": {
+      "ar": "أطر المجلس الأعلى للحسابات"
+    },
+    "net_monthly_salary_mad": 15944,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Magistrat-du-troisi%C3%A9me-grade-%28Regroupement-des-cadres-de-la-cour-des-comptes%29-au-maroc"
+  },
+  {
+    "code": "maitre-assistant-des-etablissements-de-formation-des-cadres-du-grade-a",
+    "grade": {
+      "fr": "Maître assistant des établissements de formation des cadres du grade \"A\""
+    },
+    "corps": {
+      "ar": "رجال التعليم الباحثين في مؤسسات تكوين الاطارات العليا (17 أكتوبر 1975)"
+    },
+    "net_monthly_salary_mad": 13601,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ma%C3%AEtre-assistant-des-%C3%A9tablissements-de-formation-des-cadres-du-grade-A-au-maroc"
+  },
+  {
+    "code": "maitre-assistant-des-etablissements-de-formation-des-cadres-du-grade-b",
+    "grade": {
+      "fr": "Maître assistant des établissements de formation des cadres du grade \"B\""
+    },
+    "corps": {
+      "ar": "رجال التعليم الباحثين في مؤسسات تكوين الاطارات العليا (17 أكتوبر 1975)"
+    },
+    "net_monthly_salary_mad": 15203,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ma%C3%AEtre-assistant-des-%C3%A9tablissements-de-formation-des-cadres-du-grade-B-au-maroc"
+  },
+  {
+    "code": "maitre-assistant-des-etablissemnts-de-formation-des-cadres-du-grade-c",
+    "grade": {
+      "fr": "Maître assistant des établissemnts de formation des cadres du grade \"C\""
+    },
+    "corps": {
+      "ar": "رجال التعليم الباحثين في مؤسسات تكوين الاطارات العليا (17 أكتوبر 1975)"
+    },
+    "net_monthly_salary_mad": 17032,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ma%C3%AEtre-assistant-des-%C3%A9tablissemnts-de-formation-des-cadres-du-grade-C-au-maroc"
+  },
+  {
+    "code": "maitre-assistant-du-grade-a-medecine-et-pharmacie",
+    "grade": {
+      "fr": "Maître assistant du grade \"A\" (Médecine et Pharmacie)"
+    },
+    "corps": {
+      "ar": "هيئة رجال التعليم الباحثين في التعليم العالي (نظام 26/02/1975)"
+    },
+    "net_monthly_salary_mad": 14484,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ma%C3%AEtre-assistant-du-grade-A-%28M%C3%A9decine-et-Pharmacie%29-au-maroc"
+  },
+  {
+    "code": "maitre-assistant-du-grade-a-statut-du-26-02-1975",
+    "grade": {
+      "fr": "Maître assistant du grade \"A\" (Statut du 26/02/1975)"
+    },
+    "corps": {
+      "ar": "هيئة رجال التعليم الباحثين في التعليم العالي (نظام 26/02/1975)"
+    },
+    "net_monthly_salary_mad": 13601,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ma%C3%AEtre-assistant-du-grade-A-%28Statut-du-26-02-1975%29-au-maroc"
+  },
+  {
+    "code": "maitre-de-conference-de-grade-a-corps-des-enseignants-chercheurs-de-l-enseignement-superieur",
+    "grade": {
+      "fr": "Maître de conférence de grade 'A' (Corps des enseignants-chercheurs de l’enseignement supérieur)"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين بالتعليم العالي"
+    },
+    "net_monthly_salary_mad": 17242,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ma%C3%AEtre-de-conf%C3%A9rence-de-grade-%27A%27-%28Corps-des-enseignants-chercheurs-de-l%27enseignement-sup%C3%A9rieur%29-au-maroc"
+  },
+  {
+    "code": "maitre-de-conference-de-grade-a-enseignants-chercheurs-des-etablissements-d-enseignement-superieur-ne-relevant-pas-des-universites",
+    "grade": {
+      "fr": "Maître de conférence de grade 'A' (Enseignants chercheurs des établissements d'enseignement supérieur ne relevant pas des universités)"
+    },
+    "corps": {
+      "ar": "الأساتذة الباحثين بمؤسسات التعليم العالي غير التابعة للجامعات"
+    },
+    "net_monthly_salary_mad": 17242,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ma%C3%AEtre-de-conf%C3%A9rence-de-grade-%27A%27-%28Enseignants-chercheurs-des-%C3%A9tablissements-d%27enseignement-sup%C3%A9rieur-ne-relevant-pas-des-universit%C3%A9s%29-au-maroc"
+  },
+  {
+    "code": "maitre-de-conference-de-grade-b-corps-des-enseignants-chercheurs-de-l-enseignement-superieur",
+    "grade": {
+      "fr": "Maître de conférence de grade 'B' (Corps des enseignants-chercheurs de l’enseignement supérieur)"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين بالتعليم العالي"
+    },
+    "net_monthly_salary_mad": 18805,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ma%C3%AEtre-de-conf%C3%A9rence-de-grade-%27B%27-%28Corps-des-enseignants-chercheurs-de-l%27enseignement-sup%C3%A9rieur%29-au-maroc"
+  },
+  {
+    "code": "maitre-de-conference-de-grade-b-enseignants-chercheurs-des-etablissements-d-enseignement-superieur-ne-relevant-pas-des-universites",
+    "grade": {
+      "fr": "Maître de conférence de grade 'B' (Enseignants chercheurs des établissements d'enseignement supérieur ne relevant pas des universités)"
+    },
+    "corps": {
+      "ar": "الأساتذة الباحثين بمؤسسات التعليم العالي غير التابعة للجامعات"
+    },
+    "net_monthly_salary_mad": 18805,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ma%C3%AEtre-de-conf%C3%A9rence-de-grade-%27B%27-%28Enseignants-chercheurs-des-%C3%A9tablissements-d%27enseignement-sup%C3%A9rieur-ne-relevant-pas-des-universit%C3%A9s%29-au-maroc"
+  },
+  {
+    "code": "maitre-de-conference-de-grade-c-corps-des-enseignants-chercheurs-de-l-enseignement-superieur",
+    "grade": {
+      "fr": "Maître de conférence de grade 'C' (Corps des enseignants-chercheurs de l’enseignement supérieur)"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين بالتعليم العالي"
+    },
+    "net_monthly_salary_mad": 20418,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ma%C3%AEtre-de-conf%C3%A9rence-de-grade-%27C%27-%28Corps-des-enseignants-chercheurs-de-l%27enseignement-sup%C3%A9rieur%29-au-maroc"
+  },
+  {
+    "code": "maitre-de-conference-de-grade-c-enseignants-chercheurs-des-etablissements-d-enseignement-superieur-ne-relevant-pas-des-universites",
+    "grade": {
+      "fr": "Maître de conférence de grade 'C' (Enseignants chercheurs des établissements d'enseignement supérieur ne relevant pas des universités)"
+    },
+    "corps": {
+      "ar": "الأساتذة الباحثين بمؤسسات التعليم العالي غير التابعة للجامعات"
+    },
+    "net_monthly_salary_mad": 20418,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ma%C3%AEtre-de-conf%C3%A9rence-de-grade-%27C%27-%28Enseignants-chercheurs-des-%C3%A9tablissements-d%27enseignement-sup%C3%A9rieur-ne-relevant-pas-des-universit%C3%A9s%29-au-maroc"
+  },
+  {
+    "code": "maitre-de-conference-de-grade-d-corps-des-enseignants-chercheurs-de-l-enseignement-superieur",
+    "grade": {
+      "fr": "Maître de conférence de grade 'D' (Corps des enseignants-chercheurs de l’enseignement supérieur)"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين بالتعليم العالي"
+    },
+    "net_monthly_salary_mad": 21808,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ma%C3%AEtre-de-conf%C3%A9rence-de-grade-%27D%27-%28Corps-des-enseignants-chercheurs-de-l%27enseignement-sup%C3%A9rieur%29-au-maroc"
+  },
+  {
+    "code": "maitre-de-conference-de-grade-d-enseignants-chercheurs-des-etablissements-d-enseignement-superieur-ne-relevant-pas-des-universites",
+    "grade": {
+      "fr": "Maître de conférence de grade 'D' (Enseignants chercheurs des établissements d'enseignement supérieur ne relevant pas des universités)"
+    },
+    "corps": {
+      "ar": "الأساتذة الباحثين بمؤسسات التعليم العالي غير التابعة للجامعات"
+    },
+    "net_monthly_salary_mad": 21808,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ma%C3%AEtre-de-conf%C3%A9rence-de-grade-%27D%27-%28Enseignants-chercheurs-des-%C3%A9tablissements-d%27enseignement-sup%C3%A9rieur-ne-relevant-pas-des-universit%C3%A9s%29-au-maroc"
+  },
+  {
+    "code": "maitre-de-conference-habilite-de-grade-a-corps-des-enseignants-chercheurs-de-l-enseignement-superieur",
+    "grade": {
+      "fr": "Maître de conférence habilité de grade 'A' (Corps des enseignants-chercheurs de l’enseignement supérieur)"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين بالتعليم العالي"
+    },
+    "net_monthly_salary_mad": 19323,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ma%C3%AEtre-de-conf%C3%A9rence-habilit%C3%A9-de-grade-%27A%27-%28Corps-des-enseignants-chercheurs-de-l%27enseignement-sup%C3%A9rieur%29-au-maroc"
+  },
+  {
+    "code": "maitre-de-conference-habilite-de-grade-a-enseignants-chercheurs-des-etablissements-d-enseignement-superieur-ne-relevant-pas-des-universites",
+    "grade": {
+      "fr": "Maître de conférence habilité de grade 'A' (Enseignants chercheurs des établissements d'enseignement supérieur ne relevant pas des universités)"
+    },
+    "corps": {
+      "ar": "الأساتذة الباحثين بمؤسسات التعليم العالي غير التابعة للجامعات"
+    },
+    "net_monthly_salary_mad": 19323,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ma%C3%AEtre-de-conf%C3%A9rence-habilit%C3%A9-de-grade-%27A%27-%28Enseignants-chercheurs-des-%C3%A9tablissements-d%27enseignement-sup%C3%A9rieur-ne-relevant-pas-des-universit%C3%A9s%29-au-maroc"
+  },
+  {
+    "code": "maitre-de-conference-habilite-de-grade-b-corps-des-enseignants-chercheurs-de-l-enseignement-superieur",
+    "grade": {
+      "fr": "Maître de conférence habilité de grade 'B' (Corps des enseignants-chercheurs de l’enseignement supérieur)"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين بالتعليم العالي"
+    },
+    "net_monthly_salary_mad": 21033,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ma%C3%AEtre-de-conf%C3%A9rence-habilit%C3%A9-de-grade-%27B%27-%28Corps-des-enseignants-chercheurs-de-l%27enseignement-sup%C3%A9rieur%29-au-maroc"
+  },
+  {
+    "code": "maitre-de-conference-habilite-de-grade-b-enseignants-chercheurs-des-etablissements-d-enseignement-superieur-ne-relevant-pas-des-universites",
+    "grade": {
+      "fr": "Maître de conférence habilité de grade 'B' (Enseignants chercheurs des établissements d'enseignement supérieur ne relevant pas des universités)"
+    },
+    "corps": {
+      "ar": "الأساتذة الباحثين بمؤسسات التعليم العالي غير التابعة للجامعات"
+    },
+    "net_monthly_salary_mad": 21033,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ma%C3%AEtre-de-conf%C3%A9rence-habilit%C3%A9-de-grade-%27B%27-%28Enseignants-chercheurs-des-%C3%A9tablissements-d%27enseignement-sup%C3%A9rieur-ne-relevant-pas-des-universit%C3%A9s%29-au-maroc"
+  },
+  {
+    "code": "maitre-de-conference-habilite-de-grade-c-corps-des-enseignants-chercheurs-de-l-enseignement-superieur",
+    "grade": {
+      "fr": "Maître de conférence habilité de grade 'C' (Corps des enseignants-chercheurs de l’enseignement supérieur)"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين بالتعليم العالي"
+    },
+    "net_monthly_salary_mad": 22510,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ma%C3%AEtre-de-conf%C3%A9rence-habilit%C3%A9-de-grade-%27C%27-%28Corps-des-enseignants-chercheurs-de-l%27enseignement-sup%C3%A9rieur%29-au-maroc"
+  },
+  {
+    "code": "maitre-de-conference-habilite-de-grade-c-enseignants-chercheurs-des-etablissements-d-enseignement-superieur-ne-relevant-pas-des-universites",
+    "grade": {
+      "fr": "Maître de conférence habilité de grade 'C' (Enseignants chercheurs des établissements d'enseignement supérieur ne relevant pas des universités)"
+    },
+    "corps": {
+      "ar": "الأساتذة الباحثين بمؤسسات التعليم العالي غير التابعة للجامعات"
+    },
+    "net_monthly_salary_mad": 22510,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ma%C3%AEtre-de-conf%C3%A9rence-habilit%C3%A9-de-grade-%27C%27-%28Enseignants-chercheurs-des-%C3%A9tablissements-d%27enseignement-sup%C3%A9rieur-ne-relevant-pas-des-universit%C3%A9s%29-au-maroc"
+  },
+  {
+    "code": "maitre-de-conferences-grade-a",
+    "grade": {
+      "fr": "Maître de conférences grade A"
+    },
+    "corps": {
+      "ar": "الأساتذة الباحثون للتعليم العالي"
+    },
+    "net_monthly_salary_mad": 16658,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ma%C3%AEtre-de-conf%C3%A9rences-grade-A-au-maroc"
+  },
+  {
+    "code": "maitre-de-l-enseignement-artistique-4eme-grade",
+    "grade": {
+      "fr": "Maître de l'enseignement artistique 4ème grade"
+    },
+    "corps": {
+      "ar": "موظفو التفتيش و التعليم الفني"
+    },
+    "net_monthly_salary_mad": 4421,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ma%C3%AEtre-de-l%27enseignement-artistique-4%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "maitre-de-l-enseignement-artistique-du-deuxieme-grade-personnel-d-inspection-et-d-enseignement-artistique-exercant-d-autres-fonctions",
+    "grade": {
+      "fr": "Maître de l'enseignement artistique du deuxiéme grade (Personnel d'inspection et d'enseignement artistique exerçant d'autres fonctions)"
+    },
+    "corps": {
+      "ar": "موظفي التفتيش و التعليم الفني المزاولون لمهام اخرى"
+    },
+    "net_monthly_salary_mad": 6016,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ma%C3%AEtre-de-l%27enseignement-artistique-du-deuxi%C3%A9me-grade-%28Personnel-d%27inspection-et-d%27enseignement-artistique-exer%C3%A7ant-d%27autres-fonctions%29-au-maroc"
+  },
+  {
+    "code": "maitre-de-l-enseignement-artistique-du-deuxieme-grade-personnel-d-inspection-et-d-enseignement-artistique-exercant-des-fonctions-d-enseignement-ou-d-inspection",
+    "grade": {
+      "fr": "Maître de l'enseignement artistique du deuxiéme grade (Personnel d'inspection et d'enseignement artistique exerçant des fonctions d'enseignement ou d'inspection)"
+    },
+    "corps": {
+      "ar": "موظفي التفتيش و التعليم الفني المزاولون لمهام التدريس أو التفتيش"
+    },
+    "net_monthly_salary_mad": 6307,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ma%C3%AEtre-de-l%27enseignement-artistique-du-deuxi%C3%A9me-grade-%28Personnel-d%27inspection-et-d%27enseignement-artistique-exer%C3%A7ant-des-fonctions-d%27enseignement-ou-d%27inspection%29-au-maroc"
+  },
+  {
+    "code": "maitre-de-l-enseignement-artistique-du-premier-grade-personnel-d-inspection-et-d-enseignement-artistique-exercant-d-autres-fonctions",
+    "grade": {
+      "fr": "Maître de l'enseignement artistique du premier grade (Personnel d'inspection et d'enseignement artistique exerçant d'autres fonctions)"
+    },
+    "corps": {
+      "ar": "موظفي التفتيش و التعليم الفني المزاولون لمهام اخرى"
+    },
+    "net_monthly_salary_mad": 6861,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ma%C3%AEtre-de-l%27enseignement-artistique-du-premier-grade-%28Personnel-d%27inspection-et-d%27enseignement-artistique-exer%C3%A7ant-d%27autres-fonctions%29-au-maroc"
+  },
+  {
+    "code": "maitre-de-l-enseignement-artistique-du-premier-grade-personnel-d-inspection-et-d-enseignement-artistique-exercant-des-fonctions-d-enseignement-ou-d-inspection",
+    "grade": {
+      "fr": "Maître de l'enseignement artistique du premier grade (Personnel d'inspection et d'enseignement artistique exerçant des fonctions d'enseignement ou d'inspection)"
+    },
+    "corps": {
+      "ar": "موظفي التفتيش و التعليم الفني المزاولون لمهام التدريس أو التفتيش"
+    },
+    "net_monthly_salary_mad": 7363,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ma%C3%AEtre-de-l%27enseignement-artistique-du-premier-grade-%28Personnel-d%27inspection-et-d%27enseignement-artistique-exer%C3%A7ant-des-fonctions-d%27enseignement-ou-d%27inspection%29-au-maroc"
+  },
+  {
+    "code": "maitre-de-l-enseignement-artistique-du-troisieme-grade-personnel-d-inspection-et-d-enseignement-artistique-exercant-d-autres-fonctions",
+    "grade": {
+      "fr": "Maître de l'enseignement artistique du troisiéme grade (Personnel d'inspection et d'enseignement artistique exerçant d'autres fonctions)"
+    },
+    "corps": {
+      "ar": "موظفي التفتيش و التعليم الفني المزاولون لمهام اخرى"
+    },
+    "net_monthly_salary_mad": 5713,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ma%C3%AEtre-de-l%27enseignement-artistique-du-troisi%C3%A9me-grade-%28Personnel-d%27inspection-et-d%27enseignement-artistique-exer%C3%A7ant-d%27autres-fonctions%29-au-maroc"
+  },
+  {
+    "code": "maitre-de-l-enseignement-artistique-du-troisieme-grade-personnel-d-inspection-et-d-enseignement-artistique-exercant-des-fonctions-d-enseignement-ou-d-inspection",
+    "grade": {
+      "fr": "Maître de l'enseignement artistique du troisiéme grade (Personnel d'inspection et d'enseignement artistique exerçant des fonctions d'enseignement ou d'inspection)"
+    },
+    "corps": {
+      "ar": "موظفي التفتيش و التعليم الفني المزاولون لمهام التدريس أو التفتيش"
+    },
+    "net_monthly_salary_mad": 6009,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ma%C3%AEtre-de-l%27enseignement-artistique-du-troisi%C3%A9me-grade-%28Personnel-d%27inspection-et-d%27enseignement-artistique-exer%C3%A7ant-des-fonctions-d%27enseignement-ou-d%27inspection%29-au-maroc"
+  },
+  {
+    "code": "medecin-specialiste-grade-exceptionnel",
+    "grade": {
+      "fr": "Médecin spécialiste grade exceptionnel"
+    },
+    "corps": {
+      "ar": "أطباء و صيادلة و جراحي الأسنان"
+    },
+    "net_monthly_salary_mad": 17741,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-M%C3%A9decin-sp%C3%A9cialiste-grade-exceptionnel-au-maroc"
+  },
+  {
+    "code": "medecin-specialiste-grade-principal",
+    "grade": {
+      "fr": "Médecin spécialiste grade principal"
+    },
+    "corps": {
+      "ar": "أطباء و صيادلة و جراحي الأسنان"
+    },
+    "net_monthly_salary_mad": 15525,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-M%C3%A9decin-sp%C3%A9cialiste-grade-principal-au-maroc"
+  },
+  {
+    "code": "medecin-specialiste-hors-grade",
+    "grade": {
+      "fr": "Médecin spécialiste hors grade"
+    },
+    "corps": {
+      "ar": "أطباء و صيادلة و جراحي الأسنان"
+    },
+    "net_monthly_salary_mad": 20600,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-M%C3%A9decin-sp%C3%A9cialiste-hors-grade-au-maroc"
+  },
+  {
+    "code": "medecin-specialiste-premier-grade",
+    "grade": {
+      "fr": "Médecin spécialiste premier grade"
+    },
+    "corps": {
+      "ar": "أطباء و صيادلة و جراحي الأسنان"
+    },
+    "net_monthly_salary_mad": 12351,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-M%C3%A9decin-sp%C3%A9cialiste-premier-grade-au-maroc"
+  },
+  {
+    "code": "medecin-veterinaire-grade-exceptionnel",
+    "grade": {
+      "fr": "Médecin Vétérinaire grade exceptionnel"
+    },
+    "corps": {
+      "ar": "أطباء بياطرة"
+    },
+    "net_monthly_salary_mad": 17741,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-M%C3%A9decin-V%C3%A9t%C3%A9rinaire-grade-exceptionnel-au-maroc"
+  },
+  {
+    "code": "medecin-veterinaire-grade-principal",
+    "grade": {
+      "fr": "Médecin Vétérinaire grade principal"
+    },
+    "corps": {
+      "ar": "أطباء بياطرة"
+    },
+    "net_monthly_salary_mad": 15525,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-M%C3%A9decin-V%C3%A9t%C3%A9rinaire-grade-principal-au-maroc"
+  },
+  {
+    "code": "medecin-veterinaire-hors-grade",
+    "grade": {
+      "fr": "Médecin Vétérinaire hors grade"
+    },
+    "corps": {
+      "ar": "أطباء بياطرة"
+    },
+    "net_monthly_salary_mad": 20600,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-M%C3%A9decin-V%C3%A9t%C3%A9rinaire-hors-grade-au-maroc"
+  },
+  {
+    "code": "medecins-grade-exceptionnel",
+    "grade": {
+      "fr": "Medecins grade exceptionnel"
+    },
+    "corps": {
+      "ar": "أطباء و صيادلة و جراحي الأسنان"
+    },
+    "net_monthly_salary_mad": 17741,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Medecins-grade-exceptionnel-au-maroc"
+  },
+  {
+    "code": "medecins-grade-principal",
+    "grade": {
+      "fr": "Medecins grade principal"
+    },
+    "corps": {
+      "ar": "أطباء و صيادلة و جراحي الأسنان"
+    },
+    "net_monthly_salary_mad": 15525,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Medecins-grade-principal-au-maroc"
+  },
+  {
+    "code": "medecins-hors-grade",
+    "grade": {
+      "fr": "Medecins hors grade"
+    },
+    "corps": {
+      "ar": "أطباء و صيادلة و جراحي الأسنان"
+    },
+    "net_monthly_salary_mad": 20600,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Medecins-hors-grade-au-maroc"
+  },
+  {
+    "code": "medecins-premier-grade",
+    "grade": {
+      "fr": "Médecins premier grade"
+    },
+    "corps": {
+      "ar": "أطباء و صيادلة و جراحو الأسنان"
+    },
+    "net_monthly_salary_mad": 12351,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-M%C3%A9decins-premier-grade-au-maroc"
+  },
+  {
+    "code": "medecins-veterinaires-premier-grade",
+    "grade": {
+      "fr": "Médecins veterinaires premier grade"
+    },
+    "corps": {
+      "ar": "أطباء بياطرة"
+    },
+    "net_monthly_salary_mad": 12351,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-M%C3%A9decins-veterinaires-premier-grade-au-maroc"
+  },
+  {
+    "code": "ministre-plenipotentiaire",
+    "grade": {
+      "fr": "Ministre plénipotentiaire"
+    },
+    "corps": {
+      "ar": "الأطر الديبلوماسيين و القنصليين"
+    },
+    "net_monthly_salary_mad": 14223,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Ministre-pl%C3%A9nipotentiaire-au-maroc"
+  },
+  {
+    "code": "mokhzeni-des-f-a",
+    "grade": {
+      "fr": "Mokhzeni des  F.A"
+    },
+    "corps": {
+      "ar": "رجال الصف بالقوات المساعدة"
+    },
+    "net_monthly_salary_mad": 4561,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Mokhzeni-des-FA-au-maroc"
+  },
+  {
+    "code": "moussaid-de-4eme-classe",
+    "grade": {
+      "fr": "Moussaid de 4ème classe"
+    },
+    "corps": {
+      "ar": "موظفو التأطير بالقوات المساعدة"
+    },
+    "net_monthly_salary_mad": 5519,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Moussaid-de-4%C3%A8me-classe-au-maroc"
+  },
+  {
+    "code": "officier-de-paix",
+    "grade": {
+      "fr": "Officier de paix"
+    },
+    "corps": {
+      "ar": "الأمن الوطني"
+    },
+    "net_monthly_salary_mad": 8910,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Officier-de-paix-au-maroc"
+  },
+  {
+    "code": "officier-de-paix-principal",
+    "grade": {
+      "fr": "Officier de paix principal"
+    },
+    "corps": {
+      "ar": "هيئة موظفي الأمن الوطني"
+    },
+    "net_monthly_salary_mad": 9470,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Officier-de-paix-principal-au-maroc"
+  },
+  {
+    "code": "officier-de-police",
+    "grade": {
+      "fr": "Officier de police"
+    },
+    "corps": {
+      "ar": "الأمن الوطني"
+    },
+    "net_monthly_salary_mad": 8910,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Officier-de-police-au-maroc"
+  },
+  {
+    "code": "officier-de-police-principal",
+    "grade": {
+      "fr": "Officier de police principal"
+    },
+    "corps": {
+      "ar": "هيئة موظفي الأمن الوطني"
+    },
+    "net_monthly_salary_mad": 9470,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Officier-de-police-principal-au-maroc"
+  },
+  {
+    "code": "officier-des-douanes-1er-grade",
+    "grade": {
+      "fr": "Officier des Douanes 1er grade"
+    },
+    "corps": {
+      "ar": "موظفو إدارة الجمارك والضرائب غير المباشرة"
+    },
+    "net_monthly_salary_mad": 9506,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Officier-des-Douanes-1er-grade-au-maroc"
+  },
+  {
+    "code": "officier-des-douanes-2eme-grade",
+    "grade": {
+      "fr": "Officier des Douanes 2ème grade"
+    },
+    "corps": {
+      "ar": "موظفو إدارة الجمارك والضرائب غير المباشرة"
+    },
+    "net_monthly_salary_mad": 6855,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Officier-des-Douanes-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "officier-des-douanes-3eme-grade",
+    "grade": {
+      "fr": "Officier des Douanes 3ème grade"
+    },
+    "corps": {
+      "ar": "موظفو إدارة الجمارك والضرائب غير المباشرة"
+    },
+    "net_monthly_salary_mad": 5880,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Officier-des-Douanes-3%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "officier-des-douanes-4eme-grade",
+    "grade": {
+      "fr": "Officier des Douanes 4ème grade"
+    },
+    "corps": {
+      "ar": "موظفو إدارة الجمارك والضرائب غير المباشرة"
+    },
+    "net_monthly_salary_mad": 5566,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Officier-des-Douanes-4%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "officier-educateur",
+    "grade": {
+      "fr": "Officier éducateur"
+    },
+    "corps": {
+      "ar": "موظفو إدارة السجون وإعادة الإدماج"
+    },
+    "net_monthly_salary_mad": 6589,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Officier-%C3%A9ducateur-au-maroc"
+  },
+  {
+    "code": "officier-educateur-principal",
+    "grade": {
+      "fr": "Officier éducateur principal"
+    },
+    "corps": {
+      "ar": "موظفو إدارة السجون وإعادة الإدماج"
+    },
+    "net_monthly_salary_mad": 6948,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Officier-%C3%A9ducateur-principal-au-maroc"
+  },
+  {
+    "code": "officier-principal-des-douanes",
+    "grade": {
+      "fr": "Officier Principal des Douanes"
+    },
+    "corps": {
+      "ar": "موظفو إدارة الجمارك والضرائب غير المباشرة"
+    },
+    "net_monthly_salary_mad": 15112,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Officier-Principal-des-Douanes-au-maroc"
+  },
+  {
+    "code": "pacha",
+    "grade": {
+      "fr": "Pacha"
+    },
+    "corps": {
+      "ar": "رجال السلطة"
+    },
+    "net_monthly_salary_mad": 17268,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Pacha-au-maroc"
+  },
+  {
+    "code": "pacha-principal",
+    "grade": {
+      "fr": "Pacha principal"
+    },
+    "corps": {
+      "ar": "رجال السلطة"
+    },
+    "net_monthly_salary_mad": 20456,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Pacha-principal-au-maroc"
+  },
+  {
+    "code": "pharmacien-grade-exceptionnel",
+    "grade": {
+      "fr": "Pharmacien grade exceptionnel"
+    },
+    "corps": {
+      "ar": "أطباء و صيادلة و جراحي الأسنان"
+    },
+    "net_monthly_salary_mad": 17741,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Pharmacien-grade-exceptionnel-au-maroc"
+  },
+  {
+    "code": "pharmacien-grade-principal",
+    "grade": {
+      "fr": "Pharmacien grade principal"
+    },
+    "corps": {
+      "ar": "أطباء و صيادلة و جراحي الأسنان"
+    },
+    "net_monthly_salary_mad": 15525,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Pharmacien-grade-principal-au-maroc"
+  },
+  {
+    "code": "pharmacien-hors-grade",
+    "grade": {
+      "fr": "Pharmacien hors grade"
+    },
+    "corps": {
+      "ar": "أطباء و صيادلة و جراحي الأسنان"
+    },
+    "net_monthly_salary_mad": 20600,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Pharmacien-hors-grade-au-maroc"
+  },
+  {
+    "code": "pharmacien-premier-grade",
+    "grade": {
+      "fr": "Pharmacien premier grade"
+    },
+    "corps": {
+      "ar": "أطباء و صيادلة و جراحو الأسنان"
+    },
+    "net_monthly_salary_mad": 12351,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Pharmacien-premier-grade-au-maroc"
+  },
+  {
+    "code": "pharmacien-specialiste-grade-exceptionnel",
+    "grade": {
+      "fr": "Pharmacien spécialiste grade exceptionnel"
+    },
+    "corps": {
+      "ar": "أطباء و صيادلة و جراحي الأسنان"
+    },
+    "net_monthly_salary_mad": 17741,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Pharmacien-sp%C3%A9cialiste-grade-exceptionnel-au-maroc"
+  },
+  {
+    "code": "pharmacien-specialiste-grade-principal",
+    "grade": {
+      "fr": "Pharmacien spécialiste grade principal"
+    },
+    "corps": {
+      "ar": "أطباء و صيادلة و جراحي الأسنان"
+    },
+    "net_monthly_salary_mad": 15525,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Pharmacien-sp%C3%A9cialiste-grade-principal-au-maroc"
+  },
+  {
+    "code": "pharmacien-specialiste-hors-grade",
+    "grade": {
+      "fr": "Pharmacien spécialiste hors grade"
+    },
+    "corps": {
+      "ar": "أطباء و صيادلة و جراحي الأسنان"
+    },
+    "net_monthly_salary_mad": 20600,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Pharmacien-sp%C3%A9cialiste-hors-grade-au-maroc"
+  },
+  {
+    "code": "pharmacien-specialiste-premier-grade",
+    "grade": {
+      "fr": "Pharmacien spécialiste premier grade"
+    },
+    "corps": {
+      "ar": "أطباء و صيادلة و جراحي الأسنان"
+    },
+    "net_monthly_salary_mad": 12351,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Pharmacien-sp%C3%A9cialiste-premier-grade-au-maroc"
+  },
+  {
+    "code": "prefet-de-police",
+    "grade": {
+      "fr": "Préfet de police"
+    },
+    "corps": {
+      "ar": "هيئة موظفي الأمن الوطني"
+    },
+    "net_monthly_salary_mad": 30429,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Pr%C3%A9fet-de-police-au-maroc"
+  },
+  {
+    "code": "prof-agrege-de-l-enseignement-secondaire-qualifie-1er-grade",
+    "grade": {
+      "fr": "Prof. agrégé de l'enseignement secondaire qualifié 1er grade"
+    },
+    "corps": {
+      "ar": "أساتذة التربية الوطنية"
+    },
+    "net_monthly_salary_mad": 10824,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Prof-agr%C3%A9g%C3%A9-de-l%27enseignement-secondaire-qualifi%C3%A9-1er-grade-au-maroc"
+  },
+  {
+    "code": "prof-de-l-enseignement-superieur-assistant-grade-a",
+    "grade": {
+      "fr": "Prof. de l'enseignement supérieur assistant grade A"
+    },
+    "corps": {
+      "ar": "الأساتذة الباحثون بمؤسسات تكوين الأطر العليا"
+    },
+    "net_monthly_salary_mad": 13052,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Prof-de-l%27enseignement-sup%C3%A9rieur-assistant-grade-A-au-maroc"
+  },
+  {
+    "code": "prof-de-l-enseignement-superieur-grade-a",
+    "grade": {
+      "fr": "Prof. de l'enseignement supérieur grade A"
+    },
+    "corps": {
+      "ar": "الأساتذة الباحثون للتعليم العالي"
+    },
+    "net_monthly_salary_mad": 21834,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Prof-de-l%27enseignement-sup%C3%A9rieur-grade-A-au-maroc"
+  },
+  {
+    "code": "professeur-3eme-grade",
+    "grade": {
+      "fr": "Professeur 3ème grade"
+    },
+    "corps": {
+      "ar": "أطر التكوين و الإشراف و التوجيه و التخطيط و تفتيش مؤسسات التكوين المهني"
+    },
+    "net_monthly_salary_mad": 10250,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-3%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "professeur-adjoint-de-l-enseignement-artistique-3eme-grade",
+    "grade": {
+      "fr": "Professeur adjoint de l'enseignement artistique 3ème grade"
+    },
+    "corps": {
+      "ar": "موظفو التفتيش و التعليم الفني"
+    },
+    "net_monthly_salary_mad": 5072,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-adjoint-de-l%27enseignement-artistique-3%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "professeur-adjoint-de-l-enseignement-artistique-du-deuxieme-grade-personnel-d-inspection-et-d-enseignement-artistique-exercant-d-autres-fonctions",
+    "grade": {
+      "fr": "Professeur adjoint de l'enseignement artistique du deuxiéme grade (Personnel d'inspection et d'enseignement artistique exerçant d'autres fonctions)"
+    },
+    "corps": {
+      "ar": "موظفي التفتيش و التعليم الفني المزاولون لمهام اخرى"
+    },
+    "net_monthly_salary_mad": 6861,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-adjoint-de-l%27enseignement-artistique-du-deuxi%C3%A9me-grade-%28Personnel-d%27inspection-et-d%27enseignement-artistique-exer%C3%A7ant-d%27autres-fonctions%29-au-maroc"
+  },
+  {
+    "code": "professeur-adjoint-de-l-enseignement-artistique-du-deuxieme-grade-personnel-d-inspection-et-d-enseignement-artistique-exercant-des-fonctions-d-enseignement-ou-d-inspection",
+    "grade": {
+      "fr": "Professeur adjoint de l'enseignement artistique du deuxiéme grade (Personnel d'inspection et d'enseignement artistique exerçant des fonctions d'enseignement ou d'inspection)"
+    },
+    "corps": {
+      "ar": "موظفي التفتيش و التعليم الفني المزاولون لمهام التدريس أو التفتيش"
+    },
+    "net_monthly_salary_mad": 7363,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-adjoint-de-l%27enseignement-artistique-du-deuxi%C3%A9me-grade-%28Personnel-d%27inspection-et-d%27enseignement-artistique-exer%C3%A7ant-des-fonctions-d%27enseignement-ou-d%27inspection%29-au-maroc"
+  },
+  {
+    "code": "professeur-adjoint-de-l-enseignement-artistique-du-premier-grade-personnel-d-inspection-et-d-enseignement-artistique-exercant-d-autres-fonctions",
+    "grade": {
+      "fr": "Professeur adjoint de l'enseignement artistique du premier grade (Personnel d'inspection et d'enseignement artistique exerçant d'autres fonctions)"
+    },
+    "corps": {
+      "ar": "موظفي التفتيش و التعليم الفني المزاولون لمهام اخرى"
+    },
+    "net_monthly_salary_mad": 8960,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-adjoint-de-l%27enseignement-artistique-du-premier-grade-%28Personnel-d%27inspection-et-d%27enseignement-artistique-exer%C3%A7ant-d%27autres-fonctions%29-au-maroc"
+  },
+  {
+    "code": "professeur-adjoint-de-l-enseignement-artistique-du-premier-grade-personnel-d-inspection-et-d-enseignement-artistique-exercant-des-fonctions-d-enseignement-ou-d-inspection",
+    "grade": {
+      "fr": "Professeur adjoint de l'enseignement artistique du premier grade (Personnel d'inspection et d'enseignement artistique exerçant des fonctions d'enseignement ou d'inspection)"
+    },
+    "corps": {
+      "ar": "موظفي التفتيش و التعليم الفني المزاولون لمهام التدريس أو التفتيش"
+    },
+    "net_monthly_salary_mad": 9512,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-adjoint-de-l%27enseignement-artistique-du-premier-grade-%28Personnel-d%27inspection-et-d%27enseignement-artistique-exer%C3%A7ant-des-fonctions-d%27enseignement-ou-d%27inspection%29-au-maroc"
+  },
+  {
+    "code": "professeur-agrege-de-grade-a-medecine-et-pharmacie",
+    "grade": {
+      "fr": "Professeur agrégé de grade \"A\" (médecine et pharmacie)"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين في الطب والصيدلة وطب الأسنان"
+    },
+    "net_monthly_salary_mad": 26555,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-agr%C3%A9g%C3%A9-de-grade-A-%28m%C3%A9decine-et-pharmacie%29-au-maroc"
+  },
+  {
+    "code": "professeur-agrege-de-grade-b-medecine-et-pharmacie",
+    "grade": {
+      "fr": "Professeur agrégé de grade \"B\" (médecine et pharmacie)"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين في الطب والصيدلة وطب الأسنان"
+    },
+    "net_monthly_salary_mad": 30322,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-agr%C3%A9g%C3%A9-de-grade-B-%28m%C3%A9decine-et-pharmacie%29-au-maroc"
+  },
+  {
+    "code": "professeur-agrege-de-grade-c-medecine-et-pharmacie",
+    "grade": {
+      "fr": "Professeur agrégé de grade \"C\" (médecine et pharmacie)"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين في الطب والصيدلة وطب الأسنان"
+    },
+    "net_monthly_salary_mad": 33734,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-agr%C3%A9g%C3%A9-de-grade-C-%28m%C3%A9decine-et-pharmacie%29-au-maroc"
+  },
+  {
+    "code": "professeur-agrege-de-l-education-et-de-la-formation-1er-grade",
+    "grade": {
+      "fr": "Professeur agrégé de l'éducation et de la formation 1er grade"
+    },
+    "corps": {
+      "ar": "هيئة التربية والتعليم"
+    },
+    "net_monthly_salary_mad": 9512,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-agr%C3%A9g%C3%A9-de-l%27%C3%A9ducation-et-de-la-formation-1er-grade-au-maroc"
+  },
+  {
+    "code": "professeur-agrege-de-l-education-et-de-la-formation-1er-grade-classes-preparatoires-bts-centres-de-formation-universites",
+    "grade": {
+      "fr": "Professeur agrégé de l'éducation et de la formation 1er grade (classes préparatoires, BTS, centres de formation, universités)"
+    },
+    "corps": {
+      "ar": "هيئة التربية والتعليم"
+    },
+    "net_monthly_salary_mad": 12547,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-agr%C3%A9g%C3%A9-de-l%27%C3%A9ducation-et-de-la-formation-1er-grade-%28classes-pr%C3%A9paratoires%2C-BTS%2C-centres-de-formation%2C-universit%C3%A9s%29-au-maroc"
+  },
+  {
+    "code": "professeur-agrege-de-l-education-et-de-la-formation-1er-grade-secondaire-qualifie",
+    "grade": {
+      "fr": "Professeur agrégé de l'éducation et de la formation 1er grade (secondaire qualifié)"
+    },
+    "corps": {
+      "ar": "هيئة التربية والتعليم"
+    },
+    "net_monthly_salary_mad": 11351,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-agr%C3%A9g%C3%A9-de-l%27%C3%A9ducation-et-de-la-formation-1er-grade-%28secondaire-qualifi%C3%A9%29-au-maroc"
+  },
+  {
+    "code": "professeur-agrege-de-l-education-et-de-la-formation-grade-principal",
+    "grade": {
+      "fr": "Professeur agrégé de l'éducation et de la formation grade principal"
+    },
+    "corps": {
+      "ar": "هيئة التربية والتعليم"
+    },
+    "net_monthly_salary_mad": 14030,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-agr%C3%A9g%C3%A9-de-l%27%C3%A9ducation-et-de-la-formation-grade-principal-au-maroc"
+  },
+  {
+    "code": "professeur-agrege-de-l-education-et-de-la-formation-grade-principal-classes-preparatoires-bts-centres-de-formation-universites",
+    "grade": {
+      "fr": "Professeur agrégé de l'éducation et de la formation grade principal (classes préparatoires, BTS, centres de formation, universités)"
+    },
+    "corps": {
+      "ar": "هيئة التربية والتعليم"
+    },
+    "net_monthly_salary_mad": 16941,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-agr%C3%A9g%C3%A9-de-l%27%C3%A9ducation-et-de-la-formation-grade-principal-%28classes-pr%C3%A9paratoires%2C-BTS%2C-centres-de-formation%2C-universit%C3%A9s%29-au-maroc"
+  },
+  {
+    "code": "professeur-agrege-de-l-education-et-de-la-formation-grade-principal-secondaire-qualifie",
+    "grade": {
+      "fr": "Professeur agrégé de l'éducation et de la formation grade principal (secondaire qualifié)"
+    },
+    "corps": {
+      "ar": "هيئة التربية والتعليم"
+    },
+    "net_monthly_salary_mad": 15800,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-agr%C3%A9g%C3%A9-de-l%27%C3%A9ducation-et-de-la-formation-grade-principal-%28secondaire-qualifi%C3%A9%29-au-maroc"
+  },
+  {
+    "code": "professeur-agrege-grade-a",
+    "grade": {
+      "fr": "Professeur Agrégé grade A"
+    },
+    "corps": {
+      "ar": "الأساتذة الباحثون في الطب و الصيدلة و طب الأسنان"
+    },
+    "net_monthly_salary_mad": 25948,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-Agr%C3%A9g%C3%A9-grade-A-au-maroc"
+  },
+  {
+    "code": "professeur-assistant-de-grade-a",
+    "grade": {
+      "fr": "Professeur assistant de grade 'A'"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين في التربية و التكوين"
+    },
+    "net_monthly_salary_mad": 17242,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-assistant-de-grade-%27A%27-au-maroc"
+  },
+  {
+    "code": "professeur-assistant-de-grade-a-medecine-et-pharmacie",
+    "grade": {
+      "fr": "Professeur assistant de grade \"A\" (Médecine et Pharmacie)"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين في الطب والصيدلة وطب الأسنان"
+    },
+    "net_monthly_salary_mad": 21771,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-assistant-de-grade-A-%28M%C3%A9decine-et-Pharmacie%29-au-maroc"
+  },
+  {
+    "code": "professeur-assistant-de-grade-b",
+    "grade": {
+      "fr": "Professeur assistant de grade 'B'"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين في التربية و التكوين"
+    },
+    "net_monthly_salary_mad": 18805,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-assistant-de-grade-%27B%27-au-maroc"
+  },
+  {
+    "code": "professeur-assistant-de-grade-b-medecine-et-pharmacie",
+    "grade": {
+      "fr": "Professeur assistant de grade \"B\" (Médecine et Pharmacie)"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين في الطب والصيدلة وطب الأسنان"
+    },
+    "net_monthly_salary_mad": 24889,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-assistant-de-grade-B-%28M%C3%A9decine-et-Pharmacie%29-au-maroc"
+  },
+  {
+    "code": "professeur-assistant-de-grade-c",
+    "grade": {
+      "fr": "Professeur assistant de grade 'C'"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين في التربية و التكوين"
+    },
+    "net_monthly_salary_mad": 20418,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-assistant-de-grade-%27C%27-au-maroc"
+  },
+  {
+    "code": "professeur-assistant-de-grade-c-medecine-et-pharmacie",
+    "grade": {
+      "fr": "Professeur assistant de grade \"C\" (Médecine et Pharmacie)"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين في الطب والصيدلة وطب الأسنان"
+    },
+    "net_monthly_salary_mad": 27806,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-assistant-de-grade-C-%28M%C3%A9decine-et-Pharmacie%29-au-maroc"
+  },
+  {
+    "code": "professeur-assistant-de-grade-d",
+    "grade": {
+      "fr": "Professeur assistant de grade 'D'"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين في التربية و التكوين"
+    },
+    "net_monthly_salary_mad": 21808,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-assistant-de-grade-%27D%27-au-maroc"
+  },
+  {
+    "code": "professeur-assistant-de-grade-d-medecine-et-pharmacie",
+    "grade": {
+      "fr": "Professeur assistant de grade \"D\" (médecine et pharmacie)"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين في الطب والصيدلة وطب الأسنان"
+    },
+    "net_monthly_salary_mad": 30757,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-assistant-de-grade-D-%28m%C3%A9decine-et-pharmacie%29-au-maroc"
+  },
+  {
+    "code": "professeur-de-l-enseignement-artistique-1er-grade",
+    "grade": {
+      "fr": "Professeur de l'enseignement artistique 1er grade"
+    },
+    "corps": {
+      "ar": "موظفو التفتيش و التعليم الفني"
+    },
+    "net_monthly_salary_mad": 9512,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-de-l%27enseignement-artistique-1er-grade-au-maroc"
+  },
+  {
+    "code": "professeur-de-l-enseignement-artistique-2eme-grade",
+    "grade": {
+      "fr": "Professeur de l'enseignement artistique 2ème grade"
+    },
+    "corps": {
+      "ar": "موظفو التفتيش و التعليم الفني"
+    },
+    "net_monthly_salary_mad": 7363,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-de-l%27enseignement-artistique-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "professeur-de-l-enseignement-artistique-de-grade-principal-personnel-d-inspection-et-d-enseignement-artistique-exercant-d-autres-fonctions",
+    "grade": {
+      "fr": "Professeur de l'enseignement artistique de grade principal (Personnel d'inspection et d'enseignement artistique exerçant d'autres fonctions)"
+    },
+    "corps": {
+      "ar": "موظفي التفتيش و التعليم الفني المزاولون لمهام اخرى"
+    },
+    "net_monthly_salary_mad": 14608,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-de-l%27enseignement-artistique-de-grade-principal-%28Personnel-d%27inspection-et-d%27enseignement-artistique-exer%C3%A7ant-d%27autres-fonctions%29-au-maroc"
+  },
+  {
+    "code": "professeur-de-l-enseignement-artistique-de-grade-principal-personnel-d-inspection-et-d-enseignement-artistique-exercant-des-fonctions-d-enseignement-ou-d-inspection",
+    "grade": {
+      "fr": "Professeur de l'enseignement artistique de grade principal (Personnel d'inspection et d'enseignement artistique exerçant des fonctions d'enseignement ou d'inspection)"
+    },
+    "corps": {
+      "ar": "موظفي التفتيش و التعليم الفني المزاولون لمهام التدريس أو التفتيش"
+    },
+    "net_monthly_salary_mad": 15088,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-de-l%27enseignement-artistique-de-grade-principal-%28Personnel-d%27inspection-et-d%27enseignement-artistique-exer%C3%A7ant-des-fonctions-d%27enseignement-ou-d%27inspection%29-au-maroc"
+  },
+  {
+    "code": "professeur-de-l-enseignement-primaire-1er-grade",
+    "grade": {
+      "fr": "Professeur de l'enseignement primaire 1er grade"
+    },
+    "corps": {
+      "ar": "هيئة التربية والتعليم"
+    },
+    "net_monthly_salary_mad": 9512,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-de-l%27enseignement-primaire-1er-grade-au-maroc"
+  },
+  {
+    "code": "professeur-de-l-enseignement-primaire-2eme-grade",
+    "grade": {
+      "fr": "Professeur de l'enseignement primaire 2ème grade"
+    },
+    "corps": {
+      "ar": "أساتذة التربية الوطنية"
+    },
+    "net_monthly_salary_mad": 7363,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-de-l%27enseignement-primaire-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "professeur-de-l-enseignement-primaire-grade-principal",
+    "grade": {
+      "fr": "Professeur de l'enseignement primaire grade principal"
+    },
+    "corps": {
+      "ar": "هيئة التربية والتعليم"
+    },
+    "net_monthly_salary_mad": 14030,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-de-l%27enseignement-primaire-grade-principal-au-maroc"
+  },
+  {
+    "code": "professeur-de-l-enseignement-secondaire-1er-grade",
+    "grade": {
+      "fr": "Professeur de l'enseignement secondaire 1er grade"
+    },
+    "corps": {
+      "ar": "أساتذة التربية الوطنية"
+    },
+    "net_monthly_salary_mad": 9451,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-de-l%27enseignement-secondaire-1er-grade-au-maroc"
+  },
+  {
+    "code": "professeur-de-l-enseignement-secondaire-2eme-grade",
+    "grade": {
+      "fr": "Professeur de l'enseignement secondaire 2ème grade"
+    },
+    "corps": {
+      "ar": "أساتذة التربية الوطنية"
+    },
+    "net_monthly_salary_mad": 7331,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-de-l%27enseignement-secondaire-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "professeur-de-l-enseignement-secondaire-collegial-1er-grade",
+    "grade": {
+      "fr": "Professeur de l'enseignement secondaire collégial 1er grade"
+    },
+    "corps": {
+      "ar": "هيئة التربية والتعليم"
+    },
+    "net_monthly_salary_mad": 9512,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-de-l%27enseignement-secondaire-coll%C3%A9gial-1er-grade-au-maroc"
+  },
+  {
+    "code": "professeur-de-l-enseignement-secondaire-collegial-2eme-grade",
+    "grade": {
+      "fr": "Professeur de l'enseignement secondaire collégial 2ème grade"
+    },
+    "corps": {
+      "ar": "أساتذة التربية الوطنية"
+    },
+    "net_monthly_salary_mad": 7363,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-de-l%27enseignement-secondaire-coll%C3%A9gial-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "professeur-de-l-enseignement-secondaire-collegial-grade-principal",
+    "grade": {
+      "fr": "Professeur de l'enseignement secondaire collégial grade principal"
+    },
+    "corps": {
+      "ar": "هيئة التربية والتعليم"
+    },
+    "net_monthly_salary_mad": 14030,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-de-l%27enseignement-secondaire-coll%C3%A9gial-grade-principal-au-maroc"
+  },
+  {
+    "code": "professeur-de-l-enseignement-secondaire-qualifie-1er-grade",
+    "grade": {
+      "fr": "Professeur de l'enseignement secondaire qualifié 1er grade"
+    },
+    "corps": {
+      "ar": "أساتذة التربية الوطنية"
+    },
+    "net_monthly_salary_mad": 9969,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-de-l%27enseignement-secondaire-qualifi%C3%A9-1er-grade-au-maroc"
+  },
+  {
+    "code": "professeur-de-l-enseignement-secondaire-qualifie-2eme-grade",
+    "grade": {
+      "fr": "Professeur de l'enseignement secondaire qualifié 2ème grade"
+    },
+    "corps": {
+      "ar": "أساتذة التربية الوطنية"
+    },
+    "net_monthly_salary_mad": 7840,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-de-l%27enseignement-secondaire-qualifi%C3%A9-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "professeur-de-l-enseignement-secondaire-qualifie-grade-principal",
+    "grade": {
+      "fr": "Professeur de l'enseignement secondaire qualifié grade principal"
+    },
+    "corps": {
+      "ar": "هيئة التربية والتعليم"
+    },
+    "net_monthly_salary_mad": 14488,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-de-l%27enseignement-secondaire-qualifi%C3%A9-grade-principal-au-maroc"
+  },
+  {
+    "code": "professeur-de-l-enseignement-superieur",
+    "grade": {
+      "fr": "Professeur de l'enseignement supérieur"
+    },
+    "corps": {
+      "ar": "الأساتذة الباحثون للتعليم العالي"
+    },
+    "net_monthly_salary_mad": 21834,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-de-l%27enseignement-sup%C3%A9rieur-au-maroc"
+  },
+  {
+    "code": "professeur-de-l-enseignement-superieur-de-grade-a-corps-des-enseignants-chercheurs-de-l-enseignement-superieur",
+    "grade": {
+      "fr": "Professeur de l'enseignement supérieur de grade 'A' (Corps des enseignants-chercheurs de l’enseignement supérieur)"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين بالتعليم العالي"
+    },
+    "net_monthly_salary_mad": 22503,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-de-l%27enseignement-sup%C3%A9rieur-de-grade-%27A%27-%28Corps-des-enseignants-chercheurs-de-l%27enseignement-sup%C3%A9rieur%29-au-maroc"
+  },
+  {
+    "code": "professeur-de-l-enseignement-superieur-de-grade-a-enseignants-chercheurs-des-etablissements-d-enseignement-superieur-ne-relevant-pas-des-universites",
+    "grade": {
+      "fr": "Professeur de l'enseignement supérieur de grade 'A' (Enseignants chercheurs des établissements d'enseignement supérieur ne relevant pas des universités)"
+    },
+    "corps": {
+      "ar": "الأساتذة الباحثين بمؤسسات التعليم العالي غير التابعة للجامعات"
+    },
+    "net_monthly_salary_mad": 22503,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-de-l%27enseignement-sup%C3%A9rieur-de-grade-%27A%27-%28Enseignants-chercheurs-des-%C3%A9tablissements-d%27enseignement-sup%C3%A9rieur-ne-relevant-pas-des-universit%C3%A9s%29-au-maroc"
+  },
+  {
+    "code": "professeur-de-l-enseignement-superieur-de-grade-a-medecine-et-pharmacie",
+    "grade": {
+      "fr": "Professeur de l'enseignement supérieur de grade \"A\" (Médecine et Pharmacie)"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين في الطب والصيدلة وطب الأسنان"
+    },
+    "net_monthly_salary_mad": 32385,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-de-l%27enseignement-sup%C3%A9rieur-de-grade-A-%28M%C3%A9decine-et-Pharmacie%29-au-maroc"
+  },
+  {
+    "code": "professeur-de-l-enseignement-superieur-de-grade-b-corps-des-enseignants-chercheurs-de-l-enseignement-superieur",
+    "grade": {
+      "fr": "Professeur de l'enseignement supérieur de grade 'B' (Corps des enseignants-chercheurs de l’enseignement supérieur)"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين بالتعليم العالي"
+    },
+    "net_monthly_salary_mad": 26157,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-de-l%27enseignement-sup%C3%A9rieur-de-grade-%27B%27-%28Corps-des-enseignants-chercheurs-de-l%27enseignement-sup%C3%A9rieur%29-au-maroc"
+  },
+  {
+    "code": "professeur-de-l-enseignement-superieur-de-grade-b-enseignants-chercheurs-des-etablissements-d-enseignement-superieur-ne-relevant-pas-des-universites",
+    "grade": {
+      "fr": "Professeur de l'enseignement supérieur de grade 'B' (Enseignants chercheurs des établissements d'enseignement supérieur ne relevant pas des universités)"
+    },
+    "corps": {
+      "ar": "الأساتذة الباحثين بمؤسسات التعليم العالي غير التابعة للجامعات"
+    },
+    "net_monthly_salary_mad": 26157,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-de-l%27enseignement-sup%C3%A9rieur-de-grade-%27B%27-%28Enseignants-chercheurs-des-%C3%A9tablissements-d%27enseignement-sup%C3%A9rieur-ne-relevant-pas-des-universit%C3%A9s%29-au-maroc"
+  },
+  {
+    "code": "professeur-de-l-enseignement-superieur-de-grade-b-medecine-et-pharmacie",
+    "grade": {
+      "fr": "Professeur de l'enseignement supérieur de grade \"B\" (Médecine et Pharmacie)"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين في الطب والصيدلة وطب الأسنان"
+    },
+    "net_monthly_salary_mad": 38787,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-de-l%27enseignement-sup%C3%A9rieur-de-grade-B-%28M%C3%A9decine-et-Pharmacie%29-au-maroc"
+  },
+  {
+    "code": "professeur-de-l-enseignement-superieur-de-grade-c-corps-des-enseignants-chercheurs-de-l-enseignement-superieur",
+    "grade": {
+      "fr": "Professeur de l'enseignement supérieur de grade 'C' (Corps des enseignants-chercheurs de l’enseignement supérieur)"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين بالتعليم العالي"
+    },
+    "net_monthly_salary_mad": 29856,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-de-l%27enseignement-sup%C3%A9rieur-de-grade-%27C%27-%28Corps-des-enseignants-chercheurs-de-l%27enseignement-sup%C3%A9rieur%29-au-maroc"
+  },
+  {
+    "code": "professeur-de-l-enseignement-superieur-de-grade-c-enseignants-chercheurs-des-etablissements-d-enseignement-superieur-ne-relevant-pas-des-universites",
+    "grade": {
+      "fr": "Professeur de l'enseignement supérieur de grade 'C' (Enseignants chercheurs des établissements d'enseignement supérieur ne relevant pas des universités)"
+    },
+    "corps": {
+      "ar": "الأساتذة الباحثين بمؤسسات التعليم العالي غير التابعة للجامعات"
+    },
+    "net_monthly_salary_mad": 29856,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-de-l%27enseignement-sup%C3%A9rieur-de-grade-%27C%27-%28Enseignants-chercheurs-des-%C3%A9tablissements-d%27enseignement-sup%C3%A9rieur-ne-relevant-pas-des-universit%C3%A9s%29-au-maroc"
+  },
+  {
+    "code": "professeur-de-l-enseignement-superieur-de-grade-c-medecine-et-pharmacie",
+    "grade": {
+      "fr": "Professeur de l'enseignement supérieur de grade \"C\" (Médecine et Pharmacie)"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين في الطب والصيدلة وطب الأسنان"
+    },
+    "net_monthly_salary_mad": 45405,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-de-l%27enseignement-sup%C3%A9rieur-de-grade-C-%28M%C3%A9decine-et-Pharmacie%29-au-maroc"
+  },
+  {
+    "code": "professeur-de-l-enseignement-superieur-de-grade-d-corps-des-enseignants-chercheurs-de-l-enseignement-superieur",
+    "grade": {
+      "fr": "Professeur de l'enseignement supérieur de grade 'D' (Corps des enseignants-chercheurs de l’enseignement supérieur)"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين بالتعليم العالي"
+    },
+    "net_monthly_salary_mad": 33249,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-de-l%27enseignement-sup%C3%A9rieur-de-grade-%27D%27-%28Corps-des-enseignants-chercheurs-de-l%27enseignement-sup%C3%A9rieur%29-au-maroc"
+  },
+  {
+    "code": "professeur-de-l-enseignement-superieur-de-grade-d-enseignants-chercheurs-des-etablissements-d-enseignement-superieur-ne-relevant-pas-des-universites",
+    "grade": {
+      "fr": "Professeur de l'enseignement supérieur de grade 'D' (Enseignants chercheurs des établissements d'enseignement supérieur ne relevant pas des universités)"
+    },
+    "corps": {
+      "ar": "الأساتذة الباحثين بمؤسسات التعليم العالي غير التابعة للجامعات"
+    },
+    "net_monthly_salary_mad": 33249,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-de-l%27enseignement-sup%C3%A9rieur-de-grade-%27D%27-%28Enseignants-chercheurs-des-%C3%A9tablissements-d%27enseignement-sup%C3%A9rieur-ne-relevant-pas-des-universit%C3%A9s%29-au-maroc"
+  },
+  {
+    "code": "professeur-du-1er-grade",
+    "grade": {
+      "fr": "Professeur du 1er grade"
+    },
+    "corps": {
+      "ar": "تجميع أطر التكوين و الإشراف و التوجيه و التخطيط و تفتيش مؤسسات التكوين المهني"
+    },
+    "net_monthly_salary_mad": 14608,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-du-1er-grade-au-maroc"
+  },
+  {
+    "code": "professeur-du-2eme-grade",
+    "grade": {
+      "fr": "Professeur du 2éme grade"
+    },
+    "corps": {
+      "ar": "تجميع أطر التكوين و الإشراف و التوجيه و التخطيط و تفتيش مؤسسات التكوين المهني"
+    },
+    "net_monthly_salary_mad": 8960,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-du-2%C3%A9me-grade-au-maroc"
+  },
+  {
+    "code": "professeur-encadrant-de-grade-a",
+    "grade": {
+      "fr": "Professeur encadrant de grade 'A'"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين في التربية و التكوين"
+    },
+    "net_monthly_salary_mad": 22503,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-encadrant-de-grade-%27A%27-au-maroc"
+  },
+  {
+    "code": "professeur-encadrant-de-grade-b",
+    "grade": {
+      "fr": "Professeur encadrant de grade 'B'"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين في التربية و التكوين"
+    },
+    "net_monthly_salary_mad": 26157,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-encadrant-de-grade-%27B%27-au-maroc"
+  },
+  {
+    "code": "professeur-encadrant-de-grade-c",
+    "grade": {
+      "fr": "Professeur encadrant de grade 'C'"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين في التربية و التكوين"
+    },
+    "net_monthly_salary_mad": 29856,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-encadrant-de-grade-%27C%27-au-maroc"
+  },
+  {
+    "code": "professeur-encadrant-de-grade-d",
+    "grade": {
+      "fr": "Professeur encadrant de grade 'D'"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين في التربية و التكوين"
+    },
+    "net_monthly_salary_mad": 33249,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-encadrant-de-grade-%27D%27-au-maroc"
+  },
+  {
+    "code": "professeur-habilite-de-grade-a",
+    "grade": {
+      "fr": "Professeur habilité de grade 'A'"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين في التربية و التكوين"
+    },
+    "net_monthly_salary_mad": 19323,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-habilit%C3%A9-de-grade-%27A%27-au-maroc"
+  },
+  {
+    "code": "professeur-habilite-de-grade-b",
+    "grade": {
+      "fr": "Professeur habilité de grade 'B'"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين في التربية و التكوين"
+    },
+    "net_monthly_salary_mad": 21033,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-habilit%C3%A9-de-grade-%27B%27-au-maroc"
+  },
+  {
+    "code": "professeur-habilite-de-grade-c",
+    "grade": {
+      "fr": "Professeur habilité de grade 'C'"
+    },
+    "corps": {
+      "ar": "هيئة الأساتذة الباحثين في التربية و التكوين"
+    },
+    "net_monthly_salary_mad": 22510,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Professeur-habilit%C3%A9-de-grade-%27C%27-au-maroc"
+  },
+  {
+    "code": "redacteur-4eme-grade",
+    "grade": {
+      "fr": "Rédacteur 4ème grade"
+    },
+    "corps": {
+      "ar": "المحررون"
+    },
+    "net_monthly_salary_mad": 5566,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-R%C3%A9dacteur-4%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "redacteur-de-1er-grade",
+    "grade": {
+      "fr": "Rédacteur de 1er grade"
+    },
+    "corps": {
+      "ar": "محررين"
+    },
+    "net_monthly_salary_mad": 8960,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-R%C3%A9dacteur-de-1er-grade-au-maroc"
+  },
+  {
+    "code": "redacteur-de-2eme-grade",
+    "grade": {
+      "fr": "Rédacteur de 2eme grade"
+    },
+    "corps": {
+      "ar": "محررين"
+    },
+    "net_monthly_salary_mad": 6855,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-R%C3%A9dacteur-de-2eme-grade-au-maroc"
+  },
+  {
+    "code": "redacteur-de-3eme-grade",
+    "grade": {
+      "fr": "Rédacteur de 3eme grade"
+    },
+    "corps": {
+      "ar": "محررين"
+    },
+    "net_monthly_salary_mad": 5795,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-R%C3%A9dacteur-de-3eme-grade-au-maroc"
+  },
+  {
+    "code": "redacteur-judiciaire-3eme-grade",
+    "grade": {
+      "fr": "Rédacteur Judiciaire 3ème grade"
+    },
+    "corps": {
+      "ar": "موظفو كتابة الضبط"
+    },
+    "net_monthly_salary_mad": 7291,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-R%C3%A9dacteur-Judiciaire-3%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "redacteur-judiciaire-4eme-grade",
+    "grade": {
+      "fr": "Rédacteur Judiciaire 4ème grade"
+    },
+    "corps": {
+      "ar": "موظفو كتابة الضبط"
+    },
+    "net_monthly_salary_mad": 6945,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-R%C3%A9dacteur-Judiciaire-4%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "redacteur-judiciaire-de-1er-grade",
+    "grade": {
+      "fr": "Rédacteur judiciaire de 1er grade"
+    },
+    "corps": {
+      "ar": "هيئة كتابة الضبط"
+    },
+    "net_monthly_salary_mad": 14580,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-R%C3%A9dacteur-judiciaire-de-1er-grade-au-maroc"
+  },
+  {
+    "code": "redacteur-judiciaire-de-2eme-grade",
+    "grade": {
+      "fr": "Rédacteur judiciaire de 2ème grade"
+    },
+    "corps": {
+      "ar": "هيئة كتابة الضبط"
+    },
+    "net_monthly_salary_mad": 8514,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-R%C3%A9dacteur-judiciaire-de-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "redacteur-judiciaire-de-grade-principal",
+    "grade": {
+      "fr": "Rédacteur judiciaire de grade principal"
+    },
+    "corps": {
+      "ar": "هيئة كتابة الضبط"
+    },
+    "net_monthly_salary_mad": 17988,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-R%C3%A9dacteur-judiciaire-de-grade-principal-au-maroc"
+  },
+  {
+    "code": "sage-femme-de-grade-exceptionnel",
+    "grade": {
+      "fr": "Sage femme de grade exceptionnel"
+    },
+    "corps": {
+      "ar": "هيئة الممرضين وتقنيي الصحة"
+    },
+    "net_monthly_salary_mad": 16553,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Sage-femme-de-grade-exceptionnel-au-maroc"
+  },
+  {
+    "code": "sage-femme-de-grade-principal",
+    "grade": {
+      "fr": "Sage-femme de grade principal"
+    },
+    "corps": {
+      "ar": "الممرضون و تقنيو الصحة"
+    },
+    "net_monthly_salary_mad": 10518,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Sage-femme-de-grade-principal-au-maroc"
+  },
+  {
+    "code": "sage-femme-de-premier-grade",
+    "grade": {
+      "fr": "Sage-femme de premier grade"
+    },
+    "corps": {
+      "ar": "الممرضون و تقنيو الصحة"
+    },
+    "net_monthly_salary_mad": 8425,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Sage-femme-de-premier-grade-au-maroc"
+  },
+  {
+    "code": "secretaire-des-affaires-etrangeres",
+    "grade": {
+      "fr": "Secrétaire des affaires étrangères"
+    },
+    "corps": {
+      "ar": "الأطر الديبلوماسيين و القنصليين"
+    },
+    "net_monthly_salary_mad": 6879,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Secr%C3%A9taire-des-affaires-%C3%A9trang%C3%A8res-au-maroc"
+  },
+  {
+    "code": "secretaire-greffier-3eme-grade",
+    "grade": {
+      "fr": "Secrétaire Greffier 3ème grade"
+    },
+    "corps": {
+      "ar": "موظفو كتابة الضبط"
+    },
+    "net_monthly_salary_mad": 5726,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Secr%C3%A9taire-Greffier-3%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "secretaire-greffier-4eme-grade",
+    "grade": {
+      "fr": "Secrétaire Greffier 4ème grade"
+    },
+    "corps": {
+      "ar": "موظفو كتابة الضبط"
+    },
+    "net_monthly_salary_mad": 5518,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Secr%C3%A9taire-Greffier-4%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "secretaire-greffier-de-1er-grade",
+    "grade": {
+      "fr": "Secrétaire greffier de 1er grade"
+    },
+    "corps": {
+      "ar": "هيئة كتابة الضبط"
+    },
+    "net_monthly_salary_mad": 7291,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Secr%C3%A9taire-greffier-de-1er-grade-au-maroc"
+  },
+  {
+    "code": "secretaire-greffier-de-2eme-grade",
+    "grade": {
+      "fr": "Secrétaire greffier de 2ème grade"
+    },
+    "corps": {
+      "ar": "هيئة كتابة الضبط"
+    },
+    "net_monthly_salary_mad": 6945,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Secr%C3%A9taire-greffier-de-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "secretaire-greffier-grade-principal",
+    "grade": {
+      "fr": "Secrétaire greffier grade principal"
+    },
+    "corps": {
+      "ar": "هيئة كتابة الضبط"
+    },
+    "net_monthly_salary_mad": 8514,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Secr%C3%A9taire-greffier-grade-principal-au-maroc"
+  },
+  {
+    "code": "secretaire-juridique-de-1er-grade",
+    "grade": {
+      "fr": "Secrétaire juridique de 1er grade"
+    },
+    "corps": {
+      "ar": "الأمناء القضائيين"
+    },
+    "net_monthly_salary_mad": 12682,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Secr%C3%A9taire-juridique-de-1er-grade-au-maroc"
+  },
+  {
+    "code": "secretaire-juridique-de-2eme-grade",
+    "grade": {
+      "fr": "Secrétaire juridique de 2ème grade"
+    },
+    "corps": {
+      "ar": "الأمناء القضائيين"
+    },
+    "net_monthly_salary_mad": 7277,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Secr%C3%A9taire-juridique-de-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "secretaire-juridique-de-3eme-grade",
+    "grade": {
+      "fr": "Secrétaire juridique de 3ème grade"
+    },
+    "corps": {
+      "ar": "الأمناء القضائيين"
+    },
+    "net_monthly_salary_mad": 6011,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Secr%C3%A9taire-juridique-de-3%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "secretaire-juridique-de-4eme-grade",
+    "grade": {
+      "fr": "Secrétaire juridique de 4ème grade"
+    },
+    "corps": {
+      "ar": "الأمناء القضائيين"
+    },
+    "net_monthly_salary_mad": 5788,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Secr%C3%A9taire-juridique-de-4%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "sergent",
+    "grade": {
+      "fr": "Sergent"
+    },
+    "corps": {
+      "ar": "الوقاية المدنية"
+    },
+    "net_monthly_salary_mad": 4906,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Sergent-au-maroc"
+  },
+  {
+    "code": "specialiste-d-economie-et-administration-1er-grade",
+    "grade": {
+      "fr": "Spécialiste d'économie et administration 1er grade"
+    },
+    "corps": {
+      "ar": "هيئة الإدارة التربوية والتدبير"
+    },
+    "net_monthly_salary_mad": 10068,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Sp%C3%A9cialiste-d%27%C3%A9conomie-et-administration-1er-grade-au-maroc"
+  },
+  {
+    "code": "specialiste-d-economie-et-administration-2eme-grade",
+    "grade": {
+      "fr": "Spécialiste d'économie et administration 2ème grade"
+    },
+    "corps": {
+      "ar": "المختصون التربويون والمختصون الاجتماعيون ومختصو الاقتصاد والإدارة"
+    },
+    "net_monthly_salary_mad": 8045,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Sp%C3%A9cialiste-d%27%C3%A9conomie-et-administration-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "specialiste-d-economie-et-administration-grade-principal",
+    "grade": {
+      "fr": "Spécialiste d'économie et administration grade principal"
+    },
+    "corps": {
+      "ar": "هيئة الإدارة التربوية والتدبير"
+    },
+    "net_monthly_salary_mad": 14554,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Sp%C3%A9cialiste-d%27%C3%A9conomie-et-administration-grade-principal-au-maroc"
+  },
+  {
+    "code": "specialiste-pedagogique-1er-grade",
+    "grade": {
+      "fr": "Spécialiste pédagogique 1er grade"
+    },
+    "corps": {
+      "ar": "هيئة التربية والتعليم"
+    },
+    "net_monthly_salary_mad": 9512,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Sp%C3%A9cialiste-p%C3%A9dagogique-1er-grade-au-maroc"
+  },
+  {
+    "code": "specialiste-pedagogique-2eme-grade",
+    "grade": {
+      "fr": "Spécialiste pédagogique 2ème grade"
+    },
+    "corps": {
+      "ar": "المختصون التربويون والمختصون الاجتماعيون ومختصو الاقتصاد والإدارة"
+    },
+    "net_monthly_salary_mad": 7363,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Sp%C3%A9cialiste-p%C3%A9dagogique-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "specialiste-pedagogique-grade-principal",
+    "grade": {
+      "fr": "Spécialiste pédagogique grade principal"
+    },
+    "corps": {
+      "ar": "هيئة التربية والتعليم"
+    },
+    "net_monthly_salary_mad": 14030,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Sp%C3%A9cialiste-p%C3%A9dagogique-grade-principal-au-maroc"
+  },
+  {
+    "code": "specialiste-social-1er-grade",
+    "grade": {
+      "fr": "Spécialiste social 1er grade"
+    },
+    "corps": {
+      "ar": "هيئة التربية والتعليم"
+    },
+    "net_monthly_salary_mad": 9512,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Sp%C3%A9cialiste-social-1er-grade-au-maroc"
+  },
+  {
+    "code": "specialiste-social-2eme-grade",
+    "grade": {
+      "fr": "Spécialiste social 2ème grade"
+    },
+    "corps": {
+      "ar": "المختصون التربويون والمختصون الاجتماعيون ومختصو الاقتصاد والإدارة"
+    },
+    "net_monthly_salary_mad": 7363,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Sp%C3%A9cialiste-social-2%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "specialiste-social-grade-principal",
+    "grade": {
+      "fr": "Spécialiste social grade principal"
+    },
+    "corps": {
+      "ar": "هيئة التربية والتعليم"
+    },
+    "net_monthly_salary_mad": 14030,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Sp%C3%A9cialiste-social-grade-principal-au-maroc"
+  },
+  {
+    "code": "surveillant-educateur",
+    "grade": {
+      "fr": "Surveillant éducateur"
+    },
+    "corps": {
+      "ar": "موظفو إدارة السجون وإعادة الإدماج"
+    },
+    "net_monthly_salary_mad": 5750,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Surveillant-%C3%A9ducateur-au-maroc"
+  },
+  {
+    "code": "surveillant-educateur-principal",
+    "grade": {
+      "fr": "Surveillant éducateur principal"
+    },
+    "corps": {
+      "ar": "هيئة موظفي إدارة السجون وإعادة الإدماج"
+    },
+    "net_monthly_salary_mad": 5921,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Surveillant-%C3%A9ducateur-principal-au-maroc"
+  },
+  {
+    "code": "technicien-de-1er-grade",
+    "grade": {
+      "fr": "Technicien de 1er grade"
+    },
+    "corps": {
+      "ar": "تقنيين"
+    },
+    "net_monthly_salary_mad": 8960,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Technicien-de-1er-grade-au-maroc"
+  },
+  {
+    "code": "technicien-de-2eme-grade",
+    "grade": {
+      "fr": "Technicien de 2éme grade"
+    },
+    "corps": {
+      "ar": "تقنيين"
+    },
+    "net_monthly_salary_mad": 6855,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Technicien-de-2%C3%A9me-grade-au-maroc"
+  },
+  {
+    "code": "technicien-de-3eme-grade",
+    "grade": {
+      "fr": "Technicien de 3ème grade"
+    },
+    "corps": {
+      "ar": "التقنيون"
+    },
+    "net_monthly_salary_mad": 5795,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Technicien-de-3%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "technicien-de-4eme-grade",
+    "grade": {
+      "fr": "Technicien de 4ème grade"
+    },
+    "corps": {
+      "ar": "التقنيون"
+    },
+    "net_monthly_salary_mad": 5566,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Technicien-de-4%C3%A8me-grade-au-maroc"
+  },
+  {
+    "code": "technicien-de-sante-de-grade-exceptionnel",
+    "grade": {
+      "fr": "Technicien de santé de grade exceptionnel"
+    },
+    "corps": {
+      "ar": "هيئة الممرضين وتقنيي الصحة"
+    },
+    "net_monthly_salary_mad": 16553,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Technicien-de-sant%C3%A9-de-grade-exceptionnel-au-maroc"
+  },
+  {
+    "code": "technicien-de-sante-de-grade-principal",
+    "grade": {
+      "fr": "Technicien de santé de grade principal"
+    },
+    "corps": {
+      "ar": "الممرضون و تقنيو الصحة"
+    },
+    "net_monthly_salary_mad": 10518,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Technicien-de-sant%C3%A9-de-grade-principal-au-maroc"
+  },
+  {
+    "code": "technicien-de-sante-de-premier-grade",
+    "grade": {
+      "fr": "Technicien de santé de premier grade"
+    },
+    "corps": {
+      "ar": "الممرضون و تقنيو الصحة"
+    },
+    "net_monthly_salary_mad": 8425,
+    "reference_url": "https://www.wadifa-info.com/fr/salaire-Technicien-de-sant%C3%A9-de-premier-grade-au-maroc"
+  }
+]
