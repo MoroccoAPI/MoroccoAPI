@@ -25,6 +25,14 @@ npm run dev
 
 The homepage starts at `http://127.0.0.1:3000`; interactive documentation is at `http://127.0.0.1:3000/docs`.
 
+The reference is available in French (default), English (`/docs?lang=en`), and Arabic (`/docs?lang=ar`, right-to-left). It includes endpoint search, request parameters, cURL/JavaScript examples, and a GET playground against the current server. JSON keys and source data keep their original language. The machine-readable contract remains at `/openapi.json`.
+
+The canonical API base path is `/api/v2`. Existing `/api/v1` paths remain compatibility aliases, including the currently published pagination behavior; no removal date is scheduled. See [Migrating to API v2](docs/MIGRATING_TO_V2.md). Every nested response field is explained in all three documentation languages, including source metadata, pagination, errors, units and Moroccan administrative terms.
+
+Documentation also has permanent URLs such as `/docs/fr/regions`, `/docs/en/postal-codes`, and `/docs/ar/dams`. The old `/docs` links still work. Light/dark mode follows the system until a visitor chooses a preference, which is saved across pages. The documentation uses larger text and a collapsible resource drawer on narrow screens.
+
+Search metadata includes per-page titles and descriptions, canonical URLs, reciprocal language alternatives, Open Graph cards, and structured data. `/sitemap.xml` lists the homepage and every translated reference page; `/robots.txt` points crawlers to it. Canonical URLs use `https://moroccoapi.dev`, independently of request headers. After publishing, verify the domain in Google Search Console and submit `https://moroccoapi.dev/sitemap.xml`. Local changes cannot affect public indexing; indexing and ranking are determined by search engines.
+
 Before opening a pull request, run:
 
 ```bash

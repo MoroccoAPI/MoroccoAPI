@@ -157,14 +157,17 @@ describe("documentation", () => {
     assert.equal(sitemap.statusCode, 200);
     assert.match(sitemap.headers["content-type"] ?? "", /^application\/xml/);
     const locations = [...sitemap.body.matchAll(/<loc>(.*?)<\/loc>/g)].map((match) => match[1]!);
-    assert.equal(locations.length, 1 + buildCatalog(spec, "en").length * languages.length);
+    assert.equal(locations.length, 3 + buildCatalog(spec, "en").length * languages.length);
     assert.equal(new Set(locations).size, locations.length);
     assert.ok(locations.every((url) => url.startsWith("https://moroccoapi.dev/") && !url.includes("?")));
     const robots = await app.inject("/robots.txt");
     assert.match(robots.body, /Sitemap: https:\/\/moroccoapi.dev\/sitemap.xml/);
     assert.equal(spec.paths["/sitemap.xml"], undefined);
     assert.equal(spec.paths["/robots.txt"], undefined);
-
+    const home = await app.inject("/");
+    assert.ok(home.body.includes('rel="canonical" href="https://moroccoapi.dev/"'));
+    assert.ok(home.body.includes('href="/docs/en/regions"'));
+    assert.ok(home.body.includes('class="theme-toggle"'));
   });
 
   it("uses system or saved themes, persists changes, and works when storage is unavailable", () => {

@@ -47,7 +47,7 @@ export const documentation: FastifyPluginAsync = async (app) => {
 
   app.get("/sitemap.xml", { schema: { hide: true } }, async (_request, reply) => {
     const paths = Object.entries((app.swagger() as ApiDocument).paths).filter(([, item]) => item.get).map(([path]) => path);
-    const entries = ["/", ...paths.flatMap((path) => languages.map((language) => docsUrl(language, path)))];
+    const entries = ["/", "/fr", "/ar", ...paths.flatMap((path) => languages.map((language) => docsUrl(language, path)))];
     const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries.map((path) => `<url><loc>${absoluteUrl(path)}</loc></url>`).join("\n")}\n</urlset>`;
     return reply.type("application/xml; charset=utf-8").header("Cache-Control", "public, max-age=3600").send(xml);
   });

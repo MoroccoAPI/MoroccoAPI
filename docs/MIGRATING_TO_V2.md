@@ -49,4 +49,6 @@ currently published behavior, including pagination. They return a
 There is no scheduled removal date. These aliases do not recreate the older,
 unpaginated application 1.x behavior.
 
-The deployment workflow now checks `/api/v2/status`.
+The deployment workflow now checks `/api/v2/status`. The interactive reference
+explains every nested response property in French, English and Arabic, with
+administrative definitions, units, source limitations and illustrative examples.
