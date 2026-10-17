@@ -12,7 +12,7 @@ export const maritime: FastifyPluginAsync = async (app) => {
   const lighthouses = await loadLighthouses();
   const portsByName = new Map(ports.map((port) => [normalizeSearch(port["Nom du port"]), port]));
 
-  app.get<{ Querystring: PaginationQuery }>("/api/v1/ports", {
+  app.get<{ Querystring: PaginationQuery }>("/api/v2/ports", {
     schema: {
       tags: ["Maritime"], summary: "List Moroccan ports",
       description: "Ports from the Ministry of Equipment and Water source list. Source fields are preserved in French.",
@@ -21,7 +21,7 @@ export const maritime: FastifyPluginAsync = async (app) => {
     },
   }, async (request) => paginate(ports, buildMaritimeMeta("ports", ports.length), request.query));
 
-  app.get<{ Params: PortParams }>("/api/v1/ports/:name", {
+  app.get<{ Params: PortParams }>("/api/v2/ports/:name", {
     schema: {
       tags: ["Maritime"], summary: "Get a Moroccan port by name",
       description: "Matches the source port name case- and accent-insensitively.",
@@ -44,7 +44,7 @@ export const maritime: FastifyPluginAsync = async (app) => {
     return { data: port, meta: buildMaritimeMeta("ports", 1) };
   });
 
-  app.get<{ Querystring: LighthouseQuery & PaginationQuery }>("/api/v1/lighthouses", {
+  app.get<{ Querystring: LighthouseQuery & PaginationQuery }>("/api/v2/lighthouses", {
     schema: {
       tags: ["Maritime"], summary: "List Moroccan lighthouses (phares)",
       description: "Lighthouses from the Ministry of Equipment and Water source list. Source fields are preserved in French. Optional filters combine with AND.",

@@ -54,7 +54,7 @@ export const geography: FastifyPluginAsync<{ data: GeographySnapshot }> = async 
   for (const resource of resources) {
     const dataset: DatasetMeta["dataset"] = `administrative-${resource.path}`;
     const metaSchema = datasetMetaSchema(dataset);
-    const url = `/api/v1/${resource.path}`;
+    const url = `/api/v2/${resource.path}`;
 
     app.get<{ Querystring: PaginationQuery }>(url, {
       schema: {
@@ -90,7 +90,7 @@ export const geography: FastifyPluginAsync<{ data: GeographySnapshot }> = async 
     });
   }
 
-  app.get<{ Params: ResourceParams; Querystring: PaginationQuery }>("/api/v1/regions/:code/subdivisions", {
+  app.get<{ Params: ResourceParams; Querystring: PaginationQuery }>("/api/v2/regions/:code/subdivisions", {
     schema: {
       tags,
       summary: "Get all subdivisions (provinces and prefectures) by MoroccoAPI region code",
@@ -117,7 +117,7 @@ export const geography: FastifyPluginAsync<{ data: GeographySnapshot }> = async 
     return paginate(matches, buildDatasetMeta("administrative-provinces", matches.length), request.query);
   });
 
-  app.get<{ Querystring: { q: string } & PaginationQuery }>("/api/v1/locations/search", {
+  app.get<{ Querystring: { q: string } & PaginationQuery }>("/api/v2/locations/search", {
     schema: {
       tags,
       summary: "Search administrative regions by code or multilingual name",

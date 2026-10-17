@@ -22,7 +22,7 @@ async function registerDamRoutes(app: FastifyInstance, snapshot: DamData): Promi
   const dams = snapshot.dams.map((dam) => ({ ...dam, latest_level: latestLevels.get(dam.id)! }));
 
   app.get<{ Querystring: DamQuery }>(
-    "/api/v1/dams",
+    "/api/v2/dams",
     {
       schema: {
         tags: ["Water"],
@@ -43,7 +43,7 @@ async function registerDamRoutes(app: FastifyInstance, snapshot: DamData): Promi
 
 async function registerLevelRoutes(app: FastifyInstance, snapshot: DamData): Promise<void> {
   app.get<{ Params: { id: string }; Querystring: LevelQuery }>(
-    "/api/v1/dams/:id/levels",
+    "/api/v2/dams/:id/levels",
     {
       schema: {
         tags: ["Water"],

@@ -72,8 +72,8 @@ transformation:
     - Leave coordinates null and current operating status unknown.
   verification: node --import tsx --test test/museums/*.test.ts
 endpoints:
-  - GET /api/v1/museums
-  - GET /api/v1/museums/{id}
+  - GET /api/v2/museums
+  - GET /api/v2/museums/{id}
 filters: q, city_code, region_code; combined with AND.
 update_frequency: No fixed publication schedule documented.
 update_behavior: >-

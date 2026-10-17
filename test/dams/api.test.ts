@@ -18,7 +18,7 @@ after(async () => {
 
 describe("dams", () => {
   it("lists dams from nine basins with each dam's latest published level and source caveats", async () => {
-    const response = await app.inject({ method: "GET", url: "/api/v1/dams" });
+    const response = await app.inject({ method: "GET", url: "/api/v2/dams" });
     assert.equal(response.statusCode, 200);
 
     const body = response.json();
@@ -87,7 +87,7 @@ describe("dams", () => {
       "souss-massa": 3, loukkos: 3, "draa-oued-noun": 2, "oum-er-rbia": 3,
     };
     for (const [basin, count] of Object.entries(counts)) {
-      const covered = await app.inject({ method: "GET", url: `/api/v1/dams?basin=${basin}` });
+      const covered = await app.inject({ method: "GET", url: `/api/v2/dams?basin=${basin}` });
       assert.equal(covered.statusCode, 200, basin);
       assert.equal(covered.json().data.length, count, basin);
       assert.equal(covered.json().meta.total, count, basin);
@@ -95,7 +95,7 @@ describe("dams", () => {
       assert.ok(covered.json().data.every((dam: { basin: string }) => dam.basin === basin));
     }
 
-    const other = await app.inject({ method: "GET", url: "/api/v1/dams?basin=unknown-basin" });
+    const other = await app.inject({ method: "GET", url: "/api/v2/dams?basin=unknown-basin" });
     assert.equal(other.statusCode, 200);
     assert.deepEqual(other.json().data, []);
     assert.equal(other.json().meta.total, 0);
@@ -103,7 +103,7 @@ describe("dams", () => {
   });
 
   it("returns daily history in ascending order with inclusive date bounds", async () => {
-    const response = await app.inject({ method: "GET", url: "/api/v1/dams/yacoub-el-mansour/levels" });
+    const response = await app.inject({ method: "GET", url: "/api/v2/dams/yacoub-el-mansour/levels" });
     assert.equal(response.statusCode, 200);
     const body = response.json();
     assert.equal(body.data.length, 62);
@@ -115,7 +115,7 @@ describe("dams", () => {
     assert.deepEqual(dates, [...dates].sort());
     assert.equal(new Set(dates).size, dates.length);
 
-    const boundary = await app.inject({ method: "GET", url: "/api/v1/dams/yacoub-el-mansour/levels?from=2026-08-31&to=2026-09-01" });
+    const boundary = await app.inject({ method: "GET", url: "/api/v2/dams/yacoub-el-mansour/levels?from=2026-08-31&to=2026-09-01" });
     assert.equal(boundary.statusCode, 200);
     assert.equal(boundary.json().meta.total, 2);
     assert.deepEqual(boundary.json().data.map((level: { date: string; source_id: string }) => [level.date, level.source_id]), [
@@ -123,7 +123,7 @@ describe("dams", () => {
       ["2026-09-01", "abht-tensift-2026-09"],
     ]);
 
-    const single = await app.inject({ method: "GET", url: "/api/v1/dams/yacoub-el-mansour/levels?from=2026-09-30&to=2026-09-30" });
+    const single = await app.inject({ method: "GET", url: "/api/v2/dams/yacoub-el-mansour/levels?from=2026-09-30&to=2026-09-30" });
     assert.equal(single.statusCode, 200);
     const historicalLast = body.data.find((level: { date: string }) => level.date === "2026-09-30");
     assert.deepEqual(single.json().data, [historicalLast]);
@@ -132,28 +132,28 @@ describe("dams", () => {
     assert.equal(historicalLast.capacity_mm3, 57.45);
     assert.equal(historicalLast.date_basis, "source_calendar");
 
-    const september = await app.inject("/api/v1/dams/yacoub-el-mansour/levels?from=2026-09-01&to=2026-09-30");
+    const september = await app.inject("/api/v2/dams/yacoub-el-mansour/levels?from=2026-09-01&to=2026-09-30");
     assert.equal(september.statusCode, 200);
     assert.equal(september.json().meta.total, 30);
     assert.ok(september.json().data.every((level: { source_id: string }) => level.source_id === "abht-tensift-2026-09"));
 
-    const october = await app.inject("/api/v1/dams/yacoub-el-mansour/levels?from=2026-10-01");
+    const october = await app.inject("/api/v2/dams/yacoub-el-mansour/levels?from=2026-10-01");
     assert.equal(october.statusCode, 200);
     assert.equal(october.json().meta.total, 1);
     assert.deepEqual(october.json().data, [body.data.at(-1)]);
 
-    const upperBound = await app.inject({ method: "GET", url: "/api/v1/dams/yacoub-el-mansour/levels?to=2026-08-02" });
+    const upperBound = await app.inject({ method: "GET", url: "/api/v2/dams/yacoub-el-mansour/levels?to=2026-08-02" });
     assert.equal(upperBound.statusCode, 200);
     assert.deepEqual(upperBound.json().data.map((level: { date: string }) => level.date), ["2026-08-01", "2026-08-02"]);
 
-    const empty = await app.inject({ method: "GET", url: "/api/v1/dams/yacoub-el-mansour/levels?from=2026-10-13" });
+    const empty = await app.inject({ method: "GET", url: "/api/v2/dams/yacoub-el-mansour/levels?from=2026-10-13" });
     assert.equal(empty.statusCode, 200);
     assert.deepEqual(empty.json().data, []);
     assert.equal(empty.json().meta.total, 0);
   });
 
   it("returns only the published observation for an added dam without creating a prior-year history", async () => {
-    const response = await app.inject("/api/v1/dams/tiddas/levels");
+    const response = await app.inject("/api/v2/dams/tiddas/levels");
     assert.equal(response.statusCode, 200);
     assert.equal(response.json().meta.total, 1);
     assert.equal(response.json().meta.coverage.basin, "bouregreg");
@@ -163,7 +163,7 @@ describe("dams", () => {
       previous_year_filling_rate_pct: null, source_id: "maadialna-2026-10-12",
       source_ref: { basin_code: "MH5", dam_index: 2 },
     });
-    const priorYear = await app.inject("/api/v1/dams/tiddas/levels?from=2025-01-01&to=2025-12-31");
+    const priorYear = await app.inject("/api/v2/dams/tiddas/levels?from=2025-01-01&to=2025-12-31");
     assert.equal(priorYear.statusCode, 200);
     assert.equal(priorYear.json().meta.total, 0);
     assert.deepEqual(priorYear.json().data, []);
@@ -171,13 +171,13 @@ describe("dams", () => {
 
   it("rejects invalid basin, dam and date inputs with the shared error contract", async () => {
     for (const url of [
-      "/api/v1/dams?basin=Tensift",
-      "/api/v1/dams/bad_id/levels",
-      "/api/v1/dams/yacoub-el-mansour/levels?from=2026-02-30",
-      "/api/v1/dams/yacoub-el-mansour/levels?to=2026-04-31",
-      "/api/v1/dams/yacoub-el-mansour/levels?from=2026-8-01",
-      "/api/v1/dams/yacoub-el-mansour/levels?from=2026-09-30&to=2026-08-01",
-      "/api/v1/dams/yacoub-el-mansour/levels?from=2026-08-01&from=2026-09-01",
+      "/api/v2/dams?basin=Tensift",
+      "/api/v2/dams/bad_id/levels",
+      "/api/v2/dams/yacoub-el-mansour/levels?from=2026-02-30",
+      "/api/v2/dams/yacoub-el-mansour/levels?to=2026-04-31",
+      "/api/v2/dams/yacoub-el-mansour/levels?from=2026-8-01",
+      "/api/v2/dams/yacoub-el-mansour/levels?from=2026-09-30&to=2026-08-01",
+      "/api/v2/dams/yacoub-el-mansour/levels?from=2026-08-01&from=2026-09-01",
     ]) {
       const response = await app.inject({ method: "GET", url });
       assert.equal(response.statusCode, 400, url);
@@ -185,7 +185,7 @@ describe("dams", () => {
       assert.ok(response.json().error.request_id.length > 0, url);
     }
 
-    const unknown = await app.inject({ method: "GET", url: "/api/v1/dams/unknown-dam/levels" });
+    const unknown = await app.inject({ method: "GET", url: "/api/v2/dams/unknown-dam/levels" });
     assert.equal(unknown.statusCode, 404);
     assert.equal(unknown.json().error.code, "RESOURCE_NOT_FOUND");
     assert.ok(unknown.json().error.request_id.length > 0);

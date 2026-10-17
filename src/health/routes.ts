@@ -29,9 +29,9 @@ export const health: FastifyPluginAsync<{ geography: GeographySnapshot }> = asyn
   const tags = ["Health"];
   const dataset = "hospitals";
   const metaSchema = datasetMetaSchema(dataset);
-  const url = `/api/v1/health/${dataset}`;
+  const url = `/api/v2/health/${dataset}`;
 
-  app.get<{ Querystring: PrivateInfrastructureQuery & PaginationQuery }>("/api/v1/health/private-infrastructure", {
+  app.get<{ Querystring: PrivateInfrastructureQuery & PaginationQuery }>("/api/v2/health/private-infrastructure", {
     schema: {
       tags, summary: "Get national and regional private health infrastructure counts",
       description: "Counts describe 2024, including regional figures published by HCP in its 2026 edition. Without a region filter, returns one national aggregate and twelve regional records. Missing regional indicators are null; national and regional counts must not be added together.",
@@ -47,7 +47,7 @@ export const health: FastifyPluginAsync<{ geography: GeographySnapshot }> = asyn
     return paginate(matches, buildDatasetMeta("private-infrastructure", matches.length), request.query);
   });
 
-  app.get<{ Querystring: PrimaryCareQuery & PaginationQuery }>("/api/v1/health/primary-care-facilities", {
+  app.get<{ Querystring: PrimaryCareQuery & PaginationQuery }>("/api/v2/health/primary-care-facilities", {
     schema: {
       tags, summary: "List public primary-care facilities with optional geographic filters",
       description: "National registry for 2024 with partial commissioning confirmations from 2026. This is not a complete national registry for 2026.",

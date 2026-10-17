@@ -12,7 +12,7 @@ import { loadPrimaryCareFacilities } from "../../src/health/data/primary-care-fa
 import type { PrimaryCareFacility } from "../../src/health/types.js";
 import { collectAllPages } from "../helpers/pagination.js";
 
-const url = "/api/v1/health/primary-care-facilities";
+const url = "/api/v2/health/primary-care-facilities";
 let app: FastifyInstance;
 let facilities: readonly PrimaryCareFacility[];
 
@@ -42,7 +42,7 @@ describe("health/primary-care-facilities", () => {
     assert.equal(body.meta.total, 3065);
     assert.equal(body.meta.dataset, "primary-care-facilities");
     assert.equal(body.meta.license, "ODbL-1.0");
-    const geographyMeta = (await app.inject("/api/v1/regions")).json().meta;
+    const geographyMeta = (await app.inject("/api/v2/regions")).json().meta;
     assert.deepEqual(Object.keys(body.meta).sort(), Object.keys(geographyMeta).sort());
     assert.equal(body.meta.sources.length, 2);
     assert.ok(body.meta.sources.some((source: { resource_url: string }) => source.resource_url.endsWith("etablissements-de-soins-de-sante-primaire-2024.xlsx")));

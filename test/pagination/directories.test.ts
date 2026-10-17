@@ -35,17 +35,17 @@ function pageUrl(url: string, pagination: string): string {
 }
 
 const directories = [
-  "/api/v1/telecom/numbering-ranges",
-  "/api/v1/telecom/area-codes",
-  "/api/v1/postal-codes?city=rabat",
-  "/api/v1/postal-codes/cities",
-  "/api/v1/postal-codes/10000",
-  "/api/v1/airports",
-  "/api/v1/museums",
-  "/api/v1/ports",
-  "/api/v1/lighthouses",
-  "/api/v1/world-bank/indicators",
-  "/api/v1/world-bank/indicators/topics",
+  "/api/v2/telecom/numbering-ranges",
+  "/api/v2/telecom/area-codes",
+  "/api/v2/postal-codes?city=rabat",
+  "/api/v2/postal-codes/cities",
+  "/api/v2/postal-codes/10000",
+  "/api/v2/airports",
+  "/api/v2/museums",
+  "/api/v2/ports",
+  "/api/v2/lighthouses",
+  "/api/v2/world-bank/indicators",
+  "/api/v2/world-bank/indicators/topics",
 ];
 
 describe("Directory pagination", () => {
@@ -78,11 +78,11 @@ describe("Directory pagination", () => {
 
   it("applies every directory's existing filters before slicing and keeps the filtered total", async () => {
     const filteredDirectories = [
-      "/api/v1/telecom/numbering-ranges?prefix=061&operator=orange&category=carrier",
-      "/api/v1/telecom/area-codes?prefix=0537",
-      "/api/v1/postal-codes?city=rabat&q=quartier%20al%20boustane&type=neighborhood",
-      "/api/v1/airports?type=closed&scheduled_service=false",
-      "/api/v1/museums?city_code=tanger-assilah--tanger&region_code=tanger-tetouan-al-hoceima&q=kasbah",
+      "/api/v2/telecom/numbering-ranges?prefix=061&operator=orange&category=carrier",
+      "/api/v2/telecom/area-codes?prefix=0537",
+      "/api/v2/postal-codes?city=rabat&q=quartier%20al%20boustane&type=neighborhood",
+      "/api/v2/airports?type=closed&scheduled_service=false",
+      "/api/v2/museums?city_code=tanger-assilah--tanger&region_code=tanger-tetouan-al-hoceima&q=kasbah",
     ];
     for (const url of filteredDirectories) {
       const filtered = await collectAllPages(app, url);
@@ -101,7 +101,7 @@ describe("Directory pagination", () => {
   });
 
   it("pages all places sharing a postal code in their stable published order", async () => {
-    const url = "/api/v1/postal-codes/10000";
+    const url = "/api/v2/postal-codes/10000";
     const complete = await collectAllPages(app, url);
     assert.ok(complete.data.length > 2);
     const combined = [];
@@ -119,7 +119,7 @@ describe("Directory pagination", () => {
   });
 
   it("uses defaults independently for offset-only and limit-only requests", async () => {
-    const url = "/api/v1/telecom/numbering-ranges";
+    const url = "/api/v2/telecom/numbering-ranges";
     const complete = await collectAllPages(app, url);
     assert.ok(complete.data.length > 100);
     const offsetOnly = await collection(`${url}?offset=2`);
@@ -135,7 +135,7 @@ describe("Directory pagination", () => {
   });
 
   it("returns an empty page at and beyond the end without losing the matching total", async () => {
-    const url = "/api/v1/postal-codes/cities";
+    const url = "/api/v2/postal-codes/cities";
     const complete = await collectAllPages(app, url);
     for (const offset of [complete.data.length, 2_147_483_647]) {
       const page = await collection(`${url}?limit=2&offset=${offset}`);
@@ -148,15 +148,15 @@ describe("Directory pagination", () => {
   });
 
   it("keeps postal search requirements and missing-code errors ahead of pagination", async () => {
-    for (const url of ["/api/v1/postal-codes?limit=1", "/api/v1/postal-codes?offset=1&type=neighborhood"]) {
+    for (const url of ["/api/v2/postal-codes?limit=1", "/api/v2/postal-codes?offset=1&type=neighborhood"]) {
       const response = await app.inject(url);
       assert.equal(response.statusCode, 400, url);
       assert.equal(response.json().error.code, "VALIDATION_ERROR");
     }
-    const missing = await app.inject("/api/v1/postal-codes/99999?limit=1&offset=2147483647");
+    const missing = await app.inject("/api/v2/postal-codes/99999?limit=1&offset=2147483647");
     assert.equal(missing.statusCode, 404);
     assert.equal(missing.json().error.code, "RESOURCE_NOT_FOUND");
-    const noMatches = await collection("/api/v1/postal-codes?city=rabat&q=doesnotexist&limit=1");
+    const noMatches = await collection("/api/v2/postal-codes?city=rabat&q=doesnotexist&limit=1");
     assert.deepEqual(noMatches.data, []);
     assert.equal(noMatches.meta.total, 0);
     assert.deepEqual(noMatches.meta.pagination, {
@@ -175,15 +175,15 @@ describe("Directory pagination", () => {
   });
 
   it("keeps object details and phone lookup outside collection pagination", async () => {
-    const museums = (await collection("/api/v1/museums")).data as { id: string }[];
+    const museums = (await collection("/api/v2/museums")).data as { id: string }[];
     const details = [
-      "/api/v1/telecom/numbering-ranges/061",
-      "/api/v1/telecom/area-codes/05376",
-      "/api/v1/telecom/phone-numbers/lookup?number=0612345678",
-      "/api/v1/airports/GMMN",
-      `/api/v1/museums/${museums[0]!.id}`,
-      "/api/v1/ports/Casablanca",
-      "/api/v1/world-bank/indicators/IT.NET.USER.ZS",
+      "/api/v2/telecom/numbering-ranges/061",
+      "/api/v2/telecom/area-codes/05376",
+      "/api/v2/telecom/phone-numbers/lookup?number=0612345678",
+      "/api/v2/airports/GMMN",
+      `/api/v2/museums/${museums[0]!.id}`,
+      "/api/v2/ports/Casablanca",
+      "/api/v2/world-bank/indicators/IT.NET.USER.ZS",
     ];
     for (const url of details) {
       const ordinary = await app.inject(url);

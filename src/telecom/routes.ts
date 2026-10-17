@@ -21,7 +21,7 @@ export const telecom: FastifyPluginAsync = async (app) => {
   const areaMetaSchema = datasetMetaSchema("area-codes");
 
   app.get<{ Querystring: NumberQuery }>(
-    "/api/v1/telecom/phone-numbers/validate",
+    "/api/v2/telecom/phone-numbers/validate",
     {
       schema: {
         tags,
@@ -37,7 +37,7 @@ export const telecom: FastifyPluginAsync = async (app) => {
   );
 
   app.get<{ Querystring: NumberQuery }>(
-    "/api/v1/telecom/phone-numbers/lookup",
+    "/api/v2/telecom/phone-numbers/lookup",
     {
       schema: {
         tags,
@@ -59,7 +59,7 @@ export const telecom: FastifyPluginAsync = async (app) => {
   );
 
   app.get<{ Querystring: RangeQuery & PaginationQuery }>(
-    "/api/v1/telecom/numbering-ranges",
+    "/api/v2/telecom/numbering-ranges",
     {
       schema: {
         tags, summary: "List licensed carrier and geographic prefix mappings",
@@ -78,7 +78,7 @@ export const telecom: FastifyPluginAsync = async (app) => {
     },
   );
   app.get<{ Params: PrefixParams }>(
-    "/api/v1/telecom/numbering-ranges/:prefix",
+    "/api/v2/telecom/numbering-ranges/:prefix",
     {
       schema: {
         tags, summary: "Get one exact national mapping prefix",
@@ -98,7 +98,7 @@ export const telecom: FastifyPluginAsync = async (app) => {
   );
 
   app.get<{ Querystring: AreaCodeQuery & PaginationQuery }>(
-    "/api/v1/telecom/area-codes",
+    "/api/v2/telecom/area-codes",
     {
       schema: {
         tags, summary: "List geographic prefix descriptions in French and English",
@@ -113,7 +113,7 @@ export const telecom: FastifyPluginAsync = async (app) => {
     },
   );
   app.get<{ Params: AreaCodeParams }>(
-    "/api/v1/telecom/area-codes/:code",
+    "/api/v2/telecom/area-codes/:code",
     {
       schema: {
         tags, summary: "Get areas associated with one exact national geographic prefix",

@@ -17,10 +17,10 @@ interface ErrorBody {
 
 const longParameter = "a".repeat(201);
 const routerErrors = [
-  ["/api/v1/regions/%FF", 400],
-  ["/api/v1/regions/%zz", 400],
-  ["/api/v1/regions/%E0%A4", 400],
-  [`/api/v1/regions/${longParameter}`, 414],
+  ["/api/v2/regions/%FF", 400],
+  ["/api/v2/regions/%zz", 400],
+  ["/api/v2/regions/%E0%A4", 400],
+  [`/api/v2/regions/${longParameter}`, 414],
 ] as const;
 
 function assertEnvelope(response: ErrorResponse, status: number, code: string): ErrorBody {
@@ -114,7 +114,7 @@ describe("Framework error envelopes", () => {
       const cases = [
         [routerErrors[0][0], 400, "REQUEST_ERROR"],
         [routerErrors[3][0], 414, "REQUEST_ERROR"],
-        ["/api/v1/regions/a", 400, "VALIDATION_ERROR"],
+        ["/api/v2/regions/a", 400, "VALIDATION_ERROR"],
       ] as const;
       for (const [index, [url, status, code]] of cases.entries()) {
         const body = assertEnvelope(await configuredApp.inject(url), status, code);
@@ -134,10 +134,10 @@ describe("Framework error envelopes", () => {
       const configuredApp = await buildApp(options);
       try {
         await configuredApp.ready();
-        const allowed = assertEnvelope(await configuredApp.inject(`/api/v1/regions/${"a".repeat(maximum)}`), 404, "RESOURCE_NOT_FOUND");
+        const allowed = assertEnvelope(await configuredApp.inject(`/api/v2/regions/${"a".repeat(maximum)}`), 404, "RESOURCE_NOT_FOUND");
         assert.ok(allowed.error.message.includes("a".repeat(maximum)));
-        assertEnvelope(await configuredApp.inject(`/api/v1/regions/${"a".repeat(maximum + 1)}`), 414, "REQUEST_ERROR");
-        assert.equal((await configuredApp.inject("/api/v1/regions/oriental")).statusCode, 200);
+        assertEnvelope(await configuredApp.inject(`/api/v2/regions/${"a".repeat(maximum + 1)}`), 414, "REQUEST_ERROR");
+        assert.equal((await configuredApp.inject("/api/v2/regions/oriental")).statusCode, 200);
       } finally {
         await configuredApp.close();
       }
@@ -160,20 +160,20 @@ describe("Framework error envelopes", () => {
           headers: { authorization: `Bearer ${secrets[2]}`, cookie: `session=${secrets[3]}` },
         });
         const body = assertEnvelope(response, status, "REQUEST_ERROR");
-        assert.ok(!body.error.message.includes("/api/v1/regions/"));
+        assert.ok(!body.error.message.includes("/api/v2/regions/"));
         for (const value of secrets) assert.ok(!response.body.includes(value));
       }
-      assert.equal((await loggedApp.inject("/api/v1/status")).statusCode, 200);
+      assert.equal((await loggedApp.inject("/api/v2/status")).statusCode, 200);
     } finally {
       await loggedApp.close();
     }
     const output = logs.join("");
-    assert.ok(output.includes("/api/v1/status"), "ordinary request logging remains active");
+    assert.ok(output.includes("/api/v2/status"), "ordinary request logging remains active");
     for (const value of secrets) assert.ok(!output.includes(value), "credential values must not appear in logs");
   });
 
   it("retains ordinary validation, missing-route, client-error and masked internal-error behavior", async () => {
-    assertEnvelope(await app.inject("/api/v1/regions/a"), 400, "VALIDATION_ERROR");
+    assertEnvelope(await app.inject("/api/v2/regions/a"), 400, "VALIDATION_ERROR");
     assertEnvelope(await app.inject("/does-not-exist"), 404, "ROUTE_NOT_FOUND");
     const client = assertEnvelope(await app.inject("/__tests__/client-error"), 422, "REQUEST_ERROR");
     assert.equal(client.error.message, "Client request rejected");

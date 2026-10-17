@@ -1,6 +1,5 @@
 import cors from "@fastify/cors";
 import swagger from "@fastify/swagger";
-import swaggerUi from "@fastify/swagger-ui";
 import Fastify, {
   type FastifyError,
   type FastifyInstance,
@@ -26,6 +25,7 @@ import { airports } from "./airports/routes.js";
 import { museums } from "./museums/routes.js";
 import { maritime } from "./maritime/routes.js";
 import { dams } from "./dams/routes.js";
+import { documentation } from "./docs/routes.js";
 
 const publicCorsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -137,10 +137,28 @@ export async function buildApp(
     },
   });
 
-  await app.register(swaggerUi, {
-    routePrefix: "/docs",
-    uiConfig: { docExpansion: "list", deepLinking: true },
+  // Keep the previously published paths working with their existing behavior.
+  // Only v2 is advertised in OpenAPI, examples and the documentation catalog.
+  app.addHook("onRoute", function (route) {
+    if (!route.url.startsWith("/api/v2/")) return;
+    const previousHooks = route.onRequest
+      ? Array.isArray(route.onRequest) ? route.onRequest : [route.onRequest]
+      : [];
+    this.route({
+      ...route,
+      url: route.url.replace("/api/v2/", "/api/v1/"),
+      exposeHeadRoute: false,
+      schema: { ...route.schema, hide: true },
+      onRequest: [async (_request, reply) => {
+        reply.header("X-MoroccoAPI-Deprecated", "Use /api/v2; no removal date is scheduled");
+        // Parameterized routes point to their concrete successor URL.
+        const suffix = _request.url.slice("/api/v1".length);
+        reply.header("Link", `</api/v2${suffix}>; rel="successor-version"`);
+      }, ...previousHooks],
+    });
   });
+
+  await app.register(documentation);
 
   app.get(
     "/openapi.json",

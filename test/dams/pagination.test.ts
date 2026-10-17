@@ -11,9 +11,9 @@ before(async () => { app = await buildApp(); await app.ready(); });
 after(async () => { await app.close(); });
 
 const collections = [
-  { path: "/api/v1/dams", total: 25 },
-  { path: "/api/v1/dams/yacoub-el-mansour/levels", total: 62 },
-  { path: "/api/v1/dams/tiddas/levels", total: 1 },
+  { path: "/api/v2/dams", total: 25 },
+  { path: "/api/v2/dams/yacoub-el-mansour/levels", total: 62 },
+  { path: "/api/v2/dams/tiddas/levels", total: 1 },
 ];
 
 describe("dams pagination", () => {
@@ -50,7 +50,7 @@ describe("dams pagination", () => {
   });
 
   it("applies basin and inclusive date filters before pagination while preserving matching totals", async () => {
-    const path = "/api/v1/dams/yacoub-el-mansour/levels";
+    const path = "/api/v2/dams/yacoub-el-mansour/levels";
     const complete = await collectAllPages<{ date: string }>(app, path);
     const expected = complete.data.filter((level) => level.date >= "2026-08-31" && level.date <= "2026-09-02");
     assert.equal(expected.length, 3);
@@ -70,8 +70,8 @@ describe("dams pagination", () => {
       limit: 2, offset: 2, count: 1, has_more: false, next_offset: null,
     });
 
-    const dams = await collectAllPages(app, "/api/v1/dams?basin=tensift");
-    const damPage = await app.inject("/api/v1/dams?basin=tensift&limit=1&offset=1");
+    const dams = await collectAllPages(app, "/api/v2/dams?basin=tensift");
+    const damPage = await app.inject("/api/v2/dams?basin=tensift&limit=1&offset=1");
     assert.equal(damPage.statusCode, 200);
     assert.deepEqual(damPage.json().data, dams.data.slice(1, 2));
     assert.equal(damPage.json().meta.total, 5);
@@ -80,7 +80,7 @@ describe("dams pagination", () => {
     });
 
     for (const url of [
-      "/api/v1/dams?basin=unknown-basin&limit=1&offset=1",
+      "/api/v2/dams?basin=unknown-basin&limit=1&offset=1",
       `${path}?from=2026-10-13&limit=1&offset=1`,
     ]) {
       const empty = await app.inject(url);
@@ -94,9 +94,9 @@ describe("dams pagination", () => {
   });
 
   it("paginates an added basin and the dashboard observation after historical observations", async () => {
-    const bouregreg = await collectAllPages(app, "/api/v1/dams?basin=bouregreg");
+    const bouregreg = await collectAllPages(app, "/api/v2/dams?basin=bouregreg");
     assert.equal(bouregreg.meta.total, 2);
-    const page = await app.inject("/api/v1/dams?basin=bouregreg&limit=1&offset=1");
+    const page = await app.inject("/api/v2/dams?basin=bouregreg&limit=1&offset=1");
     assert.equal(page.statusCode, 200);
     assert.deepEqual(page.json().data, bouregreg.data.slice(1));
     assert.equal(page.json().meta.total, 2);
@@ -104,7 +104,7 @@ describe("dams pagination", () => {
       limit: 1, offset: 1, count: 1, has_more: false, next_offset: null,
     });
 
-    const latest = await app.inject("/api/v1/dams/yacoub-el-mansour/levels?limit=1&offset=61");
+    const latest = await app.inject("/api/v2/dams/yacoub-el-mansour/levels?limit=1&offset=61");
     assert.equal(latest.statusCode, 200);
     assert.equal(latest.json().meta.total, 62);
     assert.equal(latest.json().data[0].date, "2026-10-12");
@@ -126,7 +126,7 @@ describe("dams pagination", () => {
         }, path);
       }
     }
-    const missing = await app.inject("/api/v1/dams/unknown-dam/levels?limit=2&offset=2147483647");
+    const missing = await app.inject("/api/v2/dams/unknown-dam/levels?limit=2&offset=2147483647");
     assert.equal(missing.statusCode, 404);
     assert.equal(missing.json().error.code, "RESOURCE_NOT_FOUND");
   });
