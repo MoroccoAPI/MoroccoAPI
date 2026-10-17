@@ -11,7 +11,7 @@ import { loadPrivateInfrastructure } from "../../src/health/data/private-infrast
 import type { PrivateInfrastructure } from "../../src/health/types.js";
 import { collectAllPages } from "../helpers/pagination.js";
 
-const url = "/api/v1/health/private-infrastructure";
+const url = "/api/v2/health/private-infrastructure";
 let app: FastifyInstance;
 let records: readonly PrivateInfrastructure[];
 
@@ -41,7 +41,7 @@ describe("health/private-infrastructure", () => {
     assert.equal(body.meta.dataset, "private-infrastructure");
     assert.equal(body.meta.license, "ODbL-1.0");
     assert.deepEqual(body.data, records);
-    const geographyMeta = (await app.inject("/api/v1/regions")).json().meta;
+    const geographyMeta = (await app.inject("/api/v2/regions")).json().meta;
     assert.deepEqual(Object.keys(body.meta).sort(), Object.keys(geographyMeta).sort());
     assert.equal(body.meta.sources.length, 3);
     assert.ok(body.meta.sources.some((source: { resource_url: string }) => source.resource_url.endsWith("infrastructures-privees-2024.xlsx")));

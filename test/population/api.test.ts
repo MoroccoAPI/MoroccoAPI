@@ -21,7 +21,7 @@ describe("population/national", () => {
   it("returns the national population breakdown with source metadata", async () => {
     const response = await app.inject({
       method: "GET",
-      url: "/api/v1/population/national",
+      url: "/api/v2/population/national",
     });
 
     assert.equal(response.statusCode, 200);
@@ -60,7 +60,7 @@ describe("population/national", () => {
     const response = await app.inject("/openapi.json");
     assert.equal(response.statusCode, 200);
 
-    const operation = response.json().paths["/api/v1/population/national"]?.get;
+    const operation = response.json().paths["/api/v2/population/national"]?.get;
     assert.ok(operation);
     assert.equal(operation.tags[0], "Population");
     assert.ok(operation.responses["200"]);
@@ -70,8 +70,8 @@ describe("population/national", () => {
 describe("population/regions", () => {
   it("returns regional population records with totals matching the national endpoint", async () => {
     const [regionsResponse, nationalResponse] = await Promise.all([
-      app.inject("/api/v1/population/regions"),
-      app.inject("/api/v1/population/national"),
+      app.inject("/api/v2/population/regions"),
+      app.inject("/api/v2/population/national"),
     ]);
     assert.equal(regionsResponse.statusCode, 200);
     assert.equal(nationalResponse.statusCode, 200);
@@ -118,14 +118,14 @@ describe("population/regions", () => {
   });
 
   it("returns one region by MoroccoAPI code and a not-found error for unknown codes", async () => {
-    const list = await app.inject("/api/v1/population/regions");
+    const list = await app.inject("/api/v2/population/regions");
     const firstCode = list.json().data[0].code;
-    const detail = await app.inject(`/api/v1/population/regions/${firstCode}`);
+    const detail = await app.inject(`/api/v2/population/regions/${firstCode}`);
     assert.equal(detail.statusCode, 200);
     assert.equal(detail.json().data.code, firstCode);
     assert.equal(detail.json().meta.total, 1);
 
-    const missing = await app.inject("/api/v1/population/regions/not-a-region");
+    const missing = await app.inject("/api/v2/population/regions/not-a-region");
     assert.equal(missing.statusCode, 404);
     assert.equal(missing.json().error.code, "RESOURCE_NOT_FOUND");
   });
@@ -133,14 +133,14 @@ describe("population/regions", () => {
   it("publishes regional population endpoints in OpenAPI", async () => {
     const response = await app.inject("/openapi.json");
     const paths = response.json().paths;
-    assert.ok(paths["/api/v1/population/regions"]?.get);
-    assert.ok(paths["/api/v1/population/regions/{code}"]?.get);
+    assert.ok(paths["/api/v2/population/regions"]?.get);
+    assert.ok(paths["/api/v2/population/regions/{code}"]?.get);
   });
 });
 describe("population/historical", () => {
   it("rejects non-finite, overflowing and out-of-range census years as validation errors", async () => {
     for (const year of ["Infinity", "-Infinity", "+Infinity", "1e309", "-1e309", "NaN", "1959", "2025", "2024.5"]) {
-      const url = `/api/v1/population/historical/${encodeURIComponent(year)}`;
+      const url = `/api/v2/population/historical/${encodeURIComponent(year)}`;
       const response = await app.inject(url);
       assert.equal(response.statusCode, 400, year);
       const body = response.json();
@@ -155,10 +155,10 @@ describe("population/historical", () => {
   });
 
   it("retains finite census-year coercion for existing records", async () => {
-    const ordinary = await app.inject("/api/v1/population/historical/2024");
+    const ordinary = await app.inject("/api/v2/population/historical/2024");
     assert.equal(ordinary.statusCode, 200);
     for (const year of ["2024.0", "2.024e3"]) {
-      const response = await app.inject(`/api/v1/population/historical/${year}`);
+      const response = await app.inject(`/api/v2/population/historical/${year}`);
       assert.equal(response.statusCode, 200, year);
       assert.deepEqual(response.json(), ordinary.json(), year);
     }
@@ -166,8 +166,8 @@ describe("population/historical", () => {
 
   it("returns historical population records with totals matching the national endpoint", async () => {
     const [historicalResponse, nationalResponse] = await Promise.all([
-      app.inject("/api/v1/population/historical"),
-      app.inject("/api/v1/population/national"),
+      app.inject("/api/v2/population/historical"),
+      app.inject("/api/v2/population/national"),
     ]);
     assert.equal(historicalResponse.statusCode, 200);
     assert.equal(nationalResponse.statusCode, 200);
@@ -207,17 +207,17 @@ describe("population/historical", () => {
   it("publishes historical population endpoints in OpenAPI", async () => {
     const response = await app.inject("/openapi.json");
     const paths = response.json().paths;
-    assert.ok(paths["/api/v1/population/historical"]?.get);
-    assert.ok(paths["/api/v1/population/historical/{year}"]?.get);
+    assert.ok(paths["/api/v2/population/historical"]?.get);
+    assert.ok(paths["/api/v2/population/historical/{year}"]?.get);
   });
 
   it("returns one census year and reports an unsupported year as not found", async () => {
-    const listResponse = await app.inject("/api/v1/population/historical");
+    const listResponse = await app.inject("/api/v2/population/historical");
     const history = listResponse.json().data;
     const firstRecord = history[0];
 
     const detailResponse = await app.inject(
-      `/api/v1/population/historical/${firstRecord.year}`,
+      `/api/v2/population/historical/${firstRecord.year}`,
     );
     assert.equal(detailResponse.statusCode, 200);
     assert.deepEqual(detailResponse.json().data, firstRecord);
@@ -229,7 +229,7 @@ describe("population/historical", () => {
     assert.ok(unsupportedYear, "Expected at least one unsupported census year in the supported range");
 
     const missingResponse = await app.inject(
-      `/api/v1/population/historical/${unsupportedYear}`,
+      `/api/v2/population/historical/${unsupportedYear}`,
     );
     assert.equal(missingResponse.statusCode, 404);
     assert.equal(missingResponse.json().error.code, "RESOURCE_NOT_FOUND");
@@ -239,8 +239,8 @@ describe("population/historical", () => {
 describe("population/provinces", () => {
   it("returns population records whose totals match the national endpoint", async () => {
     const [provincesResponse, nationalResponse] = await Promise.all([
-      app.inject("/api/v1/population/subdivisions"),
-      app.inject("/api/v1/population/national"),
+      app.inject("/api/v2/population/subdivisions"),
+      app.inject("/api/v2/population/national"),
     ]);
     assert.equal(provincesResponse.statusCode, 200);
     assert.equal(nationalResponse.statusCode, 200);
@@ -274,14 +274,14 @@ describe("population/provinces", () => {
   });
 
   it("returns one province or prefecture by MoroccoAPI code", async () => {
-    const listResponse = await app.inject("/api/v1/population/subdivisions");
+    const listResponse = await app.inject("/api/v2/population/subdivisions");
     const first = listResponse.json().data[0];
-    const detailResponse = await app.inject(`/api/v1/population/subdivisions/${first.code}`);
+    const detailResponse = await app.inject(`/api/v2/population/subdivisions/${first.code}`);
     assert.equal(detailResponse.statusCode, 200);
     assert.deepEqual(detailResponse.json().data, first);
     assert.equal(detailResponse.json().meta.total, 1);
 
-    const missingResponse = await app.inject("/api/v1/population/subdivisions/not-a-province");
+    const missingResponse = await app.inject("/api/v2/population/subdivisions/not-a-province");
     assert.equal(missingResponse.statusCode, 404);
     assert.equal(missingResponse.json().error.code, "RESOURCE_NOT_FOUND");
   });
@@ -289,17 +289,17 @@ describe("population/provinces", () => {
   it("publishes province and prefecture population endpoints in OpenAPI", async () => {
     const response = await app.inject("/openapi.json");
     const paths = response.json().paths;
-    assert.ok(paths["/api/v1/population/subdivisions"]?.get);
-    assert.ok(paths["/api/v1/population/subdivisions/{code}"]?.get);
+    assert.ok(paths["/api/v2/population/subdivisions"]?.get);
+    assert.ok(paths["/api/v2/population/subdivisions/{code}"]?.get);
   });
 });
 
 describe("population/communes", () => {
   it("returns commune population records whose totals match national and subdivision data", async () => {
     const [communesResponse, nationalResponse, provincesResponse] = await Promise.all([
-      app.inject("/api/v1/population/communes"),
-      app.inject("/api/v1/population/national"),
-      app.inject("/api/v1/population/subdivisions"),
+      app.inject("/api/v2/population/communes"),
+      app.inject("/api/v2/population/national"),
+      app.inject("/api/v2/population/subdivisions"),
     ]);
     assert.equal(communesResponse.statusCode, 200);
     assert.equal(nationalResponse.statusCode, 200);
@@ -312,7 +312,7 @@ describe("population/communes", () => {
       limit: 100, offset: 0, count: 100, has_more: true, next_offset: 100,
     });
 
-    const body = await collectAllPages(app, "/api/v1/population/communes");
+    const body = await collectAllPages(app, "/api/v2/population/communes");
     const communes = body.data;
     assert.equal(communes.length, 1503);
     assert.equal(body.meta.dataset, "commune-population");
@@ -344,14 +344,14 @@ describe("population/communes", () => {
   });
 
   it("returns a commune by MoroccoAPI code and a not-found error for unknown codes", async () => {
-    const listResponse = await app.inject("/api/v1/population/communes");
+    const listResponse = await app.inject("/api/v2/population/communes");
     const first = listResponse.json().data[0];
-    const detailResponse = await app.inject(`/api/v1/population/communes/${first.code}`);
+    const detailResponse = await app.inject(`/api/v2/population/communes/${first.code}`);
     assert.equal(detailResponse.statusCode, 200);
     assert.deepEqual(detailResponse.json().data, first);
     assert.equal(detailResponse.json().meta.total, 1);
 
-    const missingResponse = await app.inject("/api/v1/population/communes/not-a-commune");
+    const missingResponse = await app.inject("/api/v2/population/communes/not-a-commune");
     assert.equal(missingResponse.statusCode, 404);
     assert.equal(missingResponse.json().error.code, "RESOURCE_NOT_FOUND");
   });
@@ -359,7 +359,7 @@ describe("population/communes", () => {
   it("publishes commune population endpoints in OpenAPI", async () => {
     const response = await app.inject("/openapi.json");
     const paths = response.json().paths;
-    assert.ok(paths["/api/v1/population/communes"]?.get);
-    assert.ok(paths["/api/v1/population/communes/{code}"]?.get);
+    assert.ok(paths["/api/v2/population/communes"]?.get);
+    assert.ok(paths["/api/v2/population/communes/{code}"]?.get);
   });
 });

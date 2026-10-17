@@ -18,7 +18,7 @@ after(async () => {
 
 describe("status", () => {
   it("reports service health", async () => {
-    const response = await app.inject({ method: "GET", url: "/api/v1/status" });
+    const response = await app.inject({ method: "GET", url: "/api/v2/status" });
     assert.equal(response.statusCode, 200);
 
     const body = response.json();

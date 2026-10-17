@@ -25,7 +25,7 @@ export const education: FastifyPluginAsync = async (app) => {
 
   for (const config of schoolDatasetRoutes) {
     const records = schools.filter((school) => school.category === config.category);
-    const url = `/api/v1/education/${config.path}`;
+    const url = `/api/v2/education/${config.path}`;
     const metaSchema = educationMetaSchema(config.dataset);
 
     app.get<{ Querystring: SchoolQuery & PaginationQuery }>(url, {
@@ -73,7 +73,7 @@ export const education: FastifyPluginAsync = async (app) => {
     });
   }
 
-  const universityUrl = "/api/v1/education/universites-publiques";
+  const universityUrl = "/api/v2/education/universites-publiques";
   const universityMetaSchema = educationMetaSchema("universites-publiques");
   app.get<{ Querystring: UniversityQuery & PaginationQuery }>(universityUrl, {
     schema: {

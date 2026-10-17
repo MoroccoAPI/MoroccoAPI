@@ -98,7 +98,7 @@ it("deploys the approved commit and waits through a previous healthy release", a
         return new Response("{}");
       }
       paths.push(url.pathname);
-      if (url.pathname === "/api/v1/status") {
+      if (url.pathname === "/api/v2/status") {
         healthChecks++;
         return new Response(JSON.stringify({ data: { status: "ok", version } }), {
           headers: { "x-moroccoapi-revision": healthChecks === 1 ? "previous-commit" : revision },

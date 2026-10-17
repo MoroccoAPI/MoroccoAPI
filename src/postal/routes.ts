@@ -32,7 +32,7 @@ export const postal: FastifyPluginAsync<{ geography: GeographySnapshot }> = asyn
   }));
   const cityByKey = new Map(cities.map((city) => [compact(city.name), city.name]));
 
-  app.get<{ Querystring: PostalCodeQuery & PaginationQuery }>("/api/v1/postal-codes", {
+  app.get<{ Querystring: PostalCodeQuery & PaginationQuery }>("/api/v2/postal-codes", {
     schema: {
       tags, summary: "Search postal codes by place, city, province or region",
       description: `Requires at least one of q, region_code, province_code or city. A place can have several codes, and one code can cover many places. ${snapshot}`,
@@ -64,7 +64,7 @@ export const postal: FastifyPluginAsync<{ geography: GeographySnapshot }> = asyn
     if (cityKey !== null && !cityByKey.has(cityKey)) {
       return reply.code(400).send({ error: {
         code: "VALIDATION_ERROR",
-        message: "city must be one of the multi-code cities listed at /api/v1/postal-codes/cities",
+        message: "city must be one of the multi-code cities listed at /api/v2/postal-codes/cities",
         request_id: request.id,
       } });
     }
@@ -79,7 +79,7 @@ export const postal: FastifyPluginAsync<{ geography: GeographySnapshot }> = asyn
     return paginate(matches, buildDatasetMeta(matches.length), request.query);
   });
 
-  app.get<{ Querystring: PaginationQuery }>("/api/v1/postal-codes/cities", {
+  app.get<{ Querystring: PaginationQuery }>("/api/v2/postal-codes/cities", {
     schema: {
       tags, summary: "List the cities whose neighbourhoods have different postal codes", description: snapshot,
       querystring: paginationQuerySchema(),
@@ -87,7 +87,7 @@ export const postal: FastifyPluginAsync<{ geography: GeographySnapshot }> = asyn
     },
   }, async (request) => paginate(cities, buildDatasetMeta(cities.length), request.query));
 
-  app.get<{ Params: PostalCodeParams; Querystring: PaginationQuery }>("/api/v1/postal-codes/:code", {
+  app.get<{ Params: PostalCodeParams; Querystring: PaginationQuery }>("/api/v2/postal-codes/:code", {
     schema: {
       tags, summary: "Get every locality and neighbourhood that uses a postal code", description: snapshot,
       params: postalCodeParamsSchema,

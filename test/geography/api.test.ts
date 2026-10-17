@@ -21,7 +21,7 @@ after(async () => {
 
 describe("geography/regions", () => {
   it("returns exactly 12 regions with unique MoroccoAPI codes", async () => {
-    const response = await app.inject({ method: "GET", url: "/api/v1/regions" });
+    const response = await app.inject({ method: "GET", url: "/api/v2/regions" });
     assert.equal(response.statusCode, 200);
 
     const body = response.json();
@@ -44,7 +44,7 @@ describe("geography/regions", () => {
   it("returns one region by code", async () => {
     const response = await app.inject({
       method: "GET",
-      url: "/api/v1/regions/casablanca-settat",
+      url: "/api/v2/regions/casablanca-settat",
     });
     assert.equal(response.statusCode, 200);
 
@@ -58,7 +58,7 @@ describe("geography/regions", () => {
   it("returns a stable error when a region is missing", async () => {
     const response = await app.inject({
       method: "GET",
-      url: "/api/v1/regions/unknown-region",
+      url: "/api/v2/regions/unknown-region",
     });
     assert.equal(response.statusCode, 404);
     assert.equal(response.json().error.code, "RESOURCE_NOT_FOUND");
@@ -67,7 +67,7 @@ describe("geography/regions", () => {
 
 describe("geography/provinces", () => {
   it("returns all 75 provinces and prefectures with unique codes", async () => {
-    const response = await app.inject({ method: "GET", url: "/api/v1/provinces" });
+    const response = await app.inject({ method: "GET", url: "/api/v2/provinces" });
     assert.equal(response.statusCode, 200);
 
     const body = response.json();
@@ -108,7 +108,7 @@ describe("geography/provinces", () => {
   it("returns each region's provinces and prefectures with matching metadata", async () => {
     const provincesResponse = await app.inject({
       method: "GET",
-      url: "/api/v1/provinces",
+      url: "/api/v2/provinces",
     });
     assert.equal(provincesResponse.statusCode, 200);
     const provincesBody = provincesResponse.json();
@@ -131,7 +131,7 @@ describe("geography/provinces", () => {
     for (const [regionCode, total] of Object.entries(expectedCounts)) {
       const response = await app.inject({
         method: "GET",
-        url: `/api/v1/regions/${regionCode}/subdivisions`,
+        url: `/api/v2/regions/${regionCode}/subdivisions`,
       });
       assert.equal(response.statusCode, 200, regionCode);
 
@@ -163,7 +163,7 @@ describe("geography/provinces", () => {
   it("returns a stable error when the subdivisions region is missing", async () => {
     const response = await app.inject({
       method: "GET",
-      url: "/api/v1/regions/unknown-region/subdivisions",
+      url: "/api/v2/regions/unknown-region/subdivisions",
     });
     assert.equal(response.statusCode, 404);
 
@@ -177,7 +177,7 @@ describe("geography/provinces", () => {
     for (const code of ["a", "CASABLANCA", "casablanca_settat"]) {
       const response = await app.inject({
         method: "GET",
-        url: `/api/v1/regions/${code}/subdivisions`,
+        url: `/api/v2/regions/${code}/subdivisions`,
       });
       assert.equal(response.statusCode, 400, code);
 
@@ -190,7 +190,7 @@ describe("geography/provinces", () => {
   it("returns one province by code", async () => {
     const response = await app.inject({
       method: "GET",
-      url: "/api/v1/provinces/azilal",
+      url: "/api/v2/provinces/azilal",
     });
     assert.equal(response.statusCode, 200);
 
@@ -206,7 +206,7 @@ describe("geography/provinces", () => {
   it("returns a stable error when a province is missing", async () => {
     const response = await app.inject({
       method: "GET",
-      url: "/api/v1/provinces/unknown-province",
+      url: "/api/v2/provinces/unknown-province",
     });
     assert.equal(response.statusCode, 404);
     assert.equal(response.json().error.code, "RESOURCE_NOT_FOUND");
@@ -217,7 +217,7 @@ describe("geography/prefectures-of-arrondissements", () => {
   it("returns Casablanca's eight prefectures of arrondissements", async () => {
     const response = await app.inject({
       method: "GET",
-      url: "/api/v1/prefectures-of-arrondissements",
+      url: "/api/v2/prefectures-of-arrondissements",
     });
     assert.equal(response.statusCode, 200);
 
@@ -245,7 +245,7 @@ describe("geography/prefectures-of-arrondissements", () => {
   it("returns one prefecture of arrondissements by code", async () => {
     const response = await app.inject({
       method: "GET",
-      url: "/api/v1/prefectures-of-arrondissements/casablanca--prefecture-of-arrondissements--casablanca-anfa",
+      url: "/api/v2/prefectures-of-arrondissements/casablanca--prefecture-of-arrondissements--casablanca-anfa",
     });
     assert.equal(response.statusCode, 200);
 
@@ -259,7 +259,7 @@ describe("geography/prefectures-of-arrondissements", () => {
   it("returns a stable error when a prefecture of arrondissements is missing", async () => {
     const response = await app.inject({
       method: "GET",
-      url: "/api/v1/prefectures-of-arrondissements/casablanca--unknown-prefecture",
+      url: "/api/v2/prefectures-of-arrondissements/casablanca--unknown-prefecture",
     });
     assert.equal(response.statusCode, 404);
     assert.equal(response.json().error.code, "RESOURCE_NOT_FOUND");
@@ -268,7 +268,7 @@ describe("geography/prefectures-of-arrondissements", () => {
 
 describe("geography/communes", () => {
   it("returns all 1503 communes across bounded pages with unique composite codes", async () => {
-    const response = await app.inject({ method: "GET", url: "/api/v1/communes" });
+    const response = await app.inject({ method: "GET", url: "/api/v2/communes" });
     assert.equal(response.statusCode, 200);
 
     const firstPage = response.json();
@@ -278,7 +278,7 @@ describe("geography/communes", () => {
       limit: 100, offset: 0, count: 100, has_more: true, next_offset: 100,
     });
 
-    const body = await collectAllPages(app, "/api/v1/communes");
+    const body = await collectAllPages(app, "/api/v2/communes");
     assert.equal(body.data.length, 1503);
     assert.equal(body.meta.total, 1503);
     assert.equal(body.meta.license, "CC-BY-4.0");
@@ -316,7 +316,7 @@ describe("geography/communes", () => {
   it("returns one commune by its province-qualified code", async () => {
     const response = await app.inject({
       method: "GET",
-      url: "/api/v1/communes/azilal--afourar",
+      url: "/api/v2/communes/azilal--afourar",
     });
     assert.equal(response.statusCode, 200);
 
@@ -333,7 +333,7 @@ describe("geography/communes", () => {
   it("returns a stable error when a commune is missing", async () => {
     const response = await app.inject({
       method: "GET",
-      url: "/api/v1/communes/azilal--unknown-commune",
+      url: "/api/v2/communes/azilal--unknown-commune",
     });
     assert.equal(response.statusCode, 404);
     assert.equal(response.json().error.code, "RESOURCE_NOT_FOUND");
@@ -344,7 +344,7 @@ describe("geography/arrondissements", () => {
   it("returns all 41 arrondissements with their parent communes", async () => {
     const response = await app.inject({
       method: "GET",
-      url: "/api/v1/arrondissements",
+      url: "/api/v2/arrondissements",
     });
     assert.equal(response.statusCode, 200);
 
@@ -387,7 +387,7 @@ describe("geography/arrondissements", () => {
   it("returns one arrondissement by code", async () => {
     const response = await app.inject({
       method: "GET",
-      url: "/api/v1/arrondissements/casablanca--ain-chock",
+      url: "/api/v2/arrondissements/casablanca--ain-chock",
     });
     assert.equal(response.statusCode, 200);
 
@@ -406,7 +406,7 @@ describe("geography/arrondissements", () => {
   it("returns a stable error when an arrondissement is missing", async () => {
     const response = await app.inject({
       method: "GET",
-      url: "/api/v1/arrondissements/casablanca--unknown-arrondissement",
+      url: "/api/v2/arrondissements/casablanca--unknown-arrondissement",
     });
     assert.equal(response.statusCode, 404);
     assert.equal(response.json().error.code, "RESOURCE_NOT_FOUND");
@@ -417,7 +417,7 @@ describe("geography/search", () => {
   it("searches names without requiring French accents", async () => {
     const response = await app.inject({
       method: "GET",
-      url: "/api/v1/locations/search?q=kenitra",
+      url: "/api/v2/locations/search?q=kenitra",
     });
     assert.equal(response.statusCode, 200);
 
@@ -432,7 +432,7 @@ describe("geography/search", () => {
   it("searches Arabic names", async () => {
     const response = await app.inject({
       method: "GET",
-      url: "/api/v1/locations/search?q=%D8%A7%D9%84%D8%B4%D8%B1%D9%82",
+      url: "/api/v2/locations/search?q=%D8%A7%D9%84%D8%B4%D8%B1%D9%82",
     });
     assert.equal(response.statusCode, 200);
     assert.equal(response.json().data[0].code, "oriental");
@@ -442,7 +442,7 @@ describe("geography/search", () => {
     for (const query of ["اسفي", "مَرَّاكُش", "مـراكش"]) {
       const response = await app.inject({
         method: "GET",
-        url: `/api/v1/locations/search?q=${encodeURIComponent(query)}`,
+        url: `/api/v2/locations/search?q=${encodeURIComponent(query)}`,
       });
 
       assert.equal(response.statusCode, 200);
@@ -454,14 +454,14 @@ describe("geography/search", () => {
   it("rejects invalid search queries", async () => {
     const response = await app.inject({
       method: "GET",
-      url: "/api/v1/locations/search?q=a",
+      url: "/api/v2/locations/search?q=a",
     });
     assert.equal(response.statusCode, 400);
     assert.equal(response.json().error.code, "VALIDATION_ERROR");
 
     const whitespaceResponse = await app.inject({
       method: "GET",
-      url: "/api/v1/locations/search?q=%20%20",
+      url: "/api/v2/locations/search?q=%20%20",
     });
     assert.equal(whitespaceResponse.statusCode, 400);
     assert.equal(whitespaceResponse.json().error.code, "VALIDATION_ERROR");
@@ -488,11 +488,11 @@ describe("geography/data", () => {
 
   it("keeps MoroccoAPI and HCP codes unique across published administrative levels", async () => {
     const urls = [
-      "/api/v1/regions",
-      "/api/v1/provinces",
-      "/api/v1/prefectures-of-arrondissements",
-      "/api/v1/communes",
-      "/api/v1/arrondissements",
+      "/api/v2/regions",
+      "/api/v2/provinces",
+      "/api/v2/prefectures-of-arrondissements",
+      "/api/v2/communes",
+      "/api/v2/arrondissements",
     ];
     const responses = await Promise.all(
       urls.map((url) => collectAllPages(app, url)),

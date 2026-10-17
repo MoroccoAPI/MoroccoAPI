@@ -56,15 +56,15 @@ describe("Application contracts", () => {
 
       for (let round = 0; round < 2; round++) {
         for (const url of [
-          "/api/v1/regions",
-          "/api/v1/health/hospitals",
-          "/api/v1/health/primary-care-facilities",
-          "/api/v1/health/private-infrastructure",
-          "/api/v1/population/national",
-          "/api/v1/population/regions",
-          "/api/v1/population/historical",
-          "/api/v1/population/subdivisions",
-          "/api/v1/population/communes",
+          "/api/v2/regions",
+          "/api/v2/health/hospitals",
+          "/api/v2/health/primary-care-facilities",
+          "/api/v2/health/private-infrastructure",
+          "/api/v2/population/national",
+          "/api/v2/population/regions",
+          "/api/v2/population/historical",
+          "/api/v2/population/subdivisions",
+          "/api/v2/population/communes",
         ]) {
           assert.equal((await sharedApp.inject(url)).statusCode, 200, url);
         }
@@ -104,19 +104,19 @@ describe("Application contracts", () => {
     try {
       const search = await loggedApp.inject({
         method: "GET",
-        url: `/api/v1/locations/search?q=kenitra&token=${token}&key=${key}`,
+        url: `/api/v2/locations/search?q=kenitra&token=${token}&key=${key}`,
         headers: { authorization: `Bearer ${authorization}`, cookie: `session=${cookie}` },
       });
       assert.equal(search.statusCode, 200);
       assert.equal(search.json().data[0].code, "rabat-sale-kenitra");
 
       for (const [url, statusCode] of [
-        [`/api/v1/status?%74oken=${token}&TOKEN=${token}&key=${key}&key=${key}`, 200],
-        [`/api/v1/locations/search?q=a&token=${token}&key=${key}`, 400],
+        [`/api/v2/status?%74oken=${token}&TOKEN=${token}&key=${key}&key=${key}`, 200],
+        [`/api/v2/locations/search?q=a&token=${token}&key=${key}`, 400],
         [`/does-not-exist?token=${token}&key=${key}`, 404],
         [`/docs/does-not-exist?token=${token}&key=${key}`, 404],
         [`/docs/static/does-not-exist.js?token=${token}&key=${key}`, 404],
-        [`/api/v1/regions/%zz?token=${token}&key=${key}`, 400],
+        [`/api/v2/regions/%zz?token=${token}&key=${key}`, 400],
       ] as const) {
         const response = await loggedApp.inject({ method: "GET", url });
         assert.equal(response.statusCode, statusCode, url);
@@ -135,7 +135,7 @@ describe("Application contracts", () => {
         assert.ok(!output.includes(value), "Credential values must not appear in logs");
       }
       const entries = logs.map((line) => JSON.parse(line));
-      const requestEntry = entries.find((entry) => entry.req?.url === "/api/v1/locations/search");
+      const requestEntry = entries.find((entry) => entry.req?.url === "/api/v2/locations/search");
       assert.ok(requestEntry, "Requests must still be logged with their path");
       assert.equal(requestEntry.req.method, "GET");
       assert.ok(entries.some((entry) => entry.res?.statusCode === 200));
@@ -148,7 +148,7 @@ describe("Application contracts", () => {
     const packageInfo = JSON.parse(
       await readFile(new URL("../package.json", import.meta.url), "utf8"),
     ) as { version: string };
-    const status = (await app.inject("/api/v1/status")).json();
+    const status = (await app.inject("/api/v2/status")).json();
     const spec = (await app.inject("/openapi.json")).json();
     const page = await app.inject("/");
     assert.equal(status.data.version, packageInfo.version);
@@ -162,22 +162,22 @@ describe("Application contracts", () => {
 
     const body = response.json();
     assert.equal(body.info.title, "MoroccoAPI");
-    assert.ok(body.paths["/api/v1/regions"]);
-    const subdivisionsRoute = body.paths["/api/v1/regions/{code}/subdivisions"];
+    assert.ok(body.paths["/api/v2/regions"]);
+    const subdivisionsRoute = body.paths["/api/v2/regions/{code}/subdivisions"];
     assert.ok(subdivisionsRoute?.get);
     assert.ok(subdivisionsRoute.get.responses["200"]);
     assert.ok(subdivisionsRoute.get.responses["404"]);
-    assert.ok(body.paths["/api/v1/provinces"]);
-    assert.ok(body.paths["/api/v1/provinces/{code}"]);
-    assert.ok(body.paths["/api/v1/prefectures-of-arrondissements"]);
-    assert.ok(body.paths["/api/v1/prefectures-of-arrondissements/{code}"]);
-    assert.ok(body.paths["/api/v1/communes"]);
-    assert.ok(body.paths["/api/v1/communes/{code}"]);
-    assert.ok(body.paths["/api/v1/arrondissements"]);
-    assert.ok(body.paths["/api/v1/arrondissements/{code}"]);
-    assert.ok(body.paths["/api/v1/locations/search"]);
-    assert.ok(body.paths["/api/v1/dams"]);
-    assert.ok(body.paths["/api/v1/dams/{id}/levels"]);
+    assert.ok(body.paths["/api/v2/provinces"]);
+    assert.ok(body.paths["/api/v2/provinces/{code}"]);
+    assert.ok(body.paths["/api/v2/prefectures-of-arrondissements"]);
+    assert.ok(body.paths["/api/v2/prefectures-of-arrondissements/{code}"]);
+    assert.ok(body.paths["/api/v2/communes"]);
+    assert.ok(body.paths["/api/v2/communes/{code}"]);
+    assert.ok(body.paths["/api/v2/arrondissements"]);
+    assert.ok(body.paths["/api/v2/arrondissements/{code}"]);
+    assert.ok(body.paths["/api/v2/locations/search"]);
+    assert.ok(body.paths["/api/v2/dams"]);
+    assert.ok(body.paths["/api/v2/dams/{id}/levels"]);
   });
 
   it("publishes a valid OpenAPI 3.0 document including nullable telecom and existing domain fields", async () => {
@@ -189,7 +189,7 @@ describe("Application contracts", () => {
 
     const lookup = await app.inject({
       method: "GET",
-      url: "/api/v1/telecom/phone-numbers/lookup?number=0808212345",
+      url: "/api/v2/telecom/phone-numbers/lookup?number=0808212345",
     });
     assert.equal(lookup.statusCode, 200);
     assert.equal(lookup.json().data.original_operator, null);

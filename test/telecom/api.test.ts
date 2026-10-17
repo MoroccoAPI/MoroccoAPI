@@ -11,7 +11,7 @@ before(async () => { app = await buildApp(); await app.ready(); });
 after(async () => { await app.close(); });
 
 function numberUrl(endpoint: string, number: string): string {
-  return `/api/v1/telecom/phone-numbers/${endpoint}?${new URLSearchParams({ number })}`;
+  return `/api/v2/telecom/phone-numbers/${endpoint}?${new URLSearchParams({ number })}`;
 }
 
 describe("telecom/phone-numbers", () => {
@@ -130,7 +130,7 @@ describe("telecom/phone-numbers", () => {
 
   it("requires one bounded number query", async () => {
     for (const query of ["", "?number=", "?number=0612123456&number=0613123456", `?number=${"6".repeat(65)}`]) {
-      const response = await app.inject({ method: "GET", url: `/api/v1/telecom/phone-numbers/validate${query}` });
+      const response = await app.inject({ method: "GET", url: `/api/v2/telecom/phone-numbers/validate${query}` });
       assert.equal(response.statusCode, 400);
       assert.equal(response.json().error.code, "VALIDATION_ERROR");
     }
@@ -139,14 +139,14 @@ describe("telecom/phone-numbers", () => {
 
 describe("telecom/ranges and areas", () => {
   it("lists the licensed dataset with provenance and filters", async () => {
-    const response = await app.inject({ method: "GET", url: "/api/v1/telecom/numbering-ranges" });
+    const response = await app.inject({ method: "GET", url: "/api/v2/telecom/numbering-ranges" });
     assert.equal(response.statusCode, 200);
     assert.equal(response.json().meta.total, 156);
     assert.equal(response.json().data.length, 100);
     assert.deepEqual(response.json().meta.pagination, {
       limit: 100, offset: 0, count: 100, has_more: true, next_offset: 100,
     });
-    const complete = await collectAllPages(app, "/api/v1/telecom/numbering-ranges");
+    const complete = await collectAllPages(app, "/api/v2/telecom/numbering-ranges");
     assert.equal(complete.data.length, 156);
     assert.equal(complete.meta.total, 156);
     assert.deepEqual(response.json().data, complete.data.slice(0, 100));
@@ -155,20 +155,20 @@ describe("telecom/ranges and areas", () => {
       assert.equal(source.source_updated_at, null);
       assert.match(source.resource_url, /\/google\/libphonenumber\/[0-9a-f]{40}\/resources\//);
     }
-    const filtered = await app.inject({ method: "GET", url: "/api/v1/telecom/numbering-ranges?operator=orange&prefix=061&category=carrier" });
+    const filtered = await app.inject({ method: "GET", url: "/api/v2/telecom/numbering-ranges?operator=orange&prefix=061&category=carrier" });
     assert.deepEqual(filtered.json().data.map((row: { prefix: string }) => row.prefix), ["0612", "0614", "0617", "0619"]);
     assert.equal(filtered.json().meta.total, 4);
-    const empty = await app.inject({ method: "GET", url: "/api/v1/telecom/numbering-ranges?operator=unknown-operator" });
+    const empty = await app.inject({ method: "GET", url: "/api/v2/telecom/numbering-ranges?operator=unknown-operator" });
     assert.deepEqual(empty.json().data, []);
     assert.equal(empty.json().meta.total, 0);
   });
 
   it("gets exact prefixes and documents more specific overrides", async () => {
-    const response = await app.inject({ method: "GET", url: "/api/v1/telecom/numbering-ranges/061" });
+    const response = await app.inject({ method: "GET", url: "/api/v2/telecom/numbering-ranges/061" });
     assert.equal(response.statusCode, 200);
     assert.deepEqual(response.json().data.more_specific_prefixes, ["0612", "0614", "0617", "0619"]);
     assert.equal(response.json().data.mask, "061XXXXXXX");
-    for (const url of ["/api/v1/telecom/numbering-ranges/0610", "/api/v1/telecom/area-codes/05382"]) {
+    for (const url of ["/api/v2/telecom/numbering-ranges/0610", "/api/v2/telecom/area-codes/05382"]) {
       const missing = await app.inject({ method: "GET", url });
       assert.equal(missing.statusCode, 404);
       assert.equal(missing.json().error.code, "RESOURCE_NOT_FOUND");
@@ -176,12 +176,12 @@ describe("telecom/ranges and areas", () => {
   });
 
   it("lists and retrieves multilingual area descriptions with source labels preserved", async () => {
-    const list = await collectAllPages(app, "/api/v1/telecom/area-codes");
+    const list = await collectAllPages(app, "/api/v2/telecom/area-codes");
     assert.equal(list.meta.total, 77);
     assert.equal(list.data.length, 77);
-    const filtered = await app.inject({ method: "GET", url: "/api/v1/telecom/area-codes?prefix=0537" });
+    const filtered = await app.inject({ method: "GET", url: "/api/v2/telecom/area-codes?prefix=0537" });
     assert.equal(filtered.json().meta.total, 8);
-    const detail = await app.inject({ method: "GET", url: "/api/v1/telecom/area-codes/05376" });
+    const detail = await app.inject({ method: "GET", url: "/api/v2/telecom/area-codes/05376" });
     assert.equal(detail.statusCode, 200);
     assert.deepEqual(detail.json().data.areas.fr, ["Rabat", "Témara"]);
     assert.equal(detail.json().data.description.ar, null);
@@ -190,7 +190,7 @@ describe("telecom/ranges and areas", () => {
   });
 
   it("validates prefix and category parameters", async () => {
-    for (const url of ["/api/v1/telecom/numbering-ranges?category=invalid", "/api/v1/telecom/numbering-ranges/abc", "/api/v1/telecom/area-codes?prefix=212", "/api/v1/telecom/area-codes/0537123456"]) {
+    for (const url of ["/api/v2/telecom/numbering-ranges?category=invalid", "/api/v2/telecom/numbering-ranges/abc", "/api/v2/telecom/area-codes?prefix=212", "/api/v2/telecom/area-codes/0537123456"]) {
       const response = await app.inject({ method: "GET", url });
       assert.equal(response.statusCode, 400);
       assert.equal(response.json().error.code, "VALIDATION_ERROR");
@@ -201,7 +201,7 @@ describe("telecom/ranges and areas", () => {
 it("publishes all six telecom paths in OpenAPI", async () => {
   const response = await app.inject({ method: "GET", url: "/openapi.json" });
   for (const path of ["phone-numbers/validate", "phone-numbers/lookup", "numbering-ranges", "numbering-ranges/{prefix}", "area-codes", "area-codes/{code}"]) {
-    assert.ok(response.json().paths[`/api/v1/telecom/${path}`]);
+    assert.ok(response.json().paths[`/api/v2/telecom/${path}`]);
   }
 });
 
@@ -214,11 +214,11 @@ it("does not put telephone input in Fastify request or validation logs", async (
       await loggingApp.inject({ method: "GET", url: numberUrl(endpoint, "0612123456 ext 2") });
       await loggingApp.inject({ method: "GET", url: numberUrl(endpoint, "6".repeat(65)) });
     }
-    await loggingApp.inject({ method: "GET", url: "/api/v1/status" });
+    await loggingApp.inject({ method: "GET", url: "/api/v2/status" });
   } finally {
     await loggingApp.close();
   }
-  assert.ok(chunks.join("").includes("/api/v1/status"), "unrelated request logging is retained");
+  assert.ok(chunks.join("").includes("/api/v2/status"), "unrelated request logging is retained");
   assert.ok(!chunks.join("").includes("0612123456"));
   assert.ok(!chunks.join("").includes("6".repeat(65)));
   assert.ok(chunks.join("").includes("phone-numbers"), "request paths remain logged without query values");

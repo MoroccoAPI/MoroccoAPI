@@ -83,7 +83,7 @@ export function postalCodeQuerySchema(regionCodes: readonly string[], provinceCo
       province_code: { type: "string", enum: provinceCodes },
       city: {
         type: "string", minLength: 2, maxLength: 100,
-        description: "Multi-code city name from /api/v1/postal-codes/cities; case, accents, spaces and hyphens are ignored.",
+        description: "Multi-code city name from /api/v2/postal-codes/cities; case, accents, spaces and hyphens are ignored.",
       },
     },
   } as const;

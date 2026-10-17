@@ -72,13 +72,13 @@ export function renderHomePage(): string {
           <div class="visual-brand"><img src="/assets/moroccoapi-logo.png" alt="" width="120" height="120"><div><strong>Start with geography.</strong><p>Regions, provinces, and communes.<br>Arabic and French names included.</p></div></div>
           <div class="terminal">
             <div class="terminal-head" aria-hidden="true"><i></i><i></i><i></i><span>Your first request</span></div>
-            <pre><code><span class="verb">curl</span> https://moroccoapi.dev/api/v1/regions</code></pre>
-            <a class="terminal-link" href="/api/v1/regions"><span>See the JSON response</span><span aria-hidden="true">↗</span></a>
+            <pre><code><span class="verb">curl</span> https://moroccoapi.dev/api/v2/regions</code></pre>
+            <a class="terminal-link" href="/api/v2/regions"><span>See the JSON response</span><span aria-hidden="true">↗</span></a>
           </div>
         </div>
       </section>
     </main>
-    <footer><span>MoroccoAPI · An independent community project.</span><div class="footer-links"><a href="https://github.com/MoroccoAPI/MoroccoAPI/releases">Releases · v${APP_VERSION}</a><a href="/api/v1/status">API status</a><a href="/openapi.json">OpenAPI</a></div></footer>
+    <footer><span>MoroccoAPI · An independent community project.</span><div class="footer-links"><a href="https://github.com/MoroccoAPI/MoroccoAPI/releases">Releases · v${APP_VERSION}</a><a href="/api/v2/status">API status</a><a href="/openapi.json">OpenAPI</a></div></footer>
   </div>
 </body>
 </html>`;

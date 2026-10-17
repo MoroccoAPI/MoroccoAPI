@@ -27,7 +27,7 @@ export const population: FastifyPluginAsync<{ geography: GeographySnapshot }> = 
   const historical = await loadHistoricalPopulation();
   const subdivisions = await loadSubdivisionPopulation(geography);
   const communes = await loadCommunePopulation(geography);
-  app.get("/api/v1/population/national", {
+  app.get("/api/v2/population/national", {
     schema: {
       tags: ["Population"],
       summary: "Get Morocco's national population from the RGPH 2024 snapshot",
@@ -43,7 +43,7 @@ export const population: FastifyPluginAsync<{ geography: GeographySnapshot }> = 
     meta: buildDatasetMeta("national-population", 1),
   }));
 
-  app.get<{ Querystring: PaginationQuery }>("/api/v1/population/regions", {
+  app.get<{ Querystring: PaginationQuery }>("/api/v2/population/regions", {
     schema: {
       tags: ["Population"],
       summary: "List population totals for Morocco's 12 administrative regions",
@@ -62,7 +62,7 @@ export const population: FastifyPluginAsync<{ geography: GeographySnapshot }> = 
     request.query,
   ));
 
-  app.get<{ Params: { code: string } }>("/api/v1/population/regions/:code", {
+  app.get<{ Params: { code: string } }>("/api/v2/population/regions/:code", {
     schema: {
       tags: ["Population"],
       summary: "Get population totals for one administrative region",
@@ -97,7 +97,7 @@ export const population: FastifyPluginAsync<{ geography: GeographySnapshot }> = 
       meta: buildDatasetMeta("regional-population", 1),
     };
   });
-  app.get<{ Querystring: PaginationQuery }>("/api/v1/population/historical", {
+  app.get<{ Querystring: PaginationQuery }>("/api/v2/population/historical", {
     schema: {
       tags: ["Population"],
       summary: "Get Morocco's historical population from 1960 to 2024",
@@ -115,7 +115,7 @@ export const population: FastifyPluginAsync<{ geography: GeographySnapshot }> = 
     buildDatasetMeta("historical-population", historical.length),
     request.query,
   ));
-  app.get<{ Params: { year: number } }>("/api/v1/population/historical/:year", {
+  app.get<{ Params: { year: number } }>("/api/v2/population/historical/:year", {
     schema: {
       tags: ["Population"],
       summary: "Get Morocco's historical population for a specific year",
@@ -154,7 +154,7 @@ export const population: FastifyPluginAsync<{ geography: GeographySnapshot }> = 
   });
 
   app.get<{ Querystring: PaginationQuery }>(
-    "/api/v1/population/subdivisions",
+    "/api/v2/population/subdivisions",
     {
       schema: {
         tags: ["Population"],
@@ -176,7 +176,7 @@ export const population: FastifyPluginAsync<{ geography: GeographySnapshot }> = 
     ),
   );
 
-  app.get<{ Params: { code: string } }>("/api/v1/population/subdivisions/:code", {
+  app.get<{ Params: { code: string } }>("/api/v2/population/subdivisions/:code", {
     schema: {
       tags: ["Population"],
       summary: "Get population data for one province or prefecture",
@@ -212,7 +212,7 @@ export const population: FastifyPluginAsync<{ geography: GeographySnapshot }> = 
     };
   });
 
-  app.get<{ Querystring: PaginationQuery }>("/api/v1/population/communes", {
+  app.get<{ Querystring: PaginationQuery }>("/api/v2/population/communes", {
     schema: {
       tags: ["Population"],
       summary: "List population totals for Morocco's 1,503 communes",
@@ -231,7 +231,7 @@ export const population: FastifyPluginAsync<{ geography: GeographySnapshot }> = 
     request.query,
   ));
 
-  app.get<{ Params: { code: string } }>("/api/v1/population/communes/:code", {
+  app.get<{ Params: { code: string } }>("/api/v2/population/communes/:code", {
     schema: {
       tags: ["Population"],
       summary: "Get population totals for one commune",

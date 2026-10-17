@@ -58,8 +58,8 @@ transformation:
     - Sort by persistent numeric source id and reject duplicate IDs, idents or ICAO codes.
   verification: node --import tsx --test test/airports/*.test.ts
 endpoints:
-  - GET /api/v1/airports
-  - GET /api/v1/airports/{icao}
+  - GET /api/v2/airports
+  - GET /api/v2/airports/{icao}
 filters: q, city, type, scheduled_service; combined with AND.
 lookup: Case-insensitive explicit four-letter icao_code only.
 update_frequency: Source CSV regenerated nightly.

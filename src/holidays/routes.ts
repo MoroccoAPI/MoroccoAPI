@@ -11,7 +11,7 @@ export const holidays: FastifyPluginAsync = async (app) => {
   const description = `Common public-administration calendar, ${MIN_YEAR}–${MAX_YEAR}. Religious dates require official confirmation; missing confirmations are explicitly unknown.`;
 
   app.get<{ Params: { year: string } }>(
-    "/api/v1/holidays/:year",
+    "/api/v2/holidays/:year",
     { schema: {
       tags, summary: "List Moroccan public holidays for a year", description,
       params: yearParamsSchema,
@@ -28,7 +28,7 @@ export const holidays: FastifyPluginAsync = async (app) => {
   );
 
   app.get<{ Querystring: { date: string } }>(
-    "/api/v1/holidays/check",
+    "/api/v2/holidays/check",
     { schema: {
       tags, summary: "Check whether a civil date is a holiday or business day", description,
       querystring: checkQuerySchema,
@@ -45,7 +45,7 @@ export const holidays: FastifyPluginAsync = async (app) => {
   );
 
   app.get<{ Querystring: { from: string; to: string } }>(
-    "/api/v1/business-days",
+    "/api/v2/business-days",
     { schema: {
       tags, summary: "Count business days in an inclusive civil-date range",
       description: `${description} Saturday/Sunday weekends. At most 366 days. business_days is null when unknown holidays could affect the count; business_days_upper_bound excludes known closures.`,
