@@ -1,0 +1,34 @@
+id: public-service-salaries
+title: Morocco civil-service net salaries by grade (2026)
+version: 1.0.0
+retrieved_at: 2026-10-08
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/
+contains_personal_data: false
+redistribution_review: approved
+value_type: simulated-reference
+
+sources:
+  - language_fields: [ar, fr]
+    dataset: Morocco civil-service net salaries by grade (2026)
+    producer: Wadifa Info (secondary dataset compiled from simulation.mmsp.gov.ma)
+    catalog_url: https://doi.org/10.5281/zenodo.23078290
+    resource_url: https://zenodo.org/api/records/23078291/files/morocco_civil_service_net_salaries_2026.csv/content
+    source_updated_at: 2026-10-01
+    source_license: CC-BY-4.0
+    attribution: Wadifa Info (wadifa-info.com)
+    attribution_url: https://www.wadifa-info.com/fr/grille-salariale-fonction-publique-maroc
+    upstream: Official salary simulator of the Ministry of Digital Transition and Administration Reform (https://simulation.mmsp.gov.ma)
+
+transformations:
+  - Converted the CSV (corps_ar, grade_fr, net_monthly_salary_mad, source_url) to JSON records.
+  - Added a stable `code` slug derived from the French grade name (accents removed, lower case, hyphens).
+  - Percent-encoded the per-grade reference URLs.
+  - Kept the published values unchanged; no salary was recomputed or estimated.
+
+limitations:
+  - Secondary dataset compiled by Wadifa Info; the values are simulated references, not official salary entitlements.
+  - Simulation settings are the first echelon, single, no children, no mutuelle, and the highest residence-allowance zone (Rabat or Casablanca are about 150-350 MAD lower).
+  - 320 of 370 rows matched the official simulator to the cent on 2026-09-30; the other 50 are grades the simulator lists under different names.
+  - Grade names are available in French only and corps names in Arabic only; missing translations are not fabricated.
+  - Values change when salary decrees change; updates are released as new Zenodo versions.

@@ -125,6 +125,10 @@ export const groups = {
     label: ["Banque mondiale", "World Bank", "البنك الدولي"],
     note: ["Indicateurs CC BY 4.0 pour le Maroc. Estimations internationales révisables : elles peuvent différer des statistiques officielles marocaines.", "CC BY 4.0 indicators for Morocco. International estimates can be revised and may differ from Moroccan official statistics.", "مؤشرات للمغرب برخصة CC BY 4.0. تقديرات دولية قابلة للمراجعة، وقد تختلف عن الإحصاءات الرسمية المغربية."],
   },
+  "Public service": {
+    label: ["Fonction publique", "Public service", "الوظيفة العمومية"],
+    note: ["Salaires nets de référence simulés par Wadifa Info avec le simulateur officiel (simulation.mmsp.gov.ma) : pas des droits salariaux officiels. Voir meta.notice.", "Reference net salaries simulated by Wadifa Info with the official simulator (simulation.mmsp.gov.ma): not official salary entitlements. See meta.notice.", "أجور صافية مرجعية حاكاها موقع وظيفة إنفو بالمحاكي الرسمي (simulation.mmsp.gov.ma): ليست أجوراً رسمية مستحقة. انظر meta.notice."],
+  },
   System: {
     label: ["État de l’API", "API status", "حالة الواجهة"],
     note: ["Vérifiez la disponibilité du service et la version déployée.", "Check service health and the deployed version.", "تحقّق من توفر الخدمة والنسخة المنشورة."],
@@ -183,6 +187,8 @@ export const titles: Record<string, Translation> = {
   "/world-bank/indicators": ["Lister les indicateurs", "List indicators", "قائمة المؤشرات"],
   "/world-bank/indicators/topics": ["Thèmes des indicateurs", "Indicator topics", "مواضيع المؤشرات"],
   "/world-bank/indicators/{code}": ["Valeurs d’un indicateur", "Indicator values", "قيم مؤشر"],
+  "/public-service/salaries": ["Salaires par grade", "Salaries by grade", "الأجور حسب الدرجة"],
+  "/public-service/salaries/{code}": ["Salaire d’un grade", "Salary of a grade", "أجر درجة"],
 };
 
 const schools: readonly [path: string, label: Translation, example: string][] = [
@@ -223,6 +229,7 @@ export const examples: Record<string, Record<string, string>> = {
   "/ports/{name}": { name: "Al Hoceima" },
   "/dams/{id}/levels": { id: "abdelmoumen" },
   "/world-bank/indicators/{code}": { code: "SP.POP.TOTL", from: "2020", to: "2024" },
+  "/public-service/salaries/{code}": { code: "adjoint-administratif-1er-grade" },
 };
 
 for (const [path, label, example] of schools) {
@@ -261,5 +268,8 @@ export const parameterHelp: Record<string, Translation> = {
   icao: ["Code ICAO explicite à 4 lettres, insensible à la casse.", "Explicit four-letter ICAO code, case-insensitive.", "رمز ICAO صريح من أربعة أحرف، دون تمييز بين حالة الأحرف."],
   scheduled_service: ["Présence de vols réguliers selon le snapshot.", "Scheduled service according to the snapshot.", "وجود رحلات منتظمة وفق نسخة المصدر."],
   basin: ["Identifiant du bassin versant, repris depuis la liste des barrages.", "Basin identifier from the dams list.", "معرّف الحوض المائي من قائمة السدود."],
+  corps: ["Nom exact du corps, en arabe, tel qu’il figure dans la liste.", "Exact corps name in Arabic, as shown in the list.", "الاسم الدقيق للهيئة بالعربية كما يظهر في القائمة."],
+  min_salary: ["Salaire net mensuel minimum, en dirhams.", "Minimum net monthly salary, in dirhams.", "الحد الأدنى للأجر الصافي الشهري بالدرهم."],
+  max_salary: ["Salaire net mensuel maximum, en dirhams.", "Maximum net monthly salary, in dirhams.", "الحد الأقصى للأجر الصافي الشهري بالدرهم."],
   topic: ["Thème issu de la liste /indicators/topics.", "Topic from the /indicators/topics list.", "موضوع من قائمة /indicators/topics."],
 };

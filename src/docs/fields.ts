@@ -190,6 +190,12 @@ coverage|Périmètre géographique et temporel effectivement disponible.|Geograp
 basins|Liste des bassins couverts par les observations.|Basins covered by the observations.|الأحواض التي تغطيها المشاهدات.
 real_time|false : les observations sont historiques, sans mise à jour en direct.|false means observations are historical, without live updates.|تعني false أن المشاهدات تاريخية دون تحديث مباشر.
 complete_national_coverage|false : le jeu de données ne couvre pas tous les barrages du Maroc.|false means the dataset does not cover every dam in Morocco.|تعني false أن البيانات لا تغطي جميع سدود المغرب.
+grade|Intitulé du grade de la fonction publique, en français et en arabe.|Civil-service grade title, in French and Arabic.|اسم الدرجة في الوظيفة العمومية، بالفرنسية والعربية.
+corps|Corps (cadre) auquel appartient le grade, tel que publié par le simulateur officiel.|Corps (cadre) the grade belongs to, as published by the official simulator.|الهيئة أو الإطار الذي تنتمي إليه الدرجة، كما ينشره المحاكي الرسمي.
+net_monthly_salary_mad|Salaire net mensuel de référence en dirhams, simulé ; ce n’est pas un droit salarial officiel.|Simulated reference net monthly salary in dirhams; not an official salary entitlement.|الأجر الصافي الشهري المرجعي بالدرهم، ناتج عن محاكاة؛ وليس أجراً رسمياً مستحقاً.
+reference_url|Page Wadifa Info qui détaille ce grade et la méthode de simulation.|Wadifa Info page detailing this grade and the simulation method.|صفحة وظيفة إنفو التي تفصّل هذه الدرجة وطريقة المحاكاة.
+value_type|Nature des valeurs : simulated-reference signifie des montants simulés, pas des montants officiels.|Nature of the values: simulated-reference means simulated amounts, not official ones.|طبيعة القيم: تعني simulated-reference مبالغ ناتجة عن محاكاة وليست رسمية.
+notice|Avertissement sur les paramètres de simulation ; à lire avant de réutiliser les montants.|Notice on the simulation settings; read it before reusing the amounts.|تنبيه حول إعدادات المحاكاة؛ يُقرأ قبل إعادة استعمال المبالغ.
 `.trim().split("\n").map((line) => {
   const [key, fr, en, ar] = line.split("|");
   if (!key || !fr || !en || !ar) throw new Error(`Incomplete field translation: ${key}`);
