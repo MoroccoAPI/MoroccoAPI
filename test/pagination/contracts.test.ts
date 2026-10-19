@@ -26,6 +26,7 @@ const collectionPaths = [
   "/api/v1/postal-codes/cities", "/api/v1/postal-codes/{code}",
   "/api/v1/ports", "/api/v1/lighthouses",
   "/api/v1/world-bank/indicators", "/api/v1/world-bank/indicators/topics",
+  "/api/v1/public-service/salaries",
 ];
 
 describe("Pagination contracts", () => {

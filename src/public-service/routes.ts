@@ -1,9 +1,13 @@
 import type { FastifyPluginAsync } from "fastify";
 
+import { collectionResponseSchema, paginate, paginationQuerySchema, type PaginationQuery } from "../common/pagination.js";
 import { normalizeSearch } from "../common/search.js";
 import { loadGradeSalaries } from "./data/salaries.js";
 import { buildDatasetMeta } from "./metadata.js";
 import { datasetMetaSchema, errorSchema, gradeSalarySchema, responseSchema } from "./schemas.js";
+
+// The longest published grade code is 171 characters. Keep this aligned with the router's maxParamLength (200, src/app.ts).
+const MAX_CODE_LENGTH = 200;
 
 interface SalaryQuery {
   q?: string;
@@ -20,7 +24,7 @@ export const publicService: FastifyPluginAsync = async (app) => {
     corps: normalizeSearch(record.corps.ar),
   }));
 
-  app.get<{ Querystring: SalaryQuery }>("/api/v1/public-service/salaries", {
+  app.get<{ Querystring: SalaryQuery & PaginationQuery }>("/api/v1/public-service/salaries", {
     schema: {
       tags: ["Public service"],
       summary: "List simulated reference net monthly salaries by civil-service grade",
@@ -28,7 +32,7 @@ export const publicService: FastifyPluginAsync = async (app) => {
         "Secondary dataset compiled by Wadifa Info from the official salary simulator " +
         "(simulation.mmsp.gov.ma). Values are simulated references, not official salary entitlements; " +
         "see meta.notice for the simulation settings.",
-      querystring: {
+      querystring: paginationQuerySchema({
         type: "object",
         additionalProperties: false,
         properties: {
@@ -37,9 +41,9 @@ export const publicService: FastifyPluginAsync = async (app) => {
           min_salary: { type: "integer", minimum: 0, description: "Minimum net monthly salary in MAD" },
           max_salary: { type: "integer", minimum: 0, description: "Maximum net monthly salary in MAD" },
         },
-      },
+      }),
       response: {
-        200: responseSchema({ type: "array", items: gradeSalarySchema }, datasetMetaSchema()),
+        200: collectionResponseSchema(gradeSalarySchema, datasetMetaSchema()),
         400: errorSchema,
       },
     },
@@ -61,7 +65,7 @@ export const publicService: FastifyPluginAsync = async (app) => {
         (min === undefined || item.record.net_monthly_salary_mad >= min) &&
         (max === undefined || item.record.net_monthly_salary_mad <= max))
       .map((item) => item.record);
-    return { data, meta: buildDatasetMeta(data.length) };
+    return paginate(data, buildDatasetMeta(data.length), request.query);
   });
 
   app.get<{ Params: { code: string } }>("/api/v1/public-service/salaries/:code", {
@@ -73,7 +77,7 @@ export const publicService: FastifyPluginAsync = async (app) => {
         additionalProperties: false,
         required: ["code"],
         properties: {
-          code: { type: "string", minLength: 2, maxLength: 160, pattern: "^[a-z0-9-]+$" },
+          code: { type: "string", minLength: 2, maxLength: MAX_CODE_LENGTH, pattern: "^[a-z0-9-]+$" },
         },
       },
       response: {

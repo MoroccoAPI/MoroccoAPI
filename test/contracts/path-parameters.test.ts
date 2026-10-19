@@ -43,7 +43,7 @@ describe("Published path parameter contracts", () => {
         if (parameter.schema.maxLength > 100) widerThan100.push(path);
       }
     }
-    assert.deepEqual(widerThan100.sort(), [...wideCodePaths, "/api/v1/museums/{id}", "/api/v1/ports/{name}"].sort());
+    assert.deepEqual(widerThan100.sort(), [...wideCodePaths, "/api/v1/museums/{id}", "/api/v1/ports/{name}", "/api/v1/public-service/salaries/{code}"].sort());
   });
 
   for (const path of wideCodePaths) {

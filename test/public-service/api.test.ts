@@ -32,8 +32,20 @@ function assertSalaryMeta(meta: Record<string, unknown>, total: number) {
 }
 
 describe("public-service/salaries", () => {
+  it("serves every code returned by the list endpoint (regression: long codes gave 414/400)", async () => {
+    const list = await app.inject("/api/v1/public-service/salaries?limit=500");
+    assert.equal(list.statusCode, 200);
+    const codes: string[] = list.json().data.map((record: { code: string }) => record.code);
+    assert.equal(codes.length, 370);
+    for (const code of codes) {
+      const response = await app.inject(`/api/v1/public-service/salaries/${code}`);
+      assert.equal(response.statusCode, 200, `code ${code} (${code.length} chars) returned ${response.statusCode}`);
+      assert.equal(response.json().data.code, code);
+    }
+  });
+
   it("lists every grade with a simulated-reference notice", async () => {
-    const response = await app.inject("/api/v1/public-service/salaries");
+    const response = await app.inject("/api/v1/public-service/salaries?limit=500");
     assert.equal(response.statusCode, 200);
 
     const body = response.json();
