@@ -24,7 +24,7 @@ export const publicService: FastifyPluginAsync = async (app) => {
     corps: normalizeSearch(record.corps.ar),
   }));
 
-  app.get<{ Querystring: SalaryQuery & PaginationQuery }>("/api/v1/public-service/salaries", {
+  app.get<{ Querystring: SalaryQuery & PaginationQuery }>("/api/v2/public-service/salaries", {
     schema: {
       tags: ["Public service"],
       summary: "List simulated reference net monthly salaries by civil-service grade",
@@ -68,7 +68,7 @@ export const publicService: FastifyPluginAsync = async (app) => {
     return paginate(data, buildDatasetMeta(data.length), request.query);
   });
 
-  app.get<{ Params: { code: string } }>("/api/v1/public-service/salaries/:code", {
+  app.get<{ Params: { code: string } }>("/api/v2/public-service/salaries/:code", {
     schema: {
       tags: ["Public service"],
       summary: "Get the simulated reference net monthly salary of one civil-service grade",

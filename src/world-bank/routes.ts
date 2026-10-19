@@ -34,7 +34,7 @@ export const worldBank: FastifyPluginAsync = async (app) => {
   const byCode = new Map(indicators.map((indicator) => [indicator.code.toUpperCase(), indicator]));
   const excludedByCode = new Map(excluded.map((entry) => [entry.code.toUpperCase(), entry]));
 
-  app.get<{ Querystring: IndicatorQuery & PaginationQuery }>("/api/v1/world-bank/indicators", {
+  app.get<{ Querystring: IndicatorQuery & PaginationQuery }>("/api/v2/world-bank/indicators", {
     schema: {
       tags, summary: "List World Bank development indicators available for Morocco",
       description: `The ${summaries.length} World Development Indicators with Moroccan values and a CC BY 4.0 license. ${estimates}`,
@@ -56,7 +56,7 @@ export const worldBank: FastifyPluginAsync = async (app) => {
     return paginate(matches, buildDatasetMeta(matches.length), request.query);
   });
 
-  app.get<{ Querystring: PaginationQuery }>("/api/v1/world-bank/indicators/topics", {
+  app.get<{ Querystring: PaginationQuery }>("/api/v2/world-bank/indicators/topics", {
     schema: {
       tags, summary: "List the World Bank topic groups with their number of indicators",
       querystring: paginationQuerySchema(),
@@ -64,7 +64,7 @@ export const worldBank: FastifyPluginAsync = async (app) => {
     },
   }, async (request) => paginate(topics, buildDatasetMeta(topics.length), request.query));
 
-  app.get<{ Params: IndicatorParams; Querystring: ValueRangeQuery }>("/api/v1/world-bank/indicators/:code", {
+  app.get<{ Params: IndicatorParams; Querystring: ValueRangeQuery }>("/api/v2/world-bank/indicators/:code", {
     schema: {
       tags, summary: "Get one World Bank indicator for Morocco with its annual values",
       description: `Optional from/to select an inclusive range of years. ${estimates}`,

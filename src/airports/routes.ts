@@ -12,7 +12,7 @@ export const airports: FastifyPluginAsync = async (app) => {
   const byIcao = new Map(records.filter((row) => row.icao_code !== null).map((row) => [row.icao_code!, row]));
   const tags = ["Airports"];
 
-  app.get<{ Querystring: AirportQuery & PaginationQuery }>("/api/v1/airports", {
+  app.get<{ Querystring: AirportQuery & PaginationQuery }>("/api/v2/airports", {
     schema: {
       tags, summary: "List and search airports tagged MA in OurAirports",
       description: "Community snapshot from 14 October 2026. Includes heliports and source-marked closed sites. Search names, source municipalities, IATA or ICAO codes. Optional filters combine with AND.",
@@ -38,7 +38,7 @@ export const airports: FastifyPluginAsync = async (app) => {
     return paginate(matches, buildDatasetMeta(matches.length), request.query);
   });
 
-  app.get<{ Params: AirportParams }>("/api/v1/airports/:icao", {
+  app.get<{ Params: AirportParams }>("/api/v2/airports/:icao", {
     schema: {
       tags, summary: "Get one airport by its explicit ICAO code",
       description: "ICAO lookup is case-insensitive and uses only the source icao_code field. Missing codes are not inferred from ident or GPS identifiers.",

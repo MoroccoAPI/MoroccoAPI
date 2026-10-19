@@ -4,7 +4,7 @@ import { APP_REVISION, APP_VERSION } from "./version.js";
 
 export const status: FastifyPluginAsync = async (app) => {
   app.get(
-    "/api/v1/status",
+    "/api/v2/status",
     {
       schema: {
         tags: ["System"],

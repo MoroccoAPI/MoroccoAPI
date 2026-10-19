@@ -219,7 +219,7 @@ jobs:
           let live = false;
           while (Date.now() < deadline) {
             try {
-              const response = await fetch(new URL("/api/v1/status", baseUrl), {
+              const response = await fetch(new URL("/api/v2/status", baseUrl), {
                 headers: { "Cache-Control": "no-cache" },
                 signal: AbortSignal.timeout(15_000),
               });

@@ -19,7 +19,7 @@ const origin = "https://client.example";
 describe("Public browser access", () => {
   it("allows any origin to read successful responses without credentialed CORS", async () => {
     for (const requestOrigin of [origin, "https://another.example", "null"]) {
-      const response = await app.inject({ url: "/api/v1/regions", headers: { origin: requestOrigin } });
+      const response = await app.inject({ url: "/api/v2/regions", headers: { origin: requestOrigin } });
       assert.equal(response.statusCode, 200);
       assert.equal(response.headers["access-control-allow-origin"], "*");
       assert.equal(response.headers["access-control-allow-credentials"], undefined);
@@ -28,7 +28,7 @@ describe("Public browser access", () => {
   });
 
   it("exposes the revision header for browser diagnostics", async () => {
-    const response = await app.inject({ url: "/api/v1/status", headers: { origin } });
+    const response = await app.inject({ url: "/api/v2/status", headers: { origin } });
     assert.equal(response.statusCode, 200);
     assert.equal(response.headers["access-control-expose-headers"], "X-MoroccoAPI-Revision");
     assert.equal(response.json().data.status, "ok");
@@ -36,7 +36,7 @@ describe("Public browser access", () => {
 
   it("handles GET and HEAD preflights with the requested headers and an empty body", async () => {
     for (const method of ["GET", "HEAD"]) {
-      const response = await app.inject({ method: "OPTIONS", url: "/api/v1/regions", headers: {
+      const response = await app.inject({ method: "OPTIONS", url: "/api/v2/regions", headers: {
         origin,
         "access-control-request-method": method,
         "access-control-request-headers": "content-type,x-client-trace",
@@ -54,12 +54,12 @@ describe("Public browser access", () => {
 
   it("keeps ordinary and early router errors readable with the JSON error contract", async () => {
     for (const [url, status] of [
-      ["/api/v1/regions/a", 400],
-      ["/api/v1/regions?limit=Infinity", 400],
+      ["/api/v2/regions/a", 400],
+      ["/api/v2/regions?limit=Infinity", 400],
       ["/missing-cors-test-route", 404],
       ["/__tests__/cors-error", 500],
-      ["/api/v1/regions/%FF", 400],
-      [`/api/v1/regions/${"a".repeat(201)}`, 414],
+      ["/api/v2/regions/%FF", 400],
+      [`/api/v2/regions/${"a".repeat(201)}`, 414],
     ] as const) {
       const response = await app.inject({ url, headers: { origin } });
       assert.equal(response.statusCode, status, url);
@@ -76,7 +76,7 @@ describe("Public browser access", () => {
 
   it("returns JSON validation errors for malformed preflights", async () => {
     for (const headers of [{}, { origin }, { "access-control-request-method": "GET" }]) {
-      const response = await app.inject({ method: "OPTIONS", url: "/api/v1/regions", headers });
+      const response = await app.inject({ method: "OPTIONS", url: "/api/v2/regions", headers });
       assert.equal(response.statusCode, 400);
       assert.equal(response.headers["access-control-allow-origin"], "*");
       assert.match(String(response.headers["content-type"]), /^application\/json(?:;|$)/i);
@@ -96,17 +96,17 @@ describe("Public browser access", () => {
     const listeningApp = await buildApp();
     try {
       const address = await listeningApp.listen({ host: "127.0.0.1", port: 0 });
-      const response = await fetch(`${address}/api/v1/regions`, { headers: { origin } });
+      const response = await fetch(`${address}/api/v2/regions`, { headers: { origin } });
       assert.equal(response.status, 200);
       assert.equal(response.headers.get("access-control-allow-origin"), "*");
       assert.equal((await response.json()).data.length, 12);
-      const preflight = await fetch(`${address}/api/v1/regions`, { method: "OPTIONS", headers: {
+      const preflight = await fetch(`${address}/api/v2/regions`, { method: "OPTIONS", headers: {
         origin, "access-control-request-method": "GET", "access-control-request-headers": "content-type",
       } });
       assert.equal(preflight.status, 204);
       assert.equal(preflight.headers.get("access-control-allow-origin"), "*");
       assert.equal(await preflight.text(), "");
-      const invalid = await fetch(`${address}/api/v1/regions/%FF`, { headers: { origin } });
+      const invalid = await fetch(`${address}/api/v2/regions/%FF`, { headers: { origin } });
       assert.equal(invalid.status, 400);
       assert.equal(invalid.headers.get("access-control-allow-origin"), "*");
       assert.equal((await invalid.json()).error.code, "REQUEST_ERROR");

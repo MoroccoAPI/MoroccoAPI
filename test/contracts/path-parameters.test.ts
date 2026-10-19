@@ -6,20 +6,20 @@ import type { FastifyInstance } from "fastify";
 import { buildApp } from "../../src/app.js";
 
 const wideCodePaths = [
-  "/api/v1/provinces/{code}",
-  "/api/v1/prefectures-of-arrondissements/{code}",
-  "/api/v1/communes/{code}",
-  "/api/v1/arrondissements/{code}",
-  "/api/v1/regions/{code}/subdivisions",
-  "/api/v1/population/subdivisions/{code}",
-  "/api/v1/population/communes/{code}",
+  "/api/v2/provinces/{code}",
+  "/api/v2/prefectures-of-arrondissements/{code}",
+  "/api/v2/communes/{code}",
+  "/api/v2/arrondissements/{code}",
+  "/api/v2/regions/{code}/subdivisions",
+  "/api/v2/population/subdivisions/{code}",
+  "/api/v2/population/communes/{code}",
 ];
 const geographyDetails = [
-  "/api/v1/regions/{code}",
-  "/api/v1/provinces/{code}",
-  "/api/v1/prefectures-of-arrondissements/{code}",
-  "/api/v1/communes/{code}",
-  "/api/v1/arrondissements/{code}",
+  "/api/v2/regions/{code}",
+  "/api/v2/provinces/{code}",
+  "/api/v2/prefectures-of-arrondissements/{code}",
+  "/api/v2/communes/{code}",
+  "/api/v2/arrondissements/{code}",
 ];
 
 interface PathParameter {
@@ -43,7 +43,7 @@ describe("Published path parameter contracts", () => {
         if (parameter.schema.maxLength > 100) widerThan100.push(path);
       }
     }
-    assert.deepEqual(widerThan100.sort(), [...wideCodePaths, "/api/v1/museums/{id}", "/api/v1/ports/{name}", "/api/v1/public-service/salaries/{code}"].sort());
+    assert.deepEqual(widerThan100.sort(), [...wideCodePaths, "/api/v2/museums/{id}", "/api/v2/ports/{name}", "/api/v2/public-service/salaries/{code}"].sort());
   });
 
   for (const path of wideCodePaths) {
@@ -59,21 +59,21 @@ describe("Published path parameter contracts", () => {
   }
 
   it("accepts the museum ID's 200-character boundary and validates its required prefix", async () => {
-    const missing = await app.inject(`/api/v1/museums/fnm-${"a".repeat(196)}`);
+    const missing = await app.inject(`/api/v2/museums/fnm-${"a".repeat(196)}`);
     assert.equal(missing.statusCode, 404);
     assert.equal(missing.json().error.code, "RESOURCE_NOT_FOUND");
 
-    const malformed = await app.inject(`/api/v1/museums/${"a".repeat(200)}`);
+    const malformed = await app.inject(`/api/v2/museums/${"a".repeat(200)}`);
     assert.equal(malformed.statusCode, 400);
     assert.equal(malformed.json().error.code, "VALIDATION_ERROR");
   });
 
   it("accepts the port name's 200-character boundary and validates its normalized minimum", async () => {
-    const missing = await app.inject(`/api/v1/ports/${"a".repeat(200)}`);
+    const missing = await app.inject(`/api/v2/ports/${"a".repeat(200)}`);
     assert.equal(missing.statusCode, 404);
     assert.equal(missing.json().error.code, "RESOURCE_NOT_FOUND");
 
-    const malformed = await app.inject(`/api/v1/ports/${"%20".repeat(200)}`);
+    const malformed = await app.inject(`/api/v2/ports/${"%20".repeat(200)}`);
     assert.equal(malformed.statusCode, 400);
     assert.equal(malformed.json().error.code, "VALIDATION_ERROR");
   });

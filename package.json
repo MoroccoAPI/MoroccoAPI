@@ -1,6 +1,6 @@
 {
   "name": "moroccoapi",
-  "version": "2.1.0",
+  "version": "2.3.0",
   "private": true,
   "description": "A community API for reliable access to Morocco's public open data.",
   "license": "Apache-2.0",
@@ -24,7 +24,6 @@
   "dependencies": {
     "@fastify/cors": "11.3.1",
     "@fastify/swagger": "9.8.1",
-    "@fastify/swagger-ui": "6.1.1",
     "fastify": "5.12.5",
     "libphonenumber-js": "1.13.15"
   },

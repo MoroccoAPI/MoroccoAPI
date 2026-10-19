@@ -33,19 +33,19 @@ function assertSalaryMeta(meta: Record<string, unknown>, total: number) {
 
 describe("public-service/salaries", () => {
   it("serves every code returned by the list endpoint (regression: long codes gave 414/400)", async () => {
-    const list = await app.inject("/api/v1/public-service/salaries?limit=500");
+    const list = await app.inject("/api/v2/public-service/salaries?limit=500");
     assert.equal(list.statusCode, 200);
     const codes: string[] = list.json().data.map((record: { code: string }) => record.code);
     assert.equal(codes.length, 370);
     for (const code of codes) {
-      const response = await app.inject(`/api/v1/public-service/salaries/${code}`);
+      const response = await app.inject(`/api/v2/public-service/salaries/${code}`);
       assert.equal(response.statusCode, 200, `code ${code} (${code.length} chars) returned ${response.statusCode}`);
       assert.equal(response.json().data.code, code);
     }
   });
 
   it("lists every grade with a simulated-reference notice", async () => {
-    const response = await app.inject("/api/v1/public-service/salaries?limit=500");
+    const response = await app.inject("/api/v2/public-service/salaries?limit=500");
     assert.equal(response.statusCode, 200);
 
     const body = response.json();
@@ -69,7 +69,7 @@ describe("public-service/salaries", () => {
   });
 
   it("searches grade names without accents", async () => {
-    const response = await app.inject("/api/v1/public-service/salaries?q=ingenieur%20d%27etat");
+    const response = await app.inject("/api/v2/public-service/salaries?q=ingenieur%20d%27etat");
     assert.equal(response.statusCode, 200);
 
     const body = response.json();
@@ -82,7 +82,7 @@ describe("public-service/salaries", () => {
 
   it("filters by corps and salary range", async () => {
     const corps = encodeURIComponent("أساتذة التربية الوطنية");
-    const response = await app.inject(`/api/v1/public-service/salaries?corps=${corps}&min_salary=9000&max_salary=11000`);
+    const response = await app.inject(`/api/v2/public-service/salaries?corps=${corps}&min_salary=9000&max_salary=11000`);
     assert.equal(response.statusCode, 200);
 
     const body = response.json();
@@ -94,19 +94,19 @@ describe("public-service/salaries", () => {
   });
 
   it("rejects an inverted salary range", async () => {
-    const response = await app.inject("/api/v1/public-service/salaries?min_salary=9000&max_salary=1000");
+    const response = await app.inject("/api/v2/public-service/salaries?min_salary=9000&max_salary=1000");
     assert.equal(response.statusCode, 400);
     assert.equal(response.json().error.code, "VALIDATION_ERROR");
   });
 
   it("rejects a malformed salary bound", async () => {
-    const response = await app.inject("/api/v1/public-service/salaries?min_salary=abc");
+    const response = await app.inject("/api/v2/public-service/salaries?min_salary=abc");
     assert.equal(response.statusCode, 400);
     assert.equal(response.json().error.code, "VALIDATION_ERROR");
   });
 
   it("returns one grade by code", async () => {
-    const response = await app.inject("/api/v1/public-service/salaries/adjoint-administratif-1er-grade");
+    const response = await app.inject("/api/v2/public-service/salaries/adjoint-administratif-1er-grade");
     assert.equal(response.statusCode, 200);
 
     const body = response.json();
@@ -116,7 +116,7 @@ describe("public-service/salaries", () => {
   });
 
   it("returns 404 for an unknown grade code", async () => {
-    const response = await app.inject("/api/v1/public-service/salaries/no-such-grade");
+    const response = await app.inject("/api/v2/public-service/salaries/no-such-grade");
     assert.equal(response.statusCode, 404);
     assert.equal(response.json().error.code, "RESOURCE_NOT_FOUND");
   });
@@ -126,7 +126,7 @@ describe("public-service/salaries", () => {
     assert.equal(response.statusCode, 200);
 
     const paths = response.json().paths;
-    for (const path of ["/api/v1/public-service/salaries", "/api/v1/public-service/salaries/{code}"]) {
+    for (const path of ["/api/v2/public-service/salaries", "/api/v2/public-service/salaries/{code}"]) {
       const operation = paths[path]?.get;
       assert.ok(operation, path);
       assert.equal(operation.tags[0], "Public service");

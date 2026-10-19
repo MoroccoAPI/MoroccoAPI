@@ -28,7 +28,7 @@ after(async () => {
 
 describe("health/hospitals", () => {
   it("returns the complete directory with the same metadata fields as Geography", async () => {
-    const response = await app.inject("/api/v1/health/hospitals");
+    const response = await app.inject("/api/v2/health/hospitals");
     assert.equal(response.statusCode, 200);
     const firstPage = response.json();
     assert.deepEqual(firstPage.data, hospitals.slice(0, 100));
@@ -37,11 +37,11 @@ describe("health/hospitals", () => {
       limit: 100, offset: 0, count: Math.min(100, hospitals.length),
       has_more: hospitals.length > 100, next_offset: hospitals.length > 100 ? 100 : null,
     });
-    const body = await collectAllPages<Hospital>(app, "/api/v1/health/hospitals");
+    const body = await collectAllPages<Hospital>(app, "/api/v2/health/hospitals");
     assert.equal(body.data.length, hospitals.length);
     assert.equal(body.meta.total, body.data.length);
     assert.equal(body.meta.license, "ODbL-1.0");
-    const geographyMeta = (await app.inject("/api/v1/regions")).json().meta;
+    const geographyMeta = (await app.inject("/api/v2/regions")).json().meta;
     assert.deepEqual(Object.keys(body.meta).sort(), Object.keys(geographyMeta).sort());
     for (const source of body.meta.sources) {
       assert.equal(typeof source.dataset, "string");
@@ -50,7 +50,7 @@ describe("health/hospitals", () => {
   });
 
   it("returns unique records without preparation details", async () => {
-    const body = await collectAllPages<Hospital>(app, "/api/v1/health/hospitals");
+    const body = await collectAllPages<Hospital>(app, "/api/v2/health/hospitals");
     const ids = body.data.map((hospital: Hospital) => hospital.id);
     assert.equal(new Set(ids).size, ids.length);
     for (const hospital of body.data) {
@@ -64,28 +64,28 @@ describe("health/hospitals", () => {
   });
 
   it("combines region, province and official category filters", async () => {
-    const body = await collectAllPages<Hospital>(app, "/api/v1/health/hospitals?region_code=fes-meknes&province_code=fes&category=HIR");
+    const body = await collectAllPages<Hospital>(app, "/api/v2/health/hospitals?region_code=fes-meknes&province_code=fes&category=HIR");
     assert.ok(body.data.length > 0);
     for (const record of body.data as Hospital[]) {
       assert.equal(record.region_code, "fes-meknes");
       assert.equal(record.province_code, "fes");
       assert.equal(record.category, "HIR");
     }
-    const incompatible = await app.inject("/api/v1/health/hospitals?region_code=fes-meknes&province_code=kenitra");
+    const incompatible = await app.inject("/api/v2/health/hospitals?region_code=fes-meknes&province_code=kenitra");
     assert.equal(incompatible.statusCode, 200);
     assert.equal(incompatible.json().meta.total, 0);
     assert.deepEqual(incompatible.json().data, []);
   });
 
   it("searches source names and aliases without requiring accents or case", async () => {
-    const response = await app.inject(`/api/v1/health/hospitals?province_code=larache&q=${encodeURIComponent("MÉRIEM")}`);
+    const response = await app.inject(`/api/v2/health/hospitals?province_code=larache&q=${encodeURIComponent("MÉRIEM")}`);
     assert.equal(response.statusCode, 200);
     assert.equal(response.json().data[0].name, "Lalla Meriem");
     assert.ok(response.json().data[0].aliases.includes("Hôpital Princesse Lalla Meriem"));
   });
 
   it("uses the shared normalization for Arabic hospital aliases", async () => {
-    const response = await app.inject(`/api/v1/health/hospitals?q=${encodeURIComponent("عـيَاشي")}`);
+    const response = await app.inject(`/api/v2/health/hospitals?q=${encodeURIComponent("عـيَاشي")}`);
     assert.equal(response.statusCode, 200);
     assert.equal(response.json().data.length, 1);
     assert.equal(response.json().data[0].name, "El Ayachi");
@@ -93,7 +93,7 @@ describe("health/hospitals", () => {
 
   it("returns detail records with their reference years", async () => {
     const id = "hospital-05cee4b635a1b6c1";
-    const response = await app.inject(`/api/v1/health/hospitals/${id}`);
+    const response = await app.inject(`/api/v2/health/hospitals/${id}`);
     assert.equal(response.statusCode, 200);
     const body = response.json();
     assert.equal(body.data.id, id);
@@ -107,11 +107,11 @@ describe("health/hospitals", () => {
   it("keeps unknown locations and unverified classifications null", async () => {
     const withoutLocation = hospitals.find((hospital) => hospital.location === null);
     assert.ok(withoutLocation);
-    const response = await app.inject(`/api/v1/health/hospitals/${withoutLocation.id}`);
+    const response = await app.inject(`/api/v2/health/hospitals/${withoutLocation.id}`);
     assert.equal(response.statusCode, 200);
     assert.equal(response.json().data.location, null);
 
-    const addition = await app.inject("/api/v1/health/hospitals/hospital-osm-way-789296397");
+    const addition = await app.inject("/api/v2/health/hospitals/hospital-osm-way-789296397");
     assert.equal(addition.statusCode, 200);
     for (const field of ["category", "category_label", "ownership", "reference_year"]) {
       assert.equal(addition.json().data[field], null, field);
@@ -133,20 +133,20 @@ describe("health/hospitals", () => {
 
   it("returns consistent validation errors and missing-resource responses", async () => {
     for (const query of ["region_code=unknown", "province_code=unknown", "category=invalid", "q=%20%20"]) {
-      const response = await app.inject(`/api/v1/health/hospitals?${query}`);
+      const response = await app.inject(`/api/v2/health/hospitals?${query}`);
       assert.equal(response.statusCode, 400, query);
       assert.equal(response.json().error.code, "VALIDATION_ERROR", query);
       assert.equal(typeof response.json().error.request_id, "string");
     }
-    const missing = await app.inject("/api/v1/health/hospitals/hospital-does-not-exist");
+    const missing = await app.inject("/api/v2/health/hospitals/hospital-does-not-exist");
     assert.equal(missing.statusCode, 404);
     assert.equal(missing.json().error.code, "RESOURCE_NOT_FOUND");
   });
 
   it("documents both routes and filters in OpenAPI", async () => {
     const spec = (await app.inject("/openapi.json")).json();
-    const collection = spec.paths["/api/v1/health/hospitals"].get;
-    const detail = spec.paths["/api/v1/health/hospitals/{id}"].get;
+    const collection = spec.paths["/api/v2/health/hospitals"].get;
+    const detail = spec.paths["/api/v2/health/hospitals/{id}"].get;
     assert.ok(collection.parameters.some((parameter: { name: string }) => parameter.name === "region_code"));
     assert.ok(collection.parameters.some((parameter: { name: string }) => parameter.name === "province_code"));
     assert.ok(detail.responses["404"]);

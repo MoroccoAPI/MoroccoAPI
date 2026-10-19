@@ -1,0 +1,199 @@
+[
+  {
+    "id": "abdelmoumen",
+    "name": {
+      "fr": null,
+      "ar": "عبد المومن"
+    },
+    "basin": "souss-massa"
+  },
+  {
+    "id": "abou-el-abess-sebti",
+    "name": {
+      "fr": "Abou El Abess Sebti"
+    },
+    "basin": "tensift"
+  },
+  {
+    "id": "ahmed-el-hansali",
+    "name": {
+      "fr": null,
+      "ar": "أحمد الحنصالي"
+    },
+    "basin": "oum-er-rbia"
+  },
+  {
+    "id": "al-massira",
+    "name": {
+      "fr": null,
+      "ar": "المسيرة"
+    },
+    "basin": "oum-er-rbia"
+  },
+  {
+    "id": "al-wahda",
+    "name": {
+      "fr": null,
+      "ar": "الوحدة"
+    },
+    "basin": "sebou"
+  },
+  {
+    "id": "asfalou",
+    "name": {
+      "fr": null,
+      "ar": "أسفالو"
+    },
+    "basin": "sebou"
+  },
+  {
+    "id": "bge-my-abdrhmane",
+    "name": {
+      "fr": "Bge My abdrhmane",
+      "ar": "مولاي عبد الرحمان"
+    },
+    "basin": "tensift"
+  },
+  {
+    "id": "bin-el-ouidane",
+    "name": {
+      "fr": null,
+      "ar": "بين الويدان"
+    },
+    "basin": "oum-er-rbia"
+  },
+  {
+    "id": "charif-al-idrissi",
+    "name": {
+      "fr": null,
+      "ar": "الشريف الإدريسي"
+    },
+    "basin": "loukkos"
+  },
+  {
+    "id": "dar-khrofa",
+    "name": {
+      "fr": null,
+      "ar": "دار خروفة"
+    },
+    "basin": "loukkos"
+  },
+  {
+    "id": "hassan-addakhil",
+    "name": {
+      "fr": null,
+      "ar": "حسن الداخل"
+    },
+    "basin": "guir-ziz-gheris"
+  },
+  {
+    "id": "hassan-ii",
+    "name": {
+      "fr": null,
+      "ar": "الحسن الثاني"
+    },
+    "basin": "moulouya"
+  },
+  {
+    "id": "idriss-i",
+    "name": {
+      "fr": null,
+      "ar": "إدريس الأول"
+    },
+    "basin": "sebou"
+  },
+  {
+    "id": "kaddoussa",
+    "name": {
+      "fr": null,
+      "ar": "قدوسة"
+    },
+    "basin": "guir-ziz-gheris"
+  },
+  {
+    "id": "lalla-takerkoust",
+    "name": {
+      "fr": "Lalla Takerkoust"
+    },
+    "basin": "tensift"
+  },
+  {
+    "id": "mansour-eddahbi",
+    "name": {
+      "fr": null,
+      "ar": "منصور الذهبي"
+    },
+    "basin": "draa-oued-noun"
+  },
+  {
+    "id": "mohammed-v",
+    "name": {
+      "fr": null,
+      "ar": "محمد الخامس"
+    },
+    "basin": "moulouya"
+  },
+  {
+    "id": "moulay-abdellah",
+    "name": {
+      "fr": null,
+      "ar": "مولاي عبد الله"
+    },
+    "basin": "souss-massa"
+  },
+  {
+    "id": "oued-el-makhazine",
+    "name": {
+      "fr": null,
+      "ar": "وادي المخازن"
+    },
+    "basin": "loukkos"
+  },
+  {
+    "id": "sd-mohamed-ben-slimane-el-jazouli",
+    "name": {
+      "fr": "Sd Mohamed Ben Slimane El Jazouli"
+    },
+    "basin": "tensift"
+  },
+  {
+    "id": "sidi-mohamed-ben-abdellah",
+    "name": {
+      "fr": null,
+      "ar": "سيدي محمد بن عبد الله"
+    },
+    "basin": "bouregreg"
+  },
+  {
+    "id": "sultan-moulay-ali-cherif",
+    "name": {
+      "fr": null,
+      "ar": "السلطان مولاي علي الشريف"
+    },
+    "basin": "draa-oued-noun"
+  },
+  {
+    "id": "tiddas",
+    "name": {
+      "fr": null,
+      "ar": "تيداس"
+    },
+    "basin": "bouregreg"
+  },
+  {
+    "id": "yacoub-el-mansour",
+    "name": {
+      "fr": "Yacoub El Mansour",
+      "ar": "يعقوب المنصور"
+    },
+    "basin": "tensift"
+  },
+  {
+    "id": "youssef-ben-tachfine",
+    "name": {
+      "fr": null,
+      "ar": "يوسف بن تاشفين"
+    },
+    "basin": "souss-massa"
+  }
+]

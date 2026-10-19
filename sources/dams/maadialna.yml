@@ -1,0 +1,50 @@
+id: maadialna-dams
+title: Selected main dams in Morocco
+producer: Ministère de l’Équipement et de l’Eau — Maadialna
+source_url: https://maadialna.ma/ar/get-bassin
+homepage_url: https://maadialna.ma/ar
+source_license: null
+license: null
+license_url: null
+license_status: not_specified_by_publisher
+retrieved_at: 2026-10-16
+source_updated_at: null
+source_date: 2026-10-12
+date_basis: dashboard_headline
+update_frequency: unknown
+contains_personal_data: false
+redistribution_review: pending
+review_basis: Official public dashboard; no explicit reuse grant identified.
+transformation_version: 1.1.0
+coverage:
+  basins:
+    - bouregreg
+    - guir-ziz-gheris
+    - tensift
+    - sebou
+    - moulouya
+    - souss-massa
+    - loukkos
+    - draa-oued-noun
+    - oum-er-rbia
+  dams: 22
+  observations: 22
+  complete_national_registry: false
+  live: false
+manifest: data/dams/sources.json
+attribution: data/dams/sources.json
+resources:
+  - id: maadialna-2026-10-12
+    resource_url: https://maadialna.ma/ar/get-bassin
+    format: json
+    source_date: 2026-10-12
+    date_basis: dashboard_headline
+    bytes: 34782
+    sha256: a8453c13c69c24758d81541dd26cb2f048ecbd9f0e6e62d874521ae6107a644c
+    observations: 22
+notes:
+  - The official dashboard describes selected main dams in nine basins, not all dams in Morocco.
+  - The JSON has no observation date; the date comes from the national dashboard headline and its applicability to each dam is not independently confirmed.
+  - Arabic source names, volumes and percentages are preserved; unknown capacities and French names remain null.
+  - Previous-year filling percentages remain comparison values, not separately dated observations.
+  - Two source entries are linked to existing Tensift dam IDs; the combined API inventory contains 25 unique dams.

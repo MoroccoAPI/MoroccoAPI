@@ -37,11 +37,11 @@ interface Collection {
 }
 
 const paths = [
-  ...schoolDatasetRoutes.map(({ path }) => `/api/v1/education/${path}`),
-  "/api/v1/education/universites-publiques",
-  "/api/v1/health/hospitals",
-  "/api/v1/health/primary-care-facilities",
-  "/api/v1/health/private-infrastructure",
+  ...schoolDatasetRoutes.map(({ path }) => `/api/v2/education/${path}`),
+  "/api/v2/education/universites-publiques",
+  "/api/v2/health/hospitals",
+  "/api/v2/health/primary-care-facilities",
+  "/api/v2/health/private-infrastructure",
 ];
 const fixtures = new Map<string, Fixture>();
 let app: FastifyInstance;
@@ -63,7 +63,7 @@ before(async () => {
   for (const config of schoolDatasetRoutes) {
     const records = schools.filter((row) => row.category === config.category);
     const region = records.at(-1)!.region;
-    fixtures.set(`/api/v1/education/${config.path}`, {
+    fixtures.set(`/api/v2/education/${config.path}`, {
       records,
       meta: buildEducationMeta(config.dataset, records.length),
       filters: { region },
@@ -71,7 +71,7 @@ before(async () => {
     });
   }
   const city = universities.at(-1)!.city;
-  fixtures.set("/api/v1/education/universites-publiques", {
+  fixtures.set("/api/v2/education/universites-publiques", {
     records: universities,
     meta: buildEducationMeta("universites-publiques", universities.length),
     filters: { city },
@@ -83,7 +83,7 @@ before(async () => {
     ["private-infrastructure", infrastructure],
   ] as const) {
     const regionCode = records.at(-1)!.region_code!;
-    fixtures.set(`/api/v1/health/${dataset}`, {
+    fixtures.set(`/api/v2/health/${dataset}`, {
       records,
       meta: buildDatasetMeta(dataset, records.length),
       filters: { region_code: regionCode },

@@ -14,7 +14,7 @@ export const museums: FastifyPluginAsync<{ geography: GeographySnapshot }> = asy
   const cities = new Map(geography.communes.map((row) => [row.code, row.name]));
   const tags = ["Museums"];
 
-  app.get<{ Querystring: MuseumQuery & PaginationQuery }>("/api/v1/museums", {
+  app.get<{ Querystring: MuseumQuery & PaginationQuery }>("/api/v2/museums", {
     schema: {
       tags, summary: "List and search the FNM museum inventory",
       description: "23 museums from September 2026. Filters combine with AND. This is FNM coverage, not all Moroccan museums. Hours, tariffs and phone formats are source facts; live opening status is unknown.",
@@ -39,7 +39,7 @@ export const museums: FastifyPluginAsync<{ geography: GeographySnapshot }> = asy
     return paginate(matches, buildDatasetMeta(matches.length), request.query);
   });
 
-  app.get<{ Params: MuseumParams }>("/api/v1/museums/:id", {
+  app.get<{ Params: MuseumParams }>("/api/v2/museums/:id", {
     schema: {
       tags, summary: "Get one museum by stable MoroccoAPI ID", params: museumParamsSchema,
       response: { 200: responseSchema(museumSchema, datasetMetaSchema), 400: errorSchema, 404: errorSchema },

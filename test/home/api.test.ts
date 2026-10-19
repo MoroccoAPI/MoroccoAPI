@@ -21,7 +21,7 @@ describe("home", () => {
     const page = await app.inject({ method: "GET", url: "/" });
     assert.equal(page.statusCode, 200);
     assert.match(page.headers["content-type"] ?? "", /^text\/html/);
-    assert.match(page.body, /href="\/docs"/);
+    assert.match(page.body, /href="\/docs\/en\/regions"/);
 
     const logo = await app.inject({
       method: "GET",
@@ -34,5 +34,22 @@ describe("home", () => {
     const spec = (await app.inject("/openapi.json")).json();
     assert.equal(spec.paths["/"], undefined);
     assert.equal(spec.paths["/assets/moroccoapi-logo.png"], undefined);
+  });
+
+  it("switches the homepage language from the header and links to matching documentation", async () => {
+    for (const [language, url] of [["en", "/"], ["fr", "/fr"], ["ar", "/ar"]] as const) {
+      const response = await app.inject(url);
+      assert.equal(response.statusCode, 200);
+      assert.ok(response.body.includes(`<html lang="${language}" dir="${language === "ar" ? "rtl" : "ltr"}">`));
+      assert.ok(response.body.includes('class="home-language-switch"'));
+      assert.ok(!response.body.includes("home-doc-languages"));
+      assert.ok(response.body.includes(`href="/docs/${language}/regions"`));
+      assert.ok(response.body.includes(`rel="canonical" href="https://moroccoapi.dev${url}"`));
+    }
+    assert.ok((await app.inject("/fr")).body.includes("Les données du Maroc,"));
+    assert.ok((await app.inject("/ar")).body.includes("بيانات المغرب المفتوحة،"));
+    const spec = (await app.inject("/openapi.json")).json();
+    assert.equal(spec.paths["/fr"], undefined);
+    assert.equal(spec.paths["/ar"], undefined);
   });
 });

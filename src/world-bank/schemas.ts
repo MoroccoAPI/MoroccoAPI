@@ -6,7 +6,7 @@ const year = { type: "integer", minimum: 1960, maximum: 2100 } as const;
 const summaryProperties = {
   code: { type: "string", description: "World Bank indicator code, e.g. IT.NET.USER.ZS." },
   name: { type: "string" },
-  topic_code: { type: "string", description: "Identifier of the topic group, as listed by /api/v1/world-bank/indicators/topics." },
+  topic_code: { type: "string", description: "Identifier of the topic group, as listed by /api/v2/world-bank/indicators/topics." },
   topic: { type: "string", description: "Full World Bank topic." },
   unit: { ...nullableString, description: "Unit of measure. Null when the World Bank metadata gives none; the unit is then only in the name." },
   periodicity: nullableString,

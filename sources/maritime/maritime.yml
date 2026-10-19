@@ -49,9 +49,9 @@ transformation:
     - Do not infer stable identifiers or normalize source geographic labels.
   verification: node --import tsx --test test/maritime/*.test.ts
 endpoints:
-  - GET /api/v1/ports
-  - GET /api/v1/ports/{name}
-  - GET /api/v1/lighthouses
+  - GET /api/v2/ports
+  - GET /api/v2/ports/{name}
+  - GET /api/v2/lighthouses
 filters: >-
   Lighthouses accept name, region, province, type and ville; text filters are
   case- and accent-insensitive substring matches and combine with AND.
