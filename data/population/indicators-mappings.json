@@ -1,0 +1,2907 @@
+{
+  "sheets": {
+    "description": "The two RGPH 2024 sheets used (area: Ensemble) and their layout.",
+    "entries": [
+      {
+        "sheet": "population",
+        "source_sheet": "Population",
+        "area_label": "Milieu de résidence : Ensemble",
+        "header_rows": 3
+      },
+      {
+        "sheet": "households",
+        "source_sheet": "Ménages",
+        "area_label": "Milieu de résidence : Ensemble",
+        "header_rows": 2
+      }
+    ]
+  },
+  "groups": {
+    "description": "Indicator groups. Labels are MoroccoAPI translations of the HCP themes.",
+    "entries": [
+      {
+        "id": "demography",
+        "name": {
+          "fr": "Démographie",
+          "en": "Demography",
+          "ar": "الديموغرافيا"
+        }
+      },
+      {
+        "id": "disability",
+        "name": {
+          "fr": "Handicap",
+          "en": "Disability",
+          "ar": "الإعاقة"
+        }
+      },
+      {
+        "id": "education",
+        "name": {
+          "fr": "Éducation",
+          "en": "Education",
+          "ar": "التعليم"
+        }
+      },
+      {
+        "id": "languages",
+        "name": {
+          "fr": "Langues",
+          "en": "Languages",
+          "ar": "اللغات"
+        }
+      },
+      {
+        "id": "employment",
+        "name": {
+          "fr": "Activité et emploi",
+          "en": "Activity and employment",
+          "ar": "النشاط والشغل"
+        }
+      },
+      {
+        "id": "housing",
+        "name": {
+          "fr": "Ménages et logement",
+          "en": "Households and housing",
+          "ar": "الأسر والسكن"
+        }
+      },
+      {
+        "id": "services",
+        "name": {
+          "fr": "Équipements et services de base",
+          "en": "Amenities and basic services",
+          "ar": "التجهيزات والخدمات الأساسية"
+        }
+      }
+    ]
+  },
+  "indicators": {
+    "description": "Published indicators. name.fr follows the HCP label; name.en and name.ar are MoroccoAPI translations.",
+    "entries": [
+      {
+        "id": "legal-population",
+        "group": "demography",
+        "unit": "persons",
+        "name": {
+          "fr": "Population légale",
+          "en": "Legal population",
+          "ar": "السكان القانونيون"
+        }
+      },
+      {
+        "id": "municipal-population",
+        "group": "demography",
+        "unit": "persons",
+        "name": {
+          "fr": "Population municipale",
+          "en": "Municipal population",
+          "ar": "السكان البلديون"
+        }
+      },
+      {
+        "id": "male-share",
+        "group": "demography",
+        "unit": "percent",
+        "name": {
+          "fr": "Part des hommes",
+          "en": "Share of males",
+          "ar": "نسبة الذكور"
+        }
+      },
+      {
+        "id": "female-share",
+        "group": "demography",
+        "unit": "percent",
+        "name": {
+          "fr": "Part des femmes",
+          "en": "Share of females",
+          "ar": "نسبة الإناث"
+        }
+      },
+      {
+        "id": "age-0-4-share",
+        "group": "demography",
+        "unit": "percent",
+        "name": {
+          "fr": "Part des 0-4 ans",
+          "en": "Share aged 0-4",
+          "ar": "نسبة الفئة العمرية 0-4 سنة"
+        }
+      },
+      {
+        "id": "age-5-9-share",
+        "group": "demography",
+        "unit": "percent",
+        "name": {
+          "fr": "Part des 5-9 ans",
+          "en": "Share aged 5-9",
+          "ar": "نسبة الفئة العمرية 5-9 سنة"
+        }
+      },
+      {
+        "id": "age-10-14-share",
+        "group": "demography",
+        "unit": "percent",
+        "name": {
+          "fr": "Part des 10-14 ans",
+          "en": "Share aged 10-14",
+          "ar": "نسبة الفئة العمرية 10-14 سنة"
+        }
+      },
+      {
+        "id": "age-15-19-share",
+        "group": "demography",
+        "unit": "percent",
+        "name": {
+          "fr": "Part des 15-19 ans",
+          "en": "Share aged 15-19",
+          "ar": "نسبة الفئة العمرية 15-19 سنة"
+        }
+      },
+      {
+        "id": "age-20-24-share",
+        "group": "demography",
+        "unit": "percent",
+        "name": {
+          "fr": "Part des 20-24 ans",
+          "en": "Share aged 20-24",
+          "ar": "نسبة الفئة العمرية 20-24 سنة"
+        }
+      },
+      {
+        "id": "age-25-29-share",
+        "group": "demography",
+        "unit": "percent",
+        "name": {
+          "fr": "Part des 25-29 ans",
+          "en": "Share aged 25-29",
+          "ar": "نسبة الفئة العمرية 25-29 سنة"
+        }
+      },
+      {
+        "id": "age-30-34-share",
+        "group": "demography",
+        "unit": "percent",
+        "name": {
+          "fr": "Part des 30-34 ans",
+          "en": "Share aged 30-34",
+          "ar": "نسبة الفئة العمرية 30-34 سنة"
+        }
+      },
+      {
+        "id": "age-35-39-share",
+        "group": "demography",
+        "unit": "percent",
+        "name": {
+          "fr": "Part des 35-39 ans",
+          "en": "Share aged 35-39",
+          "ar": "نسبة الفئة العمرية 35-39 سنة"
+        }
+      },
+      {
+        "id": "age-40-44-share",
+        "group": "demography",
+        "unit": "percent",
+        "name": {
+          "fr": "Part des 40-44 ans",
+          "en": "Share aged 40-44",
+          "ar": "نسبة الفئة العمرية 40-44 سنة"
+        }
+      },
+      {
+        "id": "age-45-49-share",
+        "group": "demography",
+        "unit": "percent",
+        "name": {
+          "fr": "Part des 45-49 ans",
+          "en": "Share aged 45-49",
+          "ar": "نسبة الفئة العمرية 45-49 سنة"
+        }
+      },
+      {
+        "id": "age-50-54-share",
+        "group": "demography",
+        "unit": "percent",
+        "name": {
+          "fr": "Part des 50-54 ans",
+          "en": "Share aged 50-54",
+          "ar": "نسبة الفئة العمرية 50-54 سنة"
+        }
+      },
+      {
+        "id": "age-55-59-share",
+        "group": "demography",
+        "unit": "percent",
+        "name": {
+          "fr": "Part des 55-59 ans",
+          "en": "Share aged 55-59",
+          "ar": "نسبة الفئة العمرية 55-59 سنة"
+        }
+      },
+      {
+        "id": "age-60-64-share",
+        "group": "demography",
+        "unit": "percent",
+        "name": {
+          "fr": "Part des 60-64 ans",
+          "en": "Share aged 60-64",
+          "ar": "نسبة الفئة العمرية 60-64 سنة"
+        }
+      },
+      {
+        "id": "age-65-69-share",
+        "group": "demography",
+        "unit": "percent",
+        "name": {
+          "fr": "Part des 65-69 ans",
+          "en": "Share aged 65-69",
+          "ar": "نسبة الفئة العمرية 65-69 سنة"
+        }
+      },
+      {
+        "id": "age-70-74-share",
+        "group": "demography",
+        "unit": "percent",
+        "name": {
+          "fr": "Part des 70-74 ans",
+          "en": "Share aged 70-74",
+          "ar": "نسبة الفئة العمرية 70-74 سنة"
+        }
+      },
+      {
+        "id": "age-75-plus-share",
+        "group": "demography",
+        "unit": "percent",
+        "name": {
+          "fr": "Part des 75 ans ou plus",
+          "en": "Share aged 75 and over",
+          "ar": "نسبة 75 سنة فأكثر"
+        }
+      },
+      {
+        "id": "population-15-plus",
+        "group": "demography",
+        "unit": "persons",
+        "name": {
+          "fr": "Population de 15 ans et plus",
+          "en": "Population aged 15 and over",
+          "ar": "السكان البالغون 15 سنة فأكثر"
+        }
+      },
+      {
+        "id": "single-share-15-plus",
+        "group": "demography",
+        "unit": "percent",
+        "name": {
+          "fr": "Célibataires parmi les 15 ans et plus",
+          "en": "Never married, aged 15 and over",
+          "ar": "العزاب من 15 سنة فأكثر"
+        }
+      },
+      {
+        "id": "married-share-15-plus",
+        "group": "demography",
+        "unit": "percent",
+        "name": {
+          "fr": "Mariés parmi les 15 ans et plus",
+          "en": "Married, aged 15 and over",
+          "ar": "المتزوجون من 15 سنة فأكثر"
+        }
+      },
+      {
+        "id": "divorced-share-15-plus",
+        "group": "demography",
+        "unit": "percent",
+        "name": {
+          "fr": "Divorcés parmi les 15 ans et plus",
+          "en": "Divorced, aged 15 and over",
+          "ar": "المطلقون من 15 سنة فأكثر"
+        }
+      },
+      {
+        "id": "widowed-share-15-plus",
+        "group": "demography",
+        "unit": "percent",
+        "name": {
+          "fr": "Veufs parmi les 15 ans et plus",
+          "en": "Widowed, aged 15 and over",
+          "ar": "الأرامل من 15 سنة فأكثر"
+        }
+      },
+      {
+        "id": "singulate-mean-age-at-marriage",
+        "group": "demography",
+        "unit": "years",
+        "name": {
+          "fr": "Âge moyen singulier au mariage",
+          "en": "Singulate mean age at marriage",
+          "ar": "متوسط السن عند الزواج الأول"
+        }
+      },
+      {
+        "id": "total-fertility-rate",
+        "group": "demography",
+        "unit": "children-per-woman",
+        "name": {
+          "fr": "Indicateur conjoncturel de fécondité",
+          "en": "Total fertility rate",
+          "ar": "المؤشر التركيبي للخصوبة"
+        }
+      },
+      {
+        "id": "completed-fertility",
+        "group": "demography",
+        "unit": "children-per-woman",
+        "name": {
+          "fr": "Descendance finale des femmes",
+          "en": "Completed fertility of women",
+          "ar": "الخلف النهائي للنساء"
+        }
+      },
+      {
+        "id": "disability-prevalence",
+        "group": "disability",
+        "unit": "percent",
+        "name": {
+          "fr": "Taux de prévalence du handicap",
+          "en": "Disability prevalence rate",
+          "ar": "معدل انتشار الإعاقة"
+        }
+      },
+      {
+        "id": "population-7-12",
+        "group": "education",
+        "unit": "persons",
+        "name": {
+          "fr": "Population de 7-12 ans",
+          "en": "Population aged 7–12",
+          "ar": "السكان البالغون 7-12 سنة"
+        }
+      },
+      {
+        "id": "schooling-rate-6-11",
+        "group": "education",
+        "unit": "percent",
+        "name": {
+          "fr": "Taux de scolarisation des 6-11 ans en 2023/2024",
+          "en": "Schooling rate of children aged 6–11 in 2023/2024",
+          "ar": "نسبة تمدرس الأطفال 6-11 سنة في 2023/2024"
+        }
+      },
+      {
+        "id": "population-10-plus",
+        "group": "education",
+        "unit": "persons",
+        "name": {
+          "fr": "Population de 10 ans et plus",
+          "en": "Population aged 10 and over",
+          "ar": "السكان البالغون 10 سنوات فأكثر"
+        }
+      },
+      {
+        "id": "illiteracy-rate-10-plus",
+        "group": "education",
+        "unit": "percent",
+        "name": {
+          "fr": "Taux d'analphabétisme des 10 ans et plus",
+          "en": "Illiteracy rate, aged 10 and over",
+          "ar": "معدل الأمية لدى 10 سنوات فأكثر"
+        }
+      },
+      {
+        "id": "illiteracy-rate-15-plus",
+        "group": "education",
+        "unit": "percent",
+        "name": {
+          "fr": "Taux d'analphabétisme des 15 ans et plus",
+          "en": "Illiteracy rate, aged 15 and over",
+          "ar": "معدل الأمية لدى 15 سنة فأكثر"
+        }
+      },
+      {
+        "id": "literate-population-10-plus",
+        "group": "education",
+        "unit": "persons",
+        "name": {
+          "fr": "Population alphabète de 10 ans et plus",
+          "en": "Literate population aged 10 and over",
+          "ar": "السكان المتعلمون البالغون 10 سنوات فأكثر"
+        }
+      },
+      {
+        "id": "reads-writes-arabic-share",
+        "group": "languages",
+        "unit": "percent",
+        "name": {
+          "fr": "Alphabètes lisant et écrivant l'arabe",
+          "en": "Literate people who read and write Arabic",
+          "ar": "المتعلمون الذين يقرؤون ويكتبون العربية"
+        }
+      },
+      {
+        "id": "reads-writes-amazigh-share",
+        "group": "languages",
+        "unit": "percent",
+        "name": {
+          "fr": "Alphabètes lisant et écrivant l'amazigh (tifinagh)",
+          "en": "Literate people who read and write Amazigh (Tifinagh)",
+          "ar": "المتعلمون الذين يقرؤون ويكتبون الأمازيغية (تيفيناغ)"
+        }
+      },
+      {
+        "id": "reads-writes-english-share",
+        "group": "languages",
+        "unit": "percent",
+        "name": {
+          "fr": "Alphabètes lisant et écrivant l'anglais",
+          "en": "Literate people who read and write English",
+          "ar": "المتعلمون الذين يقرؤون ويكتبون الإنجليزية"
+        }
+      },
+      {
+        "id": "reads-writes-french-share",
+        "group": "languages",
+        "unit": "percent",
+        "name": {
+          "fr": "Alphabètes lisant et écrivant le français",
+          "en": "Literate people who read and write French",
+          "ar": "المتعلمون الذين يقرؤون ويكتبون الفرنسية"
+        }
+      },
+      {
+        "id": "education-none-share",
+        "group": "education",
+        "unit": "percent",
+        "name": {
+          "fr": "Aucun niveau d'études",
+          "en": "No schooling",
+          "ar": "بدون مستوى دراسي"
+        }
+      },
+      {
+        "id": "education-preschool-share",
+        "group": "education",
+        "unit": "percent",
+        "name": {
+          "fr": "Niveau préscolaire",
+          "en": "Preschool level",
+          "ar": "مستوى التعليم الأولي"
+        }
+      },
+      {
+        "id": "education-primary-share",
+        "group": "education",
+        "unit": "percent",
+        "name": {
+          "fr": "Niveau primaire",
+          "en": "Primary level",
+          "ar": "المستوى الابتدائي"
+        }
+      },
+      {
+        "id": "education-lower-secondary-share",
+        "group": "education",
+        "unit": "percent",
+        "name": {
+          "fr": "Niveau secondaire collégial",
+          "en": "Lower secondary level",
+          "ar": "المستوى الثانوي الإعدادي"
+        }
+      },
+      {
+        "id": "education-upper-secondary-share",
+        "group": "education",
+        "unit": "percent",
+        "name": {
+          "fr": "Niveau secondaire qualifiant",
+          "en": "Upper secondary level",
+          "ar": "المستوى الثانوي التأهيلي"
+        }
+      },
+      {
+        "id": "education-higher-share",
+        "group": "education",
+        "unit": "percent",
+        "name": {
+          "fr": "Niveau supérieur",
+          "en": "Higher education level",
+          "ar": "المستوى العالي"
+        }
+      },
+      {
+        "id": "darija-share",
+        "group": "languages",
+        "unit": "percent",
+        "name": {
+          "fr": "Utilisation de la darija",
+          "en": "Uses Darija",
+          "ar": "استعمال الدارجة"
+        }
+      },
+      {
+        "id": "tachelhit-share",
+        "group": "languages",
+        "unit": "percent",
+        "name": {
+          "fr": "Utilisation du tachelhit",
+          "en": "Uses Tachelhit",
+          "ar": "استعمال تشلحيت"
+        }
+      },
+      {
+        "id": "tamazight-share",
+        "group": "languages",
+        "unit": "percent",
+        "name": {
+          "fr": "Utilisation du tamazight",
+          "en": "Uses Tamazight",
+          "ar": "استعمال تمازيغت"
+        }
+      },
+      {
+        "id": "tarifit-share",
+        "group": "languages",
+        "unit": "percent",
+        "name": {
+          "fr": "Utilisation du tarifit",
+          "en": "Uses Tarifit",
+          "ar": "استعمال تريفيت"
+        }
+      },
+      {
+        "id": "hassania-share",
+        "group": "languages",
+        "unit": "percent",
+        "name": {
+          "fr": "Utilisation de la hassania",
+          "en": "Uses Hassania",
+          "ar": "استعمال الحسانية"
+        }
+      },
+      {
+        "id": "active-population-15-plus",
+        "group": "employment",
+        "unit": "persons",
+        "name": {
+          "fr": "Population active de 15 ans et plus",
+          "en": "Labour force aged 15 and over",
+          "ar": "السكان النشيطون البالغون 15 سنة فأكثر"
+        }
+      },
+      {
+        "id": "inactive-population-15-plus",
+        "group": "employment",
+        "unit": "persons",
+        "name": {
+          "fr": "Population inactive de 15 ans et plus",
+          "en": "Population outside the labour force, aged 15 and over",
+          "ar": "السكان غير النشيطين البالغون 15 سنة فأكثر"
+        }
+      },
+      {
+        "id": "activity-rate-15-plus",
+        "group": "employment",
+        "unit": "percent",
+        "name": {
+          "fr": "Taux d'activité des 15 ans et plus",
+          "en": "Activity rate, aged 15 and over",
+          "ar": "معدل النشاط لدى 15 سنة فأكثر"
+        }
+      },
+      {
+        "id": "unemployment-rate",
+        "group": "employment",
+        "unit": "percent",
+        "name": {
+          "fr": "Taux de chômage",
+          "en": "Unemployment rate",
+          "ar": "معدل البطالة"
+        }
+      },
+      {
+        "id": "employed-population-15-plus",
+        "group": "employment",
+        "unit": "persons",
+        "name": {
+          "fr": "Population active occupée de 15 ans et plus",
+          "en": "Employed population aged 15 and over",
+          "ar": "السكان النشيطون المشتغلون البالغون 15 سنة فأكثر"
+        }
+      },
+      {
+        "id": "employer-share",
+        "group": "employment",
+        "unit": "percent",
+        "name": {
+          "fr": "Employeurs parmi les actifs occupés",
+          "en": "Employers among the employed",
+          "ar": "المشغلون من بين النشيطين المشتغلين"
+        }
+      },
+      {
+        "id": "self-employed-share",
+        "group": "employment",
+        "unit": "percent",
+        "name": {
+          "fr": "Indépendants parmi les actifs occupés",
+          "en": "Self-employed among the employed",
+          "ar": "المستقلون من بين النشيطين المشتغلين"
+        }
+      },
+      {
+        "id": "public-sector-employee-share",
+        "group": "employment",
+        "unit": "percent",
+        "name": {
+          "fr": "Salariés du secteur public parmi les actifs occupés",
+          "en": "Public-sector employees among the employed",
+          "ar": "أجراء القطاع العام من بين النشيطين المشتغلين"
+        }
+      },
+      {
+        "id": "private-sector-employee-share",
+        "group": "employment",
+        "unit": "percent",
+        "name": {
+          "fr": "Salariés du secteur privé parmi les actifs occupés",
+          "en": "Private-sector employees among the employed",
+          "ar": "أجراء القطاع الخاص من بين النشيطين المشتغلين"
+        }
+      },
+      {
+        "id": "family-worker-share",
+        "group": "employment",
+        "unit": "percent",
+        "name": {
+          "fr": "Aides familiaux parmi les actifs occupés",
+          "en": "Contributing family workers among the employed",
+          "ar": "المساعدون العائليون من بين النشيطين المشتغلين"
+        }
+      },
+      {
+        "id": "apprentice-share",
+        "group": "employment",
+        "unit": "percent",
+        "name": {
+          "fr": "Apprentis parmi les actifs occupés",
+          "en": "Apprentices among the employed",
+          "ar": "المتعلمون (المتدربون) من بين النشيطين المشتغلين"
+        }
+      },
+      {
+        "id": "cooperative-member-share",
+        "group": "employment",
+        "unit": "percent",
+        "name": {
+          "fr": "Coopérateurs ou associés parmi les actifs occupés",
+          "en": "Cooperative members or partners among the employed",
+          "ar": "المتعاونون أو الشركاء من بين النشيطين المشتغلين"
+        }
+      },
+      {
+        "id": "other-employment-status-share",
+        "group": "employment",
+        "unit": "percent",
+        "name": {
+          "fr": "Autre statut professionnel parmi les actifs occupés",
+          "en": "Other employment status among the employed",
+          "ar": "وضعية مهنية أخرى من بين النشيطين المشتغلين"
+        }
+      },
+      {
+        "id": "households",
+        "group": "housing",
+        "unit": "households",
+        "name": {
+          "fr": "Ménages",
+          "en": "Households",
+          "ar": "الأسر"
+        }
+      },
+      {
+        "id": "average-household-size",
+        "group": "housing",
+        "unit": "persons-per-household",
+        "name": {
+          "fr": "Taille moyenne des ménages",
+          "en": "Average household size",
+          "ar": "متوسط حجم الأسرة"
+        }
+      },
+      {
+        "id": "sedentary-households",
+        "group": "housing",
+        "unit": "households",
+        "name": {
+          "fr": "Ménages sédentaires",
+          "en": "Sedentary households",
+          "ar": "الأسر المستقرة"
+        }
+      },
+      {
+        "id": "villa-share",
+        "group": "housing",
+        "unit": "percent",
+        "name": {
+          "fr": "Logements de type villa ou étage de villa",
+          "en": "Villa or villa floor dwellings",
+          "ar": "مساكن من نوع فيلا أو طابق فيلا"
+        }
+      },
+      {
+        "id": "apartment-share",
+        "group": "housing",
+        "unit": "percent",
+        "name": {
+          "fr": "Logements de type appartement",
+          "en": "Apartment dwellings",
+          "ar": "مساكن من نوع شقة"
+        }
+      },
+      {
+        "id": "moroccan-house-share",
+        "group": "housing",
+        "unit": "percent",
+        "name": {
+          "fr": "Logements de type maison marocaine",
+          "en": "Moroccan-style house dwellings",
+          "ar": "مساكن من نوع دار مغربية"
+        }
+      },
+      {
+        "id": "makeshift-dwelling-share",
+        "group": "housing",
+        "unit": "percent",
+        "name": {
+          "fr": "Logements de type maison sommaire ou bidonville",
+          "en": "Makeshift dwellings or shantytowns",
+          "ar": "مساكن بدائية أو صفيحية"
+        }
+      },
+      {
+        "id": "rural-dwelling-share",
+        "group": "housing",
+        "unit": "percent",
+        "name": {
+          "fr": "Logements de type rural",
+          "en": "Rural-type dwellings",
+          "ar": "مساكن من النوع القروي"
+        }
+      },
+      {
+        "id": "other-dwelling-share",
+        "group": "housing",
+        "unit": "percent",
+        "name": {
+          "fr": "Autres types de logement",
+          "en": "Other dwelling types",
+          "ar": "أنواع أخرى من المساكن"
+        }
+      },
+      {
+        "id": "persons-per-room",
+        "group": "housing",
+        "unit": "persons-per-room",
+        "name": {
+          "fr": "Nombre moyen de personnes par pièce d'habitation",
+          "en": "Average number of persons per room",
+          "ar": "متوسط عدد الأشخاص في الغرفة"
+        }
+      },
+      {
+        "id": "owner-share",
+        "group": "housing",
+        "unit": "percent",
+        "name": {
+          "fr": "Ménages propriétaires",
+          "en": "Owner households",
+          "ar": "الأسر المالكة"
+        }
+      },
+      {
+        "id": "tenant-share",
+        "group": "housing",
+        "unit": "percent",
+        "name": {
+          "fr": "Ménages locataires",
+          "en": "Tenant households",
+          "ar": "الأسر المكترية"
+        }
+      },
+      {
+        "id": "other-tenure-share",
+        "group": "housing",
+        "unit": "percent",
+        "name": {
+          "fr": "Autre statut d'occupation",
+          "en": "Other tenure status",
+          "ar": "وضعية أخرى لشغل المسكن"
+        }
+      },
+      {
+        "id": "dwelling-age-under-10-share",
+        "group": "housing",
+        "unit": "percent",
+        "name": {
+          "fr": "Logements de moins de 10 ans",
+          "en": "Dwellings under 10 years old",
+          "ar": "مساكن عمرها أقل من 10 سنوات"
+        }
+      },
+      {
+        "id": "dwelling-age-10-19-share",
+        "group": "housing",
+        "unit": "percent",
+        "name": {
+          "fr": "Logements de 10 à 19 ans",
+          "en": "Dwellings 10–19 years old",
+          "ar": "مساكن عمرها 10-19 سنة"
+        }
+      },
+      {
+        "id": "dwelling-age-20-49-share",
+        "group": "housing",
+        "unit": "percent",
+        "name": {
+          "fr": "Logements de 20 à 49 ans",
+          "en": "Dwellings 20–49 years old",
+          "ar": "مساكن عمرها 20-49 سنة"
+        }
+      },
+      {
+        "id": "dwelling-age-50-plus-share",
+        "group": "housing",
+        "unit": "percent",
+        "name": {
+          "fr": "Logements de 50 ans ou plus",
+          "en": "Dwellings 50 years old or more",
+          "ar": "مساكن عمرها 50 سنة فأكثر"
+        }
+      },
+      {
+        "id": "kitchen-share",
+        "group": "services",
+        "unit": "percent",
+        "name": {
+          "fr": "Logements disposant d'une cuisine",
+          "en": "Dwellings with a kitchen",
+          "ar": "مساكن تتوفر على مطبخ"
+        }
+      },
+      {
+        "id": "toilet-share",
+        "group": "services",
+        "unit": "percent",
+        "name": {
+          "fr": "Logements disposant de W.-C.",
+          "en": "Dwellings with a toilet",
+          "ar": "مساكن تتوفر على مرحاض"
+        }
+      },
+      {
+        "id": "washroom-share",
+        "group": "services",
+        "unit": "percent",
+        "name": {
+          "fr": "Logements disposant d'une pièce d'eau",
+          "en": "Dwellings with a washroom",
+          "ar": "مساكن تتوفر على حمام أو مرش"
+        }
+      },
+      {
+        "id": "electricity-share",
+        "group": "services",
+        "unit": "percent",
+        "name": {
+          "fr": "Logements raccordés à l'électricité",
+          "en": "Dwellings with electricity",
+          "ar": "مساكن تتوفر على الكهرباء"
+        }
+      },
+      {
+        "id": "running-water-share",
+        "group": "services",
+        "unit": "percent",
+        "name": {
+          "fr": "Logements raccordés à l'eau courante",
+          "en": "Dwellings with running water",
+          "ar": "مساكن تتوفر على الماء الجاري"
+        }
+      },
+      {
+        "id": "public-sewer-share",
+        "group": "services",
+        "unit": "percent",
+        "name": {
+          "fr": "Eaux usées évacuées par le réseau public d'assainissement",
+          "en": "Wastewater to the public sewer network",
+          "ar": "صرف المياه العادمة عبر الشبكة العمومية للتطهير"
+        }
+      },
+      {
+        "id": "septic-tank-share",
+        "group": "services",
+        "unit": "percent",
+        "name": {
+          "fr": "Eaux usées évacuées par fosse septique",
+          "en": "Wastewater to a septic tank",
+          "ar": "صرف المياه العادمة عبر حفرة صحية"
+        }
+      },
+      {
+        "id": "other-wastewater-share",
+        "group": "services",
+        "unit": "percent",
+        "name": {
+          "fr": "Autre mode d'évacuation des eaux usées",
+          "en": "Other wastewater disposal",
+          "ar": "طريقة أخرى لصرف المياه العادمة"
+        }
+      },
+      {
+        "id": "municipal-bin-share",
+        "group": "services",
+        "unit": "percent",
+        "name": {
+          "fr": "Déchets ménagers déposés dans le bac de la commune",
+          "en": "Household waste in the municipal bin",
+          "ar": "النفايات المنزلية في حاوية الجماعة"
+        }
+      },
+      {
+        "id": "waste-truck-share",
+        "group": "services",
+        "unit": "percent",
+        "name": {
+          "fr": "Déchets ménagers collectés par camion communal ou privé",
+          "en": "Household waste collected by a municipal or private truck",
+          "ar": "النفايات المنزلية تجمعها شاحنة الجماعة أو شاحنة خاصة"
+        }
+      },
+      {
+        "id": "open-dumping-share",
+        "group": "services",
+        "unit": "percent",
+        "name": {
+          "fr": "Déchets ménagers jetés dans la nature",
+          "en": "Household waste dumped in the open",
+          "ar": "النفايات المنزلية تلقى في الطبيعة"
+        }
+      },
+      {
+        "id": "other-waste-disposal-share",
+        "group": "services",
+        "unit": "percent",
+        "name": {
+          "fr": "Autre mode d'évacuation des déchets ménagers",
+          "en": "Other household waste disposal",
+          "ar": "طريقة أخرى للتخلص من النفايات المنزلية"
+        }
+      },
+      {
+        "id": "gas-cooking-share",
+        "group": "services",
+        "unit": "percent",
+        "name": {
+          "fr": "Cuisson au gaz",
+          "en": "Cooking with gas",
+          "ar": "الطهي بالغاز"
+        }
+      },
+      {
+        "id": "electric-cooking-share",
+        "group": "services",
+        "unit": "percent",
+        "name": {
+          "fr": "Cuisson à l'électricité",
+          "en": "Cooking with electricity",
+          "ar": "الطهي بالكهرباء"
+        }
+      },
+      {
+        "id": "charcoal-cooking-share",
+        "group": "services",
+        "unit": "percent",
+        "name": {
+          "fr": "Cuisson au charbon",
+          "en": "Cooking with charcoal",
+          "ar": "الطهي بالفحم"
+        }
+      },
+      {
+        "id": "firewood-cooking-share",
+        "group": "services",
+        "unit": "percent",
+        "name": {
+          "fr": "Cuisson au bois",
+          "en": "Cooking with firewood",
+          "ar": "الطهي بالحطب"
+        }
+      },
+      {
+        "id": "other-cooking-fuel-share",
+        "group": "services",
+        "unit": "percent",
+        "name": {
+          "fr": "Autre combustible de cuisson",
+          "en": "Other cooking fuel",
+          "ar": "وقود آخر للطهي"
+        }
+      },
+      {
+        "id": "distance-to-paved-road",
+        "group": "services",
+        "unit": "km",
+        "name": {
+          "fr": "Distance moyenne des logements à la route goudronnée",
+          "en": "Average distance from dwellings to a paved road",
+          "ar": "متوسط مسافة المساكن عن الطريق المعبدة"
+        }
+      }
+    ]
+  },
+  "columns": {
+    "description": "Every source column with its exact header label. value: an indicator for one sex; duplicate / cross_sheet_duplicate: a repeated column that must equal its value column; separator: an empty column.",
+    "entries": [
+      {
+        "sheet": "population",
+        "column": 0,
+        "role": "code",
+        "source_label": "Code géographique"
+      },
+      {
+        "sheet": "population",
+        "column": 1,
+        "role": "name",
+        "source_label": "Collectivités territoriales"
+      },
+      {
+        "sheet": "population",
+        "column": 2,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "legal-population",
+        "source_label": "Population légale"
+      },
+      {
+        "sheet": "population",
+        "column": 3,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "municipal-population",
+        "source_label": "Population municipale"
+      },
+      {
+        "sheet": "population",
+        "column": 4,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "male-share",
+        "source_label": "Sexe (%) › Masculin"
+      },
+      {
+        "sheet": "population",
+        "column": 5,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "female-share",
+        "source_label": "Sexe (%) › Féminin"
+      },
+      {
+        "sheet": "population",
+        "column": 6,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "age-0-4-share",
+        "source_label": "Âge quinquennal (%) › 0-4 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 7,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "age-5-9-share",
+        "source_label": "Âge quinquennal (%) › 5-9 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 8,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "age-10-14-share",
+        "source_label": "Âge quinquennal (%) › 10-14 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 9,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "age-15-19-share",
+        "source_label": "Âge quinquennal (%) › 15-19 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 10,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "age-20-24-share",
+        "source_label": "Âge quinquennal (%) › 20-24 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 11,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "age-25-29-share",
+        "source_label": "Âge quinquennal (%) › 25-29 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 12,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "age-30-34-share",
+        "source_label": "Âge quinquennal (%) › 30-34 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 13,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "age-35-39-share",
+        "source_label": "Âge quinquennal (%) › 35-39 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 14,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "age-40-44-share",
+        "source_label": "Âge quinquennal (%) › 40-44 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 15,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "age-45-49-share",
+        "source_label": "Âge quinquennal (%) › 45-49 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 16,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "age-50-54-share",
+        "source_label": "Âge quinquennal (%) › 50-54 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 17,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "age-55-59-share",
+        "source_label": "Âge quinquennal (%) › 55-59 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 18,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "age-60-64-share",
+        "source_label": "Âge quinquennal (%) › 60-64 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 19,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "age-65-69-share",
+        "source_label": "Âge quinquennal (%) › 65-69 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 20,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "age-70-74-share",
+        "source_label": "Âge quinquennal (%) › 70-74 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 21,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "age-75-plus-share",
+        "source_label": "Âge quinquennal (%) › 75 ans ou plus"
+      },
+      {
+        "sheet": "population",
+        "column": 22,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "population-15-plus",
+        "source_label": "Population de 15 ans et plus"
+      },
+      {
+        "sheet": "population",
+        "column": 23,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "single-share-15-plus",
+        "source_label": "État matrimonial des 15 ans et plus (%) › Célibataire"
+      },
+      {
+        "sheet": "population",
+        "column": 24,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "married-share-15-plus",
+        "source_label": "État matrimonial des 15 ans et plus (%) › Marié.e"
+      },
+      {
+        "sheet": "population",
+        "column": 25,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "divorced-share-15-plus",
+        "source_label": "État matrimonial des 15 ans et plus (%) › Divorcé.e"
+      },
+      {
+        "sheet": "population",
+        "column": 26,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "widowed-share-15-plus",
+        "source_label": "État matrimonial des 15 ans et plus (%) › Veuf.ve"
+      },
+      {
+        "sheet": "population",
+        "column": 27,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "singulate-mean-age-at-marriage",
+        "source_label": "Âge moyen singulier au mariage"
+      },
+      {
+        "sheet": "population",
+        "column": 28,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "total-fertility-rate",
+        "source_label": "Indicateur conjoncturel de fécondité"
+      },
+      {
+        "sheet": "population",
+        "column": 29,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "completed-fertility",
+        "source_label": "Descendance finale des femmes"
+      },
+      {
+        "sheet": "population",
+        "column": 30,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "disability-prevalence",
+        "source_label": "Taux de prévalence du handicap (%)"
+      },
+      {
+        "sheet": "population",
+        "column": 31,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "population-7-12",
+        "source_label": "Population de 7-12 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 32,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "schooling-rate-6-11",
+        "source_label": "Taux de scolarisation des 6-11 ans en 2023/2024 (%)"
+      },
+      {
+        "sheet": "population",
+        "column": 33,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "population-10-plus",
+        "source_label": "Population de 10 ans et plus"
+      },
+      {
+        "sheet": "population",
+        "column": 34,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "illiteracy-rate-10-plus",
+        "source_label": "Taux d'analphabétisme des 10 ans et plus (%)"
+      },
+      {
+        "sheet": "population",
+        "column": 35,
+        "role": "duplicate",
+        "sex": "both_sexes",
+        "indicator": "population-15-plus",
+        "source_label": "Population de 15 ans et plus"
+      },
+      {
+        "sheet": "population",
+        "column": 36,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "illiteracy-rate-15-plus",
+        "source_label": "Taux d'analphabétisme des 15 ans et plus (%)"
+      },
+      {
+        "sheet": "population",
+        "column": 37,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "literate-population-10-plus",
+        "source_label": "Population alphabète de 10 ans et plus"
+      },
+      {
+        "sheet": "population",
+        "column": 38,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "reads-writes-arabic-share",
+        "source_label": "Langues lues et écrites par les alphabètes de 10 ans et plus (non exclusives) (%) › Arabe"
+      },
+      {
+        "sheet": "population",
+        "column": 39,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "reads-writes-amazigh-share",
+        "source_label": "Langues lues et écrites par les alphabètes de 10 ans et plus (non exclusives) (%) › Amazigh (Tifinagh)"
+      },
+      {
+        "sheet": "population",
+        "column": 40,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "reads-writes-english-share",
+        "source_label": "Langues lues et écrites par les alphabètes de 10 ans et plus (non exclusives) (%) › Anglais"
+      },
+      {
+        "sheet": "population",
+        "column": 41,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "reads-writes-french-share",
+        "source_label": "Langues lues et écrites par les alphabètes de 10 ans et plus (non exclusives) (%) › Français"
+      },
+      {
+        "sheet": "population",
+        "column": 42,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "education-none-share",
+        "source_label": "Niveau d'études dans l'enseignement général (%) › Aucun niveau d'études"
+      },
+      {
+        "sheet": "population",
+        "column": 43,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "education-preschool-share",
+        "source_label": "Niveau d'études dans l'enseignement général (%) › Préscolaire"
+      },
+      {
+        "sheet": "population",
+        "column": 44,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "education-primary-share",
+        "source_label": "Niveau d'études dans l'enseignement général (%) › Primaire"
+      },
+      {
+        "sheet": "population",
+        "column": 45,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "education-lower-secondary-share",
+        "source_label": "Niveau d'études dans l'enseignement général (%) › Secondaire collégial"
+      },
+      {
+        "sheet": "population",
+        "column": 46,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "education-upper-secondary-share",
+        "source_label": "Niveau d'études dans l'enseignement général (%) › Secondaire qualifiant"
+      },
+      {
+        "sheet": "population",
+        "column": 47,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "education-higher-share",
+        "source_label": "Niveau d'études dans l'enseignement général (%) › Supérieur"
+      },
+      {
+        "sheet": "population",
+        "column": 48,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "darija-share",
+        "source_label": "Langues locales utilisées (non exclusives) (%) › Darija"
+      },
+      {
+        "sheet": "population",
+        "column": 49,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "tachelhit-share",
+        "source_label": "Langues locales utilisées (non exclusives) (%) › Tachelhit"
+      },
+      {
+        "sheet": "population",
+        "column": 50,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "tamazight-share",
+        "source_label": "Langues locales utilisées (non exclusives) (%) › Tamazight"
+      },
+      {
+        "sheet": "population",
+        "column": 51,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "tarifit-share",
+        "source_label": "Langues locales utilisées (non exclusives) (%) › Tarifit"
+      },
+      {
+        "sheet": "population",
+        "column": 52,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "hassania-share",
+        "source_label": "Langues locales utilisées (non exclusives) (%) › Hassania"
+      },
+      {
+        "sheet": "population",
+        "column": 53,
+        "role": "duplicate",
+        "sex": "both_sexes",
+        "indicator": "population-15-plus",
+        "source_label": "Population de 15 ans et plus"
+      },
+      {
+        "sheet": "population",
+        "column": 54,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "active-population-15-plus",
+        "source_label": "Population active de 15 ans et plus"
+      },
+      {
+        "sheet": "population",
+        "column": 55,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "inactive-population-15-plus",
+        "source_label": "Population inactive de 15 ans et plus"
+      },
+      {
+        "sheet": "population",
+        "column": 56,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "activity-rate-15-plus",
+        "source_label": "Taux d'activité des 15 ans et plus (%)"
+      },
+      {
+        "sheet": "population",
+        "column": 57,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "unemployment-rate",
+        "source_label": "Taux de chômage (%)"
+      },
+      {
+        "sheet": "population",
+        "column": 58,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "employed-population-15-plus",
+        "source_label": "Population active occupée de 15 ans et plus"
+      },
+      {
+        "sheet": "population",
+        "column": 59,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "employer-share",
+        "source_label": "Statut professionnel des actifs occupés de 15 ans et plus (%) › Employeur"
+      },
+      {
+        "sheet": "population",
+        "column": 60,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "self-employed-share",
+        "source_label": "Statut professionnel des actifs occupés de 15 ans et plus (%) › Indépendant"
+      },
+      {
+        "sheet": "population",
+        "column": 61,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "public-sector-employee-share",
+        "source_label": "Statut professionnel des actifs occupés de 15 ans et plus (%) › Salarié du secteur public"
+      },
+      {
+        "sheet": "population",
+        "column": 62,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "private-sector-employee-share",
+        "source_label": "Statut professionnel des actifs occupés de 15 ans et plus (%) › Salarié du secteur privé"
+      },
+      {
+        "sheet": "population",
+        "column": 63,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "family-worker-share",
+        "source_label": "Statut professionnel des actifs occupés de 15 ans et plus (%) › Aide familial"
+      },
+      {
+        "sheet": "population",
+        "column": 64,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "apprentice-share",
+        "source_label": "Statut professionnel des actifs occupés de 15 ans et plus (%) › Apprenti"
+      },
+      {
+        "sheet": "population",
+        "column": 65,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "cooperative-member-share",
+        "source_label": "Statut professionnel des actifs occupés de 15 ans et plus (%) › Coopérateur/Associé"
+      },
+      {
+        "sheet": "population",
+        "column": 66,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "other-employment-status-share",
+        "source_label": "Statut professionnel des actifs occupés de 15 ans et plus (%) › Autre"
+      },
+      {
+        "sheet": "population",
+        "column": 67,
+        "role": "separator",
+        "source_label": ""
+      },
+      {
+        "sheet": "population",
+        "column": 68,
+        "role": "value",
+        "sex": "male",
+        "indicator": "municipal-population",
+        "source_label": "Population municipale"
+      },
+      {
+        "sheet": "population",
+        "column": 69,
+        "role": "value",
+        "sex": "male",
+        "indicator": "age-0-4-share",
+        "source_label": "Âge quinquennal (%) › 0-4 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 70,
+        "role": "value",
+        "sex": "male",
+        "indicator": "age-5-9-share",
+        "source_label": "Âge quinquennal (%) › 5-9 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 71,
+        "role": "value",
+        "sex": "male",
+        "indicator": "age-10-14-share",
+        "source_label": "Âge quinquennal (%) › 10-14 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 72,
+        "role": "value",
+        "sex": "male",
+        "indicator": "age-15-19-share",
+        "source_label": "Âge quinquennal (%) › 15-19 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 73,
+        "role": "value",
+        "sex": "male",
+        "indicator": "age-20-24-share",
+        "source_label": "Âge quinquennal (%) › 20-24 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 74,
+        "role": "value",
+        "sex": "male",
+        "indicator": "age-25-29-share",
+        "source_label": "Âge quinquennal (%) › 25-29 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 75,
+        "role": "value",
+        "sex": "male",
+        "indicator": "age-30-34-share",
+        "source_label": "Âge quinquennal (%) › 30-34 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 76,
+        "role": "value",
+        "sex": "male",
+        "indicator": "age-35-39-share",
+        "source_label": "Âge quinquennal (%) › 35-39 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 77,
+        "role": "value",
+        "sex": "male",
+        "indicator": "age-40-44-share",
+        "source_label": "Âge quinquennal (%) › 40-44 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 78,
+        "role": "value",
+        "sex": "male",
+        "indicator": "age-45-49-share",
+        "source_label": "Âge quinquennal (%) › 45-49 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 79,
+        "role": "value",
+        "sex": "male",
+        "indicator": "age-50-54-share",
+        "source_label": "Âge quinquennal (%) › 50-54 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 80,
+        "role": "value",
+        "sex": "male",
+        "indicator": "age-55-59-share",
+        "source_label": "Âge quinquennal (%) › 55-59 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 81,
+        "role": "value",
+        "sex": "male",
+        "indicator": "age-60-64-share",
+        "source_label": "Âge quinquennal (%) › 60-64 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 82,
+        "role": "value",
+        "sex": "male",
+        "indicator": "age-65-69-share",
+        "source_label": "Âge quinquennal (%) › 65-69 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 83,
+        "role": "value",
+        "sex": "male",
+        "indicator": "age-70-74-share",
+        "source_label": "Âge quinquennal (%) › 70-74 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 84,
+        "role": "value",
+        "sex": "male",
+        "indicator": "age-75-plus-share",
+        "source_label": "Âge quinquennal (%) › 75 ans ou plus"
+      },
+      {
+        "sheet": "population",
+        "column": 85,
+        "role": "value",
+        "sex": "male",
+        "indicator": "population-15-plus",
+        "source_label": "Population de 15 ans et plus"
+      },
+      {
+        "sheet": "population",
+        "column": 86,
+        "role": "value",
+        "sex": "male",
+        "indicator": "single-share-15-plus",
+        "source_label": "État matrimonial des 15 ans et plus (%) › Célibataire"
+      },
+      {
+        "sheet": "population",
+        "column": 87,
+        "role": "value",
+        "sex": "male",
+        "indicator": "married-share-15-plus",
+        "source_label": "État matrimonial des 15 ans et plus (%) › Marié.e"
+      },
+      {
+        "sheet": "population",
+        "column": 88,
+        "role": "value",
+        "sex": "male",
+        "indicator": "divorced-share-15-plus",
+        "source_label": "État matrimonial des 15 ans et plus (%) › Divorcé.e"
+      },
+      {
+        "sheet": "population",
+        "column": 89,
+        "role": "value",
+        "sex": "male",
+        "indicator": "widowed-share-15-plus",
+        "source_label": "État matrimonial des 15 ans et plus (%) › Veuf.ve"
+      },
+      {
+        "sheet": "population",
+        "column": 90,
+        "role": "value",
+        "sex": "male",
+        "indicator": "singulate-mean-age-at-marriage",
+        "source_label": "Âge moyen singulier au mariage"
+      },
+      {
+        "sheet": "population",
+        "column": 91,
+        "role": "value",
+        "sex": "male",
+        "indicator": "disability-prevalence",
+        "source_label": "Taux de prévalence du handicap (%)"
+      },
+      {
+        "sheet": "population",
+        "column": 92,
+        "role": "value",
+        "sex": "male",
+        "indicator": "population-7-12",
+        "source_label": "Population de 7-12 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 93,
+        "role": "value",
+        "sex": "male",
+        "indicator": "schooling-rate-6-11",
+        "source_label": "Taux de scolarisation des 6-11 ans en 2023/2024 (%)"
+      },
+      {
+        "sheet": "population",
+        "column": 94,
+        "role": "value",
+        "sex": "male",
+        "indicator": "population-10-plus",
+        "source_label": "Population de 10 ans et plus"
+      },
+      {
+        "sheet": "population",
+        "column": 95,
+        "role": "value",
+        "sex": "male",
+        "indicator": "illiteracy-rate-10-plus",
+        "source_label": "Taux d'analphabétisme des 10 ans et plus (%)"
+      },
+      {
+        "sheet": "population",
+        "column": 96,
+        "role": "duplicate",
+        "sex": "male",
+        "indicator": "population-15-plus",
+        "source_label": "Population de 15 ans et plus"
+      },
+      {
+        "sheet": "population",
+        "column": 97,
+        "role": "value",
+        "sex": "male",
+        "indicator": "illiteracy-rate-15-plus",
+        "source_label": "Taux d'analphabétisme des 15 ans et plus (%)"
+      },
+      {
+        "sheet": "population",
+        "column": 98,
+        "role": "value",
+        "sex": "male",
+        "indicator": "literate-population-10-plus",
+        "source_label": "Population alphabète de 10 ans et plus"
+      },
+      {
+        "sheet": "population",
+        "column": 99,
+        "role": "value",
+        "sex": "male",
+        "indicator": "reads-writes-arabic-share",
+        "source_label": "Langues lues et écrites par les alphabètes de 10 ans et plus (non exclusives) (%) › Arabe"
+      },
+      {
+        "sheet": "population",
+        "column": 100,
+        "role": "value",
+        "sex": "male",
+        "indicator": "reads-writes-amazigh-share",
+        "source_label": "Langues lues et écrites par les alphabètes de 10 ans et plus (non exclusives) (%) › Amazigh (Tifinagh)"
+      },
+      {
+        "sheet": "population",
+        "column": 101,
+        "role": "value",
+        "sex": "male",
+        "indicator": "reads-writes-english-share",
+        "source_label": "Langues lues et écrites par les alphabètes de 10 ans et plus (non exclusives) (%) › Anglais"
+      },
+      {
+        "sheet": "population",
+        "column": 102,
+        "role": "value",
+        "sex": "male",
+        "indicator": "reads-writes-french-share",
+        "source_label": "Langues lues et écrites par les alphabètes de 10 ans et plus (non exclusives) (%) › Français"
+      },
+      {
+        "sheet": "population",
+        "column": 103,
+        "role": "value",
+        "sex": "male",
+        "indicator": "education-none-share",
+        "source_label": "Niveau d'études dans l'enseignement général (%) › Aucun niveau d'études"
+      },
+      {
+        "sheet": "population",
+        "column": 104,
+        "role": "value",
+        "sex": "male",
+        "indicator": "education-preschool-share",
+        "source_label": "Niveau d'études dans l'enseignement général (%) › Préscolaire"
+      },
+      {
+        "sheet": "population",
+        "column": 105,
+        "role": "value",
+        "sex": "male",
+        "indicator": "education-primary-share",
+        "source_label": "Niveau d'études dans l'enseignement général (%) › Primaire"
+      },
+      {
+        "sheet": "population",
+        "column": 106,
+        "role": "value",
+        "sex": "male",
+        "indicator": "education-lower-secondary-share",
+        "source_label": "Niveau d'études dans l'enseignement général (%) › Secondaire collégial"
+      },
+      {
+        "sheet": "population",
+        "column": 107,
+        "role": "value",
+        "sex": "male",
+        "indicator": "education-upper-secondary-share",
+        "source_label": "Niveau d'études dans l'enseignement général (%) › Secondaire qualifiant"
+      },
+      {
+        "sheet": "population",
+        "column": 108,
+        "role": "value",
+        "sex": "male",
+        "indicator": "education-higher-share",
+        "source_label": "Niveau d'études dans l'enseignement général (%) › Supérieur"
+      },
+      {
+        "sheet": "population",
+        "column": 109,
+        "role": "value",
+        "sex": "male",
+        "indicator": "darija-share",
+        "source_label": "Langues locales utilisées (non exclusives) (%) › Darija"
+      },
+      {
+        "sheet": "population",
+        "column": 110,
+        "role": "value",
+        "sex": "male",
+        "indicator": "tachelhit-share",
+        "source_label": "Langues locales utilisées (non exclusives) (%) › Tachelhit"
+      },
+      {
+        "sheet": "population",
+        "column": 111,
+        "role": "value",
+        "sex": "male",
+        "indicator": "tamazight-share",
+        "source_label": "Langues locales utilisées (non exclusives) (%) › Tamazight"
+      },
+      {
+        "sheet": "population",
+        "column": 112,
+        "role": "value",
+        "sex": "male",
+        "indicator": "tarifit-share",
+        "source_label": "Langues locales utilisées (non exclusives) (%) › Tarifit"
+      },
+      {
+        "sheet": "population",
+        "column": 113,
+        "role": "value",
+        "sex": "male",
+        "indicator": "hassania-share",
+        "source_label": "Langues locales utilisées (non exclusives) (%) › Hassania"
+      },
+      {
+        "sheet": "population",
+        "column": 114,
+        "role": "duplicate",
+        "sex": "male",
+        "indicator": "population-15-plus",
+        "source_label": "Population de 15 ans et plus"
+      },
+      {
+        "sheet": "population",
+        "column": 115,
+        "role": "value",
+        "sex": "male",
+        "indicator": "active-population-15-plus",
+        "source_label": "Population active de 15 ans et plus"
+      },
+      {
+        "sheet": "population",
+        "column": 116,
+        "role": "value",
+        "sex": "male",
+        "indicator": "inactive-population-15-plus",
+        "source_label": "Population inactive de 15 ans et plus"
+      },
+      {
+        "sheet": "population",
+        "column": 117,
+        "role": "value",
+        "sex": "male",
+        "indicator": "activity-rate-15-plus",
+        "source_label": "Taux d'activité des 15 ans et plus (%)"
+      },
+      {
+        "sheet": "population",
+        "column": 118,
+        "role": "value",
+        "sex": "male",
+        "indicator": "unemployment-rate",
+        "source_label": "Taux de chômage (%)"
+      },
+      {
+        "sheet": "population",
+        "column": 119,
+        "role": "value",
+        "sex": "male",
+        "indicator": "employed-population-15-plus",
+        "source_label": "Population active occupée de 15 ans et plus"
+      },
+      {
+        "sheet": "population",
+        "column": 120,
+        "role": "value",
+        "sex": "male",
+        "indicator": "employer-share",
+        "source_label": "Statut professionnel des actifs occupés de 15 ans et plus (%) › Employeur"
+      },
+      {
+        "sheet": "population",
+        "column": 121,
+        "role": "value",
+        "sex": "male",
+        "indicator": "self-employed-share",
+        "source_label": "Statut professionnel des actifs occupés de 15 ans et plus (%) › Indépendant"
+      },
+      {
+        "sheet": "population",
+        "column": 122,
+        "role": "value",
+        "sex": "male",
+        "indicator": "public-sector-employee-share",
+        "source_label": "Statut professionnel des actifs occupés de 15 ans et plus (%) › Salarié du secteur public"
+      },
+      {
+        "sheet": "population",
+        "column": 123,
+        "role": "value",
+        "sex": "male",
+        "indicator": "private-sector-employee-share",
+        "source_label": "Statut professionnel des actifs occupés de 15 ans et plus (%) › Salarié du secteur privé"
+      },
+      {
+        "sheet": "population",
+        "column": 124,
+        "role": "value",
+        "sex": "male",
+        "indicator": "family-worker-share",
+        "source_label": "Statut professionnel des actifs occupés de 15 ans et plus (%) › Aide familial"
+      },
+      {
+        "sheet": "population",
+        "column": 125,
+        "role": "value",
+        "sex": "male",
+        "indicator": "apprentice-share",
+        "source_label": "Statut professionnel des actifs occupés de 15 ans et plus (%) › Apprenti"
+      },
+      {
+        "sheet": "population",
+        "column": 126,
+        "role": "value",
+        "sex": "male",
+        "indicator": "cooperative-member-share",
+        "source_label": "Statut professionnel des actifs occupés de 15 ans et plus (%) › Coopérateur/Associé"
+      },
+      {
+        "sheet": "population",
+        "column": 127,
+        "role": "value",
+        "sex": "male",
+        "indicator": "other-employment-status-share",
+        "source_label": "Statut professionnel des actifs occupés de 15 ans et plus (%) › Autre"
+      },
+      {
+        "sheet": "population",
+        "column": 128,
+        "role": "separator",
+        "source_label": ""
+      },
+      {
+        "sheet": "population",
+        "column": 129,
+        "role": "value",
+        "sex": "female",
+        "indicator": "municipal-population",
+        "source_label": "Population municipale"
+      },
+      {
+        "sheet": "population",
+        "column": 130,
+        "role": "value",
+        "sex": "female",
+        "indicator": "age-0-4-share",
+        "source_label": "Âge quinquennal (%) › 0-4 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 131,
+        "role": "value",
+        "sex": "female",
+        "indicator": "age-5-9-share",
+        "source_label": "Âge quinquennal (%) › 5-9 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 132,
+        "role": "value",
+        "sex": "female",
+        "indicator": "age-10-14-share",
+        "source_label": "Âge quinquennal (%) › 10-14 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 133,
+        "role": "value",
+        "sex": "female",
+        "indicator": "age-15-19-share",
+        "source_label": "Âge quinquennal (%) › 15-19 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 134,
+        "role": "value",
+        "sex": "female",
+        "indicator": "age-20-24-share",
+        "source_label": "Âge quinquennal (%) › 20-24 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 135,
+        "role": "value",
+        "sex": "female",
+        "indicator": "age-25-29-share",
+        "source_label": "Âge quinquennal (%) › 25-29 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 136,
+        "role": "value",
+        "sex": "female",
+        "indicator": "age-30-34-share",
+        "source_label": "Âge quinquennal (%) › 30-34 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 137,
+        "role": "value",
+        "sex": "female",
+        "indicator": "age-35-39-share",
+        "source_label": "Âge quinquennal (%) › 35-39 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 138,
+        "role": "value",
+        "sex": "female",
+        "indicator": "age-40-44-share",
+        "source_label": "Âge quinquennal (%) › 40-44 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 139,
+        "role": "value",
+        "sex": "female",
+        "indicator": "age-45-49-share",
+        "source_label": "Âge quinquennal (%) › 45-49 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 140,
+        "role": "value",
+        "sex": "female",
+        "indicator": "age-50-54-share",
+        "source_label": "Âge quinquennal (%) › 50-54 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 141,
+        "role": "value",
+        "sex": "female",
+        "indicator": "age-55-59-share",
+        "source_label": "Âge quinquennal (%) › 55-59 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 142,
+        "role": "value",
+        "sex": "female",
+        "indicator": "age-60-64-share",
+        "source_label": "Âge quinquennal (%) › 60-64 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 143,
+        "role": "value",
+        "sex": "female",
+        "indicator": "age-65-69-share",
+        "source_label": "Âge quinquennal (%) › 65-69 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 144,
+        "role": "value",
+        "sex": "female",
+        "indicator": "age-70-74-share",
+        "source_label": "Âge quinquennal (%) › 70-74 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 145,
+        "role": "value",
+        "sex": "female",
+        "indicator": "age-75-plus-share",
+        "source_label": "Âge quinquennal (%) › 75 ans ou plus"
+      },
+      {
+        "sheet": "population",
+        "column": 146,
+        "role": "value",
+        "sex": "female",
+        "indicator": "population-15-plus",
+        "source_label": "Population de 15 ans et plus"
+      },
+      {
+        "sheet": "population",
+        "column": 147,
+        "role": "value",
+        "sex": "female",
+        "indicator": "single-share-15-plus",
+        "source_label": "État matrimonial des 15 ans et plus (%) › Célibataire"
+      },
+      {
+        "sheet": "population",
+        "column": 148,
+        "role": "value",
+        "sex": "female",
+        "indicator": "married-share-15-plus",
+        "source_label": "État matrimonial des 15 ans et plus (%) › Marié.e"
+      },
+      {
+        "sheet": "population",
+        "column": 149,
+        "role": "value",
+        "sex": "female",
+        "indicator": "divorced-share-15-plus",
+        "source_label": "État matrimonial des 15 ans et plus (%) › Divorcé.e"
+      },
+      {
+        "sheet": "population",
+        "column": 150,
+        "role": "value",
+        "sex": "female",
+        "indicator": "widowed-share-15-plus",
+        "source_label": "État matrimonial des 15 ans et plus (%) › Veuf.ve"
+      },
+      {
+        "sheet": "population",
+        "column": 151,
+        "role": "value",
+        "sex": "female",
+        "indicator": "singulate-mean-age-at-marriage",
+        "source_label": "Âge moyen singulier au mariage"
+      },
+      {
+        "sheet": "population",
+        "column": 152,
+        "role": "value",
+        "sex": "female",
+        "indicator": "total-fertility-rate",
+        "source_label": "Indicateur conjoncturel de fécondité"
+      },
+      {
+        "sheet": "population",
+        "column": 153,
+        "role": "value",
+        "sex": "female",
+        "indicator": "completed-fertility",
+        "source_label": "Descendance finale des femmes"
+      },
+      {
+        "sheet": "population",
+        "column": 154,
+        "role": "value",
+        "sex": "female",
+        "indicator": "disability-prevalence",
+        "source_label": "Taux de prévalence du handicap (%)"
+      },
+      {
+        "sheet": "population",
+        "column": 155,
+        "role": "value",
+        "sex": "female",
+        "indicator": "population-7-12",
+        "source_label": "Population de 7-12 ans"
+      },
+      {
+        "sheet": "population",
+        "column": 156,
+        "role": "value",
+        "sex": "female",
+        "indicator": "schooling-rate-6-11",
+        "source_label": "Taux de scolarisation des 6-11 ans en 2023/2024 (%)"
+      },
+      {
+        "sheet": "population",
+        "column": 157,
+        "role": "value",
+        "sex": "female",
+        "indicator": "population-10-plus",
+        "source_label": "Population de 10 ans et plus"
+      },
+      {
+        "sheet": "population",
+        "column": 158,
+        "role": "value",
+        "sex": "female",
+        "indicator": "illiteracy-rate-10-plus",
+        "source_label": "Taux d'analphabétisme des 10 ans et plus (%)"
+      },
+      {
+        "sheet": "population",
+        "column": 159,
+        "role": "duplicate",
+        "sex": "female",
+        "indicator": "population-15-plus",
+        "source_label": "Population de 15 ans et plus"
+      },
+      {
+        "sheet": "population",
+        "column": 160,
+        "role": "value",
+        "sex": "female",
+        "indicator": "illiteracy-rate-15-plus",
+        "source_label": "Taux d'analphabétisme des 15 ans et plus (%)"
+      },
+      {
+        "sheet": "population",
+        "column": 161,
+        "role": "value",
+        "sex": "female",
+        "indicator": "literate-population-10-plus",
+        "source_label": "Population alphabète de 10 ans et plus"
+      },
+      {
+        "sheet": "population",
+        "column": 162,
+        "role": "value",
+        "sex": "female",
+        "indicator": "reads-writes-arabic-share",
+        "source_label": "Langues lues et écrites par les alphabètes de 10 ans et plus (non exclusives) (%) › Arabe"
+      },
+      {
+        "sheet": "population",
+        "column": 163,
+        "role": "value",
+        "sex": "female",
+        "indicator": "reads-writes-amazigh-share",
+        "source_label": "Langues lues et écrites par les alphabètes de 10 ans et plus (non exclusives) (%) › Amazigh (Tifinagh)"
+      },
+      {
+        "sheet": "population",
+        "column": 164,
+        "role": "value",
+        "sex": "female",
+        "indicator": "reads-writes-english-share",
+        "source_label": "Langues lues et écrites par les alphabètes de 10 ans et plus (non exclusives) (%) › Anglais"
+      },
+      {
+        "sheet": "population",
+        "column": 165,
+        "role": "value",
+        "sex": "female",
+        "indicator": "reads-writes-french-share",
+        "source_label": "Langues lues et écrites par les alphabètes de 10 ans et plus (non exclusives) (%) › Français"
+      },
+      {
+        "sheet": "population",
+        "column": 166,
+        "role": "value",
+        "sex": "female",
+        "indicator": "education-none-share",
+        "source_label": "Niveau d'études dans l'enseignement général (%) › Aucun niveau d'études"
+      },
+      {
+        "sheet": "population",
+        "column": 167,
+        "role": "value",
+        "sex": "female",
+        "indicator": "education-preschool-share",
+        "source_label": "Niveau d'études dans l'enseignement général (%) › Préscolaire"
+      },
+      {
+        "sheet": "population",
+        "column": 168,
+        "role": "value",
+        "sex": "female",
+        "indicator": "education-primary-share",
+        "source_label": "Niveau d'études dans l'enseignement général (%) › Primaire"
+      },
+      {
+        "sheet": "population",
+        "column": 169,
+        "role": "value",
+        "sex": "female",
+        "indicator": "education-lower-secondary-share",
+        "source_label": "Niveau d'études dans l'enseignement général (%) › Secondaire collégial"
+      },
+      {
+        "sheet": "population",
+        "column": 170,
+        "role": "value",
+        "sex": "female",
+        "indicator": "education-upper-secondary-share",
+        "source_label": "Niveau d'études dans l'enseignement général (%) › Secondaire qualifiant"
+      },
+      {
+        "sheet": "population",
+        "column": 171,
+        "role": "value",
+        "sex": "female",
+        "indicator": "education-higher-share",
+        "source_label": "Niveau d'études dans l'enseignement général (%) › Supérieur"
+      },
+      {
+        "sheet": "population",
+        "column": 172,
+        "role": "value",
+        "sex": "female",
+        "indicator": "darija-share",
+        "source_label": "Langues locales utilisées (non exclusives) (%) › Darija"
+      },
+      {
+        "sheet": "population",
+        "column": 173,
+        "role": "value",
+        "sex": "female",
+        "indicator": "tachelhit-share",
+        "source_label": "Langues locales utilisées (non exclusives) (%) › Tachelhit"
+      },
+      {
+        "sheet": "population",
+        "column": 174,
+        "role": "value",
+        "sex": "female",
+        "indicator": "tamazight-share",
+        "source_label": "Langues locales utilisées (non exclusives) (%) › Tamazight"
+      },
+      {
+        "sheet": "population",
+        "column": 175,
+        "role": "value",
+        "sex": "female",
+        "indicator": "tarifit-share",
+        "source_label": "Langues locales utilisées (non exclusives) (%) › Tarifit"
+      },
+      {
+        "sheet": "population",
+        "column": 176,
+        "role": "value",
+        "sex": "female",
+        "indicator": "hassania-share",
+        "source_label": "Langues locales utilisées (non exclusives) (%) › Hassania"
+      },
+      {
+        "sheet": "population",
+        "column": 177,
+        "role": "duplicate",
+        "sex": "female",
+        "indicator": "population-15-plus",
+        "source_label": "Population de 15 ans et plus"
+      },
+      {
+        "sheet": "population",
+        "column": 178,
+        "role": "value",
+        "sex": "female",
+        "indicator": "active-population-15-plus",
+        "source_label": "Population active de 15 ans et plus"
+      },
+      {
+        "sheet": "population",
+        "column": 179,
+        "role": "value",
+        "sex": "female",
+        "indicator": "inactive-population-15-plus",
+        "source_label": "Population inactive de 15 ans et plus"
+      },
+      {
+        "sheet": "population",
+        "column": 180,
+        "role": "value",
+        "sex": "female",
+        "indicator": "activity-rate-15-plus",
+        "source_label": "Taux d'activité des 15 ans et plus (%)"
+      },
+      {
+        "sheet": "population",
+        "column": 181,
+        "role": "value",
+        "sex": "female",
+        "indicator": "unemployment-rate",
+        "source_label": "Taux de chômage (%)"
+      },
+      {
+        "sheet": "population",
+        "column": 182,
+        "role": "value",
+        "sex": "female",
+        "indicator": "employed-population-15-plus",
+        "source_label": "Population active occupée de 15 ans et plus"
+      },
+      {
+        "sheet": "population",
+        "column": 183,
+        "role": "value",
+        "sex": "female",
+        "indicator": "employer-share",
+        "source_label": "Statut professionnel des actifs occupés de 15 ans et plus (%) › Employeur"
+      },
+      {
+        "sheet": "population",
+        "column": 184,
+        "role": "value",
+        "sex": "female",
+        "indicator": "self-employed-share",
+        "source_label": "Statut professionnel des actifs occupés de 15 ans et plus (%) › Indépendant"
+      },
+      {
+        "sheet": "population",
+        "column": 185,
+        "role": "value",
+        "sex": "female",
+        "indicator": "public-sector-employee-share",
+        "source_label": "Statut professionnel des actifs occupés de 15 ans et plus (%) › Salarié du secteur public"
+      },
+      {
+        "sheet": "population",
+        "column": 186,
+        "role": "value",
+        "sex": "female",
+        "indicator": "private-sector-employee-share",
+        "source_label": "Statut professionnel des actifs occupés de 15 ans et plus (%) › Salarié du secteur privé"
+      },
+      {
+        "sheet": "population",
+        "column": 187,
+        "role": "value",
+        "sex": "female",
+        "indicator": "family-worker-share",
+        "source_label": "Statut professionnel des actifs occupés de 15 ans et plus (%) › Aide familial"
+      },
+      {
+        "sheet": "population",
+        "column": 188,
+        "role": "value",
+        "sex": "female",
+        "indicator": "apprentice-share",
+        "source_label": "Statut professionnel des actifs occupés de 15 ans et plus (%) › Apprenti"
+      },
+      {
+        "sheet": "population",
+        "column": 189,
+        "role": "value",
+        "sex": "female",
+        "indicator": "cooperative-member-share",
+        "source_label": "Statut professionnel des actifs occupés de 15 ans et plus (%) › Coopérateur/Associé"
+      },
+      {
+        "sheet": "population",
+        "column": 190,
+        "role": "value",
+        "sex": "female",
+        "indicator": "other-employment-status-share",
+        "source_label": "Statut professionnel des actifs occupés de 15 ans et plus (%) › Autre"
+      },
+      {
+        "sheet": "households",
+        "column": 0,
+        "role": "code",
+        "source_label": "Code géographique"
+      },
+      {
+        "sheet": "households",
+        "column": 1,
+        "role": "name",
+        "source_label": "Collectivités territoriales"
+      },
+      {
+        "sheet": "households",
+        "column": 2,
+        "role": "cross_sheet_duplicate",
+        "sex": "both_sexes",
+        "indicator": "municipal-population",
+        "source_label": "Population municipale › Pop_municipale"
+      },
+      {
+        "sheet": "households",
+        "column": 3,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "households",
+        "source_label": "Ménages › Ménages population"
+      },
+      {
+        "sheet": "households",
+        "column": 4,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "average-household-size",
+        "source_label": "Taille moyenne des ménages › Taille moyenne"
+      },
+      {
+        "sheet": "households",
+        "column": 5,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "sedentary-households",
+        "source_label": "Ménages sédentaires"
+      },
+      {
+        "sheet": "households",
+        "column": 6,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "villa-share",
+        "source_label": "Type de logement (%) › Villa / Étage de villa"
+      },
+      {
+        "sheet": "households",
+        "column": 7,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "apartment-share",
+        "source_label": "Type de logement (%) › Appartement"
+      },
+      {
+        "sheet": "households",
+        "column": 8,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "moroccan-house-share",
+        "source_label": "Type de logement (%) › Maison marocaine"
+      },
+      {
+        "sheet": "households",
+        "column": 9,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "makeshift-dwelling-share",
+        "source_label": "Type de logement (%) › Maison sommaire / Bidonville"
+      },
+      {
+        "sheet": "households",
+        "column": 10,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "rural-dwelling-share",
+        "source_label": "Type de logement (%) › Logement rural"
+      },
+      {
+        "sheet": "households",
+        "column": 11,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "other-dwelling-share",
+        "source_label": "Type de logement (%) › Autre"
+      },
+      {
+        "sheet": "households",
+        "column": 12,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "persons-per-room",
+        "source_label": "Nombre moyen de personnes par pièce d'habitation"
+      },
+      {
+        "sheet": "households",
+        "column": 13,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "owner-share",
+        "source_label": "Statut d'occupation du logement (%) › Propriétaire"
+      },
+      {
+        "sheet": "households",
+        "column": 14,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "tenant-share",
+        "source_label": "Statut d'occupation du logement (%) › Locataire"
+      },
+      {
+        "sheet": "households",
+        "column": 15,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "other-tenure-share",
+        "source_label": "Statut d'occupation du logement (%) › Autre"
+      },
+      {
+        "sheet": "households",
+        "column": 16,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "dwelling-age-under-10-share",
+        "source_label": "Âge du logement (%) › Moins de 10 ans"
+      },
+      {
+        "sheet": "households",
+        "column": 17,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "dwelling-age-10-19-share",
+        "source_label": "Âge du logement (%) › 10-19 ans"
+      },
+      {
+        "sheet": "households",
+        "column": 18,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "dwelling-age-20-49-share",
+        "source_label": "Âge du logement (%) › 20-49 ans"
+      },
+      {
+        "sheet": "households",
+        "column": 19,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "dwelling-age-50-plus-share",
+        "source_label": "Âge du logement (%) › 50 ans ou plus"
+      },
+      {
+        "sheet": "households",
+        "column": 20,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "kitchen-share",
+        "source_label": "Disponibilité des éléments essentiels de confort (%) › Cuisine"
+      },
+      {
+        "sheet": "households",
+        "column": 21,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "toilet-share",
+        "source_label": "Disponibilité des éléments essentiels de confort (%) › W.-C."
+      },
+      {
+        "sheet": "households",
+        "column": 22,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "washroom-share",
+        "source_label": "Disponibilité des éléments essentiels de confort (%) › Pièce d'eau"
+      },
+      {
+        "sheet": "households",
+        "column": 23,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "electricity-share",
+        "source_label": "Disponibilité des éléments essentiels de confort (%) › Électricité"
+      },
+      {
+        "sheet": "households",
+        "column": 24,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "running-water-share",
+        "source_label": "Disponibilité des éléments essentiels de confort (%) › Eau courante"
+      },
+      {
+        "sheet": "households",
+        "column": 25,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "public-sewer-share",
+        "source_label": "Mode d’évacuation des eaux usées (%) › Réseau public d'assainissement"
+      },
+      {
+        "sheet": "households",
+        "column": 26,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "septic-tank-share",
+        "source_label": "Mode d’évacuation des eaux usées (%) › Fosse septique"
+      },
+      {
+        "sheet": "households",
+        "column": 27,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "other-wastewater-share",
+        "source_label": "Mode d’évacuation des eaux usées (%) › Autre"
+      },
+      {
+        "sheet": "households",
+        "column": 28,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "municipal-bin-share",
+        "source_label": "Mode d’évacuation des déchets ménagers (%) › Bac à ordures de la commune"
+      },
+      {
+        "sheet": "households",
+        "column": 29,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "waste-truck-share",
+        "source_label": "Mode d’évacuation des déchets ménagers (%) › Camion de la commune / Camion privé"
+      },
+      {
+        "sheet": "households",
+        "column": 30,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "open-dumping-share",
+        "source_label": "Mode d’évacuation des déchets ménagers (%) › Dans la nature"
+      },
+      {
+        "sheet": "households",
+        "column": 31,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "other-waste-disposal-share",
+        "source_label": "Mode d’évacuation des déchets ménagers (%) › Autre"
+      },
+      {
+        "sheet": "households",
+        "column": 32,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "gas-cooking-share",
+        "source_label": "Combustible de cuisson utilisé (%) › Gaz"
+      },
+      {
+        "sheet": "households",
+        "column": 33,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "electric-cooking-share",
+        "source_label": "Combustible de cuisson utilisé (%) › Électricité"
+      },
+      {
+        "sheet": "households",
+        "column": 34,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "charcoal-cooking-share",
+        "source_label": "Combustible de cuisson utilisé (%) › Charbon"
+      },
+      {
+        "sheet": "households",
+        "column": 35,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "firewood-cooking-share",
+        "source_label": "Combustible de cuisson utilisé (%) › Bois énergie"
+      },
+      {
+        "sheet": "households",
+        "column": 36,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "other-cooking-fuel-share",
+        "source_label": "Combustible de cuisson utilisé (%) › Autre"
+      },
+      {
+        "sheet": "households",
+        "column": 37,
+        "role": "value",
+        "sex": "both_sexes",
+        "indicator": "distance-to-paved-road",
+        "source_label": "Distance moyenne des logements à la route goudronnée (Km)"
+      }
+    ]
+  },
+  "local_administration_communes": {
+    "description": "Source codes of the communes marked * by HCP: data collected from the local administration because of seasonal mobility.",
+    "entries": [
+      {
+        "source_code": "120660103"
+      },
+      {
+        "source_code": "120660303"
+      },
+      {
+        "source_code": "120660309"
+      },
+      {
+        "source_code": "123910505"
+      }
+    ]
+  }
+}

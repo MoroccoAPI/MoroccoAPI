@@ -1,0 +1,78 @@
+id: population-indicators
+title: Morocco RGPH 2024 socio-economic indicators by territory
+version: 1.0.0
+retrieved_at: 2026-10-20
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/
+terms_url: https://www.hcp.ma/Conditions-generales-d-utilisation-Version-1-0_a2194.html
+contains_personal_data: false
+redistribution_review: approved
+
+sources:
+  - language_fields: [ar, fr]
+    dataset: Indicateurs démographiques et socioéconomiques du Royaume du Maroc selon les résultats du RGPH 2024
+    producer: Haut-Commissariat au Plan (HCP)
+    catalog_url: https://www.hcp.ma/downloads/RGPH-2024_t22752.html
+    resource_url: https://www.hcp.ma/file/242671/
+    source_updated_at: 2024-12-17
+    source_license: CC-BY-4.0
+    source_file: indicateurs-socioeco.xlsx
+    source_file_sha256: f3d96fcae3c10a2c194b2fe97ee8352a242fb3f36b1b63d4d2a7006176dc7c3e
+
+files:
+  - file: data/population/source/rgph-2024-indicators-population.json
+    sha256: 1078d6351ac7850a7a9ef21f99dbfd5f23fedfc9a30535925f48068b4432cf88
+    source_sheet: Population
+    source_area: Ensemble
+    header_rows: 3
+    source_rows: 2017
+    columns: 191
+  - file: data/population/source/rgph-2024-indicators-households.json
+    sha256: 4bc03492672751bfb1608d9d83bcfa12d0f6bacd10f4bb31de2cacd276036394
+    source_sheet: Ménages
+    source_area: Ensemble
+    header_rows: 2
+    source_rows: 2017
+    columns: 38
+  - file: data/population/indicators-mappings.json
+    sha256: b7a9876bba1f5d99e510bc55bd09ee4e488da9a7a00ceaa1dd1d2e85f7b4b17a
+    description: Exact source-column labels, indicator translations, repeated-column declarations and local-administration markers.
+
+transformations:
+  - Downloaded the official HCP workbook and retained the Population and Ménages sheets for the Ensemble area, preserving every source cell in row order.
+  - Converted workbook rows to JSON arrays without changing source spelling, numeric values, nulls, the HCP full stop (.) or the ellipsis (…).
+  - Used indicators-mappings.json to assign stable identifiers, groups, units and French/English/Arabic labels; the loader checks every column header and repeated column.
+  - Linked compact HCP geographic codes to the existing RGPH 2024 administrative snapshot and published the MoroccoAPI geography names and codes.
+  - Published the national row and the 12 regions, 75 subdivisions, 8 prefectures of arrondissements, 1,503 communes and 41 arrondissements.
+  - Preserved HCP's four local-administration commune markers as data_from_local_administration rather than changing their values.
+  - Published HCP values as numbers and represents . as unavailable, … as not_applicable, and absent sex columns as not_published.
+
+coverage:
+  source_population_rows: 2017
+  source_households_rows: 2017
+  source_population_columns: 191
+  source_households_columns: 38
+  indicator_groups: 7
+  indicators: 98
+  published_territories: 1640
+  regions: 12
+  subdivisions: 75
+  prefectures_of_arrondissements: 8
+  communes: 1503
+  arrondissements: 41
+  local_administration_communes: 4
+  excluded_cercles: 213
+  excluded_urban_centres: 164
+
+limitations:
+  - This snapshot covers only the HCP Ensemble area (urban and rural combined); the workbook's separate urban and rural sheets are not published.
+  - Cercles and "dont le centre urbain" detail rows are not administrative records in the MoroccoAPI geography snapshot and are excluded rather than assigned guessed codes.
+  - HCP rates are published as rounded values, generally to one decimal place; no precision is reconstructed.
+  - The legal population and household counts are cross-checked against the existing population domain, while other indicators remain HCP aggregates.
+  - The source follows Morocco's official territorial scope, including Moroccan-administered territory in Western Sahara.
+
+refresh:
+  - Download the workbook from https://www.hcp.ma/file/242671/ and verify its SHA-256 before conversion.
+  - Extract the Population and Ménages sheets for the Ensemble area with their original header rows and cell values.
+  - Rebuild the two source JSON files and indicators-mappings.json, then update all checksums and coverage counts in this manifest.
+  - Run the population indicator data tests and npm run check; the startup loader rejects changed headers, repeated columns, geographic links or coverage.

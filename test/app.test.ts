@@ -48,8 +48,11 @@ describe("Application contracts", () => {
         "administrative-regions.json": 1,
         "communes-population.json": 1,
         "historical-population.json": 1,
+        "indicators-mappings.json": 1,
         "national-population.json": 1,
         "region-population.json": 1,
+        "rgph-2024-indicators-households.json": 1,
+        "rgph-2024-indicators-population.json": 1,
         "subdivisions-population.json": 1,
       };
       assert.deepEqual(Object.fromEntries([...reads].sort()), expectedReads);
