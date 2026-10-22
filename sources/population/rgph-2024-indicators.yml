@@ -1,6 +1,6 @@
 id: population-indicators
 title: Morocco RGPH 2024 socio-economic indicators by territory
-version: 1.0.0
+version: 1.0.1
 retrieved_at: 2026-10-20
 license: CC-BY-4.0
 license_url: https://creativecommons.org/licenses/by/4.0/
@@ -35,13 +35,14 @@ files:
     source_rows: 2017
     columns: 38
   - file: data/population/indicators-mappings.json
-    sha256: b7a9876bba1f5d99e510bc55bd09ee4e488da9a7a00ceaa1dd1d2e85f7b4b17a
+    sha256: 9fb5ce61f85a477d7c13bfcbdca96a73798ae06e05a1ed2924c357765e75c113
     description: Exact source-column labels, indicator translations, repeated-column declarations and local-administration markers.
 
 transformations:
   - Downloaded the official HCP workbook and retained the Population and Ménages sheets for the Ensemble area, preserving every source cell in row order.
   - Converted workbook rows to JSON arrays without changing source spelling, numeric values, nulls, the HCP full stop (.) or the ellipsis (…).
   - Used indicators-mappings.json to assign stable identifiers, groups, units and French/English/Arabic labels; the loader checks every column header and repeated column.
+  - Clarified the French electricity indicator label using the source concept definition, which includes solar power and generators as well as the public grid; numeric values are unchanged.
   - Linked compact HCP geographic codes to the existing RGPH 2024 administrative snapshot and published the MoroccoAPI geography names and codes.
   - Published the national row and the 12 regions, 75 subdivisions, 8 prefectures of arrondissements, 1,503 communes and 41 arrondissements.
   - Preserved HCP's four local-administration commune markers as data_from_local_administration rather than changing their values.

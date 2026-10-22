@@ -79,6 +79,21 @@ describe("documentation", () => {
     }
   });
 
+  it("labels omitted enum filters with their default in every documentation language", async () => {
+    const labels = { fr: "Par défaut: regions", en: "Default: regions", ar: "القيمة الافتراضية: regions" };
+    for (const language of languages) {
+      const response = await app.inject(docsUrl(language, "/api/v2/population/indicators/{id}"));
+      assert.equal(response.statusCode, 200);
+      const levelOptions = response.body.match(/<select\b[^>]*name="level"[^>]*>([\s\S]*?)<\/select>/)?.[1];
+      assert.ok(levelOptions, language);
+      assert.ok(levelOptions.includes(`<option value="">${labels[language]}</option>`), language);
+      assert.match(levelOptions, /<option value="regions" selected>regions<\/option>/);
+    }
+    const catalogue = await app.inject(docsUrl("en", "/api/v2/population/indicators"));
+    const groupOptions = catalogue.body.match(/<select\b[^>]*name="group"[^>]*>([\s\S]*?)<\/select>/)?.[1];
+    assert.ok(groupOptions?.includes('<option value="">Any value</option>'));
+  });
+
   it("documents every nested success and error field in all languages, with contextual meanings", () => {
     for (const language of languages) {
       for (const endpoint of buildCatalog(spec, language)) {

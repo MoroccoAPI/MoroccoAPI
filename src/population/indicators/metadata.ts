@@ -17,7 +17,7 @@ export function buildIndicatorDatasetMeta(total: number): IndicatorDatasetMeta {
     total,
     license: "CC-BY-4.0",
     retrieved_at: "2026-10-20",
-    transformation_version: "1.0.0",
+    transformation_version: "1.0.1",
     sources,
   };
 }

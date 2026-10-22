@@ -30,13 +30,20 @@ describe("population/indicators", () => {
     });
     assert.equal(firstBody.meta.license, "CC-BY-4.0");
     assert.equal(firstBody.meta.retrieved_at, "2026-10-20");
-    assert.equal(firstBody.meta.transformation_version, "1.0.0");
+    assert.equal(firstBody.meta.transformation_version, "1.0.1");
     assert.equal(firstBody.meta.sources.length, 1);
     assert.equal(firstBody.meta.sources[0].producer, "Haut-Commissariat au Plan (HCP)");
 
     const all = await collectAllPages<{ id: string; group: string }>(app, "/api/v2/population/indicators");
     assert.equal(all.data.length, 98);
     assert.equal(new Set(all.data.map((indicator) => indicator.id)).size, 98);
+  });
+
+  it("uses the source definition's French electricity label", async () => {
+    const response = await app.inject("/api/v2/population/indicators?limit=100");
+    assert.equal(response.statusCode, 200);
+    const electricity = response.json().data.find((indicator: { id: string }) => indicator.id === "electricity-share");
+    assert.equal(electricity.name.fr, "Ménages sédentaires disposant de l’électricité");
   });
 
   it("filters the catalogue by group and accent-insensitive multilingual text", async () => {

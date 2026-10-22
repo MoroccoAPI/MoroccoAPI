@@ -915,7 +915,7 @@
         "group": "services",
         "unit": "percent",
         "name": {
-          "fr": "Logements raccordés à l'électricité",
+          "fr": "Ménages sédentaires disposant de l’électricité",
           "en": "Dwellings with electricity",
           "ar": "مساكن تتوفر على الكهرباء"
         }
