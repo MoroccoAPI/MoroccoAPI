@@ -10,6 +10,7 @@ import { loadSubdivisionPopulation } from "./data/subdivisions.js";
 import { loadNationalPopulation } from "./data/population.js";
 import { loadHistoricalPopulation } from "./data/historical.js";
 import { buildDatasetMeta } from "./metadata.js";
+import { populationIndicators } from "./indicators/routes.js";
 import {
   datasetMetaSchema,
   errorSchema,
@@ -27,6 +28,10 @@ export const population: FastifyPluginAsync<{ geography: GeographySnapshot }> = 
   const historical = await loadHistoricalPopulation();
   const subdivisions = await loadSubdivisionPopulation(geography);
   const communes = await loadCommunePopulation(geography);
+  await app.register(populationIndicators, {
+    geography,
+    existing: { national: record, regions, subdivisions, communes },
+  });
   app.get("/api/v2/population/national", {
     schema: {
       tags: ["Population"],

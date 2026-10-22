@@ -16,6 +16,7 @@ const collectionPaths = [
   "/api/v2/communes", "/api/v2/arrondissements", "/api/v2/regions/{code}/subdivisions",
   "/api/v2/locations/search", "/api/v2/population/regions", "/api/v2/population/historical",
   "/api/v2/population/subdivisions", "/api/v2/population/communes",
+  "/api/v2/population/indicators", "/api/v2/population/indicators/{id}",
   "/api/v2/health/private-infrastructure", "/api/v2/health/primary-care-facilities", "/api/v2/health/hospitals",
   "/api/v2/telecom/numbering-ranges", "/api/v2/telecom/area-codes",
   "/api/v2/education/etablissement-prives", "/api/v2/education/etablissement-publics-qualifiant",
@@ -72,7 +73,9 @@ describe("Pagination contracts", () => {
 
   it("rejects non-finite pagination values on every paginated collection with validation errors", async () => {
     for (const path of collectionPaths) {
-      const resolved = path.replace("{code}", path.startsWith("/api/v2/postal-codes/") ? "10000" : "casablanca-settat").replace("{id}", "yacoub-el-mansour");
+      const resolved = path
+        .replace("{code}", path.startsWith("/api/v2/postal-codes/") ? "10000" : "casablanca-settat")
+        .replace("{id}", path.startsWith("/api/v2/population/indicators/") ? "unemployment-rate" : "yacoub-el-mansour");
       for (const parameter of ["limit", "offset"]) {
         for (const value of ["Infinity", "-Infinity", "+Infinity", "1e309", "-1e309"]) {
           const url = new URL(resolved, "http://localhost");
