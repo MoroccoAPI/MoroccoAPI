@@ -1,0 +1,752 @@
+{
+  "sheets": {
+    "description": "The three area sheets of the HCP workbook and their layout.",
+    "entries": [
+      {
+        "area": "all",
+        "source_sheet": "Ensemble",
+        "file": "source/multidimensional-poverty-all.json",
+        "title": "BASE DE DONNEES DE LA CARTOGRAPHIE DE LA PAUVRETE MULITIDIMENSIONNELLE, HCP, RGPH 2024 & 2014",
+        "unit_of_measure": "UNITE DE MESURE : COMMUNES RURALES, ARRONDISSEMENTS, MUNICIPALITES ET CENTRES URBAINS",
+        "header_rows": 6,
+        "footer_rows": 3,
+        "columns": 35
+      },
+      {
+        "area": "urban",
+        "source_sheet": "Urbain",
+        "file": "source/multidimensional-poverty-urban.json",
+        "title": "BASE DE DONNEES DE LA CARTOGRAPHIE DE LA PAUVRETE MULITIDIMENSIONNELLE, HCP, RGPH 2024 & 2014",
+        "unit_of_measure": "UNITE DE MESURE : ARRONDISSEMENTS, MUNICIPALITES ET CENTRES URBAINS",
+        "header_rows": 6,
+        "footer_rows": 3,
+        "columns": 35
+      },
+      {
+        "area": "rural",
+        "source_sheet": "Rural",
+        "file": "source/multidimensional-poverty-rural.json",
+        "title": "BASE DE DONNEES DE LA CARTOGRAPHIE DE LA PAUVRETE MULITIDIMENSIONNELLE, HCP, RGPH 2024 & 2014",
+        "unit_of_measure": "UNITE DE MESURE : COMMUNES RURALES",
+        "header_rows": 6,
+        "footer_rows": 3,
+        "columns": 35
+      }
+    ]
+  },
+  "columns": {
+    "description": "Every source column with its header path (group › sub-group › indicator › unit). value columns are published under field; mpi_trend is HCP's 2014–2024 MPI variation; not_published columns (contributions and decompositions) are kept only in the raw files.",
+    "entries": [
+      {
+        "area": "all",
+        "column": 0,
+        "role": "name",
+        "source_label": "Collectivités territoriales › Libellé de localité"
+      },
+      {
+        "area": "all",
+        "column": 1,
+        "role": "code",
+        "source_label": "Code géographique › Code de localité"
+      },
+      {
+        "area": "all",
+        "column": 2,
+        "role": "source_level",
+        "source_label": "Niveau d'agrégation géographique › Niveau d'agrégation géographiques"
+      },
+      {
+        "area": "all",
+        "column": 3,
+        "role": "year",
+        "source_label": "Année › Année"
+      },
+      {
+        "area": "all",
+        "column": 4,
+        "role": "value",
+        "field": "mpi",
+        "source_label": "Pauvreté multidimensionnelle › Indice de pauvreté multidimensionnelle (MPI = H*A) › (Valeur entre 0 et 1)"
+      },
+      {
+        "area": "all",
+        "column": 5,
+        "role": "value",
+        "field": "poverty_rate",
+        "source_label": "Pauvreté multidimensionnelle › Taux de pauvreté: Proportion de la population en situation de pauvreté multidimensionnelle (H) › % Population"
+      },
+      {
+        "area": "all",
+        "column": 6,
+        "role": "value",
+        "field": "poverty_intensity",
+        "source_label": "Pauvreté multidimensionnelle › Intensité de la pauvreté (A) › % moyen de privations"
+      },
+      {
+        "area": "all",
+        "column": 7,
+        "role": "value",
+        "field": "vulnerability_rate",
+        "source_label": "Pauvreté multidimensionnelle › Taux de vulnérabilité à la pauvreté › % Population"
+      },
+      {
+        "area": "all",
+        "column": 8,
+        "role": "value",
+        "field": "child_mortality",
+        "source_label": "Pourcentage de la population en situation de privation › Santé › Mortalité infantile › % Population"
+      },
+      {
+        "area": "all",
+        "column": 9,
+        "role": "value",
+        "field": "disability",
+        "source_label": "Pourcentage de la population en situation de privation › Santé › Handicap › % Population"
+      },
+      {
+        "area": "all",
+        "column": 10,
+        "role": "value",
+        "field": "school_attendance",
+        "source_label": "Pourcentage de la population en situation de privation › Education › Scolarisation des enfants › % Population"
+      },
+      {
+        "area": "all",
+        "column": 11,
+        "role": "value",
+        "field": "years_of_schooling",
+        "source_label": "Pourcentage de la population en situation de privation › Education › Nombre d'années de scolarité › % Population"
+      },
+      {
+        "area": "all",
+        "column": 12,
+        "role": "value",
+        "field": "electricity",
+        "source_label": "Pourcentage de la population en situation de privation › Conditions de vie › Electricité › % Population"
+      },
+      {
+        "area": "all",
+        "column": 13,
+        "role": "value",
+        "field": "water",
+        "source_label": "Pourcentage de la population en situation de privation › Conditions de vie › Eau › % Population"
+      },
+      {
+        "area": "all",
+        "column": 14,
+        "role": "value",
+        "field": "sanitation",
+        "source_label": "Pourcentage de la population en situation de privation › Conditions de vie › Assainissement › % Population"
+      },
+      {
+        "area": "all",
+        "column": 15,
+        "role": "value",
+        "field": "housing",
+        "source_label": "Pourcentage de la population en situation de privation › Conditions de vie › Logement › % Population"
+      },
+      {
+        "area": "all",
+        "column": 16,
+        "role": "value",
+        "field": "cooking_fuel",
+        "source_label": "Pourcentage de la population en situation de privation › Conditions de vie › Mode de cuisson › % Population"
+      },
+      {
+        "area": "all",
+        "column": 17,
+        "role": "value",
+        "field": "communication_assets",
+        "source_label": "Pourcentage de la population en situation de privation › Conditions de vie › Actifs : Moyens de communication › % Population"
+      },
+      {
+        "area": "all",
+        "column": 18,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Santé › Mortalité infantile › % Contribution"
+      },
+      {
+        "area": "all",
+        "column": 19,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Santé › Handicap › % Contribution"
+      },
+      {
+        "area": "all",
+        "column": 20,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Education › Scolarisation des enfants › % Contribution"
+      },
+      {
+        "area": "all",
+        "column": 21,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Education › Nombre d'années de scolarité › % Contribution"
+      },
+      {
+        "area": "all",
+        "column": 22,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Conditions de vie › Electricité › % Contribution"
+      },
+      {
+        "area": "all",
+        "column": 23,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Conditions de vie › Eau › % Contribution"
+      },
+      {
+        "area": "all",
+        "column": 24,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Conditions de vie › Assainissement › % Contribution"
+      },
+      {
+        "area": "all",
+        "column": 25,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Conditions de vie › Logement › % Contribution"
+      },
+      {
+        "area": "all",
+        "column": 26,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Conditions de vie › Mode de cuisson › % Contribution"
+      },
+      {
+        "area": "all",
+        "column": 27,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Conditions de vie › Actifs : Moyens de communication › % Contribution"
+      },
+      {
+        "area": "all",
+        "column": 28,
+        "role": "not_published",
+        "source_label": "Décomposition du MPI par source de privation › Santé › % Contribution"
+      },
+      {
+        "area": "all",
+        "column": 29,
+        "role": "not_published",
+        "source_label": "Décomposition du MPI par source de privation › Education › % Contribution"
+      },
+      {
+        "area": "all",
+        "column": 30,
+        "role": "not_published",
+        "source_label": "Décomposition du MPI par source de privation › Conditions de vie › % Contribution"
+      },
+      {
+        "area": "all",
+        "column": 31,
+        "role": "mpi_trend",
+        "source_label": "Décomposition de la dynamique du MPI, entre 2014 et 2024, par source de privation › Variation du MPI ** › --- : Diminution et +++ : Augmentation Stag : Stagnation nc : Nouveaux centres"
+      },
+      {
+        "area": "all",
+        "column": 32,
+        "role": "not_published",
+        "source_label": "Décomposition de la dynamique du MPI, entre 2014 et 2024, par source de privation › Santé › % Contribution"
+      },
+      {
+        "area": "all",
+        "column": 33,
+        "role": "not_published",
+        "source_label": "Décomposition de la dynamique du MPI, entre 2014 et 2024, par source de privation › Education › % Contribution"
+      },
+      {
+        "area": "all",
+        "column": 34,
+        "role": "not_published",
+        "source_label": "Décomposition de la dynamique du MPI, entre 2014 et 2024, par source de privation › Conditions de vie › % Contribution"
+      },
+      {
+        "area": "urban",
+        "column": 0,
+        "role": "name",
+        "source_label": "Collectivités territoriales › Libellé de localité"
+      },
+      {
+        "area": "urban",
+        "column": 1,
+        "role": "code",
+        "source_label": "Code géographique › Code de localité"
+      },
+      {
+        "area": "urban",
+        "column": 2,
+        "role": "source_level",
+        "source_label": "Niveau d'agrégation géographique › Niveau d'agrégation géographiques"
+      },
+      {
+        "area": "urban",
+        "column": 3,
+        "role": "year",
+        "source_label": "Année › Année"
+      },
+      {
+        "area": "urban",
+        "column": 4,
+        "role": "value",
+        "field": "mpi",
+        "source_label": "Pauvreté multidimensionnelle › Indice de pauvreté multidimensionnelle (MPI = H*A) › (Valeur entre 0 et 1)"
+      },
+      {
+        "area": "urban",
+        "column": 5,
+        "role": "value",
+        "field": "poverty_rate",
+        "source_label": "Pauvreté multidimensionnelle › Taux de pauvreté: Proportion de la population en situation de pauvreté multidimensionnelle (H) › % Population"
+      },
+      {
+        "area": "urban",
+        "column": 6,
+        "role": "value",
+        "field": "poverty_intensity",
+        "source_label": "Pauvreté multidimensionnelle › Intensité de la pauvreté (A) › % moyen de privations"
+      },
+      {
+        "area": "urban",
+        "column": 7,
+        "role": "value",
+        "field": "vulnerability_rate",
+        "source_label": "Pauvreté multidimensionnelle › Taux de vulnérabilité à la pauvreté › % Population"
+      },
+      {
+        "area": "urban",
+        "column": 8,
+        "role": "value",
+        "field": "child_mortality",
+        "source_label": "Pourcentage de la population en situation de privation › Santé › Mortalité infantile › % Population"
+      },
+      {
+        "area": "urban",
+        "column": 9,
+        "role": "value",
+        "field": "disability",
+        "source_label": "Pourcentage de la population en situation de privation › Santé › Handicap › % Population"
+      },
+      {
+        "area": "urban",
+        "column": 10,
+        "role": "value",
+        "field": "school_attendance",
+        "source_label": "Pourcentage de la population en situation de privation › Education › Scolarisation des enfants › % Population"
+      },
+      {
+        "area": "urban",
+        "column": 11,
+        "role": "value",
+        "field": "years_of_schooling",
+        "source_label": "Pourcentage de la population en situation de privation › Education › Nombre d'années de scolarité › % Population"
+      },
+      {
+        "area": "urban",
+        "column": 12,
+        "role": "value",
+        "field": "electricity",
+        "source_label": "Pourcentage de la population en situation de privation › Conditions de vie › Electricité › % Population"
+      },
+      {
+        "area": "urban",
+        "column": 13,
+        "role": "value",
+        "field": "water",
+        "source_label": "Pourcentage de la population en situation de privation › Conditions de vie › Eau › % Population"
+      },
+      {
+        "area": "urban",
+        "column": 14,
+        "role": "value",
+        "field": "sanitation",
+        "source_label": "Pourcentage de la population en situation de privation › Conditions de vie › Assainissement › % Population"
+      },
+      {
+        "area": "urban",
+        "column": 15,
+        "role": "value",
+        "field": "housing",
+        "source_label": "Pourcentage de la population en situation de privation › Conditions de vie › Logement › % Population"
+      },
+      {
+        "area": "urban",
+        "column": 16,
+        "role": "value",
+        "field": "cooking_fuel",
+        "source_label": "Pourcentage de la population en situation de privation › Conditions de vie › Mode de cuisson › % Population"
+      },
+      {
+        "area": "urban",
+        "column": 17,
+        "role": "value",
+        "field": "communication_assets",
+        "source_label": "Pourcentage de la population en situation de privation › Conditions de vie › Actifs : Moyens de communication › % Population"
+      },
+      {
+        "area": "urban",
+        "column": 18,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Santé › Mortalité infantile › % Contribution"
+      },
+      {
+        "area": "urban",
+        "column": 19,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Santé › Handicap › % Contribution"
+      },
+      {
+        "area": "urban",
+        "column": 20,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Education › Scolarisation des enfants › % Contribution"
+      },
+      {
+        "area": "urban",
+        "column": 21,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Education › Nombre d'années de scolarité › % Contribution"
+      },
+      {
+        "area": "urban",
+        "column": 22,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Conditions de vie › Electricité › % Contribution"
+      },
+      {
+        "area": "urban",
+        "column": 23,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Conditions de vie › Eau › % Contribution"
+      },
+      {
+        "area": "urban",
+        "column": 24,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Conditions de vie › Assainissement › % Contribution"
+      },
+      {
+        "area": "urban",
+        "column": 25,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Conditions de vie › Logement › % Contribution"
+      },
+      {
+        "area": "urban",
+        "column": 26,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Conditions de vie › Mode de cuisson › % Contribution"
+      },
+      {
+        "area": "urban",
+        "column": 27,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Conditions de vie › Actifs : Moyens de communication › % Contribution"
+      },
+      {
+        "area": "urban",
+        "column": 28,
+        "role": "not_published",
+        "source_label": "Décomposition du MPI par source de privation › Santé › % Contribution"
+      },
+      {
+        "area": "urban",
+        "column": 29,
+        "role": "not_published",
+        "source_label": "Décomposition du MPI par source de privation › Education › % Contribution"
+      },
+      {
+        "area": "urban",
+        "column": 30,
+        "role": "not_published",
+        "source_label": "Décomposition du MPI par source de privation › Conditions de vie › % Contribution"
+      },
+      {
+        "area": "urban",
+        "column": 31,
+        "role": "mpi_trend",
+        "source_label": "Décomposition de la dynamique du MPI, entre 2014 et 2024, par source de privation › Variation du MPI ** › --- : Diminution +++ : Augmentation Stag : Stagnation nc : Nouveaux centres"
+      },
+      {
+        "area": "urban",
+        "column": 32,
+        "role": "not_published",
+        "source_label": "Décomposition de la dynamique du MPI, entre 2014 et 2024, par source de privation › Santé › % Contribution"
+      },
+      {
+        "area": "urban",
+        "column": 33,
+        "role": "not_published",
+        "source_label": "Décomposition de la dynamique du MPI, entre 2014 et 2024, par source de privation › Education › % Contribution"
+      },
+      {
+        "area": "urban",
+        "column": 34,
+        "role": "not_published",
+        "source_label": "Décomposition de la dynamique du MPI, entre 2014 et 2024, par source de privation › Conditions de vie › % Contribution"
+      },
+      {
+        "area": "rural",
+        "column": 0,
+        "role": "name",
+        "source_label": "Collectivités territoriales › Libellé de localité"
+      },
+      {
+        "area": "rural",
+        "column": 1,
+        "role": "code",
+        "source_label": "Code géographique › Code de localité"
+      },
+      {
+        "area": "rural",
+        "column": 2,
+        "role": "source_level",
+        "source_label": "Niveau d'agrégation géographique › Niveau d'agrégation géographiques"
+      },
+      {
+        "area": "rural",
+        "column": 3,
+        "role": "year",
+        "source_label": "Année › Année"
+      },
+      {
+        "area": "rural",
+        "column": 4,
+        "role": "value",
+        "field": "mpi",
+        "source_label": "Pauvreté multidimensionnelle › Indice de pauvreté multidimensionnelle (MPI = H*A) › (Valeur entre 0 et 1)"
+      },
+      {
+        "area": "rural",
+        "column": 5,
+        "role": "value",
+        "field": "poverty_rate",
+        "source_label": "Pauvreté multidimensionnelle › Taux de pauvreté: Proportion de la population en situation de pauvreté multidimensionnelle (H) › % Population"
+      },
+      {
+        "area": "rural",
+        "column": 6,
+        "role": "value",
+        "field": "poverty_intensity",
+        "source_label": "Pauvreté multidimensionnelle › Intensité de la pauvreté (A) › % moyen de privations"
+      },
+      {
+        "area": "rural",
+        "column": 7,
+        "role": "value",
+        "field": "vulnerability_rate",
+        "source_label": "Pauvreté multidimensionnelle › Taux de vulnérabilité à la pauvreté › % Population"
+      },
+      {
+        "area": "rural",
+        "column": 8,
+        "role": "value",
+        "field": "child_mortality",
+        "source_label": "Pourcentage de la population en situation de privation › Santé › Mortalité infantile › % Population"
+      },
+      {
+        "area": "rural",
+        "column": 9,
+        "role": "value",
+        "field": "disability",
+        "source_label": "Pourcentage de la population en situation de privation › Santé › Handicap › % Population"
+      },
+      {
+        "area": "rural",
+        "column": 10,
+        "role": "value",
+        "field": "school_attendance",
+        "source_label": "Pourcentage de la population en situation de privation › Education › Scolarisation des enfants › % Population"
+      },
+      {
+        "area": "rural",
+        "column": 11,
+        "role": "value",
+        "field": "years_of_schooling",
+        "source_label": "Pourcentage de la population en situation de privation › Education › Nombre d'années de scolarité › % Population"
+      },
+      {
+        "area": "rural",
+        "column": 12,
+        "role": "value",
+        "field": "electricity",
+        "source_label": "Pourcentage de la population en situation de privation › Conditions de vie › Electricité › % Population"
+      },
+      {
+        "area": "rural",
+        "column": 13,
+        "role": "value",
+        "field": "water",
+        "source_label": "Pourcentage de la population en situation de privation › Conditions de vie › Eau › % Population"
+      },
+      {
+        "area": "rural",
+        "column": 14,
+        "role": "value",
+        "field": "sanitation",
+        "source_label": "Pourcentage de la population en situation de privation › Conditions de vie › Assainissement › % Population"
+      },
+      {
+        "area": "rural",
+        "column": 15,
+        "role": "value",
+        "field": "housing",
+        "source_label": "Pourcentage de la population en situation de privation › Conditions de vie › Logement › % Population"
+      },
+      {
+        "area": "rural",
+        "column": 16,
+        "role": "value",
+        "field": "cooking_fuel",
+        "source_label": "Pourcentage de la population en situation de privation › Conditions de vie › Mode de cuisson › % Population"
+      },
+      {
+        "area": "rural",
+        "column": 17,
+        "role": "value",
+        "field": "communication_assets",
+        "source_label": "Pourcentage de la population en situation de privation › Conditions de vie › Actifs : Moyens de communication › % Population"
+      },
+      {
+        "area": "rural",
+        "column": 18,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Santé › Mortalité infantile › % Contribution"
+      },
+      {
+        "area": "rural",
+        "column": 19,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Santé › Handicap › % Contribution"
+      },
+      {
+        "area": "rural",
+        "column": 20,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Education › Scolarisation des enfants › % Contribution"
+      },
+      {
+        "area": "rural",
+        "column": 21,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Education › Nombre d'années de scolarité › % Contribution"
+      },
+      {
+        "area": "rural",
+        "column": 22,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Conditions de vie › Electricité › % Contribution"
+      },
+      {
+        "area": "rural",
+        "column": 23,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Conditions de vie › Eau › % Contribution"
+      },
+      {
+        "area": "rural",
+        "column": 24,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Conditions de vie › Assainissement › % Contribution"
+      },
+      {
+        "area": "rural",
+        "column": 25,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Conditions de vie › Logement › % Contribution"
+      },
+      {
+        "area": "rural",
+        "column": 26,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Conditions de vie › Mode de cuisson › % Contribution"
+      },
+      {
+        "area": "rural",
+        "column": 27,
+        "role": "not_published",
+        "source_label": "Contribution en pourcentage des privations de chaque indicateur au MPI › Conditions de vie › Actifs : Moyens de communication › % Contribution"
+      },
+      {
+        "area": "rural",
+        "column": 28,
+        "role": "not_published",
+        "source_label": "Décomposition du MPI par source de privation › Santé › % Contribution"
+      },
+      {
+        "area": "rural",
+        "column": 29,
+        "role": "not_published",
+        "source_label": "Décomposition du MPI par source de privation › Education › % Contribution"
+      },
+      {
+        "area": "rural",
+        "column": 30,
+        "role": "not_published",
+        "source_label": "Décomposition du MPI par source de privation › Conditions de vie › % Contribution"
+      },
+      {
+        "area": "rural",
+        "column": 31,
+        "role": "mpi_trend",
+        "source_label": "Décomposition de la dynamique du MPI, entre 2014 et 2024, par source de privation › Variation de l'IPM ** › --- : Diminution +++ : Augmentation Stag : Stagnation nc : Nouveaux centres"
+      },
+      {
+        "area": "rural",
+        "column": 32,
+        "role": "not_published",
+        "source_label": "Décomposition de la dynamique du MPI, entre 2014 et 2024, par source de privation › Santé › % Contribution"
+      },
+      {
+        "area": "rural",
+        "column": 33,
+        "role": "not_published",
+        "source_label": "Décomposition de la dynamique du MPI, entre 2014 et 2024, par source de privation › Education › % Contribution"
+      },
+      {
+        "area": "rural",
+        "column": 34,
+        "role": "not_published",
+        "source_label": "Décomposition de la dynamique du MPI, entre 2014 et 2024, par source de privation › Conditions de vie › % Contribution"
+      }
+    ]
+  },
+  "mpi_trend_symbols": {
+    "description": "Symbols of the 'Variation du MPI' column, as explained in the workbook footnotes.",
+    "entries": [
+      {
+        "symbol": "---",
+        "value": "decrease"
+      },
+      {
+        "symbol": "+++",
+        "value": "increase"
+      },
+      {
+        "symbol": "Stag",
+        "value": "stagnation"
+      },
+      {
+        "symbol": "nc",
+        "value": "new_urban_centre"
+      }
+    ]
+  },
+  "aligned_with_dakhla_2014": {
+    "description": "Communes marked * whose 2014 indicators HCP aligned on those of the commune of Dakhla because of seasonal mobility during the 2014 census (workbook footnote *).",
+    "entries": [
+      {
+        "source_code": "120660103"
+      },
+      {
+        "source_code": "120660303"
+      },
+      {
+        "source_code": "120660309"
+      },
+      {
+        "source_code": "123910505"
+      }
+    ]
+  }
+}
