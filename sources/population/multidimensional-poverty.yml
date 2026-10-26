@@ -1,0 +1,103 @@
+id: population-poverty
+title: Morocco multidimensional poverty by territory (RGPH 2024 and 2014)
+version: 1.0.0
+retrieved_at: 2026-10-26
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/
+terms_url: https://www.hcp.ma/Conditions-generales-d-utilisation-Version-1-0_a2194.html
+contains_personal_data: false
+redistribution_review: approved
+
+sources:
+  - language_fields: [fr]
+    dataset: Base de données (Excel) de la cartographie de la pauvreté multidimensionnelle, paysage territorial et dynamique, Mai 2025
+    producer: Haut-Commissariat au Plan (HCP)
+    catalog_url: https://www.hcp.ma/Cartographie-de-la-pauvrete-multidimensionnelle-paysage-territorial-et-dynamique-Mai-2025_a4104.html
+    resource_url: https://www.hcp.ma/file/245096/
+    published_at: 2025-05-22
+    source_updated_at: 2025-10-27
+    source_license: CC-BY-4.0
+    source_file: La base de données (Excel) de la Cartographie de la pauvreté multidimensionnelle, Paysage territorial et Dynamique, Mai 2025.xls
+    source_file_format: Microsoft Excel 97-2003 (.xls), last saved 2025-09-04
+    source_file_bytes: 6529536
+    source_file_sha256: b9a1a1d474ad93ef982f6e14e21ea22859f47eac1acd5d035771e23e6658c2c6
+
+files:
+  - file: data/population/source/multidimensional-poverty-all.json
+    sha256: 0d9f0c2b4298105a9a9700a9df17d9e2581f78ace57c80c1ca721b8e4f88b843
+    source_sheet: Ensemble
+    source_area: all
+    header_rows: 6
+    footer_rows: 3
+    source_rows: 4043
+    columns: 35
+  - file: data/population/source/multidimensional-poverty-urban.json
+    sha256: 99f33feac656062b1c13e83c4e3e8021d1baa065a3e2984ccfd7b9e6d660c6db
+    source_sheet: Urbain
+    source_area: urban
+    header_rows: 6
+    footer_rows: 3
+    source_rows: 4043
+    columns: 35
+  - file: data/population/source/multidimensional-poverty-rural.json
+    sha256: 3cb283ce09dfa7a34d54b811a3ae889723dd097fca66ac7e90e784a1b48b92b5
+    source_sheet: Rural
+    source_area: rural
+    header_rows: 6
+    footer_rows: 3
+    source_rows: 4043
+    columns: 35
+  - file: data/population/poverty-mappings.json
+    sha256: cea4c34a2e09d3840382cbcdd565e975eda8a22855f6a491f93d1ea7158aa77d
+    description: Exact header path of every source column, the published fields, the MPI trend symbols and the four communes whose 2014 values HCP aligned on Dakhla.
+
+transformations:
+  - Downloaded the official HCP workbook and kept its three sheets (Ensemble, Urbain, Rural) as JSON arrays, one per source row, including title, header and footnote rows.
+  - Kept every cell exactly as read from the workbook, including full numeric precision, empty cells as "" and the symbols ---, +++, Stag, nc and --.
+  - Used poverty-mappings.json to name the published columns; the loader checks every header path, the sheet titles and footnotes, and that the three sheets list the same territories and years.
+  - Typed territories by the start of their HCP name, as for the census indicators, because the workbook's own level column labels Tanger, Fès, Rabat, Salé and Marrakech as prefectures of arrondissements and arrondissements as communes.
+  - Linked compact HCP geographic codes to the existing RGPH 2024 administrative snapshot and published the MoroccoAPI geography names and codes.
+  - Published empty source cells as null. An area (urban or rural) without any value for a territory and year is omitted rather than filled.
+  - Translated the Variation du MPI symbols to decrease (---), increase (+++), stagnation (Stag) and new_urban_centre (nc), on 2024 observations only.
+  - Marked the 2014 values of the four communes HCP flags with * as aligned_with_dakhla, as explained by the workbook footnote, without changing them.
+  - Checked that MPI equals the poverty rate times the intensity (H × A / 10,000) to within 0.000001 wherever the three values are present.
+
+coverage:
+  source_rows_per_sheet: 4043
+  source_columns: 35
+  source_territories: 2017
+  published_territories: 1640
+  regions: 12
+  subdivisions: 75
+  prefectures_of_arrondissements: 8
+  communes: 1503
+  arrondissements: 41
+  years: [2024, 2014]
+  all_area_observations: 3280
+  urban_observations: 1020
+  rural_observations: 2736
+  published_fields: 14
+  aligned_with_dakhla_communes: 4
+  excluded_cercles: 213
+  excluded_urban_centres: 164
+
+excluded_columns:
+  - Contribution en pourcentage des privations de chaque indicateur au MPI (columns 18–27).
+  - Décomposition du MPI par source de privation (columns 28–30).
+  - Décomposition de la dynamique du MPI, entre 2014 et 2024, par source de privation (columns 32–34); only the Variation du MPI symbol (column 31) is published.
+
+limitations:
+  - The figures follow HCP's multidimensional poverty method (ten indicators in health, education and living conditions). They are not comparable with monetary poverty or with World Bank poverty lines.
+  - The 2014 figures are HCP's revised 2014 estimates published with this release for comparison with 2024; they replace earlier 2014 publications for that purpose.
+  - Values keep the full precision stored in the workbook; HCP reports round them. For a territory with a single area, its urban or rural values equal its all-areas values to within 0.000000001, with one exception below.
+  - Source inconsistency kept as published - the 2014 years_of_schooling deprivation of the four Dakhla-aligned communes (Mijik, Lagouira, Aghouinite, Zoug) is 0 in the Ensemble sheet but 16.06985479593277 in the Rural sheet, which equals the commune of Dakhla's 2014 value.
+  - When the poverty rate is 0, HCP leaves MPI, intensity and contributions empty; they are published as null, not 0.
+  - HCP marks the same four communes with * on 2024 names in the Rural sheet only; the footnote describes only the 2014 alignment, so only 2014 values are flagged.
+  - Cercles and "dont le centre urbain" detail rows are not administrative records in the MoroccoAPI geography snapshot and are excluded rather than assigned guessed codes.
+  - The source follows Morocco's official territorial scope, including Moroccan-administered territory in Western Sahara.
+
+refresh:
+  - Download the workbook from https://www.hcp.ma/file/245096/ and verify its SHA-256 before conversion.
+  - Convert the Ensemble, Urbain and Rural sheets to JSON arrays with every row and cell unchanged, and rebuild poverty-mappings.json from the header rows.
+  - Update all checksums, dates and coverage counts in this file and in src/population/poverty/metadata.ts.
+  - Run the population poverty data tests and npm run check; the startup loader rejects changed headers, sheets, territories, symbols or MPI inconsistencies.
