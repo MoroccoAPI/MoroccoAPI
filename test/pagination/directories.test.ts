@@ -185,10 +185,21 @@ describe("Directory pagination", () => {
       "/api/v2/ports/Casablanca",
       "/api/v2/world-bank/indicators/IT.NET.USER.ZS",
     ];
+    // Routes with their own query parameters reject unknown ones such as limit and offset.
+    const strictQueries = new Set([
+      "/api/v2/telecom/phone-numbers/lookup?number=0612345678",
+      "/api/v2/world-bank/indicators/IT.NET.USER.ZS",
+    ]);
     for (const url of details) {
       const ordinary = await app.inject(url);
       const supplied = await app.inject(pageUrl(url, "limit=1&offset=1"));
       assert.equal(ordinary.statusCode, 200, url);
+      assert.equal(Array.isArray(ordinary.json().data), false, url);
+      if (strictQueries.has(url)) {
+        assert.equal(supplied.statusCode, 400, url);
+        assert.equal(supplied.json().error.code, "VALIDATION_ERROR", url);
+        continue;
+      }
       assert.equal(supplied.statusCode, 200, url);
       assert.equal(Array.isArray(supplied.json().data), false, url);
       assert.deepEqual(supplied.json(), ordinary.json(), url);

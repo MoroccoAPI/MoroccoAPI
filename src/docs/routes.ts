@@ -21,14 +21,13 @@ export const documentation: FastifyPluginAsync = async (app) => {
     }
     return page;
   };
-  for (const path of ["/docs", "/docs/"]) {
-    app.get<{ Querystring: { lang?: string; endpoint?: string } }>(path, {
-      schema: {
-        hide: true,
-        querystring: { type: "object", properties: { lang: { type: "string", maxLength: 10 }, endpoint: { type: "string", maxLength: 250 } } },
-      },
-    }, async (request, reply) => reply.type("text/html; charset=utf-8").send(render(request.query)));
-  }
+  // The router ignores trailing slashes, so this also serves /docs/.
+  app.get<{ Querystring: { lang?: string; endpoint?: string } }>("/docs", {
+    schema: {
+      hide: true,
+      querystring: { type: "object", properties: { lang: { type: "string", maxLength: 10 }, endpoint: { type: "string", maxLength: 250 } } },
+    },
+  }, async (request, reply) => reply.type("text/html; charset=utf-8").send(render(request.query)));
 
   for (const path of ["/docs/:lang", "/docs/:lang/*"]) {
     app.get<{ Params: { lang: string; "*"?: string } }>(path, { schema: { hide: true } }, async (request, reply) => {
