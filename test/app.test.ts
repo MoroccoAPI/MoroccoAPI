@@ -107,7 +107,7 @@ describe("Application contracts", () => {
     try {
       const search = await loggedApp.inject({
         method: "GET",
-        url: `/api/v2/locations/search?q=kenitra&token=${token}&key=${key}`,
+        url: "/api/v2/locations/search?q=kenitra",
         headers: { authorization: `Bearer ${authorization}`, cookie: `session=${cookie}` },
       });
       assert.equal(search.statusCode, 200);
