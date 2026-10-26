@@ -163,6 +163,9 @@ export const titles: Record<string, Translation> = {
   "/population/indicators/{id}": ["Un indicateur par territoire", "One indicator by territory", "مؤشر حسب المجال الترابي"],
   "/population/national/indicators": ["Indicateurs nationaux du recensement", "National census indicators", "المؤشرات الوطنية للإحصاء العام"],
   "/population/{level}/{code}/indicators": ["Indicateurs d’un territoire", "Indicators for a territory", "مؤشرات مجال ترابي"],
+  "/population/poverty": ["Pauvreté multidimensionnelle par territoire", "Multidimensional poverty by territory", "الفقر متعدد الأبعاد حسب المجال الترابي"],
+  "/population/national/poverty": ["Pauvreté multidimensionnelle nationale", "National multidimensional poverty", "الفقر متعدد الأبعاد على المستوى الوطني"],
+  "/population/{level}/{code}/poverty": ["Pauvreté d’un territoire", "Poverty for a territory", "الفقر في مجال ترابي"],
   "/health/private-infrastructure": ["Infrastructure privée", "Private infrastructure", "البنية الصحية الخاصة"],
   "/health/primary-care-facilities": ["Soins de santé primaires", "Primary-care facilities", "مؤسسات الرعاية الأولية"],
   "/health/hospitals": ["Lister les hôpitaux", "List hospitals", "قائمة المستشفيات"],
@@ -220,6 +223,7 @@ export const examples: Record<string, Record<string, string>> = {
   "/population/historical/{year}": { year: "2024" },
   "/population/indicators/{id}": { id: "unemployment-rate" },
   "/population/{level}/{code}/indicators": { level: "communes", code: "rabat--rabat" },
+  "/population/{level}/{code}/poverty": { level: "communes", code: "rabat--rabat" },
   "/health/hospitals/{id}": { id: "hospital-466ee1fb565c5cc1" },
   "/telecom/phone-numbers/validate": { number: "0612345678" },
   "/telecom/phone-numbers/lookup": { number: "0522123456" },
@@ -280,4 +284,5 @@ export const parameterHelp: Record<string, Translation> = {
   topic: ["Thème issu de la liste /indicators/topics.", "Topic from the /indicators/topics list.", "موضوع من قائمة /indicators/topics."],
   level: ["Niveau territorial, par exemple regions ou communes.", "Territorial level, such as regions or communes.", "المستوى الترابي، مثل regions أو communes."],
   group: ["Groupe d’indicateurs, par exemple education ou employment.", "Indicator group, such as education or employment.", "مجموعة المؤشرات، مثل education أو employment."],
+  area: ["Milieu de résidence : all (ensemble), urban ou rural.", "Area of residence: all (combined), urban or rural.", "وسط الإقامة: all (المجموع) أو urban (حضري) أو rural (قروي)."],
 };
