@@ -55,7 +55,8 @@ const SEX_HEADERS: Record<string, Sex> = {
   "Sexe : Ensemble": "both_sexes", "Sexe : Masculin": "male", "Sexe : Féminin": "female",
 };
 // Rows are typed by the start of their HCP name; cercles and "dont le centre urbain" rows are not published.
-const ROW_KINDS: readonly [RegExp, Exclude<IndicatorLevel, "national"> | "cercle" | "urban_centre"][] = [
+// The poverty workbook uses the same names and codes, so its loader shares these rules.
+export const ROW_KINDS: readonly [RegExp, Exclude<IndicatorLevel, "national"> | "cercle" | "urban_centre"][] = [
   [/^Région (?:de |d')/, "regions"],
   // HCP writes both "Préfecture d'arrondissements" and "Préfecture d'arrondissement".
   [/^Préfecture d'arrondissements? (?:de |d')/, "prefectures-of-arrondissements"],
