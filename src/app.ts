@@ -42,6 +42,12 @@ export async function buildApp(
     routerOptions: {
       ...options.routerOptions,
       maxParamLength: options.routerOptions?.maxParamLength ?? options.maxParamLength ?? 200,
+      ignoreTrailingSlash: options.routerOptions?.ignoreTrailingSlash ?? true,
+    },
+    // Keep unknown query parameters so additionalProperties: false rejects typos instead of dropping them.
+    ajv: {
+      ...(options.ajv?.plugins ? { plugins: options.ajv.plugins } : {}),
+      customOptions: { removeAdditional: false, ...options.ajv?.customOptions },
     },
     frameworkErrors: options.frameworkErrors ?? ((error: FastifyError, request: FastifyRequest, reply: FastifyReply) => {
       const statusCode = error.statusCode ?? 500;
@@ -188,10 +194,13 @@ export async function buildApp(
 
   app.setErrorHandler((error: FastifyError, request, reply) => {
     if (error.validation || error.code === "VALIDATION_ERROR") {
+      const unknown = error.validationContext === "querystring"
+        ? error.validation?.find((item) => item.keyword === "additionalProperties")?.params.additionalProperty
+        : undefined;
       return reply.code(400).send({
         error: {
           code: "VALIDATION_ERROR",
-          message: error.message,
+          message: typeof unknown === "string" ? `Unknown query parameter '${unknown.slice(0, 100)}'` : error.message,
           request_id: request.id,
         },
       });
