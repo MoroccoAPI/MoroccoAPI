@@ -16,7 +16,7 @@ const collectionPaths = [
   "/api/v2/communes", "/api/v2/arrondissements", "/api/v2/regions/{code}/subdivisions",
   "/api/v2/locations/search", "/api/v2/population/regions", "/api/v2/population/historical",
   "/api/v2/population/subdivisions", "/api/v2/population/communes",
-  "/api/v2/population/indicators", "/api/v2/population/indicators/{id}",
+  "/api/v2/population/indicators", "/api/v2/population/indicators/{id}", "/api/v2/population/poverty",
   "/api/v2/health/private-infrastructure", "/api/v2/health/primary-care-facilities", "/api/v2/health/hospitals",
   "/api/v2/telecom/numbering-ranges", "/api/v2/telecom/area-codes",
   "/api/v2/education/etablissement-prives", "/api/v2/education/etablissement-publics-qualifiant",

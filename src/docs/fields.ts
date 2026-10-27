@@ -208,6 +208,15 @@ male|Valeur pour les hommes, dans l’unité de l’indicateur ; null si absente
 female|Valeur pour les femmes, dans l’unité de l’indicateur ; null si absente, voir null_reasons.|Value for females, in the indicator’s unit; null when absent, see null_reasons.|القيمة للإناث بوحدة المؤشر؛ null عند غيابها، انظر null_reasons.
 null_reasons|Raison de chaque valeur null : unavailable (« . » du HCP), not_applicable (« … » du HCP) ou not_published (aucune valeur HCP pour ce sexe).|Why each value is null: unavailable (HCP “.”), not_applicable (HCP “…”) or not_published (no HCP value for that sex).|سبب كل قيمة null: unavailable (الرمز «.» لدى HCP) أو not_applicable (الرمز «…» لدى HCP) أو not_published (لا تنشر HCP قيمة لهذا الجنس).
 data_from_local_administration|true pour les quatre communes marquées * par le HCP : données fournies par l’administration locale en raison de la mobilité saisonnière.|true for the four communes HCP marks with *: data supplied by the local administration because of seasonal mobility.|تكون true للجماعات الأربع التي تميزها HCP بعلامة *: بيانات قدمتها الإدارة المحلية بسبب التنقل الموسمي.
+area|Milieu de résidence : all (urbain et rural ensemble), urban ou rural.|Area of residence: all (urban and rural combined), urban or rural.|وسط الإقامة: all (الحضري والقروي معاً) أو urban أو rural.
+observations|Valeurs par milieu et par année de recensement ; un milieu sans valeur dans la source est absent.|Values by area and census year; an area without source values is absent.|القيم حسب الوسط وسنة الإحصاء؛ يغيب الوسط الذي لا قيمة له في المصدر.
+mpi|Indice de pauvreté multidimensionnelle (MPI = H × A), entre 0 et 1 ; null quand personne n’est pauvre.|Multidimensional poverty index (MPI = H × A), between 0 and 1; null when no one is poor.|مؤشر الفقر متعدد الأبعاد (MPI = H × A) بين 0 و1؛ null عندما لا يوجد أي فقير.
+poverty_rate|Taux de pauvreté (H) : pourcentage de la population en pauvreté multidimensionnelle.|Poverty rate (H): percentage of the population in multidimensional poverty.|معدل الفقر (H): نسبة السكان في وضعية فقر متعدد الأبعاد.
+poverty_intensity|Intensité (A) : part moyenne des privations subies par les pauvres, en pourcentage ; null quand personne n’est pauvre.|Intensity (A): average share of deprivations among poor people, in percent; null when no one is poor.|شدة الفقر (A): متوسط نسبة الحرمان لدى الفقراء بالنسبة المئوية؛ null عندما لا يوجد أي فقير.
+vulnerability_rate|Pourcentage de la population vulnérable à la pauvreté multidimensionnelle.|Percentage of the population vulnerable to multidimensional poverty.|نسبة السكان المعرضين للفقر متعدد الأبعاد.
+deprivation_rates|Pourcentage de la population privée pour chacun des dix indicateurs de l’indice.|Percentage of the population deprived in each of the index’s ten indicators.|نسبة السكان المحرومين في كل مؤشر من المؤشرات العشرة للمؤشر.
+mpi_trend|Lecture HCP de l’évolution du MPI entre 2014 et 2024 : decrease, increase, stagnation ou new_urban_centre ; null pour 2014.|HCP’s reading of the MPI change between 2014 and 2024: decrease, increase, stagnation or new_urban_centre; null for 2014.|قراءة HCP لتطور المؤشر بين 2014 و2024: decrease أو increase أو stagnation أو new_urban_centre؛ null لسنة 2014.
+aligned_with_dakhla|true pour les valeurs 2014 de quatre communes alignées par le HCP sur la commune de Dakhla, en raison de la mobilité saisonnière lors du recensement.|true for the 2014 values of four communes that HCP aligned on the commune of Dakhla because of seasonal mobility during the census.|تكون true لقيم 2014 لأربع جماعات وحّدتها HCP مع جماعة الداخلة بسبب التنقل الموسمي أثناء الإحصاء.
 `.trim().split("\n").map((line) => {
   const [key, fr, en, ar] = line.split("|");
   if (!key || !fr || !en || !ar) throw new Error(`Incomplete field translation: ${key}`);
@@ -226,8 +235,27 @@ const privateFacilities: Record<string, Translation> = {
   infirmaries: ["infirmeries", "infirmaries", "عيادات التمريض"],
 };
 
+const povertyDeprivations: Record<string, Translation> = {
+  child_mortality: ["mortalité infantile (santé)", "child mortality (health)", "وفيات الأطفال (الصحة)"],
+  disability: ["handicap (santé)", "disability (health)", "الإعاقة (الصحة)"],
+  school_attendance: ["scolarisation des enfants (éducation)", "children’s school attendance (education)", "تمدرس الأطفال (التعليم)"],
+  years_of_schooling: ["nombre d’années de scolarité (éducation)", "years of schooling (education)", "عدد سنوات التمدرس (التعليم)"],
+  electricity: ["électricité (conditions de vie)", "electricity (living conditions)", "الكهرباء (ظروف العيش)"],
+  water: ["eau (conditions de vie)", "water (living conditions)", "الماء (ظروف العيش)"],
+  sanitation: ["assainissement (conditions de vie)", "sanitation (living conditions)", "التطهير (ظروف العيش)"],
+  housing: ["logement (conditions de vie)", "housing (living conditions)", "السكن (ظروف العيش)"],
+  cooking_fuel: ["mode de cuisson (conditions de vie)", "cooking fuel (living conditions)", "طريقة الطهي (ظروف العيش)"],
+  communication_assets: ["moyens de communication (actifs)", "communication assets", "وسائل الاتصال (الممتلكات)"],
+};
+
 export function fieldMeaning(key: string, path: string, endpoint: Endpoint, language: Language): string | undefined {
   const t = (value: Translation) => translate(value, language);
+  const deprivation = povertyDeprivations[key];
+  if (deprivation && path.includes("deprivation_rates.")) return t([
+    `Pourcentage de la population privée : ${deprivation[0]}.`,
+    `Percentage of the population deprived in ${deprivation[1]}.`,
+    `نسبة السكان المحرومين في ${deprivation[2]}.`,
+  ]);
   const facility = privateFacilities[key];
   if (facility) return t([
     `Nombre d’établissements privés (${facility[0]}). null signifie qu’aucun détail n’est publié pour ce niveau.`,

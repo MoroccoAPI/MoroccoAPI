@@ -43,7 +43,7 @@ describe("Published path parameter contracts", () => {
         if (parameter.schema.maxLength > 100) widerThan100.push(path);
       }
     }
-    assert.deepEqual(widerThan100.sort(), [...wideCodePaths, "/api/v2/museums/{id}", "/api/v2/ports/{name}", "/api/v2/public-service/salaries/{code}", "/api/v2/population/{level}/{code}/indicators"].sort());
+    assert.deepEqual(widerThan100.sort(), [...wideCodePaths, "/api/v2/museums/{id}", "/api/v2/ports/{name}", "/api/v2/public-service/salaries/{code}", "/api/v2/population/{level}/{code}/indicators", "/api/v2/population/{level}/{code}/poverty"].sort());
   });
 
   for (const path of wideCodePaths) {
