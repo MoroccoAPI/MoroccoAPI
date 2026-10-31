@@ -248,8 +248,82 @@ const povertyDeprivations: Record<string, Translation> = {
   communication_assets: ["moyens de communication (actifs)", "communication assets", "وسائل الاتصال (الممتلكات)"],
 };
 
+const consulateFields: Record<string, Translation> = {
+  "country": [
+    "Pays d’accueil de la représentation consulaire.",
+    "Host country of the consulate.",
+    "بلد استضافة القنصلية."
+  ],
+  "phones": [
+    "Téléphones institutionnels conservés depuis la source.",
+    "Institutional telephone values retained from the source.",
+    "أرقام الاتصال المؤسسية المحتفظ بها من المصدر."
+  ],
+  "raw": [
+    "Valeur source après retrait des segments mobiles identifiés ; peut rester ambiguë.",
+    "Source value after removing identified mobile segments; may remain ambiguous.",
+    "قيمة المصدر بعد إزالة أجزاء أرقام المحمول المحددة؛ قد تبقى ملتبسة."
+  ],
+  "e164": [
+    "Numéro international du pays d’accueil ; null si ambigu ou invalide. Ne prouve pas qu’il fonctionne.",
+    "Host-country international phone number; null when ambiguous or invalid. Does not prove reachability.",
+    "رقم الهاتف الدولي لبلد الاستضافة؛ null إذا كان ملتبساً أو غير صالح. لا يثبت إمكانية الاتصال."
+  ],
+  "website": [
+    "Lien du site fourni par la source ; null si absent ou écarté lors du contrôle.",
+    "Website link supplied by the source; null when absent or excluded during review.",
+    "رابط الموقع الوارد في المصدر؛ null عند غيابه أو استبعاده أثناء المراجعة."
+  ],
+  "source_names": [
+    "Titres des fiches source associées, y compris les doublons fusionnés.",
+    "Associated source panel titles, including merged duplicates.",
+    "عناوين بطاقات المصدر المرتبطة، بما فيها السجلات المكررة المدمجة."
+  ],
+  "terms_url": [
+    "Conditions d’utilisation publiées par le site source.",
+    "Terms of use published by the source website.",
+    "شروط الاستخدام المنشورة في موقع المصدر."
+  ],
+  "redistribution_status": [
+    "permission-not-obtained : aucune autorisation écrite de redistribution obtenue.",
+    "permission-not-obtained: no written redistribution permission obtained.",
+    "permission-not-obtained: لم تُحصل موافقة كتابية لإعادة النشر."
+  ],
+  "records": [
+    "Nombre de consulats dans le snapshot entier, avant filtrage.",
+    "Number of consulates in the entire snapshot before filtering.",
+    "عدد القنصليات في النسخة كاملة قبل التصفية."
+  ],
+  "countries": [
+    "Nombre de pays représentés dans le snapshot entier.",
+    "Number of countries represented in the entire snapshot.",
+    "عدد البلدان الممثلة في النسخة كاملة."
+  ],
+  "complete": [
+    "false : la couverture exhaustive du réseau consulaire n’est pas vérifiée.",
+    "false: exhaustive coverage of the consular network is not verified.",
+    "false: لم يتم التحقق من شمولية تغطية الشبكة القنصلية."
+  ],
+  "license": [
+    "null : aucune licence ouverte identifiée pour cet annuaire.",
+    "null: no open license identified for this directory.",
+    "null: لم يتم تحديد رخصة مفتوحة لهذا الدليل."
+  ],
+  "quality_flags": [
+    "Anomalies connues : doublon, contact incomplet, téléphone ambigu ou lien écarté.",
+    "Known issues: duplicate, incomplete contact, ambiguous phone or excluded link.",
+    "مشاكل معروفة: تكرار أو بيانات اتصال ناقصة أو هاتف ملتبس أو رابط مستبعد."
+  ]
+};
+
 export function fieldMeaning(key: string, path: string, endpoint: Endpoint, language: Language): string | undefined {
   const t = (value: Translation) => translate(value, language);
+  if (endpoint.group === "Consulates") {
+    if (path.endsWith(".country.code")) return t(["Code ISO du pays d’accueil à deux lettres.", "Two-letter ISO host-country code.", "رمز ISO لبلد الاستضافة من حرفين."]);
+    if (path.endsWith(".country.name")) return t(["Nom français du pays d’accueil.", "French name of the host country.", "اسم بلد الاستضافة بالفرنسية."]);
+    const consulateMeaning = consulateFields[key];
+    if (consulateMeaning) return t(consulateMeaning);
+  }
   const deprivation = povertyDeprivations[key];
   if (deprivation && path.includes("deprivation_rates.")) return t([
     `Pourcentage de la population privée : ${deprivation[0]}.`,

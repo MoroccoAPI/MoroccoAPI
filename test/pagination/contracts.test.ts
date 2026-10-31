@@ -12,6 +12,7 @@ before(async () => { app = await buildApp(); await app.ready(); });
 after(async () => { await app.close(); });
 
 const collectionPaths = [
+  "/api/v2/consulates",
   "/api/v2/regions", "/api/v2/provinces", "/api/v2/prefectures-of-arrondissements",
   "/api/v2/communes", "/api/v2/arrondissements", "/api/v2/regions/{code}/subdivisions",
   "/api/v2/locations/search", "/api/v2/population/regions", "/api/v2/population/historical",

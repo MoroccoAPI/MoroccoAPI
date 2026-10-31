@@ -1,0 +1,1333 @@
+[
+  {
+    "id": "ae-dubai",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A DUBAI"
+    },
+    "country": {
+      "code": "AE",
+      "name": "Émirats arabes unis"
+    },
+    "city": "DUBAI",
+    "address": "Villa n° 116, Street 30, Community N° 334 SATWA-JUMEIRA DUBAI. EMIRATS ARABES UNIS",
+    "phones": [
+      {
+        "raw": "+(971) 4 34 96 377",
+        "e164": "+97143496377"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A DUBAI"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "be-anvers",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A ANVERS"
+    },
+    "country": {
+      "code": "BE",
+      "name": "Belgique"
+    },
+    "city": "ANVERS",
+    "address": "ANTWERPSESTEENWEG 68, 2660 - HOBOKEN - ANVERS",
+    "phones": [
+      {
+        "raw": "+(32) 3 830 57 51",
+        "e164": "+3238305751"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A ANVERS"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "be-bruxelles",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A BRUXELLES"
+    },
+    "country": {
+      "code": "BE",
+      "name": "Belgique"
+    },
+    "city": "BRUXELLES",
+    "address": "55,Rue des Vétérinaires 1070 Anderlecht BRUXELLES",
+    "phones": [
+      {
+        "raw": "+(32) 2 349 51 80 / 81",
+        "e164": null
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A BRUXELLES"
+    ],
+    "quality_flags": [
+      "ambiguous-phone",
+      "source-classification-inconsistent"
+    ]
+  },
+  {
+    "id": "be-liege",
+    "name": {
+      "fr": "CONSULAT GÉNÉRAL DU ROYAUME DU MAROC A LIEGE"
+    },
+    "country": {
+      "code": "BE",
+      "name": "Belgique"
+    },
+    "city": "LIEGE",
+    "address": "42, Boulevard de la Sauvenière 4000 Liège",
+    "phones": [
+      {
+        "raw": "+(32)42599830 / 425 99 860",
+        "e164": null
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GÉNÉRAL DU ROYAUME DU MAROC A LIEGE"
+    ],
+    "quality_flags": [
+      "ambiguous-phone"
+    ]
+  },
+  {
+    "id": "ca-montreal",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME A MONTREAL"
+    },
+    "country": {
+      "code": "CA",
+      "name": "Canada"
+    },
+    "city": "MONTREAL",
+    "address": "1551 rue Ontario Est, Montréal QC H2L 1S6",
+    "phones": [
+      {
+        "raw": "+(1)514 288 87 50 / 69 51",
+        "e164": null
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME A MONTREAL"
+    ],
+    "quality_flags": [
+      "ambiguous-phone"
+    ]
+  },
+  {
+    "id": "ca-toronto",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME A TORONTO"
+    },
+    "country": {
+      "code": "CA",
+      "name": "Canada"
+    },
+    "city": "TORONTO",
+    "address": null,
+    "phones": [],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME A TORONTO"
+    ],
+    "quality_flags": [
+      "incomplete-contact"
+    ]
+  },
+  {
+    "id": "de-dusseldorf",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A DUSSELDORF"
+    },
+    "country": {
+      "code": "DE",
+      "name": "Allemagne"
+    },
+    "city": "DUSSELDORF",
+    "address": "Cecilienallee 14 40474 DÜSSELDORF - ALLEMAGNE",
+    "phones": [
+      {
+        "raw": "+(49) 211 65 04 51 34",
+        "e164": "+4921165045134"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A DUSSELDORF"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "de-francfort",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A FRANCFORT"
+    },
+    "country": {
+      "code": "DE",
+      "name": "Allemagne"
+    },
+    "city": "FRANCFORT",
+    "address": "OSTPARKSTRASSE,35 60385 FRANKFURT AM MAIN",
+    "phones": [
+      {
+        "raw": "+(49) 69 94 94 59 100",
+        "e164": "+4969949459100"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A FRANCFORT"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "dz-alger",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A ALGER"
+    },
+    "country": {
+      "code": "DZ",
+      "name": "Algérie"
+    },
+    "city": "ALGER",
+    "address": "12, RUE BRANLY EL MOURADIA - ALGER",
+    "phones": [
+      {
+        "raw": "+(213) 21 69 70 94",
+        "e164": "+21321697094"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A ALGER"
+    ],
+    "quality_flags": [
+      "source-classification-inconsistent"
+    ]
+  },
+  {
+    "id": "dz-oran",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A ORAN"
+    },
+    "country": {
+      "code": "DZ",
+      "name": "Algérie"
+    },
+    "city": "ORAN",
+    "address": "26,AVENUE CHEICK LARBI TESESSI - ORAN 31000 ORAN .ALGERIE",
+    "phones": [
+      {
+        "raw": "+(213) 41 33 65 11 / 14",
+        "e164": null
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A ORAN"
+    ],
+    "quality_flags": [
+      "ambiguous-phone"
+    ]
+  },
+  {
+    "id": "dz-sidi-bel-abbes",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A SIDI BEL ABBES"
+    },
+    "country": {
+      "code": "DZ",
+      "name": "Algérie"
+    },
+    "city": "SIDI BEL ABBES",
+    "address": "5,AVENUE DE L'ANP SIDI BEL ABBES 22000",
+    "phones": [
+      {
+        "raw": "+(34) 954 08 10 44",
+        "e164": null
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A SIDI BEL ABBES"
+    ],
+    "quality_flags": [
+      "phone-country-mismatch",
+      "website-country-mismatch-excluded"
+    ]
+  },
+  {
+    "id": "es-algesiras",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A ALGESIRAS"
+    },
+    "country": {
+      "code": "ES",
+      "name": "Espagne"
+    },
+    "city": "ALGESIRAS",
+    "address": "Avda Villanueva n°7, Edificio Anglo-Hispano CP 11207 - ALGECIRAS (CADIX)",
+    "phones": [
+      {
+        "raw": "+(34) 956 66 18 03 / 08 96",
+        "e164": null
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A ALGESIRAS"
+    ],
+    "quality_flags": [
+      "ambiguous-phone"
+    ]
+  },
+  {
+    "id": "es-almeria",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A ALMERIA"
+    },
+    "country": {
+      "code": "ES",
+      "name": "Espagne"
+    },
+    "city": "ALMERIA",
+    "address": "AVENIDA. MEDITERRANEO ESQUINA SEIRRA ALHAMILLA ED.\"PALMERA\" N°178-3A PLANTA (CORTIJO GRANDE) C.P 04007 -ALMERIA - ESPAGNE",
+    "phones": [
+      {
+        "raw": "+(34) 950 206 986/950 150 911",
+        "e164": null
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A ALMERIA"
+    ],
+    "quality_flags": [
+      "ambiguous-phone"
+    ]
+  },
+  {
+    "id": "es-barcelone",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A BARCELONE"
+    },
+    "country": {
+      "code": "ES",
+      "name": "Espagne"
+    },
+    "city": "BARCELONE",
+    "address": "Carrer Pujades 63 08005 Barcelone",
+    "phones": [
+      {
+        "raw": "+(34) 93 289 25 30",
+        "e164": "+34932892530"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A BARCELONE"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "es-bilbao",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A BILBAO"
+    },
+    "country": {
+      "code": "ES",
+      "name": "Espagne"
+    },
+    "city": "BILBAO",
+    "address": "Gran Via 70-72 bilbao 48011 Vizcaya",
+    "phones": [
+      {
+        "raw": "+(34) 946 072 187",
+        "e164": "+34946072187"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A BILBAO"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "es-girona",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A GIRONA"
+    },
+    "country": {
+      "code": "ES",
+      "name": "Espagne"
+    },
+    "city": "GIRONA",
+    "address": "Calle La Creu 9-11 Girona, 17002",
+    "phones": [
+      {
+        "raw": "+ 34 972 64 83 99",
+        "e164": "+34972648399"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A GIRONA"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "es-las-palmas",
+    "name": {
+      "fr": "CONSULAT GÉNÉRAL DU ROYAUME DU MAROC A LAS PALMAS"
+    },
+    "country": {
+      "code": "ES",
+      "name": "Espagne"
+    },
+    "city": "LAS PALMAS",
+    "address": "C/ León y Castillo 92-94 35004 Las Palmas de Gran Canaria",
+    "phones": [
+      {
+        "raw": "+(34) 928 26 28 59",
+        "e164": "+34928262859"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GÉNÉRAL DU ROYAUME DU MAROC A LAS PALMAS"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "es-madrid",
+    "name": {
+      "fr": "CONSULAT GÉNÉRAL DU ROYAUME DU MAROC A MADRID"
+    },
+    "country": {
+      "code": "ES",
+      "name": "Espagne"
+    },
+    "city": "MADRID",
+    "address": "Calle Leizaran N°31 CP 28002 MADRID",
+    "phones": [
+      {
+        "raw": "+(34) 912 10 93 00",
+        "e164": "+34912109300"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GÉNÉRAL DU ROYAUME DU MAROC A MADRID"
+    ],
+    "quality_flags": [
+      "source-classification-inconsistent"
+    ]
+  },
+  {
+    "id": "es-mallorca",
+    "name": {
+      "fr": "CONSULAT GÉNÉRAL DU ROYAUME DU MAROC A MALLORCA"
+    },
+    "country": {
+      "code": "ES",
+      "name": "Espagne"
+    },
+    "city": "MALLORCA",
+    "address": "C/Anselm Turmeda, Nº 7 07010-Palma de Mallorca-Islas Baleares-España",
+    "phones": [
+      {
+        "raw": "+34 971 20 16 12",
+        "e164": "+34971201612"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GÉNÉRAL DU ROYAUME DU MAROC A MALLORCA"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "es-murcie",
+    "name": {
+      "fr": "CONSULAT GÉNÉRAL DU ROYAUME DU MAROC A MURCIE"
+    },
+    "country": {
+      "code": "ES",
+      "name": "Espagne"
+    },
+    "city": "MURCIE",
+    "address": "Calle Pintor Aurelio Pérez 12,30006Murcia",
+    "phones": [
+      {
+        "raw": "00968 95 35 65",
+        "e164": null
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GÉNÉRAL DU ROYAUME DU MAROC A MURCIE"
+    ],
+    "quality_flags": [
+      "phone-country-mismatch"
+    ]
+  },
+  {
+    "id": "es-seville",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A SEVILLE"
+    },
+    "country": {
+      "code": "ES",
+      "name": "Espagne"
+    },
+    "city": "SEVILLE",
+    "address": "CAMINO DE LOS DESCUBRIMIENTOS,N°4 PABELLON DE LA NATURALEZA ISLA DE LA CARTUJA, C.P. 41092 - SEVILLA",
+    "phones": [
+      {
+        "raw": "+(34) 955 22 84 04",
+        "e164": "+34955228404"
+      }
+    ],
+    "website": "http://www.consulatmarocseville.es/",
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A SEVILLE"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "es-tarragone",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A TARRAGONE"
+    },
+    "country": {
+      "code": "ES",
+      "name": "Espagne"
+    },
+    "city": "TARRAGONE",
+    "address": "Avenida Paissons catalans,1 CP:43007 Sant père sant Pau",
+    "phones": [
+      {
+        "raw": "+(34) 977557171 0034977908896",
+        "e164": null
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A TARRAGONE"
+    ],
+    "quality_flags": [
+      "ambiguous-phone"
+    ]
+  },
+  {
+    "id": "es-valence",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A VALENCE"
+    },
+    "country": {
+      "code": "ES",
+      "name": "Espagne"
+    },
+    "city": "VALENCE",
+    "address": "N°38 Calle Jorge Comin, 46015 Valence, Espagne",
+    "phones": [
+      {
+        "raw": "+(34) 963 686 656",
+        "e164": "+34963686656"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A VALENCE"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "fr-bastia",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A BASTIA"
+    },
+    "country": {
+      "code": "FR",
+      "name": "France"
+    },
+    "city": "BASTIA",
+    "address": "ROUTE NATIONALE 193 CASATORRA 20620 BIGUGLIA BASTIA",
+    "phones": [
+      {
+        "raw": "+(33) 4 95 30 10 70",
+        "e164": "+33495301070"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A BASTIA"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "fr-bordeaux",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A BORDEAUX"
+    },
+    "country": {
+      "code": "FR",
+      "name": "France"
+    },
+    "city": "BORDEAUX",
+    "address": "12, RUE MEXICO 33200 BORDEAUX CAUDERAN",
+    "phones": [
+      {
+        "raw": "+(33) 5 56 42 02 21",
+        "e164": "+33556420221"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A BORDEAUX"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "fr-colombes",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A COLOMBES"
+    },
+    "country": {
+      "code": "FR",
+      "name": "France"
+    },
+    "city": "COLOMBES",
+    "address": "89,Rue des Gros Grès - 92700 - Colombes",
+    "phones": [
+      {
+        "raw": "+(33) 1 56 83 80 20",
+        "e164": "+33156838020"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A COLOMBES"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "fr-dijon",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A DIJON"
+    },
+    "country": {
+      "code": "FR",
+      "name": "France"
+    },
+    "city": "DIJON",
+    "address": "26,RUE LOUIS DE BROGLIE - 21000 DIJON",
+    "phones": [
+      {
+        "raw": "+(33) 3 80 56 64 23",
+        "e164": "+33380566423"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A DIJON"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "fr-lille",
+    "name": {
+      "fr": "CONSULAT GÉNÉRAL DU ROYAUME DU MAROC A LILLE"
+    },
+    "country": {
+      "code": "FR",
+      "name": "France"
+    },
+    "city": "LILLE",
+    "address": "20 RUE DE BOURGOGNE 59000 LILLE",
+    "phones": [
+      {
+        "raw": "+(33) 3 20 54 90 28",
+        "e164": "+33320549028"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GÉNÉRAL DU ROYAUME DU MAROC A LILLE"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "fr-lyon",
+    "name": {
+      "fr": "CONSULAT GÉNÉRAL DU ROYAUME DU MAROC A LYON"
+    },
+    "country": {
+      "code": "FR",
+      "name": "France"
+    },
+    "city": "LYON",
+    "address": "2-4 rue Carry,69003 Lyon 3",
+    "phones": [
+      {
+        "raw": "+(33) 4 72 36 06 17",
+        "e164": "+33472360617"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GÉNÉRAL DU ROYAUME DU MAROC A LYON"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "fr-marseille",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A MARSEILLE"
+    },
+    "country": {
+      "code": "FR",
+      "name": "France"
+    },
+    "city": "MARSEILLE",
+    "address": "22, ALLEES LEON GAMBETTA 13001 MARSEILLE",
+    "phones": [
+      {
+        "raw": "+(33) 4 91 50 02 96",
+        "e164": "+33491500296"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A MARSEILLE"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "fr-montpellier",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A MONTPELLIER"
+    },
+    "country": {
+      "code": "FR",
+      "name": "France"
+    },
+    "city": "MONTPELLIER",
+    "address": "16 RUE REMY BELLEAU BP 31007 34006 Montpellier cedex 01 MONTPELLIER",
+    "phones": [
+      {
+        "raw": "+(33) 4 67 06 88 31",
+        "e164": "+33467068831"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A MONTPELLIER"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "fr-orleans",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A ORLEANS"
+    },
+    "country": {
+      "code": "FR",
+      "name": "France"
+    },
+    "city": "ORLEANS",
+    "address": "6, AVENUE CLAUDE GUILLEMIN 45100",
+    "phones": [
+      {
+        "raw": "+ (33) 2 38 24 92 31",
+        "e164": "+33238249231"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A ORLEANS"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "fr-orly",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A ORLY"
+    },
+    "country": {
+      "code": "FR",
+      "name": "France"
+    },
+    "city": "ORLY",
+    "address": "95/97, avenue de la victoire 94310,orly-ville",
+    "phones": [
+      {
+        "raw": "+(33) 1 48 53 63 85",
+        "e164": "+33148536385"
+      }
+    ],
+    "website": "http://www.consulat.ma/orly",
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A ORLY"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "fr-paris",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A PARIS"
+    },
+    "country": {
+      "code": "FR",
+      "name": "France"
+    },
+    "city": "PARIS",
+    "address": "12 RUE DE LA SAIDA 75015 PARIS",
+    "phones": [
+      {
+        "raw": "+(33) 1 56 56 72 01",
+        "e164": "+33156567201"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A PARIS"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "fr-pontoise",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A PONTOISE"
+    },
+    "country": {
+      "code": "FR",
+      "name": "France"
+    },
+    "city": "PONTOISE",
+    "address": "7 Rue Thiers 95300 Pontoise, France",
+    "phones": [
+      {
+        "raw": "+(33) 1 30 30 32 26",
+        "e164": "+33130303226"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A PONTOISE"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "fr-rennes",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A RENNES"
+    },
+    "country": {
+      "code": "FR",
+      "name": "France"
+    },
+    "city": "RENNES",
+    "address": "19,BD DE SEVIGNE 35700 RENNES",
+    "phones": [
+      {
+        "raw": "+(33) 2 99 27 54 00/01",
+        "e164": null
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A RENNES"
+    ],
+    "quality_flags": [
+      "ambiguous-phone",
+      "invalid-website-excluded"
+    ]
+  },
+  {
+    "id": "fr-strasbourg",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A STRASBOURG"
+    },
+    "country": {
+      "code": "FR",
+      "name": "France"
+    },
+    "city": "STRASBOURG",
+    "address": "55,RUE du Conseil des Quinze - 67000 STRASBOURG",
+    "phones": [
+      {
+        "raw": "+(33) 3 88 35 23 09",
+        "e164": "+33388352309"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A STRASBOURG"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "fr-toulouse",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A TOULOUSE"
+    },
+    "country": {
+      "code": "FR",
+      "name": "France"
+    },
+    "city": "TOULOUSE",
+    "address": "5, Avenue Camille Pujol 31500 Toulouse",
+    "phones": [
+      {
+        "raw": "+(33) 5 62 47 10 47",
+        "e164": "+33562471047"
+      }
+    ],
+    "website": "http://www.consulat.ma/",
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A TOULOUSE"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "fr-villemomble",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A VILLEMOMBLE"
+    },
+    "country": {
+      "code": "FR",
+      "name": "France"
+    },
+    "city": "VILLEMOMBLE",
+    "address": "40,AVENUE DU RAINCY 93250 VILLEMOMBLE",
+    "phones": [
+      {
+        "raw": "+(33) 1 48 94 99 31",
+        "e164": "+33148949931"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A VILLEMOMBLE"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "gb-londres",
+    "name": {
+      "fr": "CONSULAT GÉNÉRAL DU ROYAUME DU MAROC A LONDRES"
+    },
+    "country": {
+      "code": "GB",
+      "name": "Royaume-Uni"
+    },
+    "city": "LONDRES",
+    "address": "97/99 DIAMOND HOUSE PRAED STREET PADDINGTON LONDON W2 1NT",
+    "phones": [
+      {
+        "raw": "+(44) 207 724 0624",
+        "e164": "+442077240624"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GÉNÉRAL DU ROYAUME DU MAROC A LONDRES"
+    ],
+    "quality_flags": [
+      "source-classification-inconsistent"
+    ]
+  },
+  {
+    "id": "it-bologne",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A BOLOGNE"
+    },
+    "country": {
+      "code": "IT",
+      "name": "Italie"
+    },
+    "city": "BOLOGNE",
+    "address": "Via Caduti Di Amola, N°30 BORGO PANIGALE - 40132 - Bologne,Italie",
+    "phones": [
+      {
+        "raw": "+(39) 051 53 11 99 /05153 87 63",
+        "e164": null
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A BOLOGNE"
+    ],
+    "quality_flags": [
+      "ambiguous-phone",
+      "mobile-contact-excluded"
+    ]
+  },
+  {
+    "id": "it-milan",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A MILAN"
+    },
+    "country": {
+      "code": "IT",
+      "name": "Italie"
+    },
+    "city": "MILAN",
+    "address": "VIA ADELE MARTIGNONI N° 10 - 20124 MILANO",
+    "phones": [
+      {
+        "raw": "+(39) 02 66 80 69 19",
+        "e164": "+390266806919"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A MILAN"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "it-naples",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A NAPLES"
+    },
+    "country": {
+      "code": "IT",
+      "name": "Italie"
+    },
+    "city": "NAPLES",
+    "address": "9.VIA Amerigo vespucci NAPOLI",
+    "phones": [
+      {
+        "raw": "0815511534",
+        "e164": "+390815511534"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A NAPLES"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "it-palerme",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A PALERME"
+    },
+    "country": {
+      "code": "IT",
+      "name": "Italie"
+    },
+    "city": "PALERME",
+    "address": "VIA NUNZIO MORELLO 2-4, - 90144 - PALERME",
+    "phones": [
+      {
+        "raw": "+(39) 09 16 88 24 86 / 60 23",
+        "e164": null
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A PALERME"
+    ],
+    "quality_flags": [
+      "ambiguous-phone"
+    ]
+  },
+  {
+    "id": "it-rome",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A ROME"
+    },
+    "country": {
+      "code": "IT",
+      "name": "Italie"
+    },
+    "city": "ROME",
+    "address": "Viale Carnaro,11-00141 Rome.",
+    "phones": [
+      {
+        "raw": "(+39)0645674180 + 39 06 89 71 15 27",
+        "e164": null
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A ROME"
+    ],
+    "quality_flags": [
+      "ambiguous-phone",
+      "source-classification-inconsistent"
+    ]
+  },
+  {
+    "id": "it-turin",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A TURIN"
+    },
+    "country": {
+      "code": "IT",
+      "name": "Italie"
+    },
+    "city": "TURIN",
+    "address": "27,VIA BELFIORE 10125 TORINO - ITALIE",
+    "phones": [
+      {
+        "raw": "+(39) 011 650 64 82",
+        "e164": "+390116506482"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A TURIN"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "it-verone",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A VERONE"
+    },
+    "country": {
+      "code": "IT",
+      "name": "Italie"
+    },
+    "city": "VERONE",
+    "address": "N°49 Via TORRICELLI VERONA c.a.p 37136",
+    "phones": [
+      {
+        "raw": "+(39) 045 862 08 58",
+        "e164": "+390458620858"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A VERONE"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "mr-nouadhibou",
+    "name": {
+      "fr": "CONSULAT GÉNÉRAL DU ROYAUME DU MAROC A NOUADHIBOU"
+    },
+    "country": {
+      "code": "MR",
+      "name": "Mauritanie"
+    },
+    "city": "NOUADHIBOU",
+    "address": "MARITIME BP. 233 NOUADHIBOU MAURITANIE",
+    "phones": [
+      {
+        "raw": "+(222) 45 74 50 84",
+        "e164": "+22245745084"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GÉNÉRAL DU ROYAUME DU MAROC A NOUADHIBOU"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "nl-amsterdam",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A AMSTERDAM"
+    },
+    "country": {
+      "code": "NL",
+      "name": "Pays-Bas"
+    },
+    "city": "AMSTERDAM",
+    "address": "vondel straat 65/67 1054 GK - Amsterdam",
+    "phones": [
+      {
+        "raw": "+(31) 20 489 14 96 / 20 412 44 32",
+        "e164": null
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A AMSTERDAM"
+    ],
+    "quality_flags": [
+      "ambiguous-phone"
+    ]
+  },
+  {
+    "id": "nl-den-bosch",
+    "name": {
+      "fr": "CONSULAT GÉNÉRAL DU ROYAUME DU MAROC A DEN BOSCH"
+    },
+    "country": {
+      "code": "NL",
+      "name": "Pays-Bas"
+    },
+    "city": "DEN BOSCH",
+    "address": "LARENWEG - 52 5234 KA - DEN BOSCH",
+    "phones": [
+      {
+        "raw": "+31.73.614.1299",
+        "e164": "+31736141299"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GÉNÉRAL DU ROYAUME DU MAROC A DEN BOSCH",
+      "CONSULAT GENERAL DU ROYAUME A DENBOCH"
+    ],
+    "quality_flags": [
+      "duplicate-merged"
+    ]
+  },
+  {
+    "id": "nl-rotterdam",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A ROTTERDAM"
+    },
+    "country": {
+      "code": "NL",
+      "name": "Pays-Bas"
+    },
+    "city": "ROTTERDAM",
+    "address": "CALANDSTRAAT, 11 3016 CA ROTTERDAM",
+    "phones": [
+      {
+        "raw": "+(31)10 43 66 177 033 104 366 040",
+        "e164": null
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A ROTTERDAM"
+    ],
+    "quality_flags": [
+      "ambiguous-phone"
+    ]
+  },
+  {
+    "id": "nl-utrecht",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A UTRECHT"
+    },
+    "country": {
+      "code": "NL",
+      "name": "Pays-Bas"
+    },
+    "city": "UTRECHT",
+    "address": "KANAALWEG 95 D/E 3533 HH UTRECHT Pays-Bas",
+    "phones": [
+      {
+        "raw": "+ (31) 30 29 34 325",
+        "e164": "+31302934325"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A UTRECHT"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "sa-jeddah",
+    "name": {
+      "fr": "CONSULAT GÉNÉRAL DU ROYAUME DU MAROC A JEDDAH"
+    },
+    "country": {
+      "code": "SA",
+      "name": "Arabie saoudite"
+    },
+    "city": "JEDDAH",
+    "address": "21 Rue Jamal Eddine Al Aleef Hay Al Andalous II - Djeddah",
+    "phones": [
+      {
+        "raw": "+(966) 12 66 38 766",
+        "e164": "+966126638766"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GÉNÉRAL DU ROYAUME DU MAROC A JEDDAH"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "tn-tunis",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A TUNIS"
+    },
+    "country": {
+      "code": "TN",
+      "name": "Tunisie"
+    },
+    "city": "TUNIS",
+    "address": "14,IMPASSE AZZOUZ REBAI,CENTRE INES MANAR 2 - 2092 TUNIS",
+    "phones": [
+      {
+        "raw": "+(216) 70 241 391",
+        "e164": "+21670241391"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A TUNIS"
+    ],
+    "quality_flags": []
+  },
+  {
+    "id": "tr-istanbul",
+    "name": {
+      "fr": "CONSULAT GENERAL DU ROYAUME DU MAROC A ISTANBUL"
+    },
+    "country": {
+      "code": "TR",
+      "name": "Turquie"
+    },
+    "city": "ISTANBUL",
+    "address": "Levazim Mahallesi Korukent Sitesi Beyaz Kosk Aprt N° 46/2,Besiktas,Istanbul-Turquie 34340",
+    "phones": [
+      {
+        "raw": "+(90) 212 258 15 97/98",
+        "e164": null
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GENERAL DU ROYAUME DU MAROC A ISTANBUL"
+    ],
+    "quality_flags": [
+      "ambiguous-phone"
+    ]
+  },
+  {
+    "id": "us-new-york",
+    "name": {
+      "fr": "CONSULAT GÉNÉRAL DU ROYAUME DU MAROC A NEW YORK"
+    },
+    "country": {
+      "code": "US",
+      "name": "États-Unis"
+    },
+    "city": "NEW YORK",
+    "address": "10 EAST 40TH STREET 24TH FLOOR NEW YORK, NY 10016",
+    "phones": [
+      {
+        "raw": "+(1) 2127582625",
+        "e164": "+12127582625"
+      }
+    ],
+    "website": null,
+    "source_names": [
+      "CONSULAT GÉNÉRAL DU ROYAUME DU MAROC A NEW YORK"
+    ],
+    "quality_flags": []
+  }
+]

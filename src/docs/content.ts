@@ -117,6 +117,10 @@ export const groups = {
     label: ["Ports et phares", "Ports & lighthouses", "الموانئ والمنارات"],
     note: ["Listes du ministère de l’Équipement et de l’Eau. Les noms et champs sources sont conservés en français.", "Ministry of Equipment and Water lists. Source names and fields remain in French.", "قوائم وزارة التجهيز والماء. تُحفظ أسماء المصدر وحقوله باللغة الفرنسية."],
   },
+  Consulates: {
+    label: ["Consulats", "Consulates", "القنصليات"],
+    note: ["Annuaire du 31 octobre 2026 : 56 consulats dans 15 pays. Coordonnées non vérifiées en temps réel ; autorisation de redistribution non obtenue.", "Directory captured on 31 October 2026: 56 consulates in 15 countries. Contacts are not verified in real time; redistribution permission has not been obtained.", "دليل جُمع في 31 أكتوبر 2026: 56 قنصلية في 15 بلداً. معلومات الاتصال غير متحقق منها آنياً، ولم تُحصل موافقة إعادة النشر."],
+  },
   Water: {
     label: ["Barrages", "Dams", "السدود"],
     note: ["Observations historiques partielles, pas de données en temps réel ni d’interpolation. date_basis distingue la date source de la date affichée par le tableau de bord. Volume : millions de m³ ; remplissage : %.", "Partial historical observations, no real-time data or interpolation. date_basis distinguishes source dates from dashboard headline dates. Volume: million m³; filling rate: %.", "رصد تاريخي جزئي، دون بيانات آنية أو استيفاء بين القياسات. يميّز date_basis تاريخ المصدر عن تاريخ عنوان لوحة المعلومات. الحجم: مليون م³؛ نسبة الملء: %."],
@@ -137,6 +141,8 @@ export const groups = {
 
 /** Explicit translations keep the reference concise without translating identifiers or source data. */
 export const titles: Record<string, Translation> = {
+  "/consulates": ["Lister les consulats marocains", "List Moroccan consulates", "قائمة القنصليات المغربية"],
+  "/consulates/{id}": ["Une représentation consulaire", "Get a consulate", "بيانات قنصلية"],
   "/status": ["État du service", "Service status", "حالة الخدمة"],
   "/regions": ["Lister les régions", "List regions", "قائمة الجهات"],
   "/regions/{code}": ["Une région", "Get a region", "بيانات جهة"],
@@ -210,6 +216,8 @@ const schools: readonly [path: string, label: Translation, example: string][] = 
 ];
 
 export const examples: Record<string, Record<string, string>> = {
+  "/consulates": { country: "FR" },
+  "/consulates/{id}": { id: "fr-paris" },
   "/regions/{code}": { code: "rabat-sale-kenitra" },
   "/provinces/{code}": { code: "rabat" },
   "/prefectures-of-arrondissements/{code}": { code: "casablanca--prefecture-of-arrondissements--ain-chock" },
@@ -250,6 +258,7 @@ for (const [path, label, example] of schools) {
 }
 
 export const parameterHelp: Record<string, Translation> = {
+  country: ["Code du pays d’accueil à deux lettres, par exemple FR ; insensible à la casse.", "Two-letter host-country code, such as FR; case-insensitive.", "رمز بلد الاستضافة من حرفين، مثل FR، دون تمييز حالة الأحرف."],
   limit: ["Résultats par page. 100 par défaut, 500 maximum.", "Results per page. Default 100, maximum 500.", "عدد النتائج في الصفحة. 100 افتراضياً، و500 كحد أقصى."],
   offset: ["Résultats à ignorer après filtrage. Commence à 0.", "Matching results to skip. Starts at 0.", "عدد النتائج المطابقة المراد تجاوزها. يبدأ من 0."],
   q: ["Texte à rechercher, au moins 2 caractères.", "Search text, at least 2 characters.", "نص البحث، حرفان على الأقل."],
