@@ -117,6 +117,10 @@ export const groups = {
     label: ["Ports et phares", "Ports & lighthouses", "الموانئ والمنارات"],
     note: ["Listes du ministère de l’Équipement et de l’Eau. Les noms et champs sources sont conservés en français.", "Ministry of Equipment and Water lists. Source names and fields remain in French.", "قوائم وزارة التجهيز والماء. تُحفظ أسماء المصدر وحقوله باللغة الفرنسية."],
   },
+  Insurance: {
+    label: ["Assurances", "Insurance", "التأمين"],
+    note: ["Snapshot de l’annuaire ACAPS : agents, courtiers et bureaux de gestion directe. Consultez la couverture et la date de collecte ; aucun agrément n’est vérifié en temps réel. Autorisation de redistribution non obtenue.", "ACAPS directory snapshot: agents, brokers and direct management offices. Check coverage and retrieval date; current authorization is not verified. Redistribution permission has not been obtained.", "نسخة من دليل ACAPS: الوكلاء والسماسرة ومكاتب التدبير المباشر. راجع التغطية وتاريخ الجمع؛ لا يتم التحقق من الاعتماد آنياً. لم تُحصل موافقة إعادة النشر."],
+  },
   Consulates: {
     label: ["Consulats", "Consulates", "القنصليات"],
     note: ["Annuaire du 31 octobre 2026 : 56 consulats dans 15 pays. Coordonnées non vérifiées en temps réel ; autorisation de redistribution non obtenue.", "Directory captured on 31 October 2026: 56 consulates in 15 countries. Contacts are not verified in real time; redistribution permission has not been obtained.", "دليل جُمع في 31 أكتوبر 2026: 56 قنصلية في 15 بلداً. معلومات الاتصال غير متحقق منها آنياً، ولم تُحصل موافقة إعادة النشر."],
@@ -141,6 +145,8 @@ export const groups = {
 
 /** Explicit translations keep the reference concise without translating identifiers or source data. */
 export const titles: Record<string, Translation> = {
+  "/insurance/intermediaries": ["Chercher un intermédiaire d’assurance", "Search insurance intermediaries", "البحث عن وسطاء التأمين"],
+  "/insurance/intermediaries/{code}": ["Fiches par code ACAPS", "Records by ACAPS code", "السجلات حسب رمز ACAPS"],
   "/consulates": ["Lister les consulats marocains", "List Moroccan consulates", "قائمة القنصليات المغربية"],
   "/consulates/{id}": ["Une représentation consulaire", "Get a consulate", "بيانات قنصلية"],
   "/status": ["État du service", "Service status", "حالة الخدمة"],
@@ -216,6 +222,8 @@ const schools: readonly [path: string, label: Translation, example: string][] = 
 ];
 
 export const examples: Record<string, Record<string, string>> = {
+  "/insurance/intermediaries": { city: "Fes" },
+  "/insurance/intermediaries/{code}": { code: "A3420" },
   "/consulates": { country: "FR" },
   "/consulates/{id}": { id: "fr-paris" },
   "/regions/{code}": { code: "rabat-sale-kenitra" },

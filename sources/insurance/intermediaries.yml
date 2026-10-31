@@ -1,0 +1,15 @@
+id: acaps-insurance-intermediaries
+title: Liste des intermédiaires d’assurances
+producer: ACAPS
+source_url: https://acaps.ma/fr/l-autorite/decouvrir-l-autorite/secteurs-controles/liste-des-intermediaires-d-assurances
+source_license: null
+terms_url: https://acaps.ma/fr/mentions-legales
+retrieved_at: '2026-10-31'
+source_updated_at: null
+update_frequency: unknown
+redistribution_review: permission-not-obtained
+source_contains_personal_data: true
+retained_fields: ACAPS code, business name or professional representative, category, insurer, locality
+transformation_version: '1.0.0'
+manifest: data/insurance/sources.json
+dataset: data/insurance/intermediaries.json
