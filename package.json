@@ -1,6 +1,6 @@
 {
   "name": "moroccoapi",
-  "version": "2.4.2",
+  "version": "2.5.0",
   "private": true,
   "description": "A community API for reliable access to Morocco's public open data.",
   "license": "Apache-2.0",
