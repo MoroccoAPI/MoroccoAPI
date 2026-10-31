@@ -1,0 +1,44 @@
+{
+  "id": "acaps-insurance-intermediaries",
+  "title": "Liste des intermédiaires d’assurances",
+  "producer": "Autorité de Contrôle des Assurances et de la Prévoyance Sociale (ACAPS)",
+  "source_url": "https://acaps.ma/fr/l-autorite/decouvrir-l-autorite/secteurs-controles/liste-des-intermediaires-d-assurances",
+  "source_license": null,
+  "terms_url": "https://acaps.ma/fr/mentions-legales",
+  "redistribution_status": "permission-not-obtained",
+  "retrieved_at": "2026-10-31",
+  "source_updated_at": null,
+  "transformation_version": "1.0.0",
+  "acquisition": "Public HTML directory tables retrieved from acaps.ma; general pagination cross-checked against the published city filters. The Excel download link returned HTTP 404.",
+  "source_record_count": 3614,
+  "captured_source_record_count": 3614,
+  "record_count": 3607,
+  "unique_code_count": 3606,
+  "coverage_complete": true,
+  "capture_checks": {
+    "general_pages": 181,
+    "city_filters_checked": 730,
+    "city_filters_available": 730,
+    "city_reported_total": 3614,
+    "supplemental_captures": 151,
+    "city_gaps": [],
+    "repeated_rows_removed": 6400,
+    "case_variants_merged": 7
+  },
+  "transformations": [
+    "Decode HTML entities and trim/collapse display whitespace; retain blank names, insurers and localities as null.",
+    "Map AGENT to agent, COURTIER to broker and BUREAU DE GESTION DIRECTE to direct-office.",
+    "Lowercase insurer labels to merge case-only source variations. Preserve ACAPS codes, names and locality labels.",
+    "Merge identical five-field records and sort by code and field values for stable pagination. Retain conflicting records sharing an ACAPS code."
+  ],
+  "records_sha256": "b44eac537240c4c9b6649418c55347e31d7f7e3557d9dfb4776b3d1ccf7023e9",
+  "limitations": [
+    "No open license identified. ACAPS legal terms restrict reproduction without authorization; redistribution permission has not been obtained.",
+    "A dated directory snapshot, not a real-time authorization check. Absence does not establish that an intermediary is unauthorized.",
+    "Source update frequency and last modification date are not documented on the directory page.",
+    "Includes agents, brokers and direct management offices. Business names or professional representatives may identify individuals.",
+    "ACAPS codes are not unique in the source: COU5081-00000 appears with different locality and insurer values. Code lookup returns every matching record.",
+    "Source locality spelling, encoding issues and missing fields are preserved. City search matches text, not verified administrative boundaries.",
+    "Only the five directory columns are retained; no addresses, personal contact details or current authorization status are inferred."
+  ]
+}

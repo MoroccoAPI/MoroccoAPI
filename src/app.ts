@@ -27,6 +27,7 @@ import { museums } from "./museums/routes.js";
 import { maritime } from "./maritime/routes.js";
 import { dams } from "./dams/routes.js";
 import { consulates } from "./consulates/routes.js";
+import { insurance } from "./insurance/routes.js";
 import { documentation } from "./docs/routes.js";
 
 const publicCorsHeaders = {
@@ -126,6 +127,7 @@ export async function buildApp(
       },
       tags: [
         { name: "System", description: "Service health and status" },
+        { name: "Insurance", description: "ACAPS insurance intermediary directory snapshot with provenance and coverage metadata" },
         { name: "Consulates", description: "Moroccan consulate directory snapshot with provenance and quality metadata" },
         {
           name: "Administrative geography",
@@ -240,6 +242,7 @@ export async function buildApp(
   await app.register(worldBank);
   await app.register(dams);
   await app.register(consulates);
+  await app.register(insurance);
 
   return app;
 }

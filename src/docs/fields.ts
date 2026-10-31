@@ -318,6 +318,22 @@ const consulateFields: Record<string, Translation> = {
 
 export function fieldMeaning(key: string, path: string, endpoint: Endpoint, language: Language): string | undefined {
   const t = (value: Translation) => translate(value, language);
+  if (endpoint.group === "Insurance") {
+    const meanings: Record<string, Translation> = {
+      acaps_code: ["Code ACAPS source, avec zéros et suffixes conservés. Plusieurs fiches peuvent partager ce code.", "Source ACAPS code, preserving zeros and branch suffixes. Multiple records may share a code.", "رمز ACAPS من المصدر مع الاحتفاظ بالأصفار واللواحق. قد تشترك عدة سجلات في رمز واحد."],
+      name: ["Raison sociale ou représentant professionnel ; peut identifier une personne. null si absent.", "Business name or professional representative; may identify a person. Null when absent.", "الاسم التجاري أو الممثل المهني؛ قد يحدد هوية شخص. null عند غيابه."],
+      category: ["agent : agent ; broker : courtier ; direct-office : bureau de gestion directe.", "agent: agent; broker: broker; direct-office: direct management office.", "agent: وكيل؛ broker: سمسار؛ direct-office: مكتب تدبير مباشر."],
+      insurer: ["Mandante indiquée par la source ; null si absente. Ne prouve pas l’exclusivité.", "Mandating insurer listed by the source; null when absent. Does not establish exclusivity.", "شركة التأمين الموكلة في المصدر؛ null عند غيابها. لا يثبت الحصرية."],
+      city: ["Libellé de localité conservé depuis la source ; peut inclure un quartier ou une ville de rattachement.", "Locality label retained from the source; may include a district or parent city.", "اسم المنطقة كما ورد في المصدر؛ قد يتضمن حياً أو مدينة تابعة."],
+      records: ["Nombre de fiches distinctes dans le snapshot, avant filtrage.", "Number of distinct records in the snapshot before filtering.", "عدد السجلات المختلفة في النسخة قبل التصفية."],
+      complete: ["Indique si la collecte couvre toutes les lignes annoncées par l’annuaire ; ne garantit pas l’exhaustivité du marché.", "Whether the capture covers all rows reported by the directory; does not guarantee complete market coverage.", "هل يشمل الجمع جميع السجلات المعلنة في الدليل؛ لا يضمن شمولية تغطية السوق."],
+      license: ["null : aucune licence ouverte identifiée pour cet annuaire ACAPS.", "null: no open license identified for this ACAPS directory.", "null: لم يتم تحديد رخصة مفتوحة لدليل ACAPS هذا."],
+      terms_url: ["Mentions légales du site ACAPS.", "Legal terms of the ACAPS website.", "الشروط القانونية لموقع ACAPS."],
+      redistribution_status: ["permission-not-obtained : autorisation de redistribution non obtenue.", "permission-not-obtained: redistribution permission has not been obtained.", "permission-not-obtained: لم تُحصل موافقة إعادة النشر."],
+    };
+    const meaning = meanings[key];
+    if (!path.startsWith("error.") && meaning) return t(meaning);
+  }
   if (endpoint.group === "Consulates") {
     if (path.endsWith(".country.code")) return t(["Code ISO du pays d’accueil à deux lettres.", "Two-letter ISO host-country code.", "رمز ISO لبلد الاستضافة من حرفين."]);
     if (path.endsWith(".country.name")) return t(["Nom français du pays d’accueil.", "French name of the host country.", "اسم بلد الاستضافة بالفرنسية."]);
