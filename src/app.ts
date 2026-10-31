@@ -26,6 +26,7 @@ import { airports } from "./airports/routes.js";
 import { museums } from "./museums/routes.js";
 import { maritime } from "./maritime/routes.js";
 import { dams } from "./dams/routes.js";
+import { consulates } from "./consulates/routes.js";
 import { documentation } from "./docs/routes.js";
 
 const publicCorsHeaders = {
@@ -125,6 +126,7 @@ export async function buildApp(
       },
       tags: [
         { name: "System", description: "Service health and status" },
+        { name: "Consulates", description: "Moroccan consulate directory snapshot with provenance and quality metadata" },
         {
           name: "Administrative geography",
           description: "Normalized public administrative geography data",
@@ -237,6 +239,7 @@ export async function buildApp(
   await app.register(postal, { geography: geographyData });
   await app.register(worldBank);
   await app.register(dams);
+  await app.register(consulates);
 
   return app;
 }

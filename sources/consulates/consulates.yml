@@ -1,0 +1,23 @@
+id: moroccan-consulates
+title: Annuaire — Missions Diplomatiques et Consulats
+producer: MAECAMRE
+source_url: https://diplomatie.ma/fr/annuaire
+resource_url: https://diplomatie.ma/fr/annuaire
+source_license: null
+terms_url: https://diplomatie.ma/fr/mentions-l%C3%A9gales
+retrieved_at: '2026-10-31'
+source_updated_at: null
+update_frequency: unknown
+redistribution_review: permission-not-obtained
+scope: local implementation requested by the user; not approved for open-data publication
+transformation_version: '1.0.0'
+source_contains_personal_data: true
+retained_fields: institutional contact details only; officials and identified mobile contacts excluded
+capture_method: institutional contact fields extracted from the official ministry directory
+source_panels: 57
+normalized_records: 56
+countries: 15
+manifest: data/consulates/sources.json
+dataset: data/consulates/consulates.json
+related_dataset_url: https://data.gov.ma/data/fr/dataset/reseau-diplomatique-et-consulaire-du-maroc-a-l-etranger
+related_dataset_note: Separate data.gov.ma dataset reviewed for comparison; it was not used to produce this snapshot.

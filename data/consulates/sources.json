@@ -1,0 +1,30 @@
+{
+  "id": "moroccan-consulates",
+  "title": "Annuaire — Missions Diplomatiques et Consulats",
+  "producer": "Ministère des Affaires Étrangères, de la Coopération Africaine et des Marocains Résidant à l'Étranger (MAECAMRE)",
+  "source_url": "https://diplomatie.ma/fr/annuaire",
+  "source_license": null,
+  "terms_url": "https://diplomatie.ma/fr/mentions-l%C3%A9gales",
+  "redistribution_status": "permission-not-obtained",
+  "retrieved_at": "2026-10-31",
+  "source_updated_at": null,
+  "transformation_version": "1.0.0",
+  "acquisition": "Institutional contact fields extracted from the official ministry directory.",
+  "raw_snapshot_included": false,
+  "raw_record_count": 57,
+  "record_count": 56,
+  "countries": 15,
+  "raw_sha256": "7439db13b460e24c69ba59f230dbe570cea873bdf2451f1804beaec8a4963d67",
+  "records_sha256": "6eb8c3b58aa2473a501d391fc8c5f09af0bde91d630139669f6c03919318ff91",
+  "limitations": [
+    "Snapshot of the French directory; completeness and operational freshness are unverified.",
+    "Public website content has no identified open-data license. Written redistribution permission has not been obtained.",
+    "Officials' names, personal email addresses and identified mobile contacts are excluded.",
+    "Phone values remain as displayed when ambiguous or invalid; e164 is null. Formatting does not prove reachability.",
+    "Missing fields remain null or empty. Email, coordinates and consular jurisdiction are not available in this snapshot.",
+    "Den Bosch duplicate panels are merged. Source classification errors and suspect contacts are flagged.",
+    "Website links are source-provided and have not been independently verified."
+  ],
+  "related_dataset_url": "https://data.gov.ma/data/fr/dataset/reseau-diplomatique-et-consulaire-du-maroc-a-l-etranger",
+  "related_dataset_note": "Separate data.gov.ma dataset reviewed for comparison; it was not used to produce this snapshot."
+}
