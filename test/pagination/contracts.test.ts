@@ -31,6 +31,7 @@ const collectionPaths = [
   "/api/v2/ports", "/api/v2/lighthouses",
   "/api/v2/dams", "/api/v2/dams/{id}/levels",
   "/api/v2/world-bank/indicators", "/api/v2/world-bank/indicators/topics",
+  "/api/v2/prices/cpi", "/api/v2/prices/cpi/products", "/api/v2/prices/cpi/cities",
   "/api/v2/public-service/salaries",
 ];
 
