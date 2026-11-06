@@ -1,0 +1,79 @@
+id: prices-cpi
+title: Morocco consumer price index by city and product, monthly (base 100 = 2017)
+version: 1.0.0
+retrieved_at: 2026-11-06
+license: ODbL-1.0
+license_url: https://opendatacommons.org/licenses/odbl/1-0/
+contains_personal_data: false
+redistribution_review: approved
+review_basis: The data.gov.ma dataset metadata declares license_id odc-odbl. Maintainer approval on issue #59.
+
+sources:
+  - language_fields: [fr]
+    dataset: Indice des prix à la consommation (Mensuel) (Base 100 2017)
+    producer: Haut-Commissariat au Plan (HCP), Division des Indices Statistiques
+    catalog_url: https://data.gov.ma/data/fr/dataset/data_i4166
+    catalog_api_url: https://data.gov.ma/data/api/3/action/package_show?id=data_i4166
+    resource_url: https://data.gov.ma/data/dataset/7582f4fb-f157-414b-814a-4c1b474b8d87/resource/bd692621-d8ba-4463-8d43-e66c3313ae59/download/i_i4166_data.xlsx
+    metadata_resource_url: https://data.gov.ma/data/dataset/7582f4fb-f157-414b-814a-4c1b474b8d87/resource/28d58149-01a1-4aaa-8886-e74ebe91d072/download/i_i4166_metadata.xlsx
+    source_updated_at: 2026-10-30
+    source_license: ODbL-1.0
+    source_license_id: odc-odbl
+    source_file: I_I4166_data.xlsx
+    source_file_format: Office Open XML workbook (.xlsx), one sheet named Data, created 2026-10-30
+    source_file_bytes: 1129742
+    source_file_sha256: 082c44b67815dc5242921d55be7df871b3ac6e57751b43d588315139ce2a8973
+    metadata_file_bytes: 3685
+    metadata_file_sha256: 93c06bf482504b9b51bb116fc33f504d2175a88d4dc5b934a276a6dabb15e0cd
+    definition: L'indice des prix à la consommation (base 100 : 2017) mesure la variation relative des prix à la consommation d'un panier fixe de produits consommés par les ménages marocains.
+    periodicity: Mensuelle
+    unit: Indice
+
+files:
+  - file: data/prices/source/cpi-monthly.json
+    sha256: 5b24dd7fb733c2de1044a35522ebe333ba76528cd24b63efcaad2bdbdaa78b94
+    source_sheet: Data
+    header_rows: 2
+    source_rows: 2746
+    columns: 118
+  - file: data/prices/cpi-mappings.json
+    sha256: 61c1d845cc43557417873c10b0994e1352579fd93837ace1028dd71721ccf183
+    description: Sheet layout, French month abbreviations, product levels by code shape, and the source city labels with their MoroccoAPI codes and regions.
+
+transformations:
+  - Downloaded the official workbook from data.gov.ma, verified its SHA-256, and kept its only sheet (Data) as a JSON array with one entry per source row, including the title and header rows.
+  - Kept every cell exactly as stored in the workbook; empty cells (only in the title row) are null. All 318,304 numeric cells were compared with the text of the sheet XML and match it exactly (one decimal each).
+  - Read the month of each column from its French header label (for example Août-2026) with cpi-mappings.json; the loader checks that the 116 columns are consecutive months, newest first, and publishes them oldest first as YYYY-MM.
+  - Split each product label into its code (in parentheses) and its name, kept verbatim. The level follows the shape of the code (GR, 2, 3 or 4 digits) and the parent is the code one digit shorter (GR for a division); the loader checks that every parent exists one level up.
+  - Mapped the 19 source city labels to MoroccoAPI codes and to the region where each city is located, checked against the administrative geography snapshot. National has no region.
+  - Published index values unchanged. No inflation rate, average or rebased value is computed.
+
+coverage:
+  first_month: 2017-01
+  last_month: 2026-08
+  months: 116
+  cities: 18
+  series_areas: 19
+  products: 148
+  general_index: 1
+  divisions: 12
+  groups: 43
+  classes: 92
+  series: 2744
+  values: 318304
+  missing_values: 0
+
+limitations:
+  - The portal file is updated about one month after HCP's monthly press release; newer months may only be available on hcp.ma as PDF.
+  - Some cities publish fewer products than the national index (Dakhla 130, Béni Mellal 138, Guelmim 139, Tétouan and Laâyoune 140, Al Hoceima 141, Safi and Errachidia 145, Agadir and Meknès 147); absent series are not filled.
+  - Product labels are published as in the source, in French, with its spelling, capitalisation and abbreviations (for example CONFESERIE, RCREATIFS, Collecte des ordures ménagères); they are not corrected or translated.
+  - Codes in the nomenclature are not always contiguous (for example 041, 043, 044, 045 without 042); this follows HCP's adaptation of COICOP.
+  - Each series averages 100 over the twelve months of 2017 to within 0.05, as expected for base 100 = 2017; the small differences come from the one-decimal rounding of the source.
+  - A city's index measures price changes in that city relative to its own 2017 level; it does not compare price levels between cities.
+  - The source follows Morocco's official territorial scope, including Moroccan-administered territory in Western Sahara.
+
+refresh:
+  - Check metadata_modified with the catalog_api_url; download the new I_I4166_data.xlsx and verify its SHA-256 before conversion.
+  - Convert the Data sheet to a JSON array with every row and cell unchanged (empty cells as null), and compare the numeric cells with the sheet XML.
+  - Update cpi-mappings.json only if the layout, month labels or cities change; update the row and column counts there.
+  - Update all checksums, dates and coverage counts in this file and in src/prices/metadata.ts, then run the prices data tests and npm run check; the startup loader rejects a changed layout, a new city, a relabelled product or a non-numeric value.

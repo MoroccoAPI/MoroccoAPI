@@ -1,0 +1,61 @@
+{
+  "sheet": {
+    "description": "Layout of the single Data sheet of HCP's I_I4166_data.xlsx: a title row, a header row with the two label columns followed by one column per month (newest first), then one row per city and product.",
+    "name": "Data",
+    "title": "Indice des prix à la consommation (Mensuel) (Base 100 2017) (Indice)",
+    "label_columns": ["Villes", "Divisions et groupes de produits"],
+    "header_rows": 2,
+    "rows": 2746,
+    "columns": 118
+  },
+  "months": {
+    "description": "French month abbreviations used in the header labels (<abbreviation>-<year>), mapped to the calendar month number.",
+    "entries": [
+      { "label": "Janv", "month": 1 },
+      { "label": "Févr", "month": 2 },
+      { "label": "Mars", "month": 3 },
+      { "label": "Avr", "month": 4 },
+      { "label": "Mai", "month": 5 },
+      { "label": "Juin", "month": 6 },
+      { "label": "Juill", "month": 7 },
+      { "label": "Août", "month": 8 },
+      { "label": "Sept", "month": 9 },
+      { "label": "Oct", "month": 10 },
+      { "label": "Nov", "month": 11 },
+      { "label": "Déc", "month": 12 }
+    ]
+  },
+  "levels": {
+    "description": "Level of a product in HCP's nomenclature, from the shape of the code in parentheses at the start of the source label. A division, group or class belongs to the product whose code is one digit shorter (a division to GR).",
+    "entries": [
+      { "code_pattern": "^GR$", "level": "general" },
+      { "code_pattern": "^[0-9]{2}$", "level": "division" },
+      { "code_pattern": "^[0-9]{3}$", "level": "group" },
+      { "code_pattern": "^[0-9]{4}$", "level": "class" }
+    ]
+  },
+  "cities": {
+    "description": "Source city labels in source order, with the MoroccoAPI code and the region where the city is located. National is the index for Morocco as a whole and has no region.",
+    "entries": [
+      { "source_name": "National", "code": "national", "region_code": null },
+      { "source_name": "Agadir", "code": "agadir", "region_code": "souss-massa" },
+      { "source_name": "Casablanca", "code": "casablanca", "region_code": "casablanca-settat" },
+      { "source_name": "Fès", "code": "fes", "region_code": "fes-meknes" },
+      { "source_name": "Kénitra", "code": "kenitra", "region_code": "rabat-sale-kenitra" },
+      { "source_name": "Marrakech", "code": "marrakech", "region_code": "marrakech-safi" },
+      { "source_name": "Oujda", "code": "oujda", "region_code": "oriental" },
+      { "source_name": "Rabat", "code": "rabat", "region_code": "rabat-sale-kenitra" },
+      { "source_name": "Tétouan", "code": "tetouan", "region_code": "tanger-tetouan-al-hoceima" },
+      { "source_name": "Meknès", "code": "meknes", "region_code": "fes-meknes" },
+      { "source_name": "Tanger", "code": "tanger", "region_code": "tanger-tetouan-al-hoceima" },
+      { "source_name": "Laâyoune", "code": "laayoune", "region_code": "laayoune-sakia-el-hamra" },
+      { "source_name": "Dakhla", "code": "dakhla", "region_code": "dakhla-oued-ed-dahab" },
+      { "source_name": "Guelmim", "code": "guelmim", "region_code": "guelmim-oued-noun" },
+      { "source_name": "Settat", "code": "settat", "region_code": "casablanca-settat" },
+      { "source_name": "Safi", "code": "safi", "region_code": "marrakech-safi" },
+      { "source_name": "Béni Mellal", "code": "beni-mellal", "region_code": "beni-mellal-khenifra" },
+      { "source_name": "Al Hoceima", "code": "al-hoceima", "region_code": "tanger-tetouan-al-hoceima" },
+      { "source_name": "Errachidia", "code": "errachidia", "region_code": "draa-tafilalet" }
+    ]
+  }
+}
