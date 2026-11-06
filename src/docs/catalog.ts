@@ -87,6 +87,11 @@ export function buildCatalog(spec: ApiDocument, language: Language): Endpoint[] 
         if (shortPath.startsWith("/world-bank/") && ["from", "to"].includes(parameter.name)) {
           help += translate([" Année sur 4 chiffres.", " Four-digit year.", " سنة من أربعة أرقام."], language);
         }
+        if (shortPath.startsWith("/prices/")) {
+          if (parameter.name === "city") help = translate(["Code de ville issu de /prices/cpi/cities, ou national. Renseignez city, product ou les deux.", "City code from /prices/cpi/cities, or national. Give city, product or both.", "رمز المدينة من /prices/cpi/cities، أو national. حدّد city أو product أو كليهما."], language);
+          if (parameter.name === "level") help = translate(["Niveau du produit : general, division, group ou class.", "Product level: general, division, group or class.", "مستوى المنتج: general أو division أو group أو class."], language);
+          if (["from", "to"].includes(parameter.name)) help += translate([" Mois au format YYYY-MM.", " Month in YYYY-MM format.", " شهر بصيغة YYYY-MM."], language);
+        }
         const example = examples[shortPath]?.[parameter.name];
         const value = example ?? (parameter.name === "limit" ? "10" : schema.default === undefined ? "" : String(schema.default));
         return { ...parameter, schema, help, value };
