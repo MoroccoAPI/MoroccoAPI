@@ -340,6 +340,30 @@ export function fieldMeaning(key: string, path: string, endpoint: Endpoint, lang
     const consulateMeaning = consulateFields[key];
     if (consulateMeaning) return t(consulateMeaning);
   }
+  if (endpoint.group === "Prices" && !path.startsWith("error.")) {
+    const meanings: Record<string, Translation> = {
+      code: endpoint.shortPath === "/prices/cpi/cities"
+        ? ["Code MoroccoAPI de la ville ; national désigne l’indice pour l’ensemble du Maroc.", "MoroccoAPI city code; national is the index for Morocco as a whole.", "رمز المدينة في MoroccoAPI؛ تعني national الرقم الخاص بالمغرب ككل."]
+        : ["Code produit du HCP : GR pour l’indice général, puis 2, 3 ou 4 chiffres. Conservez-le comme texte pour garder le zéro initial.", "HCP product code: GR for the general index, then 2, 3 or 4 digits. Keep it as text to preserve the leading zero.", "رمز المنتج لدى المندوبية السامية للتخطيط: GR للرقم العام، ثم رقمان أو 3 أو 4 أرقام. احتفظ به كنص للحفاظ على الصفر الأول."],
+      name: endpoint.shortPath === "/prices/cpi/cities"
+        ? ["Nom de la ville publié par le HCP.", "City name as published by HCP.", "اسم المدينة كما نشرته المندوبية السامية للتخطيط."]
+        : ["Libellé du produit publié par le HCP, en français, orthographe et majuscules d’origine.", "Product label as published by HCP, in French, with its original spelling and capitalisation.", "اسم المنتج كما نشرته المندوبية السامية للتخطيط، بالفرنسية وبإملائه الأصلي."],
+      region_code: ["Région où se trouve la ville ; null pour l’indice national.", "Region where the city is located; null for the national index.", "الجهة التي توجد بها المدينة؛ null بالنسبة للرقم الوطني."],
+      product_count: ["Nombre de produits ayant un indice pour cette ville.", "Number of products with an index for this city.", "عدد المنتجات التي لها رقم استدلالي في هذه المدينة."],
+      first_month: ["Premier mois publié, au format YYYY-MM.", "First published month, in YYYY-MM format.", "أول شهر منشور، بصيغة YYYY-MM."],
+      last_month: ["Dernier mois publié, au format YYYY-MM.", "Last published month, in YYYY-MM format.", "آخر شهر منشور، بصيغة YYYY-MM."],
+      level: ["Niveau du produit : general (tous les produits), division, group ou class, du plus large au plus fin.", "Product level: general (all products), division, group or class, from broadest to most detailed.", "مستوى المنتج: general (جميع المنتجات) ثم division ثم group ثم class، من الأشمل إلى الأدق."],
+      parent_code: ["Code du produit du niveau supérieur ; null pour l’indice général.", "Code of the product one level up; null for the general index.", "رمز المنتج في المستوى الأعلى؛ null بالنسبة للرقم العام."],
+      city_count: ["Nombre des 18 villes publiant un indice pour ce produit. L’indice national couvre tous les produits.", "Number of the 18 cities with an index for this product. The national index covers every product.", "عدد المدن الـ18 التي لها رقم استدلالي لهذا المنتج. يشمل الرقم الوطني جميع المنتجات."],
+      city_code: ["Code de la ville, ou national pour l’ensemble du Maroc.", "City code, or national for Morocco as a whole.", "رمز المدينة، أو national للمغرب ككل."],
+      product_code: ["Code produit du HCP, tel que listé par /prices/cpi/products.", "HCP product code, as listed by /prices/cpi/products.", "رمز المنتج لدى المندوبية السامية للتخطيط، كما في /prices/cpi/products."],
+      product_name: ["Libellé du produit publié par le HCP, en français.", "Product label as published by HCP, in French.", "اسم المنتج كما نشرته المندوبية السامية للتخطيط، بالفرنسية."],
+      month: ["Mois de l’observation, au format YYYY-MM.", "Month of the observation, in YYYY-MM format.", "شهر الرصد، بصيغة YYYY-MM."],
+      index: ["Indice des prix du mois, base 100 = moyenne de 2017. Ce n’est pas un prix ni un taux d’inflation.", "Price index for the month, base 100 = average of 2017. Not a price and not an inflation rate.", "الرقم الاستدلالي للأثمان في الشهر، أساس 100 = متوسط 2017. ليس ثمناً ولا نسبة تضخم."],
+    };
+    const meaning = meanings[key];
+    if (meaning) return t(meaning);
+  }
   const deprivation = povertyDeprivations[key];
   if (deprivation && path.includes("deprivation_rates.")) return t([
     `Pourcentage de la population privée : ${deprivation[0]}.`,
@@ -419,4 +443,5 @@ export const concepts: Partial<Record<string, Translation>> = {
   Water: ["Exemple illustratif : 50 Mm³ stockés pour une capacité de 100 Mm³ correspondent à un remplissage de 50 %. Les observations disponibles sont historiques, et ne couvrent pas tous les barrages.", "Illustrative example: 50 Mm³ stored in a 100 Mm³ reservoir means 50% full. Available observations are historical and do not cover every dam.", "مثال توضيحي: تخزين 50 مليون م³ في خزان سعته 100 مليون م³ يعني نسبة ملء 50%. المشاهدات المتاحة تاريخية ولا تغطي جميع السدود."],
   "Postal codes": ["Un code postal sert à acheminer le courrier ; un code HCP identifie une unité administrative. Une ville peut avoir plusieurs codes postaux, répartis par quartier. Le fichier décrit septembre 2018.", "A postal code routes mail; an HCP code identifies an administrative area. A city can have several postal codes, one for each neighborhood. This file describes September 2018.", "الرمز البريدي يوجّه البريد؛ أما رمز HCP فيحدد وحدة إدارية. قد تكون للمدينة عدة رموز بريدية موزعة حسب الأحياء. يصف الملف شتنبر 2018."],
   Holidays: ["Le calendrier commun de l’administration publique utilise samedi et dimanche comme week-end. Les fêtes religieuses peuvent attendre une confirmation officielle : null signifie inconnu, pas un jour ouvré garanti. Les calendriers d’entreprises peuvent différer.", "The common public-administration calendar uses Saturday and Sunday as weekends. Religious holidays may await official confirmation: null means unknown, not a guaranteed working day. Business calendars may differ.", "يعتمد التقويم المشترك للإدارة العمومية السبت والأحد للراحة الأسبوعية. قد تنتظر العطل الدينية تأكيداً رسمياً: null تعني غير معروف، وليس يوم عمل مضموناً. قد تختلف تقاويم الشركات."],
+  Prices: ["Exemple de lecture : un indice de 110 signifie que le même panier de produits coûte 10 % de plus qu’en moyenne en 2017. Pour l’inflation sur un an, comparez un mois au même mois de l’année précédente : 110 contre 105 donne (110 ÷ 105 − 1) × 100 ≈ 4,8 %. Ces chiffres sont illustratifs.", "Reading example: an index of 110 means the same basket of products costs 10% more than on average in 2017. For annual inflation, compare a month with the same month a year earlier: 110 against 105 gives (110 ÷ 105 − 1) × 100 ≈ 4.8%. These figures are illustrative.", "مثال توضيحي: رقم استدلالي قدره 110 يعني أن سلة المنتجات نفسها تكلف 10% أكثر من متوسط 2017. لحساب التضخم السنوي، قارن شهراً بالشهر نفسه من السنة السابقة: 110 مقابل 105 يعطي (110 ÷ 105 − 1) × 100 ≈ 4,8%. الأرقام توضيحية."],
 };

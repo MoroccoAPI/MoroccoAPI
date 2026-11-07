@@ -133,6 +133,10 @@ export const groups = {
     label: ["Banque mondiale", "World Bank", "البنك الدولي"],
     note: ["Indicateurs CC BY 4.0 pour le Maroc. Estimations internationales révisables : elles peuvent différer des statistiques officielles marocaines.", "CC BY 4.0 indicators for Morocco. International estimates can be revised and may differ from Moroccan official statistics.", "مؤشرات للمغرب برخصة CC BY 4.0. تقديرات دولية قابلة للمراجعة، وقد تختلف عن الإحصاءات الرسمية المغربية."],
   },
+  Prices: {
+    label: ["Prix", "Prices", "الأسعار"],
+    note: ["Indice des prix à la consommation du HCP, mensuel, base 100 = moyenne 2017 : national et 18 villes, de janvier 2017 au dernier mois publié sur data.gov.ma. Indices seulement, pas de taux d’inflation calculés. Libellés des produits en français, tels que publiés.", "HCP consumer price index, monthly, base 100 = 2017 average: national and 18 cities, from January 2017 to the latest month published on data.gov.ma. Indices only, no computed inflation rates. Product labels are in French, as published.", "الرقم الاستدلالي للأثمان عند الاستهلاك الصادر عن المندوبية السامية للتخطيط، شهرياً، أساس 100 = متوسط 2017: المستوى الوطني و18 مدينة، من يناير 2017 إلى آخر شهر منشور على data.gov.ma. أرقام استدلالية فقط، دون حساب نسب التضخم. أسماء المنتجات بالفرنسية كما نُشرت."],
+  },
   "Public service": {
     label: ["Fonction publique", "Public service", "الوظيفة العمومية"],
     note: ["Salaires nets de référence simulés par Wadifa Info avec le simulateur officiel (simulation.mmsp.gov.ma) : pas des droits salariaux officiels. Voir meta.notice.", "Reference net salaries simulated by Wadifa Info with the official simulator (simulation.mmsp.gov.ma): not official salary entitlements. See meta.notice.", "أجور صافية مرجعية حاكاها موقع وظيفة إنفو بالمحاكي الرسمي (simulation.mmsp.gov.ma): ليست أجوراً رسمية مستحقة. انظر meta.notice."],
@@ -206,6 +210,9 @@ export const titles: Record<string, Translation> = {
   "/world-bank/indicators": ["Lister les indicateurs", "List indicators", "قائمة المؤشرات"],
   "/world-bank/indicators/topics": ["Thèmes des indicateurs", "Indicator topics", "مواضيع المؤشرات"],
   "/world-bank/indicators/{code}": ["Valeurs d’un indicateur", "Indicator values", "قيم مؤشر"],
+  "/prices/cpi": ["Indice des prix par mois", "Monthly price index", "الرقم الاستدلالي الشهري للأثمان"],
+  "/prices/cpi/products": ["Produits de l’indice", "Index products", "منتجات الرقم الاستدلالي"],
+  "/prices/cpi/cities": ["Villes de l’indice", "Index cities", "مدن الرقم الاستدلالي"],
   "/public-service/salaries": ["Salaires par grade", "Salaries by grade", "الأجور حسب الدرجة"],
   "/public-service/salaries/{code}": ["Salaire d’un grade", "Salary of a grade", "أجر درجة"],
 };
@@ -256,6 +263,7 @@ export const examples: Record<string, Record<string, string>> = {
   "/dams/{id}/levels": { id: "abdelmoumen" },
   "/world-bank/indicators/{code}": { code: "SP.POP.TOTL", from: "2020", to: "2024" },
   "/public-service/salaries/{code}": { code: "adjoint-administratif-1er-grade" },
+  "/prices/cpi": { city: "casablanca", product: "01", from: "2026-01" },
 };
 
 for (const [path, label, example] of schools) {
@@ -301,5 +309,6 @@ export const parameterHelp: Record<string, Translation> = {
   topic: ["Thème issu de la liste /indicators/topics.", "Topic from the /indicators/topics list.", "موضوع من قائمة /indicators/topics."],
   level: ["Niveau territorial, par exemple regions ou communes.", "Territorial level, such as regions or communes.", "المستوى الترابي، مثل regions أو communes."],
   group: ["Groupe d’indicateurs, par exemple education ou employment.", "Indicator group, such as education or employment.", "مجموعة المؤشرات، مثل education أو employment."],
+  product: ["Code produit issu de /prices/cpi/products, par exemple GR (indice général) ou 01 (alimentation).", "Product code from /prices/cpi/products, such as GR (general index) or 01 (food).", "رمز المنتج من /prices/cpi/products، مثل GR (الرقم العام) أو 01 (المواد الغذائية)."],
   area: ["Milieu de résidence : all (ensemble), urban ou rural.", "Area of residence: all (combined), urban or rural.", "وسط الإقامة: all (المجموع) أو urban (حضري) أو rural (قروي)."],
 };
