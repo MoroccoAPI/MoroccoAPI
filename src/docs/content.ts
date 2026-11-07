@@ -137,6 +137,14 @@ export const groups = {
     label: ["Prix", "Prices", "الأسعار"],
     note: ["Indice des prix à la consommation du HCP, mensuel, base 100 = moyenne 2017 : national et 18 villes, de janvier 2017 au dernier mois publié sur data.gov.ma. Indices seulement, pas de taux d’inflation calculés. Libellés des produits en français, tels que publiés.", "HCP consumer price index, monthly, base 100 = 2017 average: national and 18 cities, from January 2017 to the latest month published on data.gov.ma. Indices only, no computed inflation rates. Product labels are in French, as published.", "الرقم الاستدلالي للأثمان عند الاستهلاك الصادر عن المندوبية السامية للتخطيط، شهرياً، أساس 100 = متوسط 2017: المستوى الوطني و18 مدينة، من يناير 2017 إلى آخر شهر منشور على data.gov.ma. أرقام استدلالية فقط، دون حساب نسب التضخم. أسماء المنتجات بالفرنسية كما نُشرت."],
   },
+  Banking: {
+    label: ["Établissements bancaires", "Banking institutions", "المؤسسات البنكية"],
+    note: [
+      "Fichiers transmis par Bank Al-Maghrib le 4 novembre 2026 : établissements et codes bancaires séparés, sans rapprochement automatique. Conditions de la charte BAM : attribution et date de copie ; usage commercial soumis à autorisation écrite. Données conservées en français.",
+      "Files supplied by Bank Al-Maghrib on 4 November 2026: separate institution and bank-code lists, with no automatic matching. BAM charter conditions require attribution and the copy date; commercial use requires written permission. Source labels remain in French.",
+      "ملفات أرسلها بنك المغرب في 4 نونبر 2026: قائمتان منفصلتان للمؤسسات والرموز البنكية دون مطابقة تلقائية. يشترط الميثاق ذكر المصدر وتاريخ النسخ؛ والاستعمال التجاري يتطلب إذناً كتابياً. تُحفظ البيانات الأصلية بالفرنسية.",
+    ],
+  },
   "Public service": {
     label: ["Fonction publique", "Public service", "الوظيفة العمومية"],
     note: ["Salaires nets de référence simulés par Wadifa Info avec le simulateur officiel (simulation.mmsp.gov.ma) : pas des droits salariaux officiels. Voir meta.notice.", "Reference net salaries simulated by Wadifa Info with the official simulator (simulation.mmsp.gov.ma): not official salary entitlements. See meta.notice.", "أجور صافية مرجعية حاكاها موقع وظيفة إنفو بالمحاكي الرسمي (simulation.mmsp.gov.ma): ليست أجوراً رسمية مستحقة. انظر meta.notice."],
@@ -149,6 +157,11 @@ export const groups = {
 
 /** Explicit translations keep the reference concise without translating identifiers or source data. */
 export const titles: Record<string, Translation> = {
+  "/banking/institutions": ["Lister les établissements", "List institutions", "قائمة المؤسسات"],
+  "/banking/institutions/{id}": ["Un établissement", "Get an institution", "بيانات مؤسسة"],
+  "/banking/bank-codes": ["Lister les codes bancaires", "List bank codes", "قائمة الرموز البنكية"],
+  "/banking/bank-codes/{code}": ["Chercher un code bancaire", "Look up a bank code", "البحث عن رمز بنكي"],
+  "/banking/categories": ["Catégories des établissements", "Institution categories", "أصناف المؤسسات"],
   "/insurance/intermediaries": ["Chercher un intermédiaire d’assurance", "Search insurance intermediaries", "البحث عن وسطاء التأمين"],
   "/insurance/intermediaries/{code}": ["Fiches par code ACAPS", "Records by ACAPS code", "السجلات حسب رمز ACAPS"],
   "/consulates": ["Lister les consulats marocains", "List Moroccan consulates", "قائمة القنصليات المغربية"],
@@ -229,6 +242,9 @@ const schools: readonly [path: string, label: Translation, example: string][] = 
 ];
 
 export const examples: Record<string, Record<string, string>> = {
+  "/banking/institutions": { q: "attijari" },
+  "/banking/institutions/{id}": { id: "attijariwafa-bank" },
+  "/banking/bank-codes/{code}": { code: "007" },
   "/insurance/intermediaries": { city: "Fes" },
   "/insurance/intermediaries/{code}": { code: "A3420" },
   "/consulates": { country: "FR" },
@@ -274,6 +290,7 @@ for (const [path, label, example] of schools) {
 }
 
 export const parameterHelp: Record<string, Translation> = {
+  dataset: ["Référentiel : institutions ou bank-codes.", "Dataset: institutions or bank-codes.", "المرجع: institutions أو bank-codes."],
   country: ["Code du pays d’accueil à deux lettres, par exemple FR ; insensible à la casse.", "Two-letter host-country code, such as FR; case-insensitive.", "رمز بلد الاستضافة من حرفين، مثل FR، دون تمييز حالة الأحرف."],
   limit: ["Résultats par page. 100 par défaut, 500 maximum.", "Results per page. Default 100, maximum 500.", "عدد النتائج في الصفحة. 100 افتراضياً، و500 كحد أقصى."],
   offset: ["Résultats à ignorer après filtrage. Commence à 0.", "Matching results to skip. Starts at 0.", "عدد النتائج المطابقة المراد تجاوزها. يبدأ من 0."],

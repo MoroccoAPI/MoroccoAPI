@@ -43,7 +43,7 @@ describe("Published path parameter contracts", () => {
         if (parameter.schema.maxLength > 100) widerThan100.push(path);
       }
     }
-    assert.deepEqual(widerThan100.sort(), [...wideCodePaths, "/api/v2/museums/{id}", "/api/v2/ports/{name}", "/api/v2/public-service/salaries/{code}", "/api/v2/population/{level}/{code}/indicators", "/api/v2/population/{level}/{code}/poverty"].sort());
+    assert.deepEqual(widerThan100.sort(), [...wideCodePaths, "/api/v2/banking/institutions/{id}", "/api/v2/museums/{id}", "/api/v2/ports/{name}", "/api/v2/public-service/salaries/{code}", "/api/v2/population/{level}/{code}/indicators", "/api/v2/population/{level}/{code}/poverty"].sort());
   });
 
   for (const path of wideCodePaths) {
@@ -64,6 +64,16 @@ describe("Published path parameter contracts", () => {
     assert.equal(missing.json().error.code, "RESOURCE_NOT_FOUND");
 
     const malformed = await app.inject(`/api/v2/museums/${"a".repeat(200)}`);
+    assert.equal(malformed.statusCode, 400);
+    assert.equal(malformed.json().error.code, "VALIDATION_ERROR");
+  });
+
+  it("accepts the banking institution ID's 200-character boundary and validates its slug format", async () => {
+    const missing = await app.inject(`/api/v2/banking/institutions/${"a".repeat(200)}`);
+    assert.equal(missing.statusCode, 404);
+    assert.equal(missing.json().error.code, "RESOURCE_NOT_FOUND");
+
+    const malformed = await app.inject("/api/v2/banking/institutions/INVALID_ID");
     assert.equal(malformed.statusCode, 400);
     assert.equal(malformed.json().error.code, "VALIDATION_ERROR");
   });

@@ -77,6 +77,11 @@ export function buildCatalog(spec: ApiDocument, language: Language): Endpoint[] 
         const schema = resolveSchema(parameter.schema, spec);
         const helpText = parameterHelp[parameter.name];
         let help = helpText ? translate(helpText, language) : parameter.name;
+        if (shortPath.startsWith("/banking/")) {
+          if (parameter.name === "category") help = translate(["Code de catégorie dans /banking/categories pour le même référentiel.", "Category code from /banking/categories for the same dataset.", "رمز الصنف من /banking/categories للمرجع نفسه."], language);
+          if (parameter.name === "code") help = translate(["Code BAM exact à trois chiffres, zéros initiaux conservés, par exemple 007. Ce n’est pas un code SWIFT/BIC.", "Exact three-digit BAM code, preserving leading zeros, for example 007. This is not a SWIFT/BIC code.", "رمز بنك المغرب من ثلاثة أرقام مع الأصفار الأولى، مثل 007. ليس رمز SWIFT/BIC."], language);
+          if (parameter.name === "q") help = translate(["Recherche dans le nom et, pour les établissements, l’adresse ; au moins deux caractères, sans distinction de casse ni d’accents.", "Search the name and, for institutions, the address; at least two characters, ignoring case and accents.", "البحث في الاسم وفي العنوان بالنسبة للمؤسسات؛ حرفان على الأقل دون تمييز حالة الأحرف أو اللكنات."], language);
+        }
         if (shortPath.startsWith("/insurance/")) {
           if (parameter.name === "city") help = translate(["Partie du libellé de localité, sans distinction de casse ni d’accents. Fes trouve aussi Fès-El Mariniyine ; ce n’est pas une limite administrative.", "Part of a source locality label, ignoring case and accents. Fes also matches Fès-El Mariniyine; not an administrative boundary.", "جزء من اسم المنطقة في المصدر، دون تمييز حالة الأحرف أو اللكنات. يطابق Fes أيضاً Fès-El Mariniyine؛ ليس نطاقاً إدارياً."], language);
           if (parameter.name === "code") help = translate(["Code ACAPS exact, zéros et suffixes compris ; insensible à la casse.", "Exact ACAPS code including zeros and branch suffixes; case-insensitive.", "رمز ACAPS كاملاً مع الأصفار واللواحق، دون تمييز حالة الأحرف."], language);

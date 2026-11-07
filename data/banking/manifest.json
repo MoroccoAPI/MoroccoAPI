@@ -1,0 +1,46 @@
+{
+  "dataset": "bam-banking",
+  "producer": "Bank Al-Maghrib",
+  "received_at": "2026-11-04",
+  "copied_at": "2026-11-07",
+  "transformation_version": "1.0.0",
+  "snapshot_sha256": "616a037ee2e9e1508d5d87eb5d7252708fea1b13cb48e08e77f40c4d88489263",
+  "license": "LicenseRef-BAM-Charte-Diffusion",
+  "terms_url": "https://www.bkam.ma/content/download/800609/8840920/version/1/file/Charte+de+diffusion_19+02+2024.pdf",
+  "terms_section": "V. Conditions de réutilisation des données et statistiques (page 4)",
+  "attribution": "Source : Bank Al-Maghrib. Copie du 2026-11-07.",
+  "notice": "Mise en forme JSON par MoroccoAPI. Bank Al-Maghrib ne saurait être tenue responsable des transformations réalisées par MoroccoAPI. Seules les publications officielles de Bank Al-Maghrib font foi.",
+  "reuse": {
+    "non_commercial_use": "permitted-with-attribution-and-copy-date",
+    "commercial_use": "written-permission-required",
+    "modifications": "disclose-changes-and-BAM-non-liability"
+  },
+  "limitations": [
+    "The institution workbook contains no explicit reference date; the reply date is not its observation date.",
+    "The bank-code reference date is inferred from its filename, not a date column.",
+    "The two workbooks have different coverage and labels. No institution-to-code join is inferred.",
+    "No SWIFT/BIC codes or account-validation service are supplied.",
+    "This snapshot does not verify current authorization or operating status.",
+    "Only institutional JSON records are published; source fingerprints identify the original workbook attachments, which are not bundled."
+  ],
+  "sources": [
+    {
+      "dataset": "institutions",
+      "filename": "Etablissement de crédit.xlsx",
+      "sheet": "Annexes 2 ",
+      "records": 107,
+      "reference_date": null,
+      "date_basis": "not-stated-in-workbook",
+      "sha256": "0de72df980a892dbc193a28401e7897da670d6d4adefad1697bd12fd98eddb5d"
+    },
+    {
+      "dataset": "bank-codes",
+      "filename": "Liste code établissements bancaires 03112026.xlsx",
+      "sheet": "Feuil1",
+      "records": 39,
+      "reference_date": "2026-11-03",
+      "date_basis": "source-filename",
+      "sha256": "c2fff4621125932a5a4abdb6da26e649c330c8db79e3648c2da3782567d50ab2"
+    }
+  ]
+}

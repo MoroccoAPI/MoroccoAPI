@@ -29,6 +29,7 @@ import { dams } from "./dams/routes.js";
 import { consulates } from "./consulates/routes.js";
 import { insurance } from "./insurance/routes.js";
 import { prices } from "./prices/routes.js";
+import { banking } from "./banking/routes.js";
 import { documentation } from "./docs/routes.js";
 
 const publicCorsHeaders = {
@@ -150,6 +151,7 @@ export async function buildApp(
         { name: "Maritime", description: "Ports and lighthouses from the Ministry of Equipment and Water" },
         { name: "Water", description: "Historical dam storage observations with source and license metadata" },
         { name: "Prices", description: "HCP monthly consumer price index by city and product (base 100 = 2017)" },
+        { name: "Banking", description: "Bank Al-Maghrib institution directory and bank codes, with source reuse conditions" },
       ],
     },
   });
@@ -246,6 +248,7 @@ export async function buildApp(
   await app.register(consulates);
   await app.register(insurance);
   await app.register(prices, { geography: geographyData });
+  await app.register(banking);
 
   return app;
 }
