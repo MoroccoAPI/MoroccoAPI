@@ -1,0 +1,1683 @@
+{
+  "institutions": [
+    {
+      "id": "al-barid-bank",
+      "name": "AL BARID BANK",
+      "category_code": "banks",
+      "category_name": "Banques",
+      "head_office_address": "798, Angle Boulevard Ghandi et Boulevard Brahim Roudani - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 5
+      }
+    },
+    {
+      "id": "arab-bank-plc",
+      "name": "ARAB BANK PLC",
+      "category_code": "banks",
+      "category_name": "Banques",
+      "head_office_address": "174, Boulevard Mohamed V - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 6
+      }
+    },
+    {
+      "id": "attijariwafa-bank",
+      "name": "ATTIJARIWAFA BANK",
+      "category_code": "banks",
+      "category_name": "Banques",
+      "head_office_address": "2, Boulevard Moulay Youssef - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 7
+      }
+    },
+    {
+      "id": "banco-sabadell",
+      "name": "BANCO SABADELL",
+      "category_code": "banks",
+      "category_name": "Banques",
+      "head_office_address": "Twin Center, Tour Ouest, 12ème étage - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 8
+      }
+    },
+    {
+      "id": "bank-al-amal",
+      "name": "BANK AL-AMAL",
+      "category_code": "banks",
+      "category_name": "Banques",
+      "head_office_address": "288, Boulevard Mohamed Zerktouni - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 9
+      }
+    },
+    {
+      "id": "banque-centrale-populaire-b-c-p",
+      "name": "BANQUE CENTRALE POPULAIRE « B.C.P »",
+      "category_code": "banks",
+      "category_name": "Banques",
+      "head_office_address": "101, Boulevard Mohamed Zerktouni - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 10
+      }
+    },
+    {
+      "id": "bank-of-africa-boa",
+      "name": "BANK OF AFRICA « BOA »",
+      "category_code": "banks",
+      "category_name": "Banques",
+      "head_office_address": "140, Avenue Hassan II - 20 000 - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 11
+      }
+    },
+    {
+      "id": "banque-marocaine-pour-le-commerce-et-l-industrie-b-m-c-i",
+      "name": "BANQUE MAROCAINE POUR LE COMMERCE ET L’INDUSTRIE « B.M.C.I »",
+      "category_code": "banks",
+      "category_name": "Banques",
+      "head_office_address": "26, Place des Nations Unies - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 12
+      }
+    },
+    {
+      "id": "banque-populaire-du-centre-sud",
+      "name": "BANQUE POPULAIRE DU CENTRE SUD",
+      "category_code": "banks",
+      "category_name": "Banques",
+      "head_office_address": "Avenue Hassan II - B.P 246 - 80 000 - Agadir",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 13
+      }
+    },
+    {
+      "id": "banque-populaire-de-fes-meknes",
+      "name": "BANQUE POPULAIRE DE FES-MEKNES",
+      "category_code": "banks",
+      "category_name": "Banques",
+      "head_office_address": "Avenue des FAR, B.P 276 - Ville nouvelle - 30 000 - Fès",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 14
+      }
+    },
+    {
+      "id": "banque-populaire-de-laayoune",
+      "name": "BANQUE POPULAIRE DE LAAYOUNE",
+      "category_code": "banks",
+      "category_name": "Banques",
+      "head_office_address": "27, Avenue de la Mecque, 70 000 - Laâyoune",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 15
+      }
+    },
+    {
+      "id": "banque-populaire-de-marrakech-beni-mellal",
+      "name": "BANQUE POPULAIRE DE MARRAKECH - BENI MELLAL",
+      "category_code": "banks",
+      "category_name": "Banques",
+      "head_office_address": "Avenue Abdelkrim Khattabi, Route de Casablanca, B.P 480 - 40 001 - Marrakech",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 16
+      }
+    },
+    {
+      "id": "banque-populaire-de-nador-al-hoceima",
+      "name": "BANQUE POPULAIRE DE NADOR-Al HOCEIMA",
+      "category_code": "banks",
+      "category_name": "Banques",
+      "head_office_address": "Route Principale Nador, Taouima - 62 000 - Nador",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 17
+      }
+    },
+    {
+      "id": "banque-populaire-d-oujda",
+      "name": "BANQUE POPULAIRE D’OUJDA",
+      "category_code": "banks",
+      "category_name": "Banques",
+      "head_office_address": "34, Boulevard Derfoufi, B.P 440 - 60 000 - Oujda",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 18
+      }
+    },
+    {
+      "id": "banque-populaire-de-rabat-kenitra",
+      "name": "BANQUE POPULAIRE DE RABAT - KENITRA",
+      "category_code": "banks",
+      "category_name": "Banques",
+      "head_office_address": "3, Avenue Trabless, B.P 6 - 11 100 - Rabat",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 19
+      }
+    },
+    {
+      "id": "banque-populaire-de-tanger-tetouan",
+      "name": "BANQUE POPULAIRE DE TANGER-TETOUAN",
+      "category_code": "banks",
+      "category_name": "Banques",
+      "head_office_address": "76, Avenue Mohamed V, B.P 313 - 90 000 - Tanger",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 20
+      }
+    },
+    {
+      "id": "caja-de-ahorros-y-pensiones-de-barcelona-caixa-bank-s-a",
+      "name": "CAJA DE AHORROS Y PENSIONES DE BARCELONA « CAIXA BANK, S.A»",
+      "category_code": "banks",
+      "category_name": "Banques",
+      "head_office_address": "179, Boulevard d’Anfa - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 21
+      }
+    },
+    {
+      "id": "cdg-capital",
+      "name": "CDG CAPITAL",
+      "category_code": "banks",
+      "category_name": "Banques",
+      "head_office_address": "Place Moulay El Hassan - Tour Mamounia - Rabat",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 22
+      }
+    },
+    {
+      "id": "cfg-group",
+      "name": "CFG GROUP",
+      "category_code": "banks",
+      "category_name": "Banques",
+      "head_office_address": "5-7, Rue Ibnou Toufail - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 23
+      }
+    },
+    {
+      "id": "citibank-maghreb",
+      "name": "CITIBANK MAGHREB",
+      "category_code": "banks",
+      "category_name": "Banques",
+      "head_office_address": "Lotissement Attaoufik- Imm. I - Ensemble immobilier Zenith Millénium - Sidi Maârouf - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 24
+      }
+    },
+    {
+      "id": "credit-agricole-du-maroc-cam",
+      "name": "CREDIT AGRICOLE DU MAROC « CAM »",
+      "category_code": "banks",
+      "category_name": "Banques",
+      "head_office_address": "Place des Alaouites, B.P 49 - 10 000 - Rabat",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 25
+      }
+    },
+    {
+      "id": "credit-du-maroc",
+      "name": "CREDIT DU MAROC",
+      "category_code": "banks",
+      "category_name": "Banques",
+      "head_office_address": "48-58, Boulevard Mohamed V - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 26
+      }
+    },
+    {
+      "id": "credit-immobilier-et-hotelier-c-i-h",
+      "name": "CREDIT IMMOBILIER ET HOTELIER « C.I.H »",
+      "category_code": "banks",
+      "category_name": "Banques",
+      "head_office_address": "187, Avenue Hassan II - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 27
+      }
+    },
+    {
+      "id": "fonds-d-equipement-communal-f-e-c",
+      "name": "FONDS D’EQUIPEMENT COMMUNAL « F.E.C »",
+      "category_code": "banks",
+      "category_name": "Banques",
+      "head_office_address": "Espace Oudaya, Angle Avenue Ben Barka et Avenue Annakhil - Hay Ryad - Rabat",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 28
+      }
+    },
+    {
+      "id": "bcp-securities-services",
+      "name": "BCP SECURITIES SERVICES",
+      "category_code": "banks",
+      "category_name": "Banques",
+      "head_office_address": "27, Boulevard Moulay Youssef, 20 060 - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 29
+      }
+    },
+    {
+      "id": "saham-bank",
+      "name": "SAHAM BANK",
+      "category_code": "banks",
+      "category_name": "Banques",
+      "head_office_address": "55, Boulevard Abdelmoumen - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 30
+      }
+    },
+    {
+      "id": "union-marocaine-de-banques-u-m-b",
+      "name": "UNION MAROCAINE DE BANQUES « U.M.B »",
+      "category_code": "banks",
+      "category_name": "Banques",
+      "head_office_address": "36, Rue Tahar Sebti - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 31
+      }
+    },
+    {
+      "id": "al-akhdar-bank",
+      "name": "AL AKHDAR BANK",
+      "category_code": "participative-banks-and-windows",
+      "category_name": "Banques et fenêtres participatives",
+      "head_office_address": "Angle Avenue Alger et rue d'Oran, Hassan - Rabat",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 36
+      }
+    },
+    {
+      "id": "arreda",
+      "name": "ARREDA",
+      "category_code": "participative-banks-and-windows",
+      "category_name": "Banques et fenêtres participatives",
+      "head_office_address": "48-58, Boulevard Mohamed V - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 37
+      }
+    },
+    {
+      "id": "bank-al-yousr",
+      "name": "BANK AL YOUSR",
+      "category_code": "participative-banks-and-windows",
+      "category_name": "Banques et fenêtres participatives",
+      "head_office_address": "162, Rue Molière, Angle Boulevard Anfa - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 38
+      }
+    },
+    {
+      "id": "bank-al-karam",
+      "name": "BANK AL KARAM",
+      "category_code": "participative-banks-and-windows",
+      "category_name": "Banques et fenêtres participatives",
+      "head_office_address": "157, Avenue Hassan II - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 39
+      }
+    },
+    {
+      "id": "bank-assafa",
+      "name": "BANK ASSAFA",
+      "category_code": "participative-banks-and-windows",
+      "category_name": "Banques et fenêtres participatives",
+      "head_office_address": "19, Boulevard Abdelmoumen - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 40
+      }
+    },
+    {
+      "id": "dar-al-amane",
+      "name": "DAR AL-AMANE",
+      "category_code": "participative-banks-and-windows",
+      "category_name": "Banques et fenêtres participatives",
+      "head_office_address": "55, Boulevard Abdelmoumen - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 41
+      }
+    },
+    {
+      "id": "najmah",
+      "name": "NAJMAH",
+      "category_code": "participative-banks-and-windows",
+      "category_name": "Banques et fenêtres participatives",
+      "head_office_address": "26, Place des Nations Unies - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 42
+      }
+    },
+    {
+      "id": "umnia-bank",
+      "name": "UMNIA BANK",
+      "category_code": "participative-banks-and-windows",
+      "category_name": "Banques et fenêtres participatives",
+      "head_office_address": "397, Route El Jamia (Ex Route d'El Jadida) - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 43
+      }
+    },
+    {
+      "id": "daama-tamwil",
+      "name": "DAAMA TAMWIL",
+      "category_code": "participative-banks-and-windows",
+      "category_name": "Banques et fenêtres participatives",
+      "head_office_address": "CCG Centre d'Affaires, Boulevard Ar Ryad, Hay Ryad - Rabat",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 44
+      }
+    },
+    {
+      "id": "axa-credit",
+      "name": "AXA CREDIT",
+      "category_code": "consumer-credit",
+      "category_name": "Sociétés de crédit à la consommation",
+      "head_office_address": "120-122, Avenue Moulay Hassan II - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 49
+      }
+    },
+    {
+      "id": "dar-salaf-s-a",
+      "name": "DAR SALAF S.A",
+      "category_code": "consumer-credit",
+      "category_name": "Sociétés de crédit à la consommation",
+      "head_office_address": "207, Boulevard Zerktouni - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 50
+      }
+    },
+    {
+      "id": "eqdom-sa",
+      "name": "EQDOM SA",
+      "category_code": "consumer-credit",
+      "category_name": "Sociétés de crédit à la consommation",
+      "head_office_address": "127, Angle Bd Zerktouni et rue Ibnou Bouraïd - 20100 - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 51
+      }
+    },
+    {
+      "id": "rci-finance-maroc-s-a",
+      "name": "RCI FINANCE MAROC S.A",
+      "category_code": "consumer-credit",
+      "category_name": "Sociétés de crédit à la consommation",
+      "head_office_address": "44, Bd Khaled Bnou Loualid - Aïn Sebaa - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 52
+      }
+    },
+    {
+      "id": "salaf-al-moustakbal-s-a",
+      "name": "SALAF AL MOUSTAKBAL S.A.",
+      "category_code": "consumer-credit",
+      "category_name": "Sociétés de crédit à la consommation",
+      "head_office_address": "20, Boulevard de La Mecque - Laâyoune",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 53
+      }
+    },
+    {
+      "id": "salafin",
+      "name": "SALAFIN",
+      "category_code": "consumer-credit",
+      "category_name": "Sociétés de crédit à la consommation",
+      "head_office_address": "Zenith Millenium, Immeuble 8, Sidi Maârouf - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 54
+      }
+    },
+    {
+      "id": "societe-de-financement-d-achats-a-credit-sofac-credit",
+      "name": "SOCIETE DE FINANCEMENT D’ACHATS A CREDIT « SOFAC-CREDIT »",
+      "category_code": "consumer-credit",
+      "category_name": "Sociétés de crédit à la consommation",
+      "head_office_address": "57, Boulevard Abdelmoumen - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 55
+      }
+    },
+    {
+      "id": "societe-de-financement-nouveau-a-credit-fnac",
+      "name": "SOCIETE DE FINANCEMENT NOUVEAU A CREDIT « FNAC »",
+      "category_code": "consumer-credit",
+      "category_name": "Sociétés de crédit à la consommation",
+      "head_office_address": "Sahat Rabia Al Adaouia, Résidence Kays Agdal - Rabat",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 56
+      }
+    },
+    {
+      "id": "societe-nordafricaine-de-credit-sonac",
+      "name": "SOCIETE NORDAFRICAINE DE CREDIT « SONAC »",
+      "category_code": "consumer-credit",
+      "category_name": "Sociétés de crédit à la consommation",
+      "head_office_address": "29, Boulevard Mohamed V - Fès",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 57
+      }
+    },
+    {
+      "id": "societe-regionale-de-credit-a-la-consommation-sorec-credit",
+      "name": "SOCIETE REGIONALE DE CREDIT A LA CONSOMMATION « SOREC-CREDIT »",
+      "category_code": "consumer-credit",
+      "category_name": "Sociétés de crédit à la consommation",
+      "head_office_address": "256, Bd Zerktouni - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 58
+      }
+    },
+    {
+      "id": "vivalis-salaf",
+      "name": "VIVALIS SALAF",
+      "category_code": "consumer-credit",
+      "category_name": "Sociétés de crédit à la consommation",
+      "head_office_address": "369, Boulevard Zerktouni - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 59
+      }
+    },
+    {
+      "id": "wafasalaf",
+      "name": "WAFASALAF",
+      "category_code": "consumer-credit",
+      "category_name": "Sociétés de crédit à la consommation",
+      "head_office_address": "72, Angle rue Ram Allah et Boulevard Abdelmoumen - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 60
+      }
+    },
+    {
+      "id": "attijari-immobilier",
+      "name": "ATTIJARI IMMOBILIER",
+      "category_code": "real-estate-credit",
+      "category_name": "Sociétés de crédit immobilier",
+      "head_office_address": "2, Boulevard Moulay Youssef - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 65
+      }
+    },
+    {
+      "id": "wafa-immobilier",
+      "name": "WAFA IMMOBILIER",
+      "category_code": "real-estate-credit",
+      "category_name": "Sociétés de crédit immobilier",
+      "head_office_address": "112, Angle boulevard Abdelmoumen et rue Rembrandt - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 66
+      }
+    },
+    {
+      "id": "attijari-factoring",
+      "name": "ATTIJARI FACTORING",
+      "category_code": "factoring",
+      "category_name": "Sociétés d’affacturage",
+      "head_office_address": "2, Boulevard Moulay Youssef - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 71
+      }
+    },
+    {
+      "id": "maroc-factoring",
+      "name": "MAROC FACTORING",
+      "category_code": "factoring",
+      "category_name": "Sociétés d’affacturage",
+      "head_office_address": "63, Boulevard Moulay Youssef - Résidence Adriana 1er étage - CP. 20 060 Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 72
+      }
+    },
+    {
+      "id": "credit-agricole-du-maroc-factoring-cam-factoring",
+      "name": "CREDIT AGRICOLE DU MAROC FACTORING « CAM FACTORING”",
+      "category_code": "factoring",
+      "category_name": "Sociétés d’affacturage",
+      "head_office_address": "63, Place des Alaouites - B.P. 49 - Rabat",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 73
+      }
+    },
+    {
+      "id": "bmci-leasing",
+      "name": "BMCI- LEASING",
+      "category_code": "leasing",
+      "category_name": "Sociétés de crédit-bail",
+      "head_office_address": "Lotissement La Colline II, Lot N°3, Route de Nouaceur - Sidi Maârouf - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 78
+      }
+    },
+    {
+      "id": "compagnie-marocaine-de-location-d-equipement-maroc-leasing",
+      "name": "COMPAGNIE MAROCAINE DE LOCATION D’EQUIPEMENT « MAROC- LEASING »",
+      "category_code": "leasing",
+      "category_name": "Sociétés de crédit-bail",
+      "head_office_address": "57, Angle Rue Pinel et Boulevard Abdelmoumen - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 79
+      }
+    },
+    {
+      "id": "credit-du-maroc-leasing-et-factoring-cdmlf",
+      "name": "CREDIT DU MAROC LEASING et FACTORING « CDMLF »",
+      "category_code": "leasing",
+      "category_name": "Sociétés de crédit-bail",
+      "head_office_address": "201, Boulevard Zerktouni - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 80
+      }
+    },
+    {
+      "id": "saham-leasing",
+      "name": "SAHAM LEASING",
+      "category_code": "leasing",
+      "category_name": "Sociétés de crédit-bail",
+      "head_office_address": "55, Boulevard Abdelmoumen - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 81
+      }
+    },
+    {
+      "id": "societe-maghrebine-de-credit-bail-leasing-maghrebail",
+      "name": "SOCIETE MAGHREBINE DE CREDIT -BAIL (LEASING) « MAGHREBAIL »",
+      "category_code": "leasing",
+      "category_name": "Sociétés de crédit-bail",
+      "head_office_address": "45, Boulevard Moulay Youssef - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 82
+      }
+    },
+    {
+      "id": "wafabail",
+      "name": "WAFABAIL",
+      "category_code": "leasing",
+      "category_name": "Sociétés de crédit-bail",
+      "head_office_address": "39-41, Angle boulevard Moulay Youssef & rue Abdelkader El Mazini, 20100 - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 83
+      }
+    },
+    {
+      "id": "cam-leasing",
+      "name": "CAM LEASING",
+      "category_code": "leasing",
+      "category_name": "Sociétés de crédit-bail",
+      "head_office_address": "Place des alaouites - B.P 49 - 10 000 - Rabat",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 84
+      }
+    },
+    {
+      "id": "scania-finance-maroc",
+      "name": "SCANIA Finance Maroc",
+      "category_code": "leasing",
+      "category_name": "Sociétés de crédit-bail",
+      "head_office_address": "Autoroute Casa-Rabat, Km 14 - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 85
+      }
+    },
+    {
+      "id": "tractafric-mobility",
+      "name": "TRACTAFRIC MOBILITY",
+      "category_code": "leasing",
+      "category_name": "Sociétés de crédit-bail",
+      "head_office_address": "Angle de l’avenue des Forces Armées Royales et de la rue d’Azillal - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 86
+      }
+    },
+    {
+      "id": "finea",
+      "name": "FINEA",
+      "category_code": "guarantees",
+      "category_name": "Sociétés de cautionnement",
+      "head_office_address": "101, Boulevard Abdelmoumen - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 91
+      }
+    },
+    {
+      "id": "societe-de-financement-pour-le-developpement-agricole-s-f-d-a",
+      "name": "SOCIETE DE FINANCEMENT POUR LE DÉVELOPPEMENT AGRICOLE « S.F.D.A »",
+      "category_code": "other-finance",
+      "category_name": "Autres sociétés de financement",
+      "head_office_address": "28, Rue Abou Faris Al Marini, BP 49 - Rabat",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 96
+      }
+    },
+    {
+      "id": "dar-assafaa-litamwil",
+      "name": "DAR ASSAFAA LITAMWIL",
+      "category_code": "other-finance",
+      "category_name": "Autres sociétés de financement",
+      "head_office_address": "4, rue Sanaa - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 97
+      }
+    },
+    {
+      "id": "jaida",
+      "name": "JAIDA",
+      "category_code": "other-finance",
+      "category_name": "Autres sociétés de financement",
+      "head_office_address": "Immeuble High Tech, 5ème étage, Avenue Ennakhil, Hay Riad - Rabat",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 98
+      }
+    },
+    {
+      "id": "attijari-international-bank-attijari-i-b-b-o-s",
+      "name": "ATTIJARI INTERNATIONAL BANK (ATTIJARI I.B B.O.S)",
+      "category_code": "offshore-banks",
+      "category_name": "Banques offshore",
+      "head_office_address": "58, Boulevard Pasteur - Tanger",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 103
+      }
+    },
+    {
+      "id": "bmci-banque-offshore-groupe-bnp-bmci-b-o-s",
+      "name": "BMCI - BANQUE OFFSHORE- GROUPE BNP (BMCI B.O.S)",
+      "category_code": "offshore-banks",
+      "category_name": "Banques offshore",
+      "head_office_address": "Zone franche de Tanger, Route de Rabat - Tanger",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 104
+      }
+    },
+    {
+      "id": "chaabi-international-bank",
+      "name": "CHAABI INTERNATIONAL BANK",
+      "category_code": "offshore-banks",
+      "category_name": "Banques offshore",
+      "head_office_address": "Lot 45D Zone Franche d'exportation, Route de Rabat - Tanger",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 105
+      }
+    },
+    {
+      "id": "credit-du-maroc-offshore-banque-offshore-b-i-t-b-o-s",
+      "name": "CREDIT DU MAROC OFFSHORE - BANQUE OFFSHORE (B.I.T B.O.S)",
+      "category_code": "offshore-banks",
+      "category_name": "Banques offshore",
+      "head_office_address": "Angle Avenue Mohamed V et Rue Moussa Bnou Noussair - Tanger",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 106
+      }
+    },
+    {
+      "id": "societe-generale-offshore",
+      "name": "SOCIETE GENERALE OFFSHORE",
+      "category_code": "offshore-banks",
+      "category_name": "Banques offshore",
+      "head_office_address": "58, Avenue Mohamed V - Tanger",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 107
+      }
+    },
+    {
+      "id": "succursale-offshore-de-la-bmce-succursale-o-s-bmce-bmce-tanger-offshore",
+      "name": "SUCCURSALE OFFSHORE DE LA BMCE (SUCCURSALE O.S BMCE) (BMCE TANGER OFFSHORE)",
+      "category_code": "offshore-banks",
+      "category_name": "Banques offshore",
+      "head_office_address": "Zone Franche d'exportation, Boukhalef route de Rabat - Tanger",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 108
+      }
+    },
+    {
+      "id": "alamana-microfinance",
+      "name": "ALAMANA MICROFINANCE",
+      "category_code": "microcredit-associations",
+      "category_name": "Associations de Micro-Crédit",
+      "head_office_address": "40, Avenue Al Fadila - CYM - 10130 - Rabat",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 113
+      }
+    },
+    {
+      "id": "fondation-alkarama-pour-la-micro-finance",
+      "name": "FONDATION ALKARAMA POUR LA MICRO FINANCE",
+      "category_code": "microcredit-associations",
+      "category_name": "Associations de Micro-Crédit",
+      "head_office_address": "38 Avenue Abdelmounen, Immeuble Al Amal, appt n°23, 4ème étage, Hassan - Rabat",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 114
+      }
+    },
+    {
+      "id": "association-marocaine-oued-srou-pour-le-micro-credit-amos",
+      "name": "ASSOCIATION MAROCAINE OUED SROU POUR LE MICRO CRÉDIT (AMOS)",
+      "category_code": "microcredit-associations",
+      "category_name": "Associations de Micro-Crédit",
+      "head_office_address": "Avenue zerktouni, immeuble 2, Appartement n°4 - Khénifra",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 115
+      }
+    },
+    {
+      "id": "association-ismailia-de-micro-credit",
+      "name": "ASSOCIATION ISMAILIA DE MICRO-CREDIT",
+      "category_code": "microcredit-associations",
+      "category_name": "Associations de Micro-Crédit",
+      "head_office_address": "115, Boulevard Lahboul - Meknès",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 116
+      }
+    },
+    {
+      "id": "attadamoune-microfinance",
+      "name": "ATTADAMOUNE MICROFINANCE",
+      "category_code": "microcredit-associations",
+      "category_name": "Associations de Micro-Crédit",
+      "head_office_address": "1,Rue Abi Dar El Ghoufari, 1er étage, Quartier Prince Héritier - Fès",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 117
+      }
+    },
+    {
+      "id": "brj-microfinance",
+      "name": "BRJ MICROFINANCE",
+      "category_code": "microcredit-associations",
+      "category_name": "Associations de Micro-Crédit",
+      "head_office_address": "82, rue Soumaya, Angle Boulevard Abdelmoumen - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 118
+      }
+    },
+    {
+      "id": "fondation-arrawaj-de-la-finance-inclusive",
+      "name": "FONDATION ARRAWAJ DE LA FINANCE INCLUSIVE",
+      "category_code": "microcredit-associations",
+      "category_name": "Associations de Micro-Crédit",
+      "head_office_address": "Immeuble Saraya Angle Boulevard Riad et Avenue Alarz - Hay Riad - Rabat",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 119
+      }
+    },
+    {
+      "id": "fondation-ardi-micro-credit",
+      "name": "FONDATION ARDI MICRO-CREDIT",
+      "category_code": "microcredit-associations",
+      "category_name": "Associations de Micro-Crédit",
+      "head_office_address": "Avenue Hassan II, Hay Ibn Sina, Rue Iran - Témara Centre",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 120
+      }
+    },
+    {
+      "id": "microfinance-fondation-banque-populaire-pour-le-micro-credit-fbpmc",
+      "name": "MICROFINANCE FONDATION BANQUE POPULAIRE POUR LE MICRO-CREDIT « FBPMC »",
+      "category_code": "microcredit-associations",
+      "category_name": "Associations de Micro-Crédit",
+      "head_office_address": "3, Rue Docteur Veyre-Résidence Patio - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 121
+      }
+    },
+    {
+      "id": "association-microfinace-du-nord-attissir",
+      "name": "ASSOCIATION MICROFINACE DU NORD « ATTISSIR »",
+      "category_code": "microcredit-associations",
+      "category_name": "Associations de Micro-Crédit",
+      "head_office_address": "6, Rue Rachid Réda, Résidence Hayat 2 entresol, appt. N° 34 - Tanger",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 122
+      }
+    },
+    {
+      "id": "barid-cash",
+      "name": "BARID CASH",
+      "category_code": "payment-services",
+      "category_name": "Établissements de paiement offrant des produits et services de paiement",
+      "head_office_address": "Angle Boulevard Hassan II et Boulevard de Paris - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 127
+      }
+    },
+    {
+      "id": "cash-plus-sa",
+      "name": "CASH PLUS SA",
+      "category_code": "payment-services",
+      "category_name": "Établissements de paiement offrant des produits et services de paiement",
+      "head_office_address": "1, Angle Boulevard Abdelmoumen, Rue des Pléiades - Quartier des Hôpitaux, 3ème étage - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 128
+      }
+    },
+    {
+      "id": "centre-monetique-interbancaire",
+      "name": "CENTRE MONETIQUE INTERBANCAIRE",
+      "category_code": "payment-services",
+      "category_name": "Établissements de paiement offrant des produits et services de paiement",
+      "head_office_address": "8, Angle venue Moulay Rachid et rue Bab Al Mansour - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 129
+      }
+    },
+    {
+      "id": "damane-cash",
+      "name": "DAMANE CASH",
+      "category_code": "payment-services",
+      "category_name": "Établissements de paiement offrant des produits et services de paiement",
+      "head_office_address": "Zénith Millenium, Immeuble 4, 5éme étage, Sidi Maârouf - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 130
+      }
+    },
+    {
+      "id": "lana-cash",
+      "name": "LANA CASH",
+      "category_code": "payment-services",
+      "category_name": "Établissements de paiement offrant des produits et services de paiement",
+      "head_office_address": "187 Avenue Hassan II - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 131
+      }
+    },
+    {
+      "id": "maroc-traitement-de-transactions-m2t",
+      "name": "MAROC TRAITEMENT DE TRANSACTIONS \"M2T\"",
+      "category_code": "payment-services",
+      "category_name": "Établissements de paiement offrant des produits et services de paiement",
+      "head_office_address": "Espace Perla, La Colline, lot n°22, Sidi Maârouf - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 132
+      }
+    },
+    {
+      "id": "maymouna-services-financiers",
+      "name": "MAYMOUNA SERVICES FINANCIERS",
+      "category_code": "payment-services",
+      "category_name": "Établissements de paiement offrant des produits et services de paiement",
+      "head_office_address": "Immeuble Saraya, Angle Boulevard Riad et Avenue Al arz Hay Riad - Rabat",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 133
+      }
+    },
+    {
+      "id": "mt-cash",
+      "name": "MT CASH",
+      "category_code": "payment-services",
+      "category_name": "Établissements de paiement offrant des produits et services de paiement",
+      "head_office_address": "Avenue Annakhil, Hay Riad - Rabat",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 134
+      }
+    },
+    {
+      "id": "naps-sa",
+      "name": "NAPS SA",
+      "category_code": "payment-services",
+      "category_name": "Établissements de paiement offrant des produits et services de paiement",
+      "head_office_address": "16, Rue Abdelhak Ben Mahyou, Palmier - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 135
+      }
+    },
+    {
+      "id": "orange-money-maroc",
+      "name": "ORANGE MONEY MAROC",
+      "category_code": "payment-services",
+      "category_name": "Établissements de paiement offrant des produits et services de paiement",
+      "head_office_address": "Lotissement la colline, Immeuble les 4 temps, 6éme étage, Sidi Maârouf - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 136
+      }
+    },
+    {
+      "id": "wafa-cash",
+      "name": "WAFA CASH",
+      "category_code": "payment-services",
+      "category_name": "Établissements de paiement offrant des produits et services de paiement",
+      "head_office_address": "15, Rue Driss Lahrizi - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 137
+      }
+    },
+    {
+      "id": "wana-money",
+      "name": "WANA MONEY",
+      "category_code": "payment-services",
+      "category_name": "Établissements de paiement offrant des produits et services de paiement",
+      "head_office_address": "Lotissement La Colline 2, Sidi Maârouf - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 138
+      }
+    },
+    {
+      "id": "al-filahi-cash",
+      "name": "AL FILAHI CASH",
+      "category_code": "payment-services",
+      "category_name": "Établissements de paiement offrant des produits et services de paiement",
+      "head_office_address": "Place des Alaouites B.P 49, 10 000 - Rabat",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 139
+      }
+    },
+    {
+      "id": "chari-money",
+      "name": "CHARI MONEY",
+      "category_code": "payment-services",
+      "category_name": "Établissements de paiement offrant des produits et services de paiement",
+      "head_office_address": "Zone Industrielle, Ouled Saleh - 27182 - Bouskoura",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 140
+      }
+    },
+    {
+      "id": "pay-10-mar",
+      "name": "PAY 10 MAR",
+      "category_code": "payment-services",
+      "category_name": "Établissements de paiement offrant des produits et services de paiement",
+      "head_office_address": "Résidence Prima N° 105, Apt 16, 3ème étage, Mostafa Maani et 11 Janvier - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 141
+      }
+    },
+    {
+      "id": "transfert-express",
+      "name": "TRANSFERT EXPRESS",
+      "category_code": "money-transfer",
+      "category_name": "Autres établissements de paiement spécialisés, exclusivement, en matière de transfert de fonds",
+      "head_office_address": "282, Boulevard de la Résistance et Angle Rue de Strasbourg - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 146
+      }
+    },
+    {
+      "id": "vantage-payment-systems",
+      "name": "VANTAGE PAYMENT SYSTEMS",
+      "category_code": "merchant-acquiring",
+      "category_name": "Autres établissements de paiement fournissant, exclusivement, les services d’acquisition monétique",
+      "head_office_address": "200, Boulevard Ghandi, Etage 2 - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 151
+      }
+    },
+    {
+      "id": "attijari-payment",
+      "name": "ATTIJARI PAYMENT",
+      "category_code": "merchant-acquiring",
+      "category_name": "Autres établissements de paiement fournissant, exclusivement, les services d’acquisition monétique",
+      "head_office_address": "2 Boulevard Moulay Youssef - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 152
+      }
+    },
+    {
+      "id": "cdm-pay",
+      "name": "CDM PAY",
+      "category_code": "merchant-acquiring",
+      "category_name": "Autres établissements de paiement fournissant, exclusivement, les services d’acquisition monétique",
+      "head_office_address": "201, boulevard d’Anfa, 2ème étage - Aile A - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 153
+      }
+    },
+    {
+      "id": "saham-payment",
+      "name": "SAHAM PAYMENT",
+      "category_code": "merchant-acquiring",
+      "category_name": "Autres établissements de paiement fournissant, exclusivement, les services d’acquisition monétique",
+      "head_office_address": "55, boulevard Abdelmoumen - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 154
+      }
+    },
+    {
+      "id": "49-koening",
+      "name": "49 KOENING",
+      "category_code": "crowdfunding",
+      "category_name": "Sociétés de financement collaboratif",
+      "head_office_address": "17, rue El Bouhtouri - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 159
+      }
+    },
+    {
+      "id": "akkan",
+      "name": "AKKAN",
+      "category_code": "crowdfunding",
+      "category_name": "Sociétés de financement collaboratif",
+      "head_office_address": "131, Boulevard d’Anfa Résidence Azur, Bureau n°11 B - Casablanca",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 160
+      }
+    },
+    {
+      "id": "alif-invest-sa",
+      "name": "ALIF INVEST SA",
+      "category_code": "crowdfunding",
+      "category_name": "Sociétés de financement collaboratif",
+      "head_office_address": "Douar Alkoura, Imm 1, app 8, 3ème étage - Yaacoub Al Mansour - Rabat",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 161
+      }
+    },
+    {
+      "id": "caisse-de-depot-et-de-gestion",
+      "name": "CAISSE DE DEPOT ET DE GESTION",
+      "category_code": "other-credit-institutions",
+      "category_name": "Autres établissements de crédit",
+      "head_office_address": "Place Moulay el Hassan - Rabat",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 166
+      }
+    },
+    {
+      "id": "societe-nationale-de-garantie-et-du-financement-de-l-entreprise",
+      "name": "SOCIETE NATIONALE DE GARANTIE ET DU FINANCEMENT DE L'ENTREPRISE",
+      "category_code": "other-credit-institutions",
+      "category_name": "Autres établissements de crédit",
+      "head_office_address": "Boulevard Ar Ryad, Hay Ryad - Rabat",
+      "source_ref": {
+        "sheet": "Annexes 2 ",
+        "row": 167
+      }
+    }
+  ],
+  "bank_codes": [
+    {
+      "code": "002",
+      "name": "ARAB BANK PLC",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 2
+      }
+    },
+    {
+      "code": "003",
+      "name": "CAJA DE AHORROS Y PENSIONES DE BARCELONA",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 3
+      }
+    },
+    {
+      "code": "005",
+      "name": "UNION MAROCAINE DES BANQUES",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 4
+      }
+    },
+    {
+      "code": "007",
+      "name": "ATTIJARIWAFA BANK",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 5
+      }
+    },
+    {
+      "code": "011",
+      "name": "BANK OF AFRICA",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 6
+      }
+    },
+    {
+      "code": "013",
+      "name": "BANQUE MAROCAINE POUR LE COMMERCE ET L'INDUSTRIE",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 7
+      }
+    },
+    {
+      "code": "021",
+      "name": "CREDIT DU MAROC",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 8
+      }
+    },
+    {
+      "code": "022",
+      "name": "SAHAM BANK",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 9
+      }
+    },
+    {
+      "code": "028",
+      "name": "CITIBANK MAGHREB",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 10
+      }
+    },
+    {
+      "code": "045",
+      "name": "BANK AL-AMAL",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 11
+      }
+    },
+    {
+      "code": "048",
+      "name": "BCP SECURITIES SERVICES",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 12
+      }
+    },
+    {
+      "code": "050",
+      "name": "CFG GROUP",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 13
+      }
+    },
+    {
+      "code": "052",
+      "name": "FONDS D'EQUIPEMENT COMMUNAL",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 14
+      }
+    },
+    {
+      "code": "054",
+      "name": "CDG CAPITAL",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 15
+      }
+    },
+    {
+      "code": "070",
+      "name": "BANCO SABADELL",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 16
+      }
+    },
+    {
+      "code": "101",
+      "name": "BP CENTRE SUD",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 17
+      }
+    },
+    {
+      "code": "127",
+      "name": "BP FES - MEKNES",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 18
+      }
+    },
+    {
+      "code": "143",
+      "name": "BP LAAYOUNE",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 19
+      }
+    },
+    {
+      "code": "145",
+      "name": "BP MARRAKECH - BENI MELLAL",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 20
+      }
+    },
+    {
+      "code": "150",
+      "name": "BP NADOR - AL HOCEIMA",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 21
+      }
+    },
+    {
+      "code": "157",
+      "name": "BP OUJDA",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 22
+      }
+    },
+    {
+      "code": "164",
+      "name": "BP TANGER - TETOUAN",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 23
+      }
+    },
+    {
+      "code": "181",
+      "name": "BP RABAT - KENITRA",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 24
+      }
+    },
+    {
+      "code": "190",
+      "name": "BANQUE CENTRALE POPULAIRE",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 25
+      }
+    },
+    {
+      "code": "225",
+      "name": "CREDIT AGRICOLE DU MAROC",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 26
+      }
+    },
+    {
+      "code": "230",
+      "name": "CREDIT IMMOBILIER ET HOTELIER",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 27
+      }
+    },
+    {
+      "code": "350",
+      "name": "AL BARID BANK",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 28
+      }
+    },
+    {
+      "code": "360",
+      "name": "UMNIA BANK",
+      "category_code": "participative-bank",
+      "category_name": "Banque participative",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 29
+      }
+    },
+    {
+      "code": "362",
+      "name": "BANK ASSAFA",
+      "category_code": "participative-bank",
+      "category_name": "Banque participative",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 30
+      }
+    },
+    {
+      "code": "365",
+      "name": "AL AKHDAR BANK",
+      "category_code": "participative-bank",
+      "category_name": "Banque participative",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 31
+      }
+    },
+    {
+      "code": "366",
+      "name": "BANK AL YOUSR",
+      "category_code": "participative-bank",
+      "category_name": "Banque participative",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 32
+      }
+    },
+    {
+      "code": "367",
+      "name": "BANK AL KARAM",
+      "category_code": "participative-bank",
+      "category_name": "Banque participative",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 33
+      }
+    },
+    {
+      "code": "605",
+      "name": "ATTIJARI INTERNATIONAL BANK",
+      "category_code": "offshore-bank",
+      "category_name": "Banque off-shore",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 34
+      }
+    },
+    {
+      "code": "040",
+      "name": "CREDIT POPULAIRE DU MAROC",
+      "category_code": "bank",
+      "category_name": "Banque",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 35
+      }
+    },
+    {
+      "code": "610",
+      "name": "CREDIT DU MAROC OFFSHORE – BANQUE OFFSHORE",
+      "category_code": "offshore-bank",
+      "category_name": "Banque off-shore",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 36
+      }
+    },
+    {
+      "code": "615",
+      "name": "BMCI - BANQUE OFFSHORE - GROUPE BNP",
+      "category_code": "offshore-bank",
+      "category_name": "Banque off-shore",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 37
+      }
+    },
+    {
+      "code": "620",
+      "name": "SOCIETE GENERALE OFFSHORE",
+      "category_code": "offshore-bank",
+      "category_name": "Banque off-shore",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 38
+      }
+    },
+    {
+      "code": "625",
+      "name": "BANK OF AFRICA OFFSHORE",
+      "category_code": "offshore-bank",
+      "category_name": "Banque off-shore",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 39
+      }
+    },
+    {
+      "code": "630",
+      "name": "CHAABI INTERNATIONAL BANK",
+      "category_code": "offshore-bank",
+      "category_name": "Banque off-shore",
+      "source_ref": {
+        "sheet": "Feuil1",
+        "row": 40
+      }
+    }
+  ],
+  "categories": [
+    {
+      "dataset": "institutions",
+      "code": "banks",
+      "name": "Banques",
+      "count": 27
+    },
+    {
+      "dataset": "institutions",
+      "code": "participative-banks-and-windows",
+      "name": "Banques et fenêtres participatives",
+      "count": 9
+    },
+    {
+      "dataset": "institutions",
+      "code": "consumer-credit",
+      "name": "Sociétés de crédit à la consommation",
+      "count": 12
+    },
+    {
+      "dataset": "institutions",
+      "code": "real-estate-credit",
+      "name": "Sociétés de crédit immobilier",
+      "count": 2
+    },
+    {
+      "dataset": "institutions",
+      "code": "factoring",
+      "name": "Sociétés d’affacturage",
+      "count": 3
+    },
+    {
+      "dataset": "institutions",
+      "code": "leasing",
+      "name": "Sociétés de crédit-bail",
+      "count": 9
+    },
+    {
+      "dataset": "institutions",
+      "code": "guarantees",
+      "name": "Sociétés de cautionnement",
+      "count": 1
+    },
+    {
+      "dataset": "institutions",
+      "code": "other-finance",
+      "name": "Autres sociétés de financement",
+      "count": 3
+    },
+    {
+      "dataset": "institutions",
+      "code": "offshore-banks",
+      "name": "Banques offshore",
+      "count": 6
+    },
+    {
+      "dataset": "institutions",
+      "code": "microcredit-associations",
+      "name": "Associations de Micro-Crédit",
+      "count": 10
+    },
+    {
+      "dataset": "institutions",
+      "code": "payment-services",
+      "name": "Établissements de paiement offrant des produits et services de paiement",
+      "count": 15
+    },
+    {
+      "dataset": "institutions",
+      "code": "money-transfer",
+      "name": "Autres établissements de paiement spécialisés, exclusivement, en matière de transfert de fonds",
+      "count": 1
+    },
+    {
+      "dataset": "institutions",
+      "code": "merchant-acquiring",
+      "name": "Autres établissements de paiement fournissant, exclusivement, les services d’acquisition monétique",
+      "count": 4
+    },
+    {
+      "dataset": "institutions",
+      "code": "crowdfunding",
+      "name": "Sociétés de financement collaboratif",
+      "count": 3
+    },
+    {
+      "dataset": "institutions",
+      "code": "other-credit-institutions",
+      "name": "Autres établissements de crédit",
+      "count": 2
+    },
+    {
+      "dataset": "bank-codes",
+      "code": "bank",
+      "name": "Banque",
+      "count": 28
+    },
+    {
+      "dataset": "bank-codes",
+      "code": "participative-bank",
+      "name": "Banque participative",
+      "count": 5
+    },
+    {
+      "dataset": "bank-codes",
+      "code": "offshore-bank",
+      "name": "Banque off-shore",
+      "count": 6
+    }
+  ]
+}

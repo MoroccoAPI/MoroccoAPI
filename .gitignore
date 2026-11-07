@@ -6,3 +6,7 @@ coverage/
 !.env.example
 *.log
 .DS_Store
+
+# BAM attachments can contain private document metadata.
+/data/banking/source/
+/data/banking/*.xls*

@@ -318,6 +318,37 @@ const consulateFields: Record<string, Translation> = {
 
 export function fieldMeaning(key: string, path: string, endpoint: Endpoint, language: Language): string | undefined {
   const t = (value: Translation) => translate(value, language);
+  if (endpoint.group === "Banking" && !path.startsWith("error.")) {
+    if (key === "count" && path === "data[].count") return t(["Nombre de fiches dans cette catégorie du fichier source.", "Number of records in this source workbook category.", "عدد السجلات في هذا الصنف من الملف الأصلي."]);
+    const meanings: Record<string, Translation> = {
+      code: endpoint.shortPath === "/banking/categories"
+        ? ["Code de catégorie propre au référentiel indiqué par dataset.", "Category code belonging to the dataset named in dataset.", "رمز الصنف الخاص بالمرجع المحدد في dataset."]
+        : ["Code bancaire BAM à trois chiffres, avec zéros initiaux. Distinct d’un code SWIFT/BIC.", "Three-digit BAM bank code with leading zeros, distinct from a SWIFT/BIC code.", "رمز بنك المغرب من ثلاثة أرقام مع الأصفار الأولى، ويختلف عن SWIFT/BIC."],
+      id: ["Identifiant MoroccoAPI dérivé du nom source ; ce n’est pas un identifiant officiel BAM.", "MoroccoAPI identifier derived from the source name; not an official BAM identifier.", "معرّف MoroccoAPI مشتق من اسم المصدر؛ ليس معرّفاً رسمياً لبنك المغرب."],
+      name: ["Libellé conservé tel qu’il figure dans le fichier BAM, en français.", "French label retained as supplied in the BAM workbook.", "الاسم الفرنسي محفوظ كما ورد في ملف بنك المغرب."],
+      category_code: ["Code MoroccoAPI de la catégorie dans ce référentiel.", "MoroccoAPI category code within this dataset.", "رمز الصنف لدى MoroccoAPI داخل هذا المرجع."],
+      category_name: ["Catégorie conservée telle que fournie par BAM.", "Category label retained as supplied by BAM.", "اسم الصنف محفوظ كما أورده بنك المغرب."],
+      head_office_address: ["Adresse du siège social dans le fichier source ; aucune géolocalisation n’est déduite.", "Head-office address from the source workbook; no geolocation is inferred.", "عنوان المقر الاجتماعي من الملف الأصلي؛ لا يُستنتج منه موقع جغرافي."],
+      received_at: ["Date du courriel BAM transmettant les fichiers, distincte de leur date de référence.", "Date of the BAM email supplying the files, separate from their reference date.", "تاريخ رسالة بنك المغرب التي أرفقت الملفات، وهو مختلف عن تاريخ مرجع البيانات."],
+      copied_at: ["Date de copie utilisée dans l’attribution demandée par BAM.", "Copy date used in the attribution required by BAM.", "تاريخ النسخ المذكور ضمن بيان نسبة البيانات إلى بنك المغرب."],
+      license: ["Identifiant local des conditions de la charte BAM ; ne désigne pas une licence ouverte standard.", "Local identifier for the BAM charter conditions; not a standard open license.", "معرّف محلي لشروط ميثاق بنك المغرب؛ ليس رخصة مفتوحة معيارية."],
+      terms_url: ["Charte officielle BAM sur la diffusion des données et statistiques.", "Official BAM charter on publishing data and statistics.", "الميثاق الرسمي لبنك المغرب بشأن نشر البيانات والإحصاءات."],
+      terms_section: ["Section de la charte définissant les conditions de réutilisation.", "Charter section defining the reuse conditions.", "قسم الميثاق الذي يحدد شروط إعادة الاستخدام."],
+      attribution: ["Mention de la source et de la date de copie à conserver lors de la réutilisation.", "Source and copy-date attribution to retain when reusing the data.", "بيان المصدر وتاريخ النسخ الواجب الاحتفاظ به عند إعادة الاستخدام."],
+      notice: ["Mention des transformations MoroccoAPI et de la non-responsabilité de BAM.", "Notice of MoroccoAPI transformations and BAM non-liability.", "بيان التحويلات التي أجرتها MoroccoAPI وعدم مسؤولية بنك المغرب عنها."],
+      reuse: ["Résumé des conditions de la charte ; consulter le texte lié.", "Summary of the charter conditions; consult the linked text.", "ملخص شروط الميثاق؛ راجع النص المرتبط."],
+      non_commercial_use: ["Réutilisation non commerciale avec mention de BAM et de la date de copie.", "Non-commercial reuse with BAM attribution and the copy date.", "إعادة الاستخدام غير التجاري مع ذكر بنك المغرب وتاريخ النسخ."],
+      commercial_use: ["Une autorisation écrite de BAM est requise pour l’usage commercial défini par la charte.", "Written BAM permission is required for commercial use as defined by the charter.", "الاستعمال التجاري وفق تعريف الميثاق يتطلب إذناً كتابياً من بنك المغرب."],
+      modifications: ["Informer des modifications et inclure une clause de non-responsabilité de BAM.", "Disclose changes and include a BAM non-liability notice.", "الإفصاح عن التعديلات وإدراج بيان عدم مسؤولية بنك المغرب."],
+      filename: ["Nom du fichier joint transmis par BAM.", "Name of the workbook attachment supplied by BAM.", "اسم الملف المرفق الذي أرسله بنك المغرب."],
+      records: ["Nombre de fiches contenues dans le fichier source, avant filtrage.", "Number of records in the source workbook before filtering.", "عدد السجلات في الملف الأصلي قبل التصفية."],
+      reference_date: ["Date de référence indiquée par la source, ou null si non précisée ; voir date_basis.", "Source reference date, or null when unstated; see date_basis.", "تاريخ مرجع المصدر، أو null عند عدم تحديده؛ راجع date_basis."],
+      date_basis: ["source-filename : date tirée du nom du fichier ; not-stated-in-workbook : date non précisée dans le classeur.", "source-filename: date from the filename; not-stated-in-workbook: no date stated in the workbook.", "source-filename: التاريخ من اسم الملف؛ not-stated-in-workbook: التاريخ غير مذكور في الملف."],
+      sha256: ["Empreinte SHA-256 identifiant la pièce jointe originale ; le classeur brut n’est pas inclus.", "SHA-256 fingerprint identifying the original attachment; the raw workbook is not bundled.", "بصمة SHA-256 لتحديد الملف المرفق الأصلي؛ ملف الجداول الخام غير مرفق."],
+    };
+    const meaning = meanings[key];
+    if (meaning) return t(meaning);
+  }
   if (endpoint.group === "Insurance") {
     const meanings: Record<string, Translation> = {
       acaps_code: ["Code ACAPS source, avec zéros et suffixes conservés. Plusieurs fiches peuvent partager ce code.", "Source ACAPS code, preserving zeros and branch suffixes. Multiple records may share a code.", "رمز ACAPS من المصدر مع الاحتفاظ بالأصفار واللواحق. قد تشترك عدة سجلات في رمز واحد."],
