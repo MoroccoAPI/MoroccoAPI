@@ -1,6 +1,8 @@
 import type { FastifyPluginAsync } from "fastify";
 
-import { collectionResponseSchema, paginate, paginationQuerySchema, type PaginationQuery } from "../common/pagination.js";
+import {
+  collectionResponseSchema, paginate, paginateWindow, paginationQuerySchema, type PaginationQuery,
+} from "../common/pagination.js";
 import { errorSchema } from "../common/schemas.js";
 import type { GeographySnapshot } from "../geography/types.js";
 import { loadCpi } from "./data/cpi.js";
@@ -45,19 +47,26 @@ export const prices: FastifyPluginAsync<{ geography: GeographySnapshot }> = asyn
     // YYYY-MM strings sort chronologically.
     const first = from === undefined ? 0 : months.findIndex((month) => month >= from);
     const last = to === undefined ? months.length - 1 : months.findLastIndex((month) => month <= to);
-    const rows: CpiObservation[] = [];
-    for (const item of first < 0 ? [] : series) {
-      const info = productByCode.get(item.product_code)!;
-      if ((city !== undefined && item.city_code !== city) || (product !== undefined && item.product_code !== product) ||
-        (level !== undefined && info.level !== level)) continue;
-      for (let index = first; index <= last; index++) {
+    const span = first < 0 || last < first ? 0 : last - first + 1;
+    const matches = span === 0 ? [] : series.filter((item) =>
+      (city === undefined || item.city_code === city) && (product === undefined || item.product_code === product) &&
+      (level === undefined || productByCode.get(item.product_code)!.level === level));
+    // Every matching series contributes the same months, so row n is month n % span of series n / span
+    // and only the requested page is built.
+    const total = matches.length * span;
+    return paginateWindow(total, (offset, count) => {
+      const rows: CpiObservation[] = [];
+      for (let row = offset; row < offset + count; row++) {
+        const item = matches[Math.floor(row / span)]!;
+        const info = productByCode.get(item.product_code)!;
+        const index = first + (row % span);
         rows.push({
           city_code: item.city_code, product_code: item.product_code, product_name: info.name, level: info.level,
           month: months[index]!, index: item.values[index]!,
         });
       }
-    }
-    return paginate(rows, buildDatasetMeta(rows.length), request.query);
+      return rows;
+    }, buildDatasetMeta(total), request.query);
   });
 
   app.get<{ Querystring: { level?: ProductLevel } & PaginationQuery }>("/api/v2/prices/cpi/products", {
