@@ -83,3 +83,37 @@ export function paginate<T, M extends { total: number }>(
     },
   };
 }
+
+/**
+ * Same response as `paginate`, for collections whose records are derived on demand: only the
+ * requested page is built. `readPage(offset, count)` must return exactly `count` records, in the
+ * order the full list would have, starting at `offset`; `total` is the size of that full list.
+ */
+export function paginateWindow<T, M extends { total: number }>(
+  total: number,
+  readPage: (offset: number, count: number) => readonly T[],
+  meta: M,
+  query: PaginationQuery,
+) {
+  const limit = query.limit ?? DEFAULT_PAGE_LIMIT;
+  const offset = query.offset ?? 0;
+  assertSafeIntegerInRange(limit, "limit", 1, MAX_PAGE_LIMIT);
+  assertSafeIntegerInRange(offset, "offset", 0, MAX_PAGE_OFFSET);
+  const count = Math.max(0, Math.min(limit, total - offset));
+  const data = count === 0 ? [] : readPage(offset, count);
+  if (data.length !== count) throw new Error(`Expected ${count} records from offset ${offset}, got ${data.length}`);
+  const nextOffset = offset + count;
+  const hasMore = nextOffset < total;
+
+  return {
+    data,
+    meta: {
+      ...meta,
+      pagination: {
+        limit, offset, count,
+        has_more: hasMore,
+        next_offset: hasMore ? nextOffset : null,
+      },
+    },
+  };
+}

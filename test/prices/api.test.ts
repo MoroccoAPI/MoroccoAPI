@@ -61,6 +61,23 @@ describe("prices/cpi", () => {
     assert.ok(!all.data.some((row) => row.product_code === "021"));
   });
 
+  it("returns the same rows for any page size, across series boundaries", async () => {
+    const url = "/api/v2/prices/cpi?city=casablanca&level=division&from=2026-06";
+    const full = await app.inject(`${url}&limit=500`);
+    const rows: Observation[] = full.json().data;
+    assert.equal(full.json().meta.total, 12 * 3);
+    assert.equal(rows.length, 12 * 3);
+    assert.deepEqual(rows.slice(2, 4).map((row) => [row.product_code, row.month]), [["01", "2026-08"], ["02", "2026-06"]]);
+    for (const [limit, offset] of [[1, 0], [2, 2], [7, 5], [5, 33], [4, 35], [10, 36], [10, 99]] as const) {
+      const page = await app.inject(`${url}&limit=${limit}&offset=${offset}`);
+      const body = page.json();
+      assert.deepEqual(body.data, rows.slice(offset, offset + limit), `limit=${limit} offset=${offset}`);
+      assert.equal(body.meta.total, 36);
+      assert.equal(body.meta.pagination.count, body.data.length);
+      assert.equal(body.meta.pagination.has_more, offset + limit < 36);
+    }
+  });
+
   it("compares cities for one product and month, and filters by level", async () => {
     const food = await app.inject("/api/v2/prices/cpi?product=01&from=2026-08&to=2026-08");
     const rows: Observation[] = food.json().data;
