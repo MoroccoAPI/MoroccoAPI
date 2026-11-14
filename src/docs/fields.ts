@@ -318,6 +318,36 @@ const consulateFields: Record<string, Translation> = {
 
 export function fieldMeaning(key: string, path: string, endpoint: Endpoint, language: Language): string | undefined {
   const t = (value: Translation) => translate(value, language);
+  if (endpoint.group === "Railway stations" && !path.startsWith("error.")) {
+    const meanings: Record<string, Translation> = {
+      id: ["Identifiant de l’objet OSM principal, pas un code ONCF ou UIC.", "Primary OSM object identifier, not an ONCF or UIC code.", "معرّف عنصر OSM الرئيسي، وليس رمز ONCF أو UIC."],
+      names: ["Noms explicitement renseignés par langue dans OSM ; aucune traduction générée.", "Explicit OSM language tags; no generated translations.", "الأسماء اللغوية المذكورة صراحة في OSM؛ دون ترجمة مولدة."],
+      type: ["station : gare ; halt : petit arrêt ferroviaire.", "station: railway station; halt: smaller rail stop.", "station: محطة؛ halt: موقف قطار صغير."],
+      city: ["Ville indiquée par addr:city ou is_in:city dans OSM ; null si absente.", "City explicitly tagged addr:city or is_in:city in OSM; null if absent.", "المدينة المحددة عبر addr:city أو is_in:city في OSM؛ null عند غيابها."],
+      operator: ["Exploitant renseigné dans OSM, sans confirmation officielle actuelle.", "Operator recorded in OSM, without current official confirmation.", "المشغّل المسجل في OSM دون تأكيد رسمي حالي."],
+      network: ["Réseau renseigné dans OSM, s’il existe.", "Network label recorded in OSM, where present.", "اسم الشبكة المسجل في OSM عند توفره."],
+      method: ["osm_point : point source ; bounding_box_center : centre de l’emprise, pas une entrée.", "osm_point: source point; bounding_box_center: extent center, not an entrance.", "osm_point: نقطة المصدر؛ bounding_box_center: مركز نطاق العنصر وليس مدخلاً."],
+      osm_status: ["Cycle de vie explicite dans OSM ; unknown ne confirme pas l’ouverture.", "Explicit OSM lifecycle; unknown does not confirm operation.", "الحالة المذكورة صراحة في OSM؛ unknown لا تؤكد العمل."],
+      wikidata_id: ["Identifiant Wikidata présent dans OSM, sans enrichissement externe.", "Wikidata identifier tagged in OSM; no external enrichment.", "معرّف Wikidata الموجود في OSM دون إضافة خارجية."],
+      passenger_service: ["null : aucune desserte voyageurs actuelle vérifiée.", "null: current passenger service is unverified.", "null: خدمة المسافرين الحالية غير متحقق منها."],
+      connections: ["null : liaisons indisponibles, pas une liste vide prouvant leur absence.", "null: connections unavailable, not an empty list proving no connections.", "null: الربط غير متاح، وليس قائمة فارغة تثبت انعدامه."],
+      osm_type: ["Type d’objet OpenStreetMap : node, way ou relation.", "OpenStreetMap object type: node, way or relation.", "نوع عنصر OpenStreetMap: node أو way أو relation."],
+      osm_id: ["Identifiant numérique OSM, à associer à osm_type.", "OSM numeric identifier, interpreted together with osm_type.", "المعرّف الرقمي لـOSM ويُستخدم مع osm_type."],
+      version: ["Version de l’objet OSM dans cet extrait.", "OSM object version in this extract.", "إصدار عنصر OSM في هذه النسخة."],
+      updated_at: ["Dernière modification OSM de cet objet ; pas une vérification de terrain.", "Last OSM edit of this object; not an on-site verification.", "آخر تعديل لعنصر OSM؛ ليس تحققاً ميدانياً."],
+      url: ["Lien vers l’objet OSM, dont la version en ligne peut avoir évolué.", "Link to the OSM object; its online version may have changed.", "رابط عنصر OSM؛ قد تكون نسخته على الإنترنت تغيّرت."],
+      fields: ["Champs fournis par cet objet source dans la fiche normalisée.", "Normalized record fields contributed by this source object.", "حقول السجل الموحد التي ساهم بها عنصر المصدر."],
+      snapshot_at: ["Date et heure de l’extrait OSM, distinctes des modifications individuelles.", "OSM extract timestamp, separate from individual object edits.", "تاريخ ووقت نسخة OSM، مستقلان عن تعديلات العناصر."],
+      snapshot_record_count: ["Nombre de fiches après filtrage et regroupements, avant les filtres de la requête.", "Snapshot records after exclusions and reviewed merges, before request filters.", "عدد سجلات النسخة بعد الاستبعاد والدمج المراجع وقبل مرشحات الطلب."],
+      attribution: ["Mention d’attribution requise pour les données OSM.", "Required attribution for the OSM data.", "إشارة النسبة المطلوبة لبيانات OSM."],
+      sha256: ["Empreinte SHA-256 du fichier PBF source complet.", "SHA-256 checksum of the complete source PBF file.", "بصمة SHA-256 لملف PBF الأصلي كاملاً."],
+      sources: path.startsWith("meta.")
+        ? ["Origine et licence de l’extrait téléchargé.", "Origin and license of the downloaded extract.", "مصدر ورخصة النسخة المنزلة."]
+        : ["Objets OSM justifiant cette fiche ; le premier détermine son identifiant et sa position.", "OSM evidence for this record; the first determines its identifier and position.", "عناصر OSM التي توثق السجل؛ الأول يحدد معرّفه وموقعه."],
+    };
+    const meaning = meanings[key];
+    if (meaning) return t(meaning);
+  }
   if (endpoint.group === "Banking" && !path.startsWith("error.")) {
     if (key === "count" && path === "data[].count") return t(["Nombre de fiches dans cette catégorie du fichier source.", "Number of records in this source workbook category.", "عدد السجلات في هذا الصنف من الملف الأصلي."]);
     const meanings: Record<string, Translation> = {
