@@ -1,0 +1,214 @@
+{
+  "source": {
+    "id": "osm-geofabrik-morocco-rail",
+    "producer": "OpenStreetMap contributors",
+    "source_url": "https://download.geofabrik.de/africa/morocco.html",
+    "resource_url": "https://download.geofabrik.de/africa/morocco-261113.osm.pbf",
+    "snapshot_at": "2026-11-13T21:22:20Z",
+    "replication_sequence": "4949",
+    "retrieved_at": "2026-11-14",
+    "pbf_sha256": "1676545ffd233843611c4555456f7056b70a65978e94a752e07e528cd10d17f4",
+    "pbf_size_bytes": 244550155,
+    "license": "ODbL-1.0",
+    "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+    "attribution": "© OpenStreetMap contributors"
+  },
+  "transformation_version": "1.0.0",
+  "raw_sha256": "b310e7b19309915108b5d3cceb093a52cdeec768076ec72afb3d8b6fe6b9e000",
+  "mappings_sha256": "ecf4751497b4f7981579e3cbbadb8b679e417b2e26cafd75f6b15745473635c2",
+  "stations_sha256": "8ac4aafa3e8c15215372a144b82b470d3480d046e70994d137cd9ec7600ffef6",
+  "raw_record_count": 178,
+  "record_count": 151,
+  "excluded": [],
+  "warnings": [
+    {
+      "id": "osm-node-1481328664",
+      "reason": "railway=halt conflicts with disused:railway=station; current lifecycle unresolved"
+    },
+    {
+      "id": "osm-node-3117169195",
+      "reason": "railway=halt conflicts with disused:railway=station; current lifecycle unresolved"
+    },
+    {
+      "id": "osm-node-9425177171",
+      "reason": "railway=halt conflicts with disused:railway=station; current lifecycle unresolved"
+    },
+    {
+      "id": "osm-node-9425688725",
+      "reason": "railway=halt conflicts with disused:railway=station; current lifecycle unresolved"
+    }
+  ],
+  "merged": [
+    {
+      "primary": "osm-node-9450431709",
+      "members": [
+        "osm-node-12167273479"
+      ],
+      "reason": "Reviewed 2026-11-14 against the pinned OSM tags and coordinates: duplicate station/stop-position representations of Kenitra Medina, approximately 21 m apart. Preserve the established station point and retain the secondary source ID."
+    },
+    {
+      "primary": "osm-node-9450411188",
+      "members": [
+        "osm-node-12167273481"
+      ],
+      "reason": "Reviewed 2026-11-14 against the pinned OSM tags and coordinates: duplicate station/stop-position representations of Sidi Yahya, approximately 7 m apart. Preserve the established station point and retain the secondary source ID."
+    },
+    {
+      "primary": "osm-node-2191690280",
+      "members": [
+        "osm-node-12167273482"
+      ],
+      "reason": "Reviewed 2026-11-14 against the pinned OSM tags and coordinates: duplicate station/stop-position representations of Kceibya, approximately 71 m apart. Preserve the established station point and retain the secondary source ID."
+    },
+    {
+      "primary": "osm-node-9452234731",
+      "members": [
+        "osm-node-12167273486"
+      ],
+      "reason": "Reviewed 2026-11-14 against the pinned OSM tags and coordinates: duplicate station/stop-position representations of Dar Gueddari, approximately 7 m apart. Preserve the established station point and retain the secondary source ID."
+    },
+    {
+      "primary": "osm-node-1480599791",
+      "members": [
+        "osm-node-12167273487"
+      ],
+      "reason": "Reviewed 2026-11-14 against the pinned OSM tags and coordinates: duplicate station/stop-position representations of Souk el Arbaa du Gharb, approximately 8 m apart. Preserve the established station point and retain the secondary source ID."
+    },
+    {
+      "primary": "osm-node-2163661965",
+      "members": [
+        "osm-node-12167273488"
+      ],
+      "reason": "Reviewed 2026-11-14 against the pinned OSM tags and coordinates: duplicate station/stop-position representations of Mechraa Bel Ksiri, approximately 18 m apart. Preserve the established station point and retain the secondary source ID."
+    },
+    {
+      "primary": "osm-node-2990165308",
+      "members": [
+        "osm-node-12167273489"
+      ],
+      "reason": "Reviewed 2026-11-14 against the pinned OSM tags and coordinates: duplicate station/stop-position representations of Arbaoua, approximately 9 m apart. Preserve the established station point and retain the secondary source ID."
+    },
+    {
+      "primary": "osm-node-2990165307",
+      "members": [
+        "osm-node-12167273490"
+      ],
+      "reason": "Reviewed 2026-11-14 against the pinned OSM tags and coordinates: duplicate station/stop-position representations of Ksar el Kebir, approximately 10 m apart. Preserve the established station point and retain the secondary source ID."
+    },
+    {
+      "primary": "osm-node-2990165305",
+      "members": [
+        "osm-node-12167273491"
+      ],
+      "reason": "Reviewed 2026-11-14 against the pinned OSM tags and coordinates: duplicate station/stop-position representations of Souaken, approximately 24 m apart. Preserve the established station point and retain the secondary source ID."
+    },
+    {
+      "primary": "osm-node-9455086473",
+      "members": [
+        "osm-node-12167273492"
+      ],
+      "reason": "Reviewed 2026-11-14 against the pinned OSM tags and coordinates: duplicate station/stop-position representations of Tlata Rissana, approximately 20 m apart. Preserve the established station point and retain the secondary source ID."
+    },
+    {
+      "primary": "osm-node-1686960811",
+      "members": [
+        "osm-node-12167273494"
+      ],
+      "reason": "Reviewed 2026-11-14 against the pinned OSM tags and coordinates: duplicate station/stop-position representations of Asilah, approximately 14 m apart. Preserve the established station point and retain the secondary source ID."
+    },
+    {
+      "primary": "osm-node-9418298546",
+      "members": [
+        "osm-node-12167273497"
+      ],
+      "reason": "Reviewed 2026-11-14 against the pinned OSM tags and coordinates: duplicate station/stop-position representations of Tangier Mghouga, approximately 6 m apart. Preserve the established station point and retain the secondary source ID."
+    },
+    {
+      "primary": "osm-node-694673717",
+      "members": [
+        "osm-node-12169457624"
+      ],
+      "reason": "Reviewed 2026-11-14 against the pinned OSM tags and coordinates: duplicate station/stop-position representations of Ain Taoujdate, approximately 29 m apart. Preserve the established station point and retain the secondary source ID."
+    },
+    {
+      "primary": "osm-node-4717157258",
+      "members": [
+        "osm-node-12173906767"
+      ],
+      "reason": "Reviewed 2026-11-14 against the pinned OSM tags and coordinates: duplicate station/stop-position representations of Laassilate, approximately 18 m apart. Preserve the established station point and retain the secondary source ID."
+    },
+    {
+      "primary": "osm-node-9418232000",
+      "members": [
+        "osm-node-12167273499",
+        "osm-node-12186265017",
+        "osm-node-12186265018"
+      ],
+      "reason": "Tanger Ville: station point plus three rail stop_position nodes, matching names and coordinates within 47 m. Reviewed against pinned OSM evidence on 2026-11-14."
+    },
+    {
+      "primary": "osm-node-7055155496",
+      "members": [
+        "osm-node-12173906766",
+        "osm-node-12202794581"
+      ],
+      "reason": "Casa Voyageurs: same Wikidata Q2448793, station/stop-position points within 82 m. Reviewed 2026-11-14; all source identities retained."
+    },
+    {
+      "primary": "osm-node-2429582026",
+      "members": [
+        "osm-node-12188302082"
+      ],
+      "reason": "Casa Port: same Wikidata Q3096139, points 51 m apart. Primary retains explicit French and Arabic names; alternate Arabic spelling remains searchable. Reviewed 2026-11-14."
+    },
+    {
+      "primary": "osm-node-9450518206",
+      "members": [
+        "osm-node-12186265019",
+        "osm-node-12188302079"
+      ],
+      "reason": "Kenitra: three identically named stop_position nodes within 22 m, each mistagged railway=station. One station record; retain the established point and all source IDs. Reviewed 2026-11-14."
+    },
+    {
+      "primary": "osm-node-14268003569",
+      "members": [
+        "osm-way-449071760"
+      ],
+      "reason": "Rabat Agdal: the station point lies inside the station polygon in the pinned source geometry. Use point coordinates and fill missing fields from the polygon. Reviewed 2026-11-14."
+    },
+    {
+      "primary": "osm-node-12188628879",
+      "members": [
+        "osm-way-1318784997"
+      ],
+      "reason": "Bouskoura: the station point lies inside the station polygon in the pinned source geometry. Use point coordinates and fill missing fields from the polygon. Reviewed 2026-11-14."
+    },
+    {
+      "primary": "osm-node-3827702078",
+      "members": [
+        "osm-way-1318784996"
+      ],
+      "reason": "Berrechid: the station point lies inside the station polygon in the pinned source geometry. Use point coordinates and fill missing fields from the polygon. Reviewed 2026-11-14."
+    },
+    {
+      "primary": "osm-node-3827703993",
+      "members": [
+        "osm-way-1318784994"
+      ],
+      "reason": "Sidi el Aidi: the station point lies inside the station polygon in the pinned source geometry. Use point coordinates and fill missing fields from the polygon. Reviewed 2026-11-14."
+    },
+    {
+      "primary": "osm-node-14008729906",
+      "members": [
+        "osm-node-14008729905"
+      ],
+      "reason": "Airport Mohammed V TGV project: identical name, points 10 m apart; primary explicitly construction:railway=station (updated 2026-10-09), secondary has no lifecycle status. Preserve construction and never interpret unknown as operational. Reviewed 2026-11-14."
+    }
+  ],
+  "coverage": {
+    "named": 137,
+    "name_ar": 58,
+    "name_fr": 54,
+    "city": 12
+  }
+}

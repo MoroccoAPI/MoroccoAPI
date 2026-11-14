@@ -1,0 +1,89 @@
+id: osm-geofabrik-morocco-rail
+title: OpenStreetMap railway stations and halts in the Geofabrik Morocco extract
+version: 1.0.0
+reviewed_at: 2026-11-14
+retrieved_at: 2026-11-14
+source_updated_at: 2026-11-13T21:22:20Z
+producer: OpenStreetMap contributors
+source_url: https://download.geofabrik.de/africa/morocco.html
+resource_url: https://download.geofabrik.de/africa/morocco-261113.osm.pbf
+current_resource_url: https://download.geofabrik.de/africa/morocco-latest.osm.pbf
+source_license: ODbL-1.0
+license_url: https://opendatacommons.org/licenses/odbl/1-0/
+license_evidence: https://www.openstreetmap.org/copyright
+redistribution_review: approved
+attribution: Contains information from OpenStreetMap, © OpenStreetMap contributors. Normalized by MoroccoAPI under ODbL 1.0.
+contains_personal_data: false
+privacy_review: Only allowlisted public facility tags and object version/edit dates are retained. No contributor names, IDs, changesets, personal contacts or raw full-country data are committed.
+source_file:
+  format: OSM PBF
+  size_bytes: 244550155
+  sha256: 1676545ffd233843611c4555456f7056b70a65978e94a752e07e528cd10d17f4
+  replication_sequence: '4949'
+scope: Geofabrik Morocco extract boundary, not an inferred country assignment for every feature. This scope is independent of HCP administrative datasets.
+raw_record_count: 178
+record_count: 151
+reviewed_merge_groups: 23
+merged_secondary_objects: 27
+name_ar_count: 58
+name_fr_count: 54
+city_count: 12
+transformation:
+  raw_snapshot: data/rail/source/osm-stations.json
+  reviewed_mappings: data/rail/mappings.json
+  manifest: data/rail/manifest.json
+  implementation: src/rail/data/transform.ts
+  loader: src/rail/data/stations.ts
+  extraction_tool: Pyosmium 4.3.2, used outside the application to prepare the public source extract.
+  source_tag_allowlist: >-
+    railway, station, train, tram, subway, light_rail, usage, name, name:ar,
+    name:fr, name:en, name:tzm, name:ber, alt_name, alt_name:ar, alt_name:fr,
+    old_name, short_name, official_name, operator, network, addr:city,
+    is_in:city, wikidata, uic_ref, ref, railway:ref, public_transport, type,
+    disused, abandoned, construction, proposed, demolished, razed, and the
+    corresponding lifecycle-prefixed railway keys.
+  output_checksum: SHA-256 of JSON.stringify(stations, null, 2) followed by one LF; records are built at startup, not stored twice.
+  steps:
+    - Extract nodes, ways and relations with railway=station/halt or explicit lifecycle-prefixed station/halt tags.
+    - Keep complete coordinates for candidate source objects, allowlisted tags, version and edit timestamp.
+    - Reject explicitly tagged subway, tram, light-rail, monorail and funicular station modes.
+    - Preserve explicit lifecycle status; missing status is unknown, never active.
+    - Keep names only in languages explicitly tagged in OSM; no inferred French translation.
+    - Keep city only from addr:city or is_in:city; no nearest-city guess or HCP code join.
+    - Preserve node coordinates; label derived bounding-box centers for other geometries.
+    - Apply only individually reviewed duplicate mappings, retaining all OSM identities and per-field source attribution.
+    - Prefer the explicit construction record for the duplicate airport TGV project; unknown does not override construction.
+    - Keep passenger_service and connections null; no official or unofficial timetable feed is imported.
+    - Sort by stable OSM identifier and verify source, mappings and generated-output SHA-256 checksums against the manifest at startup.
+  verification: node --import tsx --test test/rail/*.test.ts
+endpoints:
+  - GET /api/v2/transport/rail/stations
+  - GET /api/v2/transport/rail/stations/{id}
+filters: q, city, type, status, limit, offset; filters combine with AND.
+update_frequency: Geofabrik publishes frequent extracts; this API serves an immutable reviewed local snapshot.
+refresh:
+  - Download a dated Geofabrik PBF and record its SHA-256. Preserve that file outside version control.
+  - Extract candidate nodes, ways and relations with Pyosmium; cache node locations before filtering and assemble multipolygon areas.
+  - Preserve object type, numeric ID, version, edit timestamp, allowlisted tags and GeoJSON geometry; sort source objects by type and numeric ID.
+  - Record the actual retrieval date and PBF header replication timestamp, sequence, file size and hash in the source metadata.
+  - Review mappings against the new raw evidence. Missing, distant or conflicting mapped members fail the build.
+  - Rebuild with transformStations in src/rail/data/transform.ts and review counts, warnings, merges and per-field differences.
+  - Update data/rail/manifest.json checksums and coverage, this source manifest and snapshot assertions together.
+  - Run npm run check. API requests never download upstream data.
+limitations:
+  - This is a community geographic inventory, not a complete official ONCF registry or a live service feed.
+  - A fresh extract does not mean that every station was recently edited or verified on site.
+  - Includes 11 source-marked disused/abandoned records and one construction record; other operation states remain unknown.
+  - Four current halt tags coexist with disused station tags. Preserve halt and unknown lifecycle; the manifest lists these conflicts.
+  - Fourteen records have no source name. Missing language labels and cities remain null.
+  - Unnamed close points and adjacent old/new station buildings are not merged without sufficient identity evidence.
+  - OSM geometry and classification may be incorrect; bounding-box centers are not station entrances.
+  - City labels can be multilingual and do not constitute authoritative administrative boundaries.
+  - Direct train connections, timetables, ticket prices, accessibility and official UIC codes are unavailable.
+research:
+  - source_url: https://github.com/orhazal/oncf-gtfs-unofficial
+    reuse: Not imported. Prototype extrapolates one observed week, mixes coordinate sources and generates unofficial UIC-style codes.
+  - source_url: https://www.transit.land/data/feeds/f-oncf~morocco~rail
+    reuse: Not imported. Referenced unofficial GTFS service period ends in 2025.
+  - source_url: https://data.humdata.org/dataset/hotosm_mar_railways
+    reuse: Reviewed but not imported. October 2026 OSM derivative; dated Geofabrik November PBF is newer and retains halt/lifecycle tags.

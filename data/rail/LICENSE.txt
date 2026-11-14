@@ -1,0 +1,13 @@
+The OSM-derived railway database, source extract and mappings in this directory
+are available under the Open Database License (ODbL) 1.0:
+https://opendatacommons.org/licenses/odbl/1-0/
+
+Contains information from OpenStreetMap, © OpenStreetMap contributors.
+https://www.openstreetmap.org/copyright
+
+Normalized by MoroccoAPI. This is a community-maintained dataset, not an official
+ONCF inventory. Preserve attribution and ODbL notices when redistributing it.
+Individual contents are subject to the Database Contents License where applicable:
+https://opendatacommons.org/licenses/dbcl/1-0/
+
+The source code outside this data directory retains the project Apache-2.0 license.

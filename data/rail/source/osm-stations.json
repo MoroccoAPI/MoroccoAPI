@@ -1,0 +1,4523 @@
+{
+  "source": {
+    "id": "osm-geofabrik-morocco-rail",
+    "producer": "OpenStreetMap contributors",
+    "source_url": "https://download.geofabrik.de/africa/morocco.html",
+    "resource_url": "https://download.geofabrik.de/africa/morocco-261113.osm.pbf",
+    "snapshot_at": "2026-11-13T21:22:20Z",
+    "replication_sequence": "4949",
+    "retrieved_at": "2026-11-14",
+    "pbf_sha256": "1676545ffd233843611c4555456f7056b70a65978e94a752e07e528cd10d17f4",
+    "pbf_size_bytes": 244550155,
+    "license": "ODbL-1.0",
+    "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+    "attribution": "© OpenStreetMap contributors"
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 485940044,
+      "version": 8,
+      "timestamp": "2022-11-06T23:06:58Z",
+      "tags": {
+        "name": "Gare Ennassim",
+        "public_transport": "station",
+        "railway": "station",
+        "wikidata": "Q3095738"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.6583805,
+          33.5175026
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 485949418,
+      "version": 3,
+      "timestamp": "2018-11-19T09:03:53Z",
+      "tags": {
+        "name": "Mers Sultan",
+        "railway": "station",
+        "wikidata": "Q3097020"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.6087962,
+          33.5697456
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 635975802,
+      "version": 6,
+      "timestamp": "2026-01-14T16:44:49Z",
+      "tags": {
+        "name": "Sidi Bou Othmane",
+        "name:ar": "بوناكة",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9465566,
+          31.9230643
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 635981870,
+      "version": 5,
+      "timestamp": "2015-05-17T15:21:31Z",
+      "tags": {
+        "railway": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.8162992,
+          32.5782998
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 694673717,
+      "version": 9,
+      "timestamp": "2022-01-22T09:29:37Z",
+      "tags": {
+        "name": "Ain Taoujdate عين تاوجطات",
+        "name:ar": "عين تاوجطات",
+        "name:fr": "Ain Taoujdate",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.2136072,
+          33.9339601
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 1045299774,
+      "version": 4,
+      "timestamp": "2025-09-16T07:08:04Z",
+      "tags": {
+        "name": "Gare d'El Jadida",
+        "operator": "oncf.ma",
+        "railway": "station",
+        "wikidata": "Q3095729"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.5105594,
+          33.2186527
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 1104663583,
+      "version": 3,
+      "timestamp": "2022-01-21T14:51:09Z",
+      "tags": {
+        "name": "Fès-Médina",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.9580471,
+          34.0619721
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 1210723435,
+      "version": 5,
+      "timestamp": "2022-01-13T11:15:54Z",
+      "tags": {
+        "alt_name:ar": "بن جرير;بن كرير;بنكرير",
+        "name": "Ben Guerir ابن جرير",
+        "name:ar": "ابن جرير",
+        "name:fr": "Ben Guerir",
+        "operator": "المكتب الوطني للسكك الحديدية",
+        "public_transport": "station",
+        "railway": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.958678,
+          32.246661
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 1245964366,
+      "version": 14,
+      "timestamp": "2026-01-11T09:44:14Z",
+      "tags": {
+        "name": "Marrakech",
+        "name:ar": "مراكش",
+        "name:en": "Marrakech",
+        "name:fr": "Marrakech",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes",
+        "wikidata": "Q2457933"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.0176731,
+          31.6304291
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 1480478880,
+      "version": 3,
+      "timestamp": "2022-01-26T10:56:37Z",
+      "tags": {
+        "name": "Bab Tissera",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.7097711,
+          34.1596946
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 1480599791,
+      "version": 5,
+      "timestamp": "2026-10-09T19:50:33Z",
+      "tags": {
+        "name": "Souk el Arbaa du Gharb",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9985515,
+          34.6846113
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 1480989522,
+      "version": 5,
+      "timestamp": "2022-01-21T11:02:10Z",
+      "tags": {
+        "name": "Matmata مطماطة",
+        "name:ar": "مطماطة",
+        "name:fr": "Matmata",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.517263,
+          34.1166503
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 1481054778,
+      "version": 2,
+      "timestamp": "2022-01-18T10:58:06Z",
+      "tags": {
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.1450542,
+          34.322228
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 1481071655,
+      "version": 6,
+      "timestamp": "2014-10-02T14:57:06Z",
+      "tags": {
+        "name": "El Aïoun Sidi Mellouk العيون سيدي ملوك",
+        "name:ar": "العيون سيدي ملوك",
+        "name:fr": "El Aïoun Sidi Mellouk",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.5114025,
+          34.5836002
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 1481071911,
+      "version": 9,
+      "timestamp": "2021-12-27T14:58:05Z",
+      "tags": {
+        "name": "Beni Oukil",
+        "name:fr": "Beni Oukil",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.0525739,
+          34.6288968
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 1481325942,
+      "version": 6,
+      "timestamp": "2024-05-23T12:08:09Z",
+      "tags": {
+        "disused:railway": "station",
+        "name": "Tendrara",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.9440481,
+          33.0410677
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 1481327305,
+      "version": 5,
+      "timestamp": "2022-01-17T14:28:45Z",
+      "tags": {
+        "disused:railway": "station",
+        "name": "Tiouli تيولي",
+        "name:ar": "تيولي",
+        "name:fr": "Tiouli",
+        "railway": "yard",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.8347114,
+          34.3663627
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 1481327698,
+      "version": 4,
+      "timestamp": "2022-01-17T13:41:08Z",
+      "tags": {
+        "disused:railway": "station",
+        "name": "Aïn Bni Mathar عين بني مطهر",
+        "name:ar": "عين بني مطهر",
+        "name:fr": "Aïn Bni Mathar",
+        "old_name": "Berguent",
+        "railway": "yard",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.0222125,
+          34.017889
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 1481327752,
+      "version": 5,
+      "timestamp": "2022-01-17T14:28:45Z",
+      "tags": {
+        "disused:railway": "station",
+        "name": "Oued Heimer وادي الحيمر",
+        "name:ar": "وادي الحيمر",
+        "name:fr": "Oued Heimer",
+        "railway": "yard",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.8989477,
+          34.449735
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 1481328664,
+      "version": 6,
+      "timestamp": "2022-01-17T13:41:08Z",
+      "tags": {
+        "disused:railway": "station",
+        "name": "Jnane Krater",
+        "public_transport": "stop_position",
+        "railway": "halt",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.9467063,
+          33.5725709
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 1481425129,
+      "version": 8,
+      "timestamp": "2026-06-20T09:15:29Z",
+      "tags": {
+        "name": "Gare de Bouznika",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes",
+        "wikidata": "Q19406978"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.162071,
+          33.790228
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 1540573047,
+      "version": 4,
+      "timestamp": "2024-11-07T13:13:18Z",
+      "tags": {
+        "name": "Facultés",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.6499243,
+          33.54127
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 1558144707,
+      "version": 5,
+      "timestamp": "2022-01-18T13:00:18Z",
+      "tags": {
+        "name": "Guercif جرسيف",
+        "name:ar": "جرسيف",
+        "name:en": "Guersif",
+        "name:fr": "Guercif",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.3495027,
+          34.229515
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 1581960970,
+      "version": 8,
+      "timestamp": "2025-09-16T07:08:04Z",
+      "tags": {
+        "name": "Nador Ville مدينة الناظور",
+        "name:ar": "مدينة الناظور",
+        "name:fr": "Nador Ville",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "train": "yes",
+        "wikidata": "Q2948664"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9280038,
+          35.183925
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 1588103622,
+      "version": 11,
+      "timestamp": "2024-09-10T20:40:32Z",
+      "tags": {
+        "addr:city": "مكناس",
+        "name": "Meknès مكناس",
+        "name:ar": "مكناس",
+        "name:fr": "Meknès",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.5317426,
+          33.8965745
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 1664263860,
+      "version": 2,
+      "timestamp": "2022-01-22T09:08:38Z",
+      "tags": {
+        "name": "Ras El Ma",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.1073314,
+          33.9892376
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 1686960811,
+      "version": 6,
+      "timestamp": "2025-12-14T02:15:17Z",
+      "tags": {
+        "addr:city": "أصيلة",
+        "name": "Asilah",
+        "name:ar": "أصيلة",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.0237859,
+          35.4824366
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 1698212199,
+      "version": 5,
+      "timestamp": "2022-01-18T14:48:14Z",
+      "tags": {
+        "name": "Taza تازة",
+        "name:ar": "تازة",
+        "name:fr": "Taza",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.0084037,
+          34.2331025
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 1784203847,
+      "version": 5,
+      "timestamp": "2026-08-22T14:58:26Z",
+      "tags": {
+        "name": "Hassi Berkane",
+        "network": "ONCF",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9035433,
+          34.8686053
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 1867480200,
+      "version": 6,
+      "timestamp": "2024-09-10T03:13:07Z",
+      "tags": {
+        "name": "Gare Skhirat",
+        "network": "ONCF",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.0392855,
+          33.8545497
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 1871674762,
+      "version": 3,
+      "timestamp": "2026-09-10T20:43:51Z",
+      "tags": {
+        "name": "Aïn Dalia عين الدالية",
+        "name:ar": "عين الدالية",
+        "name:fr": "Aïn Dalia",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.8219093,
+          35.6613733
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2150659522,
+      "version": 2,
+      "timestamp": "2022-01-15T10:02:34Z",
+      "tags": {
+        "name": "Melloussa",
+        "public_transport": "station",
+        "railway": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.6597686,
+          35.721336
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2156449995,
+      "version": 4,
+      "timestamp": "2021-08-20T11:41:06Z",
+      "tags": {
+        "disused:railway": "station",
+        "name": "Bouarfa بوعرفة",
+        "name:ar": "بوعرفة",
+        "name:fr": "Bouarfa",
+        "public_transport": "stop_position",
+        "railway": "stop",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.9662288,
+          32.5187526
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2157136183,
+      "version": 5,
+      "timestamp": "2019-11-27T17:46:13Z",
+      "tags": {
+        "disused": "yes",
+        "name": "Mengoub",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.2456564,
+          32.2639777
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2163661965,
+      "version": 4,
+      "timestamp": "2022-08-02T23:46:44Z",
+      "tags": {
+        "name": "Gare De Mechraa Bel Ksiri",
+        "name:ar": "محطة مشرع بلقصيري",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9615006,
+          34.5774048
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2180731298,
+      "version": 7,
+      "timestamp": "2024-09-12T23:21:35Z",
+      "tags": {
+        "name": "Selouane سلوان",
+        "name:ar": "سلوان",
+        "name:fr": "Selouane",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9395705,
+          35.049717
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2191690280,
+      "version": 2,
+      "timestamp": "2022-01-26T15:33:58Z",
+      "tags": {
+        "name": "Kceibya",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.0688202,
+          34.2910183
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2194536439,
+      "version": 3,
+      "timestamp": "2022-02-02T14:12:34Z",
+      "tags": {
+        "name": "Khemisset Chaouia اخميسات الشاوية",
+        "name:ar": "اخميسات الشاوية",
+        "name:fr": "Gare de Khemisset Chaouia",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.7233354,
+          32.827535
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2194543435,
+      "version": 3,
+      "timestamp": "2022-02-02T14:46:55Z",
+      "tags": {
+        "name": "Machraa Ben Abbou مشرع بن عبو",
+        "name:ar": "مشرع بن عبو",
+        "name:fr": "Machraa Ben Abbou",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.7874079,
+          32.6531853
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2202533379,
+      "version": 6,
+      "timestamp": "2026-04-03T17:06:18Z",
+      "tags": {
+        "alt_name:ar": "امريزيك",
+        "name": "Mrizig مريزيق",
+        "name:ar": "مريزيق",
+        "name:en": "Mrizig",
+        "name:fr": "Mrizig",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.0977223,
+          32.8460352
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2297920672,
+      "version": 9,
+      "timestamp": "2024-09-12T23:21:35Z",
+      "tags": {
+        "name": "Bni Nsar (Ville) بني انصار",
+        "name:ar": "بني انصار",
+        "name:fr": "Bni Nsar (Ville)",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9321286,
+          35.2436868
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2297934615,
+      "version": 12,
+      "timestamp": "2021-12-19T22:49:41Z",
+      "tags": {
+        "addr:city": "Beni Enzar بني انصار",
+        "alt_name": "Nador Port",
+        "name": "Beni Ensar Port",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9305738,
+          35.2653506
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2298084895,
+      "version": 9,
+      "timestamp": "2026-08-22T14:56:15Z",
+      "tags": {
+        "name": "Nador Sud الناظور-الشمال",
+        "name:ar": "الناظور-الشمال",
+        "name:fr": "Nador Sud",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes",
+        "wikidata": "Q761471"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9592457,
+          35.1633107
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2299629069,
+      "version": 5,
+      "timestamp": "2026-08-22T15:07:17Z",
+      "tags": {
+        "name": "Melga el Ouidane",
+        "name:ar": "ملقى الويدان",
+        "name:fr": "Melga el Ouidane",
+        "network": "ONCF",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.0204284,
+          34.5719975
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2303596282,
+      "version": 4,
+      "timestamp": "2024-09-12T23:21:35Z",
+      "tags": {
+        "name": "Oulad Rahou",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9856666,
+          34.7753772
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2328486902,
+      "version": 6,
+      "timestamp": "2022-01-24T14:49:07Z",
+      "tags": {
+        "name": "Sidi Kacem",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes",
+        "wikidata": "Q3097739"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.7188349,
+          34.2309805
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2328486906,
+      "version": 3,
+      "timestamp": "2022-01-27T16:09:09Z",
+      "tags": {
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9777419,
+          34.7636096
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2429582026,
+      "version": 8,
+      "timestamp": "2025-12-11T22:33:20Z",
+      "tags": {
+        "name": "Casa Port الدار البيضاء الميناء",
+        "name:ar": "الدار البيضاء الميناء",
+        "name:fr": "Casa Port",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes",
+        "wikidata": "Q3096139"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.6123131,
+          33.5993825
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2563673488,
+      "version": 4,
+      "timestamp": "2022-01-17T09:17:10Z",
+      "tags": {
+        "name": "Ksar Sghir",
+        "public_transport": "station",
+        "railway": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.5472727,
+          35.8455055
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2576518018,
+      "version": 2,
+      "timestamp": "2022-01-18T14:01:15Z",
+      "tags": {
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7307618,
+          34.2388198
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2576704519,
+      "version": 4,
+      "timestamp": "2024-09-13T00:02:52Z",
+      "tags": {
+        "name": "Azemmour",
+        "public_transport": "station",
+        "railway": "station",
+        "wikidata": "Q56301710"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.3430934,
+          33.2751698
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2582209117,
+      "version": 3,
+      "timestamp": "2024-04-04T09:07:15Z",
+      "tags": {
+        "public_transport": "station",
+        "railway": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.911753,
+          21.2955599
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2582227646,
+      "version": 5,
+      "timestamp": "2025-02-18T18:15:54Z",
+      "tags": {
+        "name": "Oum Gredat أم غريدات",
+        "name:ar": "أم غريدات",
+        "name:fr": "Oum Gredat",
+        "public_transport": "station",
+        "railway": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.3193933,
+          21.2867952
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2582357520,
+      "version": 7,
+      "timestamp": "2025-02-18T22:08:39Z",
+      "tags": {
+        "name": "Inal إنال",
+        "name:ar": "إنال",
+        "name:fr": "Inal",
+        "public_transport": "station",
+        "railway": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -14.9932921,
+          21.2895088
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2583746873,
+      "version": 6,
+      "timestamp": "2025-02-18T22:02:16Z",
+      "tags": {
+        "name": "Ben Amera بن أميرة",
+        "name:ar": "بن أميرة",
+        "name:fr": "Ben Amera",
+        "public_transport": "station",
+        "railway": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -13.6756163,
+          21.1991724
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2583957309,
+      "version": 6,
+      "timestamp": "2025-02-18T22:06:03Z",
+      "tags": {
+        "name": "Choum شوم",
+        "name:ar": "شوم",
+        "name:en": "Choum",
+        "name:fr": "Choum",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -13.068026,
+          21.2975115
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2584356723,
+      "version": 6,
+      "timestamp": "2025-02-18T22:01:42Z",
+      "tags": {
+        "name": "Touâjîl اتواجيل",
+        "name:ar": "اتواجيل",
+        "name:en": "Twajeel",
+        "name:fr": "Touâjîl",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -12.6736171,
+          22.1742569
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2926335303,
+      "version": 10,
+      "timestamp": "2026-01-14T14:10:29Z",
+      "tags": {
+        "name": "Khouribga",
+        "name:ar": "خريبكة",
+        "name:en": "Khouribga",
+        "name:fr": "Khouribga",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.9086863,
+          32.883583
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2928483869,
+      "version": 7,
+      "timestamp": "2026-01-14T14:10:29Z",
+      "tags": {
+        "name": "El Goufaf",
+        "name:ar": "الكفاف",
+        "name:en": "El Goufaf",
+        "name:fr": "El Goufaf",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.7219039,
+          32.9199221
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2990165305,
+      "version": 2,
+      "timestamp": "2022-01-28T10:34:16Z",
+      "tags": {
+        "name": "Souaken",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9529181,
+          35.1169787
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2990165307,
+      "version": 6,
+      "timestamp": "2022-01-28T10:05:10Z",
+      "tags": {
+        "name": "Ksar-el-Kebir القصر الكبير",
+        "name:ar": "القصر الكبير",
+        "name:fr": "El Ksar El Kebir",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9060442,
+          35.0098665
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 2990165308,
+      "version": 4,
+      "timestamp": "2026-10-09T19:50:33Z",
+      "tags": {
+        "name": "Arbaoua",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9263693,
+          34.891723
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 3104119901,
+      "version": 9,
+      "timestamp": "2025-09-16T07:08:04Z",
+      "tags": {
+        "name": "Oujda وجدة",
+        "name:ar": "وجدة",
+        "name:fr": "Oujda",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes",
+        "wikidata": "Q3095848"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.9244592,
+          34.6799989
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 3107158164,
+      "version": 4,
+      "timestamp": "2017-02-09T01:45:37Z",
+      "tags": {
+        "name": "Naima النعيمة",
+        "name:ar": "النعيمة",
+        "name:fr": "Naima",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.2188401,
+          34.601185
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 3117169195,
+      "version": 3,
+      "timestamp": "2022-01-17T13:41:08Z",
+      "tags": {
+        "disused:railway": "station",
+        "name": "El Fouchal",
+        "public_transport": "stop_position",
+        "railway": "halt",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.9945133,
+          33.8142415
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 3123646769,
+      "version": 4,
+      "timestamp": "2022-01-17T15:24:17Z",
+      "tags": {
+        "disused:railway": "station",
+        "name": "PK. 0",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.9526813,
+          32.6599722
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 3140744037,
+      "version": 3,
+      "timestamp": "2022-01-18T09:25:36Z",
+      "tags": {
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.0425806,
+          34.3519044
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 3154623889,
+      "version": 2,
+      "timestamp": "2022-01-21T11:22:17Z",
+      "tags": {
+        "name": "Touabaa",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.7063384,
+          34.0997428
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 3156353813,
+      "version": 2,
+      "timestamp": "2015-03-15T19:07:48Z",
+      "tags": {
+        "abandoned": "yes",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.9367378,
+          33.1070928
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 3523721030,
+      "version": 1,
+      "timestamp": "2015-05-17T15:21:27Z",
+      "tags": {
+        "railway": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9119,
+          32.4694049
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 3523721044,
+      "version": 4,
+      "timestamp": "2026-01-14T16:44:49Z",
+      "tags": {
+        "alt_name:ar": "انزالت لعظم;نزالت لعظم",
+        "name": "Nzalat Laadam",
+        "name:ar": "نزالة العظم",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "train",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9543312,
+          32.0947206
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 3534417188,
+      "version": 3,
+      "timestamp": "2024-02-06T20:44:32Z",
+      "tags": {
+        "addr:city": "Youssoufia ⵢⵓⵙⴼⵉⵢⴰ اليوسفية",
+        "name": "Youssoufia",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes",
+        "wikidata": "Q56301706"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.5347116,
+          32.247564
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 3827702078,
+      "version": 4,
+      "timestamp": "2024-12-01T18:25:36Z",
+      "tags": {
+        "addr:city": "Berrechid",
+        "name": "Berrechid برشيد",
+        "name:ar": "برشيد",
+        "name:fr": "Berrechid",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes",
+        "wikidata": "Q131370434"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.5924531,
+          33.2602048
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 3827703993,
+      "version": 3,
+      "timestamp": "2022-01-31T10:33:26Z",
+      "tags": {
+        "name": "Sidi el Aïdi سيدي العايدي",
+        "name:ar": "سيدي العايدي",
+        "name:fr": "Sidi el Aïdi",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.6263358,
+          33.1272171
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 3827704696,
+      "version": 9,
+      "timestamp": "2026-01-14T14:10:29Z",
+      "tags": {
+        "addr:city": "وادي زم",
+        "name": "Oued Zem",
+        "name:ar": "وادي زم",
+        "name:en": "Oued Zem",
+        "name:fr": "Oued Zem",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes",
+        "wikidata": "Q56301719"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.5628874,
+          32.8647915
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 4215515532,
+      "version": 3,
+      "timestamp": "2022-01-29T09:32:36Z",
+      "tags": {
+        "addr:city": "النواصر",
+        "name": "النواصر",
+        "name:ar": "النواصر",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.623807,
+          33.3742682
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 4433447548,
+      "version": 2,
+      "timestamp": "2022-01-24T15:55:09Z",
+      "tags": {
+        "name": "Ain Karma",
+        "public_transport": "station",
+        "railway": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.6246271,
+          34.0105329
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 4668307196,
+      "version": 1,
+      "timestamp": "2017-02-06T14:10:22Z",
+      "tags": {
+        "abandoned:railway": "station",
+        "name": "Nouvelle Médina"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.601595,
+          33.5794427
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 4717157258,
+      "version": 1,
+      "timestamp": "2017-03-04T20:09:22Z",
+      "tags": {
+        "name": "Laassilate",
+        "railway": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.7940253,
+          33.3643547
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 5539076778,
+      "version": 3,
+      "timestamp": "2024-11-12T17:52:50Z",
+      "tags": {
+        "name": "Tamdrost تامدروست",
+        "name:ar": "تامدروست",
+        "name:fr": "Tamdrost",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.5532634,
+          33.0765423
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885873689,
+      "version": 4,
+      "timestamp": "2022-01-21T10:02:03Z",
+      "tags": {
+        "name": "Bab Marzouka",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.1444623,
+          34.2088185
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 6205371674,
+      "version": 3,
+      "timestamp": "2024-06-19T19:23:17Z",
+      "tags": {
+        "abandoned:railway": "station",
+        "name": "Sidi Maârouf",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.6608886,
+          33.5127209
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 6613014002,
+      "version": 6,
+      "timestamp": "2026-01-14T14:10:29Z",
+      "tags": {
+        "name": "Sidi Hajjaj",
+        "name:ar": "سيدي حجاج",
+        "name:en": "Sidi Hajjaj",
+        "name:fr": "Sidi Hajjaj",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.2664769,
+          32.9115673
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 6842454582,
+      "version": 2,
+      "timestamp": "2022-01-21T10:02:03Z",
+      "tags": {
+        "name": "Oued Amlil",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.2813955,
+          34.1887623
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 6877632385,
+      "version": 3,
+      "timestamp": "2026-08-22T15:05:52Z",
+      "tags": {
+        "name": "Ain Sbit",
+        "network": "ONCF",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.7811796,
+          34.0602519
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 7029585210,
+      "version": 3,
+      "timestamp": "2022-01-24T15:18:51Z",
+      "tags": {
+        "addr:city": "msaada",
+        "name": "M'Saada",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.7976666,
+          34.3406926
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 7029613411,
+      "version": 2,
+      "timestamp": "2022-01-25T11:04:28Z",
+      "tags": {
+        "name": "Oued Rdom",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.6488534,
+          34.0690844
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 7055155496,
+      "version": 5,
+      "timestamp": "2025-12-31T19:46:00Z",
+      "tags": {
+        "name": "Casa Voyageurs",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes",
+        "wikidata": "Q2448793"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.5896645,
+          33.5903571
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 8283175981,
+      "version": 3,
+      "timestamp": "2024-09-20T16:48:18Z",
+      "tags": {
+        "name": "Chtouka",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.1587242,
+          33.3319737
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 9412715250,
+      "version": 1,
+      "timestamp": "2022-01-12T13:06:40Z",
+      "tags": {
+        "name": "Safi",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.2444566,
+          32.2854082
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 9412821588,
+      "version": 1,
+      "timestamp": "2022-01-12T13:47:36Z",
+      "tags": {
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1372908,
+          32.2312544
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 9412821622,
+      "version": 2,
+      "timestamp": "2022-01-12T14:00:06Z",
+      "tags": {
+        "name": "Bouguedra",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.9789339,
+          32.2618096
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 9412862638,
+      "version": 1,
+      "timestamp": "2022-01-12T14:08:57Z",
+      "tags": {
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.7562658,
+          32.2636437
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 9418232000,
+      "version": 1,
+      "timestamp": "2022-01-14T16:03:46Z",
+      "tags": {
+        "name": "Tanger Ville - Al Boraq",
+        "public_transport": "station",
+        "railway": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.7853389,
+          35.7703931
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 9418261276,
+      "version": 3,
+      "timestamp": "2026-01-13T22:54:23Z",
+      "tags": {
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "train",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9953828,
+          31.7901768
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 9418298546,
+      "version": 3,
+      "timestamp": "2024-10-19T14:09:01Z",
+      "tags": {
+        "name": "Tangier Mghouga",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.7888591,
+          35.7501293
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 9425177171,
+      "version": 1,
+      "timestamp": "2022-01-17T11:20:14Z",
+      "tags": {
+        "disused:railway": "station",
+        "public_transport": "station",
+        "railway": "halt",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.9953967,
+          32.7664621
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 9425688725,
+      "version": 1,
+      "timestamp": "2022-01-17T14:28:45Z",
+      "tags": {
+        "disused:railway": "station",
+        "name": "El Harracha",
+        "railway": "halt",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.936127,
+          34.1796285
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 9428450287,
+      "version": 1,
+      "timestamp": "2022-01-18T14:01:15Z",
+      "tags": {
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5409783,
+          34.198848
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 9444230872,
+      "version": 1,
+      "timestamp": "2022-01-24T09:34:17Z",
+      "tags": {
+        "name": "Sabaa Aiyoun",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.3756955,
+          33.9016034
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 9444332085,
+      "version": 2,
+      "timestamp": "2024-04-25T11:40:50Z",
+      "tags": {
+        "name": "Meknès - Al Amir Abdelkader",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.5451334,
+          33.8992372
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 9447140239,
+      "version": 2,
+      "timestamp": "2024-04-25T11:41:54Z",
+      "tags": {
+        "name": "Ouarzigha",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.5448096,
+          33.9342348
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 9450090824,
+      "version": 1,
+      "timestamp": "2022-01-26T13:08:05Z",
+      "tags": {
+        "name": "Sidi Slimane",
+        "public_transport": "station",
+        "railway": "halt",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9220989,
+          34.2698391
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 9450411188,
+      "version": 1,
+      "timestamp": "2022-01-26T15:33:58Z",
+      "tags": {
+        "name": "Sidi Yahya",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3082072,
+          34.312248
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 9450431709,
+      "version": 3,
+      "timestamp": "2024-09-21T12:02:58Z",
+      "tags": {
+        "name": "Kenitra Medina",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.5682205,
+          34.2652268
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 9450518206,
+      "version": 6,
+      "timestamp": "2024-09-12T01:22:54Z",
+      "tags": {
+        "name": "Kénitra",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.5819073,
+          34.2515407
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 9452205026,
+      "version": 1,
+      "timestamp": "2022-01-27T09:04:07Z",
+      "tags": {
+        "name": "Lalla Yettou",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.203943,
+          34.3430301
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 9452234731,
+      "version": 1,
+      "timestamp": "2022-01-27T09:16:46Z",
+      "tags": {
+        "name": "Dar Gueddari",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.1030625,
+          34.4299619
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 9452240954,
+      "version": 1,
+      "timestamp": "2022-01-27T09:28:58Z",
+      "tags": {
+        "name": "Oulad Khitib",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.0112996,
+          34.4751895
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 9455086473,
+      "version": 2,
+      "timestamp": "2026-08-22T15:03:51Z",
+      "tags": {
+        "name": "Tlata Rissana",
+        "network": "ONCF",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9449939,
+          35.2193222
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 9455233114,
+      "version": 2,
+      "timestamp": "2026-08-22T15:02:25Z",
+      "tags": {
+        "name": "Tnine Sidi El Yamani",
+        "network": "ONCF",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9804394,
+          35.340217
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 9463275905,
+      "version": 3,
+      "timestamp": "2026-01-14T17:30:18Z",
+      "tags": {
+        "name": "Moualine El Oued",
+        "name:ar": "موالين الوادي",
+        "name:en": "Moualine El Oued",
+        "name:fr": "Moualine El Oued",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.4801871,
+          33.0073934
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 9463351931,
+      "version": 3,
+      "timestamp": "2026-01-14T14:10:29Z",
+      "tags": {
+        "name": "Ras El Ain",
+        "name:ar": "راس العين",
+        "name:en": "Ras El Ain",
+        "name:fr": "Ras El Ain",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3921755,
+          32.9781048
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 9465580022,
+      "version": 5,
+      "timestamp": "2026-01-14T14:10:29Z",
+      "tags": {
+        "name": "Sidi Daoui",
+        "name:ar": "سيدي داوي",
+        "name:en": "Sidi Daoui",
+        "name:fr": "Sidi Daoui",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.6259807,
+          32.895104
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 9468848548,
+      "version": 1,
+      "timestamp": "2022-02-02T14:33:25Z",
+      "tags": {
+        "name": "Imefoute",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.7722546,
+          32.7485173
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 10054762488,
+      "version": 4,
+      "timestamp": "2026-04-30T00:41:02Z",
+      "tags": {
+        "name": "محطة المسافرين",
+        "name:ar": "محطة المسافرين",
+        "name:fr": "Nouadhibou Gare Voyageurs (Ancienne)",
+        "operator": "الشركة الوطنية للصناعة والمناجم",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.0619199,
+          20.8823927
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 10722153994,
+      "version": 1,
+      "timestamp": "2023-03-08T20:05:14Z",
+      "tags": {
+        "railway": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.8163627,
+          32.5783043
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 11302159055,
+      "version": 2,
+      "timestamp": "2025-10-20T05:04:42Z",
+      "tags": {
+        "disused:railway": "station",
+        "name": "Gare de Tanger-Med",
+        "operator": "ONCF",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.5008963,
+          35.8846899
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 11992660871,
+      "version": 1,
+      "timestamp": "2024-06-19T19:23:17Z",
+      "tags": {
+        "name": "Mazagan",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.3670249,
+          33.2656081
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 11992660875,
+      "version": 1,
+      "timestamp": "2024-06-19T19:23:17Z",
+      "tags": {
+        "name": "Zenata",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.4188426,
+          33.6594285
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 11992660876,
+      "version": 1,
+      "timestamp": "2024-06-19T19:23:17Z",
+      "tags": {
+        "name": "El Mansouria",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.2809162,
+          33.7373174
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 11992660877,
+      "version": 3,
+      "timestamp": "2026-10-09T14:01:46Z",
+      "tags": {
+        "name": "Gare Rabat Riad محطة الرباط الرياض",
+        "name:ar": "محطة الرباط الرياض",
+        "name:fr": "Gare Rabat Riad",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.8825654,
+          33.9640524
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12101757865,
+      "version": 1,
+      "timestamp": "2024-08-10T05:46:50Z",
+      "tags": {
+        "name": "Mohammedia",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.3876759,
+          33.6956681
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12167273479,
+      "version": 2,
+      "timestamp": "2024-09-21T12:02:58Z",
+      "tags": {
+        "name": "Kenitra Medina",
+        "operator": "ONCF",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.5682995,
+          34.265045
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12167273480,
+      "version": 1,
+      "timestamp": "2024-09-10T03:13:07Z",
+      "tags": {
+        "name": "Sidi Ichou",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.4309131,
+          34.3026859
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12167273481,
+      "version": 2,
+      "timestamp": "2024-09-12T01:22:54Z",
+      "tags": {
+        "name": "Sidi Yahya",
+        "operator": "ONCF",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3081371,
+          34.3122278
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12167273482,
+      "version": 1,
+      "timestamp": "2024-09-10T03:13:07Z",
+      "tags": {
+        "name": "Gare du Kceibya",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.0695559,
+          34.2912028
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12167273486,
+      "version": 1,
+      "timestamp": "2024-09-10T03:13:07Z",
+      "tags": {
+        "name": "Dar Gueddari",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.1031018,
+          34.4299083
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12167273487,
+      "version": 2,
+      "timestamp": "2026-10-09T19:50:33Z",
+      "tags": {
+        "name": "Souk el Arbaa du Gharb",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9986347,
+          34.6846299
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12167273488,
+      "version": 2,
+      "timestamp": "2025-12-14T02:18:45Z",
+      "tags": {
+        "name": "Gare De Mechraa Bel Ksiri",
+        "name:ar": "محطة مشرع بلقصيري",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9613673,
+          34.5772883
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12167273489,
+      "version": 2,
+      "timestamp": "2026-10-09T19:50:33Z",
+      "tags": {
+        "name": "Arbaoua",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.926439,
+          34.8917856
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12167273490,
+      "version": 1,
+      "timestamp": "2024-09-10T03:13:07Z",
+      "tags": {
+        "name": "El Ksar El Kebir",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9060936,
+          35.0097869
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12167273491,
+      "version": 1,
+      "timestamp": "2024-09-10T03:13:07Z",
+      "tags": {
+        "name": "Souaken",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9527565,
+          35.116807
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12167273492,
+      "version": 2,
+      "timestamp": "2026-08-22T15:03:51Z",
+      "tags": {
+        "name": "Tlata Rissana",
+        "network": "ONCF",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9447943,
+          35.2192428
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12167273494,
+      "version": 2,
+      "timestamp": "2025-12-14T02:15:17Z",
+      "tags": {
+        "addr:city": "أصيلة",
+        "name": "Asilah",
+        "name:ar": "أصيلة",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.0238157,
+          35.4823094
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12167273495,
+      "version": 5,
+      "timestamp": "2026-10-15T11:41:03Z",
+      "tags": {
+        "name": "Akba el Hamra العقبة الحمراء",
+        "name:ar": "العقبة الحمراء",
+        "name:fr": "Akba el Hamra",
+        "network": "ONCF",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9159904,
+          35.6126255
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12167273497,
+      "version": 2,
+      "timestamp": "2024-10-19T14:09:01Z",
+      "tags": {
+        "name": "Tangier Mghouga",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.7888051,
+          35.7501056
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12167273499,
+      "version": 2,
+      "timestamp": "2024-09-11T08:12:02Z",
+      "tags": {
+        "name": "Tanger Ville",
+        "operator": "ONCF",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.7850034,
+          35.7700701
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12169457624,
+      "version": 2,
+      "timestamp": "2024-09-12T01:22:54Z",
+      "tags": {
+        "name": "Ain Taoujdate",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.2133275,
+          33.9340816
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12173906766,
+      "version": 4,
+      "timestamp": "2025-12-31T19:46:00Z",
+      "tags": {
+        "name": "Casa Voyageurs",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes",
+        "wikidata": "Q2448793"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.5902769,
+          33.5898203
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12173906767,
+      "version": 2,
+      "timestamp": "2024-09-20T16:48:18Z",
+      "tags": {
+        "name": "Laassilate",
+        "network": "TNR",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.7938314,
+          33.3643431
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12186265017,
+      "version": 1,
+      "timestamp": "2024-09-19T13:52:47Z",
+      "tags": {
+        "name": "Tanger Ville",
+        "operator": "ONCF",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.7853528,
+          35.7700446
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12186265018,
+      "version": 1,
+      "timestamp": "2024-09-19T13:52:47Z",
+      "tags": {
+        "name": "Tanger Ville",
+        "operator": "ONCF",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.7853824,
+          35.7700216
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12186265019,
+      "version": 2,
+      "timestamp": "2026-06-12T17:33:43Z",
+      "tags": {
+        "name": "Kénitra",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.5820271,
+          34.2515471
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12188302079,
+      "version": 1,
+      "timestamp": "2024-09-20T14:16:31Z",
+      "tags": {
+        "name": "Kénitra",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.5818162,
+          34.2514611
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12188302082,
+      "version": 3,
+      "timestamp": "2025-09-16T07:08:04Z",
+      "tags": {
+        "alt_name": "Gare de Casa port",
+        "name": "Casa Port",
+        "name:ar": "ميناء الدار البيضاء",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes",
+        "wikidata": "Q3096139"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.6120293,
+          33.5989919
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12188628879,
+      "version": 3,
+      "timestamp": "2025-01-06T21:07:01Z",
+      "tags": {
+        "addr:city": "بوسكورة",
+        "name": "Bouskoura",
+        "name:ar": "بوسكورة",
+        "network": "TNR",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes",
+        "wikidata": "Q17628858"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.6517443,
+          33.4612723
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12202794581,
+      "version": 3,
+      "timestamp": "2025-09-16T07:08:04Z",
+      "tags": {
+        "name": "Casa Voyageurs",
+        "operator": "ONCF",
+        "public_transport": "stop_position",
+        "railway": "station",
+        "train": "yes",
+        "wikidata": "Q2448793"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.5900469,
+          33.5899958
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12335229618,
+      "version": 1,
+      "timestamp": "2024-11-12T17:57:50Z",
+      "tags": {
+        "name": "Boufarrouj بو فروج",
+        "name:ar": "بو فروج",
+        "name:fr": "Boufarrouj",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.6154747,
+          33.1951194
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 12343533989,
+      "version": 1,
+      "timestamp": "2024-11-15T11:27:04Z",
+      "tags": {
+        "name": "Aeroport Mohammed V",
+        "public_transport": "station",
+        "railway": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.5785883,
+          33.3741232
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 13207879348,
+      "version": 1,
+      "timestamp": "2025-10-11T01:54:30Z",
+      "tags": {
+        "name": "Gare de Sidi Hrazem محطة سيدي حرازم",
+        "name:ar": "محطة سيدي حرازم",
+        "name:fr": "Gare de Sidi Hrazem",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.8726851,
+          34.0380694
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 13427453625,
+      "version": 2,
+      "timestamp": "2026-01-04T10:14:28Z",
+      "tags": {
+        "name": "Aïn-Sebaâ",
+        "public_transport": "station",
+        "railway": "station",
+        "wikidata": "Q3095721"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.5241471,
+          33.6085691
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 13440712375,
+      "version": 3,
+      "timestamp": "2026-01-14T14:10:29Z",
+      "tags": {
+        "name": "Sidi El Ghazouani",
+        "name:ar": "سيدي الغزواني",
+        "name:en": "Sidi El Ghazouani",
+        "name:fr": "Sidi El Ghazouani",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.8702485,
+          32.8920768
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 13447692353,
+      "version": 4,
+      "timestamp": "2026-10-29T14:27:47Z",
+      "tags": {
+        "name": "Sidi Ibrahim",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "train",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.0227269,
+          31.705286
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 13665593463,
+      "version": 1,
+      "timestamp": "2026-03-20T20:02:18Z",
+      "tags": {
+        "alt_name:ar": "توريرت",
+        "name": "Taourirt تاوريرت",
+        "name:ar": "تاوريرت",
+        "name:fr": "Taourirt",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes",
+        "wikidata": "Q2948533"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.8982733,
+          34.4086931
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 14008729905,
+      "version": 1,
+      "timestamp": "2026-07-13T13:39:53Z",
+      "tags": {
+        "name": "Gare TGV Aéroport international Mohammed V محطة القطار فائق السرعة مطار محمد الخامس الدولي",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.6078293,
+          33.3837443
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 14008729906,
+      "version": 2,
+      "timestamp": "2026-10-09T13:19:06Z",
+      "tags": {
+        "construction": "station",
+        "construction:railway": "station",
+        "name": "Gare TGV Aéroport international Mohammed V محطة القطار فائق السرعة مطار محمد الخامس الدولي",
+        "public_transport": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.6077442,
+          33.3836909
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 14112388771,
+      "version": 1,
+      "timestamp": "2026-08-22T14:52:30Z",
+      "tags": {
+        "name": "Gare de Chebabat",
+        "network": "ONCF",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4201444,
+          34.1297568
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 14112391329,
+      "version": 1,
+      "timestamp": "2026-08-22T14:54:09Z",
+      "tags": {
+        "name": "Gare de Oued Metlili",
+        "network": "ONCF",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7148498,
+          34.5407274
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 14112399307,
+      "version": 1,
+      "timestamp": "2026-08-22T14:50:26Z",
+      "tags": {
+        "name": "Gare El Aria",
+        "network": "ONCF",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.2762855,
+          32.2443791
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 14123912105,
+      "version": 1,
+      "timestamp": "2026-08-25T22:59:16Z",
+      "tags": {
+        "name": "Gare de Settat",
+        "network": "ONCF",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.6233586,
+          32.9939792
+        ]
+      }
+    },
+    {
+      "type": "node",
+      "id": 14268003569,
+      "version": 1,
+      "timestamp": "2026-10-09T14:01:46Z",
+      "tags": {
+        "name": "Gare Rabat Agdal",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.8574697,
+          34.0012382
+        ]
+      }
+    },
+    {
+      "type": "way",
+      "id": 156426654,
+      "version": 13,
+      "timestamp": "2025-05-11T12:58:27Z",
+      "tags": {
+        "addr:city": "Rabat ⵔⴱⴰⵟ الرباط",
+        "name": "Gare Rabat Ville محطة الرباط المدينة",
+        "name:ar": "محطة الرباط المدينة",
+        "name:en": "Rabat City Station",
+        "name:fr": "Gare Rabat Ville",
+        "operator": "المكتب الوطني للسكك الحديدية",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes",
+        "wikidata": "Q3097378"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -6.8383979,
+                34.0155473
+              ],
+              [
+                -6.838321,
+                34.0153041
+              ],
+              [
+                -6.8379286,
+                34.0154655
+              ],
+              [
+                -6.837867,
+                34.0153605
+              ],
+              [
+                -6.8356117,
+                34.0162692
+              ],
+              [
+                -6.8355769,
+                34.0163444
+              ],
+              [
+                -6.8356091,
+                34.0163994
+              ],
+              [
+                -6.8355124,
+                34.0164382
+              ],
+              [
+                -6.8355156,
+                34.016446
+              ],
+              [
+                -6.8355187,
+                34.0164541
+              ],
+              [
+                -6.8355218,
+                34.0164622
+              ],
+              [
+                -6.8355246,
+                34.0164769
+              ],
+              [
+                -6.835529,
+                34.0164912
+              ],
+              [
+                -6.8355351,
+                34.0165052
+              ],
+              [
+                -6.8355428,
+                34.0165186
+              ],
+              [
+                -6.835552,
+                34.0165313
+              ],
+              [
+                -6.8355627,
+                34.0165432
+              ],
+              [
+                -6.8355746,
+                34.0165542
+              ],
+              [
+                -6.8355822,
+                34.016561
+              ],
+              [
+                -6.8355896,
+                34.016568
+              ],
+              [
+                -6.8355962,
+                34.0165758
+              ],
+              [
+                -6.8356902,
+                34.0165381
+              ],
+              [
+                -6.8358098,
+                34.0167427
+              ],
+              [
+                -6.8361389,
+                34.0166105
+              ],
+              [
+                -6.8361453,
+                34.0165199
+              ],
+              [
+                -6.8380694,
+                34.0157082
+              ],
+              [
+                -6.8380609,
+                34.0156915
+              ],
+              [
+                -6.8383979,
+                34.0155473
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "way",
+      "id": 323063566,
+      "version": 4,
+      "timestamp": "2024-09-13T00:02:52Z",
+      "tags": {
+        "name": "Lbir Jdid",
+        "public_transport": "station",
+        "railway": "station"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -7.9806019,
+                33.3634696
+              ],
+              [
+                -7.9805644,
+                33.3633621
+              ],
+              [
+                -7.9798563,
+                33.3635772
+              ],
+              [
+                -7.9798855,
+                33.3636804
+              ],
+              [
+                -7.9803148,
+                33.363556
+              ],
+              [
+                -7.9806019,
+                33.3634696
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "way",
+      "id": 361575427,
+      "version": 4,
+      "timestamp": "2024-04-23T07:02:10Z",
+      "tags": {
+        "name": "Gare de Sidi Bouknadel",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -6.7374527,
+                34.1237595
+              ],
+              [
+                -6.7373302,
+                34.1236861
+              ],
+              [
+                -6.73723,
+                34.1238007
+              ],
+              [
+                -6.7373525,
+                34.1238741
+              ],
+              [
+                -6.7374527,
+                34.1237595
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "way",
+      "id": 419553951,
+      "version": 4,
+      "timestamp": "2024-10-02T15:23:01Z",
+      "tags": {
+        "name": "Gare de l'Oasis",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -7.6317728,
+                33.5545852
+              ],
+              [
+                -7.6315373,
+                33.5545172
+              ],
+              [
+                -7.6313854,
+                33.5548534
+              ],
+              [
+                -7.6315893,
+                33.5549239
+              ],
+              [
+                -7.6317728,
+                33.5545852
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "way",
+      "id": 449071760,
+      "version": 22,
+      "timestamp": "2026-10-09T14:01:46Z",
+      "tags": {
+        "addr:city": "الرباط",
+        "name": "Gare Rabat Agdal محطة الرباط اكدال",
+        "name:ar": "محطة الرباط اكدال",
+        "name:en": "Rabat-Agdal Station",
+        "name:fr": "Gare Rabat Agdal",
+        "operator": "المكتب الوطني للسكك الحديدية",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes",
+        "wikidata": "Q108761671"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -6.8601433,
+                33.9990749
+              ],
+              [
+                -6.8600465,
+                33.9990521
+              ],
+              [
+                -6.8595878,
+                33.9989437
+              ],
+              [
+                -6.8594256,
+                33.9991525
+              ],
+              [
+                -6.85938,
+                33.9991252
+              ],
+              [
+                -6.8592999,
+                33.9990772
+              ],
+              [
+                -6.8584338,
+                33.9997877
+              ],
+              [
+                -6.8581085,
+                34.0000546
+              ],
+              [
+                -6.8577483,
+                34.0003502
+              ],
+              [
+                -6.8575923,
+                34.0004781
+              ],
+              [
+                -6.857568,
+                34.0004981
+              ],
+              [
+                -6.857425,
+                34.0006154
+              ],
+              [
+                -6.8573528,
+                34.0006746
+              ],
+              [
+                -6.8569552,
+                34.0003396
+              ],
+              [
+                -6.8568404,
+                34.0004325
+              ],
+              [
+                -6.8568085,
+                34.0004583
+              ],
+              [
+                -6.8566438,
+                34.0005914
+              ],
+              [
+                -6.8564824,
+                34.0007219
+              ],
+              [
+                -6.8563552,
+                34.0008247
+              ],
+              [
+                -6.8567564,
+                34.0011639
+              ],
+              [
+                -6.8552348,
+                34.0024123
+              ],
+              [
+                -6.8551585,
+                34.0024748
+              ],
+              [
+                -6.8550962,
+                34.002526
+              ],
+              [
+                -6.8551615,
+                34.0025829
+              ],
+              [
+                -6.854936,
+                34.0027608
+              ],
+              [
+                -6.8554367,
+                34.003197
+              ],
+              [
+                -6.8557522,
+                34.0029471
+              ],
+              [
+                -6.8558299,
+                34.003017
+              ],
+              [
+                -6.8558731,
+                34.0029826
+              ],
+              [
+                -6.8561959,
+                34.0027185
+              ],
+              [
+                -6.8574156,
+                34.0017209
+              ],
+              [
+                -6.8578274,
+                34.0020689
+              ],
+              [
+                -6.857915,
+                34.0019963
+              ],
+              [
+                -6.8580598,
+                34.0018761
+              ],
+              [
+                -6.8582565,
+                34.0017129
+              ],
+              [
+                -6.8584265,
+                34.0015718
+              ],
+              [
+                -6.858042,
+                34.0012498
+              ],
+              [
+                -6.8580281,
+                34.0012382
+              ],
+              [
+                -6.858025,
+                34.0012356
+              ],
+              [
+                -6.8580331,
+                34.0012292
+              ],
+              [
+                -6.8582787,
+                34.0010285
+              ],
+              [
+                -6.8583035,
+                34.0010081
+              ],
+              [
+                -6.8585819,
+                34.0007802
+              ],
+              [
+                -6.8586001,
+                34.0007653
+              ],
+              [
+                -6.8586135,
+                34.0007543
+              ],
+              [
+                -6.8586407,
+                34.000732
+              ],
+              [
+                -6.8586758,
+                34.0007599
+              ],
+              [
+                -6.8588857,
+                34.0009284
+              ],
+              [
+                -6.8589251,
+                34.0008963
+              ],
+              [
+                -6.8591057,
+                34.0007132
+              ],
+              [
+                -6.8592061,
+                34.0006119
+              ],
+              [
+                -6.859301,
+                34.0005069
+              ],
+              [
+                -6.8593901,
+                34.0003986
+              ],
+              [
+                -6.8594734,
+                34.0002871
+              ],
+              [
+                -6.8595482,
+                34.0001766
+              ],
+              [
+                -6.8596172,
+                34.0000635
+              ],
+              [
+                -6.8597062,
+                33.9999254
+              ],
+              [
+                -6.8597826,
+                33.9999792
+              ],
+              [
+                -6.8598792,
+                33.999725
+              ],
+              [
+                -6.8600075,
+                33.9994187
+              ],
+              [
+                -6.8601433,
+                33.9990749
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "way",
+      "id": 456791383,
+      "version": 9,
+      "timestamp": "2022-02-19T08:40:09Z",
+      "tags": {
+        "name": "Gare de Salé Ville محطة سلا المدينة",
+        "name:ar": "محطة سلا المدينة",
+        "name:fr": "Gare de Salé Ville",
+        "public_transport": "station",
+        "railway": "station",
+        "wikidata": "Q3097660"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -6.8159762,
+                34.0380686
+              ],
+              [
+                -6.8155886,
+                34.0379594
+              ],
+              [
+                -6.8150529,
+                34.0390055
+              ],
+              [
+                -6.8154849,
+                34.039146
+              ],
+              [
+                -6.8159762,
+                34.0380686
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "way",
+      "id": 456791384,
+      "version": 6,
+      "timestamp": "2022-12-15T09:16:24Z",
+      "tags": {
+        "name": "Gare de Salé Tabriquet محطة سلا تابريكت",
+        "name:ar": "محطة سلا تابريكت",
+        "name:fr": "Gare de Salé Tabriquet",
+        "railway": "station",
+        "wikidata": "Q19407011"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -6.8053657,
+                34.0521089
+              ],
+              [
+                -6.8051594,
+                34.0519906
+              ],
+              [
+                -6.8048079,
+                34.0524362
+              ],
+              [
+                -6.8049983,
+                34.0525415
+              ],
+              [
+                -6.8053657,
+                34.0521089
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "way",
+      "id": 535025035,
+      "version": 8,
+      "timestamp": "2025-12-13T17:33:13Z",
+      "tags": {
+        "addr:city": "فاس",
+        "name": "Fès-Ville فاس-مدينة",
+        "name:ar": "فاس-مدينة",
+        "name:en": "Fez-City",
+        "name:fr": "Fès-Ville",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -5.0056748,
+                34.0473016
+              ],
+              [
+                -5.0055349,
+                34.0469846
+              ],
+              [
+                -5.0053956,
+                34.0470279
+              ],
+              [
+                -5.0053623,
+                34.0470408
+              ],
+              [
+                -5.0053466,
+                34.0470065
+              ],
+              [
+                -5.0052817,
+                34.0470269
+              ],
+              [
+                -5.0052848,
+                34.0470343
+              ],
+              [
+                -5.0051937,
+                34.047063
+              ],
+              [
+                -5.0051048,
+                34.0470909
+              ],
+              [
+                -5.0051013,
+                34.0470837
+              ],
+              [
+                -5.0050379,
+                34.0471036
+              ],
+              [
+                -5.0050605,
+                34.0471429
+              ],
+              [
+                -5.0050249,
+                34.047152
+              ],
+              [
+                -5.0048769,
+                34.0471974
+              ],
+              [
+                -5.0050191,
+                34.047501
+              ],
+              [
+                -5.0051642,
+                34.0474609
+              ],
+              [
+                -5.0051792,
+                34.0474548
+              ],
+              [
+                -5.0051948,
+                34.0474906
+              ],
+              [
+                -5.0052668,
+                34.0474679
+              ],
+              [
+                -5.005262,
+                34.0474574
+              ],
+              [
+                -5.0054311,
+                34.0474042
+              ],
+              [
+                -5.0054381,
+                34.0474156
+              ],
+              [
+                -5.0055166,
+                34.0473894
+              ],
+              [
+                -5.0055012,
+                34.0473556
+              ],
+              [
+                -5.0055331,
+                34.0473488
+              ],
+              [
+                -5.0056748,
+                34.0473016
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "way",
+      "id": 559728453,
+      "version": 1,
+      "timestamp": "2018-02-08T11:23:11Z",
+      "tags": {
+        "name": "Sidi-Taïbi",
+        "railway": "station"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -6.6641587,
+                34.1756899
+              ],
+              [
+                -6.663934,
+                34.1755365
+              ],
+              [
+                -6.6621962,
+                34.177279
+              ],
+              [
+                -6.6624209,
+                34.1774323
+              ],
+              [
+                -6.6641587,
+                34.1756899
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "way",
+      "id": 1102453328,
+      "version": 3,
+      "timestamp": "2025-04-30T16:40:29Z",
+      "tags": {
+        "name": "Gare de Témara",
+        "name:fr": "Gare de Témara",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -6.9308856,
+                33.9171944
+              ],
+              [
+                -6.9306567,
+                33.9170136
+              ],
+              [
+                -6.9300842,
+                33.9175129
+              ],
+              [
+                -6.9303102,
+                33.9176914
+              ],
+              [
+                -6.930479,
+                33.9175442
+              ],
+              [
+                -6.9304402,
+                33.9175135
+              ],
+              [
+                -6.9306625,
+                33.9173196
+              ],
+              [
+                -6.9307042,
+                33.9173525
+              ],
+              [
+                -6.9308856,
+                33.9171944
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "way",
+      "id": 1293727866,
+      "version": 2,
+      "timestamp": "2025-02-14T13:37:25Z",
+      "tags": {
+        "name": "Gare de Jorf Lasfar",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -8.6055678,
+                33.1460327
+              ],
+              [
+                -8.6054503,
+                33.146009
+              ],
+              [
+                -8.605442,
+                33.1460377
+              ],
+              [
+                -8.6053077,
+                33.1460107
+              ],
+              [
+                -8.6052807,
+                33.1461045
+              ],
+              [
+                -8.6054521,
+                33.146139
+              ],
+              [
+                -8.6054779,
+                33.1460493
+              ],
+              [
+                -8.6055584,
+                33.1460655
+              ],
+              [
+                -8.6055678,
+                33.1460327
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "way",
+      "id": 1314786321,
+      "version": 1,
+      "timestamp": "2024-09-11T07:08:48Z",
+      "tags": {
+        "name": "Gare de Benguerir",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -7.9588836,
+                32.2456176
+              ],
+              [
+                -7.9585283,
+                32.2455023
+              ],
+              [
+                -7.9584534,
+                32.2456675
+              ],
+              [
+                -7.9584039,
+                32.2456514
+              ],
+              [
+                -7.9583174,
+                32.245842
+              ],
+              [
+                -7.9583854,
+                32.2458641
+              ],
+              [
+                -7.9583186,
+                32.2460113
+              ],
+              [
+                -7.9586379,
+                32.246115
+              ],
+              [
+                -7.9587026,
+                32.2459725
+              ],
+              [
+                -7.9586706,
+                32.2459621
+              ],
+              [
+                -7.9587581,
+                32.245769
+              ],
+              [
+                -7.9588076,
+                32.2457851
+              ],
+              [
+                -7.9588836,
+                32.2456176
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "way",
+      "id": 1318784994,
+      "version": 1,
+      "timestamp": "2024-09-27T12:50:06Z",
+      "tags": {
+        "public_transport": "station",
+        "railway": "station"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -7.6265474,
+                33.1260212
+              ],
+              [
+                -7.6261597,
+                33.1259985
+              ],
+              [
+                -7.6261176,
+                33.1269649
+              ],
+              [
+                -7.6258141,
+                33.1269675
+              ],
+              [
+                -7.625769,
+                33.1273978
+              ],
+              [
+                -7.6260936,
+                33.1274356
+              ],
+              [
+                -7.626023,
+                33.128079
+              ],
+              [
+                -7.6264991,
+                33.128079
+              ],
+              [
+                -7.6264782,
+                33.1270354
+              ],
+              [
+                -7.6265474,
+                33.1260212
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "way",
+      "id": 1318784996,
+      "version": 1,
+      "timestamp": "2024-09-27T12:50:06Z",
+      "tags": {
+        "public_transport": "station",
+        "railway": "station"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -7.5925952,
+                33.2596651
+              ],
+              [
+                -7.59233,
+                33.2596661
+              ],
+              [
+                -7.592308,
+                33.2601372
+              ],
+              [
+                -7.5920525,
+                33.2601297
+              ],
+              [
+                -7.5920383,
+                33.2606186
+              ],
+              [
+                -7.5922726,
+                33.2606426
+              ],
+              [
+                -7.5922174,
+                33.2618341
+              ],
+              [
+                -7.5924379,
+                33.2618456
+              ],
+              [
+                -7.5925952,
+                33.2596651
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "way",
+      "id": 1318784997,
+      "version": 3,
+      "timestamp": "2026-04-10T11:18:14Z",
+      "tags": {
+        "public_transport": "station",
+        "railway": "station"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -7.6523206,
+                33.4614451
+              ],
+              [
+                -7.6519612,
+                33.4608812
+              ],
+              [
+                -7.6516071,
+                33.4609975
+              ],
+              [
+                -7.6507971,
+                33.4597489
+              ],
+              [
+                -7.650604,
+                33.4594513
+              ],
+              [
+                -7.6503143,
+                33.4595565
+              ],
+              [
+                -7.6515217,
+                33.4615079
+              ],
+              [
+                -7.6515589,
+                33.4615681
+              ],
+              [
+                -7.651862,
+                33.4619978
+              ],
+              [
+                -7.6522375,
+                33.4618165
+              ],
+              [
+                -7.6520765,
+                33.4615525
+              ],
+              [
+                -7.6523206,
+                33.4614451
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "way",
+      "id": 1422338420,
+      "version": 1,
+      "timestamp": "2025-08-14T17:57:38Z",
+      "tags": {
+        "name": "Nouvelle Gare ONCF de Taza",
+        "operator": "ONCF",
+        "public_transport": "station",
+        "railway": "station",
+        "train": "yes"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -4.007601,
+                34.2331289
+              ],
+              [
+                -4.007511,
+                34.232936
+              ],
+              [
+                -4.0072214,
+                34.2330092
+              ],
+              [
+                -4.0071244,
+                34.2329116
+              ],
+              [
+                -4.0070724,
+                34.2329499
+              ],
+              [
+                -4.0070302,
+                34.2329174
+              ],
+              [
+                -4.0069487,
+                34.2329813
+              ],
+              [
+                -4.006981,
+                34.2330185
+              ],
+              [
+                -4.0068039,
+                34.2331394
+              ],
+              [
+                -4.0070119,
+                34.2333149
+              ],
+              [
+                -4.0071483,
+                34.2332091
+              ],
+              [
+                -4.0072326,
+                34.2332707
+              ],
+              [
+                -4.0072818,
+                34.2332242
+              ],
+              [
+                -4.0073817,
+                34.233201
+              ],
+              [
+                -4.0073746,
+                34.2331859
+              ],
+              [
+                -4.007601,
+                34.2331289
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
