@@ -27,6 +27,7 @@ const collectionPaths = [
   "/api/v2/education/etablissements-publics-collegial", "/api/v2/education/etablissements-publics-bts",
   "/api/v2/education/etablissements-publics-cpge", "/api/v2/education/universites-publiques",
   "/api/v2/airports", "/api/v2/museums", "/api/v2/postal-codes",
+  "/api/v2/transport/rail/stations",
   "/api/v2/postal-codes/cities", "/api/v2/postal-codes/{code}",
   "/api/v2/ports", "/api/v2/lighthouses",
   "/api/v2/dams", "/api/v2/dams/{id}/levels",

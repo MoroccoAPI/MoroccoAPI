@@ -77,6 +77,12 @@ export function buildCatalog(spec: ApiDocument, language: Language): Endpoint[] 
         const schema = resolveSchema(parameter.schema, spec);
         const helpText = parameterHelp[parameter.name];
         let help = helpText ? translate(helpText, language) : parameter.name;
+        if (shortPath.startsWith("/transport/rail/")) {
+          if (parameter.name === "city") help = translate(["Ville explicitement renseignée dans OSM ; correspondance exacte sans casse ni accents. Couverture partielle.", "Explicit OSM city; exact match ignoring case and accents. Coverage is incomplete.", "المدينة المذكورة صراحة في OSM؛ تطابق تام دون تمييز حالة الأحرف أو اللكنات. التغطية جزئية."], language);
+          if (parameter.name === "type") help = translate(["station : gare ; halt : petit arrêt ferroviaire.", "station: railway station; halt: smaller rail stop.", "station: محطة قطار؛ halt: موقف قطار صغير."], language);
+          if (parameter.name === "status") help = translate(["État cartographié dans OSM. unknown ne signifie pas que la gare est ouverte.", "Lifecycle mapped in OSM. unknown does not mean the station is open.", "الحالة المرسومة في OSM. لا تعني unknown أن المحطة مفتوحة."], language);
+          if (parameter.name === "id") help = translate(["Identifiant OSM de la liste, par exemple osm-node-2328486902 ; pas un code ONCF ou UIC.", "OSM identifier from the list, such as osm-node-2328486902; not an ONCF or UIC code.", "معرّف OSM من القائمة، مثل osm-node-2328486902؛ ليس رمز ONCF أو UIC."], language);
+        }
         if (shortPath.startsWith("/banking/")) {
           if (parameter.name === "category") help = translate(["Code de catégorie dans /banking/categories pour le même référentiel.", "Category code from /banking/categories for the same dataset.", "رمز الصنف من /banking/categories للمرجع نفسه."], language);
           if (parameter.name === "code") help = translate(["Code BAM exact à trois chiffres, zéros initiaux conservés, par exemple 007. Ce n’est pas un code SWIFT/BIC.", "Exact three-digit BAM code, preserving leading zeros, for example 007. This is not a SWIFT/BIC code.", "رمز بنك المغرب من ثلاثة أرقام مع الأصفار الأولى، مثل 007. ليس رمز SWIFT/BIC."], language);

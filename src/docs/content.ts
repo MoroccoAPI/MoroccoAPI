@@ -109,6 +109,10 @@ export const groups = {
     label: ["Aéroports", "Airports", "المطارات"],
     note: ["OurAirports, snapshot du 14 octobre 2026 : inclut héliports et sites fermés. Les coordonnées et services ne sont pas vérifiés en temps réel.", "OurAirports, 14 October 2026 snapshot: includes heliports and closed sites. Coordinates and services are not verified in real time.", "نسخة OurAirports بتاريخ 14 أكتوبر 2026، وتشمل مهابط المروحيات والمواقع المغلقة. لا تُتحقق الخدمات والإحداثيات آنياً."],
   },
+  "Railway stations": {
+    label: ["Gares ferroviaires", "Railway stations", "محطات القطار"],
+    note: ["Snapshot OpenStreetMap daté, sous ODbL. Noms et villes absents : null. Inclut des sites inactifs ou projetés ; la desserte voyageurs et les liaisons actuelles ne sont pas vérifiées.", "Dated OpenStreetMap snapshot under ODbL. Missing names and cities are null. Includes inactive or planned sites; current passenger service and connections are not verified.", "نسخة مؤرخة من OpenStreetMap برخصة ODbL. الأسماء والمدن الغائبة بقيمة null. تشمل مواقع غير مستعملة أو مخططاً لها؛ خدمة المسافرين والربط الحالي غير مؤكدين."],
+  },
   Museums: {
     label: ["Musées", "Museums", "المتاحف"],
     note: ["Inventaire FNM de septembre 2026 : 23 musées, pas l’ensemble des musées du Maroc. Horaires et tarifs issus des sources ; ouverture actuelle inconnue.", "FNM September 2026 inventory: 23 museums, not every museum in Morocco. Source hours and prices; current opening status is unknown.", "جرد المؤسسة الوطنية للمتاحف لشتنبر 2026: 23 متحفاً، لا جميع متاحف المغرب. المواعيد والأسعار من المصدر، وحالة الفتح الحالية غير معروفة."],
@@ -213,6 +217,8 @@ export const titles: Record<string, Translation> = {
   "/postal-codes/{code}": ["Lieux d’un code postal", "Places for a postal code", "أماكن رمز بريدي"],
   "/airports": ["Lister les aéroports", "List airports", "قائمة المطارات"],
   "/airports/{icao}": ["Un aéroport par code ICAO", "Get an airport by ICAO", "مطار حسب رمز ICAO"],
+  "/transport/rail/stations": ["Lister les gares et haltes", "List stations and halts", "قائمة المحطات ومواقف القطار"],
+  "/transport/rail/stations/{id}": ["Une gare par identifiant OSM", "Get a station by OSM ID", "محطة حسب معرّف OSM"],
   "/museums": ["Lister les musées", "List museums", "قائمة المتاحف"],
   "/museums/{id}": ["Un musée", "Get a museum", "بيانات متحف"],
   "/ports": ["Lister les ports", "List ports", "قائمة الموانئ"],
@@ -274,6 +280,8 @@ export const examples: Record<string, Record<string, string>> = {
   "/postal-codes": { q: "rabat" },
   "/postal-codes/{code}": { code: "10000" },
   "/airports/{icao}": { icao: "GMMN" },
+  "/transport/rail/stations": { q: "rabat" },
+  "/transport/rail/stations/{id}": { id: "osm-node-2328486902" },
   "/museums/{id}": { id: "fnm-agadir-agadir-musee-d-art" },
   "/ports/{name}": { name: "Al Hoceima" },
   "/dams/{id}/levels": { id: "abdelmoumen" },
