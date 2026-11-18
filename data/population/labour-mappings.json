@@ -1,0 +1,109 @@
+{
+  "sheets": {
+    "description": "The single Data sheet of each HCP workbook: a title row, a header row with the two label columns followed by one column per year (newest first), then one row per area and province or prefecture.",
+    "entries": [
+      { "field": "activity_rate", "dataset": "data_imt_txact_02", "file": "source/labour-activity-rate.json", "source_sheet": "Data", "title": "Taux d'activité selon les Provinces/Préfectures et le Milieu (POURCENTAGE)", "header_rows": 2, "rows": 214, "columns": 11 },
+      { "field": "employment_rate", "dataset": "data_imt_txemp_02", "file": "source/labour-employment-rate.json", "source_sheet": "Data", "title": "Taux d'emploi selon les Provinces/Préfectures et le Milieu (POURCENTAGE)", "header_rows": 2, "rows": 214, "columns": 11 },
+      { "field": "unemployment_rate", "dataset": "data_imt_txch_02", "file": "source/labour-unemployment-rate.json", "source_sheet": "Data", "title": "Taux de chômage selon les Provinces/Préfectures et le Milieu (POURCENTAGE)", "header_rows": 2, "rows": 181, "columns": 11 }
+    ]
+  },
+  "layout": {
+    "description": "Labels shared by the three sheets.",
+    "label_columns": ["Milieu", "Provinces/Préfectures"],
+    "unit": "POURCENTAGE",
+    "not_published_symbol": "-"
+  },
+  "areas": {
+    "description": "Source Milieu labels. National means the whole province or prefecture (urban and rural together), not Morocco as a whole.",
+    "entries": [
+      { "source_label": "National", "area": "all" },
+      { "source_label": "Urbain", "area": "urban" },
+      { "source_label": "Rural", "area": "rural" }
+    ]
+  },
+  "provinces": {
+    "description": "Source province and prefecture names, in source order, with their MoroccoAPI codes. Each name equals the French name of one province or prefecture in the administrative geography snapshot, ignoring accents, case and punctuation.",
+    "entries": [
+      { "source_name": "Al Hoceima", "code": "al-hoceima" },
+      { "source_name": "Chefchaouen", "code": "chefchaouen" },
+      { "source_name": "Fahs-Anjra", "code": "fahs-anjra" },
+      { "source_name": "Larache", "code": "larache" },
+      { "source_name": "Ouezzane", "code": "ouezzane" },
+      { "source_name": "Tanger-Assilah", "code": "tanger-assilah" },
+      { "source_name": "Tétouan", "code": "tetouan" },
+      { "source_name": "M'Diq-Fnideq", "code": "m-diq-fnideq" },
+      { "source_name": "Berkane", "code": "berkane" },
+      { "source_name": "Driouch", "code": "driouch" },
+      { "source_name": "Figuig", "code": "figuig" },
+      { "source_name": "Guercif", "code": "guercif" },
+      { "source_name": "Jerada", "code": "jerada" },
+      { "source_name": "Nador", "code": "nador" },
+      { "source_name": "Oujda-Angad", "code": "oujda-angad" },
+      { "source_name": "Taourirt", "code": "taourirt" },
+      { "source_name": "Meknès", "code": "meknes" },
+      { "source_name": "Boulemane", "code": "boulemane" },
+      { "source_name": "El Hajeb", "code": "el-hajeb" },
+      { "source_name": "Fès", "code": "fes" },
+      { "source_name": "Ifrane", "code": "ifrane" },
+      { "source_name": "Sefrou", "code": "sefrou" },
+      { "source_name": "Taounate", "code": "taounate" },
+      { "source_name": "Taza", "code": "taza" },
+      { "source_name": "Moulay Yacoub", "code": "moulay-yacoub" },
+      { "source_name": "Kénitra", "code": "kenitra" },
+      { "source_name": "Khémisset", "code": "khemisset" },
+      { "source_name": "Rabat", "code": "rabat" },
+      { "source_name": "Salé", "code": "sale" },
+      { "source_name": "Sidi Kacem", "code": "sidi-kacem" },
+      { "source_name": "Sidi Slimane", "code": "sidi-slimane" },
+      { "source_name": "Skhirate-Témara", "code": "skhirate-temara" },
+      { "source_name": "Azilal", "code": "azilal" },
+      { "source_name": "Béni Mellal", "code": "beni-mellal" },
+      { "source_name": "Fquih Ben Salah", "code": "fquih-ben-salah" },
+      { "source_name": "Khénifra", "code": "khenifra" },
+      { "source_name": "Khouribga", "code": "khouribga" },
+      { "source_name": "Benslimane", "code": "benslimane" },
+      { "source_name": "Berrechid", "code": "berrechid" },
+      { "source_name": "Casablanca", "code": "casablanca" },
+      { "source_name": "El Jadida", "code": "el-jadida" },
+      { "source_name": "Médiouna", "code": "mediouna" },
+      { "source_name": "Mohammadia", "code": "mohammadia" },
+      { "source_name": "Nouaceur", "code": "nouaceur" },
+      { "source_name": "Settat", "code": "settat" },
+      { "source_name": "Sidi Bennour", "code": "sidi-bennour" },
+      { "source_name": "Al Haouz", "code": "al-haouz" },
+      { "source_name": "Chichaoua", "code": "chichaoua" },
+      { "source_name": "El Kelâa des Sraghna", "code": "el-kelaa-des-sraghna" },
+      { "source_name": "Essaouira", "code": "essaouira" },
+      { "source_name": "Marrakech", "code": "marrakech" },
+      { "source_name": "Rehamna", "code": "rehamna" },
+      { "source_name": "Safi", "code": "safi" },
+      { "source_name": "Youssoufia", "code": "youssoufia" },
+      { "source_name": "Errachidia", "code": "errachidia" },
+      { "source_name": "Midelt", "code": "midelt" },
+      { "source_name": "Ouarzazate", "code": "ouarzazate" },
+      { "source_name": "Tinghir", "code": "tinghir" },
+      { "source_name": "Zagora", "code": "zagora" },
+      { "source_name": "Agadir-Ida-Ou-Tanane", "code": "agadir-ida-ou-tanane" },
+      { "source_name": "Chtouka-Ait Baha", "code": "chtouka-ait-baha" },
+      { "source_name": "Inezgane-Ait Melloul", "code": "inezgane-ait-melloul" },
+      { "source_name": "Taroudannt", "code": "taroudannt" },
+      { "source_name": "Tata", "code": "tata" },
+      { "source_name": "Tiznit", "code": "tiznit" },
+      { "source_name": "Assa-Zag", "code": "assa-zag" },
+      { "source_name": "Guelmim", "code": "guelmim" },
+      { "source_name": "Sidi Ifni", "code": "sidi-ifni" },
+      { "source_name": "Tan-Tan", "code": "tan-tan" },
+      { "source_name": "Boujdour", "code": "boujdour" },
+      { "source_name": "Es-Semara", "code": "es-semara" },
+      { "source_name": "Laâyoune", "code": "laayoune" },
+      { "source_name": "Tarfaya", "code": "tarfaya" },
+      { "source_name": "Oued Ed-Dahab", "code": "oued-ed-dahab" }
+    ]
+  },
+  "unpublished_provinces": {
+    "description": "Provinces and prefectures of the administrative geography snapshot that have no row in any of the three sheets.",
+    "entries": [
+      { "code": "aousserd" }
+    ]
+  }
+}

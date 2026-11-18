@@ -1,0 +1,132 @@
+id: population-labour
+title: Morocco labour market rates by province or prefecture and area, yearly 2017–2025 (HCP National Employment Survey)
+version: 1.0.0
+retrieved_at: 2026-11-16
+license: ODbL-1.0
+license_url: https://opendatacommons.org/licenses/odbl/1-0/
+contains_personal_data: false
+redistribution_review: approved
+review_basis: The three data.gov.ma dataset records declare license_id odc-odbl. Maintainer approval on issue #64.
+
+sources:
+  - language_fields: [fr]
+    dataset: Taux d'activité selon les Provinces/Préfectures et le Milieu
+    producer: Haut-Commissariat au Plan (HCP), Enquête nationale sur l'emploi (ENE)
+    catalog_url: https://data.gov.ma/data/fr/dataset/data_imt_txact_02
+    catalog_api_url: https://data.gov.ma/data/api/3/action/package_show?id=data_imt_txact_02
+    resource_url: https://data.gov.ma/data/dataset/454e0139-311c-41f8-becf-6ce398a3169e/resource/1f7a4d39-2545-4082-b36c-1a9e9a803791/download/i_imt_txact_02_data.xlsx
+    metadata_resource_url: https://data.gov.ma/data/dataset/454e0139-311c-41f8-becf-6ce398a3169e/resource/c170d3b8-f956-4863-84dd-60762cd3b854/download/i_imt_txact_02_metadata.xlsx
+    source_updated_at: 2026-10-30
+    source_license: ODbL-1.0
+    source_license_id: odc-odbl
+    source_file: I_IMT_TXACT_02_data.xlsx
+    source_file_format: Office Open XML workbook (.xlsx), one sheet named Data, created 2026-10-30
+    source_file_bytes: 14689
+    source_file_sha256: f10d74f10113ac9fbcdf2d9c02d80c2b02b100d477e5e74aaf43cfa7f3c19c1b
+    metadata_file_bytes: 3630
+    metadata_file_sha256: 2ec5cfe582349f32ae1c284388edec61c8848fba8c9e594aec73c57d3b7a26bb
+  - language_fields: [fr]
+    dataset: Taux d'emploi selon les Provinces/Préfectures et le Milieu
+    producer: Haut-Commissariat au Plan (HCP), Enquête nationale sur l'emploi (ENE)
+    catalog_url: https://data.gov.ma/data/fr/dataset/data_imt_txemp_02
+    catalog_api_url: https://data.gov.ma/data/api/3/action/package_show?id=data_imt_txemp_02
+    resource_url: https://data.gov.ma/data/dataset/ed1fd781-455c-4560-99e4-6fc52efe1d86/resource/6b4f1e7a-2f4a-42a5-b8ec-14c378534f5d/download/i_imt_txemp_02_data.xlsx
+    metadata_resource_url: https://data.gov.ma/data/dataset/ed1fd781-455c-4560-99e4-6fc52efe1d86/resource/0a7757a7-e36e-4cb0-ac69-549886ddbb60/download/i_imt_txemp_02_metadata.xlsx
+    source_updated_at: 2026-10-30
+    source_license: ODbL-1.0
+    source_license_id: odc-odbl
+    source_file: I_IMT_TXEMP_02_data.xlsx
+    source_file_format: Office Open XML workbook (.xlsx), one sheet named Data, created 2026-10-30
+    source_file_bytes: 14726
+    source_file_sha256: dd0500f81a70a8490575af83d0c20d7b4d9b9edf16843132cd1b64cc62a413ed
+    metadata_file_bytes: 3627
+    metadata_file_sha256: 59bdeaba16e553ab52c35e9132b2726eaae6661b31d18104858191ba5269295f
+  - language_fields: [fr]
+    dataset: Taux de chômage selon les Provinces/Préfectures et le Milieu
+    producer: Haut-Commissariat au Plan (HCP), Enquête nationale sur l'emploi (ENE)
+    catalog_url: https://data.gov.ma/data/fr/dataset/data_imt_txch_02
+    catalog_api_url: https://data.gov.ma/data/api/3/action/package_show?id=data_imt_txch_02
+    resource_url: https://data.gov.ma/data/dataset/a5f57c4c-f82c-4e0b-afc4-1e09f5de98a4/resource/8ee85745-bf8c-4f50-a094-04c6af0afe4a/download/i_imt_txch_02_data.xlsx
+    metadata_resource_url: https://data.gov.ma/data/dataset/a5f57c4c-f82c-4e0b-afc4-1e09f5de98a4/resource/8146c6d7-46ce-44f4-aade-91e0f044ab49/download/i_imt_txch_02_metadata.xlsx
+    source_updated_at: 2026-10-30
+    source_license: ODbL-1.0
+    source_license_id: odc-odbl
+    source_file: I_IMT_TXCH_02_data.xlsx
+    source_file_format: Office Open XML workbook (.xlsx), one sheet named Data, created 2026-10-30
+    source_file_bytes: 12828
+    source_file_sha256: 3e64e5242a4b738533547b765c21bca0f509ceaedd84d448961e1992577eefc0
+    metadata_file_bytes: 3631
+    metadata_file_sha256: 48a2b106cb53786ec3af8dbb9881a20c73d3ebd6120b34847a2c8e488e335309
+
+definitions:
+  reference: https://www.hcp.ma/Concepts-et-definitions-Activite_a3038.html
+  note: The metadata workbooks only repeat each indicator's name as its definition (periodicity Annuelle, unit POURCENTAGE, source MAR_HCP ENQUETE NATIONALE SUR L'EMPLOI), so the definitions below follow HCP's published labour concepts.
+  activity_rate: Active persons (employed or unemployed) aged 15 and over, as a percentage of the population aged 15 and over.
+  employment_rate: Employed persons aged 15 and over, as a percentage of the population aged 15 and over.
+  unemployment_rate: Unemployed persons, as a percentage of the labour force (active persons).
+
+files:
+  - file: data/population/source/labour-activity-rate.json
+    sha256: 83dcc77fca8166418a54382fdd0efba7f31feca593a1e82e1cfa5b5ea6c69af6
+    source_sheet: Data
+    field: activity_rate
+    header_rows: 2
+    source_rows: 214
+    columns: 11
+  - file: data/population/source/labour-employment-rate.json
+    sha256: 5806b9235505d10da298fa77c03696f6548db5ebf1abb0b4dc87fa9bcb219037
+    source_sheet: Data
+    field: employment_rate
+    header_rows: 2
+    source_rows: 214
+    columns: 11
+  - file: data/population/source/labour-unemployment-rate.json
+    sha256: d0baeb3d3cdc9e8d43a6382d094f953c0d2ff1164529578ff3ea1479fcf4bd30
+    source_sheet: Data
+    field: unemployment_rate
+    header_rows: 2
+    source_rows: 181
+    columns: 11
+  - file: data/population/labour-mappings.json
+    sha256: 23a998d173fe8a8a40aca7d983b8241c16fc26109fd51ba5272c7a28af96f89d
+    description: Sheet layout and titles, the Milieu labels, the 74 source province and prefecture names with their MoroccoAPI codes, and the one geography province without source rows.
+
+transformations:
+  - Downloaded the three official workbooks from data.gov.ma, verified their SHA-256, and kept the only sheet of each (Data) as a JSON array with one entry per source row, including the title and header rows.
+  - Kept every cell exactly as stored in the workbook; empty cells (only in the title row) are null and the not-published symbol "-" is kept as text. All 5,163 numeric cells were compared with the text of the sheet XML and match it exactly (one decimal each).
+  - Read the year of each column from its four-digit header label; the loader checks that the columns are consecutive years, newest first, identical in the three sheets, and publishes them oldest first.
+  - Mapped the Milieu labels National, Urbain and Rural to the areas all, urban and rural. National means the whole province or prefecture (urban and rural together), not Morocco as a whole.
+  - Mapped the 74 source province and prefecture names to MoroccoAPI codes with labour-mappings.json; each name equals the French name of one province or prefecture in the administrative geography snapshot, ignoring accents, case and punctuation. Names, HCP codes and regions come from that snapshot.
+  - Joined the three sheets on province and area. The activity sheet lists every province and area; the employment sheet lists the same rows and the unemployment sheet a subset of them. A rate without a source row, or marked "-", is published as null; a province, area and year with no published rate at all is omitted.
+  - Published the rates unchanged. No rate is computed, filled or rounded.
+  - Checked that employment never exceeds activity, and that employment equals activity × (1 − unemployment ÷ 100) to within 0.15 points wherever the three rates are published (1,374 cases; largest gap 0.113, from the one-decimal rounding of the source).
+
+coverage:
+  first_year: 2017
+  last_year: 2025
+  years: 9
+  provinces: 74
+  unpublished_provinces: 1
+  observations: 1898
+  all_area_observations: 664
+  urban_observations: 648
+  rural_observations: 586
+  activity_rate_values: 1898
+  employment_rate_values: 1891
+  unemployment_rate_values: 1374
+
+limitations:
+  - These are yearly estimates from HCP's National Employment Survey (ENE), a household sample survey. They are not the RGPH 2024 census rates in /api/v2/population/indicators, and the two differ a lot; for 2024, census unemployment is a median 10.0 points higher than the survey's across the 71 provinces with both values (from 3.9 points lower in Laâyoune to 23.5 points higher in Taza; Al Hoceima 24.6% against 8.0%). Do not mix the two sources.
+  - Aousserd has no row in any sheet. Fahs-Anjra and Tarfaya have no urban rows, and Assa-Zag, Boujdour, Casablanca, Es-Semara, Laâyoune, Rabat, Tan-Tan and Tarfaya have no rural rows.
+  - HCP does not publish the unemployment rate for 33 province and area pairs (Assa-Zag, Fahs-Anjra and Tarfaya as a whole, 8 urban areas and 22 rural areas) and marks a further 237 unemployment values with "-"; it also marks 10 activity and 17 employment values with "-". All are published as null.
+  - Rural Oued Ed-Dahab has a published rate only for 2020, and Tarfaya as a whole has no rate for 2020 and 2022; those empty years are omitted.
+  - Some provincial series move sharply from one year to the next (for example Tarfaya's activity rate, 35.0% in 2023 and 51.8% in 2024, or urban Youssoufia's unemployment rate, 27.3% in 2018 and 10.7% in 2019); HCP does not publish confidence intervals with these files.
+  - The source gives rates only; the underlying population counts and the age, sex and education breakdowns are not part of these files.
+  - Province and prefecture names are published in French in the source; the API uses the names of the administrative geography snapshot.
+  - The source follows Morocco's official territorial scope, including Moroccan-administered territory in Western Sahara.
+
+refresh:
+  - Check metadata_modified with each catalog_api_url; download the new I_IMT_TXACT_02_data.xlsx, I_IMT_TXEMP_02_data.xlsx and I_IMT_TXCH_02_data.xlsx and verify their SHA-256 before conversion.
+  - Convert each Data sheet to a JSON array with every row and cell unchanged (empty cells as null), and compare the numeric cells with the sheet XML.
+  - Update labour-mappings.json only if the layout, titles, areas or province names change; update the row counts there.
+  - Update all checksums, dates and coverage counts in this file and in src/population/labour/metadata.ts, then run the population labour data tests and npm run check; the startup loader rejects a changed layout, an unmapped province, a value outside 0–100 or inconsistent rates.
